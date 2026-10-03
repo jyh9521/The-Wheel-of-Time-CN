@@ -106,8 +106,16 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 
 ## 非空草稿与完成度
 
-2026-10-04首轮覆盖1002条核心玩家文本。未知专名保留英文并登记GLOSSARY，不用临时音译冒充既定译名。@forget@、@grunt@、@The flows just... vanished.@仍按现有保护规则原样保留，待证明其是否只是引号标记后再处理；不能为通过校验删控制符。validate的0空译文不代表全中文。运行tools.validate.text_coverage查看源文相同条目与遗漏，并逐项处理混合译文中的英文。
+历史首轮快照（以下保守处理已由文末精确审核更新）：2026-10-04首轮覆盖1002条核心玩家文本。未知专名保留英文并登记GLOSSARY，不用临时音译冒充既定译名。@forget@、@grunt@、@The flows just... vanished.@仍按现有保护规则原样保留，待证明其是否只是引号标记后再处理；不能为通过校验删控制符。validate的0空译文不代表全中文。运行tools.validate.text_coverage查看源文相同条目与遗漏，并逐项处理混合译文中的英文。
 
 ## 已确认能力名与语境审核（2026-10-04）
 
 译名以GLOSSARY.md为唯一依据。能力名称与普通词义分开：Shift能力为瞬移，键名不翻译；Sister直呼为姐妹，单位/两仪师身份为两仪师；artifact先核对明确指代，未证实类型时不自动升级为特法器。五种元素编织采用词表规定的火/风/水/地/魂之力编织，单数和同义描述沿用。Sever/Fork/Unravel/Aura of Unraveling固定为隔断/分流/解构/解构领域。普通动作导致关键词误报时，必须在唯一词表记录精确ID与source SHA例外；当前爆裂结界解体及小说引文污染不是相应能力名称。
+
+## 已审查的可读 @ 文本（2026-10-04）
+
+已验证的调用路径：Legend.WOTInventory将Description与Quote声明为localized string；WOT.InventoryInfoWindow.Draw把两字段直接交给C.DrawText，Quote另设F_WOTIta14字体。Engine.Canvas.DrawText为native(465)，脚本层未对这三段执行名称/资源查找或变量替换。该证据支持将forget、grunt及The flows just... vanished.认定为玩家可读正文，而非资源ID。native层的@最终显示/引号处理仍未作实机确认，不将具体引号行为写成已验证事实。
+
+本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
+
+不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。

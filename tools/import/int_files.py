@@ -2,7 +2,7 @@
 
 import collections, hashlib
 from pathlib import Path
-from tools.extract.int_files import entries, decode, encode, tokens
+from tools.extract.int_files import entries, decode, encode, tokens, translation_tokens
 
 
 def validate_rows(rows, config):
@@ -27,7 +27,7 @@ def validate_rows(rows, config):
         if not s:
             pending += 1
             continue
-        if tokens(s) != r["tokens"]:
+        if translation_tokens(r) != r["tokens"]:
             raise ValueError("Placeholder/control mismatch: " + repr(identity))
         if any(c in s for c in ['"', "\n", "\r", "\0"]) or any(
             0xD800 <= ord(c) <= 0xDFFF or ord(c) > 0xFFFF for c in s
@@ -69,6 +69,15 @@ def verify_sources(src, rows):
             raise ValueError(
                 "Source token metadata differs: " + repr((name, *identity))
             )
+        if row.get("literal_token_translations"):
+            if actual["source"].count("@") != row.get("markup_delimiter_count"):
+                raise ValueError("Source markup delimiter metadata differs")
+            for mapping in row["literal_token_translations"]:
+                if actual["source"].count(mapping["source"]) != row["tokens"].count(
+                    mapping["source"]
+                ):
+                    raise ValueError("Literal source span metadata differs")
+            translation_tokens(row)
         if len(actual["source"]) != row["source_length"]:
             raise ValueError(
                 "Source length metadata differs: " + repr((name, *identity))

@@ -32,6 +32,40 @@ def tokens(s):
     )
 
 
+def translation_tokens(row):
+    """Normalize explicitly reviewed literal spans, never arbitrary @ tokens.
+
+    Source metadata remains original; verify_sources binds annotations to the
+    complete source hash and verifies delimiter count against the real input.
+    """
+    text = row.get("translation", "")
+    mappings = row.get("literal_token_translations", [])
+    seen = set()
+    for mapping in mappings:
+        source, target = mapping["source"], mapping["translation"]
+        if source in seen or source not in row["tokens"]:
+            raise ValueError("Invalid or duplicate literal token annotation")
+        seen.add(source)
+        for span in (source, target):
+            if (
+                not span.startswith("@")
+                or not span.endswith("@")
+                or span.count("@") != 2
+                or len(span) <= 2
+            ):
+                raise ValueError("Literal spans must retain paired @ delimiters")
+            if tokens(span[1:-1]):
+                raise ValueError("Literal span contains a protected control")
+        if text.count(target) != row["tokens"].count(source):
+            raise ValueError("Literal span missing or duplicated")
+        text = text.replace(target, source)
+    if mappings and row.get("markup_delimiter_count") != row.get(
+        "translation", ""
+    ).count("@"):
+        raise ValueError("Literal markup delimiter count changed")
+    return tokens(text)
+
+
 def entries(path):
     b = path.read_bytes()
     t, e = decode(b)

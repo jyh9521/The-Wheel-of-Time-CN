@@ -11,7 +11,7 @@
   "validation": {
     "max_characters": 4096
   },
-  "status": "757 base + 245 supplementary rows populated as drafts; pending terminology/protected English and full-game QA remain",
+  "status": "1002 core rows populated as drafts; approved terminology and readable literal spans resolved; full-game QA remains",
   "subtitle_rows": "subtitles.json",
   "subtitle_overrides": "subtitle-overrides.json",
   "terminology": {

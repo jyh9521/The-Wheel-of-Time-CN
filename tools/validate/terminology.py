@@ -3,7 +3,7 @@
 import re
 import hashlib
 from pathlib import Path
-from tools.extract.int_files import entries, tokens
+from tools.extract.int_files import entries, tokens, translation_tokens
 
 
 def normalize(text):
@@ -170,7 +170,7 @@ def main():
         rows = json.loads(path.read_text("utf8"))
         importer.verify_sources(args.source_dir, rows)
         for r in rows:
-            if r.get("translation") and tokens(r["translation"]) != r["tokens"]:
+            if r.get("translation") and translation_tokens(r) != r["tokens"]:
                 raise ValueError(
                     "Protected tokens changed: "
                     + repr((r["file"], r["section"], r["key"]))

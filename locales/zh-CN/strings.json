@@ -15,7 +15,7 @@
     "section": "menuSinglePlayer",
     "key": "HelpMessage[1]",
     "occurrence": 1,
-    "translation": "进入试炼教程，学习《时光之轮》中的移动、观察与跳跃。END-123",
+    "translation": "进入“试炼”教程关，熟悉《时光之轮》。",
     "source_sha256": "b4de07f89e8e236ec159e6be05d4e46c6ec2d87a1e4178f4f5be98a1e0cb0e36",
     "source_length": 83,
     "tokens": [],
@@ -2077,7 +2077,7 @@
     "source_sha256": "8ef2e131f1766114fb1ed5e54b5ad5941d5d4cab3dd9f2cd5d9fe8707f858914",
     "source_length": 15,
     "tokens": [],
-    "translation": "Cuendillar封印",
+    "translation": "昆达雅石封印",
     "status": "draft"
   },
   {
@@ -2088,7 +2088,7 @@
     "source_sha256": "2ef54967de35694aa952996f37ec8b927a314a92d3ae78aa452b0b70de734746",
     "source_length": 426,
     "tokens": [],
-    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的Cuendillar器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
+    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
     "status": "draft"
   },
   {
@@ -2132,7 +2132,7 @@
     "source_sha256": "8ef2e131f1766114fb1ed5e54b5ad5941d5d4cab3dd9f2cd5d9fe8707f858914",
     "source_length": 15,
     "tokens": [],
-    "translation": "Cuendillar封印",
+    "translation": "昆达雅石封印",
     "status": "draft"
   },
   {
@@ -2143,7 +2143,7 @@
     "source_sha256": "2ef54967de35694aa952996f37ec8b927a314a92d3ae78aa452b0b70de734746",
     "source_length": 426,
     "tokens": [],
-    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的Cuendillar器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
+    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
     "status": "draft"
   },
   {
@@ -4510,7 +4510,7 @@
     "source_sha256": "9e0d5d5acc31833bf0a2742095c0482f6f2fa0b007e3c7caf333e83240cbd4d6",
     "source_length": 3,
     "tokens": [],
-    "translation": "气",
+    "translation": "风",
     "status": "draft"
   },
   {
@@ -4664,7 +4664,7 @@
     "source_sha256": "0fb64c157298c9bf404c89e4fbf0f89033ec004ae46030e6daed988ad1d28033",
     "source_length": 28,
     "tokens": [],
-    "translation": "Manetherendrelle河岸",
+    "translation": "曼埃瑟兰河岸",
     "status": "draft"
   },
   {
@@ -4675,7 +4675,7 @@
     "source_sha256": "e377a342c1312dcf6aa66c73be975366a7a56ac58bf139361594e3e6ce39be6a",
     "source_length": 226,
     "tokens": [],
-    "translation": "@塔瓦隆的金币说服了一名船夫，载我沿Manetherendrelle河顺流而下。可越靠近煞达罗苟斯，他就越不安。最后他把我放在岸上，说自己最多只能走到这里，再也不肯靠近那座受诅咒的城市。",
+    "translation": "@塔瓦隆的金币说服了一名船夫，载我沿曼埃瑟兰河顺流而下。可越靠近煞达罗苟斯，他就越不安。最后他把我放在岸上，说自己最多只能走到这里，再也不肯靠近那座受诅咒的城市。",
     "status": "draft"
   },
   {
@@ -5126,7 +5126,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 将沿途道门当作避难所。穿过道门离开道，在另一边尽可能久地等待，让Machin Shin飘走，然后返回道中，奔向下一座道门。这样辗转于道门之间，你也许能避开Machin Shin的触碰。",
+    "translation": "%b 将沿途道门当作避难所。穿过道门离开道，在另一边尽可能久地等待，让黑风飘走，然后返回道中，奔向下一座道门。这样辗转于道门之间，你也许能避开黑风的触碰。",
     "status": "draft"
   },
   {
@@ -5139,7 +5139,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 提防逃亡的黑宗叛徒和其他暗影生物。记住，Machin Shin不会区别对待任何人。",
+    "translation": "%b 提防逃亡的黑宗叛徒和其他暗影生物。记住，黑风不会区别对待任何人。",
     "status": "draft"
   },
   {
@@ -5259,7 +5259,7 @@
     "source_sha256": "5f7c7dfbbb09734096a5634e6be926554edb795fa5dc1cc55f4f41d053ba03e9",
     "source_length": 244,
     "tokens": [],
-    "translation": "@临终前，Cerist告诉我，探险队的幸存者正赶往附近的传送石，试图逃离。我想我曾在要塞前见过那块石头。若能到达那里，也许就能追上他们。",
+    "translation": "@临终前，瑟瑞斯特告诉我，探险队的幸存者正赶往附近的传送石，试图逃离。我想我曾在要塞前见过那块石头。若能到达那里，也许就能追上他们。",
     "status": "draft"
   },
   {
@@ -5296,7 +5296,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 找到Cerist提到的特法器藏匿处，位置在王座厅旁的一间秘密礼拜堂。",
+    "translation": "%b 找到瑟瑞斯特提到的特法器藏匿处，位置在王座厅旁的一间秘密礼拜堂。",
     "status": "draft"
   },
   {
@@ -5342,7 +5342,7 @@
     "source_sha256": "8bfa58f874c92e79af4d84be0c118236c2a4e35eeaa692bbb76d92b846ccbd84",
     "source_length": 336,
     "tokens": [],
-    "translation": "@从周围的景象判断，这块石头应该位于Mountains of Mist。那里有许多古代遗迹，所以并不奇怪。但据刺客所说，伊煞梅尔在此建起了要塞。探险队很可能落入弃光魔使的军队手中。我只希望，他们还没遭到更多毒手。@",
+    "translation": "@从周围的景象判断，这块石头应该位于迷雾山脉。那里有许多古代遗迹，所以并不奇怪。但据刺客所说，伊煞梅尔在此建起了要塞。探险队很可能落入弃光魔使的军队手中。我只希望，他们还没遭到更多毒手。@",
     "status": "draft"
   },
   {
@@ -5477,7 +5477,7 @@
     "source_sha256": "584516cb96286f61b1b0b40a537af9382dff6c07d5d4f5ada3665115694b8831",
     "source_length": 291,
     "tokens": [],
-    "translation": "@我对Sephraem的复仇欲望，比自己愿意承认的更强烈，但我必须把注意力放在被盗的封印上。我不确定伊煞梅尔打算如何利用它，可每一种可能都令人恐惧。我会找到封印；若途中恰好遇见叛徒Sephraem，那就一并了结。@",
+    "translation": "@我对瑟芙蕾姆的复仇欲望，比自己愿意承认的更强烈，但我必须把注意力放在被盗的封印上。我不确定伊煞梅尔打算如何利用它，可每一种可能都令人恐惧。我会找到封印；若途中恰好遇见叛徒瑟芙蕾姆，那就一并了结。@",
     "status": "draft"
   },
   {
@@ -5677,7 +5677,7 @@
     "source_sha256": "0fb64c157298c9bf404c89e4fbf0f89033ec004ae46030e6daed988ad1d28033",
     "source_length": 28,
     "tokens": [],
-    "translation": "Manetherendrelle河岸",
+    "translation": "曼埃瑟兰河岸",
     "status": "draft"
   },
   {
@@ -5721,7 +5721,7 @@
     "source_sha256": "bbd75bb335f7eb177fe1d6e8d711773c9e00e1ac0c26783a5280770ab41786dc",
     "source_length": 21,
     "tokens": [],
-    "translation": "Mountains of Mist",
+    "translation": "迷雾山脉",
     "status": "draft"
   },
   {
@@ -5908,7 +5908,7 @@
     "source_sha256": "60f29007839971dca026c87d7d5a91536a39aa12c19dab436b061e2476999024",
     "source_length": 428,
     "tokens": [],
-    "translation": "烈火射出一道能穿透一切的光束，连墙壁也不例外。光束触及的事物会从时间线上脱离。大多数物体和受害者会像从未存在过一样消失，但Cuendillar封印不受影响。烈火先蓄力，再在松开使用键时释放；蓄力越久，释放时的威力越大。",
+    "translation": "烈火射出一道能穿透一切的光束，连墙壁也不例外。光束触及的事物会从时间线上脱离。大多数物体和受害者会像从未存在过一样消失，但昆达雅石封印不受影响。烈火先蓄力，再在松开使用键时释放；蓄力越久，释放时的威力越大。",
     "status": "draft"
   },
   {
@@ -6108,8 +6108,15 @@
     "tokens": [
       "@forget@"
     ],
-    "translation": "首次使用远视之眼会固定它的位置。丢弃特法器会使它@forget@原来的位置。放置后，再次使用便能透过它观察，只要你保持静止，就能看见它所见的一切。观察时再次使用，会向它瞄准的目标连续发射飞矢。悬浮的眼睛本身很脆弱，容易被摧毁。",
-    "status": "draft"
+    "translation": "首次使用远视之眼会固定它的位置。丢弃特法器会使它@忘记@原来的位置。放置后，再次使用便能透过它观察，只要你保持静止，就能看见它所见的一切。观察时再次使用，会向它瞄准的目标连续发射飞矢。悬浮的眼睛本身很脆弱，容易被摧毁。",
+    "status": "draft",
+    "literal_token_translations": [
+      {
+        "source": "@forget@",
+        "translation": "@忘记@"
+      }
+    ],
+    "markup_delimiter_count": 2
   },
   {
     "file": "Angreal.int",
@@ -6504,7 +6511,7 @@
     "source_sha256": "f0670c043e713e915a8ab872696105fef1b115de44a844e7cbda0fbe38e09d09",
     "source_length": 279,
     "tokens": [],
-    "translation": "幻影分身会在你面前编织出一个虚幻的自身影像，并将它留在那里迷惑别人，尤其是魔煞达或Machin Shin这类对魔法极其敏感的敌人。影像没有实体，但仍可被其他编织锁定。它会在一段时间后消散。",
+    "translation": "幻影分身会在你面前编织出一个虚幻的自身影像，并将它留在那里迷惑别人，尤其是魔煞达或黑风这类对魔法极其敏感的敌人。影像没有实体，但仍可被其他编织锁定。它会在一段时间后消散。",
     "status": "draft"
   },
   {
@@ -6561,8 +6568,15 @@
     "tokens": [
       "@grunt@"
     ],
-    "translation": "仆从特法器会召唤一名你所指挥类型的@grunt@或士兵。",
-    "status": "draft"
+    "translation": "仆从特法器会召唤一名你所指挥类型的@普通士兵@或士兵。",
+    "status": "draft",
+    "literal_token_translations": [
+      {
+        "source": "@grunt@",
+        "translation": "@普通士兵@"
+      }
+    ],
+    "markup_delimiter_count": 2
   },
   {
     "file": "Angreal.int",
@@ -6682,7 +6696,7 @@
     "source_sha256": "e7ac44e1374168bbd9f92f0ed28da8288b4acdfe1cfb43da60a7f3a9a0c1e625",
     "source_length": 137,
     "tokens": [],
-    "translation": "汤姆·梅里林用沙哑的声音回答她：@在终结传说纪元的战争中，人们造出了比兽魔人和Halfmen更可怕的东西。@",
+    "translation": "汤姆·梅里林用沙哑的声音回答她：@在终结传说纪元的战争中，人们造出了比兽魔人和半人更可怕的东西。@",
     "status": "draft"
   },
   {
@@ -6728,8 +6742,15 @@
     "tokens": [
       "@The flows just... vanished.@"
     ],
-    "translation": "@你是怎么……？@伊兰惊讶地说。@The flows just... vanished.@",
-    "status": "draft"
+    "translation": "@你是怎么……？@伊兰惊讶地说。@那些编织就……消失了。@",
+    "status": "draft",
+    "literal_token_translations": [
+      {
+        "source": "@The flows just... vanished.@",
+        "translation": "@那些编织就……消失了。@"
+      }
+    ],
+    "markup_delimiter_count": 4
   },
   {
     "file": "Angreal.int",
@@ -7817,7 +7838,7 @@
     "source_sha256": "b4eb2540a4e2c6c8406ddb4e7e9497c36775e0564cb0e2b904c52bdde6d3e560",
     "source_length": 21,
     "tokens": [],
-    "translation": "白袍众审问者",
+    "translation": "白袍众裁判者",
     "status": "draft"
   },
   {
@@ -7828,7 +7849,7 @@
     "source_sha256": "0c039b42107f0432fb1a1b306741ed39bfd65a65b1e57cad29952f0b0522d8c6",
     "source_length": 594,
     "tokens": [],
-    "translation": "就连其他白袍众也惧怕名为The Hand of the Light的派系。他们自称The Hand that digs out Truth，但外人更常称他们为审问者。他们搜寻将灵魂献给暗帝的人，不择手段逼迫受害者招供。这座偏远边境驻地的审问者配有传说纪元留下的特殊护盾，能够将任何投射物反射回攻击者。不过，这些攻击仍会损伤护盾，最终可以将它摧毁。",
+    "translation": "就连其他白袍众也惧怕名为圣光之手的派系。他们自称挖掘真相之手，但外人更常称他们为裁判者。他们搜寻将灵魂献给暗帝的人，不择手段逼迫受害者招供。这座偏远边境驻地的裁判者配有传说纪元留下的特殊护盾，能够将任何投射物反射回攻击者。不过，这些攻击仍会损伤护盾，最终可以将它摧毁。",
     "status": "draft"
   },
   {
@@ -7839,7 +7860,7 @@
     "source_sha256": "81d968233d68dbcb97f2935f65be359ccf726045649b310c2cc613f4e679b285",
     "source_length": 239,
     "tokens": [],
-    "translation": "他们披风的胸前绣着与他相同的金色太阳纹章，每个圣光之子都一样。他们的首领在纹章下还绣有与Bornhald相当的金色军阶结饰。但太阳纹章背后，多了一根红色牧羊杖。",
+    "translation": "他们披风的胸前绣着与他相同的金色太阳纹章，每个圣光之子都一样。他们的首领在纹章下还绣有与伯恩哈相当的金色军阶结饰。但太阳纹章背后，多了一根红色牧羊杖。",
     "status": "draft"
   },
   {
@@ -8202,7 +8223,7 @@
     "source_sha256": "5de3fdd0d591f63db02474d3a590d070b04ef3621d08cf4fbda40de66caee27b",
     "source_length": 164,
     "tokens": [],
-    "translation": "她散发的严厉远超沐瑞。他有时把沐瑞想象成包着天鹅绒的钢铁；而在Elaida身上，天鹅绒只是一种假象。",
+    "translation": "她散发的严厉远超沐瑞。他有时把沐瑞想象成包着天鹅绒的钢铁；而在爱莉达身上，天鹅绒只是一种假象。",
     "status": "draft"
   },
   {

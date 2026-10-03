@@ -111,14 +111,46 @@ class ConfirmedLocaleTermsTests(unittest.TestCase):
                 self.terms["weaves of " + element], self.text(section, "Description")[0]
             )
 
+    def test_remaining_names_and_test_marker_are_resolved(self):
+        import re
+
+        names = [
+            "Chosen",
+            "Cuendillar",
+            "Manetherendrelle",
+            "Machin Shin",
+            "Mountains of Mist",
+            "Cerist",
+            "Sephraem",
+            "Halfmen",
+            "Bornhald",
+            "Elaida",
+            "The Hand of the Light",
+            "The Hand that digs out Truth",
+        ]
+        for name in names:
+            self.assertIn(name, self.terms)
+            pattern = re.compile(
+                r"(?<![A-Za-z0-9_])" + re.escape(name) + r"(?![A-Za-z0-9_])", re.I
+            )
+            for row in self.rows:
+                self.assertIsNone(
+                    pattern.search(row["translation"]),
+                    (name, row["section"], row["key"]),
+                )
+        self.assertNotIn("END-123", " ".join(row["translation"] for row in self.rows))
+        for key in ["Myr_14", "Myr_25"]:
+            self.assertIn(self.terms["Chosen"], self.text("DialogA", key)[0])
+        self.assertIn("被选中", self.text("WarderInventory", "Description")[0])
+
     def test_protected_fragments_and_normal_word_exceptions(self):
         for section, token in [
-            ("AngrealInvDistantEye", "@forget@"),
-            ("AngrealInvMinion", "@grunt@"),
+            ("AngrealInvDistantEye", "@忘记@"),
+            ("AngrealInvMinion", "@普通士兵@"),
         ]:
             self.assertIn(token, self.text(section, "Description")[0])
         self.assertIn(
-            "@The flows just... vanished.@", self.text("AngrealInvAbsorb", "Quote")[0]
+            "@那些编织就……消失了。@", self.text("AngrealInvAbsorb", "Quote")[0]
         )
         exceptions = load_exceptions(ROOT / "GLOSSARY.md")
         self.assertTrue(

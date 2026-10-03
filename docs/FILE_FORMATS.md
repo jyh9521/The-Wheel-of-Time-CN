@@ -65,3 +65,11 @@ migration-manifest.json逐文件保存origin/source/destination/source_sha256/me
 字体栅格使用共同source_bounds和origin；manifest记录raster_height、最终height及vertical_fit_scale。最终Font矩形height保持原槽位行高；源墨迹参考检查发生在整体纵向适配之前。非等比纵向适配可能改变抗锯齿像素，不冒充像素无损。
 
 profile.resource_edits为语言无关显示字段：resource、export、export_sha256、offset（导出body相对）、type=float32-le、expected、value、context_offset/context_hex。当前字幕字段为导出5095 body+1979，原始00000000→0000c041，即0→24，函数等长2614字节。原包绝对992669只作研究记录，不用于盲写；运行工具按解析后的导出offset定位。FONT_DIFF是字体阶段；BUILD_REPORT.resource_edits记录之后的字段差分，最终hash位于PATCH/BUILD_REPORT。
+
+## 已审查的可读 @ 文本（2026-10-04）
+
+已验证的调用路径：Legend.WOTInventory将Description与Quote声明为localized string；WOT.InventoryInfoWindow.Draw把两字段直接交给C.DrawText，Quote另设F_WOTIta14字体。Engine.Canvas.DrawText为native(465)，脚本层未对这三段执行名称/资源查找或变量替换。该证据支持将forget、grunt及The flows just... vanished.认定为玩家可读正文，而非资源ID。native层的@最终显示/引号处理仍未作实机确认，不将具体引号行为写成已验证事实。
+
+本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
+
+不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。

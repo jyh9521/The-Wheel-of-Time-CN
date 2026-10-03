@@ -249,6 +249,31 @@ Codex、人工翻译者以及后续校对工作均应以本文件为准，不再
 | weaves of Water | **水之力编织** | 游戏命名 / 魔法描述 | 维护者确认（2026-10-04）；名称与普通词义按语境区分 |
 | weaves of Earth | **地之力编织** | 游戏命名 / 魔法描述 | 维护者确认（2026-10-04）；名称与普通词义按语境区分 |
 | weaves of Spirit | **魂之力编织** | 游戏命名 / 魔法描述 | 维护者确认（2026-10-04）；名称与普通词义按语境区分 |
+| Cuendillar | **昆达雅石** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Manetherendrelle | **曼埃瑟兰河** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Machin Shin | **黑风** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Black Wind | **黑风** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Mountains of Mist | **迷雾山脉** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Bornhald | **伯恩哈** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Elaida | **爱莉达** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| The Hand of the Light | **圣光之手** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Cerist | **瑟瑞斯特** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Sephraem | **瑟芙蕾姆** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Halfmen | **半人** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| The Hand that digs out Truth | **挖掘真相之手** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Chosen | **获选者** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Elayna | **伊莱娜** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Air Pulse | **气流冲击** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Light Globe | **光球** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Light Sphere | **光球** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Fire Shield | **火焰护盾** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Reflect | **反射** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Fireball | **火球** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Questioner | **裁判者** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Trolloc Wars | **兽魔人战争** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Shadowspawn | **暗影生物** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Great Lord | **暗帝** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Dark Lord | **暗帝** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 
 ---
 
@@ -261,22 +286,15 @@ Codex、人工翻译者以及后续校对工作均应以本文件为准，不再
 - 确认后的新译名直接补充到本文件。
 - 不要建立第二份平行术语表，避免术语漂移。
 
-## 待确认术语（2026-10-03审校）
+## 既往待确认记录（2026-10-03审校，现已解决）
 
-以下仅记录现有草稿与待解决问题，不属于上方已确定译名。项目现有资料及中文 Wiki 检索未确认这些游戏专名的既定中文；不得另造并行译法。保留已有单一草稿以维持测试连续性，正式发布前须确认。确认后移入上方术语表，待确认行不作为自动校验的已定规则。
+以下保留既往审校背景；该批译名已由维护者批准并移入上方唯一术语表。历史记录不覆盖当前确认结果。该批游戏原创名称的译名由维护者批准，不冒称出版定名；确认译名仅维护于上方单一术语表。
 
-| English / 来源 | 当前唯一草稿 | 待确认原因 |
-|---|---|---|
-| Elayna / Tes_01等 | 伊莱娜 | 游戏主角；未确认中文出版或Wiki既定译名，不得误认小说Elayne（伊兰） |
-| Air Pulse / AngrealInvAirBurst | 气流冲击 | 游戏物品名；未确认既定译名；包内AirBurst是资源标识，不翻译 |
-| Light Globe / Light Sphere | 光球 | 两个游戏称谓现用同一草稿，需确认是否同一物品 |
-| Fire Shield | 火焰护盾 | 游戏法器名；未确认既定译名 |
-| Reflect | 反射 | 游戏法器名；普通动词不据此机械替换 |
-| Fireball | 火球 | 游戏法器名；未确认既定译名 |
+该批待确认条目已全部解决，无剩余行。
 
-### 本轮明确修正
+### 既往审校修正记录
 
-AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，救救我！”不符已定Creator → 创世主，已改为“创世主，救救我！”。其余已定词条未发现需改写的译法；上述待确认项并未因现有草稿被自动升级为已确认术语。
+AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，救救我！”不符已定Creator → 创世主，已改为“创世主，救救我！”。其余已定词条未发现需改写的译法；这些词当时未因草稿自动升级；现已取得维护者确认，以上方确认表为准。
 
 ### 冲突处理与保护规则
 
@@ -297,27 +315,18 @@ AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，
 | WoTsubtitles.int | WhitecloakA | Whi_Taunt5 | 1 | Forsaken | dc753781f8eb21ba2457bcae29d2f8fc3abb7a1b852e346207e01baedab33425 | 动词抛弃，不是弃光魔使 |
 | Angreal.int | AngrealInvExpWard | Description | 1 | Unravel | 9ceaff9661986ac2bc8f0e6a402121264853e021df9693c0ac9ddd03c74cfa8b | 结界自身解体爆炸的普通动作，不是解构能力 |
 | Angreal.int | AngrealInvTaint | Quote | 1 | Taint | 3e435227a39ef7289febfb3cf0c964b310ee6d31dd407264f64802b3ad54db3a | 小说引文中阳极力的污染，不是玷污特法器能力 |
+| WoTPawns.int | WarderInventory | Description | 1 | Chosen | 00681ead12b5ffb6fa117118b4f6f22e5fe01b55897c304778d9fe1c74b9777d | 武艺被选中的普通分词，不是暗影人物敬称 |
+| WoTPawns.int | QuestionerInventory | Description | 1 | Reflect | 0c039b42107f0432fb1a1b306741ed39bfd65a65b1e57cad29952f0b0522d8c6 | 普通反射投射物的动作，不是反射特法器名称 |
 
-## 全文首轮新增待确认术语
+## 全文首轮待确认记录（现已解决）
 
-下列词已检索本地资料与中文Wiki；未获得足够可核对的既定译名，暂保留英文原拼写。它们仍是发布前待办，不将非空translation误报为已完成中文翻译。不得在别处另造并行译法。
+该批词先前因证据不足保留英文；2026-10-04经维护者审阅研究清单后批准，现已写入上方确认表并回填正文。不得在别处另造并行译法。
 
-| English / 来源 | 当前处理 | 待确认原因 |
-|---|---|---|
-| Chosen | 保留Chosen | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Cuendillar | 保留Cuendillar | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Manetherendrelle | 保留Manetherendrelle | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Machin Shin | 保留Machin Shin | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Mountains of Mist | 保留Mountains of Mist | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Cerist | 保留Cerist | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Sephraem | 保留Sephraem | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Halfmen | 保留Halfmen | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Bornhald | 保留Bornhald | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
-| Elaida | 保留Elaida | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+该批待确认条目已全部解决，无剩余行。
 
-Light、Seal、Shadowspawn、Great Lord/Dark Lord、Mother及五种力的元素称呼本轮依现有语境分别采用光明、封印、暗影生物、暗帝、母亲及地/气/火/水/魂，作为已有或上下文草稿登记，尚待统一审校。白塔角色称Mother不表示生母。
+既往草稿曾记录Light、Seal、Shadowspawn、Great Lord/Dark Lord、Mother及元素称呼；当前规则见“本批确认与语境裁定”，元素Air标签已统一为风，普通气流另按语境。白塔角色称Mother不表示生母。
 
-本轮单位说明还保留The Hand of the Light、The Hand that digs out Truth，未确认译名；只把普通职业Questioner译作审问者，正式称谓待确认。兽魔人战争是Trolloc Wars的上下文草稿。
+既往单位说明曾保留两项Hand称谓并将Questioner暂译审问者；现统一为圣光之手、挖掘真相之手、裁判者，Trolloc Wars统一为兽魔人战争。
 
 ## 已确认的语境规则（2026-10-04）
 
@@ -327,3 +336,12 @@ Light、Seal、Shadowspawn、Great Lord/Dark Lord、Mother及五种力的元素�
 - 英文单数 `weave of` 以及明确同义的元素编织描述沿用表内 `weaves of` 的译法；普通元素、环境火焰或机械气流不据此扩写。
 - **Sever → 隔断、Fork → 分流、Unravel → 解构、Aura of Unraveling → 解构领域** 是固定能力名，不能另译为切断、分叉、拆散或解开；一般动作不强制能力化。
 - 本批40个不同名称对应此前42条源文相同的待确认条目。表内新增译名来自维护者确认，不将游戏原创命名冒称出版官方译名。维护者另提供维特·康加、军团践踏与军团鬼颅参考：[繁中人物讨论](https://www.ptt.cc/bbs/Fantasy/M.1570904515.A.61A.html)、[玩法说明](https://gamefaqs.gamespot.com/pc/142960-the-wheel-of-time-1999/faqs/22048)、[能力说明](https://gamefaqs.gamespot.com/pc/142960-the-wheel-of-time-1999/faqs/32189)。这些链接作为后续复核线索，当前不据此新增游戏技术结论。
+
+## 本批确认与语境裁定（2026-10-04）
+
+- 维护者批准剩余研究清单全部建议。出版译名与游戏原创音译的证据层级仍见研究清单，不把维护者确认冒称出版官方定名。
+- `Chosen` 在Myr_14/Myr_25中为暗影人物的敬称，使用“获选者”；这是项目语境译法，不声称已查得出版版固定译名。普通chosen（WarderInventory.Description的“被选中”）不套用。
+- `Questioner` 白袍众单位使用“裁判者”，所属组织为“裁判团”；`The Hand of the Light`为“圣光之手”。
+- `Machin Shin`与`Black Wind`统一“黑风”；Halfmen为魔达奥别称“半人”，不改写Myrddraal → 魔达奥。
+- Light信仰语境使用“光明”；Seal物件使用“封印”；Mother为玉座尊称，沿用“母亲”，并非生母。普通光照、封闭动作等不设无条件术语匹配。
+- 五种力使用地、风、火、水、魂；普通air气流仍按实际语境翻译。已确认的“风之力编织”等规则保持不变。
