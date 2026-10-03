@@ -135,3 +135,7 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 
 ## 当前字幕来源策略（2026-10-03）
 采用社区优先完整并集：所有同key冲突使用社区值，原版独有key保留。详见 [COMMUNITY_SOURCE_POLICY](docs/COMMUNITY_SOURCE_POLICY.md)。旧保守合并描述仅为历史记录。
+
+## 单音频多段字幕
+
+Tes_01的社区补全文本作为完整来源保留。将其翻译一次拼接显示会提前泄露后段台词；现有WOTPlayer只在ClientHearSound时调用一次SubtitleMessage，.int没有时间码语法。实验性LocalePlayer继承原AesSedai，为指定音频触发相对Level.TimeSeconds的分段字幕，旧声音与未配置字幕委托原实现；不是对原代码注入hook。原地图、语音和程序不改，需显式Class URL选择，实机兼容仍待验证。详见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。

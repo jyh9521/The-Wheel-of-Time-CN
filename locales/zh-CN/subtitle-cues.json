@@ -1,0 +1,27 @@
+{
+  "sound": "DialogA.Tes_01",
+  "source_sha256": "72944a5fb9b5cd9062efa7833f16a1f460f930a71443ab3958e0f0297727382b",
+  "timing_status": "local short-clip ASR estimates; in-game acceptance pending",
+  "cues": [
+    {
+      "begin": 0.0,
+      "end": 22.72,
+      "translation": "伊莱娜，要加入白塔，你必须接受试炼。眼前这件特法器正是为此准备的。依次穿过它的每一道拱门，你将直面自己最深的恐惧。不要惊慌，留心听我的声音，我会引导你走下去。你的训练就从这里开始。"
+    },
+    {
+      "begin": 23.88,
+      "end": 26.02,
+      "translation": "第一次试炼，面对的是过去。"
+    },
+    {
+      "begin": 26.94,
+      "end": 28.76,
+      "translation": "归途只会出现一次。"
+    },
+    {
+      "begin": 28.76,
+      "end": 30.82,
+      "translation": "坚定你的意志。"
+    }
+  ]
+}

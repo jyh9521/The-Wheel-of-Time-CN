@@ -1,0 +1,59 @@
+{
+  "compiler_inputs": [
+    {
+      "file": "System/UCC.exe",
+      "size": 110592,
+      "sha256": "4e5770ee848b6c3055152c721fc8e7e34c7fc46efd5b7bfbccafd342aac34045"
+    },
+    {
+      "file": "System/Core.dll",
+      "size": 794624,
+      "sha256": "94f55e23624333ed95f7cbe4026dd98f7219eb3e3ae5da8310763f901b4e3702"
+    },
+    {
+      "file": "System/Engine.dll",
+      "size": 1617920,
+      "sha256": "7df106e812194aacaaa7bb3cda2b1ac81261ceab15397af0251e2b7630c064ee"
+    },
+    {
+      "file": "System/Editor.dll",
+      "size": 1183744,
+      "sha256": "17501fde6dc62b56dfdc86851115c516271c2af99b20d802490c31029cdf28f7"
+    },
+    {
+      "file": "System/Core.u",
+      "size": 57940,
+      "sha256": "a91c9aab7b6f348e1fcda055b0a7f4b87298442d28e1edea917f9bdeecb56ca8"
+    },
+    {
+      "file": "System/Engine.u",
+      "size": 1003079,
+      "sha256": "d9d257100b5518d6e86d358c05e42d902081e5ea06c29e4ac3c7865f8589bef0"
+    },
+    {
+      "file": "System/Editor.u",
+      "size": 98576,
+      "sha256": "10ed9a4e241474e25a16e60b588f691b34895a1d723c10689692129f355378e3"
+    },
+    {
+      "file": "System/Legend.u",
+      "size": 906051,
+      "sha256": "162045861ab297068afa4ef5089e25d4a3c542ea57c8ac382c1ed99347cff086"
+    },
+    {
+      "file": "System/WOT.u",
+      "size": 9588318,
+      "sha256": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb"
+    },
+    {
+      "file": "System/Angreal.u",
+      "size": 25174993,
+      "sha256": "7d54e52873ba6a496bf0c7a1684c5081b107b1b4d79d4be77c443e637ebffbee"
+    },
+    {
+      "file": "System/WOTPawns.u",
+      "size": 17136920,
+      "sha256": "b72f1ae59c2216305890d1a628e7e946eec42509d3d1708f0ce7d146457058af"
+    }
+  ]
+}

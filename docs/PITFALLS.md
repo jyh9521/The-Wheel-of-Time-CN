@@ -35,3 +35,7 @@
 ## 开场缺段修正
 
 Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
+
+## 字幕完整来源不等于正确分段
+
+把Tes_01社区后段拼在同一显示条目会让后段在开场就出现。不要凭新增key假定游戏会自行调用，也不要把//注释MessageTrigger的历史MessageDelay当作正在执行的时间码。现行脚本跳过注释的同时跳过Sleep，恢复注释将改变调度，不能静默修改地图。局部ASR的英文专名可能错误，固定译文仍以已有源文和GLOSSARY为准。UCC未知commandlet可退出0；必须检查成功日志与新产物。详见[SUBTITLE_SEGMENTS](SUBTITLE_SEGMENTS.md)。

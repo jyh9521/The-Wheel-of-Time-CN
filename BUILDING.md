@@ -140,3 +140,7 @@ Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区
 
 ## 当前字幕来源策略（2026-10-03）
 采用社区优先完整并集：所有同key冲突使用社区值，原版独有key保留。详见 [COMMUNITY_SOURCE_POLICY](docs/COMMUNITY_SOURCE_POLICY.md)。旧保守合并描述仅为历史记录。
+
+## 实验性字幕分段模块
+
+单音频多段字幕的资源级实验模块需原版GOG UCC（不再分发），独立构建入口为`python -m tools.build.subtitle_runtime build --game-dir GAME --locale zh-CN --out build/subtitle-timing-audit/fixed`。它不改地图/音频/EXE/DLL，不自动替换玩家类或默认汉化构建；专用测试入口、安装/回滚及实机限制见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。编译成功不等于游戏中类选择、分段或存档兼容验收通过。

@@ -1,5 +1,3 @@
-# Runtime layer
+# Optional resource-level subtitle scheduler
 
-No hook, injected DLL or engine binary patch currently exists or is required for the verified BMP PoC.
-Resource adapters live in tools/font and tools/pack. Add runtime code only after a separately
-verified resource limitation and explicit task selection; preserve this separation.
+LocaleRuntime/Classes/LocalePlayer.uc inherits the existing AesSedai player and delegates original behavior. It schedules locale-configured cues for one sound. It is an explicitly enabled prototype, not a DLL hook or a default replacement. Build/rollback and unverified in-game compatibility are documented in ../../docs/SUBTITLE_SEGMENTS.md. No compiled package or original game asset is committed.
