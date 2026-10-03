@@ -1,0 +1,650 @@
+{
+  "locale": "zh-CN",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "status": "user acceptance pending; no game launched this batch",
+  "entries": [
+    {
+      "key": "Tes_01",
+      "translation": "伊莱娜，要加入白塔，你必须接受试炼。眼前这件特法器正是为此准备的。依次穿过它的每一道拱门，你将直面自己最深的恐惧。不要惊慌，留心听我的声音，我会引导你走下去。你的训练就从这里开始。",
+      "source_length": 350,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_02",
+      "translation": "别让恐惧支配你，伊莱娜。穿过拱门。",
+      "source_length": 65,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_03",
+      "translation": "你等得越久，情况就会越糟。",
+      "source_length": 42,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_04",
+      "translation": "孩子，别让我失望。",
+      "source_length": 27,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_05",
+      "translation": "孩子，你必须直面恐惧，否则就会被逐出白塔。",
+      "source_length": 63,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_06",
+      "translation": "我不能强迫你，伊莱娜。这件事必须由你自己完成。",
+      "source_length": 65,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_07",
+      "translation": "我在你身上倾注了许多心血。别让我蒙羞。",
+      "source_length": 44,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_08",
+      "translation": "责任重于山，死亡轻于羽。死亡也不能让你逃避恐惧。",
+      "source_length": 105,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_09",
+      "translation": "别向恐惧屈服，伊莱娜。你必须成功。",
+      "source_length": 55,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_10",
+      "translation": "伊莱娜，你小时候很好奇。一次塌方将你困在这座黑暗的洞穴里。你害怕黑暗，在被堵住的入口处蜷缩了几个小时。最后，村里有人把你挖了出来。这一次不会有人来救你。你从未真正探索过这座洞穴，所以这里由你的猜想构成，呈现出你所恐惧的模样。你必须面对它，逃出去。",
+      "source_length": 381,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_11",
+      "translation": "听从我的指引，一切都会顺利。这片洞穴里可以安全走动。四处探索一下。",
+      "source_length": 113,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_12",
+      "translation": "孩子，别动！",
+      "source_length": 18,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_13",
+      "translation": "地震震开了通道。沿着它走，但要小心。你可能需要跳过一些碎石。",
+      "source_length": 108,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_14",
+      "translation": "伊莱娜，出口就在眼前，却够不着。一定还有别的路能通往拱门。鼓起勇气，跳下去。",
+      "source_length": 117,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_15",
+      "translation": "你可以害怕，但要直面恐惧，别逃避。",
+      "source_length": 53,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_16",
+      "translation": "很好，孩子。水让你免于受伤，不过你还是可以采些这里的草根，留着以后用。它们能疗伤。",
+      "source_length": 165,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_17",
+      "translation": "孩子，你受伤了。采些洞里的草根吧，它们能疗伤。",
+      "source_length": 98,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_18",
+      "translation": "休息一会儿。静止不动时，草根的疗效更好。",
+      "source_length": 54,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_19",
+      "translation": "你要知道，静止不动时，草根的疗效更好。",
+      "source_length": 59,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_20",
+      "translation": "看来唯一的出路在水里。潜下去。",
+      "source_length": 56,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_21",
+      "translation": "别在水里待太久。两仪师也会溺水。",
+      "source_length": 47,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_22",
+      "translation": "有光的地方就有出口。朝着光游过去。",
+      "source_length": 62,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_23",
+      "translation": "这片水潭还有另一个出口。游过去。",
+      "source_length": 47,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_24",
+      "translation": "上面还有另一个出口。游过去。",
+      "source_length": 43,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_25",
+      "translation": "伊莱娜，快离开水里！你快淹死了。",
+      "source_length": 47,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_26",
+      "translation": "拱门就在附近，但你得先爬上去。道路已经断裂，你必须跳过缺口。当心地震。",
+      "source_length": 124,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_27",
+      "translation": "归途只会出现一次。穿过拱门。",
+      "source_length": 56,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_28",
+      "translation": "伊莱娜，你做得很好，但这才刚开始。第二次试炼，面对的是现在。归途只会出现一次。坚定你的意志。",
+      "source_length": 130,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_29",
+      "translation": "伊莱娜，你几乎没有导引至上力的能力，这让你备受掣肘。对失败的恐惧使你依赖特法器。可你仍躲在白塔里做研究，逃避外面的世界。只有新法器的诱惑才能让你离开白塔的庇护。这里是一名强大的暗黑之友的地下室，他也收藏特法器，并用陷阱保护藏品。你对这些法器的掌握，足以让你活着逃出去吗？",
+      "source_length": 458,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_30",
+      "translation": "伊莱娜，试试那扇门，虽然门上的锁不是个好兆头。",
+      "source_length": 58,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_31",
+      "translation": "伊莱娜，试试那扇门。",
+      "source_length": 21,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_32",
+      "translation": "看来行不通。你得在这间储藏室里寻找别的出口，或找到这扇门的钥匙。",
+      "source_length": 97,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_33",
+      "translation": "啊，一件特法器。拿起来。",
+      "source_length": 28,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_34",
+      "translation": "伊莱娜，快点。你可不想在这名暗黑之友的巢穴里与他交手。",
+      "source_length": 69,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_35",
+      "translation": "伊莱娜，快走。你的时间不多了。",
+      "source_length": 39,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_36",
+      "translation": "你的经验能帮助你辨认新法器的用途。捡起特法器后，查看它，了解使用方法。",
+      "source_length": 144,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_37",
+      "translation": "你可以用气流冲击打破或推开这些箱子。有些箱子包着铁，打不破；另一些则很容易打开。",
+      "source_length": 137,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_38",
+      "translation": "伊莱娜，打破这个箱子。",
+      "source_length": 30,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_39",
+      "translation": "伊莱娜，打破这些箱子。",
+      "source_length": 32,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_40",
+      "translation": "有些箱子里装着物品，这个里面是一件光球特法器。",
+      "source_length": 64,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_41",
+      "translation": "捡起来。",
+      "source_length": 11,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_42",
+      "translation": "你触发了暗黑之友的一处陷阱。它保护着壁龛里的钥匙。",
+      "source_length": 84,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_43",
+      "translation": "拿上钥匙。",
+      "source_length": 13,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_44",
+      "translation": "这道闸门没有加固。你应该能用气流冲击把它打破。",
+      "source_length": 89,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_45",
+      "translation": "再试试那扇门。这次你有钥匙了。",
+      "source_length": 47,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_46",
+      "translation": "这条走廊被一道加固的闸门挡住了，只有另一侧的拉杆才能打开它。你打不破这道门。",
+      "source_length": 120,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_47",
+      "translation": "不过，这里还有一件法器。拿起来，研究一下。特法器周围的光芒意味着：用完全部次数后，它会在这里重新出现。",
+      "source_length": 159,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_48",
+      "translation": "走到闸门前，使用移位法器。",
+      "source_length": 53,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_49",
+      "translation": "现在拉动拉杆，打开闸门。",
+      "source_length": 42,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_50",
+      "translation": "你用掉了移位法器唯一的一次使用机会，它便重新出现了。再拿起它，用它穿过剩下的闸门。",
+      "source_length": 135,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_51",
+      "translation": "这是目前最致命的陷阱：接连不断的火球挡住了去路。不过，这里的火焰护盾法器能抵御火之编织，也能保护你免受环境中的火焰伤害。拿起并使用它，然后沿着这条走廊走过去。",
+      "source_length": 245,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_52",
+      "translation": "火焰护盾是一种被动防御，还有更强大的防御法器，比如这里的反射特法器。拿起来，研究一下，再用它对付陷阱。",
+      "source_length": 172,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_53",
+      "translation": "伊莱娜，这里很暗，你可以用光球照明。",
+      "source_length": 59,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_54",
+      "translation": "你已经收集了不少特法器。何不用新得到的火球法器对付这处墙上的陷阱？",
+      "source_length": 122,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_55",
+      "translation": "伊莱娜，拱门就在那儿，只差几步了。",
+      "source_length": 49,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_56",
+      "translation": "孩子，走路时得看清脚下。现在快爬上墙，离开这个可怕的地方。拱门不会一直留在那里。",
+      "source_length": 136,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_57",
+      "translation": "伊莱娜，没时间探索了。快去拱门！",
+      "source_length": 59,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_58",
+      "translation": "归途只会出现一次。",
+      "source_length": 27,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_59",
+      "translation": "孩子，拱门！快去拱门！",
+      "source_length": 26,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_60",
+      "translation": "你必须离开这里。",
+      "source_length": 20,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_61",
+      "translation": "姑娘，别犹豫。拱门不会一直留在那里。",
+      "source_length": 51,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_62",
+      "translation": "伊莱娜，镇定。你经受了许多，也学到了许多。我知道每次试炼都很艰难，但接下来才是最难的一关。第三次试炼，面对的是未来。归途只会出现一次。坚定你的意志。",
+      "source_length": 212,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_63",
+      "translation": "这一次，你是白塔的使者。一次外交任务将你带到了法达拉，这是一座位于边境地区的前哨堡垒，守军将暗帝的势力阻挡在妖境之内。他们没料到突如其来的集中猛攻，堡垒被攻陷了，敌人无疑是在找你。如今，兽魔人和魔达奥找到你藏身的房间，只是时间问题。你不能导引至上力，只能依靠同行的两仪师和护法保护，但他们寡不敌众。你唯一的机会，就是给入侵者设置陷阱。",
+      "source_length": 593,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_64",
+      "translation": "这里只有一个出口，入侵者很可能就在门外。他们会从那里进来。从这扇门到你所在的大厅有两条路。你必须把入侵者引入其中一条走廊，确保他们踩中陷阱。放置一堵临时墙，堵住较短的那条路。",
+      "source_length": 326,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_65",
+      "translation": "孩子，别放那里。那样没什么用。再试一次。",
+      "source_length": 58,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_66",
+      "translation": "那里也不行。再试一次。",
+      "source_length": 22,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_67",
+      "translation": "那里也不行。",
+      "source_length": 17,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_68",
+      "translation": "别放那里。",
+      "source_length": 10,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_69",
+      "translation": "很好，孩子。现在沿着剩下的走廊放置两个长矛陷阱。那里足够狭窄，长矛能发挥作用。",
+      "source_length": 123,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_70",
+      "translation": "很好。现在再放一个。",
+      "source_length": 21,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_71",
+      "translation": "很好，现在再放一个长矛陷阱。",
+      "source_length": 36,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_72",
+      "translation": "长矛虽然能伤到兽魔人，却拦不住它们；它们多半只会更加愤怒，冲出走廊，闯进大厅。在出口处挖个陷坑，倒是很适合迎接它们。",
+      "source_length": 193,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_73",
+      "translation": "现在安排你的同伴：那位两仪师和她的护法。把他们留在大厅里最稳妥，但你也可以把他们安排在任何地方。",
+      "source_length": 146,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_74",
+      "translation": "如果愿意，你可以向两仪师下令。让她守卫当前位置，会是个有用的命令。她会自动命令附近的护法做同样的事。",
+      "source_length": 167,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_75",
+      "translation": "孩子，再做一项防备：启动大厅后方壁龛前的闸门。它或许能救你一命。",
+      "source_length": 131,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_76",
+      "translation": "伊莱娜，你做得很好，也已经尽力做好了准备。鼓起勇气。成群的兽魔人正在门外聚集，这扇门挡不了它们多久。",
+      "source_length": 161,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_77",
+      "translation": "伊莱娜，拱门出现了。你现在必须离开。",
+      "source_length": 51,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_78",
+      "translation": "别耽搁！拱门不会一直留在那里！",
+      "source_length": 42,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_79",
+      "translation": "伊莱娜，去拱门。趁你还能逃走，快离开。你已经没有办法救你的同伴了。",
+      "source_length": 96,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    },
+    {
+      "key": "Tes_80",
+      "translation": "伊莱娜，你已洗净尘世的牵绊。你来到我们面前，心灵与灵魂都已洗净。如今你已与白塔缔结誓约。你准备好了。",
+      "source_length": 174,
+      "visual": "pending",
+      "timing": "pending",
+      "trigger": "pending"
+    }
+  ]
+}

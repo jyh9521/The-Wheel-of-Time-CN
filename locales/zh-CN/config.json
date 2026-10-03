@@ -11,6 +11,6 @@
   "validation": {
     "max_characters": 4096
   },
-  "status": "49 base draft entries; optional recovered subtitles; not complete translation",
+  "status": "116 base draft entries incl. 80 tutorial subtitles; optional recovered subtitles; user QA pending",
   "subtitle_rows": "subtitles.json"
 }
