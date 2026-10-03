@@ -107,3 +107,7 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 ## 非空草稿与完成度
 
 2026-10-04首轮覆盖1002条核心玩家文本。未知专名保留英文并登记GLOSSARY，不用临时音译冒充既定译名。@forget@、@grunt@、@The flows just... vanished.@仍按现有保护规则原样保留，待证明其是否只是引号标记后再处理；不能为通过校验删控制符。validate的0空译文不代表全中文。运行tools.validate.text_coverage查看源文相同条目与遗漏，并逐项处理混合译文中的英文。
+
+## 已确认能力名与语境审核（2026-10-04）
+
+译名以GLOSSARY.md为唯一依据。能力名称与普通词义分开：Shift能力为瞬移，键名不翻译；Sister直呼为姐妹，单位/两仪师身份为两仪师；artifact先核对明确指代，未证实类型时不自动升级为特法器。五种元素编织采用词表规定的火/风/水/地/魂之力编织，单数和同义描述沿用。Sever/Fork/Unravel/Aura of Unraveling固定为隔断/分流/解构/解构领域。普通动作导致关键词误报时，必须在唯一词表记录精确ID与source SHA例外；当前爆裂结界解体及小说引文污染不是相应能力名称。

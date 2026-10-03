@@ -48,7 +48,7 @@
     "section": "AngrealInvAirBurst",
     "key": "Description",
     "occurrence": 1,
-    "translation": "这件特法器将气流编织成近距离冲击，击中目标时如重锤般造成伤害。它会自动补充力量，不消耗充能。",
+    "translation": "气流冲击在你正前方极近距离推出一道短促的风之力编织。气流击中目标时如重锤般造成显著伤害。这件特法器会不断从力量之源补充能量，不消耗使用次数。",
     "source_sha256": "e82509a1d1b811ad77645400c501c12f5f2ade59c2a480b72cfcf3fd7c4c5380",
     "source_length": 289,
     "tokens": [],
@@ -708,7 +708,7 @@
     "section": "DialogA",
     "key": "Tes_29",
     "occurrence": 1,
-    "translation": "伊莱娜，你几乎没有导引至上力的能力，这让你备受掣肘。对失败的恐惧使你依赖特法器。可你仍躲在白塔里做研究，逃避外面的世界。只有新法器的诱惑才能让你离开白塔的庇护。这里是一名强大的暗黑之友的地下室，他也收藏特法器，并用陷阱保护藏品。你对这些法器的掌握，足以让你活着逃出去吗？",
+    "translation": "伊莱娜，你几乎没有导引至上力的能力，这让你备受掣肘。对失败的恐惧使你依赖特法器。可你仍躲在白塔里做研究，逃避外面的世界。只有新特法器的诱惑才能让你离开白塔的庇护。这里是一名强大的暗黑之友的地下室，他也收藏特法器，并用陷阱保护藏品。你对这些特法器的掌握，足以让你活着逃出去吗？",
     "source_sha256": "86c4bb84674eacc42c12221c7c8658bb3b47b16de0148495419818b46d755af2",
     "source_length": 458,
     "tokens": [],
@@ -785,7 +785,7 @@
     "section": "DialogA",
     "key": "Tes_36",
     "occurrence": 1,
-    "translation": "你的经验能帮助你辨认新法器的用途。捡起特法器后，查看它，了解使用方法。",
+    "translation": "你的经验能帮助你辨认新特法器的用途。捡起特法器后，查看它，了解使用方法。",
     "source_sha256": "6a69006fd3125ede74edda7b663b80d9720f0c1d6feb6ee1f2a7d8a06d7d532e",
     "source_length": 144,
     "tokens": [],
@@ -906,7 +906,7 @@
     "section": "DialogA",
     "key": "Tes_47",
     "occurrence": 1,
-    "translation": "不过，这里还有一件法器。拿起来，研究一下。特法器周围的光芒意味着：用完全部次数后，它会在这里重新出现。",
+    "translation": "不过，这里还有一件特法器。拿起来，研究一下。特法器周围的光芒意味着：用完全部次数后，它会在这里重新出现。",
     "source_sha256": "fefd01ad58dda99e527a3129421c235f518fc26953967eda9f1240a06003bc82",
     "source_length": 159,
     "tokens": [],
@@ -917,7 +917,7 @@
     "section": "DialogA",
     "key": "Tes_48",
     "occurrence": 1,
-    "translation": "走到闸门前，使用移位法器。",
+    "translation": "走到闸门前，使用瞬移特法器。",
     "source_sha256": "4465023fad31c6f0df7f688f82f4d70b5564a976564bb71f7f525fb3afddde77",
     "source_length": 53,
     "tokens": [],
@@ -939,7 +939,7 @@
     "section": "DialogA",
     "key": "Tes_50",
     "occurrence": 1,
-    "translation": "你用掉了移位法器唯一的一次使用机会，它便重新出现了。再拿起它，用它穿过剩下的闸门。",
+    "translation": "你用掉了瞬移特法器唯一的一次使用机会，它便重新出现了。再拿起它，用它穿过剩下的闸门。",
     "source_sha256": "3001ac6b1d69ef4847b84de024c01dcdae9f209ed8992fe08bb2ba84d6ff0aeb",
     "source_length": 135,
     "tokens": [],
@@ -950,7 +950,7 @@
     "section": "DialogA",
     "key": "Tes_51",
     "occurrence": 1,
-    "translation": "这是目前最致命的陷阱：接连不断的火球挡住了去路。不过，这里的火焰护盾法器能抵御火之编织，也能保护你免受环境中的火焰伤害。拿起并使用它，然后沿着这条走廊走过去。",
+    "translation": "这是目前最致命的陷阱：接连不断的火球挡住了去路。不过，这里的火焰护盾特法器能抵御火之力编织，也能保护你免受环境中的火焰伤害。拿起并使用它，然后沿着这条走廊走过去。",
     "source_sha256": "4256bbb6dccdad56d4115c65b51a621d952da29d7fc6fd4040abd0392c451cb5",
     "source_length": 245,
     "tokens": [],
@@ -961,7 +961,7 @@
     "section": "DialogA",
     "key": "Tes_52",
     "occurrence": 1,
-    "translation": "火焰护盾是一种被动防御，还有更强大的防御法器，比如这里的反射特法器。拿起来，研究一下，再用它对付陷阱。",
+    "translation": "火焰护盾是一种被动防御，还有更强大的防御特法器，比如这里的反射特法器。拿起来，研究一下，再用它对付陷阱。",
     "source_sha256": "4c854d703c4d84c5d366b7ba47ea9e0e5fa6a0057bea926b082a0aa072da34fd",
     "source_length": 172,
     "tokens": [],
@@ -983,7 +983,7 @@
     "section": "DialogA",
     "key": "Tes_54",
     "occurrence": 1,
-    "translation": "你已经收集了不少特法器。何不用新得到的火球法器对付这处墙上的陷阱？",
+    "translation": "你已经收集了不少特法器。何不用新得到的火球特法器对付这处墙上的陷阱？",
     "source_sha256": "aa28b77c11e3224317a10465a02c47cc3a829642ef8b19467f2139e8221f8a9d",
     "source_length": 122,
     "tokens": [],
@@ -2726,7 +2726,7 @@
     "source_sha256": "84bfc5aa48fea98cd7b7dc3a284d75e1316b7fd1d1a85cc5324eb494879b14fd",
     "source_length": 17,
     "tokens": [],
-    "translation": "已安装ViewCam",
+    "translation": "已安装观察镜",
     "status": "draft"
   },
   {
@@ -2737,7 +2737,7 @@
     "source_sha256": "522c57d9e86c887eebd219e438aec42eeedb62e25ed10d5f1f65319bb0d79567",
     "source_length": 7,
     "tokens": [],
-    "translation": "ViewCam",
+    "translation": "观察镜",
     "status": "draft"
   },
   {
@@ -3760,7 +3760,7 @@
     "source_sha256": "a00257cb93160bba19c37565e217acc5c236701c59a60e6605fe816390589124",
     "source_length": 10,
     "tokens": [],
-    "translation": "Wit Congar",
+    "translation": "维特·康加",
     "status": "draft"
   },
   {
@@ -4797,7 +4797,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 煞达罗苟斯历史悠久，城里可能藏着能助你生存的法器。",
+    "translation": "%b 煞达罗苟斯历史悠久，城里可能藏着能助你生存的魔法器物。",
     "status": "draft"
   },
   {
@@ -5000,7 +5000,7 @@
     "source_sha256": "ee911f062f5af8c7ac6b269e0228547755ecff3fea173e1fbe2bce3ef5d7ea3f",
     "source_length": 475,
     "tokens": [],
-    "translation": "@疑问太多，却没有一个答案——只有玉座能改变这一切。她在暗格里给我留下的字条令我安心；显然，她还活着，并持有剩下的封印。我希望她的法器能引我安全找到她。我把其他法器交给了那些受我信任、守卫我房间的两仪师。不过，我仍有些担心。用来阻止人进入白塔密库的陷阱，必然既狡猾又致命。@",
+    "translation": "@疑问太多，却没有一个答案——只有玉座能改变这一切。她在暗格里给我留下的字条令我安心；显然，她还活着，并持有剩下的封印。我希望她的魔法器物能引我安全找到她。我把其他魔法器物交给了那些受我信任、守卫我房间的两仪师。不过，我仍有些担心。用来阻止人进入白塔密库的陷阱，必然既狡猾又致命。@",
     "status": "draft"
   },
   {
@@ -5013,7 +5013,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 使用Tracer，找到密库入口。",
+    "translation": "%b 使用追迹，找到密库入口。",
     "status": "draft"
   },
   {
@@ -5026,7 +5026,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 使用Trap Detect，并保持谨慎、灵活，避开沿途的普通陷阱。",
+    "translation": "%b 使用陷阱侦测，并保持谨慎、灵活，避开沿途的普通陷阱。",
     "status": "draft"
   },
   {
@@ -5065,7 +5065,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 如果迷了路，使用Tracer找出正确路径。",
+    "translation": "%b 如果迷了路，使用追迹找出正确路径。",
     "status": "draft"
   },
   {
@@ -5152,7 +5152,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 谁知道那些不幸的旅人留下了什么法器呢？",
+    "translation": "%b 谁知道那些不幸的旅人留下了什么魔法器物呢？",
     "status": "draft"
   },
   {
@@ -5309,7 +5309,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 利用这些法器杀出白袍众要塞，前往传送石，试着追寻失踪探险队幸存者的足迹。",
+    "translation": "%b 利用这些魔法器物杀出白袍众要塞，前往传送石，试着追寻失踪探险队幸存者的足迹。",
     "status": "draft"
   },
   {
@@ -5416,7 +5416,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 守卫出现前，你还有短暂的准备时间。找找幸存者可能藏在牢房里的法器，再熟悉周围环境。",
+    "translation": "%b 守卫出现前，你还有短暂的准备时间。找找幸存者可能藏在牢房里的魔法器物，再熟悉周围环境。",
     "status": "draft"
   },
   {
@@ -5442,7 +5442,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 不要只靠攻击法器击败守卫。你必须利用环境，扭转劣势。",
+    "translation": "%b 不要只靠攻击魔法器物击败守卫。你必须利用环境，扭转劣势。",
     "status": "draft"
   },
   {
@@ -5538,7 +5538,7 @@
     "source_sha256": "34b50f166535d6aefd83517ce7166093a9795f19f77d290eba12ec9526740b21",
     "source_length": 370,
     "tokens": [],
-    "translation": "@我的目标很明确：抢在任何敌人之前，集齐四枚封印。他们打算用封印做的事，令人不敢想象。我多半得潜入其他人守卫森严的要塞，偷走封印。不过，Hound倒是帮了我一个忙，让所有人都站在同一起点。没人能导引至上力，我们都只能依赖找到的特法器。这对我有利。",
+    "translation": "@我的目标很明确：抢在任何敌人之前，集齐四枚封印。他们打算用封印做的事，令人不敢想象。我多半得潜入其他人守卫森严的要塞，偷走封印。不过，猎犬倒是帮了我一个忙，让所有人都站在同一起点。没人能导引至上力，我们都只能依赖找到的特法器。这对我有利。",
     "status": "draft"
   },
   {
@@ -5809,7 +5809,7 @@
     "source_sha256": "5a5c3f75ebced12129fcfd5391e500813b9c9b22ae6be6ff6ac7de707d8215d7",
     "source_length": 4,
     "tokens": [],
-    "translation": "Dart",
+    "translation": "飞矢",
     "status": "draft"
   },
   {
@@ -5820,7 +5820,7 @@
     "source_sha256": "1fbe6cc1c6cc24bc08525efd40d55bc86b9e04a9e9ea641cf47a174d2985e6fd",
     "source_length": 210,
     "tokens": [],
-    "translation": "Dart特法器将至上力凝聚成一道微弱的能量。单次攻击或许伤害不大，但它能在极短时间内向敌人连续发射多枚Dart。",
+    "translation": "飞矢特法器将至上力凝聚成一道微弱的能量。单次攻击或许伤害不大，但它能在极短时间内向敌人连续发射多枚飞矢。",
     "status": "draft"
   },
   {
@@ -5842,7 +5842,7 @@
     "source_sha256": "9ce23c6df86f86148b43fc38c8535ffcb9eedda23855a10891fc4d451f37dc10",
     "source_length": 28,
     "tokens": [],
-    "translation": "你获得了Dart 特法器",
+    "translation": "你获得了飞矢特法器",
     "status": "draft"
   },
   {
@@ -5853,7 +5853,7 @@
     "source_sha256": "03bf10496520a845ec7d35e287fd0414782c1139107120b1163aff110cb26372",
     "source_length": 8,
     "tokens": [],
-    "translation": "Disguise",
+    "translation": "伪装",
     "status": "draft"
   },
   {
@@ -5864,7 +5864,7 @@
     "source_sha256": "7fa9fcd19759345f8616036eb7109f2cece18579282bd8e10f5fb6b5a932bdb6",
     "source_length": 119,
     "tokens": [],
-    "translation": "只要持续使用Disguise，你就会披上距离最近的生物或人物的外貌。",
+    "translation": "只要持续使用伪装，你就会披上距离最近的生物或人物的外貌。",
     "status": "draft"
   },
   {
@@ -5886,7 +5886,7 @@
     "source_sha256": "80ff3b08a2a4f799fe0712bc6240e3bd5040885b2186e54ecf8c08621ac096f6",
     "source_length": 32,
     "tokens": [],
-    "translation": "你获得了Disguise 特法器",
+    "translation": "你获得了伪装特法器",
     "status": "draft"
   },
   {
@@ -5930,7 +5930,7 @@
     "source_sha256": "b17d9e8225881fbb46ac90b182a510cf224d492df12a4687673f5ae75bba5c19",
     "source_length": 32,
     "tokens": [],
-    "translation": "你获得了烈火 特法器",
+    "translation": "你获得了烈火特法器",
     "status": "draft"
   },
   {
@@ -5952,7 +5952,7 @@
     "source_sha256": "36951c674a8da47f21e7fb8dcf8185e6a4b41bce80e3bc1dc450e537b8f1074e",
     "source_length": 15,
     "tokens": [],
-    "translation": "Chain Lightning",
+    "translation": "连锁闪电",
     "status": "draft"
   },
   {
@@ -5963,7 +5963,7 @@
     "source_sha256": "c932be0e430974e451110fc0df2ffbf1d05b6ff1bb882786e10fd8e39bf1fedf",
     "source_length": 502,
     "tokens": [],
-    "translation": "持续使用Chain Lightning时，特法器会在你周围编织电场。触碰目标会使你与其之间建立电流连接；触碰更多目标，便能建立更多连接。闪电会不断伤害所有目标，直到使用次数耗尽、你停止使用、你受到伤害，或目标跑得足够远。任何一种情况都会断开电流。在水中使用时，Chain Lightning会影响水里的所有人，包括使用者。",
+    "translation": "持续使用连锁闪电时，特法器会在你周围编织电场。触碰目标会使你与其之间建立电流连接；触碰更多目标，便能建立更多连接。闪电会不断伤害所有目标，直到使用次数耗尽、你停止使用、你受到伤害，或目标跑得足够远。任何一种情况都会断开电流。在水中使用时，连锁闪电会影响水里的所有人，包括使用者。",
     "status": "draft"
   },
   {
@@ -5985,7 +5985,7 @@
     "source_sha256": "cff7f5b03521c65469a596368225e7cdfe64478ee7dbaf94d62638a1844a9fe8",
     "source_length": 39,
     "tokens": [],
-    "translation": "你获得了Chain Lightning 特法器",
+    "translation": "你获得了连锁闪电特法器",
     "status": "draft"
   },
   {
@@ -6007,7 +6007,7 @@
     "source_sha256": "c976afe00288482575b7680eb7b742f74eaeb3aac7fab39be31717e7986af99f",
     "source_length": 9,
     "tokens": [],
-    "translation": "Whirlwind",
+    "translation": "旋风",
     "status": "draft"
   },
   {
@@ -6018,7 +6018,7 @@
     "source_sha256": "27e8eee975dc76523e63f75c19274c4bcfeb677316a5040c7c1d958ed5102a31",
     "source_length": 122,
     "tokens": [],
-    "translation": "持续使用Whirlwind时，目标会旋转着升入空中，沿你指向的方向移动。",
+    "translation": "持续使用旋风时，目标会旋转着升入空中，沿你指向的方向移动。",
     "status": "draft"
   },
   {
@@ -6040,7 +6040,7 @@
     "source_sha256": "4b3007b4a46da7c02c210044c5bb340de95f8d30e6b61623a9777faf7f99bce1",
     "source_length": 33,
     "tokens": [],
-    "translation": "你获得了Whirlwind 特法器",
+    "translation": "你获得了旋风特法器",
     "status": "draft"
   },
   {
@@ -6051,7 +6051,7 @@
     "source_sha256": "1719e0099fb807389fdcfc4ea5d2fa36442af71de1ee7ea8b82eebdfb7928f76",
     "source_length": 6,
     "tokens": [],
-    "translation": "Tracer",
+    "translation": "追迹",
     "status": "draft"
   },
   {
@@ -6062,7 +6062,7 @@
     "source_sha256": "34d25612bb4de741331846e558095a30770c55014cbb2e729e593828d5c6718f",
     "source_length": 137,
     "tokens": [],
-    "translation": "Tracer会编织出追寻最近封印的力量，沿途留下一道发光轨迹。短暂时间后，轨迹会逐渐消失。",
+    "translation": "追迹会编织出追寻最近封印的力量，沿途留下一道发光轨迹。短暂时间后，轨迹会逐渐消失。",
     "status": "draft"
   },
   {
@@ -6084,7 +6084,7 @@
     "source_sha256": "2a72eaaf3b149f70e50ee6a8f944cd518d2d3c07e3e274bccdd533c0b97d3ea1",
     "source_length": 30,
     "tokens": [],
-    "translation": "你获得了Tracer 特法器",
+    "translation": "你获得了追迹特法器",
     "status": "draft"
   },
   {
@@ -6095,7 +6095,7 @@
     "source_sha256": "4fb1b42609b854f44468b56577005434fcf72fffd4fd2792647174a1abb00614",
     "source_length": 11,
     "tokens": [],
-    "translation": "Distant Eye",
+    "translation": "远视之眼",
     "status": "draft"
   },
   {
@@ -6108,7 +6108,7 @@
     "tokens": [
       "@forget@"
     ],
-    "translation": "首次使用Distant Eye会固定它的位置。丢弃特法器会使它@forget@原来的位置。放置后，再次使用便能透过它观察，只要你保持静止，就能看见它所见的一切。观察时再次使用，会向它瞄准的目标连续发射Dart。悬浮的眼睛本身很脆弱，容易被摧毁。",
+    "translation": "首次使用远视之眼会固定它的位置。丢弃特法器会使它@forget@原来的位置。放置后，再次使用便能透过它观察，只要你保持静止，就能看见它所见的一切。观察时再次使用，会向它瞄准的目标连续发射飞矢。悬浮的眼睛本身很脆弱，容易被摧毁。",
     "status": "draft"
   },
   {
@@ -6130,7 +6130,7 @@
     "source_sha256": "e70723f9ef2cb89833fc78fd1b65b50a1b1d7b9e1494365ec02a82afd15a206b",
     "source_length": 35,
     "tokens": [],
-    "translation": "你获得了Distant Eye 特法器",
+    "translation": "你获得了远视之眼特法器",
     "status": "draft"
   },
   {
@@ -6152,7 +6152,7 @@
     "source_sha256": "538889070df81c8c41f09d6e0716915cf4741989154e9ebbc18616f7b3e60ff2",
     "source_length": 5,
     "tokens": [],
-    "translation": "Sever",
+    "translation": "隔断",
     "status": "draft"
   },
   {
@@ -6163,7 +6163,7 @@
     "source_sha256": "7df22079151b502ed0bd5170469718391e5cd6c60ee79e35247f537670864947",
     "source_length": 184,
     "tokens": [],
-    "translation": "这件特法器会在你与目标之间竖起一道屏障。除非持续使用，否则屏障只能维持短暂时间。所有击中屏障的编织都会被解开。",
+    "translation": "这件特法器会在你与目标之间竖起一道屏障。除非持续使用，否则屏障只能维持短暂时间。所有击中屏障的编织都会被解构。",
     "status": "draft"
   },
   {
@@ -6185,7 +6185,7 @@
     "source_sha256": "1cfa8caeed67076e210eb72cdb430569329924ea3858acb767e89a055bbbdcd7",
     "source_length": 29,
     "tokens": [],
-    "translation": "你获得了Sever 特法器",
+    "translation": "你获得了隔断特法器",
     "status": "draft"
   },
   {
@@ -6196,7 +6196,7 @@
     "source_sha256": "8e5b1a73152cf01c1ce614f31711fc4159e8ecc177cd4c02975ed0145b3d3d45",
     "source_length": 4,
     "tokens": [],
-    "translation": "Fork",
+    "translation": "分流",
     "status": "draft"
   },
   {
@@ -6207,7 +6207,7 @@
     "source_sha256": "d1be8ac361d7576d3a39982c7b6933d56ac5a2bf61a416b74bdee689065b341f",
     "source_length": 164,
     "tokens": [],
-    "translation": "Fork会短暂形成一道护盾。穿透护盾的法器编织仍会影响你，但护盾会复制一次攻击，将它射回施术者。",
+    "translation": "分流会短暂形成一道护盾。穿透护盾的法器编织仍会影响你，但护盾会复制一次攻击，将它射回施术者。",
     "status": "draft"
   },
   {
@@ -6229,7 +6229,7 @@
     "source_sha256": "b8b8697081a91170e4d8cf506ef3d28d80a0656ef7272dbc2b59b671da367f78",
     "source_length": 28,
     "tokens": [],
-    "translation": "你获得了Fork 特法器",
+    "translation": "你获得了分流特法器",
     "status": "draft"
   },
   {
@@ -6284,7 +6284,7 @@
     "source_sha256": "b0ecfb76ed946c5c097f7e834d8f4ae572576aeeef7a9aae876290cd9b0af82f",
     "source_length": 12,
     "tokens": [],
-    "translation": "Andilay Root",
+    "translation": "安迪莱根",
     "status": "draft"
   },
   {
@@ -6295,7 +6295,7 @@
     "source_sha256": "6ec06b4a1c342d2b89d11352e82526bea29a3a97b18f63f9b3e0b6e962dcca81",
     "source_length": 25,
     "tokens": [],
-    "translation": "你找到了一株Andilay Root",
+    "translation": "你找到了一株安迪莱根",
     "status": "draft"
   },
   {
@@ -6306,7 +6306,7 @@
     "source_sha256": "421acf13c1cb044e40e0fe1c1e88656e604113be888d92b2ecbb136252023b17",
     "source_length": 4,
     "tokens": [],
-    "translation": "Heal",
+    "translation": "治疗",
     "status": "draft"
   },
   {
@@ -6317,7 +6317,7 @@
     "source_sha256": "766ca7ca52a44075cc64132434ecd21e049bfb4659cfc96998ed1f67f6904fc9",
     "source_length": 71,
     "tokens": [],
-    "translation": "每次使用Heal特法器，都会少量恢复你的生命。",
+    "translation": "每次使用治疗特法器，都会少量恢复你的生命。",
     "status": "draft"
   },
   {
@@ -6339,7 +6339,7 @@
     "source_sha256": "e6b358e1bbc69edb82af8bbe86a77dc28b9fc099f705811a83a5f972fbc4afdc",
     "source_length": 28,
     "tokens": [],
-    "translation": "你获得了Heal 特法器",
+    "translation": "你获得了治疗特法器",
     "status": "draft"
   },
   {
@@ -6350,7 +6350,7 @@
     "source_sha256": "2e544a292f6979edfc57eb35f03b1a606ae021747e6f8d6b809e46f699722be5",
     "source_length": 5,
     "tokens": [],
-    "translation": "移位",
+    "translation": "瞬移",
     "status": "draft"
   },
   {
@@ -6361,7 +6361,7 @@
     "source_sha256": "2f1d7b768eaf28d54dc9b74f5e2a3259d1fd2f6b15513e2a67c1564f074907ec",
     "source_length": 187,
     "tokens": [],
-    "translation": "只要目的地有足够空间，移位就能让你穿过所有障碍，瞬间出现在前方几步之外。所有正在锁定你的编织都会失去目标。",
+    "translation": "只要目的地有足够空间，瞬移就能让你穿过所有障碍，瞬间出现在前方几步之外。所有正在锁定你的编织都会失去目标。",
     "status": "draft"
   },
   {
@@ -6383,7 +6383,7 @@
     "source_sha256": "da643a3a526e11c3a68fe0e044bdc562c186a3d85aaa14fbf7d4295186c72445",
     "source_length": 29,
     "tokens": [],
-    "translation": "你获得了移位特法器",
+    "translation": "你获得了瞬移特法器",
     "status": "draft"
   },
   {
@@ -6394,7 +6394,7 @@
     "source_sha256": "95805a04560b816be25d85e7ced1d45a039654e617da399942ec0c10d68a1c7c",
     "source_length": 33,
     "tokens": [],
-    "translation": "身处Whirlwind中时不能使用",
+    "translation": "身处旋风中时不能使用",
     "status": "draft"
   },
   {
@@ -6405,7 +6405,7 @@
     "source_sha256": "03a0beaa38ee0bf08b0d777424f080ea40892cfd774048fd838e63916c252a0a",
     "source_length": 8,
     "tokens": [],
-    "translation": "Levitate",
+    "translation": "轻身",
     "status": "draft"
   },
   {
@@ -6416,7 +6416,7 @@
     "source_sha256": "2c998ceec400e400018650329b5c37a65bd2e227dc3c880512ded8971d62c0e7",
     "source_length": 163,
     "tokens": [],
-    "translation": "持续使用Levitate时，你会悬浮在略高于地面的位置。不过，这并不是飞行，只是一层薄薄的气之编织缓和了你的下落。",
+    "translation": "持续使用轻身时，你会悬浮在略高于地面的位置。不过，这并不是飞行，只是一层薄薄的风之力编织缓和了你的下落。",
     "status": "draft"
   },
   {
@@ -6438,7 +6438,7 @@
     "source_sha256": "9ad484e7cd145ef5ab33e89b355632572be5d2a562b0cdbab26b203168a6e818",
     "source_length": 32,
     "tokens": [],
-    "translation": "你获得了Levitate 特法器",
+    "translation": "你获得了轻身特法器",
     "status": "draft"
   },
   {
@@ -6449,7 +6449,7 @@
     "source_sha256": "3e67fc9b478b64af18e506e4fd7f191b4f0e0620955d43ea72f4bb2118bc6998",
     "source_length": 15,
     "tokens": [],
-    "translation": "Personal Shield",
+    "translation": "护身屏障",
     "status": "draft"
   },
   {
@@ -6460,7 +6460,7 @@
     "source_sha256": "cbc481ba5389c1308d07377e36a3744e6da85eb84dc8095dc6d4554ab3140992",
     "source_length": 233,
     "tokens": [],
-    "translation": "Personal Shield会在你周围编织护盾，减轻一切来自体内或外部的伤害。效果会一直存在，但攻击能逐渐削弱护盾。再次使用可以补充护盾强度。",
+    "translation": "护身屏障会在你周围编织护盾，减轻一切来自体内或外部的伤害。效果会一直存在，但攻击能逐渐削弱护盾。再次使用可以补充护盾强度。",
     "status": "draft"
   },
   {
@@ -6471,7 +6471,7 @@
     "source_sha256": "6c73d03088e40d2def8d44ef7a8a030a93932c6ccf35dbeb32dae0b7e668fbc2",
     "source_length": 162,
     "tokens": [],
-    "translation": "弩箭飞向兰德时，他攫住阳极力并开始导引。弩箭撞上一团悬在街道上方的银蓝色气之编织，发出了金属撞击般的铿锵声。",
+    "translation": "弩箭飞向兰德时，他攫住阳极力并开始导引。弩箭撞上一团悬在街道上方的银蓝色风之力编织，发出了金属撞击般的铿锵声。",
     "status": "draft"
   },
   {
@@ -6482,7 +6482,7 @@
     "source_sha256": "917331790abfe8b1bf04b8d44c82cd64fdb2eb08d5afc56c2c202a305e7299a4",
     "source_length": 39,
     "tokens": [],
-    "translation": "你获得了Personal Shield 特法器",
+    "translation": "你获得了护身屏障特法器",
     "status": "draft"
   },
   {
@@ -6493,7 +6493,7 @@
     "source_sha256": "a744a57465f821b854bba4b603630d51a26fa470875db2eb2ac68715987bd774",
     "source_length": 17,
     "tokens": [],
-    "translation": "Personal Illusion",
+    "translation": "幻影分身",
     "status": "draft"
   },
   {
@@ -6504,7 +6504,7 @@
     "source_sha256": "f0670c043e713e915a8ab872696105fef1b115de44a844e7cbda0fbe38e09d09",
     "source_length": 279,
     "tokens": [],
-    "translation": "Personal Illusion会在你面前编织出一个虚幻的自身影像，并将它留在那里迷惑别人，尤其是魔煞达或Machin Shin这类对魔法极其敏感的敌人。影像没有实体，但仍可被其他编织锁定。它会在一段时间后消散。",
+    "translation": "幻影分身会在你面前编织出一个虚幻的自身影像，并将它留在那里迷惑别人，尤其是魔煞达或Machin Shin这类对魔法极其敏感的敌人。影像没有实体，但仍可被其他编织锁定。它会在一段时间后消散。",
     "status": "draft"
   },
   {
@@ -6526,7 +6526,7 @@
     "source_sha256": "f7f34f0dc73aeab880e613d4371b728cb0269ef3a43bf460c0655413610851c0",
     "source_length": 41,
     "tokens": [],
-    "translation": "你获得了Personal Illusion 特法器",
+    "translation": "你获得了幻影分身特法器",
     "status": "draft"
   },
   {
@@ -6537,7 +6537,7 @@
     "source_sha256": "2001a8282c343757c35edafdecf66376738d4c34004f8362dcf287c324ae3047",
     "source_length": 47,
     "tokens": [],
-    "translation": "你已经控制着一名Minion。",
+    "translation": "你已经控制着一名仆从。",
     "status": "draft"
   },
   {
@@ -6548,7 +6548,7 @@
     "source_sha256": "2904bff43bc4b7feaedbd4120a66f982f646427fea68ae73bd2619ec2f5cc61c",
     "source_length": 6,
     "tokens": [],
-    "translation": "Minion",
+    "translation": "仆从",
     "status": "draft"
   },
   {
@@ -6561,7 +6561,7 @@
     "tokens": [
       "@grunt@"
     ],
-    "translation": "Minion特法器会召唤一名你所指挥类型的@grunt@或士兵。",
+    "translation": "仆从特法器会召唤一名你所指挥类型的@grunt@或士兵。",
     "status": "draft"
   },
   {
@@ -6583,7 +6583,7 @@
     "source_sha256": "8d1b0dd9bc800be9acd9eddb08f50445257d0300ec949eee06eaf22b6f769457",
     "source_length": 30,
     "tokens": [],
-    "translation": "你获得了Minion 特法器",
+    "translation": "你获得了仆从特法器",
     "status": "draft"
   },
   {
@@ -6594,7 +6594,7 @@
     "source_sha256": "480d4cf878399e90bf30255ed7b61c05bd2c6c25f351c1e631818b3a2bf76f52",
     "source_length": 49,
     "tokens": [],
-    "translation": "你已经控制着一名Guardian。",
+    "translation": "你已经控制着一名守护者。",
     "status": "draft"
   },
   {
@@ -6605,7 +6605,7 @@
     "source_sha256": "1d228f258f494c8a88b8b785a63b8ea22ef34a530f6e9bd5899bbcecd3fce678",
     "source_length": 8,
     "tokens": [],
-    "translation": "Guardian",
+    "translation": "守护者",
     "status": "draft"
   },
   {
@@ -6616,7 +6616,7 @@
     "source_sha256": "ad2e5571b6bfd18a4d662c7abfb13d61ba6a662927baa293eaef5d14628f3e6c",
     "source_length": 72,
     "tokens": [],
-    "translation": "Guardian特法器会召唤一名你所指挥类型的队长。",
+    "translation": "守护者特法器会召唤一名你所指挥类型的队长。",
     "status": "draft"
   },
   {
@@ -6638,7 +6638,7 @@
     "source_sha256": "68a476a798d14991587b17b45a78da184726341a9247c9a6bedee442e24bac6d",
     "source_length": 32,
     "tokens": [],
-    "translation": "你获得了Guardian 特法器",
+    "translation": "你获得了守护者特法器",
     "status": "draft"
   },
   {
@@ -6649,7 +6649,7 @@
     "source_sha256": "f9bfe392ba5e33a683c15404504beaf4272886cc9ee81dd01d44350298921bd6",
     "source_length": 49,
     "tokens": [],
-    "translation": "你已经控制着一名Champion。",
+    "translation": "你已经控制着一名勇士。",
     "status": "draft"
   },
   {
@@ -6660,7 +6660,7 @@
     "source_sha256": "d0dc8a2a8303bf4ac2247fdba2d3b6d040dd15e59ca05f14b1ffb3b9b3140d35",
     "source_length": 8,
     "tokens": [],
-    "translation": "Champion",
+    "translation": "勇士",
     "status": "draft"
   },
   {
@@ -6671,7 +6671,7 @@
     "source_sha256": "f709cc1a3f488ec5879a544bb017cc83145853f5b8baa1231a824023fbe29086",
     "source_length": 121,
     "tokens": [],
-    "translation": "Champion特法器会召唤你麾下最强大的生物——极其强大，却也十分桀骜。",
+    "translation": "勇士特法器会召唤你麾下最强大的生物——极其强大，却也十分桀骜。",
     "status": "draft"
   },
   {
@@ -6693,7 +6693,7 @@
     "source_sha256": "c1636bbd4acb129b555a28f58b03443627e8de8a8f9a3e191cff73f57b204075",
     "source_length": 32,
     "tokens": [],
-    "translation": "你获得了Champion 特法器",
+    "translation": "你获得了勇士特法器",
     "status": "draft"
   },
   {
@@ -6704,7 +6704,7 @@
     "source_sha256": "171418c643055da90c1d2823941068bcc0341b8aca6305f23a18a23e1249607a",
     "source_length": 6,
     "tokens": [],
-    "translation": "Absorb",
+    "translation": "吸收",
     "status": "draft"
   },
   {
@@ -6715,7 +6715,7 @@
     "source_sha256": "efb8974fc2d336d3c77b4450e3f5382cd2862e57c7e93e27374c32fcc872c019",
     "source_length": 204,
     "tokens": [],
-    "translation": "Absorb会短暂地在你周围编织护盾。如果其他特法器发出的编织击中护盾，施术者手中产生这道编织的法器就会被夺走，放入你的物品栏。",
+    "translation": "吸收会短暂地在你周围编织护盾。如果其他特法器发出的编织击中护盾，施术者手中产生这道编织的特法器就会被夺走，放入你的物品栏。",
     "status": "draft"
   },
   {
@@ -6739,7 +6739,7 @@
     "source_sha256": "7c8824be61f30d4a9d5fd9c24bd11acb2ace242e7bf331761c9d7700eccd9712",
     "source_length": 30,
     "tokens": [],
-    "translation": "你获得了Absorb 特法器",
+    "translation": "你获得了吸收特法器",
     "status": "draft"
   },
   {
@@ -6761,7 +6761,7 @@
     "source_sha256": "e4a3905e56d1f25bf92e4e8d2c3aafc77271397691df3762dcddbfa16ccb3d43",
     "source_length": 5,
     "tokens": [],
-    "translation": "Decay",
+    "translation": "腐化",
     "status": "draft"
   },
   {
@@ -6772,7 +6772,7 @@
     "source_sha256": "844226234255cd11ffb866f57731f5b8fa3011a4579517d0fd6b15f0a7d7ad64",
     "source_length": 107,
     "tokens": [],
-    "translation": "Decay会在短时间内，缓慢消耗目标的生命和所持全部法器的使用次数。",
+    "translation": "腐化会在短时间内，缓慢消耗目标的生命和所持全部法器的使用次数。",
     "status": "draft"
   },
   {
@@ -6794,7 +6794,7 @@
     "source_sha256": "d29929ff4bde7506a5672040e2f1274ee59934c12b13e5687d98992d7200994f",
     "source_length": 29,
     "tokens": [],
-    "translation": "你获得了Decay 特法器",
+    "translation": "你获得了腐化特法器",
     "status": "draft"
   },
   {
@@ -6805,7 +6805,7 @@
     "source_sha256": "333438098b83a8a9ee965fe69094949b977448b886be58f971005c9d350487e6",
     "source_length": 12,
     "tokens": [],
-    "translation": "Earth Shield",
+    "translation": "地之护盾",
     "status": "draft"
   },
   {
@@ -6816,7 +6816,7 @@
     "source_sha256": "ab9a1469b04b44db62c598aef13bc42286a62c88360da373b04a224df3cb2cd2",
     "source_length": 121,
     "tokens": [],
-    "translation": "Earth Shield会形成保护屏障，使你免受地之编织和相关环境危险的影响。",
+    "translation": "地之护盾会形成保护屏障，使你免受地之力编织和相关环境危险的影响。",
     "status": "draft"
   },
   {
@@ -6838,7 +6838,7 @@
     "source_sha256": "59b8d05aa9220936caefd5c12e94234c94e82e086ccd1934add104dcb09e25f0",
     "source_length": 36,
     "tokens": [],
-    "translation": "你获得了Earth Shield 特法器",
+    "translation": "你获得了地之护盾特法器",
     "status": "draft"
   },
   {
@@ -6849,7 +6849,7 @@
     "source_sha256": "781fd2956d4bcd2235a2e5c41e4c41f96852b961dd6c42d07012fd591a3f03b9",
     "source_length": 12,
     "tokens": [],
-    "translation": "Earth Tremor",
+    "translation": "地震",
     "status": "draft"
   },
   {
@@ -6860,7 +6860,7 @@
     "source_sha256": "87d35e0f536fc44aba476b8aaf9f6c7471200354d7bd97ac964bd1cc2a12e4be",
     "source_length": 170,
     "tokens": [],
-    "translation": "Earth Tremor特法器会发射一道凝聚的地之编织。接触到的任何表面都会爆发剧烈震动，对卷入其中的人极其危险。",
+    "translation": "地震特法器会发射一道凝聚的地之力编织。接触到的任何表面都会爆发剧烈震动，对卷入其中的人极其危险。",
     "status": "draft"
   },
   {
@@ -6882,7 +6882,7 @@
     "source_sha256": "ffa5397ac0d26f34d7f0a4faca028fd81e1b34b77dc14d2e2dd03ad9a1de4ab5",
     "source_length": 36,
     "tokens": [],
-    "translation": "你获得了Earth Tremor 特法器",
+    "translation": "你获得了地震特法器",
     "status": "draft"
   },
   {
@@ -6893,7 +6893,7 @@
     "source_sha256": "75805fc4ec515d4910763cdfbfe870f3e25a413faedef73ee06e8cad5e29a61b",
     "source_length": 14,
     "tokens": [],
-    "translation": "Explosive Ward",
+    "translation": "爆裂结界",
     "status": "draft"
   },
   {
@@ -6926,7 +6926,7 @@
     "source_sha256": "3beb5be98d1e1d263949e51f7d6c96d288e3017880bbfaaddcbe178c8d877ae7",
     "source_length": 38,
     "tokens": [],
-    "translation": "你获得了Explosive Ward 特法器",
+    "translation": "你获得了爆裂结界特法器",
     "status": "draft"
   },
   {
@@ -6948,7 +6948,7 @@
     "source_sha256": "bf0e65a166ede5bb889918e872a1f3b653231ce05b0ddf40f69c9b2b33eda819",
     "source_length": 142,
     "tokens": [],
-    "translation": "火球特法器会发射一道凝聚的火之编织。除水以外，撞上任何东西都会爆炸；遇水则会熄灭。",
+    "translation": "火球特法器会发射一道凝聚的火之力编织。除水以外，撞上任何东西都会爆炸；遇水则会熄灭。",
     "status": "draft"
   },
   {
@@ -6981,7 +6981,7 @@
     "source_sha256": "9a6dc8f4c3e7b2cee471134949891e4239959bde3380399f185fcef55a772b7b",
     "source_length": 7,
     "tokens": [],
-    "translation": "Unravel",
+    "translation": "解构",
     "status": "draft"
   },
   {
@@ -6992,7 +6992,7 @@
     "source_sha256": "91b14dad4e534810ab57c9261a49aff97a73dfe0fc416f5125cede80315f6839",
     "source_length": 279,
     "tokens": [],
-    "translation": "Unravel会在短时间内，立即摧毁当前影响你或位于你周围小范围内的任何编织。范围内的效果、编织陷阱和投射物都会直接消失。当然，Unravel生效期间，你不能使用其他法器。",
+    "translation": "解构会在短时间内，立即摧毁当前影响你或位于你周围小范围内的任何编织。范围内的效果、编织陷阱和投射物都会直接消失。当然，解构生效期间，你不能使用其他法器。",
     "status": "draft"
   },
   {
@@ -7014,7 +7014,7 @@
     "source_sha256": "0c037a95f358c9a561fd86fc54487f9b5674eaaecb4ceb989bc473ca22d1d902",
     "source_length": 31,
     "tokens": [],
-    "translation": "你获得了Unravel 特法器",
+    "translation": "你获得了解构特法器",
     "status": "draft"
   },
   {
@@ -7036,7 +7036,7 @@
     "source_sha256": "c465c70b79b24e4f7c1b69387a508a0fa9114f0cc252c8282f535f789cd48db1",
     "source_length": 6,
     "tokens": [],
-    "translation": "Seeker",
+    "translation": "追踪弹",
     "status": "draft"
   },
   {
@@ -7047,7 +7047,7 @@
     "source_sha256": "6f9614ab0980ff3ce79842193c8191bd9fb2576eb5c6f60198ca1cd0c1270a0e",
     "source_length": 145,
     "tokens": [],
-    "translation": "Seeker会向目标发射一枚爆炸性投射物，追踪时不断加速。除非被抵消，否则它会在撞击时爆炸。",
+    "translation": "追踪弹会向目标发射一枚爆炸性投射物，追踪时不断加速。除非被抵消，否则它会在撞击时爆炸。",
     "status": "draft"
   },
   {
@@ -7069,7 +7069,7 @@
     "source_sha256": "7299590b2f5a218d3b8414e336fd7b82a04424b86afab8f5bd8d47858223f233",
     "source_length": 30,
     "tokens": [],
-    "translation": "你获得了Seeker 特法器",
+    "translation": "你获得了追踪弹特法器",
     "status": "draft"
   },
   {
@@ -7091,7 +7091,7 @@
     "source_sha256": "3d0fa097cff8eead773a649472c9a69716ada47fa555fa852941e5c8beede106",
     "source_length": 5,
     "tokens": [],
-    "translation": "Taint",
+    "translation": "玷污",
     "status": "draft"
   },
   {
@@ -7102,7 +7102,7 @@
     "source_sha256": "f51bd49b9ce77815d6af7f91afc2210571017eb919e993c9c712150b8fa3fb63",
     "source_length": 222,
     "tokens": [],
-    "translation": "目标所持的全部特法器都会被永久污染，除非受到Unravel或Aura of Unraveling的影响。使用受污染法器时，使用者会受伤；法器越强大，伤害越高。",
+    "translation": "目标所持的全部特法器都会被永久玷污，除非受到解构或解构领域的影响。使用受玷污的特法器时，使用者会受伤；特法器越强大，伤害越高。",
     "status": "draft"
   },
   {
@@ -7124,7 +7124,7 @@
     "source_sha256": "4ad103516f1d132afe0126e7d9a99211c6e487da4dc45391bf59da93bf500724",
     "source_length": 29,
     "tokens": [],
-    "translation": "你获得了Taint 特法器",
+    "translation": "你获得了玷污特法器",
     "status": "draft"
   },
   {
@@ -7135,7 +7135,7 @@
     "source_sha256": "c87f0498a943787b4364ddee693523273e8c0a3ab48897c8050129e9015e20f5",
     "source_length": 12,
     "tokens": [],
-    "translation": "Water Shield",
+    "translation": "水之护盾",
     "status": "draft"
   },
   {
@@ -7146,7 +7146,7 @@
     "source_sha256": "bb9719bc0d49f20dde1bf206fe7ec4238cd9be5e410a8b89c55dc9ca7fbfc0d7",
     "source_length": 121,
     "tokens": [],
-    "translation": "Water Shield会形成保护屏障，使你免受水之编织和相关环境危险的影响。",
+    "translation": "水之护盾会形成保护屏障，使你免受水之力编织和相关环境危险的影响。",
     "status": "draft"
   },
   {
@@ -7168,7 +7168,7 @@
     "source_sha256": "7ccb1fd7df8933fd2ee747febc6d3661e04c3b90c610a8609f9bec4c70c0e7dd",
     "source_length": 36,
     "tokens": [],
-    "translation": "你获得了Water Shield 特法器",
+    "translation": "你获得了水之护盾特法器",
     "status": "draft"
   },
   {
@@ -7179,7 +7179,7 @@
     "source_sha256": "ac9196fc6d5b81cd11c5de76a103bcb3e8673e82eadd2c83ab0f7c8ff5238a98",
     "source_length": 10,
     "tokens": [],
-    "translation": "Air Shield",
+    "translation": "风之护盾",
     "status": "draft"
   },
   {
@@ -7190,7 +7190,7 @@
     "source_sha256": "ee2447343a5254a72bcc7a9b40d59da50c8099eb77dc95186a700b0004e61530",
     "source_length": 117,
     "tokens": [],
-    "translation": "Air Shield会形成保护屏障，使你免受气之编织和相关环境危险的影响。",
+    "translation": "风之护盾会形成保护屏障，使你免受风之力编织和相关环境危险的影响。",
     "status": "draft"
   },
   {
@@ -7212,7 +7212,7 @@
     "source_sha256": "60c46a87207b29ca66abaf33110011ce82543d79ff2029a426c1a4cc1048de12",
     "source_length": 34,
     "tokens": [],
-    "translation": "你获得了Air Shield 特法器",
+    "translation": "你获得了风之护盾特法器",
     "status": "draft"
   },
   {
@@ -7223,7 +7223,7 @@
     "source_sha256": "90e7920f9c817997a11dffd475bb1aa4f63850c5afd1f885d545e5a734741b59",
     "source_length": 18,
     "tokens": [],
-    "translation": "Aura of Unraveling",
+    "translation": "解构领域",
     "status": "draft"
   },
   {
@@ -7234,7 +7234,7 @@
     "source_sha256": "b9e37221b397e334f5ea5358f743e02c11e2c5ca654fb27586a992f83d29d0e5",
     "source_length": 391,
     "tokens": [],
-    "translation": "放下这件特法器后，附近经过的人和击中盒子的投射物都会立即触发它。短暂时间内，法器周围会成为失效区域：法器不能启动，已有的效果消失，射入此处的编织也会消散。护盾对此无效，唯一的例外是烈火。",
+    "translation": "放下这件特法器后，附近经过的人和击中盒子的投射物都会立即触发它。短暂时间内，特法器周围会成为失效区域：特法器不能启动，已有的效果消失，射入此处的编织也会消散。护盾对此无效，唯一的例外是烈火。",
     "status": "draft"
   },
   {
@@ -7256,7 +7256,7 @@
     "source_sha256": "ca791764e760edd05e63ac82178f5caab45a8fa5ec6abece8a85acfb5225e9c9",
     "source_length": 42,
     "tokens": [],
-    "translation": "你获得了Aura of Unraveling 特法器",
+    "translation": "你获得了解构领域特法器",
     "status": "draft"
   },
   {
@@ -7278,7 +7278,7 @@
     "source_sha256": "286c05d42b550353d4113c39c296ce2abcf38f4af538eb99129868690e212c74",
     "source_length": 119,
     "tokens": [],
-    "translation": "火焰护盾会形成保护屏障，使你免受火之编织和相关环境危险的影响。",
+    "translation": "火焰护盾会形成保护屏障，使你免受火之力编织和相关环境危险的影响。",
     "status": "draft"
   },
   {
@@ -7322,7 +7322,7 @@
     "source_sha256": "d189600ba20d225256407e1c1641f271b0d18a6af7b58b0c062c081d6d47859a",
     "source_length": 9,
     "tokens": [],
-    "translation": "Soul Barb",
+    "translation": "灵魂倒刺",
     "status": "draft"
   },
   {
@@ -7333,7 +7333,7 @@
     "source_sha256": "ef87a4253c878d13b49fb6055357d3a1929bced2259409dfe48b89f3e8ae1231",
     "source_length": 129,
     "tokens": [],
-    "translation": "Soul Barb会在短时间内，使目标每次使用法器时都受到伤害；法器越强大，伤害越高。",
+    "translation": "灵魂倒刺会在短时间内，使目标每次使用法器时都受到伤害；法器越强大，伤害越高。",
     "status": "draft"
   },
   {
@@ -7355,7 +7355,7 @@
     "source_sha256": "635b1b5735076c3ad128878c06ef39828343d73f32ef7de28e60785f081178b4",
     "source_length": 33,
     "tokens": [],
-    "translation": "你获得了Soul Barb 特法器",
+    "translation": "你获得了灵魂倒刺特法器",
     "status": "draft"
   },
   {
@@ -7377,7 +7377,7 @@
     "source_sha256": "04062f4dacc9db306d9799f51db5372ae1fb546bd2e14687e1a50201295748d8",
     "source_length": 11,
     "tokens": [],
-    "translation": "Swap Places",
+    "translation": "移形换位",
     "status": "draft"
   },
   {
@@ -7388,7 +7388,7 @@
     "source_sha256": "61c2a56ad7400cb104fbadab5919cffc4fcb43a1c29172385cb8ce894df3d240",
     "source_length": 168,
     "tokens": [],
-    "translation": "这件特法器会将你与目标的位置互换。Swap Places会欺骗当前追踪你们的编织，使追踪你的转而追踪目标，反之亦然。",
+    "translation": "这件特法器会将你与目标的位置互换。移形换位会欺骗当前追踪你们的编织，使追踪你的转而追踪目标，反之亦然。",
     "status": "draft"
   },
   {
@@ -7410,7 +7410,7 @@
     "source_sha256": "bafbcf22dae43a83f25dab50a856ba50ffa362a6b774266dbd70b4a6a834273f",
     "source_length": 35,
     "tokens": [],
-    "translation": "你获得了Swap Places 特法器",
+    "translation": "你获得了移形换位特法器",
     "status": "draft"
   },
   {
@@ -7421,7 +7421,7 @@
     "source_sha256": "9e97c23cb044c26c4e39bf34e96f9ca3b1cb0fd3335c4816155ebac2660032cb",
     "source_length": 11,
     "tokens": [],
-    "translation": "Find Target",
+    "translation": "锁定目标",
     "status": "draft"
   },
   {
@@ -7454,7 +7454,7 @@
     "source_sha256": "dcab3f372805ad88193f89172a13af105e9cd212a95a5f8ebc06955e65ff1307",
     "source_length": 35,
     "tokens": [],
-    "translation": "你获得了Find Target 特法器",
+    "translation": "你获得了锁定目标特法器",
     "status": "draft"
   },
   {
@@ -7476,7 +7476,7 @@
     "source_sha256": "509b1035c55fa2eb5475dd19d4066db6be98966c2cba7073a2cd5ca38768c017",
     "source_length": 6,
     "tokens": [],
-    "translation": "Freeze",
+    "translation": "冻结",
     "status": "draft"
   },
   {
@@ -7487,7 +7487,7 @@
     "source_sha256": "f523e2b2632cb1ce780218ce10020786617f05f7ef72842819001bcad349c286",
     "source_length": 136,
     "tokens": [],
-    "translation": "这件特法器会用冻结的水之编织裹住目标。在冰融化前的短暂时间内，目标无法移动。",
+    "translation": "这件特法器会用冻结的水之力编织裹住目标。在冰融化前的短暂时间内，目标无法移动。",
     "status": "draft"
   },
   {
@@ -7509,7 +7509,7 @@
     "source_sha256": "90679d5735810828d84aea886d6dd71ad7c59f3daf8681b26d214085f2b5e782",
     "source_length": 30,
     "tokens": [],
-    "translation": "你获得了Freeze 特法器",
+    "translation": "你获得了冻结特法器",
     "status": "draft"
   },
   {
@@ -7520,7 +7520,7 @@
     "source_sha256": "858c3d54921fc0c5bfd26a7b92bc2f843bc41e37846f8cf2749a5358445836c5",
     "source_length": 13,
     "tokens": [],
-    "translation": "Spirit Shield",
+    "translation": "魂之护盾",
     "status": "draft"
   },
   {
@@ -7531,7 +7531,7 @@
     "source_sha256": "3e76fb30d7639153b5735ee12c1377daf912bfc3661f0f1a0032387e70977c6f",
     "source_length": 123,
     "tokens": [],
-    "translation": "Spirit Shield会形成保护屏障，使你免受魂之编织和相关环境危险的影响。",
+    "translation": "魂之护盾会形成保护屏障，使你免受魂之力编织和相关环境危险的影响。",
     "status": "draft"
   },
   {
@@ -7553,7 +7553,7 @@
     "source_sha256": "221d388cf1e59c95eb41ae53e28c59db0ee7c8ab2aba44cb029514479b073470",
     "source_length": 37,
     "tokens": [],
-    "translation": "你获得了Spirit Shield 特法器",
+    "translation": "你获得了魂之护盾特法器",
     "status": "draft"
   },
   {
@@ -7564,7 +7564,7 @@
     "source_sha256": "4b489256b586e597cefa802c7a00ca18a4696b7a26b416d4108de97adaad6820",
     "source_length": 11,
     "tokens": [],
-    "translation": "Trap Detect",
+    "translation": "陷阱侦测",
     "status": "draft"
   },
   {
@@ -7575,7 +7575,7 @@
     "source_sha256": "90d373eb50f69dd4bc777a0c25a1dd82bd42defac9dd26b4d5deca86801e3e63",
     "source_length": 397,
     "tokens": [],
-    "translation": "Trap Detect会在短时间内，让附近的陷阱变得十分明显，无论是至上力编织的陷阱还是普通陷阱。靠近陷阱时，你的心跳会加快；更重要的是，视野内的陷阱会亮起提示，显示其位置和用途。提示只标出最近的一处陷阱，建议环顾四周寻找更多。",
+    "translation": "陷阱侦测会在短时间内，让附近的陷阱变得十分明显，无论是至上力编织的陷阱还是普通陷阱。靠近陷阱时，你的心跳会加快；更重要的是，视野内的陷阱会亮起提示，显示其位置和用途。提示只标出最近的一处陷阱，建议环顾四周寻找更多。",
     "status": "draft"
   },
   {
@@ -7597,7 +7597,7 @@
     "source_sha256": "927c12a78e29fc10133f0df32ade664c01d2c3e520eb8324dabc71b5ca2bf1a6",
     "source_length": 35,
     "tokens": [],
-    "translation": "你获得了Trap Detect 特法器",
+    "translation": "你获得了陷阱侦测特法器",
     "status": "draft"
   },
   {
@@ -7619,7 +7619,7 @@
     "source_sha256": "0c8ab28c5ff1a1fc4b4042046c89b99c7604a96303df937ce8aec85362fd2357",
     "source_length": 91,
     "tokens": [],
-    "translation": "这件法器的用途和使用方法都不明确，初步研究也未能揭示答案。",
+    "translation": "这件魔法器物的用途和使用方法都不明确，初步研究也未能揭示答案。",
     "status": "draft"
   },
   {
@@ -7652,7 +7652,7 @@
     "source_sha256": "f9896d553add9b3f183a9c7fe1fbd1823c68e417a5f2a29ef2ae3887c9697fe7",
     "source_length": 9,
     "tokens": [],
-    "translation": "Fireworks",
+    "translation": "焰火",
     "status": "draft"
   },
   {
@@ -7663,7 +7663,7 @@
     "source_sha256": "debce6c0f443ec7bacd12eabd07e9b13f85ada1b9989b2d2a73766482ebb8895",
     "source_length": 33,
     "tokens": [],
-    "translation": "你获得了Fireworks 特法器",
+    "translation": "你获得了焰火特法器",
     "status": "draft"
   },
   {
@@ -7718,7 +7718,7 @@
     "source_sha256": "51c791e9b80baba4af786e2dea29068651b95aec3dc3bba9f0657cbd7ac77fae",
     "source_length": 5,
     "tokens": [],
-    "translation": "Hound",
+    "translation": "猎犬",
     "status": "draft"
   },
   {
@@ -7729,7 +7729,7 @@
     "source_sha256": "51c791e9b80baba4af786e2dea29068651b95aec3dc3bba9f0657cbd7ac77fae",
     "source_length": 5,
     "tokens": [],
-    "translation": "Hound",
+    "translation": "猎犬",
     "status": "draft"
   },
   {
@@ -7762,7 +7762,7 @@
     "source_sha256": "8ddc259c31ad1cf154d11e9bee4f8a874c61944c76eaa803ae0e77b574c5f9cc",
     "source_length": 12,
     "tokens": [],
-    "translation": "Legion Stomp",
+    "translation": "军团践踏",
     "status": "draft"
   },
   {
@@ -7773,7 +7773,7 @@
     "source_sha256": "64a57702ba81778a8cb4718be0b13008ae70b7191d6dfef4433ecad38b2b6b9e",
     "source_length": 36,
     "tokens": [],
-    "translation": "你获得了Legion Stomp特法器",
+    "translation": "你获得了军团践踏特法器",
     "status": "draft"
   },
   {
@@ -7784,7 +7784,7 @@
     "source_sha256": "d83d7a8d1a725ebc83e19c953740d7fe9d450fbc3fcc6c3a6a4b71a1cc8ba2d5",
     "source_length": 12,
     "tokens": [],
-    "translation": "LegionSeeker",
+    "translation": "军团鬼颅",
     "status": "draft"
   },
   {
@@ -7795,7 +7795,7 @@
     "source_sha256": "37cb9cf496ce3c3beafcc0848a0f6011d6a4bf96146e421797d811a4ddf4d1fb",
     "source_length": 35,
     "tokens": [],
-    "translation": "Legion发出的追踪魂之投射物。",
+    "translation": "军团发出的追踪魂之投射物。",
     "status": "draft"
   },
   {
@@ -7916,7 +7916,7 @@
     "source_sha256": "2904bff43bc4b7feaedbd4120a66f982f646427fea68ae73bd2619ec2f5cc61c",
     "source_length": 6,
     "tokens": [],
-    "translation": "Minion",
+    "translation": "仆从",
     "status": "draft"
   },
   {
@@ -7927,7 +7927,7 @@
     "source_sha256": "4ec28c35203c10fd4f3c777fe704d19f77e5fc4d8ff80e8ec4ee4775c38d0f5c",
     "source_length": 707,
     "tokens": [],
-    "translation": "不速之客进入煞达罗苟斯的废墟后，通常再也离不开。幸运的人会死去；其他人勉强活着，却被弥漫全城、没有灵魂的邪恶魔煞达侵蚀，最终成为Minion。它们生性胆怯，藏在阴影中等待不幸的受害者靠近。Minion极其敏捷，能躲过大部分普通投射物，但更喜欢静止观察、等待，尤其担心移动被发现时。趁人转开视线，它们就冲进猎物附近的阴影，再将背上的钩状肢体刺进受害者，把人拖入黑暗，将血肉从骨头上撕下。",
+    "translation": "不速之客进入煞达罗苟斯的废墟后，通常再也离不开。幸运的人会死去；其他人勉强活着，却被弥漫全城、没有灵魂的邪恶魔煞达侵蚀，最终成为仆从。它们生性胆怯，藏在阴影中等待不幸的受害者靠近。仆从极其敏捷，能躲过大部分普通投射物，但更喜欢静止观察、等待，尤其担心移动被发现时。趁人转开视线，它们就冲进猎物附近的阴影，再将背上的钩状肢体刺进受害者，把人拖入黑暗，将血肉从骨头上撕下。",
     "status": "draft"
   },
   {
@@ -8048,7 +8048,7 @@
     "source_sha256": "8b99483221c4067944a2a9d8c576ec6cdfba40c53579ed49f46be28e6f37e576",
     "source_length": 6,
     "tokens": [],
-    "translation": "Legion",
+    "translation": "军团",
     "status": "draft"
   },
   {
@@ -8059,7 +8059,7 @@
     "source_sha256": "930333c3b749c75e431552c69b26470ad431fd2dff072107feca2a2540e43317",
     "source_length": 541,
     "tokens": [],
-    "translation": "魔煞达没有实体，却发现自己能把受害者濒死的身体绑在一起，再操纵尚有生命的肌肉与筋腱，创造可活动的躯体。结果便是一个庞大笨重的怪物。尽管拼成它的尸体看似脆弱，Legion仍能用巨大身躯猛击地面，引发剧烈震动，向上喷出能量。它还能释放追踪魂之触须，追捕并制服猎物，准备将其加入自己的身体。",
+    "translation": "魔煞达没有实体，却发现自己能把受害者濒死的身体绑在一起，再操纵尚有生命的肌肉与筋腱，创造可活动的躯体。结果便是一个庞大笨重的怪物。尽管拼成它的尸体看似脆弱，军团仍能用巨大身躯猛击地面，引发剧烈震动，向上喷出能量。它还能释放追踪魂之触须，追捕并制服猎物，准备将其加入自己的身体。",
     "status": "draft"
   },
   {
