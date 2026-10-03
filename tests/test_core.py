@@ -31,6 +31,11 @@ def row(text="New Game", translation="新游戏"):
 
 
 class CoreTests(unittest.TestCase):
+    def test_build_entry_module_available(self):
+        from tools.build.pipeline import build, check_originals
+
+        self.assertTrue(callable(build) and callable(check_originals))
+
     def test_compact_indices(self):
         for value in (0, 1, -1, 63, 64, -64, 8192, 2**30 - 1):
             self.assertEqual(Reader(ci(value)).idx(), value)

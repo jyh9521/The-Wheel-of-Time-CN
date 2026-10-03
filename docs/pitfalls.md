@@ -15,3 +15,5 @@
 11. **PowerShell/日文Windows编码**：Python默认stdout可能cp932；中文测试结果应明确UTF8输出。
 12. **窗口退出流程**：不要先关闭DirectDraw代理窗口再主窗口；新QA曾在已显示Inventory后退出报
     `DDERR_NOEXCLUSIVEMODE/ReTestCooperativeLevel`。保留失败证据，先关闭自己的主窗口并做原版对照。
+13. **Gitignore递归匹配**：`build/` 会同时忽略 `tools/build/` 源码。
+    根生成物必须写 `/build/`，并在干净克隆中验证构建模块确实入库。

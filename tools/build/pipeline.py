@@ -1,0 +1,75 @@
+import hashlib
+import importlib
+import json
+import platform
+import sys
+import shutil
+from pathlib import Path
+import PIL
+import fontTools
+from src.patch.delta import create, apply, sha
+from tools.font.build_font import build as build_font
+from tools.validate.fonts import check_font
+
+
+def check_originals(game, profile):
+    for name, expected in profile['files'].items():
+        path = game / name
+        data = path.read_bytes()
+        if len(data) != expected['size'] or sha(data) != expected['sha256']:
+            raise ValueError('Unsupported or modified original: ' + name)
+
+
+def build(game, out, rows, config, profile, fontpath):
+    check_originals(game, profile)
+    check_font(rows, fontpath, config['font'])
+    out.mkdir(parents=True, exist_ok=True)
+    resources = out / 'resources' / 'System'
+    if not resources.resolve().is_relative_to(out.resolve()):
+        raise ValueError('Resource directory escapes output')
+    resources.mkdir(parents=True, exist_ok=True)
+    for path in [resources / 'WOT.u', out / 'FONT_DIFF.json', out / 'PATCH.json', out / 'BUILD_REPORT.json']:
+        if not path.resolve().is_relative_to(out.resolve()):
+            raise ValueError('Artifact path escapes output')
+    unknown = {r['file'] for r in rows if r.get('translation') and 'System/' + r['file'] not in profile['files']}
+    if unknown:
+        raise ValueError('Resource not in verified profile: ' + ', '.join(sorted(unknown)))
+    timing = importlib.import_module('tools.import.int_files').import_rows(
+        game / 'System', rows, resources, config, profile)
+    texts = [r['translation'] for r in rows if r.get('translation')]
+    if any(ord(c) >= 256 for s in texts for c in s):
+        font_result = build_font(game / 'System/WOT.u', resources / 'WOT.u',
+                             [r['translation'] for r in rows if r.get('translation')],
+                                 fontpath, out / 'FONT_DIFF.json', profile, config['font'])
+    else:
+        shutil.copyfile(game / 'System/WOT.u', resources / 'WOT.u')
+        font_result = {'unique_glyphs': 0, 'reason': 'legacy font coverage; package unchanged'}
+        (out / 'FONT_DIFF.json').write_text(json.dumps(font_result), 'utf8')
+    names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
+    files = {}
+    for name in names:
+        if name not in profile['files']:
+            raise ValueError('Resource not in verified profile: ' + name)
+        b = (game / name).read_bytes()
+        m = (out / 'resources' / name).read_bytes()
+        d = create(b, m)
+        if apply(b, d) != m:
+            raise ValueError('Delta roundtrip failed')
+        files[name] = d
+    bundle = {'format': 'localization-bundle-v1', 'locale': config['locale'],
+              'profile': profile['id'], 'files': files}
+    (out / 'PATCH.json').write_text(json.dumps(bundle, separators=(',', ':')), 'utf8')
+    report = {'locale': config['locale'], 'profile': profile['id'], 'timing': timing,
+              'font_sha256': sha(fontpath.read_bytes()), 'font_collection_index': config['font'].get('collection_index', 0),
+              'font_redistribution': 'not authorized by build; check font license before release',
+              'environment': {'python': platform.python_version(), 'pillow': PIL.__version__,
+                              'fonttools': fontTools.__version__},
+              'input_config_sha256': sha(json.dumps(config, sort_keys=True, ensure_ascii=False).encode()),
+              'input_rows_sha256': sha(json.dumps(rows, sort_keys=True, ensure_ascii=False).encode()),
+              'files': {n: {k: d[k] for k in ('original_sha256', 'original_size', 'modified_sha256', 'modified_size')}
+                        for n, d in files.items()}, 'modified_file': 'resources/System/WOT.u',
+              'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True}
+    check_originals(game, profile)
+    (out / 'BUILD_REPORT.json').write_text(json.dumps(report, indent=2), 'utf8')
+    print(f'BUILD PASS: locale={config["locale"]}; {len(files)} files; '
+          f'{font_result["unique_glyphs"]} glyphs/font; delta roundtrip PASS; originals unchanged')

@@ -1,6 +1,6 @@
-build/
-dist/
-out/
+/build/
+/dist/
+/out/
 __pycache__/
 *.pyc
 .venv/
