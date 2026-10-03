@@ -59,3 +59,9 @@ JSON本身无签名，只使用可信构建来源；Release前须另做来源/�
 ## 迁移审计格式
 
 migration-manifest.json逐文件保存origin/source/destination/source_sha256/method；旧源码快照只记录路径、大小、mtime、SHA。build/migration/old-before.json为5126文件的本地全目录基线；迁移工具以相同字段比较新增、删除与修改，输出必须位于被审计树之外。原始游戏277文件manifest是历史元数据，不是当前配置恢复指令。
+
+## 字形栅格 / 显示字段
+
+字体栅格使用共同source_bounds和origin；manifest记录raster_height、最终height及vertical_fit_scale。最终Font矩形height保持原槽位行高；源墨迹参考检查发生在整体纵向适配之前。非等比纵向适配可能改变抗锯齿像素，不冒充像素无损。
+
+profile.resource_edits为语言无关显示字段：resource、export、export_sha256、offset（导出body相对）、type=float32-le、expected、value、context_offset/context_hex。当前字幕字段为导出5095 body+1979，原始00000000→0000c041，即0→24，函数等长2614字节。原包绝对992669只作研究记录，不用于盲写；运行工具按解析后的导出offset定位。FONT_DIFF是字体阶段；BUILD_REPORT.resource_edits记录之后的字段差分，最终hash位于PATCH/BUILD_REPORT。

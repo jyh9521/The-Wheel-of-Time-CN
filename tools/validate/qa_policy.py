@@ -11,6 +11,7 @@ def load_policy(path=POLICY_PATH):
     policy = json.loads(path.read_text("utf8"))
     active = [tuple(size) for size in policy["active_resolutions"]]
     excluded = {tuple(size) for size in policy["known_issue_resolutions"]}
+    excluded.update(tuple(size) for size in policy.get("deferred_resolutions", []))
     minimum = tuple(policy["minimum"])
     if len(active) != len(set(active)) or set(active) & excluded:
         raise ValueError("QA resolution sets overlap or contain duplicates")
@@ -91,6 +92,7 @@ def make_plan(policy, locale):
         "launches_game": False,
         "probes": probes,
         "known_issue_resolutions": policy["known_issue_resolutions"],
+        "deferred_resolutions": policy.get("deferred_resolutions", []),
     }
 
 

@@ -20,7 +20,7 @@ class MenuSweepTests(unittest.TestCase):
 
     def test_language_neutral_plan(self):
         probes = make_plan(load_policy(), "ko-KR")["probes"]
-        self.assertEqual(len(probes), 30)
+        self.assertEqual(len(probes), 10)
         for probe in probes:
             self.assertEqual("--sweep" in probe["argv"], probe["view"] == "options")
 

@@ -79,7 +79,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 python -m tools.validate.runtime --game-dir "D:/GOG Games/The Wheel of Time" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view menu
 ```
 
-当前 QA 分辨率：1366x768、1920x1080、2560x1440；`--resolution` 默认1920x1080。
+当前 QA 仅1920x1080；`--resolution` 默认1920x1080。1366x768与2560x1440延后由用户在汉化完成后检查。
 4K仅保留既有测试证据和已知问题，不再进入主动测试/适配矩阵。
 可先离线生成原/改资源对照计划，不会启动游戏：
 
@@ -102,3 +102,9 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 ## Controls逐行显示检查
 
 `python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view options --sweep` 在一次启动内仅Down选择并捕获11项帮助；加--original执行原版对照。行数来自语言无关profiles/qa-policy.json的menu_item_counts。未配置视图禁止sweep；普通单帧接口保持不变。所有这些runtime命令会启动隔离游戏副本，离线plan命令不启动。
+
+## 当前1080p与字形布局
+
+后续开发QA只跑1920x1080；QA plan为10个原/改视图探针，不再自动运行1366x768/1440p。这两种分辨率延后给玩家最终验收，历史记录不删除；4K仍为已知问题。
+
+正常build入口自动重建完整字形边界并按profile.font_line_height_policy=preserve-legacy保留原版行高；locale.font提供collection_index、top_padding/bottom_padding（当前0）。旧baseline_anchor仅兼容覆盖检查，不再决定裁剪边界。随后应用profile中经过版本/导出SHA/上下文保护的字幕显示Y字段。FONT_DIFF的bytecode_unchanged仅属于字体阶段，最终BUILD_REPORT.resource_edits/bytecode_unchanged才描述完整输出。无需手工改二进制。详见docs/GLYPH_LAYOUT_FIX.md。

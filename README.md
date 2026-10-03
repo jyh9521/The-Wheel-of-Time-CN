@@ -10,7 +10,7 @@
 - 已验证 Unicode 菜单、Inventory 标题/正文/斜体引文、教学首句字幕。
 - 新增主菜单及Controls小规模PoC，最新验证记录见 [菜单PoC](docs/menu-poc.md)。
 - 合成测试不需要游戏；真实构建和集成需自行提供原版游戏与覆盖字体。
-- **推荐玩家使用 1920×1080（1080p）游玩。** 当前 QA 覆盖1366×768、1920×1080、2560×1440。
+- **推荐玩家使用 1920×1080（1080p）游玩。** 后续开发 QA 只检查1920×1080；1366×768、1440p留给翻译完成后的玩家验收。历史对照保留。
   4K 下原版固定像素字体/UI 偏小，列为已知问题，不再做专项适配。
   最新结果与剩余问题见 [QA](docs/qa.md)，不能把桌面截图尺寸当作游戏内部模式。
 
@@ -41,7 +41,7 @@ python install.py restore --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT
 本版本支持 UTF-16 LE BOM `.int`；中文缺字来自位图字体覆盖，不需要 GBK 或引擎 hook。
 工具保留原字体 0–255 映射，将 Font 的 CharactersPerPage 从 256 改为 64，
 按实际译文生成不超过 256×256 的 P8 atlas，并追加资源及重建目录表。
-六个 Font 对象改变；其他原导出记录/正文和脚本字节码保持。
+六个 Font 对象改变；另有一个字幕绘制Y坐标常量从0改为24px，8370个其他原导出保持。
 这是 **Unreal/WoT 适配层限制**，不是所有游戏的通用格式。
 
 ## 仓库结构
@@ -77,7 +77,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 字幕 897 个键中 817 个原文为空；地图实例文字、部分硬编码 UI、视频轨道不在当前构建范围。
 字体仍沿用原版固定像素尺寸；4K UI 偏小保留为已知问题，建议切换1080p。
 当前继续1080p菜单、Inventory和字幕覆盖验证，不为4K改引擎或缩放系统。
-当前字幕长度补偿不是音频时间码同步。详见 [known-issues](docs/KNOWN_ISSUES.md)。
+字形完整边界适配保留原版行高，教程字幕留出24px上边距，见[字形与字幕位置修复](docs/GLYPH_LAYOUT_FIX.md)。当前字幕长度补偿不是音频时间码同步。详见 [known-issues](docs/KNOWN_ISSUES.md)。
 
 ## 许可
 

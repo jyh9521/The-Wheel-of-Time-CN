@@ -5,7 +5,7 @@ def check_font(rows, path, config):
     with TTFont(str(path), fontNumber=config.get("collection_index", 0)) as font:
         cmap = font.getBestCmap() or {}
         characters = {c for row in rows for c in row.get("translation", "")}
-        characters.update(config["baseline_anchor"])
+        characters.update(config.get("baseline_anchor", ""))
         missing = sorted(
             ord(c) for c in characters if not c.isspace() and ord(c) not in cmap
         )

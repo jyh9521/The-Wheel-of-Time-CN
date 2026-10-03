@@ -49,7 +49,7 @@ Font 页引用 Texture 对象，矩形 `(x,y,w,h)` 各为 little-endian int32。
 六个字体来自游戏 profile：Reg14=14、Reg30=30、Reg14_S=7、Reg30_S=15、Ita14=14、Reg08=8。
 取消以320x240为目的的12px默认修改，保持游戏原字号，不改符号/按键专用 Font。
 斜体适配器对 Ita14 使用0.22剪切、扩宽矩形；其他字体正体方格字宽。
-生成器依 locale 的 baseline_anchor 对齐，不再把“汉”硬编码在核心；保留标点纵向bearing。
+生成器使用全部实际用字的共同bbox保留完整源墨迹与标点纵向bearing，再按共同比例适配原版行高；旧baseline_anchor仅兼容覆盖检查，不再控制裁剪边界。
 不是完整 OpenType shaping/kerning/比例字宽实现。支持其他语言应选择字体并重新验收。
 
 Texture 使用原调色板的 P8 像素；透明索引与原字体共享，抗锯齿映射到游戏金色调色板。
@@ -70,8 +70,8 @@ Tes_01 对应 DialogA.Tes_01，教学开始自然触发；显示时间按文本 
 
 生成器复制原包、追加 Font/Texture 数据与名称/导出表；更新表偏移、计数和最后一代 generation计数。
 Texture lazy-end 是绝对文件偏移，必须与像素数组一起计算；仅改纹理像素不够。
-保留原 GUID、imports、原名称字节/flags；其他8371原导出记录与正文逐字节验证。
-受选Font导出 size/offset、页数/纹理引用、CPP、纹理尺寸、像素量/lazy-end及包表须同步。
+保留原 GUID、imports、原名称字节/flags；字体生成阶段其他8371原导出记录与正文逐字节验证；后续字幕坐标补丁单独修改一个Function字段，最终其他8370导出逐字节保持。
+受选Font导出 size/offset、页数/纹理引用、CPP、纹理尺寸、像素量/lazy-end及包表须同步。Font生成阶段的bytecode_unchanged不代表字幕位置修复后的最终包；BUILD_REPORT另列resource_edits。
 重读输出验证所有原Latin映射及新增glyph矩形、纹理引用、绝对lazy-end。
 详见 docs/FILE_FORMATS.md；不依赖纯手工十六进制。
 
@@ -117,3 +117,9 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 ## Controls 后续实机显示验收（2026-10-03）
 
 上述离线阶段的待验项已补充有限实机证据：原/改各在1366×768、1920×1080、2560×1440运行一次，每次选中11行、正常退出0。1080p修改版11条帮助逐帧人工审查，其他两种分辨率各审查第1/2/3/5/10/11行；当前文本未见乱码、空白或截断。右侧动态值保留原文，不改脚本、字体或译文；这不证明全部菜单、存档、战斗及Windows版本组合。可配置只读菜单sweep与单帧探针共存；自动记录仍保留visual_review=pending，人工结论另存。详见[验收方法](docs/CONTROLS_QA.md)与[散列索引](docs/CONTROLS_QA_RESULTS.json)。
+
+## 字形边界与字幕上边距修复（2026-10-03）
+
+已验证：单“汉”bbox不是全字库边界。源字体14px时“汉”top=4、“重”top=2，旧14×14栅格在渲染前裁掉重顶部。新方案先计算全部实际使用字符的共同bearing/边界，并与64px边框参考画布比对源墨迹，再Lanczos整体适配原槽位高度；不是逐字裁边，也不是像素完全无损变换。保留ASCII原始映射/位图与原行高，防止双列/StrLen单行判定回归。
+
+字幕另有资源内显示字段变更：WOT.u/BaseHUD.DrawMessages，Function导出5095、2614字节，body+1979（原包绝对992669）float32-le 0→24；最终8370个其他原导出不变。原脚本的ScaleValY(24)仍保留，当前SetPos是固定24原生像素，不声称使用该缩放变量；仅1080p验收。字段工具先检查原游戏hash、目标Function完整hash、上下文、原始值，未知版本失败；等长修改不动跳转、TOC、函数长度、计时或玩法。EXE/DLL仍无改动，但不能再声称最终资源全部bytecode不变。方法与证据见[GLYPH_LAYOUT_FIX.md](docs/GLYPH_LAYOUT_FIX.md)。

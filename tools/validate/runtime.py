@@ -28,7 +28,7 @@ def run(game, runtime, build, out, size, view, original=False, sweep=False):
         raise ValueError("Runtime must be outside the original game")
     if size not in MATRIX:
         raise ValueError(
-            "Resolution is outside active QA; 4K remains a documented known issue"
+            "Resolution is outside active QA; see deferred and known-issue resolutions"
         )
     if not (runtime / "System/WoT.exe").is_file():
         raise ValueError("Provide a complete separate runtime copy")

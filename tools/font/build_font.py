@@ -2,9 +2,10 @@
 
 import argparse, csv, hashlib, json, math, pathlib, struct, sys
 from collections import defaultdict
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageFont
 from fontTools.ttLib import TTFont
 from tools.pack.ue1 import Package, Reader, ci, body, font
+from tools.font.raster import layout, render
 
 
 def prop_end(b):
@@ -79,6 +80,11 @@ def build(
     tt.close()
     if missing:
         raise ValueError("Source font missing codepoints: " + repr(missing))
+    if profile.get("font_line_height_policy", "preserve-legacy") not in (
+        "preserve-legacy",
+        "expand",
+    ):
+        raise ValueError("Unknown font line height policy")
     selected = profile["fonts"]
     cpp_new = profile["characters_per_page"]
     data = bytearray(a.b)
@@ -119,8 +125,24 @@ def build(
         ]
         skew = profile.get("oblique", {}).get(rec["path"], 0)
         italic = bool(skew)
-        gw = sz + math.ceil((sz - 1) * skew)
-        gh = sz
+        f = ImageFont.truetype(
+            str(fontpath), sz, index=font_config.get("collection_index", 0)
+        )
+        metrics = layout(
+            f,
+            chars,
+            sz,
+            skew,
+            top_padding=font_config.get("top_padding", 0),
+            bottom_padding=font_config.get("bottom_padding", 0),
+            fit_height=(
+                sz
+                if profile.get("font_line_height_policy", "preserve-legacy")
+                == "preserve-legacy"
+                else None
+            ),
+        )
+        gw, gh = metrics["width"], metrics["height"]
         cell = max(gw, gh) + 2
         capacity = (max_atlas // cell) ** 2
         groups = []
@@ -147,10 +169,7 @@ def build(
         )
         glyphs = {}
         textures = []
-        f = ImageFont.truetype(
-            str(fontpath), sz, index=font_config.get("collection_index", 0)
-        )
-        baseline_top = f.getbbox(font_config["baseline_anchor"])[1]
+        baseline_top = metrics["source_bounds"][1]
         for group_index, group in enumerate(groups):
             total = sum(len(cs) for _, cs in group)
             dim = max(128, p2(math.ceil(math.sqrt(total)) * cell))
@@ -168,18 +187,7 @@ def build(
                     x = (slot % columns) * cell + 1
                     y = (slot // columns) * cell + 1
                     slot += 1
-                    bbox = f.getbbox(ch)
-                    mask = Image.new("L", (sz, sz), 0)
-                    ImageDraw.Draw(mask).text((0, -baseline_top), ch, font=f, fill=255)
-                    if italic:
-                        mask = mask.transform(
-                            (gw, gh),
-                            Image.Transform.AFFINE,
-                            (1, skew, -skew * (sz - 1), 0, 1, 0),
-                            resample=Image.Resampling.BICUBIC,
-                        )
-                    if mask.getbbox() is None and not ch.isspace():
-                        raise ValueError("Empty raster for " + repr(ch))
+                    mask = render(f, ch, metrics)
                     for yy in range(gh):
                         for xx in range(gw):
                             pixels[x + xx, y + yy] = lut[mask.getpixel((xx, yy))]
@@ -255,6 +263,9 @@ def build(
                 export=fi,
                 pixel_size=sz,
                 baseline_top=baseline_top,
+                raster_metrics=metrics,
+                source_ink_verified_before_fit=True,
+                legacy_line_height_preserved=gh == sz,
                 glyph_style=f"oblique-{skew}" if italic else "upright",
                 glyph_dimensions=[gw, gh],
                 page_count=len(newpages),

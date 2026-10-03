@@ -66,3 +66,7 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 ## 迁移译文的保留
 
 迁移时保留此前正式19条draft，不重新翻译或覆盖；后续Controls增补18条形成当前37条。旧游戏work/phase5/test_translations.json的7条测试译文整理为research/phase5-strings.json，保存ID/控制符和原文SHA/长度，不收录完整英文原表，也不自动并入生产表。其帮助文是历史实验变体，与当前帮助译文不同；审稿时人工选择，避免同时回填同一ID。
+
+## 字形与上边距
+
+不要通过添加空格/换行、裁切“重”等单字来补偿字体或字幕布局。工具收集译文字符后完整渲染，共同bearing保证句号位置，按游戏profile适配原行高；新语言仍需自行选择覆盖字体并在1080p验收。字幕上边距由技术profile的显示坐标字段负责，译文、长度补偿、标点与控制码不为此改写。

@@ -1,10 +1,11 @@
 {
   "minimum": [1366, 768],
   "recommended": [1920, 1080],
-  "active_resolutions": [[1366, 768], [1920, 1080], [2560, 1440]],
+  "active_resolutions": [[1920, 1080]],
   "known_issue_resolutions": [[3840, 2160]],
+  "deferred_resolutions": [[1366, 768], [2560, 1440]],
   "views": ["main", "menu", "options", "inventory", "subtitle"],
   "decision_date": "2026-10-03",
-  "reason": "Recommend 1080p. Fixed-pixel UI is small at 4K; retain historical evidence without further 4K adaptation.",
+  "reason": "Development QA checks 1080p only. Other resolutions are deferred to user acceptance after translation; 4K remains a known issue.",
   "menu_item_counts": {"options": 11}
 }

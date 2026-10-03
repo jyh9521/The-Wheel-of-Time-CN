@@ -1,0 +1,293 @@
+{
+  "original_resource_sha256": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb",
+  "modified_resource_sha256": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+  "changed_exports": [
+    "F_WOTReg14",
+    "F_WOTReg30",
+    "BaseHUD.DrawMessages",
+    "F_WOTReg14_S",
+    "F_WOTIta14",
+    "F_WOTReg08",
+    "F_WOTReg30_S"
+  ],
+  "unchanged_original_exports": 8370,
+  "function": {
+    "export": 5095,
+    "original_body_sha256": "fc90d7263d18afae8ecad1566651ef9b44a3ac9a5f172aeca4608f70069196da",
+    "modified_body_sha256": "feaa6f88809771559f6064e1b5ba5baf1c74e884dd40a7227f2975a8ea74ebdd",
+    "body_offset": 1979,
+    "original_absolute_offset": 992669,
+    "field_type": "float32-le",
+    "expected": 0,
+    "value": 24,
+    "bytecode_size_unchanged": true,
+    "jump_offsets_unchanged": true
+  },
+  "translation_resources_unchanged_from_previous_build": true,
+  "fonts": {
+    "F_WOTReg14": {
+      "clipped_glyph_count": 5,
+      "clipped_characters": "入此重量高",
+      "heavy": {
+        "lost_alpha_sum": 2697,
+        "old_anchor_top": 4,
+        "glyph_bbox": [
+          0,
+          2,
+          14,
+          16
+        ],
+        "fixed_origin": [
+          0,
+          -2
+        ],
+        "fixed_cell": [
+          14,
+          14
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          2,
+          14,
+          17
+        ],
+        "origin": [
+          0,
+          -2
+        ],
+        "base_width": 14,
+        "width": 14,
+        "height": 14,
+        "raster_height": 15,
+        "vertical_fit_scale": 0.9333333333333333,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0
+      }
+    },
+    "F_WOTReg30": {
+      "clipped_glyph_count": 124,
+      "clipped_characters": "产值关到制前力加动单变右后向启在场坡声备多大奔始它定害家察幕度微心惊惧慌成我持按接推摇撞播操支改效敏数整新方时未杆标梯楼次此步每气水法流消游炼特生白的盘直离称移程穿纵练织终续编耗能自般莱血行补被视角试走越跑车转轴轻过近这进退选造道锤键门闭随音须高鼠",
+      "heavy": {
+        "lost_alpha_sum": 0,
+        "old_anchor_top": 8,
+        "glyph_bbox": [
+          0,
+          8,
+          30,
+          34
+        ],
+        "fixed_origin": [
+          0,
+          -6
+        ],
+        "fixed_cell": [
+          30,
+          30
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          6,
+          30,
+          37
+        ],
+        "origin": [
+          0,
+          -6
+        ],
+        "base_width": 30,
+        "width": 30,
+        "height": 30,
+        "raster_height": 31,
+        "vertical_fit_scale": 0.967741935483871,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0
+      }
+    },
+    "F_WOTReg14_S": {
+      "clipped_glyph_count": 0,
+      "clipped_characters": "",
+      "heavy": {
+        "lost_alpha_sum": 0,
+        "old_anchor_top": 2,
+        "glyph_bbox": [
+          0,
+          2,
+          7,
+          9
+        ],
+        "fixed_origin": [
+          0,
+          -2
+        ],
+        "fixed_cell": [
+          7,
+          7
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          2,
+          7,
+          10
+        ],
+        "origin": [
+          0,
+          -2
+        ],
+        "base_width": 7,
+        "width": 7,
+        "height": 7,
+        "raster_height": 8,
+        "vertical_fit_scale": 0.875,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0
+      }
+    },
+    "F_WOTIta14": {
+      "clipped_glyph_count": 5,
+      "clipped_characters": "入此重量高",
+      "heavy": {
+        "lost_alpha_sum": 2697,
+        "old_anchor_top": 4,
+        "glyph_bbox": [
+          0,
+          2,
+          14,
+          16
+        ],
+        "fixed_origin": [
+          0,
+          -2
+        ],
+        "fixed_cell": [
+          17,
+          14
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          2,
+          14,
+          17
+        ],
+        "origin": [
+          0,
+          -2
+        ],
+        "base_width": 14,
+        "width": 17,
+        "height": 14,
+        "raster_height": 15,
+        "vertical_fit_scale": 0.9333333333333333,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0.22
+      }
+    },
+    "F_WOTReg08": {
+      "clipped_glyph_count": 128,
+      "clipped_characters": "不中为他件仿伊会伤位住佛作你使依值关冲准击制前加动十单去反受变名后启员和场坡塔备多央头奔始娜定害将就屏幅幕平度开引微惊惧慌成或按接推摇播操支改效敏教数方无是晃更最未杆松果梯楼次步流深灵特玩用看眼硬离称移程纵织续而耗自莱行补要视角训设跃跳车转轴轻随需面须鼠，",
+      "heavy": {
+        "lost_alpha_sum": 0,
+        "old_anchor_top": 2,
+        "glyph_bbox": [
+          0,
+          2,
+          8,
+          10
+        ],
+        "fixed_origin": [
+          0,
+          -2
+        ],
+        "fixed_cell": [
+          8,
+          8
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          2,
+          8,
+          11
+        ],
+        "origin": [
+          0,
+          -2
+        ],
+        "base_width": 8,
+        "width": 8,
+        "height": 8,
+        "raster_height": 9,
+        "vertical_fit_scale": 0.8888888888888888,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0
+      }
+    },
+    "F_WOTReg30_S": {
+      "clipped_glyph_count": 13,
+      "clipped_characters": "入在备将幕撞新行角重音高鼠",
+      "heavy": {
+        "lost_alpha_sum": 1041,
+        "old_anchor_top": 4,
+        "glyph_bbox": [
+          0,
+          3,
+          15,
+          17
+        ],
+        "fixed_origin": [
+          0,
+          -3
+        ],
+        "fixed_cell": [
+          15,
+          15
+        ]
+      },
+      "source_ink_verified_before_fit": true,
+      "legacy_line_height_preserved": true,
+      "raster_metrics": {
+        "source_bounds": [
+          0,
+          3,
+          15,
+          19
+        ],
+        "origin": [
+          0,
+          -3
+        ],
+        "base_width": 15,
+        "width": 15,
+        "height": 15,
+        "raster_height": 16,
+        "vertical_fit_scale": 0.9375,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "skew": 0
+      }
+    }
+  }
+}

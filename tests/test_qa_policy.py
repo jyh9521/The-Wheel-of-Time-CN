@@ -10,6 +10,12 @@ class QAPolicyTests(unittest.TestCase):
     def test_recommends_1080p(self):
         self.assertEqual(load_policy()["recommended"], [1920, 1080])
 
+    def test_only_1080p_active(self):
+        self.assertEqual(load_policy()["active_resolutions"], [[1920, 1080]])
+        self.assertEqual(
+            load_policy()["deferred_resolutions"], [[1366, 768], [2560, 1440]]
+        )
+
     def test_4k_not_active(self):
         p = load_policy()
         self.assertNotIn([3840, 2160], p["active_resolutions"])
@@ -18,7 +24,7 @@ class QAPolicyTests(unittest.TestCase):
     def test_plan_recommended_first_without_launch(self):
         plan = make_plan(load_policy(), "ja-JP")
         self.assertFalse(plan["launches_game"])
-        self.assertEqual(len(plan["probes"]), 30)
+        self.assertEqual(len(plan["probes"]), 10)
         self.assertEqual(plan["probes"][0]["resolution"], [1920, 1080])
         self.assertIn("build/ja-JP", plan["probes"][0]["argv"])
         self.assertTrue(all(p["resolution"] != [3840, 2160] for p in plan["probes"]))
@@ -37,6 +43,15 @@ class QAPolicyTests(unittest.TestCase):
     def test_excluded_resolution_cannot_be_active(self):
         p = copy.deepcopy(load_policy())
         p["active_resolutions"].append([3840, 2160])
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "policy.json"
+            path.write_text(json.dumps(p), "utf8")
+            with self.assertRaises(ValueError):
+                load_policy(path)
+
+    def test_deferred_resolution_cannot_be_active(self):
+        p = copy.deepcopy(load_policy())
+        p["active_resolutions"].append([1366, 768])
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "policy.json"
             path.write_text(json.dumps(p), "utf8")

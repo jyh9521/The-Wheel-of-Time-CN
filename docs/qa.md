@@ -26,7 +26,7 @@
 原英文4K Inventory和字幕同样明显偏小，属于原UI固定像素机制，而非中文编码失效。
 **2026-10-03 范围调整：维护者决定不再适配4K，将UI偏小保留为已知问题，推荐玩家1080p游玩。**
 既有4K测试表和证据不删除；后续不再以缩放4K UI为开发目标。
-当前主动矩阵为1366x768、1920x1080、2560x1440；默认与优先项均为1080p。
+当时主动矩阵为1366x768、1920x1080、2560x1440；默认与优先项均为1080p。
 新增语言无关QA策略配置与离线原/改对照计划；本次35项合成测试通过，未重新启动游戏。
 
 ## 命令与输入
@@ -35,7 +35,7 @@
 python -m tools.validate.runtime --game-dir GAME --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view menu
 ```
 
-替换resolution为上表值、view为inventory/subtitle；--original保留同配置原资源对照。
+上述为历史验收方法；当前resolution仅1920x1080，view可为inventory/subtitle；--original保留同配置原资源对照。
 menu启动 `.\WoT.exe Entry -nosound`，Escape、Enter；Inventory启动
 `.\WoT.exe Mission_01 -nosound`，F3关闭初始目标、1选当前手位、F2资料，额外等待10秒。
 subtitle启动 `.\WoT.exe Tutorial`，无移动/控制台输入，10/20/25/36秒截图；自身主窗口WM_CLOSE。
@@ -57,3 +57,7 @@ pending是探针自动结果，不是人工审查结论。结构索引和证据h
 
 这不是所有菜单/HUD、全部剧情、存档/切图/战斗/联网或多显卡/多Windows版本完整验收。
 4K可读性作为已知问题保留、不继续适配；推荐1080p，当前不发布玩家成品。不提交游戏截图/整包资源/Windows字库生成物。
+
+## 2026-10-03 当前QA范围
+
+按用户最新要求，后续开发只检查1920x1080。其他分辨率延后由用户在汉化完成后验收；4K继续列为已知问题。旧矩阵与证据保留，不作为本次修复的覆盖范围。字形顶部与教程字幕修复、18帧人工复查见[修复报告](GLYPH_LAYOUT_FIX.md)。

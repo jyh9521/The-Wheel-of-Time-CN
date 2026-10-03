@@ -1,0 +1,657 @@
+{
+  "date": "2026-10-03",
+  "input_commit": "66eeeecd029e3eb582c84066d223431f7e01829d",
+  "locale": "zh-CN",
+  "draft_entries": 37,
+  "active_qa": [
+    [
+      1920,
+      1080
+    ]
+  ],
+  "tests": 68,
+  "probes": [
+    {
+      "stage": "native-before",
+      "probe": "modified_1920x1080_inventory.json",
+      "json_sha256": "ab84411afc269a3f65403fcaa1f5207c98c9a772ad150f035984f98069fa18a6",
+      "log_sha256": "d1978493d29df438b3651e93d833f469f3fbcb542551c5176777d0c02e083a60",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "F3",
+        "1",
+        "F2",
+        "wait 10s for precache"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Mission_01",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_inventory_settled.png",
+          "sha256": "ab1cbda9c54b4587171c96bd2d0cf7725ad4677dd72d4913db4324a44f62c65b",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-before",
+      "probe": "modified_1920x1080_main.json",
+      "json_sha256": "9ef0281cbe64f933b39ea37e032ffccc5a5f996d3496813c9dc9572bc6ad39e7",
+      "log_sha256": "d695c61fe3eea01e74fa0294808d94ec47ef0733da6f8c7dcc99797da1d16286",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_main_settled.png",
+          "sha256": "acd25dca00eb0af694c3a5193c671930916771853c3a01da8aa70e755022b4d2",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-before",
+      "probe": "modified_1920x1080_subtitle.json",
+      "json_sha256": "d1028cdd6c0569529cbb0edf889762c3ce2762b0b839273772f58f543ef691ad",
+      "log_sha256": "0af473d8d57b32613c0c696eb7f10399acdbf0113d382adfe339583d8d9760fd",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [],
+      "command": [
+        ".\\WoT.exe",
+        "Tutorial"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_subtitle_10.png",
+          "sha256": "c6c18b0abc8dd66c804f36d70659a80e7352061a8af22aa341e402322e4db77e",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_subtitle_20.png",
+          "sha256": "46b49e3d71867b50e81426ee93127d2bde90ce47ce09ef3b89a313d06b3a1aad",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_subtitle_25.png",
+          "sha256": "666a1f91ebebbff9670f7fe89a50c6efc7bfe9276c6bae15b32c53155c4cf1be",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_subtitle_36.png",
+          "sha256": "fa283ccc3cd79470d6da248bd671c950c32bbebaf94afbe43787d596fdfae2ee",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-after",
+      "probe": "modified_1920x1080_inventory.json",
+      "json_sha256": "2044f6528223edefcd3c69493fb9838942a75ac223427ecea124e7c91b24b37a",
+      "log_sha256": "3786e849789be93d1f739cf28d4e3260060e9fa072694bae1dcf036042d51e2d",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "2ba490ab8e3d7fdc88bb22fe2da799f1eff622e1ae50598d604c6451aedcbe37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "F3",
+        "1",
+        "F2",
+        "wait 10s for precache"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Mission_01",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_inventory_settled.png",
+          "sha256": "f417dbad0560a240a8ae7c4c0f4f5534682ac100ca4ee17ab7d7d20b2e781fb0",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-after",
+      "probe": "modified_1920x1080_main.json",
+      "json_sha256": "b23c782fab1f7e528ee63ac350b9d394c7bc0d09a13e1d04850820b9e3f434de",
+      "log_sha256": "9cc7aa25f45ab56125b0950d673b5b57aa505b60a27cc156ed16db6e80437d9d",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "2ba490ab8e3d7fdc88bb22fe2da799f1eff622e1ae50598d604c6451aedcbe37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_main_settled.png",
+          "sha256": "e7f6e2003b7283da4bcb8e359304451cb18046c4dc4337d7b57e3a0a230370a6",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-after",
+      "probe": "modified_1920x1080_menu.json",
+      "json_sha256": "a3d8e2f0f22267009ea07ef549a7c94296fe6cd84b275bbdbad319d9e19a1191",
+      "log_sha256": "9e55355a4c992c099bb78323b32cfb262c11f5a265639423730779ad98b4901d",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "2ba490ab8e3d7fdc88bb22fe2da799f1eff622e1ae50598d604c6451aedcbe37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Enter"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_menu_settled.png",
+          "sha256": "bded844fe1ce03a62997c8eb88071dfaa141dae3b7a4224f224b9197ae5f68d6",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-after",
+      "probe": "modified_1920x1080_options_sweep.json",
+      "json_sha256": "df80fbcedd4c09ff4b81d65ea092504ad1b34b1769ac2260ee6ec6e5908bb1d2",
+      "log_sha256": "d6e1ed054d91de396ea656c68c1f4dd1059c722e269ce27dcf324c285660340f",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "2ba490ab8e3d7fdc88bb22fe2da799f1eff622e1ae50598d604c6451aedcbe37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_options_sweep_settled.png",
+          "sha256": "fb65d204baf7daefebf26314f62fa55dca0a71e6a189eddbe3b90e1567bc540e",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_02.png",
+          "sha256": "ce7cfd799252e831f11870bf580371e9aa587e934745c1495f97cb7953eaf269",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_03.png",
+          "sha256": "2c32187fd2a56a49edfb5e3860f81b2854db227b91f7d9602c2419c6b2a748fe",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_04.png",
+          "sha256": "0be52db986ee1d4147da903f65c3057cf55608fa2c78febeee23106116037ebf",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_05.png",
+          "sha256": "20ba2af71a15d93312087241b78ceb72f449b8575aa926906ad829ba394c8409",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_06.png",
+          "sha256": "20d66ea43f0f13364b1ee4c3b73cd06c642abe81fa11e6c35a802936f1afce5d",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_07.png",
+          "sha256": "c16270fcfeacedb20747aab9457e393897748e5e4b7d2c1df48e2d9dbff4e4f4",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_08.png",
+          "sha256": "da9e98967ea02a1a6c3776efa49699995e9ce2685ba88daeac2367282b1ee64c",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_09.png",
+          "sha256": "1e2e51f8b0f8a8294894d95bb15083cc31b72750c310810b4a095c1279e3dc7d",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_10.png",
+          "sha256": "8081c0b1e7c7da802f4578f6f6e06b69ca682553d15ad1c6624bc5215f2899f0",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_11.png",
+          "sha256": "be5f29da1e7dec331e66d8f3ad455c35ad350ac6eed6a5cb0a18d468defed366",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-after",
+      "probe": "modified_1920x1080_subtitle.json",
+      "json_sha256": "a784829ce299c3d714e1b331b6fa7654a54fb0104dbb67f7dff6d0b990c55949",
+      "log_sha256": "74918aed9b0f95c433169fe840c87a9b4bf9b5883d1478b01d6c59829edd2f88",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "2ba490ab8e3d7fdc88bb22fe2da799f1eff622e1ae50598d604c6451aedcbe37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [],
+      "command": [
+        ".\\WoT.exe",
+        "Tutorial"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_subtitle_10.png",
+          "sha256": "02bcb5d2c51f8fa51193edd98619978358c2176e32b7ee5a540d187720eda559",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_subtitle_20.png",
+          "sha256": "c704d129179082b92a52855ffbd34118d125bfbdcedcb2858d7e25aea4666141",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_subtitle_25.png",
+          "sha256": "51a70710b7995777b3a907f8f51d269b6699be6a1392a831fd9773120064e0ab",
+          "manually_reviewed": false
+        },
+        {
+          "file": "modified_1920x1080_subtitle_36.png",
+          "sha256": "31db90199ec6edf9ece453ed431d2372a1fbae5117d91e5f30b879c848557de2",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-fixed",
+      "probe": "modified_1920x1080_inventory.json",
+      "json_sha256": "f7726a9e0ee56fac62f5ad16cb6eee067c8a91ca83fcec4fc630414fa225458d",
+      "log_sha256": "83487704a8d0ab6bb61fcf2bdda9697488e9909c96b57f00f5f936234214368e",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "F3",
+        "1",
+        "F2",
+        "wait 10s for precache"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Mission_01",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_inventory_settled.png",
+          "sha256": "df35c1f445882c49591a6c12c9ab5c17c2c3d473e53a2f16560b0614155180c0",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-fixed",
+      "probe": "modified_1920x1080_main.json",
+      "json_sha256": "7be6a644f73143e6da5a6792e17eaf8683bd3341edf0895faa68074529185406",
+      "log_sha256": "bffa50bed95c511000c588399255250eb864687f2ef9e0fe3b8c2b671bd8e3b9",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_main_settled.png",
+          "sha256": "94542a94be44e76e458b6f099bd426ad27fb73618bbd63ae0b017ae87538e0f0",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-fixed",
+      "probe": "modified_1920x1080_menu.json",
+      "json_sha256": "04a1269e1989ffbe7e761d821ac272c8d01caf375a84e91a321f10e583ab82ca",
+      "log_sha256": "f0b8f449518032aceb87556576a704836c9c5cffd78e66a2f8abef3e741d5d81",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Enter"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_menu_settled.png",
+          "sha256": "2ee0d814680d1780b028dc26bb9e1f19c1be7158731ea9b1530f3130c70a559e",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-fixed",
+      "probe": "modified_1920x1080_options_sweep.json",
+      "json_sha256": "eaba99b6e1d61e7e2a17d1c92c2d96223f14eea3366ab9984e52b8d9054a71de",
+      "log_sha256": "1d7ceb60e60e4d947af4fff2fa86228065c8fdd171f05acd63278b252a46a62d",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "command": [
+        ".\\WoT.exe",
+        "Entry",
+        "-nosound"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_options_sweep_settled.png",
+          "sha256": "e88d7396d8421cfdf92e1f226f1324071a6d5d5b61dae62c14892f14f4434a05",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_02.png",
+          "sha256": "7368ed013a32e04bef38f1efef31c2cad8aaeda73034558d8311e4894cb86ab5",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_03.png",
+          "sha256": "2e25aa58ffd7021bf142554979564d648498a7e9295d0fabf1659f9341ee3830",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_04.png",
+          "sha256": "5a309f5c751417a7ae08a9cad91000a50dcaa2c94d62c867bae0107ed090bf45",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_05.png",
+          "sha256": "bbeeb6f50566e6ee7e9ab635ddd8f2c1c9fa62b32a8503e4b4c9099c05a28ca2",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_06.png",
+          "sha256": "f0ad0bf322acecce0d28f7aa7dcaeb41bd8a1a1e3073ae5fe50ea83afbdb59ed",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_07.png",
+          "sha256": "e68ced158f31562bb6edcda49831b7e5d6c02734f74a0a2eea230c531136dba8",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_08.png",
+          "sha256": "3e9c9796b8cb9fb621151d6fa8d1940b4048ff4c494d0f575a897e124a12aec4",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_09.png",
+          "sha256": "6ab0b79f8b36e24fe43412212154971bac922651ac532a4a4f87e273abb288c8",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_10.png",
+          "sha256": "b4513b87ef147d5d1134dfa5d0468b41e88c8fe04cac88494b6133bc94074c9b",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_options_sweep_item_11.png",
+          "sha256": "95071b539929fd618c4c8e22b69445753f9841bbf715ed9dbf5dfdd8804889ce",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    },
+    {
+      "stage": "native-fixed",
+      "probe": "modified_1920x1080_subtitle.json",
+      "json_sha256": "761efcab1beb3a8b1f82740e0c9a200176c9025b9a9c78bc7fd695eaa8521bda",
+      "log_sha256": "ab4418ad01c8064d1250ad13b80ebcb9fa2f021f25006869cef72ef96c858ce9",
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "exit_code": 0,
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "17808b81901fdc047f07e9e14dc64c77135458db68c86e644d2e057259c85f37",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [],
+      "command": [
+        ".\\WoT.exe",
+        "Tutorial"
+      ],
+      "frames": [
+        {
+          "file": "modified_1920x1080_subtitle_10.png",
+          "sha256": "edfe9b4fb6429ccdb1c207a04851b6898db76d3b34a5aaf345cfbd4ad04399a6",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_subtitle_20.png",
+          "sha256": "3de67d635b3061af808d2dc5c7e5f740742db902916aef480b99d457876aa817",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_subtitle_25.png",
+          "sha256": "196d63c3bc8b7db75746ea033c98caf8d1f4cdc4d256554b2022a69cbf6d0f66",
+          "manually_reviewed": true
+        },
+        {
+          "file": "modified_1920x1080_subtitle_36.png",
+          "sha256": "e3b1aae2f411bf04dbca1c6f16e65cc74f95eea9732f93295bbbf105c46cbb1a",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending"
+    }
+  ],
+  "subtitle_pixel_bands": {
+    "before": [
+      0,
+      22
+    ],
+    "fixed": [
+      51,
+      72
+    ],
+    "method": "Bright gold pixels, central 80 percent of desktop capture, at least 100 per row in first 100 rows; corroborates manual review, not OCR"
+  },
+  "rejected_candidate": "Expanded glyph cell heights caused Controls column drift and lost single-line help centering; retained as local research",
+  "final_manual_result": "Full glyph tops visible in reviewed main/inventory text; tutorial subtitle has top margin; Controls all 11 rows and centered help reviewed",
+  "scope": "No new translations, no original-install writes, no EXE/DLL changes; display-only resource function Y float changed"
+}

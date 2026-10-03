@@ -10,6 +10,7 @@ import fontTools
 from src.patch.delta import create, apply, sha
 from tools.font.build_font import build as build_font
 from tools.validate.fonts import check_font
+from src.patch.resource_fields import apply_resource_edits
 
 
 def check_originals(game, profile):
@@ -45,6 +46,7 @@ def build(game, out, rows, config, profile, fontpath):
         shutil.copyfile(game / 'System/WOT.u', resources / 'WOT.u')
         font_result = {'unique_glyphs': 0, 'reason': 'legacy font coverage; package unchanged'}
         (out / 'FONT_DIFF.json').write_text(json.dumps(font_result), 'utf8')
+    resource_edits = apply_resource_edits(resources / 'WOT.u', profile)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
     files = {}
     for name in names:
@@ -68,7 +70,10 @@ def build(game, out, rows, config, profile, fontpath):
               'input_rows_sha256': sha(json.dumps(rows, sort_keys=True, ensure_ascii=False).encode()),
               'files': {n: {k: d[k] for k in ('original_sha256', 'original_size', 'modified_sha256', 'modified_size')}
                         for n, d in files.items()}, 'modified_file': 'resources/System/WOT.u',
-              'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True}
+              'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True,
+              'resource_edits': resource_edits,
+              'bytecode_unchanged': not bool(resource_edits),
+              'font_diff_scope': 'Font generation stage, before display-only resource field edits'}
     check_originals(game, profile)
     (out / 'BUILD_REPORT.json').write_text(json.dumps(report, indent=2), 'utf8')
     print(f'BUILD PASS: locale={config["locale"]}; {len(files)} files; '

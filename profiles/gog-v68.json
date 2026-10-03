@@ -39,5 +39,21 @@
       "size": 19330,
       "sha256": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e"
     }
-  }
+  },
+  "resource_edits": [
+    {
+      "id": "subtitle-top-margin",
+      "resource": "System/WOT.u",
+      "export": "BaseHUD.DrawMessages",
+      "export_sha256": "fc90d7263d18afae8ecad1566651ef9b44a3ac9a5f172aeca4608f70069196da",
+      "offset": 1979,
+      "type": "float32-le",
+      "expected": 0.0,
+      "value": 24.0,
+      "context_offset": 1965,
+      "context_hex": "19000a1000001cbf1e000000001e000000001619000a17000061d0366101014904",
+      "reason": "Display-only Canvas.SetPos Y constant; native script computes Y but draws at zero. 24 native pixels, no timing/branch/gameplay edits."
+    }
+  ],
+  "font_line_height_policy": "preserve-legacy"
 }
