@@ -848,6 +848,7 @@
     ],
     "game_started": false,
     "independent_rollback": "four original resources restored; generated modified files retained",
-    "git_state": "Full existing GitHub origin/main history attached at dee6e61; migration changes prepared without commit/push or force."
-  }
+    "git_state": "Migration committed and normally pushed as 3df21560e62169101f0e2df7460a974e81e18758; fetch confirmed main and origin/main equal; no forced update."
+  },
+  "destination_hash_scope": "Migration/history-link snapshot before the subsequent Controls draft expansion; fingerprints are not a live source inventory."
 }

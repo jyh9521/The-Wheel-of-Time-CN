@@ -40,7 +40,7 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 
 源字幕计时按 Len；配置可保留原文长度，由构建器生成引号内尾 ASCII 空格。
 **译文文件不要手工补空格**；此方法只避免短译文明显缩短，不是精准音频同步。
-当前十九条为技术 PoC 草稿；新增12条仅覆盖主菜单及Controls少量字段。人名、地名、法器/技能名以 glossary.json 的审校版本为准，
+当前三十七条为技术 PoC 草稿；在此前19条基础上补齐Controls其余8项标签和10条帮助。人名、地名、法器/技能名以 glossary.json 的审校版本为准，
 当前 glossary 是候选词，不冒充官方译名；正式翻译前评审并冻结一致写法。
 没有英文原文的空字幕不能根据 key 编造对白，不自动转录全游戏。
 
@@ -65,4 +65,4 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 
 ## 迁移译文的保留
 
-locales/zh-CN/strings.json保留此前正式19条draft，不重新翻译或覆盖。旧游戏work/phase5/test_translations.json的7条测试译文整理为research/phase5-strings.json，保存ID/控制符和原文SHA/长度，不收录完整英文原表，也不自动并入生产表。其帮助文是历史实验变体，与当前帮助译文不同；审稿时人工选择，避免同时回填同一ID。
+迁移时保留此前正式19条draft，不重新翻译或覆盖；后续Controls增补18条形成当前37条。旧游戏work/phase5/test_translations.json的7条测试译文整理为research/phase5-strings.json，保存ID/控制符和原文SHA/长度，不收录完整英文原表，也不自动并入生产表。其帮助文是历史实验变体，与当前帮助译文不同；审稿时人工选择，避免同时回填同一ID。

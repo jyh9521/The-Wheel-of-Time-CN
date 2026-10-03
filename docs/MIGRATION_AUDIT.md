@@ -78,7 +78,7 @@ System中的EXE/DLL/U、原版INT/INI；Maps的UNR/WOT；Textures的UTX；Sounds
 
 ## 后续缺项
 
-1. Git历史衔接已完成，基于原origin/main；本次迁移变更尚未commit/push，待维护者审阅。
+1. Git历史衔接已完成，基于原origin/main；迁移成果已普通推送为3df2156，此项完成。
 2. 构建需要显式用户提供覆盖字体；若要只用“干净仓库+原版游戏”（依赖安装后不再额外给字体），需选择可再分发字体、带许可引入并重新QA。现有Windows字体不打包。
 3. 19条草稿审稿，正式Release字体/差分审计、玩家安装包与说明、存档/切图/战斗等验收。它们是发布缺项，不是当前PoC重建缺项。
 4. 字幕817空项、完整对白恢复、MOV文字轨/外挂显示、动态布尔与其余UI仍待后续专项；本轮不扩展翻译或修改游戏逻辑。
@@ -108,3 +108,5 @@ python install.py restore --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT
 - 独立安装/回滚与可执行ROLLBACK.sh：退出0；New Game → 新游戏 → New Game；修改构建保留。
 - strict校验：预期退出1，19条draft未假装审稿。
 - 全命令、输入、字面输出和退出状态保存在本地build/migration/VERIFICATION.txt。
+
+迁移后后续Controls扩充见CONTROLS_POC.md；本报告19条/73文件等为迁移验收时的历史快照，不是后续汉化实时进度。

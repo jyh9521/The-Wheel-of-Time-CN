@@ -32,7 +32,7 @@ python -m venv .venv
 
 字体与游戏路径均由使用者提供；不依赖 `work/phase*`、作者备份或手改资源。
 输出必须在原安装之外，默认 `build/<locale>/`，可通过 `--out` 指定。
-生产构建前运行 `validate --strict`：当前十九条均为 draft，因此严格验收应失败，不能伪装已审校。
+生产构建前运行 `validate --strict`：当前三十七条均为 draft，因此严格验收应失败，不能伪装已审校。
 
 ## 产物
 
@@ -97,4 +97,4 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 
 新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用用户副本，自动备份与严格散列回滚。
 
-旧根目录工具原位保留，legacy命令并非正式构建前置步骤；MOV/map等辅助研究暂不加入生产路径。新目录起初为无.git模板文件树，现已从原GitHub origin/main接回完整历史；迁移修改尚未commit/push。源码独立构建验证与远程发布是两件事。完整迁移与后续缺项见docs/MIGRATION_AUDIT.md。
+旧根目录工具原位保留，legacy命令并非正式构建前置步骤；MOV/map等辅助研究暂不加入生产路径。新目录起初为无.git模板文件树，现已从原GitHub origin/main接回完整历史；迁移修改已普通推送于3df2156。源码独立构建验证与远程发布是两件事。完整迁移与后续缺项见docs/MIGRATION_AUDIT.md。

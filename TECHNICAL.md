@@ -109,3 +109,7 @@ menuOptions先按Default.MenuList画左列，再把同一数组改为运行时bo
 ## 工作区迁移记录
 
 复用本项目dee6e61已验证工具链，而非重做汉化。旧游戏根目录phase1–5研究归档于docs/research/game-root；全文路径和来源散列见docs/migration-manifest.json。历史低分辨率、12px小字和277/277结论只适用于当时实验；当前profile/QA仍以1080p和原始7/8px小号配置为准，4K不适配。生产构建不依赖旧backup/work/研究截图。迁移后的离线重建不等同本轮实机验收。详见docs/MIGRATION_AUDIT.md。
+
+## Controls 完整标签/帮助草稿（离线）
+
+WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个独立localized字段；现以源ID/SHA/长度为地址全部回填。新增18条不涉及硬件页、按键alias、右侧布尔/数值、游戏配置或脚本逻辑。仅在副本重建与回滚验证，未新增本轮实机证据；选中第2..11行后显示各帮助的宽度/换行仍待1080p优先QA。

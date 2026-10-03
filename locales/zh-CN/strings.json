@@ -207,5 +207,203 @@
     "source_length": 67,
     "tokens": [],
     "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[2]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "反转鼠标纵轴。开启后，向前推动鼠标会向下看，而不是向上看。",
+    "source_sha256": "f65597ac96945939ff5650bd100ff99b20745e327899501adc9e1008b932e005",
+    "source_length": 102,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[3]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "调整鼠标灵敏度。数值越高，轻微移动鼠标产生的视角变化越大。",
+    "source_sha256": "86b45553e7cae6c88bfe3851081458a60438c71df4f247215632af07100761e3",
+    "source_length": 119,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[4]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "开启后，鼠标始终用于调整视角，无需按住鼠标视角键。",
+    "source_sha256": "c8c088e9e1fec0dc7c2549646422781b073b2eca5613dd1a9216b61a6dca51f3",
+    "source_length": 90,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[5]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "开启后，在未使用鼠标视角时，视角会随坡道和楼梯自动上下调整。",
+    "source_sha256": "93d39d2bc97742d16eda01526b8f194b5d6ae782e4794f6b745fc0001b99ed9a",
+    "source_length": 111,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[6]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "开启后，松开鼠标视角键时，视角会自动回到水平位置。",
+    "source_sha256": "222fbf2e07d090a7e393171e9143d053408d3dd2dcd54a41dbd791bdb64e4b18",
+    "source_length": 89,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[7]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "选择屏幕中央显示的准星。",
+    "source_sha256": "6d6b15781427926e9ab5d9e8755272a371477f2b56b2e76332be1de0ac80890d",
+    "source_length": 58,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[8]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "调整行走或奔跑时的视角晃动幅度。",
+    "source_sha256": "67c083f56750e2b4ad5871f0f715eebce509820d12648a850d67370f368bc481",
+    "source_length": 66,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[9]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "开启或关闭摇杆支持。",
+    "source_sha256": "c1cf6c088904e75134954a141b639922cff4b26ebf60cdbdcd7844f2f996b074",
+    "source_length": 28,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[10]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "用左右方向键调整血腥效果。更改将在进入下一关后生效。",
+    "source_sha256": "4d38574277565992e64c5a3514ea5d9cbfe19b03c1adf1221b2900e4ff12e3aa",
+    "source_length": 127,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[11]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "开启后显示玩家名称。",
+    "source_sha256": "8fc8c661336ba2bead5bdedf9c8028bd965b9102a37172dc54c9f2030641f320",
+    "source_length": 37,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[4]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "始终鼠标视角",
+    "source_sha256": "3ea062b312f9fbf8a9e5c965dc1e37d7cb0f4cd7cfe7c01a1b053d38a65a9b7b",
+    "source_length": 16,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[5]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "自动坡度视角",
+    "source_sha256": "ad0844ef08886851c4189e37d6aef2442518bd3a0468caf1491229acae5027db",
+    "source_length": 15,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[6]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "视角自动回正",
+    "source_sha256": "f66d5763f54ff6e2cd241fdaa2bf58a67ee4a9874f219b47e038a0848b17c52e",
+    "source_length": 10,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[7]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "准星",
+    "source_sha256": "8b3214b0cef9302617301f68c9aa8f86faeabc923fb1402b7bd72b4d01e63e7b",
+    "source_length": 9,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[8]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "视角晃动",
+    "source_sha256": "22640deee9501a8213b4d0b8a882f1c73f620c0d12ed7ca4b6686c8ac5a1b0f9",
+    "source_length": 8,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[9]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "启用摇杆",
+    "source_sha256": "41b9b0cd42ce62f896a65d8e7479c9e796414363afdc1f3820ebb0cf978f9327",
+    "source_length": 16,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[10]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "血腥效果",
+    "source_sha256": "0f6536bba5a9c8e4277b22c38f1cba8de8c90f901c2d42950ba0571ec2e2e343",
+    "source_length": 11,
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[11]",
+    "occurrence": 1,
+    "tokens": [],
+    "translation": "玩家名称",
+    "source_sha256": "c3e96fa625b11a37859c9b99877776c7663f56a7e419f30c6e2d19ec54f5f5e6",
+    "source_length": 9,
+    "status": "draft"
   }
 ]
