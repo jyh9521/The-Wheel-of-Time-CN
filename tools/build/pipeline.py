@@ -4,6 +4,7 @@ import json
 import platform
 import sys
 import shutil
+import tempfile
 from pathlib import Path
 import PIL
 import fontTools
@@ -55,6 +56,16 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
         font_result = {'unique_glyphs': 0, 'reason': 'legacy font coverage; package unchanged'}
         (out / 'FONT_DIFF.json').write_text(json.dumps(font_result), 'utf8')
     resource_edits = apply_resource_edits(resources / 'WOT.u', profile)
+    texture_labels = None
+    if config.get('texture_labels_data'):
+        from tools.font.build_texture_labels import build as build_texture_labels
+        with tempfile.TemporaryDirectory(prefix='texture-labels-', dir=out) as temp:
+            source = Path(temp) / 'WOT.u'
+            shutil.copyfile(resources / 'WOT.u', source)
+            texture_labels = build_texture_labels(
+                source, resources / 'WOT.u', fontpath, config['texture_labels_data'],
+                profile['texture_labels'], out / 'TEXTURE_LABEL_DIFF.json',
+                config['font'].get('collection_index', 0))
     if source_report:
         source_report = dict(source_report, production_build_integrated=True)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
@@ -84,6 +95,7 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
                         for n, d in files.items()}, 'modified_file': 'resources/System/WOT.u',
               'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True,
               'resource_edits': resource_edits,
+              'texture_labels': texture_labels,
               'subtitle_source': source_report,
               'bytecode_unchanged': not bool(resource_edits),
               'font_diff_scope': 'Font generation stage, before display-only resource field edits'}

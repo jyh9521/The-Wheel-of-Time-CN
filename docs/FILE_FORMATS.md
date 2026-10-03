@@ -73,3 +73,11 @@ profile.resource_edits为语言无关显示字段：resource、export、export_s
 本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
+
+## P8纹理只读解析补充（2026-10-04）
+
+本地样本的属性列表终止符必须由包自己的名称表查找`None`，不能假定其名称索引永远是0。Texture通过Palette对象引用取得256项FColor调色板；每项4字节，RGB预览使用前三个通道，未模拟透明/遮罩显示。属性列表后依次读取紧凑索引mip数量、首级lazy-array的32位字段、紧凑索引像素数量、像素、32位宽高及后续字段。本地版本63与68均有该32位lazy-array字段，不能仅对大于63的版本跳过。工具仅解码首级P8图像，不支持资源重建；该观察不外推为所有Unreal版本通用布局。
+
+## 固定大小按钮回填
+
+本轮八张UI纹理均有包内Palette引用、一个64×64 P8 mip。只修改像素数组指定面板范围，不移动导出体，不重写lazy-array字段、包表或调色板。源导出体指纹由profiles/texture-labels.json固定；该工具明确拒绝外部Palette、多mip或不匹配的导出体，不能直接当作通用贴图封包器。

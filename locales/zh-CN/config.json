@@ -17,5 +17,9 @@
   "terminology": {
     "path": "GLOSSARY.md",
     "target_column": "中文译名"
+  },
+  "texture_labels": {
+    "data": "texture-labels.json",
+    "profile": "texture-labels.json"
   }
 }

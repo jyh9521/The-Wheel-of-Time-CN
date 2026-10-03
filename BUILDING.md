@@ -155,3 +155,15 @@ python -m tools.validate.text_coverage --locale zh-CN --game-dir "GAME" --subtit
 ```
 
 覆盖审计区分非空草稿、原样保留条目、未纳入文本、与源文完全相同的值；不会把`validate`的0空译文当成全中文或审校完成。当前1002草稿仍全部draft；--strict应失败。165条保留规则按身份与精确源文SHA-256固定，改变来源则重新审查。其余工具/字体/来源依赖与重建命令不变。
+
+## 图片按钮构建（2026-10-04）
+
+默认 `python build.py --locale zh-CN --game-dir GAME --subtitle-source DOWNLOADED_SUBTITLES --font FONT --out build/zh-CN` 已包含八张中文按钮纹理；不依赖手工图片或旧工作区。配置、原对象指纹和工具分别位于locales/<locale>/texture-labels.json、profiles/texture-labels.json、tools/font/build_texture_labels.py。字体必须覆盖全部标签字符。输出仍为六资源PATCH.json，额外输出TEXTURE_LABEL_DIFF.json和texture-labels/*.png。省略locale的texture_labels配置可跳过图片标签阶段。
+
+可单独验证范围：
+
+```powershell
+python -m tools.validate.texture_labels --source MODIFIED_WOT --profile profiles/texture-labels.json --manifest TEXTURE_LABEL_DIFF.json --baseline PREVIOUS_WOT
+```
+
+BASELINE指此前字库/译文一致、未修改按钮的WOT.u副本；范围测试要求所有其他导出对象、包表和文件大小不变。全新构建无需该副本，只需要经profile校验的原版游戏、社区字幕来源及字体。

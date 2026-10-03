@@ -1,0 +1,24 @@
+{
+  "pixel_size": 16,
+  "rectangle": [
+    10,
+    19,
+    54,
+    40
+  ],
+  "ink_rgb": [
+    15,
+    12,
+    9
+  ],
+  "labels": {
+    "UI.I_Load": "载入",
+    "UI.I_Play": "游玩",
+    "UI.I_Roam": "漫游",
+    "UI.I_Save": "保存",
+    "UI.M_Load": "载入",
+    "UI.M_Play": "游玩",
+    "UI.M_Roam": "漫游",
+    "UI.M_Save": "保存"
+  }
+}

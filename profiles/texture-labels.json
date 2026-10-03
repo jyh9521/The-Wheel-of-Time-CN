@@ -1,0 +1,69 @@
+{
+  "package_version": 68,
+  "textures": [
+    {
+      "path": "UI.I_Load",
+      "body_sha256": "a723cabe183f3e5595fff7b43336c65148c40caba46e4ba214ac65f668c65933",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.M_Load",
+      "body_sha256": "1675ea31d6c58c1a46d9c15668869c19b1fa4ffcfdd775160207d1e3d7597b16",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.I_Play",
+      "body_sha256": "1255fc80853773585ce347d003c36abcdfa6763faf79c7b7847468a889cc881b",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.M_Play",
+      "body_sha256": "728ea0b850790d7a120c2a8b06051ad1c400aeac1329fffacd5373de7bf7f5b8",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.I_Roam",
+      "body_sha256": "b32f4b140bb6c489fb6dfe9b01b6edf6d66133e16a0f09071eadd69052c38b60",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.M_Roam",
+      "body_sha256": "2def119f4623c518865a2fd786a771ce8f4ca7dbff2a6d8548affb66453f2134",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.I_Save",
+      "body_sha256": "28d919abfa712dba2cfe99eb42ae2696e85b7d273628cddb6a179cc15b3c1c3b",
+      "dimensions": [
+        64,
+        64
+      ]
+    },
+    {
+      "path": "UI.M_Save",
+      "body_sha256": "7381a7b8d5629320edc615984afc418fbb743fbfbe82d77c921fad5f1a689fa9",
+      "dimensions": [
+        64,
+        64
+      ]
+    }
+  ]
+}

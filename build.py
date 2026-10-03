@@ -51,6 +51,14 @@ def main():
     if profile_path.parent != (ROOT / "profiles").resolve():
         raise ValueError("Invalid profile identifier")
     profile = json.loads(profile_path.read_text("utf8"))
+    if config.get("texture_labels"):
+        spec = config["texture_labels"]
+        data_path = (locale / spec["data"]).resolve()
+        labels_profile = (ROOT / "profiles" / spec["profile"]).resolve()
+        if data_path.parent != locale or labels_profile.parent != ROOT / "profiles":
+            raise ValueError("Texture label configuration path escapes directory")
+        config["texture_labels_data"] = json.loads(data_path.read_text("utf8"))
+        profile["texture_labels"] = json.loads(labels_profile.read_text("utf8"))
     rows = json.loads((locale / "strings.json").read_text("utf8"))
     importer = importlib.import_module("tools.import.int_files")
     from tools.build.source_layer import source_layer, load_rows, compose_rows
@@ -112,6 +120,11 @@ def main():
                         for text in active_subtitle_texts(
                             source_dir, rows, profile["subtitle_files"]
                         )
+                    ]
+                if config.get("texture_labels_data"):
+                    font_rows = font_rows + [
+                        {"translation": text}
+                        for text in config["texture_labels_data"]["labels"].values()
                     ]
                 check_font(font_rows, args.font, config["font"])
             print(

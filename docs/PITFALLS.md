@@ -63,3 +63,10 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
+
+## 图片审计解析陷阱（2026-10-04）
+
+- 沿用字体特定样本中`None == 0`的假定，会让其他资源包属性解析失败；终止判断必须查询本包名称表。
+- 仅在版本`>63`跳过lazy-array字段，会把本游戏版本63贴图像素错读；本地63/68样本都需要该字段。
+- 仅按Sign/Book等资源名筛选会漏掉TpstWall挂毯等图像英文；需要总览筛查。
+- 地图导入、Actor放置、默认网格Skin与游戏实际可见纹理不是同一层证据；Cylinder实例可能覆盖默认皮肤。

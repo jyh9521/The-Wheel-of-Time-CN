@@ -119,3 +119,7 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
+
+## 图片按钮标签
+
+只翻译维护者选定的Load/Play/Roam/Save按钮，分别为载入/游玩/漫游/保存；其他图像文字维持原样。八个对象身份不翻译，I/M配套纹理保持相同译文。标签布局在locales/<locale>/texture-labels.json中配置；当前64×64贴图的文字面板为[10,19,54,40]，字号16，超出面板则构建报错，不截断文字。新增语言可复用栅格化和P8回填工具，不把CP936或中文字形写死在通用代码中。不要通过扩大贴图或修改共享调色板绕过限制；另行研究后再改动。专有名词仍以GLOSSARY.md为准。
