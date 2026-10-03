@@ -37,6 +37,14 @@ def main():
     if locale.parent != (ROOT / "locales").resolve():
         raise ValueError("Invalid locale identifier")
     config = json.loads((locale / "config.json").read_text("utf8"))
+    if config.get("terminology"):
+        from tools.validate.terminology import load_terms
+
+        spec = config["terminology"]
+        glossary = (ROOT / spec["path"]).resolve()
+        if not glossary.is_relative_to(ROOT):
+            raise ValueError("Terminology path escapes repository")
+        load_terms(glossary, spec["target_column"])
     if config["locale"] != args.locale:
         raise ValueError("Locale identifier mismatch")
     profile_path = (ROOT / "profiles" / (config["profile"] + ".json")).resolve()
@@ -82,6 +90,15 @@ def main():
             check_originals(args.game_dir, profile)
             if args.command != "extract":
                 importer.verify_sources(source_dir, rows)
+                if config.get("terminology"):
+                    from tools.validate.terminology import validate
+
+                    spec = config["terminology"]
+                    glossary = (ROOT / spec["path"]).resolve()
+                    if not glossary.is_relative_to(ROOT):
+                        raise ValueError("Terminology path escapes repository")
+                    validate(rows, source_dir, glossary, spec["target_column"])
+
         if args.command == "validate":
             if args.font:
                 from tools.validate.fonts import check_font

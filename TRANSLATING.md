@@ -40,15 +40,14 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 
 源字幕计时按 Len；配置可保留原文长度，由构建器生成引号内尾 ASCII 空格。
 **译文文件不要手工补空格**；此方法只避免短译文明显缩短，不是精准音频同步。
-当前49条为技术PoC草稿；此前37条含19条起始文本、Controls其余8项标签和10条帮助，本轮新增12条教程字幕。人名、地名、法器/技能名以 glossary.json 的审校版本为准，
-当前 glossary 是候选词，不冒充官方译名；正式翻译前评审并冻结一致写法。
+当前49条为技术PoC草稿；此前37条含19条起始文本、Controls其余8项标签和10条帮助，本轮新增12条教程字幕。人名、地名、法器/技能名及所有专有名词严格以根目录[GLOSSARY.md](GLOSSARY.md)为唯一术语基准，翻译、校对和发布说明开始前必须读取。旧glossary.json仅保留兼容指针，不再维护独立词库。未收录专名先查项目资料和中文Wiki，未确认则统一记入GLOSSARY.md的待确认清单；语境冲突先报告，不覆盖已定词条。
 没有英文原文的空字幕不能根据 key 编造对白，不自动转录全游戏。
 
 ## 添加其他语言
 
 复制 assets/templates/locale-config.json 至 locales/<locale>/config.json，
 填写 locale、profile、encoding、字体padding和TTC索引；
-新增 strings.json、glossary.json。字形边界由全部实际用字共同确定；旧baseline_anchor仅兼容覆盖检查，不控制对齐。
+新增 strings.json；术语与语言对应关系仍统一维护在根目录GLOSSARY.md中，不建立并行词库。字形边界由全部实际用字共同确定；旧baseline_anchor仅兼容覆盖检查，不控制对齐。
 提供 cmap 覆盖该语言的字体；现工具只覆盖 BMP、无复杂 shaping/bidi 实现。
 
 ```powershell
@@ -89,3 +88,18 @@ Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区
 
 ## 当前字幕来源策略（2026-10-03）
 采用社区优先完整并集：所有同key冲突使用社区值，原版独有key保留。详见 [COMMUNITY_SOURCE_POLICY](docs/COMMUNITY_SOURCE_POLICY.md)。旧保守合并描述仅为历史记录。
+
+
+## 术语校验与审校边界
+
+config.terminology指向唯一Markdown词表及目标语言列。带--game-dir的build/validate在源文预检之后按该词表检查已译条目的已定术语；英文大小写、直/弯引号及常见复数可归一用于匹配，原文件文本不归一。较长专名优先匹配，避免ter'angreal误匹配angreal。无游戏来源时检查器仅核验词表结构，不能凭hash恢复英语。自动匹配不是语义审稿，新专名、泛称和上下文冲突仍需人工审核。待确认项保持草稿，不冒充confirmed；占位符等仍由原验证器按精确数量和顺序校验。
+
+## 全表审计命令
+
+除生产build/validate外，可使用同一词表对已导出的原文目录和指定译文目录进行只读审计：
+
+```powershell
+python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中文译名 --source-dir ORIGINAL/System --catalog locales/zh-CN/strings.json locales/zh-CN/research/phase5-strings.json --out build/terminology-base.json
+```
+
+社区译文和覆盖表应传入经profile核验的合并英文目录，不能用原版空来源替代。此命令同时校验控制符与来源元数据，不自动改译文。README和发布说明需人工检查专名语境，不以英文关键词扫描声称全部语义已验证。

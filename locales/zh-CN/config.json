@@ -13,5 +13,9 @@
   },
   "status": "116 base draft entries incl. 80 tutorial subtitles; optional recovered subtitles; user QA pending",
   "subtitle_rows": "subtitles.json",
-  "subtitle_overrides": "subtitle-overrides.json"
+  "subtitle_overrides": "subtitle-overrides.json",
+  "terminology": {
+    "path": "GLOSSARY.md",
+    "target_column": "中文译名"
+  }
 }
