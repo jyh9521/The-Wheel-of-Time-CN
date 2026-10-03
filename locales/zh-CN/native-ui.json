@@ -1,0 +1,915 @@
+{
+  "preferences": [
+    {
+      "file": "Core.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "ebb1eef89f435f5482d95892697d96929f5d5dde5ba207a592b78fbd517cc809",
+      "translations": {
+        "Caption": "高级",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Core.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "ec3d707cf3b769af7f8d0f1271cb1518824ba80190b391d0d1cc35c1a6855abe",
+      "translations": {
+        "Caption": "文件系统",
+        "Parent": "高级"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "D3DDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "29d95902a7befed8cf511279217dc60da2e7fc1a8cc8413cdb7dcabad9ac8221",
+      "translations": {
+        "Caption": "渲染",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "D3DDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "85deb54a01615f548f0fb6f03e59bde8512f5ac47aa95f6e7d6ddf4d70698303",
+      "translations": {
+        "Caption": "Direct3D 支持",
+        "Parent": "渲染"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Editor.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "c959e17f0d058deead833d17aecfb0c3ca5d04a2484417d013148c607e69bedb",
+      "translations": {
+        "Caption": "编辑器",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Editor.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "b6fc8dbad8854b3591fe7d82264a50778dc85b35e4b69ab027587dd8f8926995",
+      "translations": {
+        "Caption": "高级",
+        "Parent": "编辑器"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Editor.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 3,
+      "source_sha256": "e9d486951a1a1c849c309c76a9394628d9e2ab5ff0876a07785d14f44664bd90",
+      "translations": {
+        "Caption": "颜色",
+        "Parent": "编辑器"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Editor.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 4,
+      "source_sha256": "fec15e71541df7db26a9ee0166a339bb2f74277fab9effa9984a0aaf93e9df09",
+      "translations": {
+        "Caption": "网格",
+        "Parent": "编辑器"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Editor.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 5,
+      "source_sha256": "15beeecf7e9109c6da5fd80a90a4af7b860dd12263b1c7d76d0518b05148e245",
+      "translations": {
+        "Caption": "旋转网格",
+        "Parent": "编辑器"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "ebb1eef89f435f5482d95892697d96929f5d5dde5ba207a592b78fbd517cc809",
+      "translations": {
+        "Caption": "高级",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "5af8ce52e2308616e617bb4a4d26d34bbbf8eb3507dd38b15f4d55b2a4643685",
+      "translations": {
+        "Caption": "游戏引擎设置",
+        "Parent": "高级"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 3,
+      "source_sha256": "82a1f6c14bc434b159f09b9821ef89a9fcd2949d0adbfa4bf9d5a77a1ba97547",
+      "translations": {
+        "Caption": "按键别名",
+        "Parent": "高级"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 4,
+      "source_sha256": "e2ebc7977b61fb1fd9339b6aa2381fe31a4dc00f91e9a1ebd361b4586dd30fc7",
+      "translations": {
+        "Caption": "原始按键绑定",
+        "Parent": "高级"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 5,
+      "source_sha256": "f9a97bfc2c04a0f8add1ff1222617c188d865b11a61af4521b1f8cbabff2941a",
+      "translations": {
+        "Caption": "驱动程序",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 6,
+      "source_sha256": "7243d55b7ca4becbcb4772e63c86765b287cc5be16ff7d5c13c922ee2da87e01",
+      "translations": {
+        "Caption": "公开服务器信息",
+        "Parent": "网络"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 7,
+      "source_sha256": "f489f6ba1a26c4ce12bb90682ee0099ee23eb8c953c87756f9c2c40cc9c7ed76",
+      "translations": {
+        "Caption": "游戏设置",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "Galaxy.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "f137ae6c3ea00abbb8726385faa328c7b8ab98b717b104b6f5d4e74f0818fa47",
+      "translations": {
+        "Caption": "音频",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "GlideDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "29d95902a7befed8cf511279217dc60da2e7fc1a8cc8413cdb7dcabad9ac8221",
+      "translations": {
+        "Caption": "渲染",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "GlideDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "3128b1ca244c4097ddda562824c48c62edb2ae0a680fa58bd4b4b860a7ef0872",
+      "translations": {
+        "Caption": "3dfx Glide 支持",
+        "Parent": "渲染"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "IpDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "460c350deaed13663b230d17af2b39968b2e2d9199040b98972a43f8a04734f2",
+      "translations": {
+        "Caption": "网络",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "IpDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "0f8b38c13d279e7448e4bac632cdca0338336aabe130b2eed420e55fda2764f9",
+      "translations": {
+        "Caption": "TCP/IP 网络游戏",
+        "Parent": "网络"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "IpDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 3,
+      "source_sha256": "edcbfb68cf1ef597ee307a29359c72e11402af5b58a9eadbc2ee2383a22ef5e8",
+      "translations": {
+        "Caption": "服务器信标",
+        "Parent": "网络"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "IpServer.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "3d41fc2fb8791d8947b03439935d282848d5bfc6fcdd2095651fcdcb8d9073ae",
+      "translations": {
+        "Caption": "主服务器上行连接",
+        "Parent": "网络"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "MeTaLDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "29d95902a7befed8cf511279217dc60da2e7fc1a8cc8413cdb7dcabad9ac8221",
+      "translations": {
+        "Caption": "渲染",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "MeTaLDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "e48281f3ae608ecf4398462b346f32de44930c27331cdeae2c326dcb99497d51",
+      "translations": {
+        "Caption": "S3 MeTaL 支持",
+        "Parent": "渲染"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "OpenGlDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "29d95902a7befed8cf511279217dc60da2e7fc1a8cc8413cdb7dcabad9ac8221",
+      "translations": {
+        "Caption": "渲染",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "OpenGlDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "77474b3ab0696c3eecf60727f4808b59d392e5b3ae3002517e3ff03608e49b12",
+      "translations": {
+        "Caption": "OpenGL 支持",
+        "Parent": "渲染"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "SoftDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "29d95902a7befed8cf511279217dc60da2e7fc1a8cc8413cdb7dcabad9ac8221",
+      "translations": {
+        "Caption": "渲染",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "SoftDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "dcd5d2c2146bd9da10db1e617f0f723c796a44ab960c4abab0a5e7bff7026fba",
+      "translations": {
+        "Caption": "软件渲染",
+        "Parent": "渲染"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "WinDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 1,
+      "source_sha256": "9aacef605ed2cb70b39d745be17d78ce72862280c5ca6009f86aa67aa62d7089",
+      "translations": {
+        "Caption": "显示",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    },
+    {
+      "file": "WinDrv.int",
+      "section": "Public",
+      "key": "Preferences",
+      "occurrence": 2,
+      "source_sha256": "7089a7d6f341220fa1e1ba7dbf7e154c660408d224d61fa9af48a46ebf1b8aa1",
+      "translations": {
+        "Caption": "手柄",
+        "Parent": "高级选项"
+      },
+      "status": "draft"
+    }
+  ],
+  "strings": [
+    {
+      "file": "D3DDrv.int",
+      "section": "D3DRenderDevice",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "7caca29bf06b357dec3d3b37397fbec83152e29b6a84eeac7b81c811b7fef952",
+      "source_length": 16,
+      "translation": "Direct3D 支持",
+      "status": "draft"
+    },
+    {
+      "file": "Engine.int",
+      "section": "Console",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b25a6b8ac0c69e6f57b016df2878c94bbb704c63d86dc7b393658b9172a2b794",
+      "source_length": 23,
+      "translation": "标准 Unreal 控制台",
+      "status": "draft"
+    },
+    {
+      "file": "Galaxy.int",
+      "section": "GalaxyAudioSubsystem",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "ab73aafe25d1f7f6c652cbdaddeaf1ad73de14fad97da476b7b2fe692c6a3101",
+      "source_length": 27,
+      "translation": "Windows 的 Galaxy 3D 音频",
+      "status": "draft"
+    },
+    {
+      "file": "GlideDrv.int",
+      "section": "GlideRenderDevice",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b0c6a9c5d8b3e7a1b1659623ca8f2522e6d5f4f113e4ae52b580572febb559be",
+      "source_length": 22,
+      "translation": "Windows 的 3dfx Glide",
+      "status": "draft"
+    },
+    {
+      "file": "IpDrv.int",
+      "section": "TcpNetDriver",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "9e6901a21b67d2410d90fbdd8639ce8f8c66109e23552e6555a468e496810d51",
+      "source_length": 19,
+      "translation": "TCP/IP 网络游戏",
+      "status": "draft"
+    },
+    {
+      "file": "IpDrv.int",
+      "section": "UdpBeacon",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "4b28c7f96cb2f8575844834e06e0d7560a2876f5b29ccc2a458378cf157b80fd",
+      "source_length": 17,
+      "translation": "局域网服务器信标",
+      "status": "draft"
+    },
+    {
+      "file": "IpServer.int",
+      "section": "ServerUplink",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "036c2e55e5fae8af6133f2018d40396ce1ce5bb423d4cc23f9274cc5ad657a6f",
+      "source_length": 20,
+      "translation": "主服务器上行连接",
+      "status": "draft"
+    },
+    {
+      "file": "IpServer.int",
+      "section": "ServerQuery",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "66590fe0af5763e7ffe9c8659c1198bc266d1f93f420b6d0f3feaa3deb43962d",
+      "source_length": 17,
+      "translation": "游戏服务器查询",
+      "status": "draft"
+    },
+    {
+      "file": "MeTaLDrv.int",
+      "section": "MeTaLRenderDevice",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "e1f6f94c88820f876d35a3466ae387f9d3d7ba76c0d032196c86195b90489371",
+      "source_length": 20,
+      "translation": "Windows 的 S3 MeTaL",
+      "status": "draft"
+    },
+    {
+      "file": "OpenGlDrv.int",
+      "section": "OpenGLRenderDevice",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "31e17260a71b0ddd1b2e4b6181a47a8362a923397d0ed8c1e0c83a024858c4eb",
+      "source_length": 14,
+      "translation": "OpenGL 支持",
+      "status": "draft"
+    },
+    {
+      "file": "SoftDrv.int",
+      "section": "SoftwareRenderDevice",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b27002d3991bafa1decb91405573ad6dfe2e71f290138bc701264782a4bf4f87",
+      "source_length": 18,
+      "translation": "软件渲染",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "Errors",
+      "key": "Critical",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "f4bd27aea3b4c4d1709a0c966ecfa5e02cb855a3442aef787825e9b396a1dcad",
+      "source_length": 14,
+      "translation": "严重错误",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "Errors",
+      "key": "FailedConfigLoad",
+      "occurrence": 1,
+      "tokens": [
+        "%s"
+      ],
+      "source_sha256": "5d122ff03ab478a0e11b70c70cd9e2a9e81f2be67e001fb91b23366c4789806b",
+      "source_length": 16,
+      "translation": "%s（加载失败）",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "BrowseButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "ab5df625bc76dbd4e163bed2dd888df828f90159bb93556525c31821b6541d46",
+      "source_length": 3,
+      "translation": "...",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "UseButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "c36d819e7bc6d2b7da51394411c733db89c395987885ca6770167a3b9bc45c3c",
+      "source_length": 3,
+      "translation": "使用",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "ClearButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "83b12c2216efb4fdc924e1deb5182e905e4926ed0c1c324d467107f46d5a26a9",
+      "source_length": 5,
+      "translation": "清除",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "OkButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "843ac01149cced785dfebd0028d3b03ba78e286e1c6f9517ebfcdb609d97af4c",
+      "source_length": 2,
+      "translation": "确定",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "AddButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "9fd728c66c9a256b121472dabf32a34317aed01d8427d70ec830289cf23a7cc8",
+      "source_length": 3,
+      "translation": "添加",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "EmptyButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "c6c094bc0054f9cbe34102ff49f86b3928b5ac09f3d2ac87e170d0500675921f",
+      "source_length": 5,
+      "translation": "清空",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "InsertButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "8aa318eb7eaa233aada0d332bec14cb6a631c8fda25deb2c7d4f402888f1b1e2",
+      "source_length": 6,
+      "translation": "插入",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "DeleteButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "e2d0a54968ead24efc0dffa6ac78fc606dceec34a0f586177a74a54cc2272cf8",
+      "source_length": 6,
+      "translation": "删除",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "DefaultsButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "a9bd29216ab9d5f0fb6716133aeba3067869f0f90856571f2647f6881209b4ca",
+      "source_length": 17,
+      "translation": "恢复默认设置",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "BackButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b63c218298c6286e8b513da009e0cd0352e05f4e136ccbf4ce5714e41649b30e",
+      "source_length": 7,
+      "translation": "< 返回(&B)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "NextButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "4dc0aa576d1edfb2f13980706e04755b7d837489da6665f4163221fa89e126c4",
+      "source_length": 7,
+      "translation": "下一步(&N) >",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "FinishButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b1a9063d7aad3fecc4f8ef621ae5e611c0d0c38d19d05c428d386eb4a7582a4c",
+      "source_length": 7,
+      "translation": "完成(&F)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "CancelButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "source_length": 6,
+      "translation": "取消",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "InstallButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "ab566cffb33d0f7011c2013523facab2b595f48aadc23ce0a0cfb183a0262711",
+      "source_length": 8,
+      "translation": "安装(&I)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "YesButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "7d4f1a3c5e0597251e76b357da8df7bc926d14438f04acc4e932ae5fd375e6dc",
+      "source_length": 4,
+      "translation": "是(&Y)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "NoButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "2d7e529806e3fbc34cbe6cddd4ec731f5b911c57af04d7891106890e5cfcd18f",
+      "source_length": 3,
+      "translation": "否(&N)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "AgreeButton",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "8eac76250244b2f6848eb015227c8ece810b7ddce59975994a7a8d4131919b2e",
+      "source_length": 8,
+      "translation": "我同意(&A)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "LanguagePrompt",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "8c16819a2bd49b959b95fa8e597066ab26d11d2860f661b9c175ffd8f733dcff",
+      "source_length": 9,
+      "translation": "语言：",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "LanguageWindow",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "c875c0f51a5465ed6dc66f810095d7934d78f776317edd4b2ed960fc18265367",
+      "source_length": 18,
+      "translation": "语言选择",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "LogWindow",
+      "occurrence": 1,
+      "tokens": [
+        "%s"
+      ],
+      "source_sha256": "c84b4c2a11709b49991adbdc9f10350afd47b508cd327aeb3bf444b2e5de9a23",
+      "source_length": 13,
+      "translation": "%s 日志窗口",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "PropNone",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "b5304d0f303c618f09658e7bb27496f08a9eef89502149114a76ba9f8170a766",
+      "source_length": 16,
+      "translation": "未选择任何项目",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "PropSingle",
+      "occurrence": 1,
+      "tokens": [
+        "%s"
+      ],
+      "source_sha256": "8386de206946d1c246c8318380a2a1e20fc33334a171d84f0dca125c12a65eb4",
+      "source_length": 13,
+      "translation": "%s 属性",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "PropMulti",
+      "occurrence": 1,
+      "tokens": [
+        "%s",
+        "%i"
+      ],
+      "source_sha256": "e229fceaf82e00def5260e5594206fda67e7074e883bb9c68c5c3d707fde9dc6",
+      "source_length": 27,
+      "translation": "%s 属性（已选择 %i 项）",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "AdvancedOptionsTitle",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "dfa2817fb2221c8b89c47c4fe8326d07c119b7c32e89e509d1061fc596fdf801",
+      "source_length": 16,
+      "translation": "高级选项",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "Low",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "f793de205ead5ac302c4a1627829dea41f176b1068b993a32373fc869918374b",
+      "source_length": 3,
+      "translation": "低",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "General",
+      "key": "High",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "c4ebc6d4a5832cd9415f906ad03661110c705a72381c8b8b145761d02e2dd23a",
+      "source_length": 4,
+      "translation": "高",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_NotifyIcon",
+      "key": "ID_NotifyIcon",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "99af6606ff9d6cd5154d4d4e9c21e325086d3e904677cdb41d363c8a3480f862",
+      "source_length": 4,
+      "translation": "菜单",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_NotifyIcon",
+      "key": "ID_NotifyShowLog",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "16176bc3c940d8b3d5f1959d6c44992efdf75a7c0d505af57833a444aeebcfc1",
+      "source_length": 18,
+      "translation": "WOTServer 控制台(&W)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_NotifyIcon",
+      "key": "ID_NotifyAdvancedOptions",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "d7842a7f99ad847dd7ad0cac8c8ed589390a57df314cb16e1b6549e5602c2341",
+      "source_length": 17,
+      "translation": "高级选项(&A)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_NotifyIcon",
+      "key": "ID_NotifyExit",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "0f93c07a6bee9cf1cc97703e00498426f55092e91d081a6a51c665384f28c35d",
+      "source_length": 15,
+      "translation": "退出 WOTServer(&x)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_Log",
+      "key": "ID_LogFile",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "a222a02aa7494f566c5849b3ccacb3fd263daf0ec45a1a7bcd0e1606d1ec3a5c",
+      "source_length": 5,
+      "translation": "文件(&F)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_Log",
+      "key": "ID_LogAdvancedOptions",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "d7842a7f99ad847dd7ad0cac8c8ed589390a57df314cb16e1b6549e5602c2341",
+      "source_length": 17,
+      "translation": "高级选项(&A)",
+      "status": "draft"
+    },
+    {
+      "file": "Window.int",
+      "section": "IDMENU_Log",
+      "key": "ID_LogFileExit",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "2eb7984c42b97146521276046ddfcafecfbae0fa9864b8a537b105fe6d2b9cd7",
+      "source_length": 5,
+      "translation": "退出(&x)",
+      "status": "draft"
+    },
+    {
+      "file": "WinDrv.int",
+      "section": "General",
+      "key": "AdvancedOptions",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "dfa2817fb2221c8b89c47c4fe8326d07c119b7c32e89e509d1061fc596fdf801",
+      "source_length": 16,
+      "translation": "高级选项",
+      "status": "draft"
+    },
+    {
+      "file": "WinDrv.int",
+      "section": "WindowsClient",
+      "key": "ClassCaption",
+      "occurrence": 1,
+      "tokens": [],
+      "source_sha256": "bd4271ff96a39bd5f1be052f6050debc29f3578ecf61958a2de79d9063da3819",
+      "source_length": 24,
+      "translation": "标准 Windows 管理器",
+      "status": "draft"
+    }
+  ]
+}

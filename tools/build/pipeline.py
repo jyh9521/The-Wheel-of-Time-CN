@@ -43,6 +43,10 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
         raise ValueError('Resource not in verified profile: ' + ', '.join(sorted(unknown)))
     timing = importlib.import_module('tools.import.int_files').import_rows(
         source_dir, rows, resources, config, profile)
+    native_ui = None
+    if config.get('native_ui_data'):
+        native_ui = importlib.import_module('tools.import.preferences').build(
+            source_dir, resources, config['native_ui_data'], config, profile)
     if source_report:
         for name in profile['subtitle_files']:
             if not (resources / name).exists():
@@ -69,6 +73,8 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
     if source_report:
         source_report = dict(source_report, production_build_integrated=True)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
+    if native_ui:
+        names = sorted(set(names) | {'System/' + n for n in native_ui['files']})
     if source_report:
         names = sorted(set(names) | {'System/' + n for n in profile['subtitle_files']})
     files = {}
@@ -96,6 +102,7 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
               'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True,
               'resource_edits': resource_edits,
               'texture_labels': texture_labels,
+              'native_ui': native_ui,
               'subtitle_source': source_report,
               'bytecode_unchanged': not bool(resource_edits),
               'font_diff_scope': 'Font generation stage, before display-only resource field edits'}

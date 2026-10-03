@@ -167,3 +167,7 @@ python -m tools.validate.texture_labels --source MODIFIED_WOT --profile profiles
 ```
 
 BASELINE指此前字库/译文一致、未修改按钮的WOT.u副本；范围测试要求所有其他导出对象、包表和文件大小不变。全新构建无需该副本，只需要经profile校验的原版游戏、社区字幕来源及字体。
+
+## 原生高级选项补翻（2026-10-04）
+
+locale.config.native_ui指向native-ui.json，默认构建接入Preferences子字段导入器；本批新增13个原版hash固定的.int输入，PATCH共19资源，不依赖旧手工文件。省略native_ui配置可关闭该阶段。原生UI使用Windows字体，而非游戏字库；新增译文的字体覆盖会在validate --font中检查。新语言需同步树根标题及所有Caption/Parent；详见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。

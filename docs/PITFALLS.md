@@ -70,3 +70,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 - 仅在版本`>63`跳过lazy-array字段，会把本游戏版本63贴图像素错读；本地63/68样本都需要该字段。
 - 仅按Sign/Book等资源名筛选会漏掉TpstWall挂毯等图像英文；需要总览筛查。
 - 地图导入、Actor放置、默认网格Skin与游戏实际可见纹理不是同一层证据；Cylinder实例可能覆盖默认皮肤。
+
+## 原生高级选项补翻（2026-10-04）
+
+高级选项窗口标题来自Window.General.AdvancedOptionsTitle，且译后的标题用于分类树根。只翻标题或Caption、不同步Parent会断开分类树；不能把Category等反射标识一并翻译。Preferences会被引擎缓存，文件更新后需要完整退出游戏。

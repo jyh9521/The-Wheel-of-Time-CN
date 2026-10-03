@@ -46,6 +46,58 @@
     "System/WoTTraps.int": {
       "size": 3966,
       "sha256": "2c4dcf57066ec7741c73c93c4133ebc4604aaf66b8b4eab35e3e3e4fca3ec589"
+    },
+    "System/Core.int": {
+      "size": 3279,
+      "sha256": "467a5b8058f9312a2bd067ac2d16df4217561a7887550212eaa4bbc85c4393bf"
+    },
+    "System/D3DDrv.int": {
+      "size": 374,
+      "sha256": "f1472e84479d5fc86ad3efe2d7f9e822494da193d0706172626e482cabeecbb6"
+    },
+    "System/Editor.int": {
+      "size": 2679,
+      "sha256": "a3c0238f7aaae21f67c3daebc2e9f0c3e353fd6c81d172364152f24147f6f4fe"
+    },
+    "System/Engine.int": {
+      "size": 4978,
+      "sha256": "5f850cadba4f4d63387f949110c5e1cb6b1037ac12f061f728e57f71883b090a"
+    },
+    "System/Galaxy.int": {
+      "size": 273,
+      "sha256": "3b1ede84365c5412a8d68730c47d479f00a959b3e3e966fb48a291c1c5de51c9"
+    },
+    "System/GlideDrv.int": {
+      "size": 450,
+      "sha256": "154e91d840eb83ea6666f7e0de77214f5aeb74da76ebd8a8ced0b296fe502e88"
+    },
+    "System/IpDrv.int": {
+      "size": 1153,
+      "sha256": "4cebb0c101e7cba41bcdafffd185069992b1d4535ef15b59bd8226a381a9e5db"
+    },
+    "System/IpServer.int": {
+      "size": 301,
+      "sha256": "ee3ae6a5e272926ce3837e994278db064f6c9c9cad34f8e8aaeffe026d38e6fb"
+    },
+    "System/MeTaLDrv.int": {
+      "size": 453,
+      "sha256": "cfc713bdc0da46e5e58f9ea5fd8ed714951d6c17acd43838f14c0fcc11127c6d"
+    },
+    "System/OpenGlDrv.int": {
+      "size": 595,
+      "sha256": "8d0803823e9055ba4e1e8e64753c997da0758d6432094c76efc0d8425bf6f101"
+    },
+    "System/SoftDrv.int": {
+      "size": 329,
+      "sha256": "0bc6a91285ecb27c06dc1c1289f05e305304224694730ad7274fccb4a666040d"
+    },
+    "System/WinDrv.int": {
+      "size": 681,
+      "sha256": "2817d1521d5bb9fa833f7e1a8d8c91263dd61373d3011b6ba8778c4696161aa3"
+    },
+    "System/Window.int": {
+      "size": 2086,
+      "sha256": "f8cb5b78c4ed85ff8e1128d1ebe8b035f37921d6325a2718b7e6c485864bcbf7"
     }
   },
   "resource_edits": [

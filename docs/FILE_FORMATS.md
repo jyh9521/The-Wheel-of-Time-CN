@@ -81,3 +81,7 @@ profile.resource_edits为语言无关显示字段：resource、export、export_s
 ## 固定大小按钮回填
 
 本轮八张UI纹理均有包内Palette引用、一个64×64 P8 mip。只修改像素数组指定面板范围，不移动导出体，不重写lazy-array字段、包表或调色板。源导出体指纹由profiles/texture-labels.json固定；该工具明确拒绝外部Palette、多mip或不匹配的导出体，不能直接当作通用贴图封包器。
+
+## 原生高级选项补翻（2026-10-04）
+
+Preferences是结构化登记数据，不是普通整行字符串。通用导入器严格解析本地平坦括号字段语法，仅允许Caption/Parent子字段回填，源行hash不符、重复字段、嵌套/未知语法或控制符缺失时失败；Category仍是属性过滤标识，Parent必须与Caption及译后的根标题一致。

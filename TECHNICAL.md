@@ -179,3 +179,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 八张按钮纹理回填
 
 维护者选择仅汉化Load/Play/Roam/Save图片按钮，其他图像文字保留。八个Texture均为64×64、P8、单mip，Palette为包内引用；只在文字面板中重新量化像素，保留全部包表、对象引用、属性、调色板和像素数组长度。工具先检查每个完整Texture导出体SHA-256，再确认字体覆盖和宽高约束，最后重开资源并比较所有非目标导出体。生成输入是此前字体和显示字段构建的WOT.u副本，整个构建仍从经校验的原版开始。已验证差分安装和隔离副本回滚；未宣称实机按钮显示/操作验收。
+
+## 原生高级选项补翻（2026-10-04）
+
+原生高级选项窗口由WinDrv/Window模块处理，与Canvas字库、图片按钮不同。已新增31条Preferences显示字段和48条普通窗口文案；同步Caption/Parent以保留分类树，Class/Category/Immediate与配置键不变。直接FName显示的原生属性/类别名称尚待研究。二进制只读证据、地址、hash和层级见[NATIVE_ADVANCED_OPTIONS](docs/NATIVE_ADVANCED_OPTIONS.md)。
