@@ -108,3 +108,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 后续开发QA只跑1920x1080；QA plan为10个原/改视图探针，不再自动运行1366x768/1440p。这两种分辨率延后给玩家最终验收，历史记录不删除；4K仍为已知问题。
 
 正常build入口自动重建完整字形边界并按profile.font_line_height_policy=preserve-legacy保留原版行高；locale.font提供collection_index、top_padding/bottom_padding（当前0）。旧baseline_anchor仅兼容覆盖检查，不再决定裁剪边界。随后应用profile中经过版本/导出SHA/上下文保护的字幕显示Y字段。FONT_DIFF的bytecode_unchanged仅属于字体阶段，最终BUILD_REPORT.resource_edits/bytecode_unchanged才描述完整输出。无需手工改二进制。详见docs/GLYPH_LAYOUT_FIX.md。
+
+## 全字幕专项进展（2026-10-03）
+
+当前49条草稿；保留原37条，补译教程Tes_02～Tes_13。教程原版80条英文均非空，但中文仅13/80；其余对白817空键须分类恢复，不能等同817句缺文。新译文已静态构建验证，实际后续触发/时序、剧情视频与全对白覆盖待验。详见[字幕覆盖报告](docs/SUBTITLE_COVERAGE.md)。

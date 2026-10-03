@@ -405,5 +405,137 @@
     "source_sha256": "c3e96fa625b11a37859c9b99877776c7663f56a7e419f30c6e2d19ec54f5f5e6",
     "source_length": 9,
     "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_02",
+    "occurrence": 1,
+    "translation": "别让恐惧支配你，伊莱娜。穿过拱门。",
+    "source_sha256": "5059eb88452fd3e520bc4a08ab10969bc033528d56637cb9b30355fa1db12121",
+    "source_length": 65,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_03",
+    "occurrence": 1,
+    "translation": "你等得越久，情况就会越糟。",
+    "source_sha256": "22dde8c64b47b6fdd80021e9d59b7a04b8826d43b6726c5ecd95fc4ba40637c5",
+    "source_length": 42,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_04",
+    "occurrence": 1,
+    "translation": "孩子，别让我失望。",
+    "source_sha256": "a7db21970c835b221d35c585bba21ffe3df0549fd1697a6221ea87abbe9a9795",
+    "source_length": 27,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_05",
+    "occurrence": 1,
+    "translation": "孩子，你必须直面恐惧，否则就会被逐出白塔。",
+    "source_sha256": "c3f6d4377a4f91452e24bd029b59b232513b4e12205b09601a13158988a8a409",
+    "source_length": 63,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_06",
+    "occurrence": 1,
+    "translation": "我不能强迫你，伊莱娜。这件事必须由你自己完成。",
+    "source_sha256": "e214ae5f99d316971249fcc00cbee75533b65ea7c3cbf9befa3aa79db12d09cd",
+    "source_length": 65,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_07",
+    "occurrence": 1,
+    "translation": "我在你身上倾注了许多心血。别让我蒙羞。",
+    "source_sha256": "3de7217e4ebde32cd4059356fea818e0ba2556257263a725277a3431db6c7a41",
+    "source_length": 44,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_08",
+    "occurrence": 1,
+    "translation": "责任重于山，死亡轻于羽。死亡也不能让你逃避恐惧。",
+    "source_sha256": "bd0596358a6d168a6c2c988ea2fb53c8312f06602f30d4dfe580cf973c9f575b",
+    "source_length": 105,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_09",
+    "occurrence": 1,
+    "translation": "别向恐惧屈服，伊莱娜。你必须成功。",
+    "source_sha256": "0b6d5f5fef3914dff67c42bb5c2929817d602390b04eb66b761fe16724b241c6",
+    "source_length": 55,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_10",
+    "occurrence": 1,
+    "translation": "伊莱娜，你小时候很好奇。一次塌方将你困在这座黑暗的洞穴里。你害怕黑暗，在被堵住的入口处蜷缩了几个小时。最后，村里有人把你挖了出来。这一次不会有人来救你。你从未真正探索过这座洞穴，所以这里由你的猜想构成，呈现出你所恐惧的模样。你必须面对它，逃出去。",
+    "source_sha256": "aba55659234f5e0d3c29fb27c84f83bfefa5b2b08a2364bf8aaa574d3a0838cd",
+    "source_length": 381,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_11",
+    "occurrence": 1,
+    "translation": "听从我的指引，一切都会顺利。这片洞穴里可以安全走动。四处探索一下。",
+    "source_sha256": "adf16666c49e0ae151ed20ce187ed2a56ec0dac56647ba13dec145520ac0e29b",
+    "source_length": 113,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_12",
+    "occurrence": 1,
+    "translation": "孩子，别动！",
+    "source_sha256": "1e01bba73477b00c81b4f227e1b234cf82203ab582ee910cd710bf99ffed19b9",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_13",
+    "occurrence": 1,
+    "translation": "地震震开了通道。沿着它走，但要小心。你可能需要跳过一些碎石。",
+    "source_sha256": "25b941c288452b795ebeb92f80659b605dcc329b212a5dc54a117de46006be38",
+    "source_length": 108,
+    "tokens": [],
+    "status": "draft"
   }
 ]

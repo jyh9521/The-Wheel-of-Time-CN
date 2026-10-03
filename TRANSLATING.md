@@ -32,7 +32,7 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 设置 sync_group 可要求关联条目译文一致；未知关联需先调查，不自动猜。
 
 字宽由生成矩形宽度决定，正体为配置像素尺寸，斜体包含剪切余量，非 TTF proportional advance。
-以1080p优先，并覆盖1366x768/2560x1440的菜单帮助、Inventory与字幕折行；
+后续只在1080p检查菜单帮助、Inventory与字幕折行；其他分辨率延后由用户验收；
 长句不能只通过字符数判断不截断。4K不再作为当前验收目标。
 原版 UI 使用固定像素字体；4K 变小属于需记录的可读性问题，不是编码失败。
 
@@ -40,16 +40,15 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 
 源字幕计时按 Len；配置可保留原文长度，由构建器生成引号内尾 ASCII 空格。
 **译文文件不要手工补空格**；此方法只避免短译文明显缩短，不是精准音频同步。
-当前三十七条为技术 PoC 草稿；在此前19条基础上补齐Controls其余8项标签和10条帮助。人名、地名、法器/技能名以 glossary.json 的审校版本为准，
+当前49条为技术PoC草稿；此前37条含19条起始文本、Controls其余8项标签和10条帮助，本轮新增12条教程字幕。人名、地名、法器/技能名以 glossary.json 的审校版本为准，
 当前 glossary 是候选词，不冒充官方译名；正式翻译前评审并冻结一致写法。
 没有英文原文的空字幕不能根据 key 编造对白，不自动转录全游戏。
 
 ## 添加其他语言
 
 复制 assets/templates/locale-config.json 至 locales/<locale>/config.json，
-填写 locale、profile、encoding、font.baseline_anchor 和 TTC 索引；
-新增 strings.json、glossary.json。baseline_anchor 是该语言字体对齐的代表字形，
-例如具体语言维护者选择的汉字/假名/韩文字，不写入通用代码。
+填写 locale、profile、encoding、字体padding和TTC索引；
+新增 strings.json、glossary.json。字形边界由全部实际用字共同确定；旧baseline_anchor仅兼容覆盖检查，不控制对齐。
 提供 cmap 覆盖该语言的字体；现工具只覆盖 BMP、无复杂 shaping/bidi 实现。
 
 ```powershell
@@ -70,3 +69,7 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 ## 字形与上边距
 
 不要通过添加空格/换行、裁切“重”等单字来补偿字体或字幕布局。工具收集译文字符后完整渲染，共同bearing保证句号位置，按游戏profile适配原行高；新语言仍需自行选择覆盖字体并在1080p验收。字幕上边距由技术profile的显示坐标字段负责，译文、长度补偿、标点与控制码不为此改写。
+
+## 教程字幕增补
+
+2026-10-03保留既有37条并新增Tes_02～Tes_13，当前49条draft；教程中文13/80。英语来源为用户原安装，中文时序与触发仍待1080p验收。参见docs/SUBTITLE_COVERAGE.md；全字幕覆盖是独立发布门槛，不凭中文显示PoC宣布完成。

@@ -123,3 +123,7 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 已验证：单“汉”bbox不是全字库边界。源字体14px时“汉”top=4、“重”top=2，旧14×14栅格在渲染前裁掉重顶部。新方案先计算全部实际使用字符的共同bearing/边界，并与64px边框参考画布比对源墨迹，再Lanczos整体适配原槽位高度；不是逐字裁边，也不是像素完全无损变换。保留ASCII原始映射/位图与原行高，防止双列/StrLen单行判定回归。
 
 字幕另有资源内显示字段变更：WOT.u/BaseHUD.DrawMessages，Function导出5095、2614字节，body+1979（原包绝对992669）float32-le 0→24；最终8370个其他原导出不变。原脚本的ScaleValY(24)仍保留，当前SetPos是固定24原生像素，不声称使用该缩放变量；仅1080p验收。字段工具先检查原游戏hash、目标Function完整hash、上下文、原始值，未知版本失败；等长修改不动跳转、TOC、函数长度、计时或玩法。EXE/DLL仍无改动，但不能再声称最终资源全部bytecode不变。方法与证据见[GLYPH_LAYOUT_FIX.md](docs/GLYPH_LAYOUT_FIX.md)。
+
+## 全字幕专项进展（2026-10-03）
+
+当前49条草稿；保留原37条，补译教程Tes_02～Tes_13。教程原版80条英文均非空，但中文仅13/80；其余对白817空键须分类恢复，不能等同817句缺文。新译文已静态构建验证，实际后续触发/时序、剧情视频与全对白覆盖待验。详见[字幕覆盖报告](docs/SUBTITLE_COVERAGE.md)。
