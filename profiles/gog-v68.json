@@ -1,0 +1,43 @@
+{
+  "id": "gog-v68-observed",
+  "package_version": 68,
+  "characters_per_page": 64,
+  "max_atlas": 256,
+  "ink_rgb": [
+    255,
+    228,
+    116
+  ],
+  "fonts": {
+    "F_WOTReg14": 14,
+    "F_WOTReg30": 30,
+    "F_WOTReg14_S": 7,
+    "F_WOTReg30_S": 15,
+    "F_WOTIta14": 14,
+    "F_WOTReg08": 8
+  },
+  "oblique": {
+    "F_WOTIta14": 0.22
+  },
+  "subtitle_files": [
+    "WoTsubtitles.int"
+  ],
+  "files": {
+    "System/WOT.u": {
+      "size": 9588318,
+      "sha256": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb"
+    },
+    "System/WoT.int": {
+      "size": 31883,
+      "sha256": "6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8"
+    },
+    "System/WoTsubtitles.int": {
+      "size": 19520,
+      "sha256": "ba78eadd2ed3d35e8c94918c2ffd68ce0a9ad2eaeb57e95a5164d65886f21be4"
+    },
+    "System/Angreal.int": {
+      "size": 19330,
+      "sha256": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e"
+    }
+  }
+}

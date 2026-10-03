@@ -1,0 +1,14 @@
+{
+  "locale": "zh-CN",
+  "profile": "gog-v68",
+  "encoding": "utf-16le-bom",
+  "font": {
+    "baseline_anchor": "汉",
+    "collection_index": 0
+  },
+  "subtitle_timing": "preserve-source-length",
+  "validation": {
+    "max_characters": 4096
+  },
+  "status": "seven-entry PoC; not complete translation"
+}

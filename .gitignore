@@ -1,0 +1,17 @@
+build/
+dist/
+out/
+__pycache__/
+*.pyc
+.venv/
+*.u
+*.utx
+*.uax
+*.wot
+*.exe
+*.dll
+*.mov
+*.mp3
+*.ttf
+*.ttc
+*.otf
