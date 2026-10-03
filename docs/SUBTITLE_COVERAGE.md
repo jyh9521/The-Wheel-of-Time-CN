@@ -76,3 +76,5 @@ Tes_01～Tes_80已全部有中文草稿；本轮追加67条，原49条保持。�
 ## 开场缺段修正
 
 Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
+
+现行策略改为社区优先完整并集，见 [COMMUNITY_SOURCE_POLICY](COMMUNITY_SOURCE_POLICY.md)。此前保守合并/冲突保留描述已被取代。

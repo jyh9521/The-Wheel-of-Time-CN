@@ -10,5 +10,29 @@
     "tokens": [],
     "status": "draft",
     "source_layer": "oldunreal-subtitles-2022"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_15",
+    "occurrence": 1,
+    "translation": "你可以害怕，但要直面恐惧，别逃避。",
+    "source_sha256": "e44e852951c45dd95d3177139b150dd6bffa666b7d2433ea94b1ba559328d34d",
+    "source_length": 54,
+    "tokens": [],
+    "status": "draft",
+    "source_layer": "oldunreal-subtitles-2022"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_51",
+    "occurrence": 1,
+    "translation": "这是目前最致命的陷阱：接连不断的火球挡住了去路。不过，这里的火焰护盾法器能抵御火之编织，也能保护你免受环境中的火焰伤害。拿起并使用它，然后沿着这条走廊走过去。",
+    "source_sha256": "e834bb58e36688aef04355de44f2e80e2deebd355a3053cc81b811c6223b1ec5",
+    "source_length": 249,
+    "tokens": [],
+    "status": "draft",
+    "source_layer": "oldunreal-subtitles-2022"
   }
 ]

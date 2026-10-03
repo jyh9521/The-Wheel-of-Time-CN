@@ -104,3 +104,36 @@ class SubtitleSourceTests(unittest.TestCase):
                     ],
                 )
             self.assertFalse((root / "out").exists())
+
+    def test_reference_first_complete_union(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            a, b = root / "a/a.int", root / "b/b.int"
+            a.parent.mkdir()
+            b.parent.mkdir()
+            a.write_text(
+                "[A]\nOne=Old\nEmpty=Original\nKept=Retained\n", encoding="ascii"
+            )
+            b.write_text(
+                "[A]\nOne=New\nEmpty=\nAdded=Unmatched\nBlank=\n", encoding="ascii"
+            )
+            result = prepare(
+                a, b, root / "out", {"sounds": []}, conflict_policy="prefer-reference"
+            )
+            values = {
+                r["key"]: r["source"] for r in entries(root / "out/WoTsubtitles.int")
+            }
+            self.assertEqual(
+                values,
+                {
+                    "One": "New",
+                    "Empty": "",
+                    "Kept": "Retained",
+                    "Added": "Unmatched",
+                    "Blank": "",
+                },
+            )
+            self.assertEqual(result["conflicts"], [])
+            self.assertEqual(
+                a.read_text("ascii"), "[A]\nOne=Old\nEmpty=Original\nKept=Retained\n"
+            )

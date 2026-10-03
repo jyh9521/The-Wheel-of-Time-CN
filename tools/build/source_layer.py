@@ -51,6 +51,7 @@ def source_layer(game, reference, manifest):
             root / "merged",
             {"sounds": sounds},
             manifest.get("approved_overrides", []),
+            manifest.get("conflict_policy", "keep-original"),
         )
         if report["modified_sha256"] != manifest["expected_merged_sha256"]:
             raise ValueError("Merged subtitle source fingerprint mismatch")

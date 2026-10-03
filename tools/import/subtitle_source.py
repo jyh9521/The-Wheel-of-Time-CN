@@ -8,7 +8,16 @@ from tools.extract.int_files import decode, encode, entries
 from tools.validate.subtitle_coverage import index, key
 
 
-def prepare(original, reference, out, inventory, approved_overrides=()):
+def prepare(
+    original,
+    reference,
+    out,
+    inventory,
+    approved_overrides=(),
+    conflict_policy="keep-original",
+):
+    if conflict_policy not in {"keep-original", "prefer-reference"}:
+        raise ValueError("Unknown subtitle conflict policy")
     original, reference, out = (Path(p).resolve() for p in (original, reference, out))
     if any(out == p or out.is_relative_to(p.parent) for p in (original, reference)):
         raise ValueError("Use an independent output directory")
@@ -39,7 +48,14 @@ def prepare(original, reference, out, inventory, approved_overrides=()):
     changes, conflicts, unsupported = [], [], []
     for identity, row in additions.items():
         previous = baseline.get(identity)
-        if previous and not previous["empty"] and identity not in approved:
+        if previous and row["source"] == previous["source"]:
+            continue
+        if (
+            conflict_policy == "keep-original"
+            and previous
+            and not previous["empty"]
+            and identity not in approved
+        ):
             if row["source"] != previous["source"]:
                 conflicts.append(
                     dict(
@@ -49,11 +65,12 @@ def prepare(original, reference, out, inventory, approved_overrides=()):
                     )
                 )
             continue
-        if row["empty"]:
+        if row["empty"] and conflict_policy == "keep-original":
             continue
         if identity not in sounds:
             unsupported.append(dict(section=row["section"], key=row["key"]))
-            continue
+            if conflict_policy == "keep-original":
+                continue
         value = row["source"]
         if any(c in value for c in ['"', "\r", "\n", "\0"]):
             raise ValueError("Unsupported subtitle source syntax")
@@ -73,9 +90,15 @@ def prepare(original, reference, out, inventory, approved_overrides=()):
                 section=row["section"],
                 key=row["key"],
                 action=(
-                    "replace-approved"
-                    if identity in approved
-                    else "fill-empty" if previous else "add-key"
+                    "replace-reference"
+                    if previous
+                    and not previous["empty"]
+                    and conflict_policy == "prefer-reference"
+                    else (
+                        "replace-approved"
+                        if identity in approved
+                        else "fill-empty" if previous else "add-key"
+                    )
                 ),
                 source_sha256=hashlib.sha256(value.encode("utf-8")).hexdigest(),
             )
@@ -86,7 +109,11 @@ def prepare(original, reference, out, inventory, approved_overrides=()):
     target.write_bytes(payload)
     actual = index(entries(target))
     for identity, row in baseline.items():
-        if not row["empty"] and identity not in approved:
+        if identity not in additions or (
+            conflict_policy == "keep-original"
+            and not row["empty"]
+            and identity not in approved
+        ):
             assert actual[identity]["source"] == row["source"]
     for change in changes:
         identity = key(change["section"], change["key"])
@@ -101,6 +128,7 @@ def prepare(original, reference, out, inventory, approved_overrides=()):
         conflicts=conflicts,
         unsupported=unsupported,
         approved_overrides=list(approved.values()),
+        conflict_policy=conflict_policy,
         retained_omitted_keys=[
             dict(section=r["section"], key=r["key"])
             for k, r in baseline.items()
@@ -128,6 +156,11 @@ def main():
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--inventory", type=Path, required=True)
     p.add_argument("--approved-overrides", type=Path)
+    p.add_argument(
+        "--conflict-policy",
+        choices=["keep-original", "prefer-reference"],
+        default="keep-original",
+    )
     a = p.parse_args()
     prepare(
         a.original,
@@ -141,6 +174,7 @@ def main():
             if a.approved_overrides
             else []
         ),
+        a.conflict_policy,
     )
 
 

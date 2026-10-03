@@ -131,3 +131,7 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 ## 可选字幕来源构建进展
 
 已支持--subtitle-source，经manifest校验后保守合并245条恢复来源；locale中独立保存245条结构化字幕，其中12条新中文草稿、233条待译。默认49条构建保持兼容，启用来源时61条已有译文/294条条目。源层已接入生产构建，但全中文、全触发与同步验收尚未完成；1080p原地90秒仅确认开场，不能代表后续关卡。详细流程见docs/SUBTITLE_COVERAGE.md。
+
+
+## 当前字幕来源策略（2026-10-03）
+采用社区优先完整并集：所有同key冲突使用社区值，原版独有key保留。详见 [COMMUNITY_SOURCE_POLICY](docs/COMMUNITY_SOURCE_POLICY.md)。旧保守合并描述仅为历史记录。
