@@ -1,0 +1,245 @@
+{
+  "id": "oldunreal-subtitles-2022",
+  "file": "WoTsubtitles.int",
+  "reference_sha256": "d221624a71eae5fdd7c3a2f7ff8cf6541ef4b510f7c34e659ed8890128e7bae1",
+  "reference_size": 24213,
+  "package_inputs": [
+    {
+      "file": "Sounds/AesSedaiA.uax",
+      "size": 754345,
+      "sha256": "d124de02f32fecedf7c6bbcdb337221428109c7afc651eb623c5c2ab3e84b758"
+    },
+    {
+      "file": "Sounds/AesSedaiBotA.uax",
+      "size": 63734,
+      "sha256": "09e368317327492afbe58c8bf96a253338d9d71cb1e47aa47adf862de5b68120"
+    },
+    {
+      "file": "Sounds/AmbientA.uax",
+      "size": 39694929,
+      "sha256": "813d8bc0b9360f9cc9c960262606f5a703093a77662a6f3303cc23430b07928f"
+    },
+    {
+      "file": "Sounds/ArcherA.uax",
+      "size": 2334079,
+      "sha256": "14d2768b00e2fb4ae240bd7d176b9edb4e1505dc37048ebf582fc36be19bdaca"
+    },
+    {
+      "file": "Sounds/BATrollocA.uax",
+      "size": 1668336,
+      "sha256": "6540488700436752c973b4666a9040e145dc12b5283c53beac65b4b80c5a8959"
+    },
+    {
+      "file": "Sounds/BlackAjahBossA.uax",
+      "size": 1175177,
+      "sha256": "97866cc23099f03eeb490d3003550ad9378e50a73527d56660e32abd7428a0f0"
+    },
+    {
+      "file": "Sounds/BlackAjahSisterA.uax",
+      "size": 1054900,
+      "sha256": "e7e0745b7e339b0c4b628ad119fd63f276cad79d182e9b022ace972fa12cffc4"
+    },
+    {
+      "file": "Sounds/Dance.uax",
+      "size": 2472534,
+      "sha256": "510cf61a2146a1e1bb78013299986500ae1aec48d4d53d972d4f05b3d014a2b8"
+    },
+    {
+      "file": "Sounds/DialogA.uax",
+      "size": 50953532,
+      "sha256": "0f3bbe1937112aa1a9e8e5c784815307964cf863a98b314b409e6376d99cc9d3"
+    },
+    {
+      "file": "Sounds/FootStubA.uax",
+      "size": 2287,
+      "sha256": "5c9ca5a3da95ca278f1cddcb1892109e6109a2a9d62af8aa040b630d4f2ed767"
+    },
+    {
+      "file": "Sounds/ForsakenA.uax",
+      "size": 1024345,
+      "sha256": "d221813e2cb6ccdab0769c7fa505d54a13a9fa75a413b57055a6b51178c17974"
+    },
+    {
+      "file": "Sounds/ForsakenBotA.uax",
+      "size": 78070,
+      "sha256": "7e215d524ed293b2341620e0da9225c6cc5112735470500a3837345b2caf9e18"
+    },
+    {
+      "file": "Sounds/HoundA.uax",
+      "size": 961784,
+      "sha256": "0afdde1216769135fd9a1ce9ae53f6b4ccecc7328031bfe220dab1417bc10038"
+    },
+    {
+      "file": "Sounds/HoundBotA.uax",
+      "size": 61939,
+      "sha256": "b8cc6b144577b7f8f48d416e2bdd93658f234c269dee09ebfee01b273c2f22ef"
+    },
+    {
+      "file": "Sounds/LegionA.uax",
+      "size": 2656608,
+      "sha256": "3b8d2a4442fcea311ace61ae6dc5f14490a476ff40d2125011b43f42b218f23c"
+    },
+    {
+      "file": "Sounds/MashadarA.uax",
+      "size": 3607516,
+      "sha256": "5e6799c8d0df53eea98da8e8043afa82e40556052410a305a0533ba7bc25d0ca"
+    },
+    {
+      "file": "Sounds/MinionA.uax",
+      "size": 878663,
+      "sha256": "806235e998bf64037cc0cb6a103788089f25486785edb324149a654b9a6dd817"
+    },
+    {
+      "file": "Sounds/MyrddraalA.uax",
+      "size": 2792998,
+      "sha256": "54388d0db9badb117190158cb73d4393db5466ceb77f559ccd034f781ee733ed"
+    },
+    {
+      "file": "Sounds/QuestionerA.uax",
+      "size": 1658702,
+      "sha256": "2105a5cf5f727e366169980b6311ffe885356a6237db6223bd3dd2e8920b482f"
+    },
+    {
+      "file": "Sounds/SisterA.uax",
+      "size": 1377427,
+      "sha256": "46dee06c1e8e3ec095f205d8a07aa5241993e3fc65c3d4b57e4d145ddf4e434e"
+    },
+    {
+      "file": "Sounds/SitterA.uax",
+      "size": 960112,
+      "sha256": "f5b3e5fdd21cc3df71f0dd8cc7d44721f26b965cf2b21f289881fe485ee2e345"
+    },
+    {
+      "file": "Sounds/SoldierA.uax",
+      "size": 1223353,
+      "sha256": "329c2737c564ea568e495e718bf59b6d69ebff8e499ff8aea630c14ce29eedf7"
+    },
+    {
+      "file": "Sounds/TrollocA.uax",
+      "size": 1564995,
+      "sha256": "3273d05f61d4aa35e6c777f49711e0904fa3f1fc82d33d5c7bdd44e7f4ff40d6"
+    },
+    {
+      "file": "Sounds/WarderA.uax",
+      "size": 1192889,
+      "sha256": "12bf033295ab3699308562e5888eb56bca889061483adb7fa3c46cb43d7e6f01"
+    },
+    {
+      "file": "Sounds/WarrenA.uax",
+      "size": 225147,
+      "sha256": "206aa1a644b893902460843a63f63084d4b2f0da0971d306fe9c68981aa65648"
+    },
+    {
+      "file": "Sounds/WhitecloakA.uax",
+      "size": 1070155,
+      "sha256": "fd0f0d48867764ca0bf549e9633d73169cbd872d5a79e2ef4ab931e09315caa2"
+    },
+    {
+      "file": "Sounds/WhitecloakBotA.uax",
+      "size": 70648,
+      "sha256": "0414d3dda380f25a167bc882eb48481fa1e2a2696ad4e61c573e1ac8a1ff39c7"
+    },
+    {
+      "file": "System/Angreal.u",
+      "size": 25174993,
+      "sha256": "7d54e52873ba6a496bf0c7a1684c5081b107b1b4d79d4be77c443e637ebffbee"
+    },
+    {
+      "file": "System/Core.u",
+      "size": 57940,
+      "sha256": "a91c9aab7b6f348e1fcda055b0a7f4b87298442d28e1edea917f9bdeecb56ca8"
+    },
+    {
+      "file": "System/Editor.u",
+      "size": 98576,
+      "sha256": "10ed9a4e241474e25a16e60b588f691b34895a1d723c10689692129f355378e3"
+    },
+    {
+      "file": "System/Engine.u",
+      "size": 1003079,
+      "sha256": "d9d257100b5518d6e86d358c05e42d902081e5ea06c29e4ac3c7865f8589bef0"
+    },
+    {
+      "file": "System/Environment.u",
+      "size": 3008431,
+      "sha256": "7ef166c977ba5a98ce2ec48213914e20f3946b3849bd5dc61872b130934a75ed"
+    },
+    {
+      "file": "System/Fire.u",
+      "size": 14926,
+      "sha256": "26689b21cddebc8c3e1ecc9ff7de8c83a3aa41b764a6efadf8e54685540c8a4c"
+    },
+    {
+      "file": "System/IpDrv.u",
+      "size": 20142,
+      "sha256": "0fea4cdb33948c1933f5f3d60e7ea005fdc110f1838589925bdf7590c242d493"
+    },
+    {
+      "file": "System/IpServer.u",
+      "size": 29655,
+      "sha256": "90b32499c18e82a01bf92dcd465509dbfa9065266aa9e1d01d88bbc5d9a864a2"
+    },
+    {
+      "file": "System/Legend.u",
+      "size": 906051,
+      "sha256": "162045861ab297068afa4ef5089e25d4a3c542ea57c8ac382c1ed99347cff086"
+    },
+    {
+      "file": "System/MachinShin.u",
+      "size": 1885151,
+      "sha256": "4b155d280532a833021c050c414a2902b998a13b5f0c92cb17b2f44763c61f6c"
+    },
+    {
+      "file": "System/ParticleSystems.u",
+      "size": 936829,
+      "sha256": "9e8adea4955cc955484da18e77d02bb615b35124b693a7e6fb6456fb5f5d2c5b"
+    },
+    {
+      "file": "System/UBrowser.u",
+      "size": 315877,
+      "sha256": "5ab7cbf2bfc09ff93d10f0d4edb5abd6ab79c78fad6a5f03a711f84c3bdae208"
+    },
+    {
+      "file": "System/UWindow.u",
+      "size": 632869,
+      "sha256": "a90078f1b61877261a3e35acaf2673422edd33cc5559b9df5c4a53105565f005"
+    },
+    {
+      "file": "System/WinDrv.u",
+      "size": 3806,
+      "sha256": "ca40a2c1d4dee8b098dc80d280eeba0bf50441c5f5cb1db2a276b7f5d163208e"
+    },
+    {
+      "file": "System/WOT.u",
+      "size": 9588318,
+      "sha256": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb"
+    },
+    {
+      "file": "System/WoTBase.u",
+      "size": 83610,
+      "sha256": "3b19541b8f793108d38a8ee64c633e2d48cbf13e345b2414b482e131b99fe53d"
+    },
+    {
+      "file": "System/WoTBrowser.u",
+      "size": 48229,
+      "sha256": "7d5880d5295e0be647f904f5d0f72a8f4bd4bbff47a17227ba7b14fa048ccfc1"
+    },
+    {
+      "file": "System/WoTDecorations.u",
+      "size": 2219370,
+      "sha256": "0414f4ffdbe005af236a49cebb5a8fca3f495a4a5cbf787284c55ec0cd5eddbf"
+    },
+    {
+      "file": "System/WoTPawns.u",
+      "size": 17136920,
+      "sha256": "b72f1ae59c2216305890d1a628e7e946eec42509d3d1708f0ce7d146457058af"
+    },
+    {
+      "file": "System/WoTTraps.u",
+      "size": 1517667,
+      "sha256": "4b2cfd429018d7a443c8f49a4f53e6724703e70193deff2a105deb6f148d2e48"
+    }
+  ],
+  "source_url": "https://www.oldunreal.com/phpBB3/viewtopic.php?p=100242",
+  "expected_merged_sha256": "44995c4a76756c513eab1f8a7684ec7ea4edd6c8e0f30389185e2fcec60e7cd1"
+}

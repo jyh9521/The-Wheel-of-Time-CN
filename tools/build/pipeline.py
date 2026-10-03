@@ -21,9 +21,14 @@ def check_originals(game, profile):
             raise ValueError('Unsupported or modified original: ' + name)
 
 
-def build(game, out, rows, config, profile, fontpath):
+def build(game, out, rows, config, profile, fontpath, source_dir=None, source_report=None):
+    source_dir = source_dir or game / 'System'
     check_originals(game, profile)
-    check_font(rows, fontpath, config['font'])
+    texts = [r['translation'] for r in rows if r.get('translation')]
+    if source_report:
+        from tools.build.source_layer import active_subtitle_texts
+        texts += active_subtitle_texts(source_dir, rows, profile['subtitle_files'])
+    check_font([{'translation': text} for text in texts], fontpath, config['font'])
     out.mkdir(parents=True, exist_ok=True)
     resources = out / 'resources' / 'System'
     if not resources.resolve().is_relative_to(out.resolve()):
@@ -36,18 +41,25 @@ def build(game, out, rows, config, profile, fontpath):
     if unknown:
         raise ValueError('Resource not in verified profile: ' + ', '.join(sorted(unknown)))
     timing = importlib.import_module('tools.import.int_files').import_rows(
-        game / 'System', rows, resources, config, profile)
-    texts = [r['translation'] for r in rows if r.get('translation')]
+        source_dir, rows, resources, config, profile)
+    if source_report:
+        for name in profile['subtitle_files']:
+            if not (resources / name).exists():
+                shutil.copyfile(source_dir / name, resources / name)
     if any(ord(c) >= 256 for s in texts for c in s):
         font_result = build_font(game / 'System/WOT.u', resources / 'WOT.u',
-                             [r['translation'] for r in rows if r.get('translation')],
+                             texts,
                                  fontpath, out / 'FONT_DIFF.json', profile, config['font'])
     else:
         shutil.copyfile(game / 'System/WOT.u', resources / 'WOT.u')
         font_result = {'unique_glyphs': 0, 'reason': 'legacy font coverage; package unchanged'}
         (out / 'FONT_DIFF.json').write_text(json.dumps(font_result), 'utf8')
     resource_edits = apply_resource_edits(resources / 'WOT.u', profile)
+    if source_report:
+        source_report = dict(source_report, production_build_integrated=True)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
+    if source_report:
+        names = sorted(set(names) | {'System/' + n for n in profile['subtitle_files']})
     files = {}
     for name in names:
         if name not in profile['files']:
@@ -72,6 +84,7 @@ def build(game, out, rows, config, profile, fontpath):
                         for n, d in files.items()}, 'modified_file': 'resources/System/WOT.u',
               'diff_file': 'FONT_DIFF.json', 'originals_unchanged': True,
               'resource_edits': resource_edits,
+              'subtitle_source': source_report,
               'bytecode_unchanged': not bool(resource_edits),
               'font_diff_scope': 'Font generation stage, before display-only resource field edits'}
     check_originals(game, profile)

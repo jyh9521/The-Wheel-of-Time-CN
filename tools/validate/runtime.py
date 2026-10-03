@@ -21,7 +21,30 @@ POLICY = load_policy()
 MATRIX = [tuple(size) for size in POLICY["active_resolutions"]]
 
 
-def run(game, runtime, build, out, size, view, original=False, sweep=False):
+def parse_subtitle_samples(value):
+    times = tuple(int(n) for n in value.split(","))
+    if (
+        not times
+        or len(times) > 20
+        or any(not 1 <= n <= 300 for n in times)
+        or list(times) != sorted(set(times))
+    ):
+        raise ValueError("Subtitle sample times must increase, within 1..300 seconds")
+    return times
+
+
+def run(
+    game,
+    runtime,
+    build,
+    out,
+    size,
+    view,
+    original=False,
+    sweep=False,
+    subtitle_samples=(10, 20, 25, 36),
+):
+    subtitle_samples = parse_subtitle_samples(",".join(map(str, subtitle_samples)))
     item_count = sweep_count(POLICY, view, sweep)
     game, runtime, build, out = (p.resolve() for p in (game, runtime, build, out))
     if runtime == game or runtime.is_relative_to(game):
@@ -140,7 +163,7 @@ def run(game, runtime, build, out, size, view, original=False, sweep=False):
                 raise RuntimeError("Uniform frame is not a verified UI result")
 
         if view == "subtitle":
-            for when in (10, 20, 25, 36):
+            for when in subtitle_samples:
                 time.sleep(max(0, when - (time.monotonic() - started)))
                 capture(str(when))
         else:
@@ -236,6 +259,11 @@ if __name__ == "__main__":
     )
     p.add_argument("--original", action="store_true")
     p.add_argument(
+        "--subtitle-samples",
+        default="10,20,25,36",
+        help="Increasing capture times, seconds; subtitle view only",
+    )
+    p.add_argument(
         "--sweep", action="store_true", help="Capture each configured menu row"
     )
     a = p.parse_args()
@@ -248,4 +276,5 @@ if __name__ == "__main__":
         a.view,
         a.original,
         a.sweep,
+        parse_subtitle_samples(a.subtitle_samples),
     )

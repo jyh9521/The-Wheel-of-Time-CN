@@ -1,0 +1,49 @@
+{
+  "native_exit": 0,
+  "actual_modes": [
+    [
+      1920,
+      1080
+    ]
+  ],
+  "input": [],
+  "manual_review": {
+    "20": "Tes_01 readable; margin retained",
+    "45": "no subtitle; same starting scene",
+    "60": "no subtitle; same starting scene",
+    "90": "no subtitle; same starting scene"
+  },
+  "resource_sha256": {
+    "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+    "System/WOT.u": "2f95b230494be4a9fa9de3d20765e315a09a4a390e6fbdd8291f32276ab46039",
+    "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+    "System/WoTsubtitles.int": "c06967281198e92c1d6649905695cf068844ace0a7ca67882eb625a5d8d359b8"
+  },
+  "limitations": "No movement; later tutorial cues and recovered combat lines not triggered. No audio synchronization measurement.",
+  "stage": "346-glyph candidate, 90-second idle probe",
+  "final_build": {
+    "glyphs_per_font": 347,
+    "native_exit": 0,
+    "actual_modes": [
+      [
+        1920,
+        1080
+      ]
+    ],
+    "samples": [
+      11.02,
+      20.99,
+      37.03
+    ],
+    "manual_review": {
+      "20": "Tes_01 readable; top margin retained"
+    },
+    "resource_sha256": {
+      "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+      "System/WOT.u": "3bda2e6ab5cf2ff28467d7ac213c216464c9b14755af2fb4241d149c57ee0649",
+      "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+      "System/WoTsubtitles.int": "c06967281198e92c1d6649905695cf068844ace0a7ca67882eb625a5d8d359b8"
+    },
+    "limitations": "Only opening subtitle manually reviewed; later tutorial cues, combat lines and U+2019 runtime rendering unverified"
+  }
+}

@@ -22,6 +22,7 @@ def main():
     parser.add_argument("--locale", default="zh-CN")
     parser.add_argument("--game-dir", type=Path)
     parser.add_argument("--font", type=Path)
+    parser.add_argument("--subtitle-source", type=Path)
     parser.add_argument("--out", type=Path)
     parser.add_argument("--strict", action="store_true")
     args = parser.parse_args()
@@ -44,45 +45,87 @@ def main():
     profile = json.loads(profile_path.read_text("utf8"))
     rows = json.loads((locale / "strings.json").read_text("utf8"))
     importer = importlib.import_module("tools.import.int_files")
-    pending = importer.validate_rows(rows, config)
-    if args.strict and (pending or any(r.get("status") != "reviewed" for r in rows)):
-        raise ValueError(
-            "Strict validation requires all entries translated and reviewed"
-        )
+    from tools.build.source_layer import source_layer, load_rows
+
+    if args.subtitle_source and not args.game_dir:
+        raise ValueError("--subtitle-source requires --game-dir")
     if args.game_dir:
         from tools.build.pipeline import check_originals
 
         check_originals(args.game_dir, profile)
-        if args.command != "extract":
-            importer.verify_sources(args.game_dir / "System", rows)
-    if args.command == "validate":
-        if args.font:
-            from tools.validate.fonts import check_font
+    manifest = (
+        json.loads((ROOT / "profiles/subtitle-source.json").read_text("utf8"))
+        if args.subtitle_source
+        else {}
+    )
+    if args.subtitle_source:
+        rows += load_rows(locale, config, manifest)
+    with source_layer(args.game_dir or ROOT, args.subtitle_source, manifest) as (
+        source_dir,
+        source_report,
+    ):
+        pending = importer.validate_rows(rows, config)
+        if args.strict and (
+            pending or any(r.get("status") != "reviewed" for r in rows)
+        ):
+            raise ValueError(
+                "Strict validation requires all entries translated and reviewed"
+            )
+        if args.game_dir:
+            from tools.build.pipeline import check_originals
 
-            check_font(rows, args.font, config["font"])
-        print(
-            f"VALIDATE PASS: {len(rows)} entries; {pending} untranslated; "
-            f'{sum(r.get("status") != "reviewed" for r in rows)} unreviewed'
+            check_originals(args.game_dir, profile)
+            if args.command != "extract":
+                importer.verify_sources(source_dir, rows)
+        if args.command == "validate":
+            if args.font:
+                from tools.validate.fonts import check_font
+
+                font_rows = rows
+                if source_report:
+                    from tools.build.source_layer import active_subtitle_texts
+
+                    font_rows = rows + [
+                        {"translation": text}
+                        for text in active_subtitle_texts(
+                            source_dir, rows, profile["subtitle_files"]
+                        )
+                    ]
+                check_font(font_rows, args.font, config["font"])
+            print(
+                f"VALIDATE PASS: {len(rows)} entries; {pending} untranslated; "
+                f'{sum(r.get("status") != "reviewed" for r in rows)} unreviewed'
+            )
+            return 0
+        if not args.game_dir:
+            raise ValueError(
+                "--game-dir must point to an unmodified supported GOG installation"
+            )
+        out = (args.out or ROOT / "build" / args.locale).resolve()
+        if out == args.game_dir.resolve() or out.is_relative_to(
+            args.game_dir.resolve()
+        ):
+            raise ValueError("Output must be outside the original game directory")
+        if args.command == "extract":
+            from tools.extract.catalog import export
+
+            export(source_dir, out)
+            return 0
+        if not args.font:
+            raise ValueError("--font is required; fonts are not bundled")
+        from tools.build.pipeline import build
+
+        build(
+            args.game_dir,
+            out,
+            rows,
+            config,
+            profile,
+            args.font,
+            source_dir,
+            source_report,
         )
         return 0
-    if not args.game_dir:
-        raise ValueError(
-            "--game-dir must point to an unmodified supported GOG installation"
-        )
-    out = (args.out or ROOT / "build" / args.locale).resolve()
-    if out == args.game_dir.resolve() or out.is_relative_to(args.game_dir.resolve()):
-        raise ValueError("Output must be outside the original game directory")
-    if args.command == "extract":
-        from tools.extract.catalog import export
-
-        export(args.game_dir / "System", out)
-        return 0
-    if not args.font:
-        raise ValueError("--font is required; fonts are not bundled")
-    from tools.build.pipeline import build
-
-    build(args.game_dir, out, rows, config, profile, args.font)
-    return 0
 
 
 if __name__ == "__main__":

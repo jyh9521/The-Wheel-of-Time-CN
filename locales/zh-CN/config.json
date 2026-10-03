@@ -11,5 +11,6 @@
   "validation": {
     "max_characters": 4096
   },
-  "status": "thirty-seven-entry menu/Controls PoC; not complete translation"
+  "status": "49 base draft entries; optional recovered subtitles; not complete translation",
+  "subtitle_rows": "subtitles.json"
 }

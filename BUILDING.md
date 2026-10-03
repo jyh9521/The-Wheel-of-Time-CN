@@ -116,3 +116,15 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 ## 可选字幕来源审计
 
 用户提供的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。
+
+## 可选社区字幕来源：生产构建入口
+
+```powershell
+python build.py extract --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_SUBTITLES" --out build/source-export
+python build.py validate --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_SUBTITLES" --font "FONT"
+python build.py --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_SUBTITLES" --font "FONT" --out build/source-enabled
+```
+
+下载文件作为外部输入；支持的SHA-256与47语音资源版本记录在profiles/subtitle-source.json。全新克隆+原版游戏+匹配的社区文件+字体即可重建，无旧工作目录依赖。省略--subtitle-source保留基础49条构建，结果与接入前相同。启用时另读locale.config.subtitle_rows；当前294条中233未译，61已有译文均草稿，strict失败是预期。源层临时目录退出后清理；最终PATCH包含恢复英语和已有中文，不是中文全覆盖Release。
+
+`--subtitle-source`未知/改动输入在写产物前拒绝；保留原版profile和安装器原版hash校验。字幕Len补偿以合并后真实英文长度为基准；已有教程英文被保留，因此原49条的源hash与时长规则不变。

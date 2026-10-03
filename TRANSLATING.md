@@ -73,3 +73,7 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 ## 教程字幕增补
 
 2026-10-03保留既有37条并新增Tes_02～Tes_13，当前49条draft；教程中文13/80。英语来源为用户原安装，中文时序与触发仍待1080p验收。参见docs/SUBTITLE_COVERAGE.md；全字幕覆盖是独立发布门槛，不凭中文显示PoC宣布完成。
+
+## 外部来源字幕译文
+
+新增locales/<locale>/subtitles.json，由config.subtitle_rows指定；只有启用--subtitle-source时加载。source_layer绑定已核验manifest.id；source_sha256、source_length及tokens来自保守合并后的英文，不能改成原版空字符串hash，也不能用中文文本充当英文长度。当前245条：12条draft，233条pending；基础strings.json的49条完整保留。补译后用同一--subtitle-source运行validate --font，完整验收前strict仍应失败。术语“暗影生物”等本轮短句为候选翻译，需结合剧情与全局术语审校。
