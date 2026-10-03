@@ -15,8 +15,10 @@ import subprocess
 import time
 from pathlib import Path
 from PIL import ImageGrab
+from tools.validate.qa_policy import load_policy
 
-MATRIX = [(1366, 768), (1920, 1080), (2560, 1440), (3840, 2160)]
+POLICY = load_policy()
+MATRIX = [tuple(size) for size in POLICY["active_resolutions"]]
 
 
 def run(game, runtime, build, out, size, view, original=False):
@@ -24,7 +26,9 @@ def run(game, runtime, build, out, size, view, original=False):
     if runtime == game or runtime.is_relative_to(game):
         raise ValueError("Runtime must be outside the original game")
     if size not in MATRIX:
-        raise ValueError("QA resolutions: 1366x768, 1920x1080, 2560x1440, 3840x2160")
+        raise ValueError(
+            "Resolution is outside active QA; 4K remains a documented known issue"
+        )
     if not (runtime / "System/WoT.exe").is_file():
         raise ValueError("Provide a complete separate runtime copy")
     out.mkdir(parents=True, exist_ok=True)
@@ -197,7 +201,9 @@ if __name__ == "__main__":
     for option in ("game-dir", "runtime-dir", "build-dir", "out"):
         p.add_argument("--" + option, type=Path, required=True)
     p.add_argument(
-        "--resolution", required=True, choices=[f"{w}x{h}" for w, h in MATRIX]
+        "--resolution",
+        default="x".join(map(str, POLICY["recommended"])),
+        choices=[f"{w}x{h}" for w, h in MATRIX],
     )
     p.add_argument("--view", choices=["menu", "inventory", "subtitle"], default="menu")
     p.add_argument("--original", action="store_true")

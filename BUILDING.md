@@ -79,7 +79,15 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 python -m tools.validate.runtime --game-dir "D:/GOG Games/The Wheel of Time" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view menu
 ```
 
-允许的分辨率：1366x768、1920x1080、2560x1440、3840x2160。
+当前 QA 分辨率：1366x768、1920x1080、2560x1440；`--resolution` 默认1920x1080。
+4K仅保留既有测试证据和已知问题，不再进入主动测试/适配矩阵。
+可先离线生成原/改资源对照计划，不会启动游戏：
+
+```powershell
+python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
+```
+
+矩阵与推荐值维护在 `profiles/qa-policy.json`，对所有语言共用；计划以1080p优先。
 视图：menu、inventory、subtitle；`--original` 跑未改资源对照。
 脚本只发送键盘到前台的自己启动窗口，关闭自己的主窗口；测试时保持窗口前台，不操作其他应用。
 日志必须出现相应 `Best-match display mode`；JSON 的窗口截图尺寸仅表示桌面捕获面积。

@@ -9,7 +9,8 @@
 - 当前为 **7 条草稿 PoC + 可重建工具链**，不是完整汉化。
 - 已验证 Unicode 菜单、Inventory 标题/正文/斜体引文、教学首句字幕。
 - 合成测试不需要游戏；真实构建和集成需自行提供原版游戏与覆盖字体。
-- 实机分辨率范围 **1366×768 及以上**，重点 **1920×1080、2560×1440、3840×2160**。
+- **推荐玩家使用 1920×1080（1080p）游玩。** 当前 QA 覆盖1366×768、1920×1080、2560×1440。
+  4K 下原版固定像素字体/UI 偏小，列为已知问题，不再做专项适配。
   最新结果与剩余问题见 [QA](docs/qa.md)，不能把桌面截图尺寸当作游戏内部模式。
 
 ## 下载
@@ -67,12 +68,14 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 编辑结构化译文与术语，运行 `python build.py validate --locale zh-CN`。
 新增 `locales/ja-JP/`、`ko-KR/` 或 `zh-TW/` 的数据与配置即可复用工具，
 但要提供覆盖字体并完成实机验收；未声称这些语言已经游戏内验证。
-参阅 [TRANSLATING.md](TRANSLATING.md) 和 [工程规范](docs/LOCALIZATION_STANDARD.md)。
+参阅 [TRANSLATING.md](TRANSLATING.md) 与 [TECHNICAL.md](TECHNICAL.md)。
+本地维护指令文件不在公开仓库中跟踪。
 
 ## 已知问题
 
 字幕 897 个键中 817 个原文为空；地图实例文字、部分硬编码 UI、视频轨道不在当前构建范围。
-高分辨率字体仍沿用原版固定像素尺寸；缺少完整 UI 缩放/长句回归。
+字体仍沿用原版固定像素尺寸；4K UI 偏小保留为已知问题，建议切换1080p。
+当前继续1080p菜单、Inventory和字幕覆盖验证，不为4K改引擎或缩放系统。
 当前字幕长度补偿不是音频时间码同步。详见 [known-issues](docs/known-issues.md)。
 
 ## 许可
