@@ -94,4 +94,4 @@ localization / Font 机制为研究参考；Pillow 与 fontTools 提供字形处
 
 新正式工作区已复用现有工具链并审计旧游戏目录；旧原件保留，生成物不迁移。迁入内容、旧脚本原位保留原因与独立重建证据见[迁移审计](docs/MIGRATION_AUDIT.md)。迁移没有重新翻译，也没有启动游戏。
 
-Controls的11项标签及11条帮助现已完成草稿回填，新增18条仅通过离线重建；本轮实机显示待验，见[Controls后续PoC](docs/CONTROLS_POC.md)。
+Controls的11项标签及11条帮助已完成草稿回填和1080p逐项显示验收；1366×768、1440p完成代表帧抽查，详见[Controls显示QA](docs/CONTROLS_QA.md)。37条仍待译文审稿，并非完整汉化。

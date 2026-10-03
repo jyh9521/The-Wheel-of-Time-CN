@@ -21,7 +21,25 @@ def load_policy(path=POLICY_PATH):
         for size in active
     ):
         raise ValueError("Active resolution is below the minimum")
+    for view, count in policy.get("menu_item_counts", {}).items():
+        if (
+            view not in policy["views"]
+            or type(count) is not int
+            or not 1 <= count <= 64
+        ):
+            raise ValueError("Invalid menu sweep configuration")
     return policy
+
+
+def sweep_count(policy, view, enabled):
+    if not enabled:
+        return 1
+    if view not in policy.get("menu_item_counts", {}):
+        raise ValueError("View has no configured read-only menu sweep")
+    count = policy["menu_item_counts"][view]
+    if type(count) is not int or not 1 <= count <= 64:
+        raise ValueError("Invalid menu sweep configuration")
+    return count
 
 
 def make_plan(policy, locale):
@@ -57,6 +75,8 @@ def make_plan(policy, locale):
                 ]
                 if original:
                     args.append("--original")
+                if view in policy.get("menu_item_counts", {}):
+                    args.append("--sweep")
                 probes.append(
                     {
                         "resolution": size,

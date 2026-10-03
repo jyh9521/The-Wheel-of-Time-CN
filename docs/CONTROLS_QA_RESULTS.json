@@ -1,0 +1,672 @@
+{
+  "date": "2026-10-03",
+  "input_commit": "b09c00c07c856e94b8dc8faa5312bc5017d53910",
+  "locale": "zh-CN",
+  "draft_entries": 37,
+  "tests": 52,
+  "probes": [
+    {
+      "probe": "modified_1366x768_options_sweep.json",
+      "json_sha256": "c05cf48da7bcea8287c68c7825309a532b20ff5617bf5173c99ac8baa8385507",
+      "log_sha256": "63f21d28b5a8da7876eb95d62069368aa6e5405ee21cd595b4eaddac10b92efe",
+      "requested": [
+        1366,
+        768
+      ],
+      "actual_modes": [
+        [
+          1366,
+          768
+        ]
+      ],
+      "original": false,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "modified_1366x768_options_sweep_settled.png",
+          "sha256": "4908db60eae78591dc7ec93545dbb1bb788fdeccf320d35a5219d32b7996b101",
+          "manually_reviewed": true
+        },
+        {
+          "row": 2,
+          "file": "modified_1366x768_options_sweep_item_02.png",
+          "sha256": "e85d4976ff00357e3df92771402f8393e53e8bcb31ceca5ce1b1f9e5c3374936",
+          "manually_reviewed": true
+        },
+        {
+          "row": 3,
+          "file": "modified_1366x768_options_sweep_item_03.png",
+          "sha256": "2b6ac8be3a41ce2f5c6ea76ead5545520e147e27ba024b1190fcdea846783d72",
+          "manually_reviewed": true
+        },
+        {
+          "row": 4,
+          "file": "modified_1366x768_options_sweep_item_04.png",
+          "sha256": "02bf5ab9954599fee006608e2d4c604b7a8f8fffba35da045e01667c5b5dc92b",
+          "manually_reviewed": false
+        },
+        {
+          "row": 5,
+          "file": "modified_1366x768_options_sweep_item_05.png",
+          "sha256": "a3a9ae8bc796c92b95f48512b8bc077744bde6e07bac51ccca8b22d8dcdcce78",
+          "manually_reviewed": true
+        },
+        {
+          "row": 6,
+          "file": "modified_1366x768_options_sweep_item_06.png",
+          "sha256": "cc5e6fc093af3eb58251bf49892843ecbd8254f878f559c3be74412c70a52beb",
+          "manually_reviewed": false
+        },
+        {
+          "row": 7,
+          "file": "modified_1366x768_options_sweep_item_07.png",
+          "sha256": "89f3b519eae3501e1addb5b3f71027fed3f3167fd8cc1d7ac1cac2240163887c",
+          "manually_reviewed": false
+        },
+        {
+          "row": 8,
+          "file": "modified_1366x768_options_sweep_item_08.png",
+          "sha256": "402b416fdf1852e2730e6f35b9216abec34a9bef29da95bf30d5631a3b7d1850",
+          "manually_reviewed": false
+        },
+        {
+          "row": 9,
+          "file": "modified_1366x768_options_sweep_item_09.png",
+          "sha256": "aa3ffff006954a7540e63a60966e83b369471917d946004085e7e263fcf78f3b",
+          "manually_reviewed": false
+        },
+        {
+          "row": 10,
+          "file": "modified_1366x768_options_sweep_item_10.png",
+          "sha256": "79d76568ec12d619098f5e5fa071a346aa65c8e6cd4bd5bd34711a52924519f9",
+          "manually_reviewed": true
+        },
+        {
+          "row": 11,
+          "file": "modified_1366x768_options_sweep_item_11.png",
+          "sha256": "c2e38c312e060c33f68c945200f2c9c99bd981067517db86c3c3d58ec16f7a3c",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "No garbling, blank text or edge clipping observed in reviewed frames"
+    },
+    {
+      "probe": "modified_1920x1080_options_sweep.json",
+      "json_sha256": "7720f1c909c844ff48ed016c4a0e0e39217b2fb70f7d39b8a2a4ed95aab4329a",
+      "log_sha256": "6532488d890e5227e63b284cb1a7faa2a74f737ac7dd2d561db32d33c1810c59",
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "original": false,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "modified_1920x1080_options_sweep_settled.png",
+          "sha256": "ba15f1caafe43809e544d4041c53e86340abe5b6203694dc0e52576f3d640f10",
+          "manually_reviewed": true
+        },
+        {
+          "row": 2,
+          "file": "modified_1920x1080_options_sweep_item_02.png",
+          "sha256": "333fd6c43d63cf04dfc19e5b257612c77bef3048f6e37b18fe7a198640b2c5e8",
+          "manually_reviewed": true
+        },
+        {
+          "row": 3,
+          "file": "modified_1920x1080_options_sweep_item_03.png",
+          "sha256": "b700a9baca599c577dc47df64866441dd4fe574327bd0d85aecde19d3db9697e",
+          "manually_reviewed": true
+        },
+        {
+          "row": 4,
+          "file": "modified_1920x1080_options_sweep_item_04.png",
+          "sha256": "1c436686995282bd82b51575c8be6a1359b665b3e5b4947b58b0e336983b3a61",
+          "manually_reviewed": true
+        },
+        {
+          "row": 5,
+          "file": "modified_1920x1080_options_sweep_item_05.png",
+          "sha256": "4dcb66ae914fda11d4b72106b2d50bd34fb7a2db3b24603d2416e428fe6dbe67",
+          "manually_reviewed": true
+        },
+        {
+          "row": 6,
+          "file": "modified_1920x1080_options_sweep_item_06.png",
+          "sha256": "62c23bad26c5571edcb436da11f87512da4760f8ecd0835d95fe23585ac093f9",
+          "manually_reviewed": true
+        },
+        {
+          "row": 7,
+          "file": "modified_1920x1080_options_sweep_item_07.png",
+          "sha256": "0f739ee4ec3b47f1e50066718e7d44af73b31e7980a875ae1fba4d06f9c15ad6",
+          "manually_reviewed": true
+        },
+        {
+          "row": 8,
+          "file": "modified_1920x1080_options_sweep_item_08.png",
+          "sha256": "7f3ff0e1e350653fdd630f5f886c4ffddf6f0aeefc3a1a2040b5db1e4d4e4e64",
+          "manually_reviewed": true
+        },
+        {
+          "row": 9,
+          "file": "modified_1920x1080_options_sweep_item_09.png",
+          "sha256": "e358d391413da95a4dad282a0282c6a0e38b6e91d77d169369da0f0d789750f9",
+          "manually_reviewed": true
+        },
+        {
+          "row": 10,
+          "file": "modified_1920x1080_options_sweep_item_10.png",
+          "sha256": "9b1b89900a79927ef40ce82acd256a6c62b9b222580a69f56ddc444e43e388f6",
+          "manually_reviewed": true
+        },
+        {
+          "row": 11,
+          "file": "modified_1920x1080_options_sweep_item_11.png",
+          "sha256": "45ef79a3a8e307f5359dff7e8c6901b22a7d762ed97ce12875d01198d4afaf48",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "No garbling, blank text or edge clipping observed in reviewed frames"
+    },
+    {
+      "probe": "modified_2560x1440_options_sweep.json",
+      "json_sha256": "97d84e6472d91fbe45729be34bc61e510a786b4ce5d1c9a901d99059abcbe301",
+      "log_sha256": "0df9fed89b1358b69728ba0666d14773e696704384246787093c3e42a334d3e8",
+      "requested": [
+        2560,
+        1440
+      ],
+      "actual_modes": [
+        [
+          2560,
+          1440
+        ]
+      ],
+      "original": false,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+        "System/WOT.u": "54d6e950f31ec1cd8f38b1a41c3afbbd22fd059d57284b5ae4d66adebd4ef49d",
+        "System/WoT.int": "94e524e8451111101b92ba3630ac7095c3c3518c87226c4d7869202b765db0c4",
+        "System/WoTsubtitles.int": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "modified_2560x1440_options_sweep_settled.png",
+          "sha256": "08a91afa048431c00ef1878c00df67cfaa2351b4df64c176f77fb35a7628ab76",
+          "manually_reviewed": true
+        },
+        {
+          "row": 2,
+          "file": "modified_2560x1440_options_sweep_item_02.png",
+          "sha256": "dfb5c88bff157284ea01549d64e632ef0c4f37493df51aafb8fd4171f0abff63",
+          "manually_reviewed": true
+        },
+        {
+          "row": 3,
+          "file": "modified_2560x1440_options_sweep_item_03.png",
+          "sha256": "b129a03721b2ea4c8665d56f16d4143fb2d4c5021a599b8d64dc1f83cf319345",
+          "manually_reviewed": true
+        },
+        {
+          "row": 4,
+          "file": "modified_2560x1440_options_sweep_item_04.png",
+          "sha256": "ae84ad13739ea2ff0dfa66c9ae15437d0da782c6f8ee55fac286067941ea03f2",
+          "manually_reviewed": false
+        },
+        {
+          "row": 5,
+          "file": "modified_2560x1440_options_sweep_item_05.png",
+          "sha256": "559fa4aec3d395f9eb1f16884b418faf08fdd094ce6fbdace89e472ee648444d",
+          "manually_reviewed": true
+        },
+        {
+          "row": 6,
+          "file": "modified_2560x1440_options_sweep_item_06.png",
+          "sha256": "b2d60a935086105633d89d0e2a159d4706824450f95d9078ae56e23faa9a8aa9",
+          "manually_reviewed": false
+        },
+        {
+          "row": 7,
+          "file": "modified_2560x1440_options_sweep_item_07.png",
+          "sha256": "3a31c1391c7682d1fc2ada089612ccefc91548eeaa91db0f441f291e4f72e10a",
+          "manually_reviewed": false
+        },
+        {
+          "row": 8,
+          "file": "modified_2560x1440_options_sweep_item_08.png",
+          "sha256": "2c09f6dd7d146098cdbfb79a844649dcc028d84a35a0d649bf0adee63889d5fe",
+          "manually_reviewed": false
+        },
+        {
+          "row": 9,
+          "file": "modified_2560x1440_options_sweep_item_09.png",
+          "sha256": "11ddfcf398073fa7d650921bf0952a416c4d40f7a704d8d8e41a39684b152ff4",
+          "manually_reviewed": false
+        },
+        {
+          "row": 10,
+          "file": "modified_2560x1440_options_sweep_item_10.png",
+          "sha256": "fdafa454b1b4da66b1267a5e566cbf161ac41a6eea2fb293d3f9b6466e651f2e",
+          "manually_reviewed": true
+        },
+        {
+          "row": 11,
+          "file": "modified_2560x1440_options_sweep_item_11.png",
+          "sha256": "d7bc485fdf462ba1c0f158abb656afea5fe92a40ccff3c4458c04764a040c9d1",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "No garbling, blank text or edge clipping observed in reviewed frames"
+    },
+    {
+      "probe": "original_1366x768_options_sweep.json",
+      "json_sha256": "9851112adbe36b2c1c4007358acc27669f3256b28863ee1a2487122bbe2598fb",
+      "log_sha256": "450bafdcbcdbe008cc1e24b98c6091e144c8f597112bd5ac4ed10a1979bff75c",
+      "requested": [
+        1366,
+        768
+      ],
+      "actual_modes": [
+        [
+          1366,
+          768
+        ]
+      ],
+      "original": true,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e",
+        "System/WOT.u": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb",
+        "System/WoT.int": "6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8",
+        "System/WoTsubtitles.int": "ba78eadd2ed3d35e8c94918c2ffd68ce0a9ad2eaeb57e95a5164d65886f21be4"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "original_1366x768_options_sweep_settled.png",
+          "sha256": "7537fd5e2a6de6e9a9fc23b05c1f0e12974a9fc255c1147c867c3fe91ebcdb81",
+          "manually_reviewed": false
+        },
+        {
+          "row": 2,
+          "file": "original_1366x768_options_sweep_item_02.png",
+          "sha256": "44f232035ea5032282d7f7867cd7af6f2da6af8dc2e95f07f63589e51197109b",
+          "manually_reviewed": false
+        },
+        {
+          "row": 3,
+          "file": "original_1366x768_options_sweep_item_03.png",
+          "sha256": "f4a38822b985c3670702a11c5ce5c82b74995c204e3be8b8986cd619d3ccd0e2",
+          "manually_reviewed": false
+        },
+        {
+          "row": 4,
+          "file": "original_1366x768_options_sweep_item_04.png",
+          "sha256": "b33e86a7af24014e1bd6afc2c2b86611c58be9b1b5900ab6c523cc8681afc69c",
+          "manually_reviewed": false
+        },
+        {
+          "row": 5,
+          "file": "original_1366x768_options_sweep_item_05.png",
+          "sha256": "a1c5a5e062eae87d54a9bad8804bdf3dfc8351ffcd0f3f0526bb51c3ea8726c0",
+          "manually_reviewed": false
+        },
+        {
+          "row": 6,
+          "file": "original_1366x768_options_sweep_item_06.png",
+          "sha256": "fbbe3ae462dd7b37fb7cdddc1a6baaf50ee15e37f43a1a80db92ba5311f83722",
+          "manually_reviewed": false
+        },
+        {
+          "row": 7,
+          "file": "original_1366x768_options_sweep_item_07.png",
+          "sha256": "a169fac39af5290e297064718914a66435d0ca8d11bc7ab1b4e735727da79792",
+          "manually_reviewed": false
+        },
+        {
+          "row": 8,
+          "file": "original_1366x768_options_sweep_item_08.png",
+          "sha256": "fa02b2a68776e4adab54c3bbf0038a921293b6a9039cda2a8d035db8a24ce254",
+          "manually_reviewed": false
+        },
+        {
+          "row": 9,
+          "file": "original_1366x768_options_sweep_item_09.png",
+          "sha256": "afb3413e0c1dc3054dfb1880d0f48a6e0ddd2eb823e079ef9e2169b8f1e4de48",
+          "manually_reviewed": false
+        },
+        {
+          "row": 10,
+          "file": "original_1366x768_options_sweep_item_10.png",
+          "sha256": "98cfd784fe13a008e7c7dfd55e0dc8132468913f521ddf4019a7270a83603554",
+          "manually_reviewed": false
+        },
+        {
+          "row": 11,
+          "file": "original_1366x768_options_sweep_item_11.png",
+          "sha256": "7c2b59a9559b5ab26bcbba13515c82d95e39e93f940b08110e06c2cc4a0d3a50",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "Captured only; not manually reviewed"
+    },
+    {
+      "probe": "original_1920x1080_options_sweep.json",
+      "json_sha256": "48cc572c9d431764960a8e336452d375c9f4671925967ecf5efdb2b5cdaf0b30",
+      "log_sha256": "b3639acadcd803988001611adb47253f4dfd6d498f3cf6f70fbab3c26443fa7c",
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "original": true,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e",
+        "System/WOT.u": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb",
+        "System/WoT.int": "6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8",
+        "System/WoTsubtitles.int": "ba78eadd2ed3d35e8c94918c2ffd68ce0a9ad2eaeb57e95a5164d65886f21be4"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "original_1920x1080_options_sweep_settled.png",
+          "sha256": "1cd8163c7e157b977a45be25b11a3178773cec95d58c628c65b8ea1bd2f6e911",
+          "manually_reviewed": true
+        },
+        {
+          "row": 2,
+          "file": "original_1920x1080_options_sweep_item_02.png",
+          "sha256": "c9fb2ff672d512ee1afe86627d63fc2b4728614cb2fcb65fdde5ee62f3fd0813",
+          "manually_reviewed": false
+        },
+        {
+          "row": 3,
+          "file": "original_1920x1080_options_sweep_item_03.png",
+          "sha256": "59d411845104ca8f383dfbffd100041deb913dd248242b9f9576ee3278a35b18",
+          "manually_reviewed": false
+        },
+        {
+          "row": 4,
+          "file": "original_1920x1080_options_sweep_item_04.png",
+          "sha256": "244c78f1515206010cd4aea6cb0ff9d27a5c600c4af7ac616723e7a3db66122b",
+          "manually_reviewed": false
+        },
+        {
+          "row": 5,
+          "file": "original_1920x1080_options_sweep_item_05.png",
+          "sha256": "14df63e25d836c6e42e32374662b7b9a701faad6a6966d89cf7b8d15aa964a98",
+          "manually_reviewed": false
+        },
+        {
+          "row": 6,
+          "file": "original_1920x1080_options_sweep_item_06.png",
+          "sha256": "c8324d630115b40954934a443db5e8f22bb2d1a6fd167c34439cfc954b39287b",
+          "manually_reviewed": false
+        },
+        {
+          "row": 7,
+          "file": "original_1920x1080_options_sweep_item_07.png",
+          "sha256": "a8e9d1858ce91b337aa170873fcafc02ebef30491b26fa761147ff7d554e1063",
+          "manually_reviewed": false
+        },
+        {
+          "row": 8,
+          "file": "original_1920x1080_options_sweep_item_08.png",
+          "sha256": "1699c71358065fc33e916672cdc0401d1b2d4d713b701ced5e4e11af73b5feae",
+          "manually_reviewed": false
+        },
+        {
+          "row": 9,
+          "file": "original_1920x1080_options_sweep_item_09.png",
+          "sha256": "a4d4df54cad3932aa00e565e3a52d772629d620a52568fe4c5f5d5ce191314a8",
+          "manually_reviewed": false
+        },
+        {
+          "row": 10,
+          "file": "original_1920x1080_options_sweep_item_10.png",
+          "sha256": "08e39b82accde02736f3fbd02f174527b6c755a448471bddc838c9de365d0871",
+          "manually_reviewed": false
+        },
+        {
+          "row": 11,
+          "file": "original_1920x1080_options_sweep_item_11.png",
+          "sha256": "c64705553b2ced1734a70856814ef03cb7dc6107c0270dd9368ec1b1a624f7f6",
+          "manually_reviewed": true
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "No garbling, blank text or edge clipping observed in reviewed frames"
+    },
+    {
+      "probe": "original_2560x1440_options_sweep.json",
+      "json_sha256": "33c5561daf9badf7d450fb78ef5f568491c446e65876aad2cbf5bc64a149d6a7",
+      "log_sha256": "60328c0a7f659bfd2e6e0c2c087a67a660f6cd6ff5275a0321434d95ff839718",
+      "requested": [
+        2560,
+        1440
+      ],
+      "actual_modes": [
+        [
+          2560,
+          1440
+        ]
+      ],
+      "original": true,
+      "exit_code": 0,
+      "exit_method": "normal_exit",
+      "resource_sha256": {
+        "System/Angreal.int": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e",
+        "System/WOT.u": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb",
+        "System/WoT.int": "6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8",
+        "System/WoTsubtitles.int": "ba78eadd2ed3d35e8c94918c2ffd68ce0a9ad2eaeb57e95a5164d65886f21be4"
+      },
+      "input": [
+        "Escape",
+        "Down",
+        "Down",
+        "Enter",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down",
+        "Down"
+      ],
+      "captures": [
+        {
+          "row": 1,
+          "file": "original_2560x1440_options_sweep_settled.png",
+          "sha256": "20b08869ace6d060d8ecd84ed40fa46b68c05862d9a6aa765f324419b0dcf14f",
+          "manually_reviewed": false
+        },
+        {
+          "row": 2,
+          "file": "original_2560x1440_options_sweep_item_02.png",
+          "sha256": "e1b88e4106e985914f2014d991e61f14cbebe1afaa0d10d13e45e84f731bd28e",
+          "manually_reviewed": false
+        },
+        {
+          "row": 3,
+          "file": "original_2560x1440_options_sweep_item_03.png",
+          "sha256": "163358beb653cfc1f085d37ed5221350da6b99a20bfe471d644c82f9e1e722c1",
+          "manually_reviewed": false
+        },
+        {
+          "row": 4,
+          "file": "original_2560x1440_options_sweep_item_04.png",
+          "sha256": "e831bba9f95b7ba07cb4cfeafc493317a1a9ed7bdd76a78ebc8a175295f00181",
+          "manually_reviewed": false
+        },
+        {
+          "row": 5,
+          "file": "original_2560x1440_options_sweep_item_05.png",
+          "sha256": "9a3dbd87e493d5ecbb205a90359fff9dfa256308b029280231d43dea29cce30a",
+          "manually_reviewed": false
+        },
+        {
+          "row": 6,
+          "file": "original_2560x1440_options_sweep_item_06.png",
+          "sha256": "dcef34c0fc5d7fa7b44a80cf103d5d20f2b3340e6bd19dfaf0a0de1e2e2c7258",
+          "manually_reviewed": false
+        },
+        {
+          "row": 7,
+          "file": "original_2560x1440_options_sweep_item_07.png",
+          "sha256": "97a8ffbb069dc538ddbaa7971f45709f267065ce62869c238477ded391093c0d",
+          "manually_reviewed": false
+        },
+        {
+          "row": 8,
+          "file": "original_2560x1440_options_sweep_item_08.png",
+          "sha256": "74dbe2520a76b78214a38896e3d433e444bd325a649f7ba1e402731c819fb68c",
+          "manually_reviewed": false
+        },
+        {
+          "row": 9,
+          "file": "original_2560x1440_options_sweep_item_09.png",
+          "sha256": "1427b3ebe6659f34105e30170454075a6198b742e63640952ef909296b7dfaee",
+          "manually_reviewed": false
+        },
+        {
+          "row": 10,
+          "file": "original_2560x1440_options_sweep_item_10.png",
+          "sha256": "b2684c331d86e6a44e2996b848ad0be7e8bc749cc189cd11972804a1bcf43960",
+          "manually_reviewed": false
+        },
+        {
+          "row": 11,
+          "file": "original_2560x1440_options_sweep_item_11.png",
+          "sha256": "e8257ee71dfe855e203115571c0f6b9410ff2379e72ddb003d71937053d81cc7",
+          "manually_reviewed": false
+        }
+      ],
+      "automatic_visual_review": "pending",
+      "manual_result": "Captured only; not manually reviewed"
+    }
+  ],
+  "screenshot_note": "Desktop captures are 3840x2160; native rendering modes are verified from logs, not screenshot dimensions.",
+  "scope": "Controls left labels and help only; no settings changed; no 4K test",
+  "local_evidence_directory": "build/controls-qa/native"
+}

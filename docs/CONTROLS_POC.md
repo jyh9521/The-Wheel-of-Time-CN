@@ -34,3 +34,7 @@ python -m tools.validate.integration --game-dir "GAME" --build-dir build/control
 ```
 
 输入资源版本与字体授权要求仍见BUILDING.md及LICENSING.md。生成资源/差分/字库PNG只在本地build目录，不作为源码提交。
+
+## 后续验收
+
+本页保留当时的离线阶段结论。2026-10-03已完成Controls有限实机显示检查，范围、逐帧审查与未覆盖项见[CONTROLS_QA.md](CONTROLS_QA.md)；译文仍为草稿。

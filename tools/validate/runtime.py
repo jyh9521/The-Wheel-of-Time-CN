@@ -15,13 +15,14 @@ import subprocess
 import time
 from pathlib import Path
 from PIL import ImageGrab
-from tools.validate.qa_policy import load_policy
+from tools.validate.qa_policy import load_policy, sweep_count
 
 POLICY = load_policy()
 MATRIX = [tuple(size) for size in POLICY["active_resolutions"]]
 
 
-def run(game, runtime, build, out, size, view, original=False):
+def run(game, runtime, build, out, size, view, original=False, sweep=False):
+    item_count = sweep_count(POLICY, view, sweep)
     game, runtime, build, out = (p.resolve() for p in (game, runtime, build, out))
     if runtime == game or runtime.is_relative_to(game):
         raise ValueError("Runtime must be outside the original game")
@@ -90,6 +91,7 @@ def run(game, runtime, build, out, size, view, original=False):
     result = {
         "requested": list(size),
         "view": view,
+        "menu_items": item_count,
         "original": original,
         "command": command,
         "resource_sha256": {
@@ -102,6 +104,8 @@ def run(game, runtime, build, out, size, view, original=False):
         "visual_review": "pending",
     }
     label = ("original" if original else "modified") + f"_{size[0]}x{size[1]}_{view}"
+    if sweep:
+        label += "_sweep"
     try:
         handle = None
         for _ in range(60):
@@ -162,6 +166,16 @@ def run(game, runtime, build, out, size, view, original=False):
             if view == "inventory":
                 time.sleep(10)
             capture("settled")
+            # Selection-only navigation. Never change a setting using Enter/Left/Right.
+            for item in range(2, item_count + 1):
+                if user.GetForegroundWindow() != handle:
+                    raise RuntimeError("Own game window lost foreground; no key sent")
+                user.keybd_event(40, 0, 0, 0)
+                time.sleep(0.1)
+                user.keybd_event(40, 0, 2, 0)
+                result["input"].append("Down")
+                time.sleep(2)
+                capture(f"item_{item:02}")
     except Exception as exc:
         result["error"] = repr(exc)
     finally:
@@ -221,6 +235,9 @@ if __name__ == "__main__":
         default="menu",
     )
     p.add_argument("--original", action="store_true")
+    p.add_argument(
+        "--sweep", action="store_true", help="Capture each configured menu row"
+    )
     a = p.parse_args()
     run(
         a.game_dir,
@@ -230,4 +247,5 @@ if __name__ == "__main__":
         tuple(map(int, a.resolution.split("x"))),
         a.view,
         a.original,
+        a.sweep,
     )

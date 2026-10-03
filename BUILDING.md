@@ -98,3 +98,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用用户副本，自动备份与严格散列回滚。
 
 旧根目录工具原位保留，legacy命令并非正式构建前置步骤；MOV/map等辅助研究暂不加入生产路径。新目录起初为无.git模板文件树，现已从原GitHub origin/main接回完整历史；迁移修改已普通推送于3df2156。源码独立构建验证与远程发布是两件事。完整迁移与后续缺项见docs/MIGRATION_AUDIT.md。
+
+## Controls逐行显示检查
+
+`python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view options --sweep` 在一次启动内仅Down选择并捕获11项帮助；加--original执行原版对照。行数来自语言无关profiles/qa-policy.json的menu_item_counts。未配置视图禁止sweep；普通单帧接口保持不变。所有这些runtime命令会启动隔离游戏副本，离线plan命令不启动。
