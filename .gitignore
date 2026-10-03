@@ -15,3 +15,5 @@ __pycache__/
 *.ttf
 *.ttc
 *.otf
+AGENTS.md
+docs/LOCALIZATION_STANDARD.md
