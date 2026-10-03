@@ -163,3 +163,11 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
+
+## 玩家可见标识文案收尾（2026-10-04）
+
+本批仅修改四个本地化显示字段，源文ID、hash、长度和控制码不变：Windows.EditCommand显示为“&使用关卡编辑器编辑”（保留&助记标记）；WOTPlayer.CantPlaceResourceStr改为“部署失败 ”（保留用于拼接的末尾空格）；MissionObjectives.Title的通用基类“任务XX”改为“任务目标”，不改各关卡的实际标题；MyrddraalSwordAngreal.PickupMessage改为“警告：你发现了魔达奥剑的伤害效果！”。
+
+已验证：原脚本WoTPawns.MyrddraalSwordAngreal说明该类为魔达奥剑持续伤害图标的占位适配器，空BecomePickup函数明确用于阻止拾取/可见，因此不把该诊断文本杜撰成玩家能拾取的新法器名称。WOT.WOTPlayer中的CantPlaceResourceStr是localized String，原ServerSpawn提示调用处已注释；替换提示正文不修改函数名。MissionObjectives继承WOTTextWindowInfo，基类Title是通用显示文案，不含插值控制码；实际关卡由MissionObjectives01等子类提供标题，未发现需要保留XX的运行时替换脚本。基类触发及Windows外壳标签的实机显示仍未专门确认。
+
+核心1002条为已填充的中文草稿，而非全游戏文本覆盖证明。按键名称、网络缩写和机器使用的控制码/类名仍保留；视频、地图内嵌文字及未提取的硬编码文本尚待全面审计。不得将本次四项收尾描述为已经完成全游戏全文本汉化。

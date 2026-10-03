@@ -1382,7 +1382,7 @@
     "source_sha256": "c85bbcd236d5c8479075c1e159ea4a12ed60e018173c387d231a5917224e30c7",
     "source_length": 16,
     "tokens": [],
-    "translation": "&使用WOTEd编辑",
+    "translation": "&使用关卡编辑器编辑",
     "status": "draft"
   },
   {
@@ -1714,7 +1714,7 @@
     "source_sha256": "7846c4371764adfd660681bbeff07b654742e10214b7d3a4dbb6f7623fd09d98",
     "source_length": 32,
     "tokens": [],
-    "translation": "ServerSpawn()：部署失败 ",
+    "translation": "部署失败 ",
     "status": "draft"
   },
   {
@@ -4554,7 +4554,7 @@
     "source_sha256": "9de07c0e746b94ea7e60aa4c9d4446c8cd76fa193a37c64d68d798e02e09fa77",
     "source_length": 10,
     "tokens": [],
-    "translation": "任务XX",
+    "translation": "任务目标",
     "status": "draft"
   },
   {
@@ -7827,7 +7827,7 @@
     "source_sha256": "c9fed7048b597209fb4c934a48299163d92b05506e58db391289489c8bdf79bd",
     "source_length": 43,
     "tokens": [],
-    "translation": "警告：你找到了MyrddraalSwordAngreal！",
+    "translation": "警告：你发现了魔达奥剑的伤害效果！",
     "status": "draft"
   },
   {

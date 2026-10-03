@@ -60,3 +60,11 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 2026-10-03 开场用户验收
 
 维护者通过专用Game+Class入口重测独立字幕时钟版，并明确反馈“现在没问题了”。据此记录开场分段显示与时机通过该次实机验收；不扩展为存档、切图、死亡、联网或全部剧情字幕通过。普通菜单入口仍未替换。
+
+## 玩家可见标识文案收尾（2026-10-04）
+
+本批仅修改四个本地化显示字段，源文ID、hash、长度和控制码不变：Windows.EditCommand显示为“&使用关卡编辑器编辑”（保留&助记标记）；WOTPlayer.CantPlaceResourceStr改为“部署失败 ”（保留用于拼接的末尾空格）；MissionObjectives.Title的通用基类“任务XX”改为“任务目标”，不改各关卡的实际标题；MyrddraalSwordAngreal.PickupMessage改为“警告：你发现了魔达奥剑的伤害效果！”。
+
+已验证：原脚本WoTPawns.MyrddraalSwordAngreal说明该类为魔达奥剑持续伤害图标的占位适配器，空BecomePickup函数明确用于阻止拾取/可见，因此不把该诊断文本杜撰成玩家能拾取的新法器名称。WOT.WOTPlayer中的CantPlaceResourceStr是localized String，原ServerSpawn提示调用处已注释；替换提示正文不修改函数名。MissionObjectives继承WOTTextWindowInfo，基类Title是通用显示文案，不含插值控制码；实际关卡由MissionObjectives01等子类提供标题，未发现需要保留XX的运行时替换脚本。基类触发及Windows外壳标签的实机显示仍未专门确认。
+
+核心1002条为已填充的中文草稿，而非全游戏文本覆盖证明。按键名称、网络缩写和机器使用的控制码/类名仍保留；视频、地图内嵌文字及未提取的硬编码文本尚待全面审计。不得将本次四项收尾描述为已经完成全游戏全文本汉化。
