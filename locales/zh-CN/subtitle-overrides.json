@@ -1,0 +1,14 @@
+[
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_01",
+    "occurrence": 1,
+    "translation": "伊莱娜，要加入白塔，你必须接受试炼。眼前这件特法器正是为此准备的。依次穿过它的每一道拱门，你将直面自己最深的恐惧。不要惊慌，留心听我的声音，我会引导你走下去。你的训练就从这里开始。第一次试炼，面对的是过去。归途只会出现一次。坚定你的意志。",
+    "source_sha256": "72944a5fb9b5cd9062efa7833f16a1f460f930a71443ab3958e0f0297727382b",
+    "source_length": 432,
+    "tokens": [],
+    "status": "draft",
+    "source_layer": "oldunreal-subtitles-2022"
+  }
+]

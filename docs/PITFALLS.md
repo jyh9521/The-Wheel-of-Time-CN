@@ -31,3 +31,7 @@
 
 - 仅增大中文Font矩形高度会使Controls左列比原ASCII右列行高更大，累积错位；StrLen中文字高度大于原“X”也会把单行帮助判为多行、丢失居中。2026-10-03首版候选已出现这两项回归，保留本地候选/截图，不采用。技术层profile使用preserve-legacy行高，先完整渲染再按同一比例适配全部字形。
 - 字形裁剪和字幕贴顶是不同层。BaseHUD.DrawMessages计算Y=ScaleValY(24)，却对字幕调用SetPos(0,0)。只移动字形位图不能修正字幕块坐标；同样不能通过逐字裁边/加入空格假装修复。当前仅替换经原导出SHA与上下文验证的float Y常量，字幕Len计时与分支不变。
+
+## 开场缺段修正
+
+Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。

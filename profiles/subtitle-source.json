@@ -241,5 +241,14 @@
     }
   ],
   "source_url": "https://www.oldunreal.com/phpBB3/viewtopic.php?p=100242",
-  "expected_merged_sha256": "44995c4a76756c513eab1f8a7684ec7ea4edd6c8e0f30389185e2fcec60e7cd1"
+  "expected_merged_sha256": "2a1449999f912d3815648ff56a36265a815e65ad5e665f6eaa078d7b6e11fc3f",
+  "approved_overrides": [
+    {
+      "section": "DialogA",
+      "key": "Tes_01",
+      "original_source_sha256": "c5abc8b5a20ef8e207fa5c0295f243611abf60c8d4a051869f4b4eff7c8bd0fd",
+      "reference_source_sha256": "72944a5fb9b5cd9062efa7833f16a1f460f930a71443ab3958e0f0297727382b",
+      "reason": "User heard missing first-time speech; pinned community text appends matching paragraph within Tes_01"
+    }
+  ]
 }

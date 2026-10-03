@@ -12,7 +12,10 @@
       "source_length": 350,
       "visual": "pending",
       "timing": "pending",
-      "trigger": "pending"
+      "trigger": "pending",
+      "supplementary_translation": "第一次试炼，面对的是过去。归途只会出现一次。坚定你的意志。",
+      "source_enabled_length": 432,
+      "follow_up": "pending retest after approved source override"
     },
     {
       "key": "Tes_02",
@@ -646,5 +649,10 @@
       "timing": "pending",
       "trigger": "pending"
     }
-  ]
+  ],
+  "user_feedback": {
+    "date": "2026-10-03",
+    "report": "Other tested tutorial text no issues; first-time speech after opening lacks subtitles",
+    "scope": "User report; not proof that every conditional cue was triggered"
+  }
 }

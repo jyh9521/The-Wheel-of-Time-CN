@@ -45,7 +45,7 @@ def main():
     profile = json.loads(profile_path.read_text("utf8"))
     rows = json.loads((locale / "strings.json").read_text("utf8"))
     importer = importlib.import_module("tools.import.int_files")
-    from tools.build.source_layer import source_layer, load_rows
+    from tools.build.source_layer import source_layer, load_rows, compose_rows
 
     if args.subtitle_source and not args.game_dir:
         raise ValueError("--subtitle-source requires --game-dir")
@@ -59,7 +59,12 @@ def main():
         else {}
     )
     if args.subtitle_source:
-        rows += load_rows(locale, config, manifest)
+        rows = compose_rows(
+            rows,
+            load_rows(locale, config, manifest),
+            load_rows(locale, config, manifest, "subtitle_overrides"),
+            manifest,
+        )
     with source_layer(args.game_dir or ROOT, args.subtitle_source, manifest) as (
         source_dir,
         source_report,

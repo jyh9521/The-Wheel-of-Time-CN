@@ -8,19 +8,38 @@ from tools.extract.int_files import decode, encode, entries
 from tools.validate.subtitle_coverage import index, key
 
 
-def prepare(original, reference, out, inventory):
+def prepare(original, reference, out, inventory, approved_overrides=()):
     original, reference, out = (Path(p).resolve() for p in (original, reference, out))
     if any(out == p or out.is_relative_to(p.parent) for p in (original, reference)):
         raise ValueError("Use an independent output directory")
     raw, supplied = original.read_bytes(), reference.read_bytes()
     baseline, additions = index(entries(original)), index(entries(reference))
     sounds = {key(r["section"], r["key"]) for r in inventory["sounds"]}
+    approved = {}
+    for rule in approved_overrides:
+        identity = key(rule["section"], rule["key"])
+        if (
+            identity in approved
+            or identity not in baseline
+            or identity not in additions
+            or identity not in sounds
+        ):
+            raise ValueError("Invalid approved source override identity")
+        for row, field in [
+            (baseline[identity], "original_source_sha256"),
+            (additions[identity], "reference_source_sha256"),
+        ]:
+            if hashlib.sha256(row["source"].encode("utf-8")).hexdigest() != rule[field]:
+                raise ValueError("Approved source override fingerprint mismatch")
+        if baseline[identity]["empty"] or additions[identity]["empty"]:
+            raise ValueError("Approved override must have nonempty sources")
+        approved[identity] = rule
     text, encoding = decode(raw)
     lines = text.splitlines(keepends=True)
     changes, conflicts, unsupported = [], [], []
     for identity, row in additions.items():
         previous = baseline.get(identity)
-        if previous and not previous["empty"]:
+        if previous and not previous["empty"] and identity not in approved:
             if row["source"] != previous["source"]:
                 conflicts.append(
                     dict(
@@ -53,7 +72,11 @@ def prepare(original, reference, out, inventory):
             dict(
                 section=row["section"],
                 key=row["key"],
-                action="fill-empty" if previous else "add-key",
+                action=(
+                    "replace-approved"
+                    if identity in approved
+                    else "fill-empty" if previous else "add-key"
+                ),
                 source_sha256=hashlib.sha256(value.encode("utf-8")).hexdigest(),
             )
         )
@@ -63,7 +86,7 @@ def prepare(original, reference, out, inventory):
     target.write_bytes(payload)
     actual = index(entries(target))
     for identity, row in baseline.items():
-        if not row["empty"]:
+        if not row["empty"] and identity not in approved:
             assert actual[identity]["source"] == row["source"]
     for change in changes:
         identity = key(change["section"], change["key"])
@@ -77,6 +100,7 @@ def prepare(original, reference, out, inventory):
         changes=changes,
         conflicts=conflicts,
         unsupported=unsupported,
+        approved_overrides=list(approved.values()),
         retained_omitted_keys=[
             dict(section=r["section"], key=r["key"])
             for k, r in baseline.items()
@@ -92,7 +116,7 @@ def prepare(original, reference, out, inventory):
     )
     assert json.loads((out / "DIFF.json").read_text(encoding="utf-8")) == report
     print(
-        f"SOURCE MERGE PASS: {len(changes)} fills/additions; {len(conflicts)} conflicts preserved; {report['total']} keys; {report['nonempty']} nonempty; inputs unchanged"
+        f"SOURCE MERGE PASS: {len(changes)} changes; {len(approved)} approved overrides; {len(conflicts)} conflicts preserved; {report['total']} keys; {report['nonempty']} nonempty; inputs unchanged"
     )
     return report
 
@@ -103,12 +127,20 @@ def main():
     p.add_argument("--reference", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--inventory", type=Path, required=True)
+    p.add_argument("--approved-overrides", type=Path)
     a = p.parse_args()
     prepare(
         a.original,
         a.reference,
         a.out,
         json.loads(a.inventory.read_text(encoding="utf-8")),
+        (
+            json.loads(a.approved_overrides.read_text(encoding="utf-8")).get(
+                "approved_overrides", []
+            )
+            if a.approved_overrides
+            else []
+        ),
     )
 
 

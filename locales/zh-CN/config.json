@@ -12,5 +12,6 @@
     "max_characters": 4096
   },
   "status": "116 base draft entries incl. 80 tutorial subtitles; optional recovered subtitles; user QA pending",
-  "subtitle_rows": "subtitles.json"
+  "subtitle_rows": "subtitles.json",
+  "subtitle_overrides": "subtitle-overrides.json"
 }

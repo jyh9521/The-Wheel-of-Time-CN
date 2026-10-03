@@ -105,3 +105,61 @@ class SourceLayerTests(unittest.TestCase):
                 active_subtitle_texts(source, rows, ["WoTsubtitles.int"]),
                 ["Don’t", "恢复"],
             )
+
+    def test_composed_override_preserves_base(self):
+        from tools.build.source_layer import compose_rows
+
+        base = [
+            dict(
+                file="S.int",
+                section="A",
+                key="One",
+                occurrence=1,
+                source_sha256="old",
+                translation="before",
+            )
+        ]
+        replacement = dict(base[0], source_sha256="new", translation="after")
+        manifest = dict(
+            file="S.int",
+            approved_overrides=[
+                dict(
+                    section="A",
+                    key="One",
+                    original_source_sha256="old",
+                    reference_source_sha256="new",
+                )
+            ],
+        )
+        result = compose_rows(base, [], [replacement], manifest)
+        self.assertEqual(result[0]["translation"], "after")
+        self.assertEqual(base[0]["translation"], "before")
+
+    def test_unapproved_translation_override_rejected(self):
+        from tools.build.source_layer import compose_rows
+
+        row = dict(
+            file="S.int", section="A", key="One", occurrence=1, source_sha256="old"
+        )
+        with self.assertRaisesRegex(ValueError, "Unapproved"):
+            compose_rows([row], [], [row], dict(file="S.int"))
+
+    def test_override_translation_source_fingerprint_rejected(self):
+        from tools.build.source_layer import compose_rows
+
+        row = dict(
+            file="S.int", section="A", key="One", occurrence=1, source_sha256="old"
+        )
+        manifest = dict(
+            file="S.int",
+            approved_overrides=[
+                dict(
+                    section="A",
+                    key="One",
+                    original_source_sha256="old",
+                    reference_source_sha256="new",
+                )
+            ],
+        )
+        with self.assertRaisesRegex(ValueError, "fingerprint"):
+            compose_rows([row], [], [row], manifest)

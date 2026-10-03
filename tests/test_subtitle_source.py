@@ -50,3 +50,57 @@ class SubtitleSourceTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 prepare(a, b, root / "out", {"sounds": []})
             self.assertFalse((root / "out").exists())
+
+    def test_approved_nonempty_override(self):
+        import hashlib
+
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            a = root / "a/a.int"
+            b = root / "b/b.int"
+            a.parent.mkdir()
+            b.parent.mkdir()
+            a.write_text("[A]\nOne=Original\n", encoding="ascii")
+            b.write_text("[A]\nOne=Original plus missing speech\n", encoding="ascii")
+            rule = dict(
+                section="A",
+                key="One",
+                original_source_sha256=hashlib.sha256(b"Original").hexdigest(),
+                reference_source_sha256=hashlib.sha256(
+                    b"Original plus missing speech"
+                ).hexdigest(),
+            )
+            r = prepare(
+                a, b, root / "out", {"sounds": [dict(section="A", key="One")]}, [rule]
+            )
+            self.assertEqual(r["changes"][0]["action"], "replace-approved")
+            self.assertEqual(
+                entries(root / "out/WoTsubtitles.int")[0]["source"],
+                "Original plus missing speech",
+            )
+
+    def test_wrong_approved_hash_before_write(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            a = root / "a/a.int"
+            b = root / "b/b.int"
+            a.parent.mkdir()
+            b.parent.mkdir()
+            a.write_text("[A]\nOne=Original\n", encoding="ascii")
+            b.write_text("[A]\nOne=Changed\n", encoding="ascii")
+            with self.assertRaisesRegex(ValueError, "fingerprint"):
+                prepare(
+                    a,
+                    b,
+                    root / "out",
+                    {"sounds": [dict(section="A", key="One")]},
+                    [
+                        dict(
+                            section="A",
+                            key="One",
+                            original_source_sha256="0" * 64,
+                            reference_source_sha256="0" * 64,
+                        )
+                    ],
+                )
+            self.assertFalse((root / "out").exists())
