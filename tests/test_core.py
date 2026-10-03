@@ -102,11 +102,13 @@ class CoreTests(unittest.TestCase):
             importer.validate_rows([a, b], CONFIG)
 
     def test_unknown_control_preserved(self):
-        a = row("Value %unknown", "值 %unknown")
-        self.assertEqual(importer.validate_rows([a], CONFIG), 0)
-        a["translation"] = "值"
-        with self.assertRaises(ValueError):
-            importer.validate_rows([a], CONFIG)
+        for control in ("%unknown", "%special", "%danger"):
+            a = row("Value " + control, "值 " + control)
+            self.assertEqual(tokens(a["translation"]), [control])
+            self.assertEqual(importer.validate_rows([a], CONFIG), 0)
+            a["translation"] = "值"
+            with self.assertRaises(ValueError):
+                importer.validate_rows([a], CONFIG)
 
     def test_subtitle_length_padding(self):
         with tempfile.TemporaryDirectory() as d:
