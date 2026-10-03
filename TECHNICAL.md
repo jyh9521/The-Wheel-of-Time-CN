@@ -97,3 +97,11 @@ Texture lazy-end 是绝对文件偏移，必须与像素数组一起计算；仅
 - 更大atlas mip链、动态字体、复杂shaping、UI高DPI縮放。
 
 已验证和未验证不得混写；最新工程与分辨率证据见 docs/qa.md。
+
+## 主菜单 / Controls PoC 补充
+
+原脚本研究确认 menuMain 的第3项Controls实际进入 menuOptions，其标题为CONTROLS，
+因此 options 测试视图是操作设置页，而非图形/声音Hardware页。
+menuOptions先按Default.MenuList画左列，再把同一数组改为运行时bool/数字等值画右列；
+不能把右列TRUE/FALSE误认成.int标签未回填。当前只改左列的前三项、标题和第一条帮助。
+新校验把source_sha256/source_length/tokens与实际原文逐项对照，缺条目或元数据不一致在回填前失败。

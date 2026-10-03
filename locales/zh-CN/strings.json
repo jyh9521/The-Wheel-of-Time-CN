@@ -75,5 +75,137 @@
     "source_length": 19,
     "tokens": [],
     "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[1]",
+    "occurrence": 1,
+    "translation": "单人游戏",
+    "source_sha256": "441358b1b7a322d62548386fa92286ad195fa1e90104917b335c77d71d425efc",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[2]",
+    "occurrence": 1,
+    "translation": "多人游戏",
+    "source_sha256": "563370a7b0ef8fea32b1e01b441b507bcd6bae0b924205512c30c54ac1beca62",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[3]",
+    "occurrence": 1,
+    "translation": "操作设置",
+    "source_sha256": "799c269135742a36ae48dddf3a69c47c7d2a428a34e351f6da93ae6490101b47",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[4]",
+    "occurrence": 1,
+    "translation": "硬件设置",
+    "source_sha256": "7975300f01bc46f86e52e528b29955be87a361f05f2fb96e14629bc0a5495d03",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[5]",
+    "occurrence": 1,
+    "translation": "重播开场",
+    "source_sha256": "ae978931625c7423049483370d28630c3178300e754ed709fa77f2907e0da4da",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[6]",
+    "occurrence": 1,
+    "translation": "制作人员",
+    "source_sha256": "2a6b24ad287220345e96eb8021fe29d42b0785766c8df658827e7251da2d36dc",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuMain",
+    "key": "MenuList[7]",
+    "occurrence": 1,
+    "translation": "退出游戏",
+    "source_sha256": "b3eb37acb66ba4bbe8fb1ba296815daf194be94f5a5fb50dab2fb5e4a57ba29e",
+    "source_length": 4,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuTitle",
+    "occurrence": 1,
+    "translation": "操作设置",
+    "source_sha256": "e910f44e38d3a0d41585af996e4758bbc75f6f4fe112b4842123205daf9f0e80",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[1]",
+    "occurrence": 1,
+    "translation": "自定义操作",
+    "source_sha256": "d64eceea4099882211cd5c27448eafa9b5c8d106e7908fc657a4269b2eefbf9d",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[2]",
+    "occurrence": 1,
+    "translation": "反转鼠标",
+    "source_sha256": "bcda04f7772cefe928bd00c07dc38ac63fd2254dd9308d4a54d7ecf8f91f644c",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "MenuList[3]",
+    "occurrence": 1,
+    "translation": "鼠标灵敏度",
+    "source_sha256": "4571896d8a4d41629ac328e4eecad4529c5d65c1f965a892dce6bdba97f2ee7b",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuOptions",
+    "key": "HelpMessage[1]",
+    "occurrence": 1,
+    "translation": "按回车键自定义键盘、鼠标和摇杆设置。",
+    "source_sha256": "3cc3030d87da3762b229416f337f252996edf87dc11007c2ec1ffbbea74c773f",
+    "source_length": 67,
+    "tokens": [],
+    "status": "draft"
   }
 ]

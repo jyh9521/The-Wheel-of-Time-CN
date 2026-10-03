@@ -53,6 +53,8 @@ def main():
         from tools.build.pipeline import check_originals
 
         check_originals(args.game_dir, profile)
+        if args.command != "extract":
+            importer.verify_sources(args.game_dir / "System", rows)
     if args.command == "validate":
         if args.font:
             from tools.validate.fonts import check_font

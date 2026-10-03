@@ -46,12 +46,45 @@ def validate_rows(rows, config):
     return pending
 
 
+def verify_sources(src, rows):
+    """Read-only source preflight for every ID, including untranslated rows."""
+    sources = {}
+    for row in rows:
+        name = row["file"]
+        if name not in sources:
+            sources[name] = {
+                (a["section"], a["key"], a["occurrence"]): a
+                for a in entries(Path(src) / name)
+            }
+        identity = (row["section"], row["key"], int(row["occurrence"]))
+        if identity not in sources[name]:
+            raise ValueError("Source ID missing: " + repr((name, *identity)))
+        actual = sources[name][identity]
+        if (
+            hashlib.sha256(actual["source"].encode()).hexdigest()
+            != row["source_sha256"]
+        ):
+            raise ValueError("Source changed: " + repr((name, *identity)))
+        if tokens(actual["source"]) != row["tokens"]:
+            raise ValueError(
+                "Source token metadata differs: " + repr((name, *identity))
+            )
+        if len(actual["source"]) != row["source_length"]:
+            raise ValueError(
+                "Source length metadata differs: " + repr((name, *identity))
+            )
+        if row.get("translation") and actual["kind"] == "structured-metadata":
+            raise ValueError("Structured metadata requires a subfield importer")
+    return len(rows)
+
+
 def import_rows(src, rows, dst, config, profile):
     validate_rows(rows, config)
     src = Path(src).resolve()
     dst = Path(dst).resolve()
     if dst == src:
         raise ValueError("Output must differ from original")
+    verify_sources(src, rows)
     grouped = collections.defaultdict(list)
     for r in rows:
         if r.get("translation"):

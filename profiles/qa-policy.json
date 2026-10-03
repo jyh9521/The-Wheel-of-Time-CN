@@ -3,7 +3,7 @@
   "recommended": [1920, 1080],
   "active_resolutions": [[1366, 768], [1920, 1080], [2560, 1440]],
   "known_issue_resolutions": [[3840, 2160]],
-  "views": ["menu", "inventory", "subtitle"],
+  "views": ["main", "menu", "options", "inventory", "subtitle"],
   "decision_date": "2026-10-03",
   "reason": "Recommend 1080p. Fixed-pixel UI is small at 4K; retain historical evidence without further 4K adaptation."
 }

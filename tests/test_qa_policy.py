@@ -18,7 +18,7 @@ class QAPolicyTests(unittest.TestCase):
     def test_plan_recommended_first_without_launch(self):
         plan = make_plan(load_policy(), "ja-JP")
         self.assertFalse(plan["launches_game"])
-        self.assertEqual(len(plan["probes"]), 18)
+        self.assertEqual(len(plan["probes"]), 30)
         self.assertEqual(plan["probes"][0]["resolution"], [1920, 1080])
         self.assertIn("build/ja-JP", plan["probes"][0]["argv"])
         self.assertTrue(all(p["resolution"] != [3840, 2160] for p in plan["probes"]))

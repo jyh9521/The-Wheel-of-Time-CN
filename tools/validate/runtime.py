@@ -75,7 +75,13 @@ def run(game, runtime, build, out, size, view, original=False):
         user.EnumWindows(callback(cb), 0)
         return items
 
-    level = {"menu": "Entry", "inventory": "Mission_01", "subtitle": "Tutorial"}[view]
+    level = {
+        "main": "Entry",
+        "menu": "Entry",
+        "options": "Entry",
+        "inventory": "Mission_01",
+        "subtitle": "Tutorial",
+    }[view]
     command = [".\\WoT.exe", level] + ([] if view == "subtitle" else ["-nosound"])
     old_cwd = Path.cwd()
     os.chdir(runtime / "System")
@@ -136,12 +142,16 @@ def run(game, runtime, build, out, size, view, original=False):
         else:
             time.sleep(max(0, 13 - (time.monotonic() - started)))
             user.SetForegroundWindow(ctypes.c_void_p(handle))
-            keys = [27, 13] if view == "menu" else [114, 49, 113]
-            result["input"] = (
-                ["Escape", "Enter"]
-                if view == "menu"
-                else ["F3", "1", "F2", "wait 10s for precache"]
-            )
+            navigation = {
+                "main": ([27], ["Escape"]),
+                "menu": ([27, 13], ["Escape", "Enter"]),
+                "options": ([27, 40, 40, 13], ["Escape", "Down", "Down", "Enter"]),
+                "inventory": (
+                    [114, 49, 113],
+                    ["F3", "1", "F2", "wait 10s for precache"],
+                ),
+            }
+            keys, result["input"] = navigation[view]
             for key in keys:
                 if user.GetForegroundWindow() != handle:
                     raise RuntimeError("Own game window lost foreground; no key sent")
@@ -205,7 +215,11 @@ if __name__ == "__main__":
         default="x".join(map(str, POLICY["recommended"])),
         choices=[f"{w}x{h}" for w, h in MATRIX],
     )
-    p.add_argument("--view", choices=["menu", "inventory", "subtitle"], default="menu")
+    p.add_argument(
+        "--view",
+        choices=["main", "menu", "options", "inventory", "subtitle"],
+        default="menu",
+    )
     p.add_argument("--original", action="store_true")
     a = p.parse_args()
     run(

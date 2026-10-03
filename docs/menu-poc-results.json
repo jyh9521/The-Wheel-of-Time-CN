@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-03",
+  "locale": "zh-CN",
+  "entry_count": 19,
+  "new_entries": 12,
+  "unreviewed": 19,
+  "synthetic_tests": 42,
+  "glyphs_per_font": 162,
+  "build_files": {
+    "System/Angreal.int": {
+      "original_sha256": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e",
+      "original_size": 19330,
+      "modified_sha256": "1bc62720b18b2073f651b4a2a9ee9ea00f8c833c91061c4866ec173309c9a371",
+      "modified_size": 38010
+    },
+    "System/WOT.u": {
+      "original_sha256": "8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb",
+      "original_size": 9588318,
+      "modified_sha256": "608402fb7b623b49ed38e683bdf4a4b1c4b9500cfed7058e68b4ec5476e6b183",
+      "modified_size": 11020831
+    },
+    "System/WoT.int": {
+      "original_sha256": "6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8",
+      "original_size": 31883,
+      "modified_sha256": "661a11d04c924c7f9e67dd5c1eaa63b93af7dd74b7b208c665b99c6d6317f808",
+      "modified_size": 63376
+    },
+    "System/WoTsubtitles.int": {
+      "original_sha256": "ba78eadd2ed3d35e8c94918c2ffd68ce0a9ad2eaeb57e95a5164d65886f21be4",
+      "original_size": 19520,
+      "modified_sha256": "1e0466507983b28a830c0d5c05ea4cb53a62e8e551d1830006aa31f3f5da5e02",
+      "modified_size": 39046
+    }
+  },
+  "font_input_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+  "input_config_sha256": "6a123b09126d0759962ab093bf476f021babe7a67e1059ef560b8a9315a58838",
+  "input_rows_sha256": "e5b52cc0605500a1629d3dfbda808357f08efc62e1181d46bca7e16ac64be06f",
+  "local_evidence_directory": "build/menu-poc/qa",
+  "probes": [
+    {
+      "label": "original_1920x1080_main",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "original_1920x1080_main.json",
+      "log_sha256": "4d23291539ce761d6b1cdf36af32095d66bf077949aec17a6d2abce8755a6a34",
+      "representative_frames_reviewed": [
+        {
+          "file": "original_1920x1080_main_settled.png",
+          "sha256": "003899f2ffea9011b13b9d5adc195bce7ddb97be10049cfda260f1ad581dd8ec"
+        }
+      ]
+    },
+    {
+      "label": "original_1920x1080_options",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "original_1920x1080_options.json",
+      "log_sha256": "38c561f1ff97a71040c99971326ff636b014eaa3c2b877c5f0d75fa295ae3b78",
+      "representative_frames_reviewed": [
+        {
+          "file": "original_1920x1080_options_settled.png",
+          "sha256": "a9c350ed4a725f11055ba2f691319a55c4d8605a7f7137324acb633f30cfedfe"
+        }
+      ]
+    },
+    {
+      "label": "modified_1920x1080_main",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "modified_1920x1080_main.json",
+      "log_sha256": "1a385f4b1e68858a2a4b477213ac60eb698ac09543c7b683952a9080012de728",
+      "representative_frames_reviewed": [
+        {
+          "file": "modified_1920x1080_main_settled.png",
+          "sha256": "5b357ee59f790225e64fba9eed2acf1d1a836ebbf673ef89589dc7329bb00d1e"
+        }
+      ]
+    },
+    {
+      "label": "modified_1920x1080_options",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "modified_1920x1080_options.json",
+      "log_sha256": "e3d5e66fefc5e850b2c1961f9ad2272dfd20bdfa5599b37fa4ba5a8283d96ca5",
+      "representative_frames_reviewed": [
+        {
+          "file": "modified_1920x1080_options_settled.png",
+          "sha256": "786b1f48690d856fd8bc2a98d2235172ec2306d07abae9510eb7af229199f988"
+        }
+      ]
+    },
+    {
+      "label": "modified_1920x1080_inventory",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "modified_1920x1080_inventory.json",
+      "log_sha256": "5c9d6885003d277dd055c3982424c5f143008ec53e846e5bef7e9cccb0132166",
+      "representative_frames_reviewed": [
+        {
+          "file": "modified_1920x1080_inventory_settled.png",
+          "sha256": "09d9212aa039514d6adf151e882a2bafb3086f4814855a94520338baa23e6231"
+        }
+      ]
+    },
+    {
+      "label": "modified_1920x1080_subtitle",
+      "native_exit": 0,
+      "requested": [
+        1920,
+        1080
+      ],
+      "actual_modes": [
+        [
+          1920,
+          1080
+        ]
+      ],
+      "log": "modified_1920x1080_subtitle.json",
+      "log_sha256": "897e76b79eea4ef7da453a684204bccc7a67500892d46916383fbaba713c75a0",
+      "representative_frames_reviewed": [
+        {
+          "file": "modified_1920x1080_subtitle_20.png",
+          "sha256": "73640981282e17445c88851fb63e831f9bce062c43b0a792bef72c40de2ccebf"
+        },
+        {
+          "file": "modified_1920x1080_subtitle_36.png",
+          "sha256": "08f84b932abf7fec7fa3d61d547dc33f660ae6bf0516376e8c142470881de14f"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only six 1080p probes executed this round; planned 30 probes are not completed evidence.",
+    "Representative frames reviewed manually; automatic probe retains visual_review=pending.",
+    "No full-game stability or precise audio/subtitle synchronization acceptance.",
+    "4K fixed-pixel readability remains a known issue; no further adaptation.",
+    "Generated resources, screenshots and proprietary font glyphs are not distributed."
+  ]
+}

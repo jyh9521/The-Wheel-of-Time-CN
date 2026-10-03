@@ -32,7 +32,7 @@ python -m venv .venv
 
 字体与游戏路径均由使用者提供；不依赖 `work/phase*`、作者备份或手改资源。
 输出必须在原安装之外，默认 `build/<locale>/`，可通过 `--out` 指定。
-生产构建前运行 `validate --strict`：当前七条均为 draft，因此严格验收应失败，不能伪装已审校。
+生产构建前运行 `validate --strict`：当前十九条均为 draft，因此严格验收应失败，不能伪装已审校。
 
 ## 产物
 
@@ -88,7 +88,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 ```
 
 矩阵与推荐值维护在 `profiles/qa-policy.json`，对所有语言共用；计划以1080p优先。
-视图：menu、inventory、subtitle；`--original` 跑未改资源对照。
+视图：main（主菜单）、menu（单人菜单）、options（Controls）、inventory、subtitle；`--original` 跑未改资源对照。
 脚本只发送键盘到前台的自己启动窗口，关闭自己的主窗口；测试时保持窗口前台，不操作其他应用。
 日志必须出现相应 `Best-match display mode`；JSON 的窗口截图尺寸仅表示桌面捕获面积。
 画面是否有字、裁切、换行、标点和清晰度必须人工观察。
