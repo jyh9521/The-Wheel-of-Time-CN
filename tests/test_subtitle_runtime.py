@@ -6,6 +6,22 @@ from tools.build.subtitle_runtime import caption_at, validate_cues, manage
 
 
 class SubtitleRuntimeTests(unittest.TestCase):
+    def test_independent_actor_clock_wiring(self):
+        root = Path(__file__).resolve().parents[1]
+        player = (root / "src/runtime/LocaleRuntime/Classes/LocalePlayer.uc").read_text(
+            "utf8"
+        )
+        clock = (
+            root / "src/runtime/LocaleRuntime/Classes/LocaleSubtitleClock.uc"
+        ).read_text("utf8")
+        builder = (root / "tools/build/subtitle_runtime.py").read_text("utf8")
+        self.assertNotIn("event Tick", player)
+        self.assertIn("Spawn(class'LocaleSubtitleClock', Self)", player)
+        self.assertIn("SubtitleClock.SubtitlePlayer = Self", player)
+        self.assertIn("SubtitlePlayer.AdvanceSubtitles()", clock)
+        self.assertIn("SubtitlePlayer.bDeleteMe", clock)
+        self.assertIn("LocaleSubtitleClock.uc", builder)
+
     def test_exact_cues_and_gap(self):
         data = json.loads(
             (

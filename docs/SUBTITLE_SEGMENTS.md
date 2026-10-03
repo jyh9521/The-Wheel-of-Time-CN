@@ -49,3 +49,23 @@ giTutorial继承giMission；giMission.Login强制WOTPawns.AesSedai，单独Class
 100项测试通过；LocalePlayer与LocaleTutorial经原版UCC编译，0错误0警告，两个独立输出目录重建.u和.int逐字节一致。UCC随机生成的自有新包GUID在UE1 v68固定summary位置36..51按其余包内容SHA-256规范化；未改原包GUID，不是修改原引擎。独立目标安装、核验、回滚通过，修复生成物保留；原游戏目录5126文件未变。
 
 两个新增模块文件已放入维护者build/runtime/System，未改默认入口或配置，未启动游戏。测试必须使用本文的Game+Class URL；普通新游戏/教程仍走旧显示路径。各语音分段仍待1080p实机确认，尚未确认为正式修复。
+
+
+## 2026-10-03 用户分段测试反馈与独立时钟候选
+
+用户以专用Game+Class入口测试后，后半段字幕未出现。保存的WoT.log确认
+LocaleTutorial、LocalePlayer已生效，因此不是入口未启用。此前全局Player.Tick
+推进序列的方案未通过实机验收；原包PlayerPawn脚本存在PlayerTick路径，原生玩家
+Tick分发差异是高可信待验证原因，不作为已实测的根因。
+
+候选实现改由独立LocaleSubtitleClock Actor.Tick推进同一序列，不改译文、时间码、
+原地图、语音或默认入口。新增sequence start、clock tick active、cue编号/时间/文本长度、
+其他对白取消序列日志，用于区别回调未执行、文本为空和提前取消。静态源码连线测试与
+原版UCC编译不等同实机验证；后续仍需1080p专用入口重测，暂停/死亡/切图/存档尚待验收。
+
+用户已确认其近似回忆指的是Be steadfast，采用现有“坚定你的意志”，
+不再追查或额外添加Please stand back字幕。前面的候选调查记录保留为历史。
+
+## 2026-10-03 开场用户验收
+
+维护者通过专用Game+Class入口重测独立字幕时钟版，并明确反馈“现在没问题了”。据此记录开场分段显示与时机通过该次实机验收；不扩展为存档、切图、死亡、联网或全部剧情字幕通过。普通菜单入口仍未替换。

@@ -169,6 +169,11 @@ Codex、人工翻译者以及后续校对工作均应以本文件为准，不再
 | Caemlyn | **凯姆林** | 地理 | 安多首都 |
 | Tear | **提尔** | 地理 | 国家 / 城市名 |
 | Stone of Tear | **提尔之岩** | 地理 | 提尔要塞 |
+| The Ways | **道** | 地理 | 中文Wiki《大猎捕》《暗影渐起》剧情资料核对；https://twot.huijiwiki.com/wiki/大猎捕 |
+| Waygate | **道门** | 地理 | 中文Wiki《暗影渐起》道门叙述核对；https://twot.huijiwiki.com/wiki/暗影渐起 |
+| Thom Merrilin | **汤姆·梅里林** | 人物 | 中文Wiki主要人物核对；https://twot.huijiwiki.com/wiki/主要人物 |
+| Elayne | **伊兰** | 人物 | 中文Wiki主要人物中的伊兰·传坎；与游戏Elayna不是同一人 |
+| Balefire | **烈火** | 魔法体系 | 中文Wiki《天空之火》末段雷威辛被抹去因缘轨迹的招数核对；https://twot.huijiwiki.com/wiki/天空之火 |
 | Fal Dara | **法达拉** | 地理 | 已核对游戏Tes_63与中文Wiki[主要人物](https://twot.huijiwiki.com/wiki/主要人物)中的法达拉领主；2026-10-03确认 |
 | Ogier | **巨森灵** | 种族 | 固定译名 |
 | Aiel | **艾伊尔人** | 种族 / 文化 | 艾伊尔荒漠居民 |
@@ -242,3 +247,67 @@ AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，
 | File | Section | Key | Occurrence | Term | Source SHA256 | Reason |
 |---|---|---|---|---|---|---|
 | WoTsubtitles.int | DialogA | Tes_64 | 1 | channel | 886aadbe3368047668e5971762cb0ea3007f9330108b78d5a0ac641f19cd8f50 | 普通引导入侵者的动词，不是魔法导引术语 |
+| WoTPawns.int | MyrddraalInventory | Description | 1 | Shadow | 98f222d70ccf4ff4ace850da7c28081f39f4b097f4299ef94f158c4946c23ebb | 普通光照阴影/藏身处，不是暗影阵营 |
+| WoTPawns.int | WarderInventory | Quote | 1 | Shadow | 1a0dea3f4a0ee4bd4954e6ee8df441597db4276902d5eb46973973ad253347ef | 普通光照阴影/藏身处，不是暗影阵营 |
+| WoTPawns.int | MinionInventory | Description | 1 | Shadow | 4ec28c35203c10fd4f3c777fe704d19f77e5fc4d8ff80e8ec4ee4775c38d0f5c | 普通光照阴影/藏身处，不是暗影阵营 |
+| Angreal.int | AngrealInvLightGlobe | Quote | 1 | Shadow | 92ca3eb713c27a2054867d6bd45d5c66f5808e7013fcf32f6079d5b67416f000 | 普通光照阴影，不是暗影阵营 |
+| WoTsubtitles.int | DialogA | Arc_19 | 1 | Shadow | d6ee436d26bac97616fb268a119a71e1db005e1411eb33fc1624a266f29396a0 | jumping at shadows为草木皆兵习语 |
+| WoTsubtitles.int | WhitecloakA | Whi_Taunt5 | 1 | Forsaken | dc753781f8eb21ba2457bcae29d2f8fc3abb7a1b852e346207e01baedab33425 | 动词抛弃，不是弃光魔使 |
+
+## 全文首轮新增待确认术语
+
+下列词已检索本地资料与中文Wiki；未获得足够可核对的既定译名，暂保留英文原拼写。它们仍是发布前待办，不将非空translation误报为已完成中文翻译。不得在别处另造并行译法。
+
+| English / 来源 | 当前处理 | 待确认原因 |
+|---|---|---|
+| Dart | 保留Dart | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Disguise | 保留Disguise | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Chain Lightning | 保留Chain Lightning | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Whirlwind | 保留Whirlwind | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Tracer | 保留Tracer | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Distant Eye | 保留Distant Eye | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Sever | 保留Sever | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Fork | 保留Fork | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Andilay Root | 保留Andilay Root | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Heal | 保留Heal | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Levitate | 保留Levitate | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Personal Shield | 保留Personal Shield | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Personal Illusion | 保留Personal Illusion | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Minion | 保留Minion | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Guardian | 保留Guardian | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Champion | 保留Champion | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Absorb | 保留Absorb | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Decay | 保留Decay | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Earth Shield | 保留Earth Shield | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Earth Tremor | 保留Earth Tremor | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Explosive Ward | 保留Explosive Ward | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Unravel | 保留Unravel | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Seeker | 保留Seeker | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Taint | 保留Taint | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Water Shield | 保留Water Shield | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Air Shield | 保留Air Shield | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Aura of Unraveling | 保留Aura of Unraveling | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Soul Barb | 保留Soul Barb | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Swap Places | 保留Swap Places | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Find Target | 保留Find Target | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Freeze | 保留Freeze | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Spirit Shield | 保留Spirit Shield | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Trap Detect | 保留Trap Detect | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Fireworks | 保留Fireworks | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Chosen | 保留Chosen | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Cuendillar | 保留Cuendillar | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Manetherendrelle | 保留Manetherendrelle | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Machin Shin | 保留Machin Shin | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Mountains of Mist | 保留Mountains of Mist | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Cerist | 保留Cerist | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Sephraem | 保留Sephraem | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Hound | 保留Hound | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Wit Congar | 保留Wit Congar | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Halfmen | 保留Halfmen | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Legion | 保留Legion | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Bornhald | 保留Bornhald | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+| Elaida | 保留Elaida | 需确认出版译名或游戏原创命名；确认后更新本表与全部引用 |
+
+Light、Seal、Shadowspawn、Great Lord/Dark Lord、Mother及五种力的元素称呼本轮依现有语境分别采用光明、封印、暗影生物、暗帝、母亲及地/气/火/水/魂，作为已有或上下文草稿登记，尚待统一审校。白塔角色称Mother不表示生母。
+
+本轮单位说明还保留The Hand of the Light、The Hand that digs out Truth及Legion Stomp/LegionSeeker，未确认译名；只把普通职业Questioner译作审问者，正式称谓待确认。兽魔人战争是Trolloc Wars的上下文草稿。

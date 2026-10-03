@@ -9,6 +9,7 @@ var int CueCount;
 var float SequenceStart;
 var int NextCue;
 var bool bSequenceActive;
+var LocaleSubtitleClock SubtitleClock;
 
 simulated event PostBeginPlay()
 {
@@ -25,17 +26,15 @@ simulated function AdvanceSubtitles()
     while (NextCue < CueCount && Elapsed >= CueBegin[NextCue])
     {
         if (Elapsed < CueEnd[NextCue])
+        {
+            Log("LocaleRuntime cue " $ NextCue $ " elapsed=" $ Elapsed
+                $ " text_length=" $ Len(CueText[NextCue]));
             SubtitleMessage(CueText[NextCue], CueEnd[NextCue] - Elapsed, true);
+        }
         NextCue++;
     }
     if (NextCue >= CueCount)
         bSequenceActive = false;
-}
-
-simulated event Tick(float DeltaTime)
-{
-    Super.Tick(DeltaTime);
-    AdvanceSubtitles();
 }
 
 simulated event ClientHearSound(actor Actor, int Id, sound S,
@@ -49,6 +48,17 @@ simulated event ClientHearSound(actor Actor, int Id, sound S,
         bSubtitles = false;
         Super.ClientHearSound(Actor, Id, S, Slot, SoundLocation, Parameters);
         bSubtitles = PreviousSubtitles;
+        if (SubtitleClock == None)
+            SubtitleClock = Spawn(class'LocaleSubtitleClock', Self);
+        if (SubtitleClock == None)
+        {
+            Log("LocaleRuntime clock spawn failed; using original caption");
+            SubtitleMessage(Localize(string(S.Outer.Name), string(S.Name),
+                string(SubtitlesPackageName), true), MinMessageDuration, true);
+            return;
+        }
+        SubtitleClock.SubtitlePlayer = Self;
+        Log("LocaleRuntime sequence start: " $ S $ " count=" $ CueCount);
         SequenceStart = Level.TimeSeconds;
         NextCue = 0;
         bSequenceActive = true;
@@ -60,8 +70,11 @@ simulated event ClientHearSound(actor Actor, int Id, sound S,
         {
             Caption = Localize(string(S.Outer.Name), string(S.Name),
                 string(SubtitlesPackageName), true);
-            if (Caption != "")
+            if (Caption != "" && bSequenceActive)
+            {
+                Log("LocaleRuntime sequence cancelled by: " $ S);
                 bSequenceActive = false;
+            }
         }
         Super.ClientHearSound(Actor, Id, S, Slot, SoundLocation, Parameters);
     }

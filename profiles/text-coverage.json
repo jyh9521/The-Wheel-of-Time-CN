@@ -1,0 +1,1331 @@
+{
+  "files": [
+    "WoT.int",
+    "Angreal.int",
+    "WoTsubtitles.int",
+    "WoTPawns.int",
+    "WoTTraps.int"
+  ],
+  "preserved_entries": [
+    {
+      "file": "WoT.int",
+      "section": "WOTUtil",
+      "key": "AesSedaiClassStr",
+      "occurrence": 1,
+      "source_sha256": "3a27f40a4130ef62d88e6ff75a8fa67aab724cc4442a4ec957060dc8016f4995",
+      "reason": "resource-class-identifier"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTUtil",
+      "key": "ForsakenClassStr",
+      "occurrence": 1,
+      "source_sha256": "01039c82171fd91964d42ad8021c036f51013d34cc4c0cf9ed7c4313c820ca3a",
+      "reason": "resource-class-identifier"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTUtil",
+      "key": "HoundClassStr",
+      "occurrence": 1,
+      "source_sha256": "51c791e9b80baba4af786e2dea29068651b95aec3dc3bba9f0657cbd7ac77fae",
+      "reason": "resource-class-identifier"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTUtil",
+      "key": "WhiteCloakClassStr",
+      "occurrence": 1,
+      "source_sha256": "38469c1f5a1f3d2280534e67b0acc72f59e8b9648fd0124108af68199575d817",
+      "reason": "resource-class-identifier"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "622d0f8183ca384694fdd5c722e4f3b0e232a3ef19dd11d7d55c87a28bbc50ff",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[14]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[15]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[16]",
+      "occurrence": 1,
+      "source_sha256": "622d0f8183ca384694fdd5c722e4f3b0e232a3ef19dd11d7d55c87a28bbc50ff",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[18]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[19]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[24]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[25]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[26]",
+      "occurrence": 1,
+      "source_sha256": "622d0f8183ca384694fdd5c722e4f3b0e232a3ef19dd11d7d55c87a28bbc50ff",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[28]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[29]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[38]",
+      "occurrence": 1,
+      "source_sha256": "45a073097603e1d383b98a5497600d1a3d98359c9475b717c1100317869f519f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[39]",
+      "occurrence": 1,
+      "source_sha256": "806f5fdcef926574ead157b17ae8bc6da0681946c8d880beee3e6cd6cc421e44",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[40]",
+      "occurrence": 1,
+      "source_sha256": "56e812fa1e09583d05e709db0ae0be927f90b251cc6b99fcff0a4ac1efa466e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[41]",
+      "occurrence": 1,
+      "source_sha256": "09c5b5f0c31ffab49922cd40cfb1faf5e0b44692c732d1c920e41938acf75973",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[42]",
+      "occurrence": 1,
+      "source_sha256": "f5016f6a4a124db0cbba89e3f0140f1f6b86e680d9e7777e321bb36876585fa7",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[43]",
+      "occurrence": 1,
+      "source_sha256": "d7817696e585b0daa62e354b41ef25462ab79c9a41cb1137be8d167f86419cbb",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[44]",
+      "occurrence": 1,
+      "source_sha256": "f9b9ec9a5d25261d73e2a45023057efb03f1a7da0a2fd3c8175da1ee029a66c5",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[45]",
+      "occurrence": 1,
+      "source_sha256": "dac50abad94060e458d977ee2213c3753284b5b9c406fffb38357f02e2558db2",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[46]",
+      "occurrence": 1,
+      "source_sha256": "3bb5cad9181206368b50deeb882cd8cccc3d4aaea2ac2134d77d782f833945b0",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[47]",
+      "occurrence": 1,
+      "source_sha256": "45a073097603e1d383b98a5497600d1a3d98359c9475b717c1100317869f519f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[49]",
+      "occurrence": 1,
+      "source_sha256": "56e812fa1e09583d05e709db0ae0be927f90b251cc6b99fcff0a4ac1efa466e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[55]",
+      "occurrence": 1,
+      "source_sha256": "0457e3e78d9f0517e99de49fb5a251d9b8c2de6d37eaa6b1628af8fa5830e40e",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[56]",
+      "occurrence": 1,
+      "source_sha256": "45a073097603e1d383b98a5497600d1a3d98359c9475b717c1100317869f519f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[57]",
+      "occurrence": 1,
+      "source_sha256": "7951405dd66b0ef61799d13dcd12aa3f398c1a66fae94e01818e8f313e15dec8",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[58]",
+      "occurrence": 1,
+      "source_sha256": "56e812fa1e09583d05e709db0ae0be927f90b251cc6b99fcff0a4ac1efa466e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[59]",
+      "occurrence": 1,
+      "source_sha256": "7bf202502b64878ccef92370fed4f3930759d440ba15c9859fe990c891835bc4",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[60]",
+      "occurrence": 1,
+      "source_sha256": "23b5cb13185c93856d9528e1ece7043cb1277ca599bb31154f85d87f220c64cc",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[61]",
+      "occurrence": 1,
+      "source_sha256": "dd435d7c4ad234cbd937d019703bd7cf22cc593966e289f2dd9e2a050d97281a",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[62]",
+      "occurrence": 1,
+      "source_sha256": "d3be87f72f61523e17ec7d5e73ff7ea4c1af2828c93ad1c3298ad09305070f4d",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[63]",
+      "occurrence": 1,
+      "source_sha256": "45c9220c6812a1c7cb3e4c41dc0b807db06a66b1d15dc87af93b475dbde1cb6a",
+      "reason": "function-key-label"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[64]",
+      "occurrence": 1,
+      "source_sha256": "c215f0da52bb2a984fc2725a18cd0bc5e7459152744f4cab1dfd1eeafeac6828",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[65]",
+      "occurrence": 1,
+      "source_sha256": "45a073097603e1d383b98a5497600d1a3d98359c9475b717c1100317869f519f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "WOTHelpInfo",
+      "key": "Content[67]",
+      "occurrence": 1,
+      "source_sha256": "56e812fa1e09583d05e709db0ae0be927f90b251cc6b99fcff0a4ac1efa466e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives01",
+      "key": "Content[13]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives02",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives03",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives04",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives05",
+      "key": "Content[13]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[10]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[12]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[14]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives07",
+      "key": "Content[16]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[10]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[12]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives08",
+      "key": "Content[14]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives10",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives12",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives15",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[10]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives16",
+      "key": "Content[12]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[4]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[8]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives17",
+      "key": "Content[10]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[0]",
+      "occurrence": 1,
+      "source_sha256": "5879883b0da7a7981e5f4ed3f6005f4ab9e8c56be058280072797e4eae2a70c8",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[1]",
+      "occurrence": 1,
+      "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[2]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[5]",
+      "occurrence": 1,
+      "source_sha256": "dd1b0f7d338cfd18c8e34359a977eaacfc3f4ac3e8c009656db1df43c03be1c3",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[6]",
+      "occurrence": 1,
+      "source_sha256": "808041b1352bf954908697e8f685331593e1caa849c95e9a2e0d2067ae25a3e9",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[7]",
+      "occurrence": 1,
+      "source_sha256": "edfbbd9ef22f259b703dc9560ff4163aa73fe0a9a6718497173b922ff0e494e1",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[9]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[11]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[13]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[15]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[17]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[19]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[21]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "WoT.int",
+      "section": "MissionObjectives18",
+      "key": "Content[23]",
+      "occurrence": 1,
+      "source_sha256": "99b798150712ff3572c8457e220f18bb7e6080d00a7040aeafada07511b9b785",
+      "reason": "format-control"
+    },
+    {
+      "file": "Angreal.int",
+      "section": "AndilayRoot",
+      "key": "Description",
+      "occurrence": 1,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "reason": "None-sentinel"
+    },
+    {
+      "file": "Angreal.int",
+      "section": "AndilayRoot",
+      "key": "Quote",
+      "occurrence": 1,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "reason": "None-sentinel"
+    },
+    {
+      "file": "WoTPawns.int",
+      "section": "LegionStompAngrealInv",
+      "key": "Description",
+      "occurrence": 1,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "reason": "None-sentinel"
+    },
+    {
+      "file": "WoTPawns.int",
+      "section": "LegionStompAngrealInv",
+      "key": "Quote",
+      "occurrence": 1,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "reason": "None-sentinel"
+    },
+    {
+      "file": "WoTPawns.int",
+      "section": "LegionInvSeeker",
+      "key": "Quote",
+      "occurrence": 1,
+      "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "reason": "None-sentinel"
+    }
+  ]
+}

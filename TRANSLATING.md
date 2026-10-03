@@ -103,3 +103,7 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 ```
 
 社区译文和覆盖表应传入经profile核验的合并英文目录，不能用原版空来源替代。此命令同时校验控制符与来源元数据，不自动改译文。README和发布说明需人工检查专名语境，不以英文关键词扫描声称全部语义已验证。
+
+## 非空草稿与完成度
+
+2026-10-04首轮覆盖1002条核心玩家文本。未知专名保留英文并登记GLOSSARY，不用临时音译冒充既定译名。@forget@、@grunt@、@The flows just... vanished.@仍按现有保护规则原样保留，待证明其是否只是引号标记后再处理；不能为通过校验删控制符。validate的0空译文不代表全中文。运行tools.validate.text_coverage查看源文相同条目与遗漏，并逐项处理混合译文中的英文。

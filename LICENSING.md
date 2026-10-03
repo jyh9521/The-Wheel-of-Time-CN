@@ -5,7 +5,7 @@
 |类型|适用范围与处理|
 |---|---|
 |本项目原创代码/工具/文档|MIT，见LICENSE；不包含游戏源码、原文或字体|
-|原创译文|locales/*/strings.json 的translation字段、原创术语翻译：CC BY-SA 4.0，见LICENSE-translations.md；保留贡献归属|
+|原创译文|locales/*/*.json 中的原创translation字段、原创术语翻译：CC BY-SA 4.0，见LICENSE-translations.md；保留贡献归属|
 |引擎对象名/key/原文散列/版本结构|必要的互操作元数据，不声称拥有游戏版权；不改变游戏资源的权利|
 |完整原文/游戏资源/程序/脚本|原权利人所有，用户自行提供，仓库不授权、不提交，仍受对应发行/EULA约束|
 |第三方字体及生成glyph|遵循字体自身许可；字体不捆绑，本地构建不授予再分发权|

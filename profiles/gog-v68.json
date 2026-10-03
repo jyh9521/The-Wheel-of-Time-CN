@@ -38,6 +38,14 @@
     "System/Angreal.int": {
       "size": 19330,
       "sha256": "da76ffc926cc5226a3e903592a6766bd49615678ceeae58c93efd4ec3b5d286e"
+    },
+    "System/WoTPawns.int": {
+      "size": 10004,
+      "sha256": "85824daeb64426d628b05309f6e8ccfdba8697cf88e49d9275347bf9740c1e60"
+    },
+    "System/WoTTraps.int": {
+      "size": 3966,
+      "sha256": "2c4dcf57066ec7741c73c93c4133ebc4604aaf66b8b4eab35e3e3e4fca3ec589"
     }
   },
   "resource_edits": [

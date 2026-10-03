@@ -11,7 +11,7 @@
   "validation": {
     "max_characters": 4096
   },
-  "status": "116 base draft entries incl. 80 tutorial subtitles; optional recovered subtitles; user QA pending",
+  "status": "757 base + 245 supplementary rows populated as drafts; pending terminology/protected English and full-game QA remain",
   "subtitle_rows": "subtitles.json",
   "subtitle_overrides": "subtitle-overrides.json",
   "terminology": {

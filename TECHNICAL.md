@@ -139,3 +139,19 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 ## 单音频多段字幕
 
 Tes_01的社区补全文本作为完整来源保留。将其翻译一次拼接显示会提前泄露后段台词；现有WOTPlayer只在ClientHearSound时调用一次SubtitleMessage，.int没有时间码语法。实验性LocalePlayer继承原AesSedai，为指定音频触发相对Level.TimeSeconds的分段字幕，旧声音与未配置字幕委托原实现；不是对原代码注入hook。原地图、语音和程序不改，需显式Class URL选择，实机兼容仍待验证。详见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。
+
+
+## 2026-10-03 用户分段测试反馈与独立时钟候选
+
+用户以专用Game+Class入口测试后，后半段字幕未出现。保存的WoT.log确认
+LocaleTutorial、LocalePlayer已生效，因此不是入口未启用。此前全局Player.Tick
+推进序列的方案未通过实机验收；原包PlayerPawn脚本存在PlayerTick路径，原生玩家
+Tick分发差异是高可信待验证原因，不作为已实测的根因。
+
+候选实现改由独立LocaleSubtitleClock Actor.Tick推进同一序列，不改译文、时间码、
+原地图、语音或默认入口。新增sequence start、clock tick active、cue编号/时间/文本长度、
+其他对白取消序列日志，用于区别回调未执行、文本为空和提前取消。静态源码连线测试与
+原版UCC编译不等同实机验证；后续仍需1080p专用入口重测，暂停/死亡/切图/存档尚待验收。
+
+用户已确认其近似回忆指的是Be steadfast，采用现有“坚定你的意志”，
+不再追查或额外添加Please stand back字幕。前面的候选调查记录保留为历史。

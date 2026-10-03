@@ -39,3 +39,19 @@ Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区
 ## 字幕完整来源不等于正确分段
 
 把Tes_01社区后段拼在同一显示条目会让后段在开场就出现。不要凭新增key假定游戏会自行调用，也不要把//注释MessageTrigger的历史MessageDelay当作正在执行的时间码。现行脚本跳过注释的同时跳过Sleep，恢复注释将改变调度，不能静默修改地图。局部ASR的英文专名可能错误，固定译文仍以已有源文和GLOSSARY为准。UCC未知commandlet可退出0；必须检查成功日志与新产物。详见[SUBTITLE_SEGMENTS](SUBTITLE_SEGMENTS.md)。
+
+
+## 2026-10-03 用户分段测试反馈与独立时钟候选
+
+用户以专用Game+Class入口测试后，后半段字幕未出现。保存的WoT.log确认
+LocaleTutorial、LocalePlayer已生效，因此不是入口未启用。此前全局Player.Tick
+推进序列的方案未通过实机验收；原包PlayerPawn脚本存在PlayerTick路径，原生玩家
+Tick分发差异是高可信待验证原因，不作为已实测的根因。
+
+候选实现改由独立LocaleSubtitleClock Actor.Tick推进同一序列，不改译文、时间码、
+原地图、语音或默认入口。新增sequence start、clock tick active、cue编号/时间/文本长度、
+其他对白取消序列日志，用于区别回调未执行、文本为空和提前取消。静态源码连线测试与
+原版UCC编译不等同实机验证；后续仍需1080p专用入口重测，暂停/死亡/切图/存档尚待验收。
+
+用户已确认其近似回忆指的是Be steadfast，采用现有“坚定你的意志”，
+不再追查或额外添加Please stand back字幕。前面的候选调查记录保留为历史。

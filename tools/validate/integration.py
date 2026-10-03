@@ -33,7 +33,7 @@ def run(game, build, out):
     print(
         "BASELINE PASS: MenuList[2]="
         + menu(out / "System/WoT.int")
-        + "; 4 original hashes verified"
+        + f"; {len(report['files'])} original hashes verified"
     )
     transaction("apply", build / "PATCH.json", out)
     transaction("verify", build / "PATCH.json", out)
@@ -43,7 +43,7 @@ def run(game, build, out):
     print(
         "MODIFIED PASS: MenuList[2]="
         + menu(out / "System/WoT.int")
-        + "; 4 rebuilt resources byte-identical"
+        + f"; {len(report['files'])} rebuilt resources byte-identical"
     )
     transaction("restore", build / "PATCH.json", out)
     for name in report["files"]:
@@ -52,7 +52,7 @@ def run(game, build, out):
     print(
         "ROLLBACK PASS: MenuList[2]="
         + menu(out / "System/WoT.int")
-        + "; 4 originals byte-identical; modified build retained"
+        + f"; {len(report['files'])} originals byte-identical; modified build retained"
     )
 
 

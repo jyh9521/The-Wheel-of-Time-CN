@@ -144,3 +144,14 @@ Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区
 ## 实验性字幕分段模块
 
 单音频多段字幕的资源级实验模块需原版GOG UCC（不再分发），独立构建入口为`python -m tools.build.subtitle_runtime build --game-dir GAME --locale zh-CN --out build/subtitle-timing-audit/fixed`。它不改地图/音频/EXE/DLL，不自动替换玩家类或默认汉化构建；专用测试入口、安装/回滚及实机限制见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。编译成功不等于游戏中类选择、分段或存档兼容验收通过。
+
+
+## 全文首轮构建与覆盖审计（2026-10-04）
+
+当前profile额外固定原版WoTPawns.int与WoTTraps.int的大小/SHA-256；构建仍从用户原版读取，生成资源增至6个。没有固定“4文件”的安装假设，集成验证按实际manifest文件数执行。
+
+```powershell
+python -m tools.validate.text_coverage --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_SUBTITLES" --out build/coverage.json
+```
+
+覆盖审计区分非空草稿、原样保留条目、未纳入文本、与源文完全相同的值；不会把`validate`的0空译文当成全中文或审校完成。当前1002草稿仍全部draft；--strict应失败。165条保留规则按身份与精确源文SHA-256固定，改变来源则重新审查。其余工具/字体/来源依赖与重建命令不变。

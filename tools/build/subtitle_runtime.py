@@ -129,6 +129,10 @@ def build(game, locale, out):
         ROOT / "src/runtime/LocaleRuntime/Classes/LocaleTutorial.uc",
         compiler / "LocaleRuntime/Classes/LocaleTutorial.uc",
     )
+    shutil.copyfile(
+        ROOT / "src/runtime/LocaleRuntime/Classes/LocaleSubtitleClock.uc",
+        compiler / "LocaleRuntime/Classes/LocaleSubtitleClock.uc",
+    )
     ini = (
         "[Core.System]\nPaths="
         + str(system / "*.u")
@@ -184,11 +188,13 @@ def build(game, locale, out):
     raw[36:52] = hashlib.sha256(bytes(raw[:36] + raw[52:])).digest()[:16]
     binary.write_bytes(raw)
     package = Package(binary)
-    if not any(
-        r["path"] == "LocalePlayer" and package.exports[r["index"] - 1]["cls"] == 0
+    classes = {
+        r["path"]
         for r in package.records()
-    ):
-        raise ValueError("Compiled class missing")
+        if package.exports[r["index"] - 1]["cls"] == 0
+    }
+    if not {"LocalePlayer", "LocaleTutorial", "LocaleSubtitleClock"} <= classes:
+        raise ValueError("Compiled scheduler class missing")
     resources = out / "resources/System"
     resources.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(binary, resources / binary.name)
