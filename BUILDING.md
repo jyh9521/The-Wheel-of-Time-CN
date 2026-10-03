@@ -112,3 +112,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 ## 全字幕专项进展（2026-10-03）
 
 当前49条草稿；保留原37条，补译教程Tes_02～Tes_13。教程原版80条英文均非空，但中文仅13/80；其余对白817空键须分类恢复，不能等同817句缺文。新译文已静态构建验证，实际后续触发/时序、剧情视频与全对白覆盖待验。详见[字幕覆盖报告](docs/SUBTITLE_COVERAGE.md)。
+
+## 可选字幕来源审计
+
+用户提供的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。

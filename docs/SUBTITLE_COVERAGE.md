@@ -39,3 +39,18 @@ COVERAGE.json包含输入大小/SHA、Sound身份、空/缺键、译文状态、
 ## 本轮验证边界
 
 72项自动测试通过；49条源hash/编码/占位符/字体校验通过，331字形/字体、6字体、14新增纹理可构建；4资源安装/回滚一致，原版输入不变。新12条未进行实机逐条显示或音频同步验收，不沿用前一轮18帧结果证明新译文。
+
+## 用户提供社区文件后的核对
+
+本轮收到用户自行下载的WoTsubtitles.int，24,213字节，SHA-256 `d221624a71eae5fdd7c3a2f7ff8cf6541ef4b510f7c34e659ed8890128e7bae1`。结构为883键/325非空；与原版比较，242空键可补、3新增键、17原键省略、3已有文本变化（Tes_01/Tes_15/Tes_51）。这不是可以无条件整表替换的文件。
+
+语言无关工具采用保守合并：仅填原空键，新增键须匹配本地Sound对象；原有非空文本始终保留，省略键不删除。245项全部匹配Sound，合并副本900键/325非空（575空），原80条非空保持，现有49条中文和源hash不变。其余空键/无键Sound仍需区分音效与对白；不宣称所有1198个Sound都是语音或325非空即全覆盖。
+
+3新增键为Myr_GetHelp1、Myr_OrderGuardSeal1、Sis_OrderKillIntruder1；冲突、保留项、输入/输出SHA与每条新增原文SHA见[来源清单](COMMUNITY_SUBTITLE_SOURCE.json)。帖子作者署名沿用TigerTheGreat，附件再分发权限尚未确认：仓库仅保留原创工具与身份元数据，不提交完整社区英文表。
+
+```powershell
+python -m tools.validate.subtitle_coverage --game-dir "GAME" --out build/subtitle-coverage/current
+python -m tools.import.subtitle_source --original "GAME/System/WoTsubtitles.int" --reference "DOWNLOADED_SUBTITLES" --inventory build/subtitle-coverage/current/COVERAGE.json --out build/community-subtitles/merged
+```
+
+已验证74项自动测试、93输入只读SHA与独立副本回滚；合并副本保留在build/community-subtitles/merged，原游戏和下载文件不变。**目前是英语恢复研究副本，不是中文全字幕补丁，也尚未接入生产build。** 后续需以外部参数配置带hash的来源层，在原版版本校验之后合并、翻译、校验、生成最终差分；明确处理新增键的源预检及长度来源，不用直接替换profile原版hash绕过检查。实机显示与同步只在1080p逐项验收。

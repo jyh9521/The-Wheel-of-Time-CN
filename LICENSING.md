@@ -26,3 +26,7 @@ assets/fonts/README.md记录选择流程，当前没有捆绑字体或预编译f
 
 提交原创工具/文档按MIT，原创translation字段按CC BY-SA4.0；如贡献来自第三方，说明来源及许可。
 贡献署名通过Git历史与Release致谢保留。不同授权素材应有单独文件/说明，不能默认为MIT。
+
+## 社区字幕输入（2026-10-03）
+
+用户提供OldUnreal关联字幕文件，作者署名TigerTheGreat；哈希及结构审计见docs/COMMUNITY_SUBTITLE_SOURCE.json。全文仅作为本地外部研究输入，未提交或捆绑；许可尚待核实。合并器代码按项目MIT，不能据此授权社区英文全文。
