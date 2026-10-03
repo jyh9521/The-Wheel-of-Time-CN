@@ -62,3 +62,7 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 验证会检查重复 ID、源文变化、已识别控制符、编码、BMP、长度、关联组、缺字；
 传入 --game-dir 的 validate 会只读检查全部条目ID、原文hash、原文长度和控制符元数据（包括未译条目）。
 回填先对所有原文完成预检，再写任何输出副本；后续再检查结构化元数据与重建后的资源关系。
+
+## 迁移译文的保留
+
+locales/zh-CN/strings.json保留此前正式19条draft，不重新翻译或覆盖。旧游戏work/phase5/test_translations.json的7条测试译文整理为research/phase5-strings.json，保存ID/控制符和原文SHA/长度，不收录完整英文原表，也不自动并入生产表。其帮助文是历史实验变体，与当前帮助译文不同；审稿时人工选择，避免同时回填同一ID。

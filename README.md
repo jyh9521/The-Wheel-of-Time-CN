@@ -77,7 +77,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 字幕 897 个键中 817 个原文为空；地图实例文字、部分硬编码 UI、视频轨道不在当前构建范围。
 字体仍沿用原版固定像素尺寸；4K UI 偏小保留为已知问题，建议切换1080p。
 当前继续1080p菜单、Inventory和字幕覆盖验证，不为4K改引擎或缩放系统。
-当前字幕长度补偿不是音频时间码同步。详见 [known-issues](docs/known-issues.md)。
+当前字幕长度补偿不是音频时间码同步。详见 [known-issues](docs/KNOWN_ISSUES.md)。
 
 ## 许可
 
@@ -89,3 +89,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 Legend Entertainment 的原作；GOG 发行版本；Unreal/Unreal Tournament 同时代的标准
 localization / Font 机制为研究参考；Pillow 与 fontTools 提供字形处理。
 当前无上游研究仓库；现有本地阶段研究的发现与失败记录没有改写成他人的贡献。
+
+## 工作区迁移
+
+新正式工作区已复用现有工具链并审计旧游戏目录；旧原件保留，生成物不迁移。迁入内容、旧脚本原位保留原因与独立重建证据见[迁移审计](docs/MIGRATION_AUDIT.md)。迁移没有重新翻译，也没有启动游戏。

@@ -1,0 +1,853 @@
+{
+  "date": "2026-10-03",
+  "game_directory": "C:\\GOG Games\\The Wheel of Time",
+  "destination_directory": "C:\\Users\\noway\\Downloads\\The-Wheel-of-Time-CN",
+  "previous_engineered_source": "C:\\Users\\noway\\Documents\\GitHub\\The-Wheel-of-Time-CN",
+  "previous_commit": "dee6e61b6df8d037dbb021cf6b3a0c9db4022a8b",
+  "old_file_count": 5126,
+  "category_counts": {
+    "original-game-backup": 277,
+    "original-game-or-distribution": 273,
+    "generated-evidence": 336,
+    "technical-research": 7,
+    "runtime-generated": 2,
+    "game-user-configuration": 2,
+    "temporary-cache": 14,
+    "legacy-project-source": 36,
+    "generated-or-extracted-work": 4163,
+    "legacy-project-source-snapshot": 10,
+    "research-translation-or-qa-data": 6
+  },
+  "migrated": [
+    {
+      "origin": "previous-engineered-repository",
+      "source": ".gitattributes",
+      "destination": ".gitattributes",
+      "source_sha256": "65b2d2b6b69c7fa39d258cbf2ea4b8565a55ea1b9d04bdda2128e28e2b73831c",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "65b2d2b6b69c7fa39d258cbf2ea4b8565a55ea1b9d04bdda2128e28e2b73831c"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": ".github/workflows/tests.yml",
+      "destination": ".github/workflows/tests.yml",
+      "source_sha256": "6fe11599c31c0d6b5ddaa341fe06a7872a215b468496ecaccc71620e36ff33bd",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "6fe11599c31c0d6b5ddaa341fe06a7872a215b468496ecaccc71620e36ff33bd"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": ".gitignore",
+      "destination": ".gitignore",
+      "source_sha256": "1337e7ec39b28b24bbe19d3a22e92bf4b6df091f734195b5661fb83b5e175221",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "5031d779d1154cd338b458f8b575854d26382b4f7ab2054b11ca8886c37a7031"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "BUILDING.md",
+      "destination": "BUILDING.md",
+      "source_sha256": "a5ded1cf65fb1906b837e1f97eb80a784903a5697b7cb8b3f317711eb6d608c3",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "307e481e780a8f69bba563149f80752e64cec38151131e1d08a744eca22fecf2"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "LICENSING.md",
+      "destination": "LICENSING.md",
+      "source_sha256": "5c29ea7fed14aa8d986a9834261b2827b778cd67a57ef7757058e496a5d6f122",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "c2b349abc54a1d4f98808857c42ddbd9c1bd1d44bc26bf3f3f172799711b3bc9"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "README.md",
+      "destination": "README.md",
+      "source_sha256": "9d45725597dcd7984afa2a6daca89ba6413bba427826579dc8c474d4ab0f6a82",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "5bf2b6269cd09a8e2a7461386a3d33da7e2e6b9415a0f5c6964a973b6c8163a5"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "TECHNICAL.md",
+      "destination": "TECHNICAL.md",
+      "source_sha256": "2e6627789f88497842530676e0545e0a4c81fbd98fa84be88f23bd3e791e8a9d",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "4759c7703df3787f379d9f81f442670af18b9280e9c3517915f324611ebe163a"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "TRANSLATING.md",
+      "destination": "TRANSLATING.md",
+      "source_sha256": "2ec695cde7d26fbaa2f91672f4b647189e7f690dabd8a84cda58f329f6f6f418",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "0477c72d9bab46af435e110ed152b1ab2008218ceffad34a8e117c38c13879ba"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "assets/fonts/README.md",
+      "destination": "assets/fonts/README.md",
+      "source_sha256": "b9cf8073cb46f879a62d8f30f41f1b271b8782c60e388112a3686074538cb91e",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "b9cf8073cb46f879a62d8f30f41f1b271b8782c60e388112a3686074538cb91e"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "assets/templates/locale-config.json",
+      "destination": "assets/templates/locale-config.json",
+      "source_sha256": "8345f707b65d9c6bcf7ad21591f2498cf84b58622df5903b5105b7f850ba303c",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "8345f707b65d9c6bcf7ad21591f2498cf84b58622df5903b5105b7f850ba303c"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "build.py",
+      "destination": "build.py",
+      "source_sha256": "33e6a1e7116641bf01b3af76d9abfc21f80c604daff86803da6b393d518253c9",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "33e6a1e7116641bf01b3af76d9abfc21f80c604daff86803da6b393d518253c9"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/file-formats.md",
+      "destination": "docs/FILE_FORMATS.md",
+      "source_sha256": "ffd3d55f677eea9f97cc94eb4e7a4865277d0c054123823d1cb1e476c01cf3f3",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "221d6702d420619552041e6a20a08fdfdfcd82185775d07b2181f467fb82e02b"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/known-issues.md",
+      "destination": "docs/KNOWN_ISSUES.md",
+      "source_sha256": "595b1ad58d433b9e6a50edede5dc34e30bca65bc809a458e0866d3b3e5e3c73a",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "da743206299d440e2c356630bf13680405ca64282b10a6d8f8120f24bba3833a"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/menu-poc-results.json",
+      "destination": "docs/menu-poc-results.json",
+      "source_sha256": "52d42e20dfdc05a662ed5e51bb57ef4f38046c76f3ddee838436c69cd43d2e99",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "52d42e20dfdc05a662ed5e51bb57ef4f38046c76f3ddee838436c69cd43d2e99"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/menu-poc.md",
+      "destination": "docs/menu-poc.md",
+      "source_sha256": "379ae25b7a58a8e3075e145b8908b0525e4fd789a88a6771edb406d41b8684c2",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "4a5220d65084d3f2112817c351b6ddd77da9a2cb30e8fd8273507cd676e2c40e"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/pitfalls.md",
+      "destination": "docs/PITFALLS.md",
+      "source_sha256": "8b8078718cab47ef4538f8d3508ce437eb8da068cc6540124bc00e55d9a06c58",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "1c79395c62adabdd1065f2a4b8c2e321974b6744916881fe2fe9c19c9ac57c92"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/qa-results.json",
+      "destination": "docs/qa-results.json",
+      "source_sha256": "53f4e9bb1b9b4012236185dcc246fd65fbdf1bd5290ea0a798578e5ff44ba456",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "53f4e9bb1b9b4012236185dcc246fd65fbdf1bd5290ea0a798578e5ff44ba456"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/qa.md",
+      "destination": "docs/qa.md",
+      "source_sha256": "0d77b19fff0be853ba50f837db7693e8c6de9d1e3fe399a94a37b85a74817b76",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "f31be235786e826478cf00bfdd2179c89e455e06e51d7c2a007aae307915a73a"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "docs/reverse-engineering.md",
+      "destination": "docs/reverse-engineering.md",
+      "source_sha256": "fb3e7989675d6050bcafcec22e0038df8ed09697c29d88019244eb5d832f6507",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "ab7902fcc0651fdd98c45be2342a05def218a76b079144d92ac321a826391204"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "install.py",
+      "destination": "install.py",
+      "source_sha256": "3595101f63a18415b2e86b2068df6592c58fb44296f822b64ae9b807c9e02b93",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "3595101f63a18415b2e86b2068df6592c58fb44296f822b64ae9b807c9e02b93"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "locales/zh-CN/config.json",
+      "destination": "locales/zh-CN/config.json",
+      "source_sha256": "3c7cec3518554e9e52f50399527aec71d4a8066e2c3ef002b788f05bc4e8ac2e",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "3c7cec3518554e9e52f50399527aec71d4a8066e2c3ef002b788f05bc4e8ac2e"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "locales/zh-CN/glossary.json",
+      "destination": "locales/zh-CN/glossary.json",
+      "source_sha256": "02874ae0f75aa6de0eafa9e2e0436906ec8d8ee3e7eb847dc39375be945eb2b4",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "02874ae0f75aa6de0eafa9e2e0436906ec8d8ee3e7eb847dc39375be945eb2b4"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "locales/zh-CN/strings.json",
+      "destination": "locales/zh-CN/strings.json",
+      "source_sha256": "950d8e7f0e4397b9569f22b80120562504559c0241722f1cf7a169858b72e21a",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "950d8e7f0e4397b9569f22b80120562504559c0241722f1cf7a169858b72e21a"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "profiles/gog-v68.json",
+      "destination": "profiles/gog-v68.json",
+      "source_sha256": "a9c987485316555534bf78b5f5dff4d4a46979eddff72caf3832080494dde87c",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "a9c987485316555534bf78b5f5dff4d4a46979eddff72caf3832080494dde87c"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "profiles/qa-policy.json",
+      "destination": "profiles/qa-policy.json",
+      "source_sha256": "d8a8574b1a49053c91434036aae9a6bbe971df59a5a89025e2c3ffe59e0b04c3",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "d8a8574b1a49053c91434036aae9a6bbe971df59a5a89025e2c3ffe59e0b04c3"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "requirements-dev.txt",
+      "destination": "requirements-dev.txt",
+      "source_sha256": "beec223737df34a3722b368ea94af2d988b2d04a0cf17f03920bf1f191328fc6",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "beec223737df34a3722b368ea94af2d988b2d04a0cf17f03920bf1f191328fc6"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "requirements.txt",
+      "destination": "requirements.txt",
+      "source_sha256": "0393933188504e73089e057d07a9840bfa501a92196c6d579e1a86a90ebd47fc",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "0393933188504e73089e057d07a9840bfa501a92196c6d579e1a86a90ebd47fc"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "src/__init__.py",
+      "destination": "src/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "src/patch/__init__.py",
+      "destination": "src/patch/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "src/patch/delta.py",
+      "destination": "src/patch/delta.py",
+      "source_sha256": "816081b2d17e928a0ce8870261b8574f9b2ddb00fa421d3648d1b288c5cfa46a",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "816081b2d17e928a0ce8870261b8574f9b2ddb00fa421d3648d1b288c5cfa46a"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "src/runtime/README.md",
+      "destination": "src/runtime/README.md",
+      "source_sha256": "8b01fee2a09cece51cc33e7270b1c8a118581c04281120b9037a5ae3ddfd48fe",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "8b01fee2a09cece51cc33e7270b1c8a118581c04281120b9037a5ae3ddfd48fe"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tests/test_core.py",
+      "destination": "tests/test_core.py",
+      "source_sha256": "482585382ab139ec74e7b9d6702918d64d5fb6e05df221c2f65b28e730595cf6",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "482585382ab139ec74e7b9d6702918d64d5fb6e05df221c2f65b28e730595cf6"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tests/test_qa_policy.py",
+      "destination": "tests/test_qa_policy.py",
+      "source_sha256": "a97d7815ac2d1303677b1ac3d74c67e4a532c68a2ebce4e59579ad0d3fc99de8",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "a97d7815ac2d1303677b1ac3d74c67e4a532c68a2ebce4e59579ad0d3fc99de8"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tests/test_source_preflight.py",
+      "destination": "tests/test_source_preflight.py",
+      "source_sha256": "7b9c5123c4a78f268359d5bf89f8a9099b8b2b4856e8f24438e48fe171a6c4e8",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "7b9c5123c4a78f268359d5bf89f8a9099b8b2b4856e8f24438e48fe171a6c4e8"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/__init__.py",
+      "destination": "tools/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/build/__init__.py",
+      "destination": "tools/build/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/build/pipeline.py",
+      "destination": "tools/build/pipeline.py",
+      "source_sha256": "20540b25d2b3612b6bbfd35a49cfef9bc1070d4f397f4f4014ef45710da35dfa",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "20540b25d2b3612b6bbfd35a49cfef9bc1070d4f397f4f4014ef45710da35dfa"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/extract/__init__.py",
+      "destination": "tools/extract/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/extract/catalog.py",
+      "destination": "tools/extract/catalog.py",
+      "source_sha256": "6b896f177d9b11ea4eb83d5145f8f8d0ba4cba9018a7aaa75436af3bf7232dd3",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "6b896f177d9b11ea4eb83d5145f8f8d0ba4cba9018a7aaa75436af3bf7232dd3"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/extract/int_files.py",
+      "destination": "tools/extract/int_files.py",
+      "source_sha256": "5f85040142d202ec456e46206b266669625ddad262d4dd5b56c02d465439d6a3",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "5f85040142d202ec456e46206b266669625ddad262d4dd5b56c02d465439d6a3"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/font/__init__.py",
+      "destination": "tools/font/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/font/build_font.py",
+      "destination": "tools/font/build_font.py",
+      "source_sha256": "ae1d8975e8ad13cb34ad64916dc30642478750be5fff3bedbbce71d70cda655b",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "ae1d8975e8ad13cb34ad64916dc30642478750be5fff3bedbbce71d70cda655b"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/import/__init__.py",
+      "destination": "tools/import/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/import/catalog.py",
+      "destination": "tools/import/catalog.py",
+      "source_sha256": "3252260ec2cb98ee0e48f55b9609cba61ad4dfaee4d0db95925cdf231911a9a8",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "3252260ec2cb98ee0e48f55b9609cba61ad4dfaee4d0db95925cdf231911a9a8"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/import/int_files.py",
+      "destination": "tools/import/int_files.py",
+      "source_sha256": "8c4d3cf8544aa5db61ea297d324db27a7997d148cb867b83b5e8824f17934767",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "8c4d3cf8544aa5db61ea297d324db27a7997d148cb867b83b5e8824f17934767"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/pack/__init__.py",
+      "destination": "tools/pack/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/pack/ue1.py",
+      "destination": "tools/pack/ue1.py",
+      "source_sha256": "712f211384243d3b1428c5c303d221b400009df79c98ac084dfdf227e6c065e0",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "712f211384243d3b1428c5c303d221b400009df79c98ac084dfdf227e6c065e0"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/validate/__init__.py",
+      "destination": "tools/validate/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/validate/fonts.py",
+      "destination": "tools/validate/fonts.py",
+      "source_sha256": "08af8a155a7a68e9f2b090bb4037e2e76de0f50e2758413723cf5d13326f9397",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "08af8a155a7a68e9f2b090bb4037e2e76de0f50e2758413723cf5d13326f9397"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/validate/integration.py",
+      "destination": "tools/validate/integration.py",
+      "source_sha256": "8568d05f83e196759f72ea2f32bea1a2252661e4f5b1b21ab4052dc7018023b7",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "8568d05f83e196759f72ea2f32bea1a2252661e4f5b1b21ab4052dc7018023b7"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/validate/qa_policy.py",
+      "destination": "tools/validate/qa_policy.py",
+      "source_sha256": "62d8d419589ea17d36b7bb09a564eb1a1756233791dcb6e054c60d8b3ad2beaa",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "62d8d419589ea17d36b7bb09a564eb1a1756233791dcb6e054c60d8b3ad2beaa"
+    },
+    {
+      "origin": "previous-engineered-repository",
+      "source": "tools/validate/runtime.py",
+      "destination": "tools/validate/runtime.py",
+      "source_sha256": "7ac314e80a2316ff27fc15dd7acdea5113d802541c132588a3ec0031a518d214",
+      "method": "copy; documentation links normalized later",
+      "destination_sha256": "7ac314e80a2316ff27fc15dd7acdea5113d802541c132588a3ec0031a518d214"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase1/REPORT_zh-CN.md",
+      "destination": "docs/research/game-root/phase1/REPORT_zh-CN.md",
+      "source_sha256": "2e7ca5711e95d77cba31d37a6028b4b05e2dd0782d1eef285d897a63ce064def",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "2e7ca5711e95d77cba31d37a6028b4b05e2dd0782d1eef285d897a63ce064def"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase2/REPORT_zh-CN.md",
+      "destination": "docs/research/game-root/phase2/REPORT_zh-CN.md",
+      "source_sha256": "f67645d2ddb8e1ff239f1e6dc9272ab15e34bb6411b5b9000a61440ddbf3e3da",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "f67645d2ddb8e1ff239f1e6dc9272ab15e34bb6411b5b9000a61440ddbf3e3da"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase3/PRE_RUNTIME_REPORT.md",
+      "destination": "docs/research/game-root/phase3/PRE_RUNTIME_REPORT.md",
+      "source_sha256": "07ad97c479087e5d113bea325986c948945f499af3fd4e34f8cf22aca15ad147",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "07ad97c479087e5d113bea325986c948945f499af3fd4e34f8cf22aca15ad147"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase3/REPORT_zh-CN.md",
+      "destination": "docs/research/game-root/phase3/REPORT_zh-CN.md",
+      "source_sha256": "260827e04d56a166ee45919f3f1c8c2c200ef156dd5916e3c8c13a38c679d7ee",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "260827e04d56a166ee45919f3f1c8c2c200ef156dd5916e3c8c13a38c679d7ee"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase4/FONT_USAGE.md",
+      "destination": "docs/research/game-root/phase4/FONT_USAGE.md",
+      "source_sha256": "2de68c7630eb8b52a15e085a757e44ed0d622c30aab3e5b3e15c054d5654c2f6",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "2de68c7630eb8b52a15e085a757e44ed0d622c30aab3e5b3e15c054d5654c2f6"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase4/REPORT_zh-CN.md",
+      "destination": "docs/research/game-root/phase4/REPORT_zh-CN.md",
+      "source_sha256": "cd0ee724f5fe24faef1ca8eeb419a0db909c92f35535bff0ebfe9c9a1ad5d97e",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "cd0ee724f5fe24faef1ca8eeb419a0db909c92f35535bff0ebfe9c9a1ad5d97e"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase5/REPORT_zh-CN.md",
+      "destination": "docs/research/game-root/phase5/REPORT_zh-CN.md",
+      "source_sha256": "f8b2b36735d1bd95a77991f491ef21993a990bdafaf240ab7020630b48e9f8b1",
+      "method": "verbatim historical report; old absolute links intentionally historical",
+      "destination_sha256": "f8b2b36735d1bd95a77991f491ef21993a990bdafaf240ab7020630b48e9f8b1"
+    },
+    {
+      "origin": "game-root",
+      "source": "work/phase5/test_translations.json",
+      "destination": "locales/zh-CN/research/phase5-strings.json",
+      "source_sha256": "d0747f06bdccf60b8f1e57166df99f28d4791aebbb8204bbe5ce7dc3f194a873",
+      "method": "preserve 7 translations/IDs/tokens; replace English sources with SHA-256 and length; not part of active build",
+      "destination_sha256": "571b390e4a170564b5b36cec6d3986ab6868da918f5d4bd53f44ecc11be4f7f1"
+    },
+    {
+      "origin": "game-root",
+      "source": "docs/phase1/original_manifest.json",
+      "destination": "docs/research/game-root/original-manifest.json",
+      "source_sha256": "3773b9b9ad4656ea4a6924bf47663b2e203a80e269e8bedf0e48ada14f6e4c61",
+      "method": "copy historical filename/size/SHA metadata; not a claim of current configuration equality",
+      "destination_sha256": "3773b9b9ad4656ea4a6924bf47663b2e203a80e269e8bedf0e48ada14f6e4c61"
+    }
+  ],
+  "legacy_scripts_retained": [
+    {
+      "path": "tools/baseline_dense_phase4.py",
+      "size": 697,
+      "mtime_ns": 1791003289028902500,
+      "sha256": "5228ddf642d2d96bdadcc8c2cfc8b1d20a4afa883f0fb0b9469f3ce754066eeb",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/font_builder.py",
+      "size": 9212,
+      "mtime_ns": 1790927417437212100,
+      "sha256": "df584111a0b2d723aa39acb623206587e9c982bea1d9b7f2888592c4de0cce3b",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/font_builder_v2.py",
+      "size": 9685,
+      "mtime_ns": 1790929329389089900,
+      "sha256": "59ef16ccabe46a575c4d6512e2b2a197fe2875b5f337880f09e7cfffb7c1ed4b",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/font_builder_v3.py",
+      "size": 10056,
+      "mtime_ns": 1791012632287237400,
+      "sha256": "38d134deddf2d8ef7456f143c984a26f3ac774276ae8d64c37992f255875dc32",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/font_minimal_patch.py",
+      "size": 5153,
+      "mtime_ns": 1790925204473278100,
+      "sha256": "b16fe5758b1f922123ea8faddb5d609ad010983c9377116055ce541f221a8214",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/int_tool.py",
+      "size": 5131,
+      "mtime_ns": 1790922268928514600,
+      "sha256": "f6ee91c4ca07c5b99c49090d626ff60af9518326f3bb20aab80067ac88b04f32",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/inventory_probe.py",
+      "size": 1602,
+      "mtime_ns": 1791011206615465100,
+      "sha256": "55e2e6e8eeda73409041bb300f4b459485fda8fe5f0d47255f38933ad459020a",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/inventory_probe5.py",
+      "size": 2982,
+      "mtime_ns": 1791012632291233300,
+      "sha256": "84d951d1a039d0520d602e98f6c069a3893ebb1fa55a4f947e46a90e3eb297a7",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/localization_build.py",
+      "size": 3057,
+      "mtime_ns": 1790927945315248300,
+      "sha256": "137731822e9d0d6c5cd70f3ec35244316a294c2af5d47892756b4df6df8e7f30",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/localization_build_v2.py",
+      "size": 3466,
+      "mtime_ns": 1791003141875468900,
+      "sha256": "0f3eab56565c1101e2ef2454644fd290c1d15ea1a86f469791113b89f4c4da70",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/localization_build_v3.py",
+      "size": 3477,
+      "mtime_ns": 1791011341859286200,
+      "sha256": "5ff58a831ad5135053dd3c29c106efc030f52a49ba9155255c41b7ff74bf65e1",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/map_audit.py",
+      "size": 3663,
+      "mtime_ns": 1790922002663414700,
+      "sha256": "ed0c25858665069d639de66d3f0c1a1499d3cd2fc16ab241d0a349d9bf2de4dc",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/mov_text_export.py",
+      "size": 1801,
+      "mtime_ns": 1790921588327825500,
+      "sha256": "d989054eea802bbacbb772448509b5fbcc55eeb9c4562870f55993a7f74f80d1",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/patch_manager.py",
+      "size": 4474,
+      "mtime_ns": 1790928373731426500,
+      "sha256": "5557731c0b6ffefbdab9febc775ed0d68338dd17ae919d9a7b95637d60b0ee69",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/patch_manager_v3.py",
+      "size": 4495,
+      "mtime_ns": 1791011341860287500,
+      "sha256": "93efe2c40ddd0f5955c5b7a3181c8eac2fcdb8344f2735db28a30fd19857d029",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/phase2_probe.py",
+      "size": 471,
+      "mtime_ns": 1790925217022251500,
+      "sha256": "b549751b0929bf951d74093e5aed1a10aa6d7f17aff51ccfb12649f4e9240227",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/phase3_probe.py",
+      "size": 4491,
+      "mtime_ns": 1790927786323919100,
+      "sha256": "fedb29c103ef53f3b9c3327bded4b81f1e812f8474f58bf9577987462139c427",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/phase4_probe.py",
+      "size": 4858,
+      "mtime_ns": 1790929406109733500,
+      "sha256": "598f9767a904ae07f924cdbcf2ba2bffc3c2e809f6d0fbd8fea1a48954f0edac",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/phase5_probe.py",
+      "size": 5281,
+      "mtime_ns": 1791012632289235600,
+      "sha256": "e815eb61bc13f664ee76627ba2377db6a172ebb132cf5f0d27b21b1e96e004df",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/prepare_phase1.py",
+      "size": 1059,
+      "mtime_ns": 1790922747373976300,
+      "sha256": "b68450796e1d23e96663d31a6971f168e56b52bf1e5479ef89600ed9ddb03a3e",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/prepare_phase4.py",
+      "size": 2361,
+      "mtime_ns": 1791003219422924200,
+      "sha256": "6ef92bf45f27466ca36aa99434e3f7eb716c7f6416190f004bf72250995e01a9",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/prepare_phase5.py",
+      "size": 3613,
+      "mtime_ns": 1791011296957806500,
+      "sha256": "22a49b2ab4a2b80cdfb1415222d5fc956592f0f1b71da860cb22fa97d64844eb",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/ROLLBACK.sh",
+      "size": 426,
+      "mtime_ns": 1790921589878710800,
+      "sha256": "3c370982e8c1fd7771091493fde478ab6755c5d017890fa3773c7511aea3e4e6",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/runtime_probe.py",
+      "size": 2315,
+      "mtime_ns": 1790921762096816100,
+      "sha256": "35ee08ed79f711ad43c688729a96914bfd7d76947bf7850f7d007325e4d837fd",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/subtitle_timing.py",
+      "size": 2403,
+      "mtime_ns": 1790927900093441200,
+      "sha256": "fc1cdecd9c8fd671a5dfb1076c96b72cb27a746cc98e99cbf9225d8db835be60",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/test_phase1.py",
+      "size": 1972,
+      "mtime_ns": 1790922268929523300,
+      "sha256": "1cb071b89b84277ba3b84c59c0d3403f9fea50afd34f626a1c5883afd7722576",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/test_phase3.py",
+      "size": 5105,
+      "mtime_ns": 1790928373731426500,
+      "sha256": "cc031ce03905a17f8c1f15a1d8998aef24f22b83e85d7ff37e5d1c7e657b08c3",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/test_phase4.py",
+      "size": 3965,
+      "mtime_ns": 1791003193415395700,
+      "sha256": "4b5d777eb7b581548950ee96cc947ee2a36e1ebb5d9a491d2f4591c8b04e3cbf",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/test_phase5.py",
+      "size": 5926,
+      "mtime_ns": 1791012632292232500,
+      "sha256": "953dc10098e25e4c30a828ef2bc5540d548284707a47ce1bc6591914275207f4",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/ue1_scan.py",
+      "size": 3610,
+      "mtime_ns": 1790920805618903600,
+      "sha256": "50844d0dcd5273d53a712137bbc6c7018d722432a2b0bc56edc93edb3e8652eb",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/verify_phase1.py",
+      "size": 4099,
+      "mtime_ns": 1790922357260227000,
+      "sha256": "0b8d2a02a57829765cc3453f856e461f260af2b96b4325ba9c2523804f555a3e",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/verify_phase2.py",
+      "size": 9254,
+      "mtime_ns": 1790925608245745000,
+      "sha256": "206efa1ba7e93b928470f9fefdbdd02d9a8f77bb3a6ca0b65846d0d3d76c2e46",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/verify_phase3.py",
+      "size": 13383,
+      "mtime_ns": 1790928669133928300,
+      "sha256": "41efa187cd7f10ad891adaff512eb22cb1228fa308627ab99dccab01cd1529a0",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/verify_phase4.py",
+      "size": 5225,
+      "mtime_ns": 1791003289030431200,
+      "sha256": "52a352a2fe747e58ff983fca035b34147227b27906a2fe0b0bdf6d5b3d5d86d2",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/verify_phase5.py",
+      "size": 8008,
+      "mtime_ns": 1791013049450260100,
+      "sha256": "f51fa1beb665b3ba91b871f1d751df5d1a83847491d64f7c8730881182a1a7d7",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "tools/write_report.py",
+      "size": 24668,
+      "mtime_ns": 1790922675024396200,
+      "sha256": "428a4f5ab6f98675c48606ef5ae52841168749d28e34bf05b913723d88fbe4e4",
+      "category": "legacy-project-source"
+    },
+    {
+      "path": "work/phase2/ROLLBACK.sh",
+      "size": 565,
+      "mtime_ns": 1790925458248799400,
+      "sha256": "baa933af36251261df783a2038ab5705036e70d15681e202f793ca0da938fa86",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase3/pre-fix/font_builder.py",
+      "size": 9167,
+      "mtime_ns": 1790926195641119200,
+      "sha256": "8dcde276f01d6c726972c4e28caf809d1ffa902339754f2f795d4de5dfe4218b",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase3/pre-fix/verify_phase3.py",
+      "size": 11091,
+      "mtime_ns": 1790926902563569400,
+      "sha256": "bdac04de224c3756dee1fc2aa45a2a69033a5d45e08c601f550295de3822751c",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase3/ROLLBACK.sh",
+      "size": 572,
+      "mtime_ns": 1790926643497939100,
+      "sha256": "020f7d68c084b939bc269c24a7ea410a21589f759d7c1543d3dc195f1bcf9df6",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase4/font_builder_phase3.py",
+      "size": 9212,
+      "mtime_ns": 1790929329388091800,
+      "sha256": "df584111a0b2d723aa39acb623206587e9c982bea1d9b7f2888592c4de0cce3b",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase4/ROLLBACK.sh",
+      "size": 571,
+      "mtime_ns": 1791003141878018800,
+      "sha256": "98535269f53d65608fa432de8f390bf2e77db4a300f9a27760d17292c82743b2",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase5/font_builder_v2.original.py",
+      "size": 9685,
+      "mtime_ns": 1791011297253269200,
+      "sha256": "59ef16ccabe46a575c4d6512e2b2a197fe2875b5f337880f09e7cfffb7c1ed4b",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase5/pre-fix/font_builder_v3.py",
+      "size": 9999,
+      "mtime_ns": 1791012632283885200,
+      "sha256": "bfc86b314fd717f2f560434fb462e606f055de193e8bd9b38827035699c1dac9",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase5/pre-fix/inventory_probe5.py",
+      "size": 2828,
+      "mtime_ns": 1791012369826769900,
+      "sha256": "dccbf3bc28613e21e802a242c2bb2a586fc3ac3caa2b6630250b9f77cf1cc926",
+      "category": "legacy-project-source-snapshot"
+    },
+    {
+      "path": "work/phase5/ROLLBACK.sh",
+      "size": 583,
+      "mtime_ns": 1791011341862286600,
+      "sha256": "fe56ecab638ac00aa41ead87eab1b4ee13ca6ccd05bad7572e02e6afcba4172a",
+      "category": "legacy-project-source-snapshot"
+    }
+  ],
+  "old_directory_deleted_files": 0,
+  "old_directory_written_files": 0,
+  "game_started": false,
+  "verification": {
+    "old_files_unchanged": 5126,
+    "synthetic_tests": 46,
+    "clean_source_file_count": 73,
+    "clean_source_identical_files": [
+      "System/WOT.u",
+      "System/WoT.int",
+      "System/WoTsubtitles.int",
+      "System/Angreal.int",
+      "PATCH.json"
+    ],
+    "game_started": false,
+    "independent_rollback": "four original resources restored; generated modified files retained",
+    "git_state": "Full existing GitHub origin/main history attached at dee6e61; migration changes prepared without commit/push or force."
+  }
+}

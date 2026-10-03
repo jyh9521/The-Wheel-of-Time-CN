@@ -92,3 +92,9 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 脚本只发送键盘到前台的自己启动窗口，关闭自己的主窗口；测试时保持窗口前台，不操作其他应用。
 日志必须出现相应 `Best-match display mode`；JSON 的窗口截图尺寸仅表示桌面捕获面积。
 画面是否有字、裁切、换行、标点和清晰度必须人工观察。
+
+## 迁移后的独立构建
+
+新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用用户副本，自动备份与严格散列回滚。
+
+旧根目录工具原位保留，legacy命令并非正式构建前置步骤；MOV/map等辅助研究暂不加入生产路径。新目录起初为无.git模板文件树，现已从原GitHub origin/main接回完整历史；迁移修改尚未commit/push。源码独立构建验证与远程发布是两件事。完整迁移与后续缺项见docs/MIGRATION_AUDIT.md。

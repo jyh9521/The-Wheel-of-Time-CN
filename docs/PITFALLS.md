@@ -17,3 +17,12 @@
     `DDERR_NOEXCLUSIVEMODE/ReTestCooperativeLevel`。保留失败证据，先关闭自己的主窗口并做原版对照。
 13. **Gitignore递归匹配**：`build/` 会同时忽略 `tools/build/` 源码。
     根生成物必须写 `/build/`，并在干净克隆中验证构建模块确实入库。
+
+## 工作区迁移陷阱
+
+- 根目录相对ROOT的旧脚本搬到tools子目录后会错误寻找backup/work。保留旧原件，生产入口复用已参数化框架，不靠复制旧生成物凑齐依赖。
+- .gitignore中的build/会连tools/build也忽略；改为/build/、/dist/、/out/，干净源码集检查tools/build/pipeline.py存在。
+- 历史大小写文件名与新FILE_FORMATS/PITFALLS/KNOWN_ISSUES在Windows上应合并、更新链接，不建立大小写冲突副本。
+- 历史低分辨率成功与277/277散列属于当时记录，不覆盖后续分辨率决策，也不据此恢复用户INI。
+
+- Windows下Python的text=True stdin会将LF转成CRLF，git check-ignore --stdin可能把CR当作路径字符，导致假阴性与带\r的引用输出。忽略规则探针使用UTF-8字节stdin（或NUL分隔），不要把测试工具传输问题误报为.gitignore失效。

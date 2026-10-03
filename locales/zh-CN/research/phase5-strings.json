@@ -1,0 +1,79 @@
+[
+  {
+    "file": "WoT.int",
+    "section": "menuSinglePlayer",
+    "key": "MenuList[2]",
+    "occurrence": 1,
+    "translation": "新游戏",
+    "tokens": [],
+    "source_sha256": "28f9044138a54b95f198b450b2b02af43921f0d50450885875653e6443115f35",
+    "source_length": 8,
+    "status": "historical-test"
+  },
+  {
+    "file": "WoT.int",
+    "section": "menuSinglePlayer",
+    "key": "HelpMessage[1]",
+    "occurrence": 1,
+    "translation": "中文小字号：移动、观察、跳跃。END-123",
+    "tokens": [],
+    "source_sha256": "b4de07f89e8e236ec159e6be05d4e46c6ec2d87a1e4178f4f5be98a1e0cb0e36",
+    "source_length": 83,
+    "status": "historical-test"
+  },
+  {
+    "file": "WoTsubtitles.int",
+    "section": "DialogA",
+    "key": "Tes_01",
+    "occurrence": 1,
+    "translation": "伊莱娜，要加入白塔，你必须接受试炼。眼前这件特法器正是为此准备的。依次穿过它的每一道拱门，你将直面自己最深的恐惧。不要惊慌，留心听我的声音，我会引导你走下去。你的训练就从这里开始。",
+    "tokens": [],
+    "source_sha256": "c5abc8b5a20ef8e207fa5c0295f243611abf60c8d4a051869f4b4eff7c8bd0fd",
+    "source_length": 350,
+    "status": "historical-test"
+  },
+  {
+    "file": "Angreal.int",
+    "section": "AngrealInvAirBurst",
+    "key": "Title",
+    "occurrence": 1,
+    "translation": "气流冲击",
+    "tokens": [],
+    "source_sha256": "0c3e0bc7fee4b81b255eb8eb440568f48caca11280afdd90554894e8d879b3af",
+    "source_length": 9,
+    "status": "historical-test"
+  },
+  {
+    "file": "Angreal.int",
+    "section": "AngrealInvAirBurst",
+    "key": "Description",
+    "occurrence": 1,
+    "translation": "这件特法器将气流编织成近距离冲击，击中目标时如重锤般造成伤害。它会自动补充力量，不消耗充能。",
+    "tokens": [],
+    "source_sha256": "e82509a1d1b811ad77645400c501c12f5f2ade59c2a480b72cfcf3fd7c4c5380",
+    "source_length": 289,
+    "status": "historical-test"
+  },
+  {
+    "file": "Angreal.int",
+    "section": "AngrealInvAirBurst",
+    "key": "Quote",
+    "occurrence": 1,
+    "translation": "他仿佛被巨手击中，飞出十步，重重撞在石头上。",
+    "tokens": [],
+    "source_sha256": "eed8b11f1fc24492668522aa90e257fbd8dc19a509a163d0a36be59021b4a2e9",
+    "source_length": 100,
+    "status": "historical-test"
+  },
+  {
+    "file": "WoT.int",
+    "section": "InventoryInfoWindow",
+    "key": "SubTitle",
+    "occurrence": 1,
+    "translation": "按 F2 继续",
+    "tokens": [],
+    "source_sha256": "9a4d2977c7920e22726b6df906db3c31dbf3a5aebb00ee3c7e6c9c827b3b7f01",
+    "source_length": 19,
+    "status": "historical-test"
+  }
+]

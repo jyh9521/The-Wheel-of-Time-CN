@@ -54,7 +54,7 @@ Font 页引用 Texture 对象，矩形 `(x,y,w,h)` 各为 little-endian int32。
 
 Texture 使用原调色板的 P8 像素；透明索引与原字体共享，抗锯齿映射到游戏金色调色板。
 单 mip atlas ≤256×256，自动分页/多atlas；超过此限而不补 mip 链曾实机崩溃。
-详见 [格式](docs/file-formats.md) 与 [坑点](docs/pitfalls.md)。
+详见 [格式](docs/FILE_FORMATS.md) 与 [坑点](docs/PITFALLS.md)。
 
 ### 4. 字幕结构、长度与覆盖
 
@@ -73,7 +73,7 @@ Texture lazy-end 是绝对文件偏移，必须与像素数组一起计算；仅
 保留原 GUID、imports、原名称字节/flags；其他8371原导出记录与正文逐字节验证。
 受选Font导出 size/offset、页数/纹理引用、CPP、纹理尺寸、像素量/lazy-end及包表须同步。
 重读输出验证所有原Latin映射及新增glyph矩形、纹理引用、绝对lazy-end。
-详见 docs/file-formats.md；不依赖纯手工十六进制。
+详见 docs/FILE_FORMATS.md；不依赖纯手工十六进制。
 
 ### 6. EXE / DLL / hooks
 
@@ -105,3 +105,7 @@ Texture lazy-end 是绝对文件偏移，必须与像素数组一起计算；仅
 menuOptions先按Default.MenuList画左列，再把同一数组改为运行时bool/数字等值画右列；
 不能把右列TRUE/FALSE误认成.int标签未回填。当前只改左列的前三项、标题和第一条帮助。
 新校验把source_sha256/source_length/tokens与实际原文逐项对照，缺条目或元数据不一致在回填前失败。
+
+## 工作区迁移记录
+
+复用本项目dee6e61已验证工具链，而非重做汉化。旧游戏根目录phase1–5研究归档于docs/research/game-root；全文路径和来源散列见docs/migration-manifest.json。历史低分辨率、12px小字和277/277结论只适用于当时实验；当前profile/QA仍以1080p和原始7/8px小号配置为准，4K不适配。生产构建不依赖旧backup/work/研究截图。迁移后的离线重建不等同本轮实机验收。详见docs/MIGRATION_AUDIT.md。

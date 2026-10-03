@@ -55,3 +55,7 @@ COPY记录原文件offset/size；LITERAL为zlib9/base64及解压size。
 这是公开可读格式，不是加密或隐蔽编码；只针对资源差分，不转换对话内容。
 每文件保存原/改SHA256与size，安装器重建及重读一致后接受。
 JSON本身无签名，只使用可信构建来源；Release前须另做来源/内容/字体许可审核。
+
+## 迁移审计格式
+
+migration-manifest.json逐文件保存origin/source/destination/source_sha256/method；旧源码快照只记录路径、大小、mtime、SHA。build/migration/old-before.json为5126文件的本地全目录基线；迁移工具以相同字段比较新增、删除与修改，输出必须位于被审计树之外。原始游戏277文件manifest是历史元数据，不是当前配置恢复指令。
