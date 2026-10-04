@@ -104,3 +104,10 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 不能只改 MOV enabled 标志便宣称字幕已启用，也不能把全局语言切成意大利语来换字幕，
 因为音轨选择也使用语言索引。字幕轨、配音与 UI 语言需要分别处理。
 只读原生打开和 Unicode 回读也不证明实际中文字形显示，详见 [FMV 研究](FMV_SUBTITLES.md)。
+
+## FMV：BOM、编码元数据和清屏
+
+我在旧 QuickTime 真实离屏绘制中确认 BOM-only UTF-16 样本乱码；新样本还需编码属性
+encd=0x100，本次同时设中文 Mac media language=33。不能把现代探针的 Unicode 回读当成字形证明。
+关闭字幕时 GWorld 默认白色背景曾留下白条；RGBBackColor 设黑后同实例 ON/OFF 清除通过。
+详见 [FMV 原生预览](FMV_SUBTITLES.md)。

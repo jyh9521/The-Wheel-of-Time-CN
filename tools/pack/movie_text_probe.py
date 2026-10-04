@@ -88,7 +88,9 @@ def build(data, config):
     if len(text) > 65535:
         raise ValueError("Text exceeds 16-bit byte length")
     # Old styl/ftab/orig modifiers contain obsolete character offsets/text.
-    replacement = struct.pack(">H", len(text)) + text
+    # QA1400: BOM alone is insufficient for the legacy text media handler.
+    # encd stores kTextEncodingUnicodeDefault (0x100), not a character count.
+    replacement = struct.pack(">H", len(text)) + text + struct.pack(">I4sI", 12, b"encd", 0x100)
     t = tables(data, track_id)
     result = bytearray(data)
     edits = []
@@ -102,6 +104,14 @@ def build(data, config):
     edit(t["stco"][1] + 16 + index * 4, struct.pack(">I", len(data) + 8))
     flags = int.from_bytes(data[t["tkhd"][1] + 9:t["tkhd"][1] + 12], "big")
     edit(t["tkhd"][1] + 9, (flags | 1).to_bytes(3, "big"))
+    if "media_language" in config:
+        language = config["media_language"]
+        if not isinstance(language, int) or not 0 <= language <= 32767:
+            raise ValueError("Invalid legacy media language code")
+        mdhd = child(data, child(data, t["track"], b"mdia"), b"mdhd")
+        if mdhd[2] != 32 or data[mdhd[1] + 8] != 0:
+            raise ValueError("Expected version-zero media header")
+        edit(mdhd[1] + 28, struct.pack(">H", language))
     if config.get("font"):
         before = config["source_font"].encode("ascii")
         after = config["font"].encode("ascii")
@@ -124,6 +134,7 @@ def build(data, config):
                     source_size=len(data), output_size=len(result), edits=edits,
                     track_id=track_id, sample_index=index,
                     removed_sample_modifiers=True,
+                    text_encoding_atom="encd:0x100",
                     original_mdat_sha256=[sha(data[a[1] + 8:a[1] + a[2]]) for a in atoms(data) if a[0] == b"mdat"])
     for a in atoms(data):
         if a[0] == b"mdat" and result[a[1]:a[1] + a[2]] != data[a[1]:a[1] + a[2]]:

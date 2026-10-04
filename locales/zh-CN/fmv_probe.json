@@ -1,9 +1,11 @@
 {
+  "movie": "Intro.mov",
   "source_sha256": "5e302003dc82904f3392d9661214ce5ba8344ecf3bc29c13e3bb4929ec523764",
   "sample_sha256": "7445b59433978c19ce7990878b0fe516e114cf1b1999d752a3b2b8fb1335e8d7",
   "track_id": 3,
   "sample_index": 1,
   "text": "\u4e2d\u6587\u5b57\u5e55\u663e\u793a\u6d4b\u8bd5\uff1a\u65f6\u5149\u4e4b\u8f6e",
   "source_font": "Geneva",
-  "font": "SimHei"
+  "font": "SimHei",
+  "media_language": 33
 }

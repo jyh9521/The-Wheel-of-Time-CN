@@ -18,7 +18,8 @@ def fixture():
                     + atom(b"stsz", struct.pack(">IIII", 0, 0, 1, len(text)))
                     + atom(b"stco", struct.pack(">III", 0, 1, offset))
                     + atom(b"stsc", struct.pack(">IIIII", 0, 1, 1, 1, 1)))
-        return atom(b"moov", atom(b"trak", tkhd + atom(b"mdia", hdlr + atom(b"minf", stbl))))
+        mdhd=atom(b"mdhd",b"\x00"*24)
+        return atom(b"moov", atom(b"trak", tkhd + atom(b"mdia", mdhd + hdlr + atom(b"minf", stbl))))
     moov = make(0)
     return make(len(moov) + 8) + atom(b"mdat", text)
 
@@ -33,6 +34,7 @@ class MovieProbeTests(unittest.TestCase):
     def test_unicode_and_lossless_rollback(self):
         modified, diff = build(self.data, self.config)
         self.assertEqual(decode_sample(sample(modified, 3, 0))[0], self.config["text"])
+        self.assertTrue(sample(modified, 3, 0).endswith(struct.pack(">I4sI",12,b"encd",0x100)))
         self.assertEqual(restore(modified, diff), self.data)
         media = next(a for a in atoms(self.data) if a[0] == b"mdat")
         self.assertEqual(modified[media[1]:media[1] + media[2]], self.data[media[1]:])
@@ -64,6 +66,17 @@ class MovieProbeTests(unittest.TestCase):
     def test_bad_atom(self):
         with self.assertRaises(ValueError):
             list(atoms(b"\x00\x00\x00\x09mdat"))
+
+    def test_media_language_and_rollback(self):
+        self.config["media_language"]=33
+        modified,diff=build(self.data,self.config)
+        self.assertEqual(restore(modified,diff),self.data)
+        self.assertTrue(any(e["after"]=="0021" for e in diff["edits"]))
+
+    def test_invalid_media_language(self):
+        self.config["media_language"]=-1
+        with self.assertRaisesRegex(ValueError,"language"):
+            build(self.data,self.config)
 
 
 if __name__ == "__main__":

@@ -111,3 +111,8 @@ v68带RF_HasStack的actor属性前缀：Node compact、StateNode compact、Probe
 最小工具在尾部追加 mdat，只更新一个样本的大小/偏移和字体名/启用位，保留原时间表。
 文本长度字段以字节为单位；旧 styl/ftab/orig 扩展不直接沿用于新正文。
 完整字段、限制、原版哈希和重现命令见 [FMV 研究](FMV_SUBTITLES.md)。
+
+Unicode 样本现在额外写入 `00 00 00 0C 65 6E 63 64 00 00 01 00`：
+长度 12、类型 encd、kTextEncodingUnicodeDefault=0x100。
+本次 mdhd version 0 的 atom+28 字段写 Mac 简体中文语言码 33（两个字节 00 21）；
+该值来自 locale 配置，不是通用工具固定值。真实旧 QuickTime 绘制与可逆验证见上述研究报告。

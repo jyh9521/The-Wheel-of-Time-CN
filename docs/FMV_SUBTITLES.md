@@ -111,3 +111,62 @@ python -m unittest discover -s tests -p test_movie_text_probe.py -v
 格式依据：[Apple legacy text sample data](https://developer.apple.com/documentation/quicktime-file-format/text_sample_data)
 说明字节长度及样式扩展；[Apple text sample description](https://developer.apple.com/documentation/quicktime-file-format/text_sample_description)
 说明默认文字区域及 Pascal 字体名。格式文档不替代旧运行库实测。
+
+## 独立 1080p 原生字幕预览入口
+
+我已经进一步验证实际绘制：此前仅带 BOM 的 UTF-16 副本**确实会乱码**。
+这纠正了“能回读就可能直接显示”的假设，但不删除前一阶段的打开实验记录。
+Apple [QA1400](https://developer.apple.com/library/archive/qa/qa1400/_index.html)
+指出 Text Media Handler 还需要 Unicode 编码属性，并建议指定 media language。
+我在新样本追加 12 字节 `encd` atom，其 32 位大端值为 `0x100`
+（kTextEncodingUnicodeDefault），并把该轨 mdhd 的 Mac 语言码设为 33。
+**已验证**：旧版 Windows QuickTime 在 1920×1080 离屏帧中实际画出了
+“中文字幕显示测试：时光之轮”，不是另用 GDI/HTML 叠字伪装原生字幕。
+
+新副本大小 57,350,632 字节，SHA-256 为
+`65cb0fa434398f73ea6e5af77efb47ff13b21ae868e1eba2dc5ae5372c02310f`。
+旧 BOM-only 副本留在 build/fmv-research 作为实验记录；新的可测试副本在 build/fmv-preview。
+通用样本生成器现在写入 encd；中文媒体语言码和 SimHei 字体名仍只在 locale 配置中。
+Windows 字体由用户系统提供，不复制或发布微软字体。
+
+独立播放器 `tools/validate/quicktime_player.cs` 用 QTMLClient 原生解码和文字 handler
+画入 32 位 ARGB GWorld，WinForms 只展示已生成的像素，不另行翻译/绘制字幕。
+我在内存中单独启用第一条音轨（本版英语）及第一条文字轨，关闭自动 alternate 选择；
+字幕 matrix 的 Y 平移为视频高度，得到 640×500 的视频+文字区域，再等比缩放至 1080p。
+这些是**测试播放器**内的设置，没有修改 WinDrv.dll，没有证明游戏原入口已经能显示。
+
+我还修复了关闭文字轨时出现白色条带的问题：GWorld 的 QuickDraw 背景色必须设为黑色。
+同一播放器实例的开启/关闭/重播/样本前空白测试通过，字幕区域亮像素分别为
+2966/0/2966/0；开启与关闭的帧差仅在 `(795,1037)–(1128,1062)`。
+独立回滚恢复原 MOV 完整字节，原版与回滚的原生截图像素也一致。
+原来的五条其他轨、48 个其他字幕样本、旧 mdat 均未改动。
+
+### 构建与启动
+
+```powershell
+python -m tools.build.build_fmv_preview --game-dir "GAME" --locale zh-CN
+# 若注册表未提供运行库路径，显式追加 --qt-dir "QT/QTSystem"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fmv-preview/PLAY_FMV.ps1"
+```
+
+构建命令不自动播放，也不安装进游戏。需要 Windows .NET Framework 4 的 32 位编译目标，
+以及用户已有的 GOG QuickTime 运行库。入口先校验测试 MOV 与播放器 SHA。
+未知 MOV 原版 SHA、未知生成文件内容均报错，不覆盖原版或静默采用其他版本。
+现有生成物不同则改用新的 `--out` 目录；相同的 JSON 允许 CRLF/LF 排版差异。
+脚本仍可以从干净仓库加原版游戏目录重建，不依赖此前研究副本。
+
+### 我的测试清单
+
+1. 运行 PLAY_FMV.ps1，**不是游戏启动命令**。观察第 1–7 秒的一条测试中文，随后它应被下一条样本替换。
+2. 后续仍是原字幕轨的意大利语内容；这个入口只有一句中文，不是正式全视频汉化。
+3. 用空格暂停/继续，R 从头重播，C 关闭/开启字幕，Esc 退出窗口。
+4. 确认英文配音、口型/画面、中文缺字/裁切、字幕切换与窗口退出，截图记录异常。
+
+**已验证**：原生离屏中文字形、ON/OFF 清除与重播、空白时间段、回滚、启动脚本解析与哈希、
+172 项自动测试。**待实机验证**：可见窗口实时播放流畅度、实际听到的配音、手动按键、
+全片结束、游戏内原播放器接入。默认游戏构建仍未安装视频，不能将此入口等同成品补丁。
+
+我另外运行了静音的离屏时间钟测试：StartMovie 后时间前进，StopMovie 后保持不动，
+跳回开头以及跳转片尾后的 IsMovieDone 状态均通过。首个 300ms 固定等待窗口曾因启动延迟失败，
+加入 Windows 消息处理并延长到 700ms 后观测停止/暂停时间同为 2.250 秒。
+这验证受控启停与片尾路径，不替代完整观看、实际配音听感或可见窗口验收；正常 play 模式不静音。

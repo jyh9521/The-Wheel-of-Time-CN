@@ -205,3 +205,17 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 ## 设置补漏构建与验证
 
 我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。
+## 独立 FMV 中文字幕实验入口
+
+我提供了不安装、不启动游戏的原生 QuickTime 预览构建：
+
+```powershell
+python -m tools.build.build_fmv_preview --game-dir "GAME" --locale zh-CN
+```
+
+依赖 Windows .NET Framework 4 csc（编译为 x86）、Python 和用户已安装的 QuickTime。
+原版输入仅 Movies/Intro.mov，SHA 门禁来自 locales/zh-CN/fmv_probe.json。
+QuickTime 路径默认读取 32 位注册表，亦可显式传 --qt-dir。产物为 build/fmv-preview 下
+MODIFIED_FILE.mov、DIFF_FILE.json、quicktime_player.exe、PREVIEW.json、PLAY_FMV.ps1 和 ROLLBACK.sh。
+没有复制 QuickTime DLL 或字体；用户系统需提供配置的字体。测试视频只有第 1–7 秒一条中文。
+入口/回滚/验收与原生字段说明见 [FMV 研究](docs/FMV_SUBTITLES.md)。
