@@ -197,3 +197,7 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 ```
 
 第二条只在CPU模拟器执行自编显示stub，不启动或注入游戏。安装前完整退出游戏，使用新20文件manifest；升级现有19文件补丁先通过旧manifest恢复，再应用新manifest。原始游戏目录只作输入，测试目录另行保存；卸载按新manifest恢复20个原版资源。
+
+## 动态文本补漏与FMV提取（2026-10-04）
+
+基础构建新增键名表和6条进度文字，字库覆盖35条教程提示。提示须另行重建LocaleRuntime并使用现有Game+Class入口；源地图只读且指纹核验。详见[UI_TEXT_FOLLOWUP](docs/UI_TEXT_FOLLOWUP.md)。FMV的ffprobe参数化只读提取见[FMV_SUBTITLES](docs/FMV_SUBTITLES.md)，暂不安装视频字幕或重编码。

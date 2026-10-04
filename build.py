@@ -59,12 +59,12 @@ def main():
             raise ValueError("Texture label configuration path escapes directory")
         config["texture_labels_data"] = json.loads(data_path.read_text("utf8"))
         profile["texture_labels"] = json.loads(labels_profile.read_text("utf8"))
-    for field in ('credits', 'native_properties'):
+    for field in ("credits", "native_properties", "key_names", "tutorial_prompts"):
         if config.get(field):
             data_path = (locale / config[field]).resolve()
             if data_path.parent != locale:
-                raise ValueError('Locale display data path escapes directory')
-            config[field + '_data'] = json.loads(data_path.read_text('utf8'))
+                raise ValueError("Locale display data path escapes directory")
+            config[field + "_data"] = json.loads(data_path.read_text("utf8"))
     rows = json.loads((locale / "strings.json").read_text("utf8"))
     if config.get("native_ui"):
         native_path = (locale / config["native_ui"]).resolve()
@@ -100,11 +100,23 @@ def main():
         if config.get("native_ui_data"):
             importer.validate_rows(config["native_ui_data"]["strings"], config)
         if args.strict and (
-            pending or any(r.get("status") != "reviewed" for r in rows)
-            or (config.get("native_ui_data") and any(
-                r.get("status") != "reviewed"
-                for r in config["native_ui_data"]["strings"] + config["native_ui_data"]["preferences"]
-            ))
+            pending
+            or any(r.get("status") != "reviewed" for r in rows)
+            or (
+                config.get("tutorial_prompts_data")
+                and any(
+                    r.get("status") != "reviewed"
+                    for r in config["tutorial_prompts_data"]["rows"]
+                )
+            )
+            or (
+                config.get("native_ui_data")
+                and any(
+                    r.get("status") != "reviewed"
+                    for r in config["native_ui_data"]["strings"]
+                    + config["native_ui_data"]["preferences"]
+                )
+            )
         ):
             raise ValueError(
                 "Strict validation requires all entries translated and reviewed"
@@ -112,12 +124,24 @@ def main():
         if args.game_dir:
             from tools.build.pipeline import check_originals
 
+            if config.get("tutorial_prompts_data"):
+                from tools.build.prompt_data import bind
+
+                bind(
+                    args.game_dir,
+                    config["tutorial_prompts_data"],
+                    load_terms(glossary, config["terminology"]["target_column"]),
+                )
+
             check_originals(args.game_dir, profile)
             if args.command != "extract":
                 importer.verify_sources(source_dir, rows)
                 if config.get("native_ui_data"):
-                    importer.verify_sources(source_dir, config["native_ui_data"]["strings"])
+                    importer.verify_sources(
+                        source_dir, config["native_ui_data"]["strings"]
+                    )
                     from tools.validate.preferences import verify as verify_preferences
+
                     verify_preferences(source_dir, config["native_ui_data"])
                 if config.get("terminology"):
                     from tools.validate.terminology import validate
@@ -147,12 +171,22 @@ def main():
                         {"translation": text}
                         for text in config["texture_labels_data"]["labels"].values()
                     ]
-                if config.get("native_ui_data"):
-                    font_rows = font_rows + config["native_ui_data"]["strings"] + [
-                        {"translation": text}
-                        for r in config["native_ui_data"]["preferences"]
-                        for text in r["translations"].values()
+                if config.get("key_names_data"):
+                    font_rows += [
+                        {"translation": t} for t in config["key_names_data"].values()
                     ]
+                if config.get("tutorial_prompts_data"):
+                    font_rows += config["tutorial_prompts_data"]["rows"]
+                if config.get("native_ui_data"):
+                    font_rows = (
+                        font_rows
+                        + config["native_ui_data"]["strings"]
+                        + [
+                            {"translation": text}
+                            for r in config["native_ui_data"]["preferences"]
+                            for text in r["translations"].values()
+                        ]
+                    )
                 check_font(font_rows, args.font, config["font"])
             print(
                 f"VALIDATE PASS: {len(rows)} entries; {pending} untranslated; "

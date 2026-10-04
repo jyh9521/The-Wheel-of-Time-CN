@@ -201,3 +201,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 **已验证（离线）**：Window.dll的FPropertyItem.GetCaption、FCategoryItem.GetCaption和FPropertyItem.Draw有独立FName显示路径；只改GetCaption并不足够。原生行高函数返回16，列分隔宽度默认128且可由注册表覆盖。本批在经完整SHA校验的构建DLL副本增加位置无关.locale段，映射274个显示名及7个显示值；行高设32，GetDividerWidth最低320并允许更宽。姓名/FName、属性键、配置、共享GetPropertyText和SetValue不改；值映射只改Draw局部缓冲。未知显示名原样回退。没有改EXE/WinDrv.dll、没有进程注入，没有新增运行时依赖DLL。
 
 两种镜像基址的602项x86模拟覆盖中文/未知值/空串、寄存器栈平衡、属性/类别/直接绘制、值缓冲、行高/分隔线。PE进口表及原文件中批准范围外的字节均保持原样。**待验证（实机）**：高级选项展开、滚动、编辑器位置、点击保存与各DPI缩放；固定32不是任意DPI自动缩放，当前只验1080p。全部生成资源仍通过差分安装/隔离回滚，不提交完整DLL。
+
+## 动态提示与视频轨复核
+
+教程MessageTrigger实例字符串可通过显示入口精确匹配翻译而不改地图；键名只包裹DrawValues三个读取操作数，VM与6个分支同步更新，改键/保存函数不变。详见[UI_TEXT_FOLLOWUP](docs/UI_TEXT_FOLLOWUP.md)。FMV原版含28个独立text轨，标签eng不代表正文英语；QuickTime路径、已证实/待验证边界见[FMV_SUBTITLES](docs/FMV_SUBTITLES.md)。

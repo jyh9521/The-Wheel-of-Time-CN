@@ -10,6 +10,24 @@ var float SequenceStart;
 var int NextCue;
 var bool bSequenceActive;
 var LocaleSubtitleClock SubtitleClock;
+var string PromptSource[128];
+var localized string PromptText[128];
+var int PromptCount;
+
+function GenericMessage(string Message, int X, int Y, bool bCenter,
+    byte Intensity, Font F, optional float Duration)
+{
+    local int i;
+    for (i = 0; i < PromptCount; i++)
+    {
+        if (Message == PromptSource[i] && PromptText[i] != "")
+        {
+            Message = PromptText[i];
+            break;
+        }
+    }
+    Super.GenericMessage(Message, X, Y, bCenter, Intensity, F, Duration);
+}
 
 simulated event PostBeginPlay()
 {

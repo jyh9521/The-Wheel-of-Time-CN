@@ -137,3 +137,7 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 native-properties.json的key是原属性/类别标识，只翻译value。values表只用于绘制的局部缓冲，不替换配置或下拉编辑器的机器值。未知标识原样保留，补充key须先确认对应属性含义。
 
 credits.json以slot和原文SHA关联默认数组，保持原204条順序及` - `右侧原贡献者姓名、@标记、空白行。新增署名使用独立末尾行，不冒充原作者。专名按GLOSSARY.md；Poleine与Kyrin现已由维护者确认，统一读取GLOSSARY.md的波莱恩与凯琳；不得另造同义音译。
+
+## 动态键名与教程提示
+
+key-names.json的键是机器名，只改显示值，不改KEYNAME/KEYBINDING/SET Input命令。字母、数字、F键帽保留；Shift键不是能力瞬移。tutorial-prompts.json用actor/slot/source SHA关联原地图，覆盖所有实际可输出提示，保留F2/F5/F6/数字及原有前缀，不启用//注释对白。35条提示仍为draft，严格校验不得冒充审校通过。FMV导出原文暂留build，优先核对英文音轨而非把外语轨误当英文。

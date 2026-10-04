@@ -6,3 +6,4 @@ function string Raw() { return string(Flag); }
 function string Mapped() { return GetOnOffStr(Flag); }
 
 function string DetailMapped() { return GetLowMediumHighStr(byte(Detail == "Medium") + 2 * byte(Detail == "High")); }
+function string KeyMapped(string Key) { return Localize("KeyNames", Key, "WoT", true); }

@@ -24,5 +24,7 @@
   },
   "native_ui": "native-ui.json",
   "credits": "credits.json",
-  "native_properties": "native-properties.json"
+  "native_properties": "native-properties.json",
+  "key_names": "key-names.json",
+  "tutorial_prompts": "tutorial-prompts.json"
 }

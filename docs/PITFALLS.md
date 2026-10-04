@@ -90,3 +90,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 5. Credits只新增默认条目而不增ArrayDim或ArrayCount，会越界或漏显。属性头包含可变长度紧凑索引，实际ArrayDim是体+4；错误+5已由守卫拒绝，未写入原版。
 
 6. 安装器最初只允许.u/.int，会在20文件包预检时拒绝Window.dll（任何写入前）。现仅额外允许profile中大小/SHA和profile id均匹配的System/Window.dll；其他DLL/EXE仍拒绝。补丁包资源类型扩展需要同步安装器预检与回滚测试。
+
+## 动态界面与QuickTime
+
+地图真实扩展名为.wot，不能只扫描.unr。v68 actor状态帧的ProbeMask为u64、LatentAction为i32，不猜额外net-index，否则属性错位。重复Messages/EventList槽必须逐条保留，字典覆盖会漏槽。脚本扩长同时重定位VM跳转，compact序列化长度不等于VM指针/FName长度。QuickTime流标eng不代表文字语言；Mission_05的text流codec_name缺失也不代表没有字幕。

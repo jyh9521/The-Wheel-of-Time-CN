@@ -97,3 +97,7 @@ Preferences是结构化登记数据，不是普通整行字符串。通用导入
 WOT.u的CreditsText默认为204项。每条Class默认标签由紧凑name索引18、StrProperty类型13+size编码、可选数组索引、FString长度及数据构成。首项没有array flag，后续索引<128单字节，128～16383用两字节；UTF-16 FString负长度按16位码元计数，标签Size按包含长度前缀的字节数。新增2行需要StrProperty ArrayDim及PostRender的两处ByteConst ArrayCount同步204→206。
 
 Window.dll（x86 PE）的.locale段含自编查表代码与UTF-16键/显示串。代码CALL/POP取得当前位置，表内只存相对偏移，原导入表/重定位表保持原样；两个加载基址的执行验证通过。更新NumberOfSections/SizeOfImage/SizeOfCode以及新段头，CheckSum置零。原文件完整hash先验证，跳转点逐字节校验；原文件其他字节不改。RVA和对应期待字节以profiles/gog-v68.json为准，不用于未知版本。
+
+## MessageTrigger实例与QuickTime文本样本
+
+v68带RF_HasStack的actor属性前缀：Node compact、StateNode compact、ProbeMask u64、LatentAction i32、Node非零时CodeOffset compact；其后属性流。Messages的StrProperty保留array slot与FString正ANSI/负UTF16长度。只读实现tools/extract/map_messages.py。QuickTime legacy text sample为大端u16文字字节长度+正文+可选扩展，不把尾部样式翻译成正文；时轴/包偏移/长度保留，当前没有实现MOV重建器。

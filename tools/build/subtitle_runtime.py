@@ -49,6 +49,22 @@ def build(game, locale, out):
     from tools.build.pipeline import check_originals
 
     config = json.loads((ROOT / "locales" / locale / "config.json").read_text("utf8"))
+    prompts = []
+    if config.get("tutorial_prompts"):
+        from tools.build.prompt_data import bind
+        from tools.validate.terminology import load_terms
+
+        prompt_path = (ROOT / "locales" / locale / config["tutorial_prompts"]).resolve()
+        if prompt_path.parent != (ROOT / "locales" / locale).resolve():
+            raise ValueError("Prompt locale path escapes directory")
+        prompts = bind(
+            game,
+            json.loads(prompt_path.read_text("utf8")),
+            load_terms(
+                ROOT / config["terminology"]["path"],
+                config["terminology"]["target_column"],
+            ),
+        )
     check_originals(
         game,
         json.loads(
@@ -121,6 +137,9 @@ def build(game, locale, out):
             + str(c["end"])
             + "\n"
         )
+    src += "    PromptCount=" + str(len(prompts)) + "\n"
+    for i, prompt in enumerate(prompts):
+        src += f'    PromptSource({i})="{prompt["source"]}"\n'
     src += "}\n"
     p = compiler / "LocaleRuntime/Classes/LocalePlayer.uc"
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -205,6 +224,10 @@ def build(game, locale, out):
             + "".join(
                 "CueText[" + str(i) + ']="' + c["translation"] + '"\r\n'
                 for i, c in enumerate(cues)
+            )
+            + "".join(
+                f'PromptText[{i}]="{p["translation"]}"\r\n'
+                for i, p in enumerate(prompts)
             )
         ).encode("utf-16le")
     )

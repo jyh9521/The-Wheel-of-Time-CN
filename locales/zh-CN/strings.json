@@ -59,7 +59,7 @@
     "section": "AngrealInvAirBurst",
     "key": "Quote",
     "occurrence": 1,
-    "translation": "他仿佛被巨手击中，飞出十步，重重撞在石头上。",
+    "translation": "他仿佛被巨手击中，飞出十步，重重撞上石头。",
     "source_sha256": "eed8b11f1fc24492668522aa90e257fbd8dc19a509a163d0a36be59021b4a2e9",
     "source_length": 100,
     "tokens": [],
