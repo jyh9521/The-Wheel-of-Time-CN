@@ -127,3 +127,7 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 ## 原生高级选项补翻（2026-10-04）
 
 原生高级选项译文位于locales/<locale>/native-ui.json。Preferences只允许改Caption/Parent，并保留分类树链接；禁止改Class、Category、Immediate、Object和配置键。普通文案仍保留占位符及&助记标记。原生反射参数名不是可直接翻译的配置键，不机械替换。详情见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。
+
+## 动态设置值
+
+布尔开关的显示术语使用`WoT.int [menuLong] OnText/OffText`。不要翻译配置或脚本中的True/False，以及用于比较/写回的High/Medium/Low。显示适配由技术层完成，不新增与既有开/关重复的语言硬编码。玩家自定义名称、数字、设备/资源标识按具体用途保留。

@@ -85,3 +85,9 @@ profile.resource_edits为语言无关显示字段：resource、export、export_s
 ## 原生高级选项补翻（2026-10-04）
 
 Preferences是结构化登记数据，不是普通整行字符串。通用导入器严格解析本地平坦括号字段语法，仅允许Caption/Parent子字段回填，源行hash不符、重复字段、嵌套/未知语法或控制符缺失时失败；Category仍是属性过滤标识，Parent必须与Caption及译后的根标题一致。
+
+## v68菜单显示表达式与ScriptSize
+
+空属性流UFunction的头部依次含None、SuperField、Next、ScriptText、Children、FriendlyName的紧凑索引，然后Line/TextPos/ScriptSize三个int32。字段偏移必须解析，不应固定使用17。当前受指纹约束的直线DrawValues用0x54执行bool→string；改为0x1B + helper FName紧凑索引 + 原bool表达式 + 0x16，保留尾部函数元数据。
+
+**已验证**：UCC自编夹具的VM ScriptSize从10变15。FName在VM中占4字节而非磁盘紧凑索引长度；六个包装各加5，原DrawValues ScriptSize 293→323，磁盘体240→258。新函数体追加到构建副本末尾，导出表仅改该对象size/offset；summary ExportOffset（24）指向重建导出表。不新增对象，不改世代计数。当前适配器不是完整字节码反编译器，仅支持明确审计过的无跳转函数。

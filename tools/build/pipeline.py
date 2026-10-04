@@ -70,6 +70,9 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
                 source, resources / 'WOT.u', fontpath, config['texture_labels_data'],
                 profile['texture_labels'], out / 'TEXTURE_LABEL_DIFF.json',
                 config['font'].get('collection_index', 0))
+    from src.patch.display_expressions import apply_display_expressions
+    display_expressions = apply_display_expressions(
+        resources / 'WOT.u', profile, out / 'MENU_VALUE_DIFF.json')
     if source_report:
         source_report = dict(source_report, production_build_integrated=True)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
@@ -103,8 +106,9 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
               'resource_edits': resource_edits,
               'texture_labels': texture_labels,
               'native_ui': native_ui,
+              'display_expressions': display_expressions,
               'subtitle_source': source_report,
-              'bytecode_unchanged': not bool(resource_edits),
+              'bytecode_unchanged': not bool(resource_edits or display_expressions),
               'font_diff_scope': 'Font generation stage, before display-only resource field edits'}
     check_originals(game, profile)
     (out / 'BUILD_REPORT.json').write_text(json.dumps(report, indent=2), 'utf8')

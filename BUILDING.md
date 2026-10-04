@@ -171,3 +171,16 @@ BASELINE指此前字库/译文一致、未修改按钮的WOT.u副本；范围测
 ## 原生高级选项补翻（2026-10-04）
 
 locale.config.native_ui指向native-ui.json，默认构建接入Preferences子字段导入器；本批新增13个原版hash固定的.int输入，PATCH共19资源，不依赖旧手工文件。省略native_ui配置可关闭该阶段。原生UI使用Windows字体，而非游戏字库；新增译文的字体覆盖会在validate --font中检查。新语言需同步树根标题及所有Caption/Parent；详见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。
+
+## 操作设置动态值适配
+
+默认构建自动应用`profiles/gog-v68.json`的`display_expressions`，仅修改构建副本的菜单显示函数；无额外运行时DLL/EXE补丁，无额外字体或语言依赖。输出仍为19资源PATCH.json，新增MENU_VALUE_DIFF.json记录函数哈希、字节数、VM长度及六个槽位。其他语言复用既有OnText/OffText译文。
+
+可重现编译格式验证（仅编译自编夹具，不启动游戏；需要用户原版UCC及已校验依赖）：
+
+```powershell
+python -m tools.validate.display_compiler --game-dir GAME --out build/display-proof
+python -m tools.validate.menu_values modified --reference GAME/System/WOT.u --package build/zh-CN/resources/System/WOT.u
+```
+
+夹具不安装到游戏或提交其生成包。原版输入只读，通用build无需运行UCC；适配所需指纹和表达式在源码仓库中。

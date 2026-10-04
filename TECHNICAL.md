@@ -183,3 +183,11 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 原生高级选项补翻（2026-10-04）
 
 原生高级选项窗口由WinDrv/Window模块处理，与Canvas字库、图片按钮不同。已新增31条Preferences显示字段和48条普通窗口文案；同步Caption/Parent以保留分类树，Class/Category/Immediate与配置键不变。直接FName显示的原生属性/类别名称尚待研究。二进制只读证据、地址、hash和层级见[NATIVE_ADVANCED_OPTIONS](docs/NATIVE_ADVANCED_OPTIONS.md)。
+
+## 操作设置布尔值显示修复（2026-10-04）
+
+**已验证（静态/编译）**：`menuOptions.DrawValues` 六个位置使用 BoolToString（0x54），绕过既有 `menuLong.GetOnOffStr`。槽位2/4/5/6/9/11分别为反转鼠标、始终鼠标视角、自动坡度视角、视角自动回正、启用摇杆、玩家名称显示。适配器只把显示表达式改为调用现有本地化函数，复用 `WoT.int [menuLong] OnText/OffText`（zh-CN：开/关）。bool操作数不变；九个其他操作设置函数以及GetOnOffStr的函数体保持原样；配置中的True/False不变。
+
+原函数SHA-256、表达式偏移及操作数放在`profiles/gog-v68.json`，由`src/patch/display_expressions.py`匹配后追加函数体并重建导出表。包版本v68、名字表、导入表、对象数量与GUID保持不变；全包其他导出体逐一比较。未知版本或重复应用会报错，不直接修改EXE/DLL/地图。
+
+最小自编UCC夹具`tests/fixtures/LocaleDisplayProbe.uc`确认虚函数调用与bool操作数的序列化，以及每个替换增加5字节VM长度。DrawValues序列化函数体240→258字节，ScriptSize 293→323；二者不同是紧凑索引在加载时展开造成的。UCC加载重建包并编译夹具通过。**待验证（游戏内）**：1080p六项开关显示、切换及退出后持久化；没有自动启动游戏。

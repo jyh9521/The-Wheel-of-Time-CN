@@ -115,5 +115,46 @@
       "reason": "Display-only Canvas.SetPos Y constant; native script computes Y but draws at zero. 24 native pixels, no timing/branch/gameplay edits."
     }
   ],
-  "font_line_height_policy": "preserve-legacy"
+  "font_line_height_policy": "preserve-legacy",
+  "display_expressions": [
+    {
+      "resource": "System/WOT.u",
+      "export": "menuOptions.DrawValues",
+      "export_sha256": "3856b647a9768a9b607d215cb90e0f79a16d7d7dbd0cec31d352709f6891ecc2",
+      "script_size": 293,
+      "helper": "GetOnOffStr",
+      "edits": [
+        {
+          "menu_slot": 2,
+          "offset": 35,
+          "argument_hex": "1901a40600042d01de06"
+        },
+        {
+          "menu_slot": 4,
+          "offset": 69,
+          "argument_hex": "1901a40600042d01ce09"
+        },
+        {
+          "menu_slot": 5,
+          "offset": 86,
+          "argument_hex": "1901a40600042d01fd08"
+        },
+        {
+          "menu_slot": 6,
+          "offset": 103,
+          "argument_hex": "1901a40600042d01eb08"
+        },
+        {
+          "menu_slot": 9,
+          "offset": 138,
+          "argument_hex": "4b1901a42c00001b171f6765742077696e6472762e77696e646f7773636c69656e74207573656a6f79737469636b0016"
+        },
+        {
+          "menu_slot": 11,
+          "offset": 203,
+          "argument_hex": "192e1c1901a405000401b70600042d017b14"
+        }
+      ]
+    }
+  ]
 }

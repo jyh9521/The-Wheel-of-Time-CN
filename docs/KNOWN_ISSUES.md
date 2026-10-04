@@ -80,3 +80,9 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 原生高级选项补翻（2026-10-04）
 
 高级选项标题、登记分类/子分类和窗口按钮已补翻（31条Preferences、48条文案，13个.int），静态连通性和回滚通过，等待原生窗口实测。部分展开参数/类别为引擎直接显示的FName，仍可能英文；高DPI文字截断未在本批修复。见[NATIVE_ADVANCED_OPTIONS](NATIVE_ADVANCED_OPTIONS.md)。
+
+## 动态菜单值范围（2026-10-04）
+
+操作设置六项布尔显示已由True/False改为现有OnText/OffText（中文开/关）的调用，静态回读、UCC加载编译与隔离回滚通过；1080p游戏内显示、逐项切换、退出重进持久化仍需玩家验收。
+
+同类遗漏已定位但本批没有修改：`menuStartArenaServer.UpdateValues`的循环竞技场关卡bool显示，及`menuConfiguration.GetTextureDetailLevelStr`直接返回High/Medium/Low的纹理细节档位。地图名、玩家自定义名称、fps、数字、分辨率与设备/资源标识需按显示含义区分，不代表全部应该翻译。原生高级选项的反射属性名仍是另一条未完成路径。当前不宣称所有动态菜单值已汉化。
