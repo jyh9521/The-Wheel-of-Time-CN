@@ -136,4 +136,4 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 
 native-properties.json的key是原属性/类别标识，只翻译value。values表只用于绘制的局部缓冲，不替换配置或下拉编辑器的机器值。未知标识原样保留，补充key须先确认对应属性含义。
 
-credits.json以slot和原文SHA关联默认数组，保持原204条順序及` - `右侧原贡献者姓名、@标记、空白行。新增署名使用独立末尾行，不冒充原作者。专名按GLOSSARY.md；新发现Poleine、Kyrin尚未确认，保留原拼写并登记，不能自行生成多个音译。
+credits.json以slot和原文SHA关联默认数组，保持原204条順序及` - `右侧原贡献者姓名、@标记、空白行。新增署名使用独立末尾行，不冒充原作者。专名按GLOSSARY.md；Poleine与Kyrin现已由维护者确认，统一读取GLOSSARY.md的波莱恩与凯琳；不得另造同义音译。

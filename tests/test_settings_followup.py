@@ -34,6 +34,16 @@ class SettingsFollowupTests(unittest.TestCase):
         self.assertIn(terms['Sitter'], data['rows'][110]['translation'])
         self.assertNotIn('Sitter', data['pending_terms'])
 
+    def test_confirmed_credits_character_names(self):
+        from tools.validate.terminology import load_terms
+        terms = dict(load_terms(Path('GLOSSARY.md'), '中文译名'))
+        data = json.loads(Path('locales/zh-CN/credits.json').read_text('utf8'))
+        self.assertEqual(terms['Poleine'], '波莱恩')
+        self.assertEqual(terms['Kyrin'], '凯琳')
+        self.assertEqual(data['rows'][107]['translation'], terms['Poleine'] + ' - Carolyn Stewart')
+        self.assertEqual(data['rows'][118]['translation'], terms['Kyrin'] + ' - Kathleen Bober')
+        self.assertEqual(data['pending_terms'], [])
+
     def test_texture_detail_vm_delta(self):
         profile = json.loads(Path('profiles/gog-v68.json').read_text('utf8'))
         spec = profile['display_expressions'][1]

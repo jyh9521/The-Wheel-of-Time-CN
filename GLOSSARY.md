@@ -263,6 +263,8 @@ Codex、人工翻译者以及后续校对工作均应以本文件为准，不再
 | The Hand that digs out Truth | **挖掘真相之手** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Chosen | **获选者** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Elayna | **伊莱娜** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Poleine | **波莱恩** | 游戏角色 | 维护者确认（2026-10-04）；制作人员页角色名 |
+| Kyrin | **凯琳** | 游戏角色 | 维护者确认（2026-10-04）；制作人员页角色名 |
 | Air Pulse | **气流冲击** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Light Globe | **光球** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Light Sphere | **光球** | 专名 / 游戏称谓 | 维护者批准（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |

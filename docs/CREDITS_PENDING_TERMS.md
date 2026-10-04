@@ -1,10 +1,12 @@
-# 制作人员页待确认术语
+# 制作人员页术语确认记录
 
-| 原名 | 游戏位置 | 当前处理 |
+此前待确认的两项已由维护者于2026-10-04定名，并写入唯一术语基准GLOSSARY.md；本页只记录确认过程，不另设术语基准。
+
+| 原名 | 游戏位置 | 确认结果 |
 | --- | --- | --- |
-| Poleine | CreditsText[107]配音角色 | 原拼写保留，未生成新音译 |
-| Kyrin | CreditsText[118]配音角色 | 原拼写保留，未生成新音译 |
+| Poleine | CreditsText[107]配音角色 | 波莱恩；配音演员Carolyn Stewart保持原名 |
+| Kyrin | CreditsText[118]配音角色 | 凯琳；配音演员Kathleen Bober保持原名 |
 
-已检查GLOSSARY.md及现有资料，未发现这两个角色的确认条目。灰机Wiki检索亦未找到可确认对应，尚未加入确认术语表。后续确认统一写GLOSSARY.md，再更新Credits译文。游戏原创角色不得误认成小说近似人物。
+历史：确认前曾检查项目资料与中文Wiki，未取得可确认对应，因此暂保留原拼写；现在以维护者确认和GLOSSARY.md为准。当前制作人员页的待确认术语清单为空。
 
-Sitter已在GLOSSARY.md确定为宗派守护者，本批依照该表回填CreditsText[110]，不另设译法。
+Sitter仍严格使用GLOSSARY.md既有宗派守护者译名。

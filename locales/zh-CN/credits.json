@@ -645,7 +645,7 @@
     {
       "slot": 107,
       "source_sha256": "36dcd5b938e620989be7e7d2c00b1f46ce5702aee7359b1a647444fe9509d72b",
-      "translation": "Poleine - Carolyn Stewart",
+      "translation": "波莱恩 - Carolyn Stewart",
       "status": "draft"
     },
     {
@@ -711,7 +711,7 @@
     {
       "slot": 118,
       "source_sha256": "cf15f2cdd3e0697390da8dd6225fac4a90aa800236bf1ef9b828470b717d90b7",
-      "translation": "Kyrin - Kathleen Bober",
+      "translation": "凯琳 - Kathleen Bober",
       "status": "draft"
     },
     {
@@ -1236,8 +1236,5 @@
     }
   ],
   "retain_original_contributor_names": true,
-  "pending_terms": [
-    "Poleine",
-    "Kyrin"
-  ]
+  "pending_terms": []
 }
