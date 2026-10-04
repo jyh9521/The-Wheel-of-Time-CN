@@ -1,10 +1,10 @@
 # 第四阶段：字库容量扩展与离线开发
 
 ## 当前结果
-用户要求离线继续后，所有操作仅涉及工作副本、自动测试和安装恢复 fixture，没有再启动游戏。
+改为离线开发后，所有操作仅涉及工作副本、自动测试和安装恢复 fixture，没有再启动游戏。
 
 - 同一个旧 Unicode 页内 U+4E00～U+4EFF 的连续 **256 个汉字**，在六种字体中全部通过资源映射检查。
-- 本轮总字集 **372 个字形/字体**、6 个字体、15 张不超过256×256的P8单mip字图。
+- 该阶段总字集 **372 个字形/字体**、6 个字体、15 张不超过256×256的P8单mip字图。
 - 自动检查2232个新增字形映射、1536个原字符映射；**8371个其他原导出记录及其内容保持不变**。
 - 新测试10项、上一阶段回归13项全部通过。
 - 独立安装 fixture 的apply→verify→restore完成；另一独立副本通过可执行ROLLBACK.sh恢复5文件。
@@ -15,7 +15,7 @@
 ## 关键修复：CharactersPerPage
 旧构建器以256为字页大小；30px字号的256×256图最多容纳64个32×32格子，因此同一页内请求超过64个字会报`Atlas too small for one Unicode page`。
 
-新构建器把六个Font对象的 `CharactersPerPage` 改为 **64**。引擎原有Font路径按 `page=codepoint//CPP`、`slot=codepoint%CPP` 取字；本轮只调整资源属性和字页，没有修改该引擎代码。
+新构建器把六个Font对象的 `CharactersPerPage` 改为 **64**。引擎原有Font路径按 `page=codepoint//CPP`、`slot=codepoint%CPP` 取字；该阶段只调整资源属性和字页，没有修改该引擎代码。
 
 - 原Page0的纹理引用、256个矩形记录逐字节保留。
 - 追加三个旧字符页，各引用同一张原纹理，分别使用原64～127、128～191、192～255矩形。
@@ -43,9 +43,9 @@
 `.int` 使用UTF16LE BOM，字幕保留上一阶段可选的引号内尾随空格计时原型；CSV/JSON源译文不含填充。当前测试ZIP只包含三份资源和manifest，不包含启动脚本，也不会自动运行游戏。
 
 ## 实机证据与待验项
-在用户提出“不启动游戏”之前，本轮留有BASELINE、MODIFIED、LOWRES三个历史探针记录，进程正常退出0；密集菜单72字和长帮助曾被捕获。LOWRES日志为320×240，小号长帮助的清晰度仍有局限。
+在改为离线开发之前，该阶段留有BASELINE、MODIFIED、LOWRES三个历史探针记录，进程正常退出0；密集菜单72字和长帮助曾被捕获。LOWRES日志为320×240，小号长帮助的清晰度仍有局限。
 
-用户提出离线要求后没有再做字幕、新斜体Inventory界面、Reg08界面或游戏回滚启动测试。
+改为离线开发后没有再做字幕、新斜体Inventory界面、Reg08界面或游戏回滚启动测试。
 
 待之后手动验收：
 1. 7px小字号复杂汉字的可读性及适合的短帮助译文。
@@ -89,4 +89,4 @@ MODIFIED命令 `python tools\test_phase4.py`，输入新资源与ZIP，输出`Ra
 
 ROLLBACK命令 `& "C:\Program Files\Git\bin\bash.exe" -lc 'test -x work/phase4/ROLLBACK.sh && work/phase4/ROLLBACK.sh work/phase4/rollback-test/System'`，输入独立副本3份修改资源及2份原配置，输出`ROLLBACK PASS: 5 resource/config files byte-identical to backup; exit 0`，退出0。
 
-恢复状态：5文件与原备份字节一致；没有以启动游戏作为本轮恢复行为验证。modified/System和runtime/System保留修改资源，runtime配置恢复原值。
+恢复状态：5文件与原备份字节一致；没有以启动游戏作为该阶段恢复行为验证。modified/System和runtime/System保留修改资源，runtime配置恢复原值。

@@ -2,20 +2,20 @@
 
 # 剩余术语与英文残留审计（2026-10-04）
 
-## 本轮范围与结论
+## 该阶段范围与结论
 
-这是审计与待确认记录，不是第二份正式术语库。唯一术语基准仍是根目录 [GLOSSARY.md](../GLOSSARY.md)。本轮没有把建议自动升级为已确认译名，没有修改任何译文、原文hash、控制符、构建资源或游戏文件，没有启动游戏。
+这是审计与待确认记录，不是第二份正式术语库。唯一术语基准仍是根目录 [GLOSSARY.md](../GLOSSARY.md)。该阶段没有把建议自动升级为已确认译名，没有修改任何译文、原文hash、控制符、构建资源或游戏文件，没有启动游戏。
 
 按社区优先来源策略组合strings、subtitles和subtitle-overrides，审计1002条实际生产文本（覆盖表的相同ID不额外计数）。扫描整条英文与中文内部的拉丁字母，逐项区分专名、按键、缩写、受保护标记与诊断标识，并与词表待确认项交叉检查。
 
 - 12个英文待处理专名，涉及22个不同文本ID。
 - 6组已有中文草稿但尚未正式确认的名称，与上述12项合计18组主要命名待办。
 - 已有的语境草稿和普通元素词另列，不能因为不含英文就忽略。
-- 本次覆盖当前核心生产目录，不声称视频、地图实例或硬编码文本已全部盘点。
+- 该次覆盖当前核心生产目录，不声称视频、地图实例或硬编码文本已全部盘点。
 
 ## 1. 英文待处理专名：完整清单
 
-“推荐处理”是本轮审计意见，不是已经回填的译文。只有确认后才统一更新GLOSSARY并回填。标注“资料线索”的网页不是出版社原页，不能据此宣称纸质出版版逐页认证。
+“推荐处理”是该阶段审计意见，不是已经回填的译文。只有确认后才统一更新GLOSSARY并回填。标注“资料线索”的网页不是出版社原页，不能据此宣称纸质出版版逐页认证。
 
 | 英文 | 推荐处理 | 当前出现位置 / 条目数 | 核对结果与需要决定的问题 |
 |---|---|---|---|
@@ -26,7 +26,7 @@
 | Cerist | 瑟瑞斯特（候选音译） | MissionObjectives12.Content[3]/Content[10]，共2条 | 游戏人名，原文指临终告知探险队去向的女性；游戏演职员表可核对拼写，未确认中文出版既定译名。只提出这一种候选，不回填。[S7] |
 | Sephraem | 瑟芙蕾姆（候选音译） | MissionObjectives17.Content[3]，共1条 | 游戏人名，原文明确称她为叛徒；演职员表可核对拼写，未确认既定中文译名。只提出这一种候选，不回填。[S7] |
 | Halfmen | 半人（待确认别称） | AngrealInvChampion.Quote，共1条 | 小说引文中的Myrddraal别称，应先确定是否保留出版别称；不是新怪物。已定Myrddraal → 魔达奥不覆盖、不改写；当前中文出版别称证据仍需补强。[S8] |
-| Bornhald | 伯恩哈 | QuestionerInventory.Quote，共1条 | 灰机Wiki主要人物列杰夫拉·伯恩哈，用户此前引用的人物清单也有Bornhald对应；该句只出现姓氏，不擅自补全名字。[S9][S10] |
+| Bornhald | 伯恩哈 | QuestionerInventory.Quote，共1条 | 灰机Wiki主要人物列杰夫拉·伯恩哈，我此前参考的人物清单也有Bornhald对应；该句只出现姓氏，不擅自补全名字。[S9][S10] |
 | Elaida | 爱莉达 | SitterInventory.Quote，共1条 | 灰机Wiki主要人物及多本书籍页面使用爱莉达；双语中文资料也能核对Elaida身份。[S9][S11] |
 | Chosen | 暂待核对出版尊称，不直接并为“弃光魔使” | DialogA.Myr_14/Myr_25，共2条 | 暗影阵营对白的尊称，不是普通chosen动词。现有网上旧译文章虽有中文线索，但译名体系不同，暂不据此锁定。源文WarderInventory.Description中的chosen是普通“被选中”，不算本专名。[S12] |
 | The Hand of the Light | 圣光之手 | QuestionerInventory.Description，共1条 | 灰机Wiki《裁判团》明确记录自称圣光之手。[S13] |
@@ -76,7 +76,7 @@
 2. AngrealInvMinion.Description：@grunt@。
 3. AngrealInvAbsorb.Quote：@The flows just... vanished.@。
 
-@Fire@、@Message@可能涉及键绑定/格式替换，不与上述普通词混为一谈。当前保留不是证明这些标记都不可翻译；需要先追踪文本窗口的@处理逻辑，再对引号样式与替换语法分层、调整保护器并回归测试。本轮不删除或翻译这些片段。
+@Fire@、@Message@可能涉及键绑定/格式替换，不与上述普通词混为一谈。当前保留不是证明这些标记都不可翻译；需要先追踪文本窗口的@处理逻辑，再对引号样式与替换语法分层、调整保护器并回归测试。该阶段不删除或翻译这些片段。
 
 ## 5. 后续来源的边界
 
@@ -95,9 +95,9 @@ $env:PYTHONPATH=(Get-Location).Path
 python -X utf8 build/remaining-terms-audit/scan.py
 ```
 
-脚本属于本次忽略目录中的研究辅助，不是承诺长期维护的生产入口。该命令重建只读扫描快照；分类表由本次逐项审核产生，不将正则表达式匹配冒充语义审核。专名扫描不能只使用Unicode的\b边界，因为中文紧贴英文时也属于\w，会漏掉Cuendillar封印等形式。
+脚本属于该次忽略目录中的研究辅助，不是承诺长期维护的生产入口。该命令重建只读扫描快照；分类表由该次逐项审核产生，不将正则表达式匹配冒充语义审核。专名扫描不能只使用Unicode的\b边界，因为中文紧贴英文时也属于\w，会漏掉Cuendillar封印等形式。
 
-所有生产译文、覆盖表及GLOSSARY在本轮开始/结束时均作SHA-256比较，保持一致。后续确认后，只将确定规则归入GLOSSARY，并由原构建器完成回填/字库/验证，不在本报告另维护生效词库。
+所有生产译文、覆盖表及GLOSSARY在该阶段开始/结束时均作SHA-256比较，保持一致。后续确认后，只将确定规则归入GLOSSARY，并由原构建器完成回填/字库/验证，不在本报告另维护生效词库。
 
 ## 参考资料
 
@@ -110,7 +110,7 @@ python -X utf8 build/remaining-terms-audit/scan.py
 - [S7 游戏演职员表](https://www.mobygames.com/game/637/the-wheel-of-time/credits/windows/)：Elayna、Cerist、Sephraem英文拼写；不提供既定中文译名证明。
 - [S8 英文名词资料转载](https://www.yingyuxiaoshuo.com/book/253b126c66e417d1/chapter/51)：Halfman/Myrddraal别称关系；中文别称还需核对。
 - [S9 主要人物（灰机Wiki）](https://twot.huijiwiki.com/wiki/主要人物)：伯恩哈、爱莉达。
-- [S10 用户此前引用的繁中人物清单](https://www.ptt.cc/bbs/Fantasy/M.1570904515.A.61A.html)：Bornhald姓氏对应。
+- [S10 我参考的繁中人物清单](https://www.ptt.cc/bbs/Fantasy/M.1570904515.A.61A.html)：Bornhald姓氏对应。
 - [S11 双语世界之眼剧情整理](https://thewheeloftime.fandom.com/zh/wiki/世界之眼)：Elaida/爱莉达对应。
 - [S12 旧译体系介绍](https://www.trzj.org/stories/article/a-brief-introduction-to-wheel-of-time/abitwot-1/2/)：Chosen相关语义线索；与项目当前译名体系不同，不直接引入。
 - [S13 裁判团（灰机Wiki）](https://twot.huijiwiki.com/wiki/裁判团)：圣光之手及挖掘真相的描述。
@@ -121,8 +121,8 @@ python -X utf8 build/remaining-terms-audit/scan.py
 
 ## 批准后的解决结果（2026-10-04）
 
-维护者批准本报告全部建议；剩余专名及六项原有草稿已移入GLOSSARY.md确认表。Chosen两句敬称采用“获选者”，普通chosen按语义译“被选中”并加入精确源文hash例外。Questioner单位统一“裁判者”；普通reflect动词保留“反射”且不强制能力名匹配。Mother玉座尊称保留“母亲”，不表示亲缘。
+我已采纳本报告的建议；剩余专名及六项原有草稿已移入GLOSSARY.md确认表。Chosen两句敬称采用“获选者”，普通chosen按语义译“被选中”并加入精确源文hash例外。Questioner单位统一“裁判者”；普通reflect动词保留“反射”且不强制能力名匹配。Mother玉座尊称保留“母亲”，不表示亲缘。
 
-本批修改28条正文，包括已批准专名、风元素标签、教程帮助测试尾标及三段可读@文本；原有源文ID、hash、长度及tokens未改变，仅三条新增经过源文预检的literal_token_translations/markup_delimiter_count注释。END-123已移除，帮助文案重新按英文原义整理。不改原版游戏、不改EXE/DLL，不启动游戏。已存在的教程独立计时插件不变。
+该批修改28条正文，包括已批准专名、风元素标签、教程帮助测试尾标及三段可读@文本；原有源文ID、hash、长度及tokens未改变，仅三条新增经过源文预检的literal_token_translations/markup_delimiter_count注释。END-123已移除，帮助文案重新按英文原义整理。不改原版游戏、不改EXE/DLL，不启动游戏。已存在的教程独立计时插件不变。
 
-本批不宣称视频、地图内嵌字样或所有硬编码英文已经清零；Enter/ESC/WASD等键名和WOTEd、ServerSpawn()等标识继续保留。核心1002条仍为draft而非实机全面reviewed，完整流程QA仍是发布条件。
+该批不宣称视频、地图内嵌字样或所有硬编码英文已经清零；Enter/ESC/WASD等键名和WOTEd、ServerSpawn()等标识继续保留。核心1002条仍为draft而非实机全面reviewed，完整流程QA仍是发布条件。

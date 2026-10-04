@@ -7,7 +7,7 @@
 |本项目原创代码/工具/文档|MIT，见LICENSE；不包含游戏源码、原文或字体|
 |原创译文|locales/*/*.json 中的原创translation字段、原创术语翻译：CC BY-SA 4.0，见LICENSE-translations.md；保留贡献归属|
 |引擎对象名/key/原文散列/版本结构|必要的互操作元数据，不声称拥有游戏版权；不改变游戏资源的权利|
-|完整原文/游戏资源/程序/脚本|原权利人所有，用户自行提供，仓库不授权、不提交，仍受对应发行/EULA约束|
+|完整原文/游戏资源/程序/脚本|原权利人所有，玩家或开发者自行提供，仓库不授权、不提交，仍受对应发行/EULA约束|
 |第三方字体及生成glyph|遵循字体自身许可；字体不捆绑，本地构建不授予再分发权|
 |Pillow/fontTools等依赖|通过pip安装、不vendor；各遵循自身许可证，不能转为本项目MIT|
 |社区补丁/其他语言文本|尚未纳入；记录来源/版本/许可与贡献后才考虑合并，不改写成原创成果|
@@ -29,10 +29,10 @@ assets/fonts/README.md记录选择流程，当前没有捆绑字体或预编译f
 
 ## 社区字幕输入（2026-10-03）
 
-用户提供OldUnreal关联字幕文件，作者署名TigerTheGreat；哈希及结构审计见docs/COMMUNITY_SUBTITLE_SOURCE.json。全文仅作为本地外部研究输入，未提交或捆绑；许可尚待核实。合并器代码按项目MIT，不能据此授权社区英文全文。
+我采用OldUnreal关联字幕文件，作者署名TigerTheGreat；哈希及结构审计见docs/COMMUNITY_SUBTITLE_SOURCE.json。全文仅作为本地外部研究输入，未提交或捆绑；许可尚待核实。合并器代码按项目MIT，不能据此授权社区英文全文。
 
 ## 显示适配与工具依赖（2026-10-04）
 
-原生显示适配stub和包重建代码是本项目自编，未复制Unreal SDK/EULA源码；不改变用户原Window.dll或WOT.u的权利归属。源码仓库仅提交构建代码、版本散列、少量互操作指令字节与译文，不提交完整DLL或原版Credits英文表。制作人员页贡献者姓名保留，新增署名仅指本汉化补丁。
+原生显示适配stub和包重建代码是本项目自编，未复制Unreal SDK/EULA源码；不改变原版Window.dll或WOT.u的权利归属。源码仓库仅提交构建代码、版本散列、少量互操作指令字节与译文，不提交完整DLL或原版Credits英文表。制作人员页贡献者姓名保留，新增署名仅指本汉化补丁。
 
 pefile、Keystone汇编工具及Unicorn测试模拟器由pip安装，不随补丁运行、不vendor。第三方依赖遵循各自完整许可，不并入本项目MIT；Keystone的核心及客户端例外参见[上游许可说明](https://github.com/keystone-engine/keystone#license)和COPYING/EXCEPTIONS-CLIENT，Python绑定许可证与核心分开。发布打包若要捆绑依赖，应单独保留许可，不以wheel摘要的BSD字段代替全部组件许可。

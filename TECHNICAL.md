@@ -108,11 +108,11 @@ menuOptions先按Default.MenuList画左列，再把同一数组改为运行时bo
 
 ## 工作区迁移记录
 
-复用本项目dee6e61已验证工具链，而非重做汉化。旧游戏根目录phase1–5研究归档于docs/research/game-root；全文路径和来源散列见docs/migration-manifest.json。历史低分辨率、12px小字和277/277结论只适用于当时实验；当前profile/QA仍以1080p和原始7/8px小号配置为准，4K不适配。生产构建不依赖旧backup/work/研究截图。迁移后的离线重建不等同本轮实机验收。详见docs/MIGRATION_AUDIT.md。
+复用本项目dee6e61已验证工具链，而非重做汉化。旧游戏根目录phase1–5研究归档于docs/research/game-root；全文路径和来源散列见docs/migration-manifest.json。历史低分辨率、12px小字和277/277结论只适用于当时实验；当前profile/QA仍以1080p和原始7/8px小号配置为准，4K不适配。生产构建不依赖旧backup/work/研究截图。迁移后的离线重建不等同该阶段实机验收。详见docs/MIGRATION_AUDIT.md。
 
 ## Controls 完整标签/帮助草稿（离线）
 
-WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个独立localized字段；现以源ID/SHA/长度为地址全部回填。新增18条不涉及硬件页、按键alias、右侧布尔/数值、游戏配置或脚本逻辑。仅在副本重建与回滚验证，未新增本轮实机证据；选中第2..11行后显示各帮助的宽度/换行仍待1080p优先QA。
+WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个独立localized字段；现以源ID/SHA/长度为地址全部回填。新增18条不涉及硬件页、按键alias、右侧布尔/数值、游戏配置或脚本逻辑。仅在副本重建与回滚验证，未新增该阶段实机证据；选中第2..11行后显示各帮助的宽度/换行仍待1080p优先QA。
 
 ## Controls 后续实机显示验收（2026-10-03）
 
@@ -141,9 +141,9 @@ WoT.int/menuOptions含MenuTitle、MenuList[1..11]、HelpMessage[1..11]共23个�
 Tes_01的社区补全文本作为完整来源保留。将其翻译一次拼接显示会提前泄露后段台词；现有WOTPlayer只在ClientHearSound时调用一次SubtitleMessage，.int没有时间码语法。实验性LocalePlayer继承原AesSedai，为指定音频触发相对Level.TimeSeconds的分段字幕，旧声音与未配置字幕委托原实现；不是对原代码注入hook。原地图、语音和程序不改，需显式Class URL选择，实机兼容仍待验证。详见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。
 
 
-## 2026-10-03 用户分段测试反馈与独立时钟候选
+## 2026-10-03 分段测试记录与独立时钟候选
 
-用户以专用Game+Class入口测试后，后半段字幕未出现。保存的WoT.log确认
+我以专用Game+Class入口测试时，后半段字幕未出现。保存的WoT.log确认
 LocaleTutorial、LocalePlayer已生效，因此不是入口未启用。此前全局Player.Tick
 推进序列的方案未通过实机验收；原包PlayerPawn脚本存在PlayerTick路径，原生玩家
 Tick分发差异是高可信待验证原因，不作为已实测的根因。
@@ -153,24 +153,24 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 其他对白取消序列日志，用于区别回调未执行、文本为空和提前取消。静态源码连线测试与
 原版UCC编译不等同实机验证；后续仍需1080p专用入口重测，暂停/死亡/切图/存档尚待验收。
 
-用户已确认其近似回忆指的是Be steadfast，采用现有“坚定你的意志”，
+我已核对，之前凭听音回忆的那句实际是Be steadfast，采用现有“坚定你的意志”，
 不再追查或额外添加Please stand back字幕。前面的候选调查记录保留为历史。
 
 ## 已审查的可读 @ 文本（2026-10-04）
 
 已验证的调用路径：Legend.WOTInventory将Description与Quote声明为localized string；WOT.InventoryInfoWindow.Draw把两字段直接交给C.DrawText，Quote另设F_WOTIta14字体。Engine.Canvas.DrawText为native(465)，脚本层未对这三段执行名称/资源查找或变量替换。该证据支持将forget、grunt及The flows just... vanished.认定为玩家可读正文，而非资源ID。native层的@最终显示/引号处理仍未作实机确认，不将具体引号行为写成已验证事实。
 
-本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
+该批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
 
 ## 玩家可见标识文案收尾（2026-10-04）
 
-本批仅修改四个本地化显示字段，源文ID、hash、长度和控制码不变：Windows.EditCommand显示为“&使用关卡编辑器编辑”（保留&助记标记）；WOTPlayer.CantPlaceResourceStr改为“部署失败 ”（保留用于拼接的末尾空格）；MissionObjectives.Title的通用基类“任务XX”改为“任务目标”，不改各关卡的实际标题；MyrddraalSwordAngreal.PickupMessage改为“警告：你发现了魔达奥剑的伤害效果！”。
+该批仅修改四个本地化显示字段，源文ID、hash、长度和控制码不变：Windows.EditCommand显示为“&使用关卡编辑器编辑”（保留&助记标记）；WOTPlayer.CantPlaceResourceStr改为“部署失败 ”（保留用于拼接的末尾空格）；MissionObjectives.Title的通用基类“任务XX”改为“任务目标”，不改各关卡的实际标题；MyrddraalSwordAngreal.PickupMessage改为“警告：你发现了魔达奥剑的伤害效果！”。
 
 已验证：原脚本WoTPawns.MyrddraalSwordAngreal说明该类为魔达奥剑持续伤害图标的占位适配器，空BecomePickup函数明确用于阻止拾取/可见，因此不把该诊断文本杜撰成玩家能拾取的新法器名称。WOT.WOTPlayer中的CantPlaceResourceStr是localized String，原ServerSpawn提示调用处已注释；替换提示正文不修改函数名。MissionObjectives继承WOTTextWindowInfo，基类Title是通用显示文案，不含插值控制码；实际关卡由MissionObjectives01等子类提供标题，未发现需要保留XX的运行时替换脚本。基类触发及Windows外壳标签的实机显示仍未专门确认。
 
-核心1002条为已填充的中文草稿，而非全游戏文本覆盖证明。按键名称、网络缩写和机器使用的控制码/类名仍保留；视频、地图内嵌文字及未提取的硬编码文本尚待全面审计。不得将本次四项收尾描述为已经完成全游戏全文本汉化。
+核心1002条为已填充的中文草稿，而非全游戏文本覆盖证明。按键名称、网络缩写和机器使用的控制码/类名仍保留；视频、地图内嵌文字及未提取的硬编码文本尚待全面审计。不得将该次四项收尾描述为已经完成全游戏全文本汉化。
 
 ## 图片文字审计补充（2026-10-04）
 
@@ -178,7 +178,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 
 ## 八张按钮纹理回填
 
-维护者选择仅汉化Load/Play/Roam/Save图片按钮，其他图像文字保留。八个Texture均为64×64、P8、单mip，Palette为包内引用；只在文字面板中重新量化像素，保留全部包表、对象引用、属性、调色板和像素数组长度。工具先检查每个完整Texture导出体SHA-256，再确认字体覆盖和宽高约束，最后重开资源并比较所有非目标导出体。生成输入是此前字体和显示字段构建的WOT.u副本，整个构建仍从经校验的原版开始。已验证差分安装和隔离副本回滚；未宣称实机按钮显示/操作验收。
+我只汉化Load/Play/Roam/Save图片按钮，其他图像文字保留。八个Texture均为64×64、P8、单mip，Palette为包内引用；只在文字面板中重新量化像素，保留全部包表、对象引用、属性、调色板和像素数组长度。工具先检查每个完整Texture导出体SHA-256，再确认字体覆盖和宽高约束，最后重开资源并比较所有非目标导出体。生成输入是此前字体和显示字段构建的WOT.u副本，整个构建仍从经校验的原版开始。已验证差分安装和隔离副本回滚；未宣称实机按钮显示/操作验收。
 
 ## 原生高级选项补翻（2026-10-04）
 
@@ -198,7 +198,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 
 **已验证（离线）**：Credits是WOT.u内的Class默认属性，不是图片或外部版权文本。保留204个原位置、角色对应演员及贡献者姓名；新增204空行、205署名。FString改为UTF-16序列化；CreditsText.StrProperty的ArrayDim 204→206与PostRender两处ArrayCount常量必须同步，不只补写默认文本。该属性维度位于导出体+4，不是+5；默认CreditsText标签流从Class体+339开始，数组索引128以上用双字节标签索引。UCC加载重建包并编译自编夹具通过；完整滚动结束/退出仍待实机验收。
 
-**已验证（离线）**：Window.dll的FPropertyItem.GetCaption、FCategoryItem.GetCaption和FPropertyItem.Draw有独立FName显示路径；只改GetCaption并不足够。原生行高函数返回16，列分隔宽度默认128且可由注册表覆盖。本批在经完整SHA校验的构建DLL副本增加位置无关.locale段，映射274个显示名及7个显示值；行高设32，GetDividerWidth最低320并允许更宽。姓名/FName、属性键、配置、共享GetPropertyText和SetValue不改；值映射只改Draw局部缓冲。未知显示名原样回退。没有改EXE/WinDrv.dll、没有进程注入，没有新增运行时依赖DLL。
+**已验证（离线）**：Window.dll的FPropertyItem.GetCaption、FCategoryItem.GetCaption和FPropertyItem.Draw有独立FName显示路径；只改GetCaption并不足够。原生行高函数返回16，列分隔宽度默认128且可由注册表覆盖。该批在经完整SHA校验的构建DLL副本增加位置无关.locale段，映射274个显示名及7个显示值；行高设32，GetDividerWidth最低320并允许更宽。姓名/FName、属性键、配置、共享GetPropertyText和SetValue不改；值映射只改Draw局部缓冲。未知显示名原样回退。没有改EXE/WinDrv.dll、没有进程注入，没有新增运行时依赖DLL。
 
 两种镜像基址的602项x86模拟覆盖中文/未知值/空串、寄存器栈平衡、属性/类别/直接绘制、值缓冲、行高/分隔线。PE进口表及原文件中批准范围外的字节均保持原样。**待验证（实机）**：高级选项展开、滚动、编辑器位置、点击保存与各DPI缩放；固定32不是任意DPI自动缩放，当前只验1080p。全部生成资源仍通过差分安装/隔离回滚，不提交完整DLL。
 

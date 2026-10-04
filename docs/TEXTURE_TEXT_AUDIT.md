@@ -2,7 +2,7 @@
 
 ## 范围与结论
 
-检查本地 GOG 原版 `Textures/*.utx`、`System/*.u`、`Maps/*.wot`：36 个贴图包、20 个脚本/资源包、45 个地图，共 101 个包。地图实际扩展名是 `.wot`，本批地图没有直接导出的 Texture 对象，但会引用外部贴图。
+检查本地 GOG 原版 `Textures/*.utx`、`System/*.u`、`Maps/*.wot`：36 个贴图包、20 个脚本/资源包、45 个地图，共 101 个包。地图实际扩展名是 `.wot`，该批地图没有直接导出的 Texture 对象，但会引用外部贴图。
 
 3581 个 Texture 导出均成功解码为首级 mip 的 RGB 预览；其中 65 个名称识别为字体页，未纳入图片英文检查。已逐页查看其余 3516 张贴图的 55 张总览，并放大重点候选。另有 83 个程序纹理子类（WetTexture 43、FireTexture 32、IceTexture 5、WaveTexture 3）仅登记，未模拟动态效果。
 
@@ -37,7 +37,7 @@
 
 - `UBrowser.u / Icons.BannerAd` 包含 `UNREAL TOURNAMENT` 标志。`UBrowserBannerAd` 有绘制调用，但不能由基础类存在推断本游戏实际展示；先保留品牌图像。
 - `WoTDecorations.u / Skins.JCylinder0` 包含 Mountain Dew 包装英文；原脚本把它设为 Cylinder 网格的默认贴图。七个地图存在 Cylinder 实例，但实例可能覆盖 Skin/Multiskins，**尚未证明游戏中会显示该包装**，不把普通圆柱实例全部称为饮料罐。
-- `MatthiasT.utx / clan`、`ocrana` 是带 `OCRANA` 标志的图像。`Mission_07a.wot` 导入 `clan`；`ocrana` 未在本批地图导入中找到。名称不作新专有名词翻译。
+- `MatthiasT.utx / clan`、`ocrana` 是带 `OCRANA` 标志的图像。`Mission_07a.wot` 导入 `clan`；`ocrana` 未在该批地图导入中找到。名称不作新专有名词翻译。
 - DeveloperT、ForsakenT、ScottT 中有 `CLIP / ZONE / SKYBOX / climb` 类型标记；Editor.u 有 `BAD SIZE`，Legend.u 有 `AT / ST / SST`，WOT.u 有 `TH` 编辑图标。属于开发/编辑用途候选，不纳入剧情文案，不更改技术标识。
 - Ways/TheWays 的符文、纹章和花纹不直接判为英文。
 
@@ -54,12 +54,12 @@ python -X utf8 -m unittest discover -s tests -p test_texture_audit.py
 
 图片、总览和原包均不提交到源码仓库，工具与报告可提交。导出工具为只读，没有图片回填功能。
 
-## 维护者决定与按钮实施
+## 按钮汉化范围与实现
 
-维护者明确要求：只汉化按钮，其余挂毯、书页、纸张、品牌和标志均不汉化。保留上述只读发现，取消挂毯/纸张的后续翻译计划。
+图片文字的处理范围，我定为只汉化按钮。挂毯、书页、纸张、品牌和标志保留原样；上面的审计结果保留作研究资料，不再安排挂毯和纸张的翻译。
 
-本轮仅将 `UI.I_*` 与 `UI.M_*` 的 Load/Play/Roam/Save 八张纹理改为“载入/游玩/漫游/保存”。`Roam` 在玩家脚本中对应 `CitadelRoamMode`，采用漫游而非普通剧情模式名称。中文标签数据位于 `locales/zh-CN/texture-labels.json`；通用构建器为 `tools/font/build_texture_labels.py`，原资源对象指纹为 `profiles/texture-labels.json`。
+按钮汉化只将 `UI.I_*` 与 `UI.M_*` 的 Load/Play/Roam/Save 八张纹理改为“载入/游玩/漫游/保存”。`Roam` 在玩家脚本中对应 `CitadelRoamMode`，采用漫游而非普通剧情模式名称。中文标签数据位于 `locales/zh-CN/texture-labels.json`；通用构建器为 `tools/font/build_texture_labels.py`，原资源对象指纹为 `profiles/texture-labels.json`。
 
-采用固定大小 P8 像素回填：保留64×64尺寸、原调色板、单级mip、对象编号、包表和文字区域外像素；文字面板背景由上下无字石纹行插值重建，中文由用户提供字体确定性栅格化后映射回原调色板。没有重新绘制整张按钮，没有修改共享调色板、脚本逻辑、地图或EXE/DLL。字体依赖及发布许可仍遵循 LICENSING.md。
+采用固定大小 P8 像素回填：保留64×64尺寸、原调色板、单级mip、对象编号、包表和文字区域外像素；文字面板背景由上下无字石纹行插值重建，中文由开发者自行提供的字体确定性栅格化后映射回原调色板。没有重新绘制整张按钮，没有修改共享调色板、脚本逻辑、地图或EXE/DLL。字体依赖及发布许可仍遵循 LICENSING.md。
 
-默认构建已接入标签阶段；输出 `TEXTURE_LABEL_DIFF.json` 和八张原尺寸预览。静态范围验证确认旧中文版本与新版本只有这八个纹理对象发生变化。独立副本通过六文件差分安装/核验/回滚，源游戏不变；游戏内按钮布局、状态切换及操作仍待1080P实测，本轮没有启动游戏。
+默认构建已接入标签阶段；输出 `TEXTURE_LABEL_DIFF.json` 和八张原尺寸预览。静态范围验证确认旧中文版本与新版本只有这八个纹理对象发生变化。独立副本通过六文件差分安装/核验/回滚，源游戏不变；游戏内按钮布局、状态切换及操作仍待1080P实测，这一阶段只做了离线验证，未运行游戏。

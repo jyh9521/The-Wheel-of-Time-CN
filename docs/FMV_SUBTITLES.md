@@ -2,7 +2,7 @@
 
 ## 已验证事实
 
-旧研究脚本mov_text_export.py已有文字轨发现；本轮复核原版，并整理为tools/extract/movie_text.py，不依赖旧工作目录或硬编码ffprobe路径。未修改视频，未转录整部游戏。
+旧研究脚本mov_text_export.py已有文字轨发现；该阶段复核原版，并整理为tools/extract/movie_text.py，不依赖旧工作目录或硬编码ffprobe路径。未修改视频，未转录整部游戏。
 
 - 17个MOV中14个各有两条QuickTime text轨：共28轨、1538样本，1256个去除空白后非空（两种语言合计，不是1256句不同对白）。
 - 文本在独立轨道，不是这些文字被烧录在画面；这不证明所有帧均没有其他图像文字。

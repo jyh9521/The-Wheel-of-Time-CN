@@ -7,7 +7,7 @@
 - 新正式源码目录：`C:\Users\noway\Downloads\The-Wheel-of-Time-CN`。入口规范和18份模板/占位文件先完整保存于本地 `build/migration/destination-before/`。AGENTS.md 与 LOCALIZATION_STANDARD.md 保持原文，不进入待提交源码集。
 - 旧工作区：`C:\GOG Games\The Wheel of Time`，5126个文件已建立逐文件SHA-256、大小与修改时间基线；迁移不写入、不删除旧文件。
 - 上一轮正式工程：`C:\Users\noway\Documents\GitHub\The-Wheel-of-Time-CN`，复用已提交的 `dee6e61b6df8d037dbb021cf6b3a0c9db4022a8b`，不是重新实现汉化。它是本项目先前版本，不是外部上游。该目录也保留不动。
-- 新目录起初不是Git checkout，只有规范模板；本轮没有初始化/替换Git历史、commit或push。后续同步应保留上述现有历史，避免将迁移重新伪装成从零开发。
+- 新目录起初不是Git checkout，只有规范模板；该阶段没有初始化/替换Git历史、commit或push。后续同步应保留上述现有历史，避免将迁移重新伪装成从零开发。
 
 ## 从游戏目录复制/整理的文件
 
@@ -40,14 +40,14 @@ docs/file-formats.md、pitfalls.md、known-issues.md合并为要求的 FILE_FORM
 |generated-evidence|336|截图、字库PNG、字形manifest、运行日志/检查报告：原位证据，不迁移生成物。|
 |technical-research|7|研究Markdown：复制7份归档，原件不动。|
 |runtime-generated|2|游戏运行日志：保留，不作为源码。|
-|game-user-configuration|2|WoT.ini/User.ini：用户设置，原位保留，不恢复历史配置。|
+|game-user-configuration|2|WoT.ini/User.ini：玩家设置，原位保留，不恢复历史配置。|
 |temporary-cache|14|Python缓存等：保留不删除，不提交。|
 |legacy-project-source|36|旧开发工具/补丁/配置准备/测试脚本：依赖脚本所在根目录、backup/phase1-original和work/phase*；原位保留。正式构建改用已有参数化框架。|
 |generated-or-extracted-work|4163|工作副本、生成ZIP/资源、完整英文导出/反编译脚本等：保留旧目录，不提交。|
 |legacy-project-source-snapshot|10|旧脚本pre-fix/阶段快照：保存失败路线和修复历史，不加入生产导入路径。|
 |research-translation-or-qa-data|6|阶段翻译表及密集QA字集：原表原位保留；phase5的7条译文另存研究格式，旧Help测试变体不会覆盖当前正式19条草稿。|
 
-类别是按路径/类型判定的审计分组，不声称work内所有文件均为原创，也不声称原安装现有用户配置与出厂完全相同。完整5126条清单在本地 build/migration/old-before.json；旧脚本36份及工作快照10份的具体路径与散列已写入源码迁移manifest。
+类别是按路径/类型判定的审计分组，不声称work内所有文件均为原创，也不声称原安装现有玩家配置与出厂完全相同。完整5126条清单在本地 build/migration/old-before.json；旧脚本36份及工作快照10份的具体路径与散列已写入源码迁移manifest。
 
 ### 旧工具与正式工具对应
 
@@ -62,7 +62,7 @@ docs/file-formats.md、pitfalls.md、known-issues.md合并为要求的 FILE_FORM
 |runtime/inventory/phase探针|tools/validate/runtime.py，显式game/runtime/build/output参数|
 |map_audit.py、mov_text_export.py、旧全局扫描|原位置保留；通过GAME目录定位；不是现有PoC构建依赖，MOV工具还绑定本机ffprobe，待独立参数化|
 
-旧命令不从新目录复制后执行，因为父目录ROOT会错误地指向新源码树。需要复查旧流程时将GAME设为旧工作区，定位GAME/tools，阅读其参数与副作用；本轮不调用旧准备/写入脚本。新的生产构建只通过 --game-dir 引用原资源，不引用旧生成物。
+旧命令不从新目录复制后执行，因为父目录ROOT会错误地指向新源码树。需要复查旧流程时将GAME设为旧工作区，定位GAME/tools，阅读其参数与副作用；该阶段不调用旧准备/写入脚本。新的生产构建只通过 --game-dir 引用原资源，不引用旧生成物。
 
 ## 原版内容排除清单
 
@@ -70,30 +70,30 @@ System中的EXE/DLL/U、原版INT/INI；Maps的UNR/WOT；Textures的UTX；Sounds
 
 ## 可重建程度与验证
 
-- 新目录独立构建：通过。19条草稿不变，162字/字体，6字体、8新贴图、8371其他export不变；只依赖新源码、指纹匹配的原版4资源、Python依赖和用户提供字体。
+- 新目录独立构建：通过。19条草稿不变，162字/字体，6字体、8新贴图、8371其他export不变；只依赖新源码、指纹匹配的原版4资源、Python依赖和开发者自行提供的字体。
 - 原版→安装→校验→回滚：在build/migration/rollback-test独立四资源副本执行，未安装到游戏根目录。
 - 干净源码副本→构建：不复制旧build/work/backup，输出与当前生成的4资源和PATCH.json逐字节比较；结果记录于本地VERIFICATION.txt。
 - 全目录迁移后审计：再次比较5126个文件的SHA-256/大小/mtime与基线，结果记录于VERIFICATION.txt。
-- 原安装4个输入资源通过profile指纹；历史277文件manifest中WoT.ini/WoT.log可能因用户配置/运行历史变化，不擅自恢复。
+- 原安装4个输入资源通过profile指纹；历史277文件manifest中WoT.ini/WoT.log可能因玩家配置/运行历史变化，不擅自恢复。
 
 ## 后续缺项
 
 1. Git历史衔接已完成，基于原origin/main；迁移成果已普通推送为3df2156，此项完成。
-2. 构建需要显式用户提供覆盖字体；若要只用“干净仓库+原版游戏”（依赖安装后不再额外给字体），需选择可再分发字体、带许可引入并重新QA。现有Windows字体不打包。
+2. 构建需要显式开发者自行提供覆盖字体；若要只用“干净仓库+原版游戏”（依赖安装后不再额外给字体），需选择可再分发字体、带许可引入并重新QA。现有Windows字体不打包。
 3. 19条草稿审稿，正式Release字体/差分审计、玩家安装包与说明、存档/切图/战斗等验收。它们是发布缺项，不是当前PoC重建缺项。
-4. 字幕817空项、完整对白恢复、MOV文字轨/外挂显示、动态布尔与其余UI仍待后续专项；本轮不扩展翻译或修改游戏逻辑。
+4. 字幕817空项、完整对白恢复、MOV文字轨/外挂显示、动态布尔与其余UI仍待后续专项；该阶段不扩展翻译或修改游戏逻辑。
 5. 推荐1080p；1366/1440为主动矩阵，4K作为已知问题，不再适配。
 
 ## 可复用命令
 
 ```powershell
 $Game = "C:/GOG Games/The Wheel of Time"
-$Font = "C:/Windows/Fonts/msyh.ttc" # 用户提供；不代表公开再分发许可
+$Font = "C:/Windows/Fonts/msyh.ttc" # 自行提供；不代表公开再分发许可
 python -m pip install -r requirements.txt
 python build.py test
 python build.py --locale zh-CN --game-dir "$Game" --font "$Font"
 python -m tools.validate.integration --game-dir "$Game" --build-dir build/zh-CN --out build/rollback-test
-# 显式安装到用户指定副本；本次只测试独立fixture
+# 显式安装到指定副本；该次只测试独立fixture
 python install.py apply --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT-copy"
 python install.py restore --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT-copy"
 ```

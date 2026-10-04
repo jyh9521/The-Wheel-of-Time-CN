@@ -1,6 +1,6 @@
 # 第五阶段：实机验收、小字号与Inventory修复
 
-日期：2026-10-03。用户明确允许启动独立游戏副本后执行。原安装277/277文件哈希保持，所有游戏进程已正常关闭。
+日期：2026-10-03。在恢复独立游戏副本的运行测试后执行。原安装277/277文件哈希保持，所有游戏进程已正常关闭。
 
 ## 结论
 - **中文菜单、Inventory标题/正文/斜体引文、教学开场字幕已实机显示。**
@@ -43,7 +43,7 @@
 原WOT.u SHA256：`8e670c5b58110a31367029a9801ad38c89a587aa82d1786dec4451815b7746fb`。
 修改SHA256：`aa6a0f0c5865c830b0616ffbb29b80ad50ea1a87c10b13cf3c827861d44770a1`。
 
-字幕仍使用350字符源长度保留原型，本轮以进程启动时间计第25秒仍显示，第32秒已消失；此前phase3截图的第32秒不等于当前运行的同一语音时刻。**不把源长度保留宣称为逐帧/完整语音时长同步。**
+字幕仍使用350字符源长度保留原型，该阶段以进程启动时间计第25秒仍显示，第32秒已消失；此前phase3截图的第32秒不等于当前运行的同一语音时刻。**不把源长度保留宣称为逐帧/完整语音时长同步。**
 
 ## 实机截图
 ![Inventory中文标题/正文/斜体引文](C:\GOG Games\The Wheel of Time\docs\phase5\INV_CHINESE.png)
@@ -79,6 +79,6 @@ python tools\verify_phase5.py
 
 独立回滚命令：`& "C:\Program Files\Git\bin\bash.exe" -lc 'test -x work/phase5/ROLLBACK.sh && work/phase5/ROLLBACK.sh work/phase5/rollback-test/System'`。输入：独立副本4份修改资源及2份原配置。字面输出：`ROLLBACK PASS: 6 resource/config files byte-identical to backup; exit 0`，退出0。
 
-修改资源保留于modified/System、build/System、runtime/System，原安装未覆盖。后续继续测试中文Reg08路径、更多Inventory对象和长多行小号文本；这些项目通过后再扩大正式翻译覆盖。本轮仅当前主机验证，不代表Windows10/其他系统语言均已认证。
+修改资源保留于modified/System、build/System、runtime/System，原安装未覆盖。后续继续测试中文Reg08路径、更多Inventory对象和长多行小号文本；这些项目通过后再扩大正式翻译覆盖。该阶段仅当前主机验证，不代表Windows10/其他系统语言均已认证。
 
 最终MODIFIED、LOWRES、INV_CHINESE、INV_LOWRES_SETTLED、SUBTITLE记录包含四资源SHA256，验证器要求它们逐一匹配最终交付资源。修改前字库/脚本和早期截图保存在work/phase5/pre-fix与docs/phase5/pre-punctuation。

@@ -7,7 +7,7 @@ Windows 10/11 上执行原版游戏实机 QA；Linux CI 只跑合成测试及译
 不使用 Python `-O`，资源完整性断言必须启用。
 无需 Unreal SDK、编译器、QuickTime 重编码工具或预编译补丁 DLL。
 
-## 用户自行提供的输入
+## 玩家或开发者自行提供的输入
 
 1. 一份未修改的 GOG 安装；4 个必需资源见 `profiles/gog-v68.json`：
    `System/WOT.u`、`WoT.int`、`WoTsubtitles.int`、`Angreal.int`。
@@ -57,7 +57,7 @@ python -m tools.validate.integration --game-dir "D:/GOG Games/The Wheel of Time"
 ```
 
 集成测试在独立四资源副本中执行原始读取、差分安装、逐字节校验、恢复，并保留已构建资源不变。
-不启动游戏。安装器会拒绝用户随后编辑过的资源，避免覆盖修改。
+不启动游戏。安装器会拒绝安装后又编辑过的资源，避免覆盖修改。
 回滚只能证明资源恢复，不能代替真实运行、存档/切图/战斗验收。
 
 ## 文本工作流
@@ -79,7 +79,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 python -m tools.validate.runtime --game-dir "D:/GOG Games/The Wheel of Time" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view menu
 ```
 
-当前 QA 仅1920x1080；`--resolution` 默认1920x1080。1366x768与2560x1440延后由用户在汉化完成后检查。
+当前 QA 仅1920x1080；`--resolution` 默认1920x1080。1366x768与2560x1440延后由我在汉化完成后检查。
 4K仅保留既有测试证据和已知问题，不再进入主动测试/适配矩阵。
 可先离线生成原/改资源对照计划，不会启动游戏：
 
@@ -95,7 +95,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 
 ## 迁移后的独立构建
 
-新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用用户副本，自动备份与严格散列回滚。
+新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用指定的副本，自动备份与严格散列回滚。
 
 旧根目录工具原位保留，legacy命令并非正式构建前置步骤；MOV/map等辅助研究暂不加入生产路径。新目录起初为无.git模板文件树，现已从原GitHub origin/main接回完整历史；迁移修改已普通推送于3df2156。源码独立构建验证与远程发布是两件事。完整迁移与后续缺项见docs/MIGRATION_AUDIT.md。
 
@@ -115,7 +115,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 
 ## 可选字幕来源审计
 
-用户提供的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。
+我下载的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。
 
 ## 可选社区字幕来源：生产构建入口
 
@@ -131,11 +131,11 @@ python build.py --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_S
 
 ## 教程翻译批次（2026-10-03）
 
-Tes_01～Tes_80已全部有中文草稿；本轮追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：本轮未启动游戏，由用户在1080p检查完整教程及分支。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
+Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待我在1080p检查。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
 
 ## 开场缺段修正
 
-Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](docs/TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
+Tes_01原非空文本也会缺段：该阶段仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](docs/TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
 
 
 ## 当前字幕来源策略（2026-10-03）
@@ -148,7 +148,7 @@ Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区
 
 ## 全文首轮构建与覆盖审计（2026-10-04）
 
-当前profile额外固定原版WoTPawns.int与WoTTraps.int的大小/SHA-256；构建仍从用户原版读取，生成资源增至6个。没有固定“4文件”的安装假设，集成验证按实际manifest文件数执行。
+当前profile额外固定原版WoTPawns.int与WoTTraps.int的大小/SHA-256；构建仍从指定的原版读取，生成资源增至6个。没有固定“4文件”的安装假设，集成验证按实际manifest文件数执行。
 
 ```powershell
 python -m tools.validate.text_coverage --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_SUBTITLES" --out build/coverage.json
@@ -170,13 +170,13 @@ BASELINE指此前字库/译文一致、未修改按钮的WOT.u副本；范围测
 
 ## 原生高级选项补翻（2026-10-04）
 
-locale.config.native_ui指向native-ui.json，默认构建接入Preferences子字段导入器；本批新增13个原版hash固定的.int输入，PATCH共19资源，不依赖旧手工文件。省略native_ui配置可关闭该阶段。原生UI使用Windows字体，而非游戏字库；新增译文的字体覆盖会在validate --font中检查。新语言需同步树根标题及所有Caption/Parent；详见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。
+locale.config.native_ui指向native-ui.json，默认构建接入Preferences子字段导入器；该批新增13个原版hash固定的.int输入，PATCH共19资源，不依赖旧手工文件。省略native_ui配置可关闭该阶段。原生UI使用Windows字体，而非游戏字库；新增译文的字体覆盖会在validate --font中检查。新语言需同步树根标题及所有Caption/Parent；详见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。
 
 ## 操作设置动态值适配
 
 默认构建自动应用`profiles/gog-v68.json`的`display_expressions`，仅修改构建副本的菜单显示函数；无额外运行时DLL/EXE补丁，无额外字体或语言依赖。输出仍为19资源PATCH.json，新增MENU_VALUE_DIFF.json记录函数哈希、字节数、VM长度及六个槽位。其他语言复用既有OnText/OffText译文。
 
-可重现编译格式验证（仅编译自编夹具，不启动游戏；需要用户原版UCC及已校验依赖）：
+可重现编译格式验证（仅编译自编夹具，不启动游戏；需要指定的原版UCC及已校验依赖）：
 
 ```powershell
 python -m tools.validate.display_compiler --game-dir GAME --out build/display-proof

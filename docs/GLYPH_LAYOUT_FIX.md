@@ -23,7 +23,7 @@
 - 教程字幕不再贴上边缘；20秒帧中央80%金色像素带由桌面y=0..22移到y=51..72，辅助印证人工检查与24原生像素偏移。桌面3840×2160截图不代表4K测试，所有原生日志均为1920×1080。
 - 五次最终探针正常退出0，68项自动测试通过，独立安装/回滚与同输入重建字节一致。
 - 自动visual_review=pending与人工结论分开记录，不把正常退出当作视觉通过。
-- 原游戏目录只读，旧5126文件审计不变。用户配置不覆盖；副本INI恢复当前原安装配置。
+- 原游戏目录只读，旧5126文件审计不变。玩家配置不覆盖；副本INI恢复当前原安装配置。
 
 结构与边界：[GLYPH_LAYOUT_STRUCTURE.json](GLYPH_LAYOUT_STRUCTURE.json)。
 逐帧SHA/审查范围：[GLYPH_LAYOUT_QA.json](GLYPH_LAYOUT_QA.json)。
@@ -38,4 +38,4 @@ python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime -
 python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view options --sweep
 ```
 
-运行runtime会启动隔离游戏。当前开发只检查1080p，其他分辨率由用户在汉化完成后验收；4K仍是已知问题。固定24px不是响应式布局方案，其他字幕、多人HUD、完整存档/战斗/切图未全覆盖；37条译文仍为draft。
+运行runtime会启动隔离游戏。当前开发只检查1080p，其他分辨率由我在汉化完成后验收；4K仍是已知问题。固定24px不是响应式布局方案，其他字幕、多人HUD、完整存档/战斗/切图未全覆盖；37条译文仍为draft。

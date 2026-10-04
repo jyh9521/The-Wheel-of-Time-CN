@@ -6,14 +6,14 @@
 
 - 本地GOG WoTsubtitles.int：897键，817空，80非空。空项也包含叫喊、受击等非语言声音，不能把817都当成缺失对白。
 - **DialogA.Tes_01～Tes_80全部有英文文本**。Tutorial.wot静态引用47个DialogA语音，Tutorial_Citadel.wot引用17个，均能关联非空英文；另外16个Tes键不能据此说从不触发。
-- 前一轮37条草稿只含Tes_01的中文。本轮保留原37条，新增Tes_02～Tes_13共12条，49条总计；教程中文13/80，其余67条待译。伊莱娜沿用既有Tes_01写法，仍待术语审校。
-- 用户报告后续字幕不出现：**尚未复现与解决**，不能因为原文存在就宣称显示正常。本次检查原安装User.ini的bSubtitles=True，但这不证明用户运行副本使用同一配置。
+- 前一轮37条草稿只含Tes_01的中文。该阶段保留原37条，新增Tes_02～Tes_13共12条，49条总计；教程中文13/80，其余67条待译。伊莱娜沿用既有Tes_01写法，仍待术语审校。
+- 我测试时发现后续字幕不出现：**尚未复现与解决**，不能因为原文存在就宣称显示正常。该次检查原安装User.ini的bSubtitles=True，但这不证明运行副本使用同一配置。
 - 1198个Sound导出与45地图的静态索引：80对应非空字幕、487对应空字幕、631无对应字幕键；330个字幕键未匹配当前Sound导出。计数是资源身份覆盖，不是对白/事件覆盖率，Sound分组按S.Outer.Name关联。
 - 审计读取System的20个.u、Sounds的27个.uax、Maps的45个.wot及字幕表，共93输入，重读SHA不变。地图import仅证明关联，不解析触发实例、顺序、次数、动态加载或实际播放。
 
 ## 上游文本来源
 
-TigerTheGreat于2022-04-17发布[OldUnreal全字幕补丁帖](https://www.oldunreal.com/phpBB3/viewtopic.php?p=100242)，作者说明填充游戏内字幕而不含QuickTime视频。本次网页可读取，但匿名附件不可见，需要维护者取得文件后再作比较。作者宣称全覆盖不是本项目实测结论；帖中也讨论了DialogA语音版本差异，必须核对输入hash。
+TigerTheGreat于2022-04-17发布[OldUnreal全字幕补丁帖](https://www.oldunreal.com/phpBB3/viewtopic.php?p=100242)，作者说明填充游戏内字幕而不含QuickTime视频。该次网页可读取，但匿名附件不可见，需要先取得文件再作比较。作者宣称全覆盖不是本项目实测结论；帖中也讨论了DialogA语音版本差异，必须核对输入hash。
 
 旧研究目录的0_wotsubtitles.int再次比较：897键/80非空，可恢复候选0，**不是完整补全英语版**。其他语种表只能提供比对线索，不能直接伪造英语原文，也未接入生产构建。补丁作者署名与授权未核实前不作为本项目原创资源提交。
 
@@ -21,11 +21,11 @@ TigerTheGreat于2022-04-17发布[OldUnreal全字幕补丁帖](https://www.oldunr
 
 ```powershell
 python -m tools.validate.subtitle_coverage --game-dir "GAME" --strings locales/zh-CN/strings.json --out build/subtitle-coverage/current
-# 可重复传--reference来比较用户自行取得的补全字幕文件
+# 可重复传--reference来比较自行取得的补全字幕文件
 python -m tools.validate.subtitle_coverage --game-dir "GAME" --out build/subtitle-coverage/reference --reference "SUBTITLE_FILE"
 ```
 
-COVERAGE.json包含输入大小/SHA、Sound身份、空/缺键、译文状态、静态地图关联、孤立键。不给静态记录标runtime_verified=True；case-insensitive重复键报错，不静默选最后一条。完整英文仍只在用户本地，不提交资源或原表。
+COVERAGE.json包含输入大小/SHA、Sound身份、空/缺键、译文状态、静态地图关联、孤立键。不给静态记录标runtime_verified=True；case-insensitive重复键报错，不静默选最后一条。完整英文仍只在本地，不提交资源或原表。
 
 ## 接下来按顺序验收
 
@@ -36,13 +36,13 @@ COVERAGE.json包含输入大小/SHA、Sound身份、空/缺键、译文状态、
 5. 视频单列：已有研究17个MOV，其中14个有其他语言文本轨；不经WoTsubtitles.int。英文恢复、中文字幕播放方案和逐片核对待完成，不重编码视频。
 6. 全字幕Release门槛：必需对白无未审校/无缺文/无未验触发；视频单独清单完整。当前Len计时/单槽覆盖仍需专项验证，必要时先证明缺陷再增加最小资源实现。
 
-## 本轮验证边界
+## 该阶段验证边界
 
 72项自动测试通过；49条源hash/编码/占位符/字体校验通过，331字形/字体、6字体、14新增纹理可构建；4资源安装/回滚一致，原版输入不变。新12条未进行实机逐条显示或音频同步验收，不沿用前一轮18帧结果证明新译文。
 
-## 用户提供社区文件后的核对
+## 自行提供社区文件后的核对
 
-本轮收到用户自行下载的WoTsubtitles.int，24,213字节，SHA-256 `d221624a71eae5fdd7c3a2f7ff8cf6541ef4b510f7c34e659ed8890128e7bae1`。结构为883键/325非空；与原版比较，242空键可补、3新增键、17原键省略、3已有文本变化（Tes_01/Tes_15/Tes_51）。这不是可以无条件整表替换的文件。
+我下载的WoTsubtitles.int，24,213字节，SHA-256 `d221624a71eae5fdd7c3a2f7ff8cf6541ef4b510f7c34e659ed8890128e7bae1`。结构为883键/325非空；与原版比较，242空键可补、3新增键、17原键省略、3已有文本变化（Tes_01/Tes_15/Tes_51）。这不是可以无条件整表替换的文件。
 
 语言无关工具采用保守合并：仅填原空键，新增键须匹配本地Sound对象；原有非空文本始终保留，省略键不删除。245项全部匹配Sound，合并副本900键/325非空（575空），原80条非空保持，现有49条中文和源hash不变。其余空键/无键Sound仍需区分音效与对白；不宣称所有1198个Sound都是语音或325非空即全覆盖。
 
@@ -55,13 +55,13 @@ python -m tools.import.subtitle_source --original "GAME/System/WoTsubtitles.int"
 
 已验证74项自动测试、93输入只读SHA与独立副本回滚；合并副本保留在build/community-subtitles/merged，原游戏和下载文件不变。**目前是英语恢复研究副本，不是中文全字幕补丁，也尚未接入生产build。** 后续需以外部参数配置带hash的来源层，在原版版本校验之后合并、翻译、校验、生成最终差分；明确处理新增键的源预检及长度来源，不用直接替换profile原版hash绕过检查。实机显示与同步只在1080p逐项验收。
 
-## 来源层正式接入（本轮）
+## 来源层正式接入（该阶段）
 
 新增`build.py --subtitle-source PATH`，由profiles/subtitle-source.json固定社区输入大小/SHA及47个Sound承载包的大小/SHA。仍先验证原版四资源，随后在自动清理的独立临时目录复制.int、保守合并，再验证译文源hash/长度/控制符；最终差分始终以未修改原版为基线，不需要覆盖游戏目录或更改原版profile。
 
 locale可配置subtitle_rows（本项目subtitles.json）；245条来源译文与基础49条分开保存。首批12条战斗短句为draft，233条待译：启用来源时294个条目、61条已有译文；默认构建仍只处理基础49条。未译来源文本保留恢复英语，不能把它描述成完整中文。所有原有49条保持不变。当前只绑定已审计的一份WoT社区来源，别的版本必须先添加/审核manifest，不静默接受。
 
-extract、validate、build共用同一来源准备流程。extract的完整原文/CSV仅写用户本地build；仓库只存译文、身份、原文hash/长度/控制符。构建报告subtitle_source.production_build_integrated=true表示已接入产物，runtime_verified仍为false。
+extract、validate、build共用同一来源准备流程。extract的完整原文/CSV仅写本地build；仓库只存译文、身份、原文hash/长度/控制符。构建报告subtitle_source.production_build_integrated=true表示已接入产物，runtime_verified仍为false。
 
 已验证82项合成测试；默认构建与上轮49条四资源字节相同；带来源的两次独立构建四资源相同；347字形/字体、6字体、15新增纹理；安装和独立回滚均一致。strict保持失败，不能把233条未译/草稿描述为完成。
 
@@ -71,10 +71,10 @@ extract、validate、build共用同一来源准备流程。extract的完整原�
 
 ## 教程翻译批次（2026-10-03）
 
-Tes_01～Tes_80已全部有中文草稿；本轮追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：本轮未启动游戏，由用户在1080p检查完整教程及分支。测试方法和80键清单见[TUTORIAL_QA.md](TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
+Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待我在1080p检查。测试方法和80键清单见[TUTORIAL_QA.md](TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
 
 ## 开场缺段修正
 
-Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
+Tes_01原非空文本也会缺段：该阶段仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
 
 现行策略改为社区优先完整并集，见 [COMMUNITY_SOURCE_POLICY](COMMUNITY_SOURCE_POLICY.md)。此前保守合并/冲突保留描述已被取代。

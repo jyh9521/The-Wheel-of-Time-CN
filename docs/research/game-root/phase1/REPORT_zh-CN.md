@@ -60,9 +60,9 @@
 
 本地源文本确认 `Engine.Menu` 的 MenuList、HelpMessage、MenuTitle 等带 `localized`；`MessageTrigger.Messages[16]`、门提示和资料页字段也有此声明。`Core.Object` 包含 Localize 和 GetLanguage。
 
-加载路线：选定语言文件覆盖对应 localized 属性；没有相应翻译则按标准引擎机制回退国际英语/包内默认值。标准机制的定义可参考 [OldUnreal localization 文档](https://www.oldunreal.com/wiki/index.php?title=Localization)。本次额外实测了新的 `zht` 扩展，不仅依据文档。
+加载路线：选定语言文件覆盖对应 localized 属性；没有相应翻译则按标准引擎机制回退国际英语/包内默认值。标准机制的定义可参考 [OldUnreal localization 文档](https://www.oldunreal.com/wiki/index.php?title=Localization)。该次额外实测了新的 `zht` 扩展，不仅依据文档。
 
-**推荐发布形态**：创建 `WoT.zht`、`Angreal.zht`、`WoTPawns.zht`、`WoTTraps.zht`、`WoTsubtitles.zht`；配置 `Language=zht`。这是本次验证可用的自选语言代号，不代表游戏内置了简体中文语言包。最终还需验证所有包及地图实例的回退覆盖。
+**推荐发布形态**：创建 `WoT.zht`、`Angreal.zht`、`WoTPawns.zht`、`WoTTraps.zht`、`WoTsubtitles.zht`；配置 `Language=zht`。这是该次验证可用的自选语言代号，不代表游戏内置了简体中文语言包。最终还需验证所有包及地图实例的回退覆盖。
 
 地图本地化宜生成对应 `Mission_05c.zht`、`Tutorial.zht` 等资源，保持地图二进制不动。实例节名/数组项应由本版本编辑器 DumpInt 或经过验证的导出工具生成，不直接凭猜测写映射。本地 UCC help 没有 DumpInt commandlet；不要把后期 Unreal 227/UT469 的命令照搬。已验证本地 `ucc batchexport` 可只读导出类，得到 1,168 个 `.uc` 文件；Core/Engine 部分类导出报错，包中的 ScriptText 仍可只读抽取。
 
@@ -86,7 +86,7 @@ Localize(string(PackageName), string(S.Name), string(SubtitlesPackageName), true
 
 例如 `[DialogA] Tes_01=...` 对应 `DialogA.Tes_01`，而非 `DialogA.uax` 文件整体。一条 Sound 对象可以多次触发。此路径排除以 WOT.、Angreal. 开头的声音，且单个 SubtitleMessage 槽可被后续声音覆盖；不能据此承诺所有同时说话/所有发声路径均可完整呈现。
 
-原始 User.ini 本来已有 `bSubtitles=True`，本次无需改安装内字幕开关。
+原始 User.ini 本来已有 `bSubtitles=True`，该次无需改安装内字幕开关。
 
 ### 本地字幕覆盖
 
@@ -150,7 +150,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 - **内部字符串：16 位 TCHAR/FString，实际渲染逐 UTF-16/UCS-2 单元索引。** 本阶段未验证补充平面、代理对或现代复杂文本布局。
 - Core.dll `appLoadFileToString` RVA `0x49700` 明确识别 FF FE / FE FF BOM，加载 UTF-16 LE/BE。没有 BOM 的分支逐字节零扩展至 16 位；该函数所见分支不是 GBK/CP932 多字节解码，也不是 UTF-8 解码。
 - 所以避免保存 UTF-8 中文无 BOM、UTF-8 BOM 或 GBK 后直接期待正确显示。发布候选使用 **UTF-16 LE BOM**。
-- 当前主机 Windows build 26300，ACP 932。本次没有改变非 Unicode 系统区域设置，UTF-16 不依赖把主机切成中文代码页。
+- 当前主机 Windows build 26300，ACP 932。该次没有改变非 Unicode 系统区域设置，UTF-16 不依赖把主机切成中文代码页。
 - `.u`/地图中的 FString 属序列化字符串，不能直接当 `.int` 文本编码原地替换。
 
 [编码检测清单](C:/GOG Games/The Wheel of Time/work/phase1/export/encodings.json) · [本版 Core 文件加载分支](C:/GOG Games/The Wheel of Time/docs/phase1/Core_load_string_full.txt)
@@ -161,7 +161,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 
 修改对象仅为工作副本的 `[menuSinglePlayer] MenuList[2]`，从 New Game 改为新游戏；整份 .int 因编码需要转为 UTF-16 LE BOM，**逻辑正文仅改 1 项**。
 
-最终三次测试均使用完整隔离游戏副本、原版渲染配置，通过 `.\WoT.exe Entry -nosound` 启动，Escape → Enter 进入单人菜单，截图后 WM_CLOSE 正常退出。`-nosound` 仅用于菜单试验，本次不验证语音播放。
+最终三次测试均使用完整隔离游戏副本、原版渲染配置，通过 `.\WoT.exe Entry -nosound` 启动，Escape → Enter 进入单人菜单，截图后 WM_CLOSE 正常退出。`-nosound` 仅用于菜单试验，该次不验证语音播放。
 
 | 测试 | 画面观察 | 进程结果 |
 |---|---|---|
@@ -186,7 +186,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 - 所有 MOV 剧情内容均独立于 WoTsubtitles 查表链。语音片段名字 Int_* 的存在不能证明整段视频对白走游戏内字幕。
 - 逐视频各取一个纯视频画面检查：抽样画面未见对白硬字幕；品牌 Logo/地图地名则有画面内图形文字。抽样不等于整段视频所有帧都无硬字幕。
 - WinDrv.dll 内的 PlayMovie 路径含 QuickTime.qts / theQuickTimeDispatcher。现阶段没有确认它自动发现外置 SRT；有内嵌 text 轨也不等于该播放器可正确显示中文。这条路径的字体和编码要单独验证。
-- 无需立即烧录字幕或重编码视频；优先研究已有文本轨的启用、文本格式和无损 remux，保证音视频数据不变。本轮未改 MOV。
+- 无需立即烧录字幕或重编码视频；优先研究已有文本轨的启用、文本格式和无损 remux，保证音视频数据不变。该阶段未改 MOV。
 - 初试 ffmpeg 转 SRT 出现旧字幕非 UTF-8 解码错误和样式异常，即使部分命令退出 0 也有缺句风险。最终以直接读样本的原始 JSON/TXT 为依据，初试 SRT 不作完整字幕交付。
 
 [视频流清单](C:/GOG Games/The Wheel of Time/docs/phase1/movies.json) · [已有视频文本索引](C:/GOG Games/The Wheel of Time/docs/phase1/movie_text_summary.json) · [抽样画面](C:/GOG Games/The Wheel of Time/docs/phase1/movie_frames_contact.png)
@@ -238,7 +238,7 @@ python tools\test_phase1.py
 
 后续需要开发：中文 Font 页/图集构建与资源级打包器；map localization 导出与实例覆盖验证；完整字幕事件/默认 SoundTable 覆盖检查；QuickTime 文本轨编解码及不改音视频的补丁器；最终差分包 manifest、语言启用/卸载工具。当前不提前实现这些修改器。
 
-### 本次修改记录与四件套
+### 该次修改记录与四件套
 
 | 原文件/对象 | 修改文件 | 原因/方法 | 可逆性 |
 |---|---|---|---|

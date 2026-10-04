@@ -32,7 +32,7 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 设置 sync_group 可要求关联条目译文一致；未知关联需先调查，不自动猜。
 
 字宽由生成矩形宽度决定，正体为配置像素尺寸，斜体包含剪切余量，非 TTF proportional advance。
-后续只在1080p检查菜单帮助、Inventory与字幕折行；其他分辨率延后由用户验收；
+后续只在1080p检查菜单帮助、Inventory与字幕折行；其他分辨率延后由我验收；
 长句不能只通过字符数判断不截断。4K不再作为当前验收目标。
 原版 UI 使用固定像素字体；4K 变小属于需记录的可读性问题，不是编码失败。
 
@@ -40,7 +40,7 @@ BMP UTF-16 对本实现一个字形对应一个代码单元；非 BMP 与代理�
 
 源字幕计时按 Len；配置可保留原文长度，由构建器生成引号内尾 ASCII 空格。
 **译文文件不要手工补空格**；此方法只避免短译文明显缩短，不是精准音频同步。
-当前49条为技术PoC草稿；此前37条含19条起始文本、Controls其余8项标签和10条帮助，本轮新增12条教程字幕。人名、地名、法器/技能名及所有专有名词严格以根目录[GLOSSARY.md](GLOSSARY.md)为唯一术语基准，翻译、校对和发布说明开始前必须读取。旧glossary.json仅保留兼容指针，不再维护独立词库。未收录专名先查项目资料和中文Wiki，未确认则统一记入GLOSSARY.md的待确认清单；语境冲突先报告，不覆盖已定词条。
+当前49条为技术PoC草稿；此前37条含19条起始文本、Controls其余8项标签和10条帮助，该阶段新增12条教程字幕。人名、地名、法器/技能名及所有专有名词严格以根目录[GLOSSARY.md](GLOSSARY.md)为唯一术语基准，翻译、校对和发布说明开始前必须读取。旧glossary.json仅保留兼容指针，不再维护独立词库。未收录专名先查项目资料和中文Wiki，未确认则统一记入GLOSSARY.md的待确认清单；语境冲突先报告，不覆盖已定词条。
 没有英文原文的空字幕不能根据 key 编造对白，不自动转录全游戏。
 
 ## 添加其他语言
@@ -71,19 +71,19 @@ python build.py --locale ja-JP --game-dir "D:/GOG Games/The Wheel of Time" --fon
 
 ## 教程字幕增补
 
-2026-10-03保留既有37条并新增Tes_02～Tes_13，当前49条draft；教程中文13/80。英语来源为用户原安装，中文时序与触发仍待1080p验收。参见docs/SUBTITLE_COVERAGE.md；全字幕覆盖是独立发布门槛，不凭中文显示PoC宣布完成。
+2026-10-03保留既有37条并新增Tes_02～Tes_13，当前49条draft；教程中文13/80。英语来源为本地原安装，中文时序与触发仍待1080p验收。参见docs/SUBTITLE_COVERAGE.md；全字幕覆盖是独立发布门槛，不凭中文显示PoC宣布完成。
 
 ## 外部来源字幕译文
 
-新增locales/<locale>/subtitles.json，由config.subtitle_rows指定；只有启用--subtitle-source时加载。source_layer绑定已核验manifest.id；source_sha256、source_length及tokens来自保守合并后的英文，不能改成原版空字符串hash，也不能用中文文本充当英文长度。当前245条：12条draft，233条pending；基础strings.json的49条完整保留。补译后用同一--subtitle-source运行validate --font，完整验收前strict仍应失败。术语“暗影生物”等本轮短句为候选翻译，需结合剧情与全局术语审校。
+新增locales/<locale>/subtitles.json，由config.subtitle_rows指定；只有启用--subtitle-source时加载。source_layer绑定已核验manifest.id；source_sha256、source_length及tokens来自保守合并后的英文，不能改成原版空字符串hash，也不能用中文文本充当英文长度。当前245条：12条draft，233条pending；基础strings.json的49条完整保留。补译后用同一--subtitle-source运行validate --font，完整验收前strict仍应失败。术语“暗影生物”等该阶段短句为候选翻译，需结合剧情与全局术语审校。
 
 ## 教程翻译批次（2026-10-03）
 
-Tes_01～Tes_80已全部有中文草稿；本轮追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：本轮未启动游戏，由用户在1080p检查完整教程及分支。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
+Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待我在1080p检查。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
 
 ## 开场缺段修正
 
-Tes_01原非空文本也会缺段：本轮仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](docs/TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
+Tes_01原非空文本也会缺段：该阶段仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](docs/TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
 
 
 ## 当前字幕来源策略（2026-10-03）
@@ -116,13 +116,13 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 
 已验证的调用路径：Legend.WOTInventory将Description与Quote声明为localized string；WOT.InventoryInfoWindow.Draw把两字段直接交给C.DrawText，Quote另设F_WOTIta14字体。Engine.Canvas.DrawText为native(465)，脚本层未对这三段执行名称/资源查找或变量替换。该证据支持将forget、grunt及The flows just... vanished.认定为玩家可读正文，而非资源ID。native层的@最终显示/引号处理仍未作实机确认，不将具体引号行为写成已验证事实。
 
-本批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
+该批仅处理AngrealInvDistantEye.Description、AngrealInvMinion.Description、AngrealInvAbsorb.Quote。逐行literal_token_translations声明审核过的source/translation带@片段；markup_delimiter_count保留整行@数量。源文件source_sha256、source_length、tokens保持原值；源文预检核验注释对应真实源文及分隔符数量，翻译校验把声明片段还原后比较全部控制码数量/顺序。正文与边界均保留，其他未知@片段不获自动豁免。禁止用这项机制放行%s、{0}、转义等真正控制码，或批量翻译未知@标记。相关负例测试见tests/test_literal_spans.py。
 
 不要全局删除@保护，也不要把中文重新计算为source token/hash。之前三段英文原样保留属于历史保守处理，现由精确条目审核取代。正式字形、换行及物品信息界面显示仍由1080P实机QA确认。
 
 ## 图片按钮标签
 
-只翻译维护者选定的Load/Play/Roam/Save按钮，分别为载入/游玩/漫游/保存；其他图像文字维持原样。八个对象身份不翻译，I/M配套纹理保持相同译文。标签布局在locales/<locale>/texture-labels.json中配置；当前64×64贴图的文字面板为[10,19,54,40]，字号16，超出面板则构建报错，不截断文字。新增语言可复用栅格化和P8回填工具，不把CP936或中文字形写死在通用代码中。不要通过扩大贴图或修改共享调色板绕过限制；另行研究后再改动。专有名词仍以GLOSSARY.md为准。
+只翻译我选定的Load/Play/Roam/Save按钮，分别为载入/游玩/漫游/保存；其他图像文字维持原样。八个对象身份不翻译，I/M配套纹理保持相同译文。标签布局在locales/<locale>/texture-labels.json中配置；当前64×64贴图的文字面板为[10,19,54,40]，字号16，超出面板则构建报错，不截断文字。新增语言可复用栅格化和P8回填工具，不把CP936或中文字形写死在通用代码中。不要通过扩大贴图或修改共享调色板绕过限制；另行研究后再改动。专有名词仍以GLOSSARY.md为准。
 
 ## 原生高级选项补翻（2026-10-04）
 
@@ -136,8 +136,12 @@ python -m tools.validate.terminology --glossary GLOSSARY.md --target-column 中�
 
 native-properties.json的key是原属性/类别标识，只翻译value。values表只用于绘制的局部缓冲，不替换配置或下拉编辑器的机器值。未知标识原样保留，补充key须先确认对应属性含义。
 
-credits.json以slot和原文SHA关联默认数组，保持原204条順序及` - `右侧原贡献者姓名、@标记、空白行。新增署名使用独立末尾行，不冒充原作者。专名按GLOSSARY.md；Poleine与Kyrin现已由维护者确认，统一读取GLOSSARY.md的波莱恩与凯琳；不得另造同义音译。
+credits.json以slot和原文SHA关联默认数组，保持原204条順序及` - `右侧原贡献者姓名、@标记、空白行。新增署名使用独立末尾行，不冒充原作者。专名按GLOSSARY.md；Poleine与Kyrin现已由我确认，统一读取GLOSSARY.md的波莱恩与凯琳；不得另造同义音译。
 
 ## 动态键名与教程提示
 
 key-names.json的键是机器名，只改显示值，不改KEYNAME/KEYBINDING/SET Input命令。字母、数字、F键帽保留；Shift键不是能力瞬移。tutorial-prompts.json用actor/slot/source SHA关联原地图，覆盖所有实际可输出提示，保留F2/F5/F6/数字及原有前缀，不启用//注释对白。35条提示仍为draft，严格校验不得冒充审校通过。FMV导出原文暂留build，优先核对英文音轨而非把外语轨误当英文。
+
+## 项目文档的口吻
+
+项目说明、开发记录和发布说明以我（伯翎飞云）的作者口吻撰写。个人选择和实机测试写“我决定”“我测试时发现”，工具行为和技术事实直接说明，不写成对项目作者的第三人称汇报。面向玩家、开发者的操作说明保留读者视角；第三方贡献、引用和署名如实保留。调整措辞不改变历史数据，也不把离线检查写成实机通过。
