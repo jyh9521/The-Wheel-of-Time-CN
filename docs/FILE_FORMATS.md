@@ -105,3 +105,9 @@ v68带RF_HasStack的actor属性前缀：Node compact、StateNode compact、Probe
 ## 设置显示/原始值的双向映射
 
 我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。
+## Legacy MOV 单样本文字实验
+
+我确认 Intro.mov 文字轨采用 stsz 显式大小、stco 32 位偏移、stsc 每 chunk 一个样本。
+最小工具在尾部追加 mdat，只更新一个样本的大小/偏移和字体名/启用位，保留原时间表。
+文本长度字段以字节为单位；旧 styl/ftab/orig 扩展不直接沿用于新正文。
+完整字段、限制、原版哈希和重现命令见 [FMV 研究](FMV_SUBTITLES.md)。
