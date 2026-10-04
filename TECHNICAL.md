@@ -205,3 +205,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 动态提示与视频轨复核
 
 教程MessageTrigger实例字符串可通过显示入口精确匹配翻译而不改地图；键名只包裹DrawValues三个读取操作数，VM与6个分支同步更新，改键/保存函数不变。详见[UI_TEXT_FOLLOWUP](docs/UI_TEXT_FOLLOWUP.md)。FMV原版含28个独立text轨，标签eng不代表正文英语；QuickTime路径、已证实/待验证边界见[FMV_SUBTITLES](docs/FMV_SUBTITLES.md)。
+
+## 设置编辑值与循环关卡补漏
+
+我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。

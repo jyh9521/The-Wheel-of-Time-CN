@@ -54,7 +54,7 @@ class DisplayExpressionTests(unittest.TestCase):
     def test_profile_scoped_to_six_controls(self):
         profile = json.loads(Path('profiles/gog-v68.json').read_text('utf8'))
         specs = profile['display_expressions']
-        self.assertEqual(len(specs), 2)
+        self.assertEqual(len(specs), 3)
         self.assertEqual(specs[0]['export'], 'menuOptions.DrawValues')
         self.assertEqual(specs[0]['helper'], 'GetOnOffStr')
         self.assertEqual([e['menu_slot'] for e in specs[0]['edits']], [2, 4, 5, 6, 9, 11])

@@ -4,7 +4,7 @@ import json
 import struct
 from pathlib import Path
 import pefile
-from unicorn import Uc, UC_ARCH_X86, UC_MODE_32
+from unicorn import Uc, UC_ARCH_X86, UC_MODE_32, UC_HOOK_CODE
 from unicorn.x86_const import (UC_X86_REG_EAX, UC_X86_REG_EBX, UC_X86_REG_ECX,
                               UC_X86_REG_EDX, UC_X86_REG_ESI, UC_X86_REG_EDI,
                               UC_X86_REG_EBP, UC_X86_REG_ESP)
@@ -80,6 +80,39 @@ def verify(path, data, report, spec):
             assert uc.reg_read(UC_X86_REG_ESI) == source
             assert uc.reg_read(UC_X86_REG_ESP) == stack - 4
             assertions += 1
+        # Execute every copied combo adapter through a simulated original
+        # thiscall method. Verify UTF-16 arguments, cleanup and raw write-back.
+        for site in report.get('editor_sites', []):
+            samples = dict(data['values'], CustomServer='CustomServer')
+            for raw, display in samples.items():
+                reset()
+                table, callee = 0x30002000, 0x3000f100
+                observed = []
+                kind = site['kind']
+                inp = display if kind == 'combo_save' else raw
+                uc.mem_write(source, (inp + '\0').encode('utf-16le'))
+                uc.mem_write(callee, b'\xc2\x04\x00')
+                slot = 0x80 if kind == 'combo_save' else (0xb8 if kind == 'combo_add' else 0xcc)
+                uc.mem_write(table + slot, struct.pack('<I', callee))
+                uc.reg_write(UC_X86_REG_EDX, table)
+                uc.reg_write(UC_X86_REG_ESI, 0x4567)
+                uc.reg_write(UC_X86_REG_EAX, source)
+                if kind != 'combo_save':
+                    uc.mem_write(stack, struct.pack('<I', source))
+                def capture(cpu, address, size, unused):
+                    if address == callee:
+                        arg = struct.unpack('<I', cpu.mem_read(cpu.reg_read(UC_X86_REG_ESP) + 4, 4))[0]
+                        observed.append((text_at(cpu, arg), cpu.reg_read(UC_X86_REG_ECX)))
+                hook = uc.hook_add(UC_HOOK_CODE, capture)
+                uc.emu_start(base + site['rva'], base + site['rva'] + len(bytes.fromhex(site['expected_hex'])), count=100000)
+                uc.hook_del(hook)
+                assert observed == [(raw if kind == 'combo_save' else display,
+                                     0x4567 if kind == 'combo_save' else preserved[UC_X86_REG_ECX])]
+                assert text_at(uc, source) == inp
+                assert uc.reg_read(UC_X86_REG_ESP) == stack + (0 if kind == 'combo_save' else 4)
+                assert uc.reg_read(UC_X86_REG_EDX) == table
+                assert uc.reg_read(UC_X86_REG_ESI) == 0x4567
+                assertions += 1
         for width in (128, 320, 500):
             reset()
             uc.mem_write(source + 0xc4, struct.pack('<i', width))

@@ -201,3 +201,7 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 ## 动态文本补漏与FMV提取（2026-10-04）
 
 基础构建新增键名表和6条进度文字，字库覆盖35条教程提示。提示须另行重建LocaleRuntime并使用现有Game+Class入口；源地图只读且指纹核验。详见[UI_TEXT_FOLLOWUP](docs/UI_TEXT_FOLLOWUP.md)。FMV的ffprobe参数化只读提取见[FMV_SUBTITLES](docs/FMV_SUBTITLES.md)，暂不安装视频字幕或重编码。
+
+## 设置补漏构建与验证
+
+我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。

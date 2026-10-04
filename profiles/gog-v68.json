@@ -175,6 +175,31 @@
           "vm_delta": 40
         }
       ]
+    },
+    {
+      "resource": "System/WOT.u",
+      "export": "menuStartArenaServer.UpdateValues",
+      "export_sha256": "77329b24b6dd081b6f3abbf77471df502633dd3a850ebbc9bd598fabd289257f",
+      "script_size": 406,
+      "helper": "GetOnOffStr",
+      "jumps": [
+        {
+          "offset": 32,
+          "target": 85
+        },
+        {
+          "offset": 81,
+          "target": 98
+        }
+      ],
+      "edits": [
+        {
+          "menu_slot": 4,
+          "offset": 135,
+          "argument_hex": "192e1901060600042d015d04",
+          "vm_start": 165
+        }
+      ]
     }
   ],
   "credits": {
@@ -216,7 +241,49 @@
       104608,
       120016
     ],
-    "divider_rva": 128416
+    "divider_rva": 128416,
+    "editor_sites": [
+      {
+        "kind": "combo_add",
+        "rva": 106429,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_add",
+        "rva": 106446,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_add",
+        "rva": 106620,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_add",
+        "rva": 106724,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_add",
+        "rva": 106763,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_add",
+        "rva": 107546,
+        "expected_hex": "ff92b8000000"
+      },
+      {
+        "kind": "combo_find",
+        "rva": 117300,
+        "expected_hex": "ff92cc000000"
+      },
+      {
+        "kind": "combo_save",
+        "rva": 116561,
+        "expected_hex": "508bceff9280000000"
+      }
+    ]
   },
   "key_display": {
     "export": "menuKeyboard.DrawValues",

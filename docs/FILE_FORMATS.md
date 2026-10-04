@@ -101,3 +101,7 @@ Window.dll（x86 PE）的.locale段含自编查表代码与UTF-16键/显示串�
 ## MessageTrigger实例与QuickTime文本样本
 
 v68带RF_HasStack的actor属性前缀：Node compact、StateNode compact、ProbeMask u64、LatentAction i32、Node非零时CodeOffset compact；其后属性流。Messages的StrProperty保留array slot与FString正ANSI/负UTF16长度。只读实现tools/extract/map_messages.py。QuickTime legacy text sample为大端u16文字字节长度+正文+可选扩展，不把尾部样式翻译成正文；时轴/包偏移/长度保留，当前没有实现MOV重建器。
+
+## 设置显示/原始值的双向映射
+
+我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。

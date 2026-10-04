@@ -94,3 +94,7 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 ## 动态界面与QuickTime
 
 地图真实扩展名为.wot，不能只扫描.unr。v68 actor状态帧的ProbeMask为u64、LatentAction为i32，不猜额外net-index，否则属性错位。重复Messages/EventList槽必须逐条保留，字典覆盖会漏槽。脚本扩长同时重定位VM跳转，compact序列化长度不等于VM指针/FName长度。QuickTime流标eng不代表文字语言；Mission_05的text流codec_name缺失也不代表没有字幕。
+
+## 下拉列表翻译不能只改添加项
+
+我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。

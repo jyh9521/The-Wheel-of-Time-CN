@@ -67,6 +67,26 @@ def lookup(mapping, address):
     return bytes(code + table + strings)
 
 
+
+def editor_stub(kind, address, lookup_address, resume):
+    """Adapt only profiled FPropertyItem combo call sites, never shared controls."""
+    if kind in ('combo_add', 'combo_find'):
+        slot = '0xb8' if kind == 'combo_add' else '0xcc'
+        return assemble(f'mov eax, [esp]; call {lookup_address}; mov [esp], eax; '
+                        f'call dword ptr [edx + {slot}]; jmp {resume};', address)
+    if kind == 'combo_save':
+        return assemble(f'call {lookup_address}; push eax; mov ecx, esi; '
+                        f'call dword ptr [edx + 0x80]; jmp {resume};', address)
+    raise ValueError('Unknown native editor adaptation')
+
+
+def reverse_values(values):
+    if len(set(values.values())) != len(values):
+        raise ValueError('Native editor translations must be reversible and unique')
+    if set(values) & set(values.values()):
+        raise ValueError('Native editor raw/display labels overlap')
+    return {value: key for key, value in values.items()}
+
 def build(original, output, data_path, spec, report_path):
     source = original.read_bytes()
     if digest(source) != spec['sha256'] or len(source) != spec['size']:
@@ -90,6 +110,10 @@ def build(original, output, data_path, spec, report_path):
         payload += b'\0'
     value_lookup = rva + len(payload)
     payload += lookup(config['values'], base + value_lookup)
+    while len(payload) % 16:
+        payload += b'\0'
+    reverse_lookup = rva + len(payload)
+    payload += lookup(reverse_values(config['values']), base + reverse_lookup)
     modified = bytearray(source)
     edits = []
 
@@ -127,6 +151,21 @@ def build(original, output, data_path, spec, report_path):
         jmp {base + at + 5};
     ''', base + stub)
     patch(at, bytes.fromhex(spec['value_draw_expected']), assemble(f'jmp {base + stub}', base + at))
+    # Translate list entries and FindString input together, then reverse only
+    # the selected combo text at its SetValue call site. Free-form edit boxes,
+    # shared WComboBox methods and SetValue itself remain untouched.
+    editor_reports = []
+    for site in spec.get('editor_sites', []):
+        while len(payload) % 16:
+            payload += b'\0'
+        at = site['rva']
+        stub = rva + len(payload)
+        expected = bytes.fromhex(site['expected_hex'])
+        selected_lookup = reverse_lookup if site['kind'] == 'combo_save' else value_lookup
+        payload += editor_stub(site['kind'], base + stub, base + selected_lookup,
+                               base + at + len(expected))
+        patch(at, expected, assemble(f'jmp {base + stub}', base + at) + b'\x90' * (len(expected) - 5))
+        editor_reports.append(dict(site, stub_rva=stub, lookup_rva=selected_lookup))
     for at in spec['height_rvas']:
         patch(at, bytes.fromhex('b810000000'), b'\xb8' + struct.pack('<i', config['row_height']))
     while len(payload) % 16:
@@ -169,9 +208,10 @@ def build(original, output, data_path, spec, report_path):
     report = dict(original_sha256=digest(source), modified_sha256=digest(bytes(modified)),
                   edits=edits, label_lookup_rva=label_lookup, value_lookup_rva=value_lookup,
                   labels=len(config['labels']), value_labels=len(config['values']),
+                  reverse_lookup_rva=reverse_lookup, editor_sites=editor_reports,
                   row_height=config['row_height'], minimum_divider_width=config['minimum_divider_width'],
                   config_and_setter_code_unchanged=True, position_independent=True, in_game_verified=False)
     report['value_labels'] = len(config['values'])
     Path(report_path).write_text(json.dumps(report, indent=2) + '\n', 'utf8')
-    print(f'NATIVE DISPLAY PASS: {len(config["labels"])} labels; {len(config["values"])} display values; row height {config["row_height"]}; minimum divider {config["minimum_divider_width"]}; import table unchanged')
+    print(f'NATIVE DISPLAY PASS: {len(config["labels"])} labels; {len(config["values"])} display values; {len(editor_reports)} editor sites; row height {config["row_height"]}; minimum divider {config["minimum_divider_width"]}; import table unchanged')
     return report

@@ -1,6 +1,6 @@
 """Guarded UE1 display-expression adapter; never changes stored boolean values.
 
-Only profiled, straight-line functions are supported. Offsets and argument spans
+Only profiled functions and explicitly checked VM branches are supported. Offsets and argument spans
 are version-specific data, not a general-purpose bytecode disassembler.
 """
 
@@ -49,6 +49,14 @@ def replace_casts(original, spec, helper_index):
             raise ValueError("Overlapping display expressions")
         occupied |= positions
     result = bytearray(original)
+    if 'jumps' in spec:
+        from tools.validate.menu_values import scan_vm
+        _, actual, _ = scan_vm(original)
+        if actual != [(j['offset'], j['target']) for j in spec['jumps']]:
+            raise ValueError('Display branch profile mismatch')
+        for j in spec['jumps']:
+            target = j['target'] + sum(e.get('vm_delta', 5) for e in spec['edits'] if e['vm_start'] < j['target'])
+            struct.pack_into('<H', result, j['offset'], target)
     for edit in sorted(spec['edits'], key=lambda e: e['offset'], reverse=True):
         offset = edit['offset']
         if 'expected_hex' in edit:
@@ -65,6 +73,8 @@ def replace_casts(original, spec, helper_index):
     # The bundled UCC proof measures +5 VM bytes per wrapped cast.
     struct.pack_into('<i', result, size_offset,
                      size + sum(e.get('vm_delta', 5) for e in spec['edits']))
+    if 'jumps' in spec:
+        scan_vm(bytes(result))
     return bytes(result)
 
 
