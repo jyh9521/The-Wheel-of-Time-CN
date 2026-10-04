@@ -59,6 +59,12 @@ def main():
             raise ValueError("Texture label configuration path escapes directory")
         config["texture_labels_data"] = json.loads(data_path.read_text("utf8"))
         profile["texture_labels"] = json.loads(labels_profile.read_text("utf8"))
+    for field in ('credits', 'native_properties'):
+        if config.get(field):
+            data_path = (locale / config[field]).resolve()
+            if data_path.parent != locale:
+                raise ValueError('Locale display data path escapes directory')
+            config[field + '_data'] = json.loads(data_path.read_text('utf8'))
     rows = json.loads((locale / "strings.json").read_text("utf8"))
     if config.get("native_ui"):
         native_path = (locale / config["native_ui"]).resolve()

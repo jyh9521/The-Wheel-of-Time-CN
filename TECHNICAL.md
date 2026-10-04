@@ -77,7 +77,7 @@ Texture lazy-end 是绝对文件偏移，必须与像素数组一起计算；仅
 
 ### 6. EXE / DLL / hooks
 
-**无 EXE/DLL 修改位置，无注入、无 hook。** 原生反汇编研究用于确认机制，不是发布补丁偏移。
+早期资源阶段无 EXE/DLL 修改；当前新增 Window.dll 的版本守卫显示适配，见本文末节。仍无 EXE 修改或进程注入。此前只读反汇编记录作为历史证据保留。
 当资源方案已可行时不引入引擎补丁。src/runtime 当前只是职责边界说明，不虚构运行时代码。
 差分安装修改四个资源并可回滚，原程序、地图、存档格式、画质和GOG启动器不变。
 
@@ -191,3 +191,13 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 原函数SHA-256、表达式偏移及操作数放在`profiles/gog-v68.json`，由`src/patch/display_expressions.py`匹配后追加函数体并重建导出表。包版本v68、名字表、导入表、对象数量与GUID保持不变；全包其他导出体逐一比较。未知版本或重复应用会报错，不直接修改EXE/DLL/地图。
 
 最小自编UCC夹具`tests/fixtures/LocaleDisplayProbe.uc`确认虚函数调用与bool操作数的序列化，以及每个替换增加5字节VM长度。DrawValues序列化函数体240→258字节，ScriptSize 293→323；二者不同是紧凑索引在加载时展开造成的。UCC加载重建包并编译夹具通过。**待验证（游戏内）**：1080p六项开关显示、切换及退出后持久化；没有自动启动游戏。
+
+## 设置深层属性与制作人员页（2026-10-04，当前实现）
+
+**已验证（离线）**：纹理细节getter保留控制台读取及TextureDetail原值，仅把返回表达式接入GetLowMediumHighStr；Low/Medium/High映射0/1/2，19个其他硬件设置函数不变。UCC自编表达式VM大小48，对原getter的VM增量40（82→122）。非标准配置值显示为低档位，但原值不被覆盖；当前支持原版三档。
+
+**已验证（离线）**：Credits是WOT.u内的Class默认属性，不是图片或外部版权文本。保留204个原位置、角色对应演员及贡献者姓名；新增204空行、205署名。FString改为UTF-16序列化；CreditsText.StrProperty的ArrayDim 204→206与PostRender两处ArrayCount常量必须同步，不只补写默认文本。该属性维度位于导出体+4，不是+5；默认CreditsText标签流从Class体+339开始，数组索引128以上用双字节标签索引。UCC加载重建包并编译自编夹具通过；完整滚动结束/退出仍待实机验收。
+
+**已验证（离线）**：Window.dll的FPropertyItem.GetCaption、FCategoryItem.GetCaption和FPropertyItem.Draw有独立FName显示路径；只改GetCaption并不足够。原生行高函数返回16，列分隔宽度默认128且可由注册表覆盖。本批在经完整SHA校验的构建DLL副本增加位置无关.locale段，映射274个显示名及7个显示值；行高设32，GetDividerWidth最低320并允许更宽。姓名/FName、属性键、配置、共享GetPropertyText和SetValue不改；值映射只改Draw局部缓冲。未知显示名原样回退。没有改EXE/WinDrv.dll、没有进程注入，没有新增运行时依赖DLL。
+
+两种镜像基址的602项x86模拟覆盖中文/未知值/空串、寄存器栈平衡、属性/类别/直接绘制、值缓冲、行高/分隔线。PE进口表及原文件中批准范围外的字节均保持原样。**待验证（实机）**：高级选项展开、滚动、编辑器位置、点击保存与各DPI缩放；固定32不是任意DPI自动缩放，当前只验1080p。全部生成资源仍通过差分安装/隔离回滚，不提交完整DLL。

@@ -98,6 +98,10 @@
     "System/Window.int": {
       "size": 2086,
       "sha256": "f8cb5b78c4ed85ff8e1128d1ebe8b035f37921d6325a2718b7e6c485864bcbf7"
+    },
+    "System/Window.dll": {
+      "size": 397312,
+      "sha256": "781a7572871ac6a96929f4f50d286c5362651dadfcb6b4e0124c7bb360cc6e61"
     }
   },
   "resource_edits": [
@@ -155,6 +159,63 @@
           "argument_hex": "192e1c1901a405000401b70600042d017b14"
         }
       ]
+    },
+    {
+      "resource": "System/WOT.u",
+      "export": "menuConfiguration.GetTextureDetailLevelStr",
+      "export_sha256": "a80f91c97f945e5305f9b9df13c302c1972c9adfa136fcaace8b36778f46e41e",
+      "script_size": 82,
+      "helper": "GetLowMediumHighStr",
+      "edits": [
+        {
+          "menu_slot": 7,
+          "offset": 87,
+          "expected_hex": "04017602",
+          "replacement_hex": "041b5b173d923a407a0176021f4d656469756d0016902c023a407a0176021f486967680016161616",
+          "vm_delta": 40
+        }
+      ]
     }
-  ]
+  ],
+  "credits": {
+    "defaults_offset": 339,
+    "dimension_offset": 4,
+    "array_count_offsets": [
+      96,
+      692
+    ],
+    "exports": {
+      "Credits": "a0312f7b3913074bb1921532cdb8f206311a4690d8e7eacbb3230fd6546fc0b9",
+      "Credits.CreditsText": "2e706c47f50d036df34d264e80c3d09f31652214ff0558f0e1e028fd035c26c4",
+      "Credits.PostRender": "6d84f0f785990d05e5121a45673a3909699107cdd80af6df47a8fd7bd7854a85"
+    }
+  },
+  "native_properties": {
+    "size": 397312,
+    "sha256": "781a7572871ac6a96929f4f50d286c5362651dadfcb6b4e0124c7bb360cc6e61",
+    "caption_sites": [
+      [
+        "property_caption",
+        99661,
+        "83c00c8945e8"
+      ],
+      [
+        "category_caption",
+        121597,
+        "83c00c8945e8"
+      ],
+      [
+        "property_draw",
+        102190,
+        "83c00c5051"
+      ]
+    ],
+    "value_draw_rva": 102805,
+    "value_draw_expected": "8b16578bce",
+    "height_rvas": [
+      104608,
+      120016
+    ],
+    "divider_rva": 128416
+  }
 }

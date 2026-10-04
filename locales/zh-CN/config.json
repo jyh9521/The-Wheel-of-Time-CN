@@ -22,5 +22,7 @@
     "data": "texture-labels.json",
     "profile": "texture-labels.json"
   },
-  "native_ui": "native-ui.json"
+  "native_ui": "native-ui.json",
+  "credits": "credits.json",
+  "native_properties": "native-properties.json"
 }

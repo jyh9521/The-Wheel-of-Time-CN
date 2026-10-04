@@ -1,0 +1,1243 @@
+{
+  "rows": [
+    {
+      "slot": 0,
+      "source_sha256": "64a1967e160d7d24b1075c79a05e25be7c66f3fb89e165f683c4340bb1aeab8f",
+      "translation": "时光之轮",
+      "status": "draft"
+    },
+    {
+      "slot": 1,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 2,
+      "source_sha256": "94f7315605f5aadaf4740b94f1464131534f97b930556958f8cb2e126532ca53",
+      "translation": "改编自 @时光之轮@",
+      "status": "draft"
+    },
+    {
+      "slot": 3,
+      "source_sha256": "441db7f470e01c5499f39fd547999be3c22ac6207e02994886c9dd3a49369dde",
+      "translation": "原著小说作者：Robert Jordan ",
+      "status": "draft"
+    },
+    {
+      "slot": 4,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 5,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 6,
+      "source_sha256": "fb2059548ac01dc3457b800df7984db8abc97a1a105c518075990ac49b99fe15",
+      "translation": "LEGEND ENTERTAINMENT COMPANY",
+      "status": "draft"
+    },
+    {
+      "slot": 7,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 8,
+      "source_sha256": "00919546576e2322409d5f5faa408d6c5d889f8008ab8599c822b5408c6c0192",
+      "translation": "游戏设计／编剧 - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 9,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 10,
+      "source_sha256": "7bb774cbd0cc8b890bdc415f92237082722ffd574ba18db9420b99a15bbd4fa1",
+      "translation": "制作人 - Mike Verdu, Mark Poesch, Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 11,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 12,
+      "source_sha256": "159a2de5b1290cb5edb99b1701d23c8e4e5db0fee6f540b459bc89b62fa321ba",
+      "translation": "美术总监 - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 13,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 14,
+      "source_sha256": "0d73003ae5efbe72d3fc8b72153f20d8db3c36a87c9fcf52639b4929cfdb6778",
+      "translation": "执行制作人 - Mike Verdu",
+      "status": "draft"
+    },
+    {
+      "slot": 15,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 16,
+      "source_sha256": "5e7f3e8051fc7d4142a802899f3e18c54d422728e92cdb8d9cb8c10060dd0b65",
+      "translation": "技术负责人 - Mark Poesch",
+      "status": "draft"
+    },
+    {
+      "slot": 17,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 18,
+      "source_sha256": "68e19914811d079caa275c1e92c043ad05409c2a82669424cf7e430f978ce059",
+      "translation": "人工智能负责人 - Ryan Ovrevik",
+      "status": "draft"
+    },
+    {
+      "slot": 19,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 20,
+      "source_sha256": "46fd74d5045002619b6141b75ecb7a46697681b63e35090c1bb5f8c21ef53dcf",
+      "translation": "技术团队 - Mark Poesch",
+      "status": "draft"
+    },
+    {
+      "slot": 21,
+      "source_sha256": "d56908570811da3ce9073c15df129096e3882063ed1034deba85eceb91759776",
+      "translation": " - Ryan Ovrevik",
+      "status": "draft"
+    },
+    {
+      "slot": 22,
+      "source_sha256": "6dd0969b84c349d46b7a6661e912e6103d64bd19423a10fa807698fe8369a25a",
+      "translation": " - Aaron Leiby",
+      "status": "draft"
+    },
+    {
+      "slot": 23,
+      "source_sha256": "2066b14d0a8103d2b6865d554309a395ff1574c2f851b0f5ba389531324a4c28",
+      "translation": " - Mike Fox",
+      "status": "draft"
+    },
+    {
+      "slot": 24,
+      "source_sha256": "c205dc76ab7d6df35b3980493e324910d6b0fe752215fe93938f809f769fd8fe",
+      "translation": " - Jess Crable",
+      "status": "draft"
+    },
+    {
+      "slot": 25,
+      "source_sha256": "40a0eaedb4d66b299169a596d689193f0c59a36468160a1c5f2251832bc75d51",
+      "translation": " - Sam Brown",
+      "status": "draft"
+    },
+    {
+      "slot": 26,
+      "source_sha256": "cc147b935692d675849acf124b28ccce111481f5994b479a95b9e12bb6e42b04",
+      "translation": " - Jim Montanus",
+      "status": "draft"
+    },
+    {
+      "slot": 27,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 28,
+      "source_sha256": "9735dab90e4477e721b178d5b363eea19b4ebb632c556764d79f608b9050c2e3",
+      "translation": "其他程序开发 - Duane Beck",
+      "status": "draft"
+    },
+    {
+      "slot": 29,
+      "source_sha256": "77fab08c0217947f6c50074f990337cd57d209f4b73afeefb0c00933a5d72290",
+      "translation": " - Warren Marshall",
+      "status": "draft"
+    },
+    {
+      "slot": 30,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 31,
+      "source_sha256": "0c89f0f53852daa0c7e662635c3b0b39f8b6884da584a400aef0690b677c72bb",
+      "translation": "关卡设计团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 32,
+      "source_sha256": "2c953f51f980a94bba76413923a9eeb51e15a2420bfe1b23fdf5632dd07e0732",
+      "translation": "首席关卡设计师 - Scott Dalton",
+      "status": "draft"
+    },
+    {
+      "slot": 33,
+      "source_sha256": "18dde94a41b1e19596ea81f15ed2b0aae990e7f5d05e001396ce7ed42af28e68",
+      "translation": "关卡设计师 - James Parkman",
+      "status": "draft"
+    },
+    {
+      "slot": 34,
+      "source_sha256": "77fab08c0217947f6c50074f990337cd57d209f4b73afeefb0c00933a5d72290",
+      "translation": " - Warren Marshall",
+      "status": "draft"
+    },
+    {
+      "slot": 35,
+      "source_sha256": "c0188cbfa58fbba996a60c74396c27a00b779235142c5a79217aaa5fc02da1f1",
+      "translation": " - Matthias Worch",
+      "status": "draft"
+    },
+    {
+      "slot": 36,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 37,
+      "source_sha256": "332cdee156f6ecb46cb1d7da67f0042173db0e7a5afcbc623904405a7d1fbf6a",
+      "translation": "其他关卡设计:",
+      "status": "draft"
+    },
+    {
+      "slot": 38,
+      "source_sha256": "fa7e3feb092655005b6e204eac34580bcad7bd72a218fe466ab18003dbe0f3c5",
+      "translation": "关卡设计师 - Dave Kelvin",
+      "status": "draft"
+    },
+    {
+      "slot": 39,
+      "source_sha256": "3f59f52057db1dcc794d40fcce9c2f94bdb217bd56c5f32f50817506b6e76974",
+      "translation": " - Aaron Logue",
+      "status": "draft"
+    },
+    {
+      "slot": 40,
+      "source_sha256": "6938f271a594a320e3cdd7571c82995376606ff9c413f77c26bd5b992113edbb",
+      "translation": " - Steve Fukuda",
+      "status": "draft"
+    },
+    {
+      "slot": 41,
+      "source_sha256": "b0e7cb9d6cac7191fca9abcebc9246908aa2910797e24cda08eb771d719c4638",
+      "translation": " - Tim Jervis",
+      "status": "draft"
+    },
+    {
+      "slot": 42,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 43,
+      "source_sha256": "999ebffe7cf02292c0c086a62461d6da7fe01945e121da7ff7fd6e72d059b2e0",
+      "translation": "用户界面开发:",
+      "status": "draft"
+    },
+    {
+      "slot": 44,
+      "source_sha256": "4ad313346442df5f000690852196d9e390110b2ba20736ccbe23fe779e4f1636",
+      "translation": " - Paul Mock",
+      "status": "draft"
+    },
+    {
+      "slot": 45,
+      "source_sha256": "951977e35dce8dfd5c1b3f44055cb047bb0665c8f61ea79d396af54413c6d5a8",
+      "translation": " - Julie Airoldi",
+      "status": "draft"
+    },
+    {
+      "slot": 46,
+      "source_sha256": "2066b14d0a8103d2b6865d554309a395ff1574c2f851b0f5ba389531324a4c28",
+      "translation": " - Mike Fox",
+      "status": "draft"
+    },
+    {
+      "slot": 47,
+      "source_sha256": "7fc3fc668b890b51bb603390da18abc7a87b7d25482cdd80eff550846ee8623f",
+      "translation": " - Mark Poesch",
+      "status": "draft"
+    },
+    {
+      "slot": 48,
+      "source_sha256": "cc147b935692d675849acf124b28ccce111481f5994b479a95b9e12bb6e42b04",
+      "translation": " - Jim Montanus",
+      "status": "draft"
+    },
+    {
+      "slot": 49,
+      "source_sha256": "f84f216eb8b160d0c48c17ca26bb8d3f4a197274312245db840f2bba30b81a4a",
+      "translation": " - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 50,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 51,
+      "source_sha256": "87e9670def367572489362431eb57701bbf2d4a35216d8614d44b8609db2df31",
+      "translation": "美术团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 52,
+      "source_sha256": "c6b25e6044d6e68e7d9da18f6e7b5f7b70c35b1bb2eb33d2e2c41fdb6c58af51",
+      "translation": "美术负责人／总监 - Paul Mock",
+      "status": "draft"
+    },
+    {
+      "slot": 53,
+      "source_sha256": "713c44db1579441bed779fd7790cc9d3e48b5a9016ca59758f240e3c67c9b7e1",
+      "translation": "特效美术 - Robert Wisnewski",
+      "status": "draft"
+    },
+    {
+      "slot": 54,
+      "source_sha256": "3813e5a85956592c4fc93d2bd7306f5c7756f5f52bf11756714322f6a59c2b65",
+      "translation": "纹理美术 - Julie Airoldi",
+      "status": "draft"
+    },
+    {
+      "slot": 55,
+      "source_sha256": "063f204910e544bb8612bcb94aaf0c5bb82e910a67d3067dde964da6cd5f7c69",
+      "translation": " - Marc Tetreault",
+      "status": "draft"
+    },
+    {
+      "slot": 56,
+      "source_sha256": "ad43d4d39b48321b886de7092a716493190da72ac3dcbb964b23d3956a2f9b01",
+      "translation": " - Cindy Wentzell",
+      "status": "draft"
+    },
+    {
+      "slot": 57,
+      "source_sha256": "1bb851435d2e02d6c734f527b98351444d1713294408bd9e5433fbeb91578a47",
+      "translation": "角色皮肤美术 - Joel Walden",
+      "status": "draft"
+    },
+    {
+      "slot": 58,
+      "source_sha256": "33d6d5b41d22ec7902a48e55e55ef84ed815e7faab9f85be3febdfbb315907d0",
+      "translation": "角色建模 - Sherer Design Associates",
+      "status": "draft"
+    },
+    {
+      "slot": 59,
+      "source_sha256": "fe3d94b90dc0e46b3bd29b0740e367c9fc9368b781cea1d631a958d46a16f0ec",
+      "translation": " - Joel Walden",
+      "status": "draft"
+    },
+    {
+      "slot": 60,
+      "source_sha256": "27b36877b3c703f480b8f03a60271e2aa80db4ee445371f13caa1c836ded97d0",
+      "translation": "角色动画 - Evolution Graphics",
+      "status": "draft"
+    },
+    {
+      "slot": 61,
+      "source_sha256": "071fbd89a224dd7cb66d508e545ec276db186cd6495f0a19a83288e8cccf1ca9",
+      "translation": "建筑设计 - Paul Mock",
+      "status": "draft"
+    },
+    {
+      "slot": 62,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 63,
+      "source_sha256": "16a141aba56cbe4fe0016d5596fb1456a19cdfcf446672254a5b6f65a355de47",
+      "translation": "其他角色动画:",
+      "status": "draft"
+    },
+    {
+      "slot": 64,
+      "source_sha256": "e5b1134a15dbec7e32ba3c09e766b88d3b6df4090236a2f79e4632d3c0646b0d",
+      "translation": "角色动画 - Joel Walden",
+      "status": "draft"
+    },
+    {
+      "slot": 65,
+      "source_sha256": "ed906f55f53e7acf07854f21b672124986525cbcafd774e40e98bd58edae787f",
+      "translation": " - Robert Wisnewski",
+      "status": "draft"
+    },
+    {
+      "slot": 66,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 67,
+      "source_sha256": "08db18101ad84766c73d9606305a265c5bf8d78c5d155090c811250d0f571e54",
+      "translation": "音效与音乐团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 68,
+      "source_sha256": "127c3943a313f2d2a044f05015005f777b78353b724193a27f479177bed39e11",
+      "translation": "音乐作曲 - Robert Berry",
+      "status": "draft"
+    },
+    {
+      "slot": 69,
+      "source_sha256": "5a24393c2d41fea55ed64ff91cb6bf402fa1a8072245ee3cdb614853e0aa9dc8",
+      "translation": " - Leif Sorbye",
+      "status": "draft"
+    },
+    {
+      "slot": 70,
+      "source_sha256": "20b234b73e9cf27baef119280810aecb2b1679da1061bd97836e3d63873f2752",
+      "translation": "音效工程师 - Andy Frazier",
+      "status": "draft"
+    },
+    {
+      "slot": 71,
+      "source_sha256": "10aa84ed87b282bf14fafcd9bb5cc9c4eda8b9bd3397b86c34aadea07f4ebbf3",
+      "translation": " - Eric Heberling",
+      "status": "draft"
+    },
+    {
+      "slot": 72,
+      "source_sha256": "48e7120846421e818ffbb9f775eddbb6488a7467b2e4c142e8011cee7449b7f2",
+      "translation": " - Tommy Tallarico Studios",
+      "status": "draft"
+    },
+    {
+      "slot": 73,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 74,
+      "source_sha256": "23b0be44270246a397e1d4c133b796d94257d1152c45260766ab3a97fa480596",
+      "translation": "其他音乐:",
+      "status": "draft"
+    },
+    {
+      "slot": 75,
+      "source_sha256": "6e1595b1177ebe64a0201f026c2d554b89596c07af7417d6088818c746ee215a",
+      "translation": "作曲 - Andy Frazier",
+      "status": "draft"
+    },
+    {
+      "slot": 76,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 77,
+      "source_sha256": "bb009da59c8302419caf75152446f3af324527a48748d4e13298eba595aae13a",
+      "translation": "过场动画团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 78,
+      "source_sha256": "68d0e6863f49645b980a8032161bba82867500eea0e2beb591cb2619e989d2a4",
+      "translation": "编剧／导演 - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 79,
+      "source_sha256": "5d166e7be542493c12fce16cd5479d78cb41360f0dfbb6d7a8208f10db9ef5e4",
+      "translation": "分镜 - Dub Media",
+      "status": "draft"
+    },
+    {
+      "slot": 80,
+      "source_sha256": "03cfa47d2446eb672842545d12ce246e179f619b00ed915fd28f2421c7160394",
+      "translation": " - Kathleen Bober",
+      "status": "draft"
+    },
+    {
+      "slot": 81,
+      "source_sha256": "02c41a18ea3b9f7c9e44b023dc05cbc82decbb90cdc51f0fa460d5dcd7796802",
+      "translation": "场景导入 - Dub Media",
+      "status": "draft"
+    },
+    {
+      "slot": 82,
+      "source_sha256": "0a57e65663936837a367a5e566144c7b9b8d3aded95c22984ec0d08ba5579af6",
+      "translation": "动画制作 - Blur Studios",
+      "status": "draft"
+    },
+    {
+      "slot": 83,
+      "source_sha256": "099b471a090fe0fc280004b4411bfc1e4462865cdcfc5063dee4dcbdf47a4ebd",
+      "translation": " - Spank Hole Studios",
+      "status": "draft"
+    },
+    {
+      "slot": 84,
+      "source_sha256": "ad9224f1a6cca24777493e9ccf8704958981d21a6f12f2f0669d5d0986c3e4db",
+      "translation": "视频工程师 - Jim Montanus",
+      "status": "draft"
+    },
+    {
+      "slot": 85,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 86,
+      "source_sha256": "4288dde8f7fd0769f816c94cf4accb236596f874e71f65f1dc091a59090aa10e",
+      "translation": "其他动画:",
+      "status": "draft"
+    },
+    {
+      "slot": 87,
+      "source_sha256": "9d8f48185da7afa0d271be4ea03de8d260ce2485e4d085731d3e41d5abe152e2",
+      "translation": "动画制作 - Dub Media",
+      "status": "draft"
+    },
+    {
+      "slot": 88,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 89,
+      "source_sha256": "b32ad58c6f3a5de0984d0b6832a2c603022e27453cc76d85a6c369e5eb8a795f",
+      "translation": "配音演员:",
+      "status": "draft"
+    },
+    {
+      "slot": 90,
+      "source_sha256": "57048a72928ef4be960e2ad5f8383ce3050f9246ce8b6e19d2cdd6969ab09e7f",
+      "translation": "选角／配音导演 - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 91,
+      "source_sha256": "03cfa47d2446eb672842545d12ce246e179f619b00ed915fd28f2421c7160394",
+      "translation": " - Kathleen Bober",
+      "status": "draft"
+    },
+    {
+      "slot": 92,
+      "source_sha256": "38b989e7f8a73edbaff70c4c1c663fcece342c7b8ec813f149dccc8a4f588d8b",
+      "translation": "旁白 - Henry Strozier",
+      "status": "draft"
+    },
+    {
+      "slot": 93,
+      "source_sha256": "4516cdd8c51cd972f2ccf659198b809220091dc21e4a52ac1d5de805df37be2d",
+      "translation": "伊莱娜两仪师 - Colleen Delany",
+      "status": "draft"
+    },
+    {
+      "slot": 94,
+      "source_sha256": "37aa98f4549070de7c295efaf1831ba52835a73b1f6c3c28b40c376d3161f2d6",
+      "translation": "猎犬 - Conrad Feininger",
+      "status": "draft"
+    },
+    {
+      "slot": 95,
+      "source_sha256": "a95020979bfe2ead3e25d9773366bf2cf44065275cc6e2174e26b0c760ca61d0",
+      "translation": "弃光魔使伊煞梅尔 - Jeff Baker",
+      "status": "draft"
+    },
+    {
+      "slot": 96,
+      "source_sha256": "e7e6f42dbd417b0a6eaad3bdc0d92ea493c6683e65b3ae827587736423d08218",
+      "translation": "白袍众首领 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 97,
+      "source_sha256": "4f7cac8ad03d04a353d06343fdfcb831fcd77e6cc1920e2c7f464eb9f4df42a8",
+      "translation": "玉座 - Lucy Newman Williams",
+      "status": "draft"
+    },
+    {
+      "slot": 98,
+      "source_sha256": "11faaa87c4a624fff6e68d42dfe814013e519a3236df5803f6a55af87a579760",
+      "translation": "瑟芙蕾姆 - Jacqueline Underwood",
+      "status": "draft"
+    },
+    {
+      "slot": 99,
+      "source_sha256": "9bb0e4a19ecc87589ac26c8ccaa7b16d860124c9962eb8e5857850453e06bd34",
+      "translation": "瑟瑞斯特 - Jacqueline Underwood",
+      "status": "draft"
+    },
+    {
+      "slot": 100,
+      "source_sha256": "c05c19fc6feb97c6353e6e2089c537c9bbc65d6b2274698fdab2c998a1202433",
+      "translation": "兽魔人 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 101,
+      "source_sha256": "1d68ab92f7a90efa20186633fdc8668d72a0dcf9c854c4303d8e3ed4af0a06d0",
+      "translation": "兽魔人氏族首领 - George Wilson",
+      "status": "draft"
+    },
+    {
+      "slot": 102,
+      "source_sha256": "2828f4744190c2e8fe2bf751914b501aed67485313dd774d8a319afaee9ce134",
+      "translation": "魔达奥 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 103,
+      "source_sha256": "91341f1604ecbd3a88cb831016215bab3d56793d93c0c0456995bca49ff2a6a6",
+      "translation": "护法 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 104,
+      "source_sha256": "6106b8e514cc4f480869053aa5627638554c7cbcd3b47264bc4a4cf194a9c5d9",
+      "translation": "魔煞达 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 105,
+      "source_sha256": "a320c1af277449f8ee4c40ce1ccd11016a1fcb917dc99d98bd12303c6dc66216",
+      "translation": "普通白袍众 - Bob Supan",
+      "status": "draft"
+    },
+    {
+      "slot": 106,
+      "source_sha256": "75090f7d3750cce0031921217c2d320e07430767126345cb2468731f4b67c070",
+      "translation": " - Jeff Baker",
+      "status": "draft"
+    },
+    {
+      "slot": 107,
+      "source_sha256": "36dcd5b938e620989be7e7d2c00b1f46ce5702aee7359b1a647444fe9509d72b",
+      "translation": "Poleine - Carolyn Stewart",
+      "status": "draft"
+    },
+    {
+      "slot": 108,
+      "source_sha256": "f633ad82533637e044d4353122f36766d730f33bdc75ebbf40ed28a3ea92fa4a",
+      "translation": "蓝宗两仪师 - Lynn Filusch",
+      "status": "draft"
+    },
+    {
+      "slot": 109,
+      "source_sha256": "18eb4cae84f44e94e58ff44d2a6fe2f077bc75a7a9bce45df369043a103927ff",
+      "translation": "褐宗两仪师 - Shannon Parks",
+      "status": "draft"
+    },
+    {
+      "slot": 110,
+      "source_sha256": "2ef77badd7062185601b08fe9d4de845ec470a7c5872cac78de8699252ebe927",
+      "translation": "愤怒的宗派守护者 - Lynn Filusch",
+      "status": "draft"
+    },
+    {
+      "slot": 111,
+      "source_sha256": "05cd1716db0fccc6400de8e6536c60db7fb68bd281b47b386dba9d4fba5817dd",
+      "translation": "黑风 - Lucy Newman Williams",
+      "status": "draft"
+    },
+    {
+      "slot": 112,
+      "source_sha256": "2585e09824b87c7dd518adf20f29b81c43ef3ff6d499e8be23c78f4a2c3f2f5d",
+      "translation": " - Conrad Feininger",
+      "status": "draft"
+    },
+    {
+      "slot": 113,
+      "source_sha256": "3609ffe51a819a3aa6118502b90273dfb995665af68478bb1e3cb81c299283db",
+      "translation": " - Carolyn Stewart",
+      "status": "draft"
+    },
+    {
+      "slot": 114,
+      "source_sha256": "e79170322308cdb75e2b5e62eaf44c8752dfd4f875c063c5b964a361da2514ad",
+      "translation": " - Lynn Filusch",
+      "status": "draft"
+    },
+    {
+      "slot": 115,
+      "source_sha256": "75090f7d3750cce0031921217c2d320e07430767126345cb2468731f4b67c070",
+      "translation": " - Jeff Baker",
+      "status": "draft"
+    },
+    {
+      "slot": 116,
+      "source_sha256": "4e4f9f0c780b18c236ca8f76dce4127eb0a9254d89bb7b668962c7eda124ed60",
+      "translation": "军团 - Andy Frazier",
+      "status": "draft"
+    },
+    {
+      "slot": 117,
+      "source_sha256": "c639c061bf81c8a9bbd039a83fe622b700bc8b7d521204afd7ece6c40eea3a60",
+      "translation": " - Deanne Guardino",
+      "status": "draft"
+    },
+    {
+      "slot": 118,
+      "source_sha256": "cf15f2cdd3e0697390da8dd6225fac4a90aa800236bf1ef9b828470b717d90b7",
+      "translation": "Kyrin - Kathleen Bober",
+      "status": "draft"
+    },
+    {
+      "slot": 119,
+      "source_sha256": "63c61d36b45e13b6c4712ff078675eb732b142ea75c9614c4cfb02e7271d6ddd",
+      "translation": "白袍众守卫 - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 120,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 121,
+      "source_sha256": "44877e628a0c1512d90da2ace9ade11d1168deb1a1a1db991b715db95fe054ab",
+      "translation": "概念验证团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 122,
+      "source_sha256": "653a27be00eff72e6f5630ee6d195b026cbdd25c9eeb280bb0f516033429dc71",
+      "translation": " - Glen Dahlgren, Mark Poesch",
+      "status": "draft"
+    },
+    {
+      "slot": 123,
+      "source_sha256": "fb523500425f5658f2d235178bf4dd228d2e9f91830dc8583f580e3c308fb5be",
+      "translation": " - Dave Townsend, Dave Chladon",
+      "status": "draft"
+    },
+    {
+      "slot": 124,
+      "source_sha256": "3f59f52057db1dcc794d40fcce9c2f94bdb217bd56c5f32f50817506b6e76974",
+      "translation": " - Aaron Logue",
+      "status": "draft"
+    },
+    {
+      "slot": 125,
+      "source_sha256": "79181b78bdfc406626d6e020be0a6c3f4cf4c770217e8be6ea639828628a3def",
+      "translation": " - Paul Mock, Cindy Wentzell, Robert Wisnewski",
+      "status": "draft"
+    },
+    {
+      "slot": 126,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 127,
+      "source_sha256": "19d0ce036fc06de81cbd16bf7c4ce1069d79557c31eb3a74f946928ef5cfe3c2",
+      "translation": "质量保证团队（Legend）:",
+      "status": "draft"
+    },
+    {
+      "slot": 128,
+      "source_sha256": "42e6b840c2e5c2199bde756be50e865709b208040bc5ac2b56bfc9c08f5c6050",
+      "translation": "质量保证负责人 - Craig Lafferty",
+      "status": "draft"
+    },
+    {
+      "slot": 129,
+      "source_sha256": "ae31e5710572975a252b848c7038022ef99963285b484047a1fdaa97e6c08e9f",
+      "translation": "测试人员 - Grant Roberts",
+      "status": "draft"
+    },
+    {
+      "slot": 130,
+      "source_sha256": "dd0367d060ba94ab22becf5e3ed45b0bebb9cbe97773b0712ad210c6fb2856f5",
+      "translation": " - Ben Leiby",
+      "status": "draft"
+    },
+    {
+      "slot": 131,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 132,
+      "source_sha256": "2ce3ec66acb53d3374ba84976afd9b76b20e2f523a791a4f33e967ff0f9049b5",
+      "translation": "其他测试 - Justice Hearn",
+      "status": "draft"
+    },
+    {
+      "slot": 133,
+      "source_sha256": "4650a1f243b5b71f29c61b6f8d0ff65a2a20fc955f3d41900cf858452a1c6013",
+      "translation": " - Peter Logan",
+      "status": "draft"
+    },
+    {
+      "slot": 134,
+      "source_sha256": "ac0ae6278f963e4775c6a9177daec3b810a79c6b38c7be7405cf51dbcf29387f",
+      "translation": " - Charlie Cash",
+      "status": "draft"
+    },
+    {
+      "slot": 135,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 136,
+      "source_sha256": "383a0204f34c57225e10ed37d8d9782b185134fb3d040812beabdcbf8548864d",
+      "translation": "制作团队:",
+      "status": "draft"
+    },
+    {
+      "slot": 137,
+      "source_sha256": "090839343ff4473d734469f4dd34bb14832dd1ffbfe65e0758715d16842c833e",
+      "translation": "办公室经理 - Rosie Freeman",
+      "status": "draft"
+    },
+    {
+      "slot": 138,
+      "source_sha256": "adef7d537476f0ae79d23f159f723108be43b8ebfaa55b2837fb7059180e8519",
+      "translation": "制作协助 - Sam Brown",
+      "status": "draft"
+    },
+    {
+      "slot": 139,
+      "source_sha256": "346dc48ad2d56753b9bc9d27bb955eefb613811cd15cc2ca7b4614ed65ac75e6",
+      "translation": "助理制作人 - Craig Lafferty",
+      "status": "draft"
+    },
+    {
+      "slot": 140,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 141,
+      "source_sha256": "fb6defdb878afd2c24aba450a6938cc8ab5d8774db7a8634c1150a50a5a263b9",
+      "translation": "特法器背景说明研究人员:",
+      "status": "draft"
+    },
+    {
+      "slot": 142,
+      "source_sha256": "e8eb6bd330d3810c5ae134f48dae61fddc15e934e509d3364bf41f70cb4cad3a",
+      "translation": " - autio",
+      "status": "draft"
+    },
+    {
+      "slot": 143,
+      "source_sha256": "f6ce4e4819867b20951fb26d820a3e37e164a5b13809a34d41e16c201f9c39d6",
+      "translation": " - James Bradwell",
+      "status": "draft"
+    },
+    {
+      "slot": 144,
+      "source_sha256": "e66c4569857239587bb8be9e5f442ae82faa954e264b6eced77c12b11b759c33",
+      "translation": " - Kyle Davis",
+      "status": "draft"
+    },
+    {
+      "slot": 145,
+      "source_sha256": "f84f216eb8b160d0c48c17ca26bb8d3f4a197274312245db840f2bba30b81a4a",
+      "translation": " - Glen Dahlgren",
+      "status": "draft"
+    },
+    {
+      "slot": 146,
+      "source_sha256": "73317c357ba3ff911b8edcae147cf5e37206cc443feda1bd9addac701201091d",
+      "translation": " - Joy Debnath",
+      "status": "draft"
+    },
+    {
+      "slot": 147,
+      "source_sha256": "90196a290db575ce6f1a370525af6c5327e1d9d5a762a4bbad02889fc76170bf",
+      "translation": " - Travis King",
+      "status": "draft"
+    },
+    {
+      "slot": 148,
+      "source_sha256": "0494b0c1c97b92b8d15c99d691f631ac23a6426b89aa9e9e5341498af8a76fce",
+      "translation": " - Nathan Leung",
+      "status": "draft"
+    },
+    {
+      "slot": 149,
+      "source_sha256": "1ff88723092ec75d3b6fe05075fc5c9c1d7b74a6d02ac0271e83f6ccac7d97e4",
+      "translation": " - Philip Moschovas",
+      "status": "draft"
+    },
+    {
+      "slot": 150,
+      "source_sha256": "08ed280d66dd1b43f7dd0912d2203747514309b4f3404575e27fef8eb730f94a",
+      "translation": " - Andrew Penick",
+      "status": "draft"
+    },
+    {
+      "slot": 151,
+      "source_sha256": "ffeb25ca4454cb4ede7ee88607b961fdd0fcf6bbf0911ff045e69f985106e75c",
+      "translation": " - Ronny Hanset Ringen",
+      "status": "draft"
+    },
+    {
+      "slot": 152,
+      "source_sha256": "21415920de8f278b25aada157d5958fbe11754d06eca0fda6e4a5e3fc233c447",
+      "translation": " - Matt Ryall",
+      "status": "draft"
+    },
+    {
+      "slot": 153,
+      "source_sha256": "f50badbaed733b2090762f4e0adaebdfc00036a03871a9a9a5eb5f4e9197b8a7",
+      "translation": " - Jakob Strasser",
+      "status": "draft"
+    },
+    {
+      "slot": 154,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 155,
+      "source_sha256": "5bae781ea87df674ce398fbd1cd851bb60a1844cad3f42e646c4845d7550975e",
+      "translation": "GT Interactive",
+      "status": "draft"
+    },
+    {
+      "slot": 156,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 157,
+      "source_sha256": "0c8852820e4a4a9e89a235007e9a051c3b39bed4d5b07f11b6011b410eb8e714",
+      "translation": "制作人 - Jason Schreiber",
+      "status": "draft"
+    },
+    {
+      "slot": 158,
+      "source_sha256": "213311945f809abad77a72d56176ee3acbe9f7cc77fd15210f195799a3e51dd0",
+      "translation": "产品经理 - Barbara Gleason",
+      "status": "draft"
+    },
+    {
+      "slot": 159,
+      "source_sha256": "f7fe4814d5ee6ca319eb95b376216c22fb62956bbb04bc29d1a62827171d30ed",
+      "translation": "质量保证经理 - Steve Knopf",
+      "status": "draft"
+    },
+    {
+      "slot": 160,
+      "source_sha256": "d356d50ddff1825e2dcf523ce66a569a747c39564a63888775f6a009a82f510e",
+      "translation": "测试负责人 - Jim Dunn",
+      "status": "draft"
+    },
+    {
+      "slot": 161,
+      "source_sha256": "6699d6a10b312a43a4c91bfd378a173148f15f1b99bbfa39be31899cfb421251",
+      "translation": "资深测试人员 - Jeff Oviatt",
+      "status": "draft"
+    },
+    {
+      "slot": 162,
+      "source_sha256": "7b596b809dfd93f8ae670a7c00d48627e761106757ca74faaf56fce68259da84",
+      "translation": "测试人员 - Chris Dunn",
+      "status": "draft"
+    },
+    {
+      "slot": 163,
+      "source_sha256": "7f938289c2fe311278f626ed3b1884f4b41dc9ee5ed1fd8978c923bdc9bb4be6",
+      "translation": " - Aaron Harris",
+      "status": "draft"
+    },
+    {
+      "slot": 164,
+      "source_sha256": "b49b2dd82bb57c8ee38290a1a610c75e3bc1ecebb8d335770ed52ee88272aa7e",
+      "translation": " - Scott 'Cubbie' Donaldson",
+      "status": "draft"
+    },
+    {
+      "slot": 165,
+      "source_sha256": "3d6993643234ba8a046efc6ef284438b70a03e3022e55df1084fae456251d840",
+      "translation": " - Brandon Montrone",
+      "status": "draft"
+    },
+    {
+      "slot": 166,
+      "source_sha256": "5ddcc7670204fe7d9640c1130523af7cb26ceeb2941e28b0848a077ca39ca802",
+      "translation": " - Jon Marquette",
+      "status": "draft"
+    },
+    {
+      "slot": 167,
+      "source_sha256": "e0f19572e89afbc03838356db551e717030b5570454565602c3b5009e649e95b",
+      "translation": " - Doug Price",
+      "status": "draft"
+    },
+    {
+      "slot": 168,
+      "source_sha256": "d89229910b524fbae0f1a56ceb67378fbd9a5fa76954d0ccd97d83fc05b4d454",
+      "translation": " - Yume Gregersen",
+      "status": "draft"
+    },
+    {
+      "slot": 169,
+      "source_sha256": "d1c74da322bc9a58db6e2e25b682095d15c0145f07b5c36188abd153fb50c40f",
+      "translation": " - Josh Galloway",
+      "status": "draft"
+    },
+    {
+      "slot": 170,
+      "source_sha256": "cce671ba3ed2bd704026934fbce968dce7938f738b87e6082078c6fd6a4b14f5",
+      "translation": "文档经理 - Peter Witcher",
+      "status": "draft"
+    },
+    {
+      "slot": 171,
+      "source_sha256": "2a1aff7dcdd6f9fde3ad7448680bdf389a50b04fc8358e91cc1378ab86c3f90b",
+      "translation": "网络／信息系统 - Mike Fassbinder",
+      "status": "draft"
+    },
+    {
+      "slot": 172,
+      "source_sha256": "e2397b8ee86037a84db6187d68fbb3bd2e09921caf83a45f939b1e25ce2ded31",
+      "translation": "光盘复制 - Patick Struhs",
+      "status": "draft"
+    },
+    {
+      "slot": 173,
+      "source_sha256": "f6b1ca0a671a2b0bbb15be260af461c2f87c0972f11c4b4f31155f71d1bf6fed",
+      "translation": "市场总监 - Tony Kee",
+      "status": "draft"
+    },
+    {
+      "slot": 174,
+      "source_sha256": "d8c9e30fb04d2f0ccf7e3a96749fee79245c55c42ef1efe7dfc17c3c23e30075",
+      "translation": "创意服务总监 - Leslie Mills",
+      "status": "draft"
+    },
+    {
+      "slot": 175,
+      "source_sha256": "617cacb0282c2c5e71ced3c97dd73d79140f91c5b1bc96b7e60f81d04558d795",
+      "translation": "美术／业务协调经理 - Liz Fierro",
+      "status": "draft"
+    },
+    {
+      "slot": 176,
+      "source_sha256": "2f59c20cede0877035d5154a4257081086a8d94857379736f3d1fcbd8f2331a7",
+      "translation": "创意总监 - Vic Merritt",
+      "status": "draft"
+    },
+    {
+      "slot": 177,
+      "source_sha256": "67137c6f4e911619de6da8b9b5ea1c8da88b493acd702555eb5427aa8ee60481",
+      "translation": "资深平面设计师 - Michael Marrs",
+      "status": "draft"
+    },
+    {
+      "slot": 178,
+      "source_sha256": "35ca1aa902bd1624002dae89d1fa32281e23f7dda22ab278052d15773f08d348",
+      "translation": " - Lesley Zinn",
+      "status": "draft"
+    },
+    {
+      "slot": 179,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 180,
+      "source_sha256": "52d3bc4ec769e79183be8bbfaeb9aa7a53a870a66ac41eff352b3f27facc0fe3",
+      "translation": "本地化 - Mark Cárter",
+      "status": "draft"
+    },
+    {
+      "slot": 181,
+      "source_sha256": "925ec626c5af9b0695ff60614e0ad09ddf6b3f1310b5ffbab67e73e8b1fc7f28",
+      "translation": " - Neil McKenna",
+      "status": "draft"
+    },
+    {
+      "slot": 182,
+      "source_sha256": "5bbb378a2e1986bd8b19212b42ab50727624f37c31948f3213a60589f83030dc",
+      "translation": " - Olivier Goulon",
+      "status": "draft"
+    },
+    {
+      "slot": 183,
+      "source_sha256": "ce19f9c2cceb7fa6e6d846b1255ddea34e9cfdfcc28ea19965e500ca8d09ccff",
+      "translation": " - Alex Nannicini",
+      "status": "draft"
+    },
+    {
+      "slot": 184,
+      "source_sha256": "40a0eaedb4d66b299169a596d689193f0c59a36468160a1c5f2251832bc75d51",
+      "translation": " - Sam Brown",
+      "status": "draft"
+    },
+    {
+      "slot": 185,
+      "source_sha256": "2066b14d0a8103d2b6865d554309a395ff1574c2f851b0f5ba389531324a4c28",
+      "translation": " - Mike Fox",
+      "status": "draft"
+    },
+    {
+      "slot": 186,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 187,
+      "source_sha256": "3432c257dec86118fe3823d220cf529e53ec3032c2d19d8a77fe4422ef24d1a9",
+      "translation": "@时光之轮@、@世界之眼@、@转生真龙@,",
+      "status": "draft"
+    },
+    {
+      "slot": 188,
+      "source_sha256": "c982b984c59b2730bd213971d7a80302c398f63016fb82bbdd591a606d99e2b3",
+      "translation": "及蛇轮标志均为 Robert Jordan 的商标",
+      "status": "draft"
+    },
+    {
+      "slot": 189,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 190,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 191,
+      "source_sha256": "382261e7ba5bd0696a3aa15c47936b9d7415f7db17750e2409766467e0eda8a5",
+      "translation": "特别鸣谢:",
+      "status": "draft"
+    },
+    {
+      "slot": 192,
+      "source_sha256": "1893f06958689314e56f6c125c748c8aecccf14841f49bbb3a34e49d938269b9",
+      "translation": "   Tim Sweeney，Unreal之父",
+      "status": "draft"
+    },
+    {
+      "slot": 193,
+      "source_sha256": "1236462400fd817f505240a0dc4889eef3112cf570d02f5ef75014267cf64798",
+      "translation": "   Robert Jordan，为我们创造了如此美妙而详尽的世界",
+      "status": "draft"
+    },
+    {
+      "slot": 194,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 195,
+      "source_sha256": "5843c03cbe2f96e4cf170b5fa73f02a7ffd23df6edc916bbbcfa9b4730096229",
+      "translation": "同时感谢:",
+      "status": "draft"
+    },
+    {
+      "slot": 196,
+      "source_sha256": "3d7d4c41b5c0e4127efdac445948b37484301230548a2066e789ca3281ec9df4",
+      "translation": "   Epic全体团队成员",
+      "status": "draft"
+    },
+    {
+      "slot": 197,
+      "source_sha256": "b3ae8d87d896aae99c029f4bc64a2fed5e8b0d2d668953442c3d18cfd54da2e4",
+      "translation": "   Bob Berry，提供了高级窗口工具包的设计理念",
+      "status": "draft"
+    },
+    {
+      "slot": 198,
+      "source_sha256": "f0b52ff9080ca30b8c3d2298833c00ef46764ac328a59455ca7fa8e724625fd6",
+      "translation": "   可口可乐公司",
+      "status": "draft"
+    },
+    {
+      "slot": 199,
+      "source_sha256": "24e3cb074d1adbbeaa68633b8b6eaf63765023f3d1a30cd7ac4259dd0b9216fb",
+      "translation": "   激浪",
+      "status": "draft"
+    },
+    {
+      "slot": 200,
+      "source_sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "translation": " ",
+      "status": "draft"
+    },
+    {
+      "slot": 201,
+      "source_sha256": "6d90b3f789096d5799c0ede057ec1833f2739c5f509517ae1e6d1c51a03b22a7",
+      "translation": "最特别的感谢:",
+      "status": "draft"
+    },
+    {
+      "slot": 202,
+      "source_sha256": "f9ce403ebad612ff86b32dc25adfd49df8b2565053d8f99edc1da999ec2ae70a",
+      "translation": "   我们的家人与朋友，感谢他们包容我们长时间的工作，",
+      "status": "draft"
+    },
+    {
+      "slot": 203,
+      "source_sha256": "02075da9115b18ae22a34ad0e53538aaafa353f24fc3052c08092e48bb23eb2d",
+      "translation": "   并给予我们理解、关爱与支持",
+      "status": "draft"
+    },
+    {
+      "slot": 204,
+      "translation": " ",
+      "status": "approved"
+    },
+    {
+      "slot": 205,
+      "translation": "简体中文补丁制作：伯翎飞云",
+      "status": "approved"
+    }
+  ],
+  "retain_original_contributor_names": true,
+  "pending_terms": [
+    "Poleine",
+    "Kyrin"
+  ]
+}

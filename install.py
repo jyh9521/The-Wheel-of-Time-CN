@@ -1,4 +1,4 @@
-"""Install/verify/restore a trusted locally built delta bundle; no engine hooks."""
+"""Install/verify/restore a trusted locally built, version-guarded delta bundle."""
 
 import argparse
 import json
@@ -25,11 +25,19 @@ def targets(target, bundle):
     paths = {}
     for name in bundle["files"]:
         p = Path(name)
+        verified_display_dll = False
+        if name == 'System/Window.dll':
+            profile = json.loads((Path(__file__).resolve().parent / 'profiles/gog-v68.json').read_text('utf8'))
+            expected = profile['files'].get(name)
+            delta = bundle['files'][name]
+            verified_display_dll = bool(expected and bundle.get('profile') == profile['id']
+                and delta.get('original_sha256') == expected['sha256']
+                and delta.get('original_size') == expected['size'])
         if (
             p.is_absolute()
             or len(p.parts) != 2
             or p.parts[0] != "System"
-            or p.suffix.lower() not in (".u", ".int")
+            or (p.suffix.lower() not in (".u", ".int") and not verified_display_dll)
             or ":" in name
             or "\\" in name
         ):

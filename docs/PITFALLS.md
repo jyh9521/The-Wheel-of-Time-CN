@@ -80,3 +80,13 @@ Tick分发差异是高可信待验证原因，不作为已实测的根因。
 `True/False`既是显示转换结果也是配置机器值。不要修改Core.dll的BoolToString或替换.ini布尔值；只修复菜单的显示表达式，复用GetOnOffStr。`High/Medium/Low`也参与配置比较与写回，后续应在显示返回值一侧映射，不改控制逻辑。
 
 序列化脚本字节数不是VM ScriptSize，紧凑对象/名字索引会展开；必须用UCC夹具验证。紧凑索引可以跨字节（如最后一个bool属性引用`7b14`），不要把末字节当成下一个opcode。当前适配器仅支持已审计直线函数，含跳转的竞技场函数不能直接套用同一替换策略。
+
+## 深层设置与Credits关联字段
+
+1. 原生属性Draw直接取FName，未必走GetCaption；只改caption函数会让实际绘制仍英文。
+2. 原生列宽会读注册表，单改构造默认值可能被旧值覆盖；当前在GetDividerWidth设下限，允许用户继续拉宽。
+3. 字体已经按系统DPI放大而原行高固定16，导致文字上下裁切；不能只加宽窗口。当前32像素是1080p测试候选，不是所有DPI验收结论。
+4. 不在共享GetPropertyText里翻译True/False，否则编辑与配置保存可能读取中文机器值。当前只改Draw的临时文本；聚焦编辑框/下拉选项仍可能显示原始机器值。
+5. Credits只新增默认条目而不增ArrayDim或ArrayCount，会越界或漏显。属性头包含可变长度紧凑索引，实际ArrayDim是体+4；错误+5已由守卫拒绝，未写入原版。
+
+6. 安装器最初只允许.u/.int，会在20文件包预检时拒绝Window.dll（任何写入前）。现仅额外允许profile中大小/SHA和profile id均匹配的System/Window.dll；其他DLL/EXE仍拒绝。补丁包资源类型扩展需要同步安装器预检与回滚测试。

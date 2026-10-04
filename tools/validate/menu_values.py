@@ -19,7 +19,7 @@ def run(mode, reference, target, profile):
         actual = body(current, target_index)
         if actual != expected:
             raise ValueError('Display function read-back differs')
-        if script_header(actual)[2] != spec['script_size'] + (5 * len(spec['edits']) if mode == 'modified' else 0):
+        if script_header(actual)[2] != spec['script_size'] + (sum(e.get('vm_delta', 5) for e in spec['edits']) if mode == 'modified' else 0):
             raise ValueError('Unexpected VM size')
         count += len(spec['edits'])
     # Toggle/setter functions must remain original, even in a full localized build.
@@ -39,7 +39,7 @@ def run(mode, reference, target, profile):
         j = next(r['index'] for r in current.records() if r['path'] == name)
         if body(original, i) != body(current, j):
             raise ValueError('Existing locale helper changed')
-    description = 'raw bool casts retained' if mode == 'baseline' else 'localized GetOnOffStr calls; VM size 293 -> 323'
+    description = 'original value expressions retained' if mode == 'baseline' else 'localized existing helpers; guarded VM sizes verified'
     print(f'{mode.upper()} MENU PASS: {count} displays; {description}; '
           f'{checked} other controls functions unchanged; helper unchanged; no game launched')
 

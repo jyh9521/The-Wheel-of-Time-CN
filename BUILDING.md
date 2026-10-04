@@ -184,3 +184,16 @@ python -m tools.validate.menu_values modified --reference GAME/System/WOT.u --pa
 ```
 
 夹具不安装到游戏或提交其生成包。原版输入只读，通用build无需运行UCC；适配所需指纹和表达式在源码仓库中。
+
+## 深层高级选项、纹理细节与制作人员页
+
+当前默认构建为20资源（新增Window.dll差分）；需要原版System/Window.dll，原始大小/hash已入profile。依赖由`requirements.txt`提供pefile 2024.8.26及keystone-engine 0.9.2；模拟验证额外`python -m pip install -r requirements-dev.txt`（unicorn 2.1.4）。构建命令不变，干净源码+原版游戏+既有字幕来源+字体即可重建，不需预编译适配DLL。
+
+locale的credits.json保存默认数组译文和新增署名；native-properties.json保存原生显示表及布局配置。生成CREDITS_DIFF.json、NATIVE_DISPLAY_DIFF.json、MENU_VALUE_DIFF.json。若不使用原生显示适配，可删除locale.config.native_properties配置并重新构建，其他资源仍可生成。
+
+```powershell
+python -m tools.validate.settings_followup modified --game-dir GAME --resources build/zh-CN/resources/System
+python -m tools.validate.native_display --dll build/zh-CN/resources/System/Window.dll --report build/zh-CN/NATIVE_DISPLAY_DIFF.json
+```
+
+第二条只在CPU模拟器执行自编显示stub，不启动或注入游戏。安装前完整退出游戏，使用新20文件manifest；升级现有19文件补丁先通过旧manifest恢复，再应用新manifest。原始游戏目录只作输入，测试目录另行保存；卸载按新manifest恢复20个原版资源。

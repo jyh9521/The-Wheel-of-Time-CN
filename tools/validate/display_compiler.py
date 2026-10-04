@@ -53,6 +53,8 @@ def run(game, out):
     raw, mapped = scripts['LocaleDisplayProbe.Raw'], scripts['LocaleDisplayProbe.Mapped']
     if raw['vm_size'] != 10 or mapped['vm_size'] != 15:
         raise ValueError('Unexpected VM script size delta')
+    if scripts['LocaleDisplayProbe.DetailMapped']['vm_size'] != 48:
+        raise ValueError('Unexpected texture-detail expression VM size')
     # Compact names are one byte in this tiny package; the VM uses four bytes.
     helper = package.names.index('GetOnOffStr')
     from tools.pack.ue1 import ci

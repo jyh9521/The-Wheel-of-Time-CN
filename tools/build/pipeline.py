@@ -26,6 +26,8 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
     source_dir = source_dir or game / 'System'
     check_originals(game, profile)
     texts = [r['translation'] for r in rows if r.get('translation')]
+    if config.get('credits_data'):
+        texts += [r['translation'] for r in config['credits_data']['rows']]
     if source_report:
         from tools.build.source_layer import active_subtitle_texts
         texts += active_subtitle_texts(source_dir, rows, profile['subtitle_files'])
@@ -73,11 +75,29 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
     from src.patch.display_expressions import apply_display_expressions
     display_expressions = apply_display_expressions(
         resources / 'WOT.u', profile, out / 'MENU_VALUE_DIFF.json')
+    credits = None
+    if config.get('credits_data'):
+        from src.patch.credits import apply as apply_credits
+        terminology = None
+        if config.get('terminology'):
+            from tools.validate.terminology import load_terms
+            glossary = Path(__file__).resolve().parents[2] / config['terminology']['path']
+            terminology = load_terms(glossary, config['terminology']['target_column'])
+        credits = apply_credits(resources / 'WOT.u', config['credits_data'], profile,
+                                out / 'CREDITS_DIFF.json', terminology)
+    native_properties = None
+    if config.get('native_properties_data'):
+        from src.patch.native_properties import build as build_native_properties
+        native_properties = build_native_properties(
+            game / 'System/Window.dll', resources / 'Window.dll', config['native_properties_data'],
+            profile['native_properties'], out / 'NATIVE_DISPLAY_DIFF.json')
     if source_report:
         source_report = dict(source_report, production_build_integrated=True)
     names = sorted({'System/' + r['file'] for r in rows if r.get('translation')} | {'System/WOT.u'})
     if native_ui:
         names = sorted(set(names) | {'System/' + n for n in native_ui['files']})
+    if native_properties:
+        names = sorted(set(names) | {'System/Window.dll'})
     if source_report:
         names = sorted(set(names) | {'System/' + n for n in profile['subtitle_files']})
     files = {}
@@ -107,8 +127,10 @@ def build(game, out, rows, config, profile, fontpath, source_dir=None, source_re
               'texture_labels': texture_labels,
               'native_ui': native_ui,
               'display_expressions': display_expressions,
+              'credits': credits,
+              'native_properties': native_properties,
               'subtitle_source': source_report,
-              'bytecode_unchanged': not bool(resource_edits or display_expressions),
+              'bytecode_unchanged': not bool(resource_edits or display_expressions or credits),
               'font_diff_scope': 'Font generation stage, before display-only resource field edits'}
     check_originals(game, profile)
     (out / 'BUILD_REPORT.json').write_text(json.dumps(report, indent=2), 'utf8')

@@ -91,3 +91,9 @@ Preferences是结构化登记数据，不是普通整行字符串。通用导入
 空属性流UFunction的头部依次含None、SuperField、Next、ScriptText、Children、FriendlyName的紧凑索引，然后Line/TextPos/ScriptSize三个int32。字段偏移必须解析，不应固定使用17。当前受指纹约束的直线DrawValues用0x54执行bool→string；改为0x1B + helper FName紧凑索引 + 原bool表达式 + 0x16，保留尾部函数元数据。
 
 **已验证**：UCC自编夹具的VM ScriptSize从10变15。FName在VM中占4字节而非磁盘紧凑索引长度；六个包装各加5，原DrawValues ScriptSize 293→323，磁盘体240→258。新函数体追加到构建副本末尾，导出表仅改该对象size/offset；summary ExportOffset（24）指向重建导出表。不新增对象，不改世代计数。当前适配器不是完整字节码反编译器，仅支持明确审计过的无跳转函数。
+
+## Credits默认数组和原生显示段
+
+WOT.u的CreditsText默认为204项。每条Class默认标签由紧凑name索引18、StrProperty类型13+size编码、可选数组索引、FString长度及数据构成。首项没有array flag，后续索引<128单字节，128～16383用两字节；UTF-16 FString负长度按16位码元计数，标签Size按包含长度前缀的字节数。新增2行需要StrProperty ArrayDim及PostRender的两处ByteConst ArrayCount同步204→206。
+
+Window.dll（x86 PE）的.locale段含自编查表代码与UTF-16键/显示串。代码CALL/POP取得当前位置，表内只存相对偏移，原导入表/重定位表保持原样；两个加载基址的执行验证通过。更新NumberOfSections/SizeOfImage/SizeOfCode以及新段头，CheckSum置零。原文件完整hash先验证，跳转点逐字节校验；原文件其他字节不改。RVA和对应期待字节以profiles/gog-v68.json为准，不用于未知版本。

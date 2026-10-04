@@ -38,7 +38,8 @@ def replace_casts(original, spec, helper_index):
     occupied = set()
     for edit in spec['edits']:
         offset = edit['offset']
-        expected = b'\x54' + bytes.fromhex(edit['argument_hex'])
+        expected = (bytes.fromhex(edit['expected_hex']) if 'expected_hex' in edit
+                    else b'\x54' + bytes.fromhex(edit['argument_hex']))
         if not script_start <= offset < offset + len(expected) <= len(original) - 7:
             raise ValueError("Display expression outside script")
         if original[offset:offset + len(expected)] != expected:
@@ -50,13 +51,20 @@ def replace_casts(original, spec, helper_index):
     result = bytearray(original)
     for edit in sorted(spec['edits'], key=lambda e: e['offset'], reverse=True):
         offset = edit['offset']
+        if 'expected_hex' in edit:
+            replacement = bytes.fromhex(edit['replacement_hex'])
+            if not replacement.startswith(b'\x04\x1b' + ci(helper_index)):
+                raise ValueError('Unexpected display helper index')
+            result[offset:offset + len(bytes.fromhex(edit['expected_hex']))] = replacement
+            continue
         argument = bytes.fromhex(edit['argument_hex'])
         # EX_VirtualFunction, FName, unchanged bool operand, EndFunctionParms.
         result[offset:offset + 1 + len(argument)] = (
             b'\x1b' + ci(helper_index) + argument + b'\x16')
     # FName occupies four VM bytes regardless of compact serialized length.
     # The bundled UCC proof measures +5 VM bytes per wrapped cast.
-    struct.pack_into('<i', result, size_offset, size + 5 * len(spec['edits']))
+    struct.pack_into('<i', result, size_offset,
+                     size + sum(e.get('vm_delta', 5) for e in spec['edits']))
     return bytes(result)
 
 
@@ -92,7 +100,7 @@ def apply_display_expressions(path, profile, report_path):
                            modified_sha256=digest(modified),
                            original_size=len(original), modified_size=len(modified),
                            original_script_size=spec['script_size'],
-                           modified_script_size=spec['script_size'] + 5 * len(spec['edits']),
+                           modified_script_size=spec['script_size'] + sum(e.get('vm_delta', 5) for e in spec['edits']),
                            helper=spec['helper'], menu_slots=[e['menu_slot'] for e in spec['edits']]))
     export_offset = len(data)
     for e in exports:
@@ -122,6 +130,6 @@ def apply_display_expressions(path, profile, report_path):
     Path(report_path).write_text(json.dumps(dict(
         changed_functions=report, configuration_tokens_unchanged=True,
         all_other_exports_unchanged=True, in_game_verified=False), indent=2) + '\n', 'utf8')
-    print(f"MENU VALUE PASS: {sum(len(r['menu_slots']) for r in report)} bool displays; "
+    print(f"MENU VALUE PASS: {sum(len(r['menu_slots']) for r in report)} value displays; "
           "existing locale helper; setters and all other exports unchanged")
     return report

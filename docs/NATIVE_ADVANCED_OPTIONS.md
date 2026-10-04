@@ -40,3 +40,9 @@ python -m tools.validate.preferences --source build/advanced-options/fixed/resou
 - 用1080P确认标题、主分类、子分类、按钮能显示中文。
 - 展开后的原生参数标识仍可能是英文；这一层尚未汉化。
 - 维护者截图中的高DPI行高/文字截断是独立布局问题，本批没有修改原生字体或行高。
+
+## 深层参数与裁切的后续实现（2026-10-04）
+
+此前.int仅元数据阶段仍保留；当前补充Window.dll显示适配，见TECHNICAL.md末节。GetCaption RVA 0x1854D/0x1DAFD及Draw直接名字路径0x18F2E包装查表。Draw值路径0x19195仅改栈上临时缓冲；GetHeight 0x198A0/0x1D4D0返回32；GetDividerWidth 0x1F5A0最小320。全部输入先检查原版SHA，精确预期字节在profile，适配只生成复制DLL差分。
+
+274个显示名称与7个值映射来自locale数据，通用代码不含中文术语。未知名称回退原文，原FName表/配置键不修改。602个CPU模拟断言覆盖两种加载基址及实际跳转包装；没有启动游戏。请在1080p确认展开、滚动、裁切、编辑、保存。原生编辑框保留原机器值，系统DPI超过当前32像素行高时仍可能需要后续调整。
