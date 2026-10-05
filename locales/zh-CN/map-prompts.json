@@ -9,8 +9,8 @@
           "property": "Title",
           "slot": 0,
           "source_sha256": "020b888438a1acce9a121ddca0c19e62564b9d0402da98ed399acf3bb6033ff6",
-          "translation": "Absynth",
-          "status": "pending-term"
+          "translation": "阿布辛斯",
+          "status": "confirmed-term"
         }
       ]
     },
@@ -163,8 +163,8 @@
           "property": "Title",
           "slot": 0,
           "source_sha256": "020b888438a1acce9a121ddca0c19e62564b9d0402da98ed399acf3bb6033ff6",
-          "translation": "Absynth",
-          "status": "pending-term"
+          "translation": "阿布辛斯",
+          "status": "confirmed-term"
         }
       ]
     },
@@ -724,8 +724,8 @@
           "actor": "MessageTrigger0",
           "slot": 0,
           "source_sha256": "d604b54098bdf21f692a335382e9423c212dc4024a9e1e7bd2070f93b75a3d0f",
-          "translation": "感谢营救！Lincoln 很满意！",
-          "status": "draft"
+          "translation": "感谢营救！林肯 很满意！",
+          "status": "confirmed-term"
         },
         {
           "actor": "LevelInfo0",
@@ -1402,18 +1402,9 @@
   ],
   "pending_terms": [
     {
-      "term": "Lincoln",
-      "location": "Mission_12b.MessageTrigger0.Messages[0]",
-      "reason": "Original map message; no confirmed glossary equivalent. Retained pending confirmation."
-    },
-    {
       "term": "Bore",
       "location": "Mission_17.WOTTextWindowInfo0.Content[0]",
       "reason": "No sole-glossary entry; descriptive wording 孔洞 retained pending terminology confirmation."
-    },
-    {
-      "term": "Absynth",
-      "reason": "Arena_01/Autoplay 关卡原创标题，待确认译名。"
     }
   ]
 }

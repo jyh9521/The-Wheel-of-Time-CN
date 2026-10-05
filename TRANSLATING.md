@@ -156,4 +156,4 @@ key-names.json的键是机器名，只改显示值，不改KEYNAME/KEYBINDING/SE
 
 ## 玩法文本与字幕路径补漏（2026-10-05）
 
-package-text.json 保存类属性译文与原文散列，不修改类名或属性名。runtime-messages.json 的 source 用于精确匹配，不能翻译；translation 用于显示。地图 Title 已确认为可见文字，按名词表处理。Absynth 与 Lincoln 仍待确认，不能随意另造译名。
+package-text.json 保存类属性译文与原文散列，不修改类名或属性名。runtime-messages.json 的 source 用于精确匹配，不能翻译；translation 用于显示。地图 Title 已确认为可见文字，按名词表处理。Absynth → 阿布辛斯、Lincoln → 林肯已确认，统一遵循 GLOSSARY.md。
