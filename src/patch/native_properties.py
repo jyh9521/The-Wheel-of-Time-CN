@@ -1,7 +1,8 @@
-"""Version-specific native property display adapter, with locale-neutral tables.
+"""Version-specific native property editor adapter, with locale-neutral tables.
 
 Adds a position-independent read-only display lookup section to a copied DLL.
-No configuration key, FName table, setter or property serializer is renamed.
+No configuration key, FName table or engine property serializer is renamed.
+Optional profiled limits reject invalid editor input before serialization.
 """
 import json
 import struct
@@ -166,6 +167,28 @@ def build(original, output, data_path, spec, report_path):
                                base + at + len(expected))
         patch(at, expected, assemble(f'jmp {base + stub}', base + at) + b'\x90' * (len(expected) - 5))
         editor_reports.append(dict(site, stub_rva=stub, lookup_rva=selected_lookup))
+    range_reports = []
+    limits_lookup = None
+    if spec.get('integer_limits'):
+        from src.patch.property_limits import maximum_lookup, slider_stub, setter_stub
+        while len(payload) % 16:
+            payload += b'\0'
+        limits_lookup = rva + len(payload)
+        payload += maximum_lookup(spec['integer_limits'], base + limits_lookup, base + 0x54734)
+        for site in spec['range_sites']:
+            while len(payload) % 16:
+                payload += b'\0'
+            at = site['rva']
+            stub = rva + len(payload)
+            expected = bytes.fromhex(site['expected_hex'])
+            if site['kind'] == 'slider':
+                payload += slider_stub(base + stub, base + limits_lookup, base + at + len(expected))
+            elif site['kind'] == 'setter':
+                payload += setter_stub(base + stub, base + limits_lookup, base + at + len(expected), base + 0x18d1d)
+            else:
+                raise ValueError('Unknown property limit site')
+            patch(at, expected, assemble(f'jmp {base + stub}', base + at) + b'\x90' * (len(expected) - 5))
+            range_reports.append(dict(site, stub_rva=stub))
     for at in spec['height_rvas']:
         patch(at, bytes.fromhex('b810000000'), b'\xb8' + struct.pack('<i', config['row_height']))
     while len(payload) % 16:
@@ -210,7 +233,9 @@ def build(original, output, data_path, spec, report_path):
                   labels=len(config['labels']), value_labels=len(config['values']),
                   reverse_lookup_rva=reverse_lookup, editor_sites=editor_reports,
                   row_height=config['row_height'], minimum_divider_width=config['minimum_divider_width'],
-                  config_and_setter_code_unchanged=True, position_independent=True, in_game_verified=False)
+                  config_and_setter_code_unchanged=not bool(range_reports), position_independent=True, in_game_verified=False,
+                  limits_lookup_rva=limits_lookup, range_sites=range_reports,
+                  integer_limits=spec.get('integer_limits', []), engine_property_serializer_unchanged=True)
     report['value_labels'] = len(config['values'])
     Path(report_path).write_text(json.dumps(report, indent=2) + '\n', 'utf8')
     print(f'NATIVE DISPLAY PASS: {len(config["labels"])} labels; {len(config["values"])} display values; {len(editor_reports)} editor sites; row height {config["row_height"]}; minimum divider {config["minimum_divider_width"]}; import table unchanged')

@@ -36,6 +36,8 @@ def build(
         texts += list(config["key_names_data"].values())
     if config.get("tutorial_prompts_data"):
         texts += [r["translation"] for r in config["tutorial_prompts_data"]["rows"]]
+    if config.get('map_prompts_data'):
+        texts += [r['translation'] for m in config['map_prompts_data']['maps'] for r in m['rows']]
     if config.get("native_ui_data"):
         texts += [r["translation"] for r in config["native_ui_data"]["strings"]]
         texts += [
@@ -168,6 +170,16 @@ def build(
     names = sorted(
         {"System/" + r["file"] for r in rows if r.get("translation")} | {"System/WOT.u"}
     )
+    if config.get('map_prompts_data'):
+        from src.patch.map_prompts import build as build_map_prompts
+        map_reports = {}
+        for spec in config['map_prompts_data']['maps']:
+            name = spec['file']
+            if name not in profile['files'] or profile['files'][name]['sha256'] != spec['sha256']:
+                raise ValueError('Map prompt profile identity mismatch')
+            map_reports[name] = build_map_prompts(game/name, out/'resources'/name, spec)
+        names = sorted(set(names) | set(map_reports))
+        (out/'MAP_PROMPTS_DIFF.json').write_text(json.dumps(map_reports,indent=2)+'\n',encoding='utf8')
     if native_ui:
         names = sorted(set(names) | {"System/" + n for n in native_ui["files"]})
     if key_display:
@@ -176,11 +188,18 @@ def build(
         names = sorted(set(names) | {"System/Window.dll"})
     if source_report:
         names = sorted(set(names) | {"System/" + n for n in profile["subtitle_files"]})
+    subtitle_display = None
+    additions = []
+    if config.get('subtitle_display'):
+        from tools.build.subtitle_display import build as build_subtitle_display
+        subtitle_display = build_subtitle_display(game, resources/'WOT.u', fontpath, out/'subtitle-display', config)
+        additions = ['System/SubtitleRuntime.u', 'System/SubtitleRuntime.int']
+        names = sorted(set(names) | set(additions))
     files = {}
     for name in names:
-        if name not in profile["files"]:
+        if name not in profile["files"] and name not in additions:
             raise ValueError("Resource not in verified profile: " + name)
-        b = (game / name).read_bytes()
+        b = b"" if name in additions else (game / name).read_bytes()
         m = (out / "resources" / name).read_bytes()
         d = create(b, m)
         if apply(b, d) != m:
@@ -191,12 +210,14 @@ def build(
         "locale": config["locale"],
         "profile": profile["id"],
         "files": files,
+        "owned_additions": additions,
     }
     (out / "PATCH.json").write_text(json.dumps(bundle, separators=(",", ":")), "utf8")
     report = {
         "locale": config["locale"],
         "profile": profile["id"],
         "timing": timing,
+        "subtitle_display": subtitle_display,
         "font_sha256": sha(fontpath.read_bytes()),
         "font_collection_index": config["font"].get("collection_index", 0),
         "font_redistribution": "not authorized by build; check font license before release",

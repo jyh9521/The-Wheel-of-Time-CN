@@ -1,0 +1,869 @@
+{
+  "maps": [
+    {
+      "file": "Maps/Mission_04.wot",
+      "sha256": "196895272fa808ed8f2dc1390e36b84f2b65f7f151abced5a7c8eae0f302e56b",
+      "rows": [
+        {
+          "actor": "MessageTrigger1",
+          "slot": 0,
+          "source_sha256": "5dc6b5dc4a9d15b0ddd7150cbebaa95ebe6fd569d5ee07d3e1bb108fce8d1b20",
+          "translation": "天快亮了……",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger2",
+          "slot": 0,
+          "source_sha256": "74b3fa7f0a47df043ac768ccd831c83fffe9474717c5acb21e12f4995fc35448",
+          "translation": "天亮了！",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "6ddbcf18816eadef35a1e6884b81a52d8e58d20ee77f7e32e661cb8fc96eac22",
+          "translation": "天空渐渐亮起来了……",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_05c.wot",
+      "sha256": "bfe6bc34319a7a1b799cd308255dddf3a94ba38ec9be3f2b41e6b78103dc1494",
+      "rows": [
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "c5d9d1839e7e8e2804e2c8f06bf75a4bf03c58424fb1398e612ce373e70565d3",
+          "translation": "打开下方的两道锁之后，内门才会关闭。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "cb65f6adf0eb8325adaac60b16e341d3bbce1a29636659b7b02f55a2022fe9c3",
+          "translation": "拾取了通往大门前厅的钥匙。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_08b.wot",
+      "sha256": "aa7e7a1360453df2ca647034bfe60ff736ea43086870a61f7cab237760346f43",
+      "rows": [
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "3d5b1a5d87a4a13f7c305b29ec8c94c094b2bb6116ebe51b1e120ec221b20f13",
+          "translation": "现在应该可以安全地再次进入道了。",
+          "status": "draft"
+        },
+        {
+          "actor": "BagHolding0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "ea54704c310773eb278dc6805df886d4034d8ec7eadec1fb84ade15214bfcd48",
+          "translation": "拾取了袋子，其中有爆裂结界和冻结。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyLong1",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "5a73fb00e98a238b9852d7fbef1bcb76dd60bdd54eee05f5289af8574780839a",
+          "translation": "拾取了通往上层走道的钥匙。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_08c.wot",
+      "sha256": "1bc556f12f8b55c450ad918dc5e437da1d2818a5b72a609d70d69c48f73b8e08",
+      "rows": [
+        {
+          "actor": "MessageTrigger2",
+          "slot": 0,
+          "source_sha256": "a219fca224dc2d2cefe07b918645c143e6f2a71ba9e858b7bb020e40da60b8a7",
+          "translation": "现在该离开了。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "10d964fe857b6d00d97d4e99d385aced4a1cc8739dbfd4801ef60ede5eba98b0",
+          "translation": "黑风仍然离得太近。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger1",
+          "slot": 0,
+          "source_sha256": "a67b8e645115fd8e4e0d5f6b8168a088937e59b6ebe0fabc15cb48ce2d419ac1",
+          "translation": "黑风现在应该已经离开了。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_12b.wot",
+      "sha256": "1298cd7dafd6432b14a8ba9a4c97c017934858641dae4c988d23b733c56adeff",
+      "rows": [
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "d604b54098bdf21f692a335382e9423c212dc4024a9e1e7bd2070f93b75a3d0f",
+          "translation": "感谢营救！Lincoln 很满意！",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_16.wot",
+      "sha256": "05d5cc5d086d26d102c0cccaaf26967084582cc9319b8a7ab14f33c363385eb5",
+      "rows": [
+        {
+          "actor": "MessageTrigger1",
+          "slot": 0,
+          "source_sha256": "496a7a896fb2827106889b4e56e5583fd2c756fff247b71a07d1241998a6d35a",
+          "translation": "宗派守护者波莱恩已被杀害！没有她的帮助，就无法成功。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger2",
+          "slot": 0,
+          "source_sha256": "3329b41da930121d12e5b5e178020063ac00e74c39629546a9903c5a811a1a30",
+          "translation": "远征队中有一人阵亡！",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 0,
+          "source_sha256": "d8ce56810ad22533d190ab4c1c9701218f12262b4df5c5828d789e618debfda2",
+          "translation": "胜利了！",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger0",
+          "slot": 0,
+          "source_sha256": "97920c250e84b3d6a99366063bf91c783f834f2bf264be25e5ff3becd6b5bb87",
+          "translation": "受保护的两仪师姐妹和护法现已丧生，保护行动失败。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Tutorial.wot",
+      "sha256": "b07d8cb87a7774b1576660208525f437fbe69088fc7c95bcf327fd6f577450b2",
+      "rows": [
+        {
+          "actor": "MessageTrigger6",
+          "slot": 0,
+          "source_sha256": "883652781554207d172e05e05227654ce705d50ce9d3cfde3d3a48c36e218d32",
+          "translation": "研究特法器非常重要。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger6",
+          "slot": 1,
+          "source_sha256": "2087fbc77eeefc83099e150b3eb07202ffe8af136ffd012f94721b66e3908582",
+          "translation": "每当拾取新的魔法器物，都应进行研究。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger6",
+          "slot": 2,
+          "source_sha256": "f004bbd2cf5e6bba0b92fd41051aacc19f827a4c72c97f38a25dee9caef6a997",
+          "translation": "这里请按1选择气流冲击。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger6",
+          "slot": 3,
+          "source_sha256": "aae1edfdc6a73cf525d892048c9d074b8bebbc7834dc4c687576e785e17c739e",
+          "translation": "按F2研究它。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger1",
+          "slot": 2,
+          "source_sha256": "1da5fa75578b6bbfa1d13a68d43466133fd0903ea86f16cba571a9c95289d045",
+          "translation": " //你已与白塔缔结誓约。你准备好了。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger30",
+          "slot": 0,
+          "source_sha256": "4436c505fb61de330227f1b08606b0497615f3325b48ac4551a8659437cd3d27",
+          "translation": "按主攻击键使用气流冲击。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 0,
+          "source_sha256": "6feff8dbd13d677b3c5ec8221c490a0b79b2181058440a49e9157badaaa35999",
+          "translation": "按前进键向前移动［默认：上方向键］",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 1,
+          "source_sha256": "b68d821cc0788ceb7360496a5a4dbda119156dc92bedc599f706c8a8c89516eb",
+          "translation": "按后退键向后移动［下方向键］",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 2,
+          "source_sha256": "fc7a61b80806cb391a29c63f7e24a71b5d9c91bc076b7a1eee83c3daa4e57ca0",
+          "translation": "使用鼠标转向，或者",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 3,
+          "source_sha256": "cc4603a616624ead82a71f03e63450d085431a4baf5e6230d38556d708f574ff",
+          "translation": "按左转键向左转［左方向键］",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger3",
+          "slot": 4,
+          "source_sha256": "53bb611727edf6206dd7ed2bad31b0c34a3f6e1341a8f5efff79ead27a7507d6",
+          "translation": "按右转键向右转［右方向键］",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger28",
+          "slot": 0,
+          "source_sha256": "707a11708b71869d51e4decb646d1ff4f832f6bebb758913e3421f4bdf267d5c",
+          "translation": "右上角的图标表示你拾取了新的魔法器物。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger28",
+          "slot": 1,
+          "source_sha256": "f6cbd6a5f51924e8742c6ea3d607173f6f4b280b41d054981af41180fbf46383",
+          "translation": "这件气流冲击是你的默认特法器。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger49",
+          "slot": 0,
+          "source_sha256": "1e3b16801babde27c54917df6a10c666962b9f9c9653c4b08ab1dd6d3772694a",
+          "translation": "朝梯子或某些墙壁移动，即可攀爬。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger49",
+          "slot": 1,
+          "source_sha256": "775ad012630db6aef1fe1387eca774e434b18a1ae522dc6141a9e0baaf657622",
+          "translation": "面朝墙壁向前移动，爬出坑洞。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger27",
+          "slot": 0,
+          "source_sha256": "47835a14afda4061ba90e31343a12f8cac877d7e119d62c49b06afc1224a3f4d",
+          "translation": "朝门移动，尝试将它推开。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger34",
+          "slot": 0,
+          "source_sha256": "67bfe949ed10b867c4e8634c13687a7668b4c01b4124419bc85802d79424a3f8",
+          "translation": "你携带的所有钥匙都会显示在生命值下方。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger9",
+          "slot": 0,
+          "source_sha256": "537f8a350168820ced15a2959b5cfa5dfa317c0b409860d3af78ef59e2ec71fa",
+          "translation": "按跳跃键原地起跳［鼠标右键或空格键］",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger9",
+          "slot": 1,
+          "source_sha256": "c3a37002943d4f4340119ce637696198a6b139ceae4bb352ab677012fa625ddf",
+          "translation": "前进时按跳跃键，即可向前跳。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger16",
+          "slot": 0,
+          "source_sha256": "745be03c7057b9b8dee82060a95eec2a5cba85d8b0d8ba21eb9a04030bfce103",
+          "translation": "所有有益效果都显示在生命值旁边。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger16",
+          "slot": 1,
+          "source_sha256": "8cc762cd8021bbf096a85d6d17da45232fbe5206d72b2343918f6d17ad5fdefe",
+          "translation": "不利效果显示在右上角。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger41",
+          "slot": 0,
+          "source_sha256": "538e66ec338114b01e9cef8d692fa991cd2a9a0b56079ddd7a597a37d934bfd7",
+          "translation": "按4选择瞬移特法器。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger41",
+          "slot": 1,
+          "source_sha256": "aae1edfdc6a73cf525d892048c9d074b8bebbc7834dc4c687576e785e17c739e",
+          "translation": "按F2研究它。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger41",
+          "slot": 2,
+          "source_sha256": "7f1f0e33eaed00d5e3eb9feadef3e1ecbfece6ec4ffffe97d3cb5094921cdb92",
+          "translation": "特法器的使用次数显示在图标下方。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger41",
+          "slot": 3,
+          "source_sha256": "b3f25e8e19baa163bd93424b93f82574b4f6d9750b38f064236d8f112f1ceeb8",
+          "translation": "按攻击键使用瞬移。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger45",
+          "slot": 0,
+          "source_sha256": "5cd1bac288b99a4065168513db8eaa73e800271d8936ce76217a439d6851b379",
+          "translation": "朝拉杆移动，即可扳动它。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger38",
+          "slot": 0,
+          "source_sha256": "2e58d641165765218e801a907dc9bbc675b086cc0e6273fb05b379c04efe4919",
+          "translation": "魔法器物按用途分组，每组都有对应数字。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger38",
+          "slot": 1,
+          "source_sha256": "76c161c96849e0e6281db0c3c025cc4064b3d9d908b0793c44b61b0fcc6aa0f1",
+          "translation": "按1切换该组中的气流冲击和火球。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger38",
+          "slot": 2,
+          "source_sha256": "490546d4a42f894f43e5e0655c89609b9482ce12b8066d85ded800fed650b9ae",
+          "translation": "选中火球后停止切换。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger47",
+          "slot": 0,
+          "source_sha256": "64a98cd040421fe733897b55cea2aeb5e509859f56571751518815b3da1b7455",
+          "translation": "按4选择反射特法器。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger5",
+          "slot": 0,
+          "source_sha256": "514cc10ef3034db56fa97657f6b847b6e20d4961a3c35fee9a3e51c03659951f",
+          "translation": "进入危险区域时，按F5保存。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger5",
+          "slot": 1,
+          "source_sha256": "445a460d0b4b0e8cb2f4c0c798eef2850ff809cdc8c5e3961fed225c4f4f45eb",
+          "translation": "按F6载入存档。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger42",
+          "slot": 0,
+          "source_sha256": "35d319f5d71f64da11496345ba1db5381a3b45a84798ffc009c72a6354c35f65",
+          "translation": "按3选择火焰护盾特法器。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger39",
+          "slot": 0,
+          "source_sha256": "b66280f21a95bb54c4cbe946fec542ca967c4d9832636005baec2acf4580a444",
+          "translation": "按方向键游泳。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger39",
+          "slot": 1,
+          "source_sha256": "2accb693b6f653ae92fff5f8d4207513b6d601fbc052720ecc72ec741036b770",
+          "translation": "按跳跃键上浮。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Tutorial_Citadel.wot",
+      "sha256": "1120a1fc2fa5a052febbd4a0cb0acc3a7dcfade3b7a25c2ec567acc5891e0043",
+      "rows": [
+        {
+          "actor": "MessageTrigger71",
+          "slot": 0,
+          "source_sha256": "9b755104296884caa567d37e5e8de6e43fb7b12f406b9c874381aee7aa0b785e",
+          "translation": "按0选择闸门。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger71",
+          "slot": 1,
+          "source_sha256": "5bec3c41d9f1f75d16a72d27d83dc1eb4b763ce5029b65e53af3aa56efbfba3d",
+          "translation": "对准闸门图标并按下攻击键，启动闸门。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger61",
+          "slot": 0,
+          "source_sha256": "3a70e7478d60f62b113f3f10a5ef183e10c73dcb40c1fdec6f869a35d2cd6b3e",
+          "translation": "按8，直到选中陷坑。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger61",
+          "slot": 1,
+          "source_sha256": "aae1edfdc6a73cf525d892048c9d074b8bebbc7834dc4c687576e785e17c739e",
+          "translation": "按F2研究。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger61",
+          "slot": 2,
+          "source_sha256": "0b58c97417a97df12929d2165aebf84d32ea6e848aa33b74453324c0740b32bc",
+          "translation": "将准星对准标记位置并按下攻击键，放置陷阱。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger66",
+          "slot": 0,
+          "source_sha256": "5e360fe3ff59c8a22fbd7a340a20bc6cc7a78ae01a6b84115605fcac3503220c",
+          "translation": "按0，直到选中闸门。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger66",
+          "slot": 1,
+          "source_sha256": "5bec3c41d9f1f75d16a72d27d83dc1eb4b763ce5029b65e53af3aa56efbfba3d",
+          "translation": "对准闸门图标并按下攻击键，启动闸门。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger24",
+          "slot": 0,
+          "source_sha256": "ee72bff7433a59d4955f7b20ee01bce681b46f96cc7cb76a6c7e3f67b5dacf8c",
+          "translation": "按F10编辑环境。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger72",
+          "slot": 0,
+          "source_sha256": "7579b4c682aee02f432af8c678cd5daf5528522adaa48f98a6fb898c12cb22a5",
+          "translation": "按F10开始游戏。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger63",
+          "slot": 0,
+          "source_sha256": "70efbe5ee4dda23b60dd843360bd0d0b61d044b278a4372d7066bdc3b7a6414f",
+          "translation": "按2选择护法。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger63",
+          "slot": 1,
+          "source_sha256": "2828d1ceb4512936cea7b15069071102a8c5384310062516af4859cd76d8613d",
+          "translation": "按3选择两仪师。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger63",
+          "slot": 2,
+          "source_sha256": "594469610810d4c7ab0336e465b0febd45cdbf7a2d91a8f7a69f8fb90b5a8dc9",
+          "translation": "按下攻击键放置部队。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger56",
+          "slot": 0,
+          "source_sha256": "47c9f71558e2215b553de99e2d9bbfa06718d8d46391a64e42dd5fe765ba64ce",
+          "translation": "按5选择长矛陷阱。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger56",
+          "slot": 1,
+          "source_sha256": "aae1edfdc6a73cf525d892048c9d074b8bebbc7834dc4c687576e785e17c739e",
+          "translation": "按F2研究。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger56",
+          "slot": 2,
+          "source_sha256": "0b58c97417a97df12929d2165aebf84d32ea6e848aa33b74453324c0740b32bc",
+          "translation": "将准星对准标记位置并按下攻击键，放置陷阱。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger58",
+          "slot": 0,
+          "source_sha256": "28229eb0c0cb2241111db74354031f64b23717860a131cbd4f17ddcb90b9714f",
+          "translation": "按7选择临时墙。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger58",
+          "slot": 1,
+          "source_sha256": "aae1edfdc6a73cf525d892048c9d074b8bebbc7834dc4c687576e785e17c739e",
+          "translation": "按F2研究。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger58",
+          "slot": 2,
+          "source_sha256": "0b58c97417a97df12929d2165aebf84d32ea6e848aa33b74453324c0740b32bc",
+          "translation": "将准星对准标记位置并按下攻击键，放置陷阱。",
+          "status": "draft"
+        },
+        {
+          "actor": "MessageTrigger2",
+          "slot": 0,
+          "source_sha256": "57de68e24e5fa4ebdbea1bc5346dae346ff802a74ec2e7bb5acd180d8b7bf4df",
+          "translation": "必须使用正确的陷阱！",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle3_01.wot",
+      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4",
+      "rows": [
+        {
+          "actor": "BattleInfo1",
+          "property": "EditingStr",
+          "slot": 0,
+          "source_sha256": "a7345fc2183d42bbe78638267270630d105f0ab548e9d5b5d4835e14da2f7ed8",
+          "translation": "准备城堡",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "PlayingStr",
+          "slot": 0,
+          "source_sha256": "3d2ebd2053228b97d0bce5082a710bcdc9e1f35f1a99d2635c5a6c11eeb7823b",
+          "translation": "战斗开始",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "ReadyStr",
+          "slot": 0,
+          "source_sha256": "291424178427d5d4459819ee104807df0a2249da9d7bbd4483c115eb0e284fdb",
+          "translation": "做好战斗准备",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "WaitingStr",
+          "slot": 0,
+          "source_sha256": "b6e6b75f122700615afbafb96f1ae5a41d7016c05b5ffbb5e7f1d5f14ced4097",
+          "translation": "等待其他玩家",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_05a.wot",
+      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe",
+      "rows": [
+        {
+          "actor": "KeyLong0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
+          "translation": "拾取了通往回廊的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "PropertyFlipper0",
+          "property": "StringValue",
+          "slot": 0,
+          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
+          "translation": "拾取了通往回廊的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "Trigger5",
+          "property": "Message",
+          "slot": 0,
+          "source_sha256": "fc95c5ea8c5b7ed71793a0ae6b4e24dd83767a8e098ac8959bba3da985877d4f",
+          "translation": "必须解除吊桥的两道锁，才能将它关闭。",
+          "status": "draft"
+        },
+        {
+          "actor": "Trigger15",
+          "property": "Message",
+          "slot": 0,
+          "source_sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+          "translation": "test",
+          "status": "protected"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_07a.wot",
+      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe",
+      "rows": [
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "cb0c91be109ef6f0ed608bac18fa84183a3c57c8791690336dcbacf01e83451f",
+          "translation": "值得为此赴死吗？",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 1,
+          "source_sha256": "a35878befb3f234c5364de58072adc3f622e900115cb5bb67665e83218964745",
+          "translation": "http://www.ocrana.de",
+          "status": "protected"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_08a.wot",
+      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa",
+      "rows": [
+        {
+          "actor": "BagHolding0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "7b39c93747da6e063d3513d44c1ae44b676c7cac0f320662712fb40e77dcf017",
+          "translation": "拾取了袋子，其中有追踪弹和腐化。",
+          "status": "draft"
+        },
+        {
+          "actor": "BagHolding1",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "c1577aed57fc8a12f9e5b8b57d60cfb7faf786e290c50a5fc617f09b2a2a2c60",
+          "translation": "拾取了袋子，其中有治疗和冻结。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover0",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "5819980d5d32bea9212c010c4433e0d8b41eb40841f20b03b6970750331aae29",
+          "translation": "身后的门已锁上。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_12a.wot",
+      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076",
+      "rows": [
+        {
+          "actor": "KeyLong0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "a3ed217b81220e7984dd81dda2bd6ab6607ff8fe6831dbcfe1f9e06b2a2ec0ad",
+          "translation": "找到了一把大钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "KeyPickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_15.wot",
+      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6",
+      "rows": [
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover4",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
+          "translation": "大门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "PropertyFlipper0",
+          "property": "StringValue",
+          "slot": 0,
+          "source_sha256": "0d2b899bc61215f131eff651b17418d31751b5bd8930b0699a5d5383be83fd2b",
+          "translation": "拾取了通往封闭储藏室的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover21",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "7c34100e57d48198dd33ea1230e15bccb9665c7445f03b874b46a0de5478c81e",
+          "translation": "储藏室的门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover5",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
+          "translation": "大门已锁上。",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_17.wot",
+      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909",
+      "rows": [
+        {
+          "actor": "KeyRing0",
+          "property": "KeyPickupMessage",
+          "slot": 0,
+          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
+          "translation": "拿起了钥匙圈。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
+          "translation": "拿起了钥匙圈。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "6d5f1a292d3bb6a93a3630a189970233cf6d82201eac6497b796ba115f08f8ca",
+          "translation": "在这间小书房的桌上，你发现了一叠古老而泛黄的笔记，内容涉及昆达雅石封印。传说纪元中，暗帝囚牢的孔洞封闭之后，两仪师进行的实验表明，这些封印能够直接影响暗帝的囚牢。只需四枚封印，便能重新打开孔洞；反之，一场仪式可以剥离封印的这种力量，使它们变成真正位于煞妖谷的编织的象征。遗憾的是，世界崩毁使封印散落各处，当时的两仪师未能完成仪式。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 2,
+          "source_sha256": "0977b7bb21b345abdb0625e963dd62a5a6206b7cfea5ce5fc482a079c706da04",
+          "translation": "有关这场仪式的知识失传已久。直到此刻，你才重新知晓。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover2",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover2",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover0",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover0",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover1",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover1",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 1,
+          "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+          "translation": "%s=8",
+          "status": "protected"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_18.wot",
+      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a",
+      "rows": [
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "aaa13c2bc79231432d27a391f37eb92478d6582675334ddbd6d97861c94bb43b",
+          "translation": "一次只能携带一枚封印。寻找更多封印之前，先将这一枚放到充当祭坛的书桌上。最终，其余封印也应带回这里。",
+          "status": "draft"
+        }
+      ]
+    }
+  ],
+  "pending_terms": [
+    {
+      "term": "Lincoln",
+      "location": "Mission_12b.MessageTrigger0.Messages[0]",
+      "reason": "Original map message; no confirmed glossary equivalent. Retained pending confirmation."
+    },
+    {
+      "term": "Bore",
+      "location": "Mission_17.WOTTextWindowInfo0.Content[0]",
+      "reason": "No sole-glossary entry; descriptive wording 孔洞 retained pending terminology confirmation."
+    }
+  ]
+}

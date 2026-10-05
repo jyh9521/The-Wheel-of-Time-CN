@@ -1,4 +1,6 @@
 """Build and install native FMV captions into a NEW localized game copy."""
+from tools.build.launcher import portable_launcher
+
 import argparse
 import json
 import os
@@ -110,6 +112,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $here 'System/WinDrv.dll')).Hash.ToLow
 Push-Location (Join-Path $here 'System')
 try { & .\\WoT.exe } finally { Pop-Location }
 '''
+    launcher=portable_launcher(launcher)
     (out/'LAUNCH_GAME.ps1').write_text(launcher,'utf8')
     rollback='''#!/usr/bin/env bash
 set -euo pipefail

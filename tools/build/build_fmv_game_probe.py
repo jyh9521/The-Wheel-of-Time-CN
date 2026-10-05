@@ -1,4 +1,6 @@
 """Prepare an isolated real-game FMV QA copy. Never launch or write the source game."""
+from tools.build.launcher import portable_launcher
+
 import argparse
 import json
 import re
@@ -89,6 +91,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $here ('Movies/'+$m.movie))).Hash.ToLo
 Push-Location (Join-Path $here 'System')
 try { & .\\WoT.exe } finally { Pop-Location }
 '''
+    launcher=portable_launcher(launcher)
     (out/'LAUNCH_GAME.ps1').write_text(launcher,'utf8')
     script='''#!/usr/bin/env bash
 set -euo pipefail

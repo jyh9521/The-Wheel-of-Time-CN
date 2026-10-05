@@ -41,7 +41,7 @@ GAME 提供完整原版游戏和 MOV，resource-build 提供当前源码新构�
 - locales/zh-CN/fmv/*.tsv：零起始样本 ID、制表符、中文译文；空白样本不填写。
 - locales/zh-CN/fmv/config.json：字体名称、Mac 语言码、行宽和双行高度。
 
-上述基础构建引用系统 QuickTime 和 SimHei。当前完整测试入口改用附带思源黑体子集的 `build/local-font-game/LAUNCH_GAME.ps1`，实际游戏内中文字幕显示已确认，不需要永久安装 SimHei；追加构建步骤与字体许可见 [本地字体验证](FMV_LOCAL_FONT.md)。此前 `build/formal-game` 保留，不覆盖旧副本。
+上述基础构建引用系统 QuickTime 和 SimHei。当前完整测试入口采用整体文字 1.5 倍副本 `build/readability-game/LAUNCH_GAME.ps1`，FMV 仍沿用附带思源黑体子集的版本，实际游戏内中文字幕显示已确认，不需要永久安装 SimHei；追加构建步骤与字体许可见 [本地字体验证](FMV_LOCAL_FONT.md)。此前 `build/formal-game` 保留，不覆盖旧副本。
 新的语言复用工具，但须配置合适字体、语言码与行宽；等长 Pascal 字体名槽是当前实现限制。
 
 ## 验证与回滚
@@ -62,7 +62,7 @@ build/formal-game 的 MODIFIED_FILE.mov、DIFF_FILE.json、VERIFICATION.txt、RO
 ## 正式游戏测试入口
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/local-font-game/LAUNCH_GAME.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/readability-game/LAUNCH_GAME.ps1"
 ```
 
 这次是完整游戏入口，不是独立预览，也不是只有一句中文的旧 PoC。主菜单“重播开场”检查完整 Intro，

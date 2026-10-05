@@ -1,0 +1,13 @@
+{
+  "package_version": 68,
+  "export": "menuConfiguration.GetDetailClass",
+  "export_sha256": "2e0d58d66348274f90f777020adfe3b821f80820fd48dbfbdc85a25a05034aec",
+  "section": "WinDrv.WindowsClient",
+  "key": "MasterDetailLevel",
+  "allowed": [
+    0,
+    1,
+    2
+  ],
+  "recovery_value": 2
+}

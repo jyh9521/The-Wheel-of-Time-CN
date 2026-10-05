@@ -241,3 +241,26 @@ build/fmv-game-qa/LAUNCH_GAME.ps1；运行后在主菜单选择“重播开场�
 ## FMV 本地字体实验
 
 思源黑体子集与进程私有加载可在独立副本构建，实际游戏内中文字幕显示已确认，完整通关测试采用 build/local-font-game；默认基础构建仍保持原路径。源字体版本/指纹、命令、额外验证依赖及回滚见 [本地字体验证](docs/FMV_LOCAL_FONT.md)。
+
+## 整体文字可读性候选
+
+可在完整本地字体游戏副本上生成 1.5 倍或 3 倍 UE 位图文字候选，FMV 字节保持不变，不覆盖默认构建或原副本。放大字形与 metrics 不代表固定文本框、列距及所有页面已适配。重建命令、资源分页限制及验证边界见 [文字可读性专项](docs/SUBTITLE_READABILITY.md)。
+
+## 高级设置范围审计与修复
+
+生产构建的原生窗口阶段自动应用版本配置中的整型边界，不需要另外手改 DLL。只读范围审计依赖 capstone==5.0.7，CPU 适配验证依赖 unicorn==2.1.4，均不属于运行游戏的依赖。独立 readability 副本可使用以下入口；原安装保持不变，输出目录必须尚不存在。
+
+```powershell
+python -m tools.build.build_property_limits build --source-game "D:/GOG Games/The Wheel of Time" --game-dir build/readability-game --out build/property-limits
+python -m tools.build.build_property_limits restore-copy --transaction build/property-limits --out build/property-limits/rollback-copy
+```
+
+恢复现有越界等级、同步安装清单，保存原 DLL/INI/清单；保留有效设置和存档。范围依据与未确认字段见 [范围审计](docs/ADVANCED_SETTINGS_RANGES.md)。
+
+## 地图显示文本构建
+
+默认构建同时读取 `locales/<locale>/map-prompts.json`。构建输入需包含 profile 中列出的 16 个原版 Maps/*.wot；地图 SHA-256 必须匹配。译文参与字体覆盖和字库生成，差分包同时包含这些地图。安装/验证/恢复仍使用 install.py；完整地图仅留在本地生成物，不提交。详见 [地图文本覆盖](docs/MAP_TEXT_COVERAGE.md)。
+
+## 默认字幕显示层
+
+默认构建现追加 18px SubtitleFont 与 SubtitleRuntime.u/int，并将 giWOT.HUDType 指向专用 HUD 子类。需使用匹配 profile 的原版 UCC；构建自动在独立目录编译，不启动游戏。新增自有资源由 owned_additions 记录，安装后恢复会移除对应新增文件。译文字符扫描、普通 UI 字库和地图提示沿用原流程。细节见 [字幕专用显示层](docs/SUBTITLE_DISPLAY.md)。

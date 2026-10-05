@@ -26,5 +26,10 @@
   "credits": "credits.json",
   "native_properties": "native-properties.json",
   "key_names": "key-names.json",
-  "tutorial_prompts": "tutorial-prompts.json"
+  "tutorial_prompts": "tutorial-prompts.json",
+  "map_prompts": "map-prompts.json",
+  "subtitle_display": {
+    "pixel_size": 18,
+    "cues": "subtitle-cues.json"
+  }
 }

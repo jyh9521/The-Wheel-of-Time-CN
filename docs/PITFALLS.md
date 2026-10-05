@@ -130,3 +130,31 @@ encd=0x100，本次同时设中文 Mac media language=33。不能把现代探针
 ## 完整测试入口与显式地图参数
 
 GOG 快捷方式以 System 为工作目录启动 WoT.exe，Arguments 为空。完整通关测试入口应沿用无参数启动；显式传入 Entry 会直接指定地图，不代表从正常启动流程开始。三个完整副本构建模板已去掉 Entry 参数，现有 local-font-game 入口同步修正。配置和存档不清空；无参数入口不等同于恢复首次安装配置。自动检查覆盖参数与脚本语法，开场到主菜单仍需实际启动确认。
+
+## Windows PowerShell 与 PowerShell 7 启动入口差异
+
+PowerShell 7 中的资源预检查通过，不代表 powershell.exe 中通过。本机 powershell.exe 实测无法识别 Get-FileHash，导致启动脚本在启动游戏前退出；不将此错误归为游戏或字体崩溃。启动模板改用 .NET SHA256 流式计算，保留未知资源拒绝，增加 -VerifyOnly。实际 powershell.exe 预检查通过，损坏资源负例仍拒绝；未启动游戏。排错入口可加 -NoExit 保留窗口与错误。
+
+启动脚本模板升级须先统一 CRLF/LF；仅替换哈希调用而未匹配 CRLF 的前置函数插入，会产生缺少 Get-ResourceSha256 的半升级脚本。已增加 Windows 换行回归测试，并用实际 powershell.exe 预检查验证。
+
+## 高级设置中的整体细节等级越界
+
+原版 menuConfiguration.GetDetailClass(byte N) 仅接受 0/1/2，其他值触发断言。高级设置可保存 MasterDetailLevel=255，随后进入硬件设置会在 GetDetailClass:002F 退出；数字更大不代表更高的有效预设。此次只恢复该字段到之前有效的 2，保存原配置及崩溃日志，其他设置与存档不改。恢复工具按目标 Function SHA256 门禁，不在未知版本上猜测范围。
+
+原脚本另注明 MaxDetailLevel 为 0–4；当前配置中该项仍为 255，未在本次单字段恢复中自动重置。后续如出现其他异常，需根据对应日志逐项定位，不将整个配置清空。
+
+## 字节容量不是设置范围
+
+高级设置裸 ByteProperty 的 255 上限来自通用编辑器。MasterDetailLevel=255 会触发硬件菜单 GetDetailClass 断言。只恢复配置不能阻止再次误设；需要同时修正滑块范围和手动输入路径。不能全局把所有字节项限制为 2，音量和粒子密度仍需 0–255。详见 [范围审计](ADVANCED_SETTINGS_RANGES.md)。
+
+## 可选入口不代表普通启动覆盖
+
+教程 Messages 的译文曾只接入可选 LocalePlayer.GenericMessage。正常 WOTPawns.AesSedai 没有经过该入口，地图提示仍为英文。验证必须区分可选入口和无地图参数的普通启动；默认构建现直接回填地图实例显示字符串。已有存档可能保存旧属性，提示验收应重新开始教程。
+
+## 共享字体全局放大的固定布局冲突
+
+3 倍造成说明面板和菜单溢出；1.5 倍仍遮挡特法器标题。字库 metrics 一致不证明固定页面布局正确。当前恢复 1.0 倍，历史候选保留，仅 FMV 字号保持原已验收状态。
+
+## 字幕时间轴必须接入普通启动
+
+仅编译可选 LocalePlayer 并不能保证普通入口应用分段；此前字号重建并恢复普通类后，Tes_01 又按完整字符串显示。新层从默认 HUD 接收原声音字幕，通过 trigger-relative cue 处理分段，构建与原生加载校验同时检查接入。尾部长度补偿空格只在绘制层剥离，不改声音与原本的普通字幕持续时间。

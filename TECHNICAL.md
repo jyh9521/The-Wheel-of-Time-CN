@@ -239,3 +239,15 @@ BOM-only 会乱码；添加 encd=0x100 和 media language=33 后显示正确。
 ## FMV 私有字体适配验证
 
 旧 QuickTime 已识别并绘制进程私有加载的思源黑体子集。字体 cmap 覆盖与 OS/2 脚本标记需要同时校验；MOV Unicode 编码保持不变。已完成 PIC 加载代码、16 场景 CPU 检查、原生绘制和独立回滚，实际游戏内中文字幕显示已确认；完整通关和播放控制路径仍待验收。版本门禁、PE 字段关联与证据边界见 [本地字体验证](docs/FMV_LOCAL_FONT.md)。
+
+## 原生高级设置范围
+
+原字节属性编辑器统一提供 0–255，但整体细节、最大细节、血腥效果的原版菜单范围分别为 0–2、0–4、0–3。版本守卫的 Window.dll 适配按属性声明所有者限制滑块和数值输入，保持其他原生字段与序列化不变。完整证据、未确认范围及验收边界见 [范围审计](docs/ADVANCED_SETTINGS_RANGES.md)。
+
+## 地图实例显示文本
+
+已验证：MessageTrigger.Messages 写在地图 actor 的序列化属性中，普通启动不会经过可选 LocalePlayer 的 GenericMessage 翻译入口。默认工具链现以白名单 FString 属性回填解决；只追加改变的 actor body 与 export table，头部只改 ExportOffset，其他导出逐字节验证。UTF-16 长度以 code unit 计数并包含 NUL。地图几何和事件逻辑不改，完整指纹及独立回滚均验证。扫描范围、覆盖与待确认字段见 [地图文本覆盖](docs/MAP_TEXT_COVERAGE.md)。
+
+## 字幕专用 HUD 与字体
+
+已验证：新增 SubtitleFont 而不改现有 Font；Subclass 的 DrawMessages 先调用原绘制路径，单独绘制并发字幕并恢复 Canvas 状态。唯一既有导出变化为 giWOT.HUDType 默认属性，显式指向 SubtitleRuntime.SubtitleHUD。原生 commandlet 已验证交叉包加载，真实视口排版仍待验收。原单槽覆盖与可选入口缺失导致的开场整句合并由此分离解决。详见 [字幕显示](docs/SUBTITLE_DISPLAY.md)。

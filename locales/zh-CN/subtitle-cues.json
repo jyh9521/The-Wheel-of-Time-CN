@@ -1,7 +1,7 @@
 {
   "sound": "DialogA.Tes_01",
   "source_sha256": "72944a5fb9b5cd9062efa7833f16a1f460f930a71443ab3958e0f0297727382b",
-  "timing_status": "local short-clip ASR estimates; in-game acceptance pending",
+  "timing_status": "Original Tes_01 WAV and word timestamps rechecked; normal HUD trigger-relative integration; in-game timing acceptance pending",
   "cues": [
     {
       "begin": 0.0,
@@ -23,5 +23,9 @@
       "end": 30.82,
       "translation": "坚定你的意志。"
     }
-  ]
+  ],
+  "audio_reference": {
+    "sha256": "783dd56c6d644f2682453302ebcd0d201a28976a5a6c4273eaba88d6b6436f4c",
+    "duration_seconds": 31.251292517006803
+  }
 }

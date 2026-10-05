@@ -102,6 +102,70 @@
     "System/Window.dll": {
       "size": 397312,
       "sha256": "781a7572871ac6a96929f4f50d286c5362651dadfcb6b4e0124c7bb360cc6e61"
+    },
+    "Maps/Mission_04.wot": {
+      "sha256": "196895272fa808ed8f2dc1390e36b84f2b65f7f151abced5a7c8eae0f302e56b",
+      "size": 2932903
+    },
+    "Maps/Mission_05c.wot": {
+      "sha256": "bfe6bc34319a7a1b799cd308255dddf3a94ba38ec9be3f2b41e6b78103dc1494",
+      "size": 4531895
+    },
+    "Maps/Mission_08b.wot": {
+      "sha256": "aa7e7a1360453df2ca647034bfe60ff736ea43086870a61f7cab237760346f43",
+      "size": 7260468
+    },
+    "Maps/Mission_08c.wot": {
+      "sha256": "1bc556f12f8b55c450ad918dc5e437da1d2818a5b72a609d70d69c48f73b8e08",
+      "size": 3381619
+    },
+    "Maps/Mission_12b.wot": {
+      "sha256": "1298cd7dafd6432b14a8ba9a4c97c017934858641dae4c988d23b733c56adeff",
+      "size": 6337856
+    },
+    "Maps/Mission_16.wot": {
+      "sha256": "05d5cc5d086d26d102c0cccaaf26967084582cc9319b8a7ab14f33c363385eb5",
+      "size": 5281706
+    },
+    "Maps/Tutorial.wot": {
+      "sha256": "b07d8cb87a7774b1576660208525f437fbe69088fc7c95bcf327fd6f577450b2",
+      "size": 2131099
+    },
+    "Maps/Tutorial_Citadel.wot": {
+      "sha256": "1120a1fc2fa5a052febbd4a0cb0acc3a7dcfade3b7a25c2ec567acc5891e0043",
+      "size": 951296
+    },
+    "Maps/Battle3_01.wot": {
+      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4",
+      "size": 4025460
+    },
+    "Maps/Mission_05a.wot": {
+      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe",
+      "size": 7928015
+    },
+    "Maps/Mission_07a.wot": {
+      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe",
+      "size": 8311826
+    },
+    "Maps/Mission_08a.wot": {
+      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa",
+      "size": 5687019
+    },
+    "Maps/Mission_12a.wot": {
+      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076",
+      "size": 8835472
+    },
+    "Maps/Mission_15.wot": {
+      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6",
+      "size": 8719576
+    },
+    "Maps/Mission_17.wot": {
+      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909",
+      "size": 7088300
+    },
+    "Maps/Mission_18.wot": {
+      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a",
+      "size": 11113362
     }
   },
   "resource_edits": [
@@ -282,6 +346,56 @@
         "kind": "combo_save",
         "rva": 116561,
         "expected_hex": "508bceff9280000000"
+      }
+    ],
+    "integer_limits": [
+      {
+        "package": "Engine",
+        "owner": "Client",
+        "property": "MasterDetailLevel",
+        "minimum": 0,
+        "maximum": 2,
+        "kind": "ByteProperty",
+        "evidence": "menuConfiguration.GetDetailClass + ProcessRight"
+      },
+      {
+        "package": "Engine",
+        "owner": "Client",
+        "property": "MaxDetailLevel",
+        "minimum": 0,
+        "maximum": 4,
+        "kind": "ByteProperty",
+        "evidence": "menuConfiguration.ProcessRight: Min(4, ...)"
+      },
+      {
+        "package": "Engine",
+        "owner": "Client",
+        "property": "GoreDetailLevel",
+        "minimum": 0,
+        "maximum": 3,
+        "kind": "ByteProperty",
+        "evidence": "menuOptions.ProcessRight: Min(3, ...)"
+      },
+      {
+        "package": "Engine",
+        "owner": "Client",
+        "property": "MaxNumDecals",
+        "minimum": 0,
+        "maximum": 4095,
+        "kind": "IntProperty",
+        "evidence": "menuConfiguration.ProcessRight: Min(4095, ...)"
+      }
+    ],
+    "range_sites": [
+      {
+        "kind": "slider",
+        "rva": 105304,
+        "expected_hex": "68ff000000"
+      },
+      {
+        "kind": "setter",
+        "rva": 101632,
+        "expected_hex": "8b4d088965f0"
       }
     ]
   },

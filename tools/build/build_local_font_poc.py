@@ -1,4 +1,6 @@
 """Build a separate full-game local-font experiment; never alter formal/source games."""
+from tools.build.launcher import portable_launcher
+
 import argparse,json,os,shutil,re
 from pathlib import Path
 from tools.pack.movie_text import rebuild,read_translations,text_tables,wrap
@@ -56,6 +58,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $here $m.font)).Hash.ToLowerInvariant(
 Push-Location (Join-Path $here 'System')
 try { & .\\WoT.exe } finally { Pop-Location }
 '''
+    launcher=portable_launcher(launcher)
     (out/'LAUNCH_GAME.ps1').write_text(launcher,'utf8')
     (out/'ROLLBACK.sh').write_text('#!/usr/bin/env bash\nset -euo pipefail\ncd "'+str(ROOT).replace('\\','/')+'"\npython -X utf8 -m tools.build.build_local_font_poc rollback --allow-runtime-config --input "'+str(out).replace('\\','/')+'" --out "${1:?Supply a NEW rollback-copy directory}"\n','utf8');os.chmod(out/'ROLLBACK.sh',0o755)
     verify(out)

@@ -121,3 +121,11 @@ Unicode 样本现在额外写入 `00 00 00 0C 65 6E 63 64 00 00 01 00`：
 legacy `text` 描述不是 `tx3g`。批量工具以 SHA 门禁解析原片，当前 14 个文本轨均是一 sample/chunk，但 Mission_05 有两种描述，stsc 在第 23 个 chunk 切换到第二描述。保留 stsc/stts、原始 mdat 和全部音视频轨；追加新 Unicode mdat，再写 stsz 和 stco。样本用 BE u16 字节长度、FEFF + UTF-16BE、`encd=0x100`，去掉与旧字符位置绑定的 styl/ftab/orig。
 
 text 描述起点（含 size/type）：默认文本矩形在 +30，bottom 在 +34；Pascal 字体名在 +58。本套原片描述长 65、矩形 0/0/20/640、Geneva 长 6；目标字体 SimHei 同长，bottom 改 44。tkhd version 0 的 +88 高度写 44 的 16.16 定点值；mdhd +28 语言写 Mac 码 33。容器长度不变，不移动原媒体；旧字节和输出哈希保存在可逆差分。字体名等长和一 sample/chunk 是当前实现限制，未知结构报错。字段参考 [Apple text 描述](https://developer.apple.com/documentation/quicktime-file-format/text_sample_description)及[样本格式](https://developer.apple.com/documentation/quicktime-file-format/text_sample_data)，并已在本套原片与原生解码器验证。全文说明见 FMV_FULL_QA.md。
+
+## v68 地图 actor 显示属性回填
+
+带 HasStack 标志的导出先解析状态帧，再逐项解析 property tag。FString 类型为 13；回填采用 size class 7 的显式 int32 payload 长度，保留名称索引与 array slot。负 compact index 表示 UTF-16LE，字符计数包含 NUL。新的 actor body 与 export table 追加，ExportOffset 位于头部偏移 24；名称、导入、GUID、几何与非目标属性不改。回滚使用原始 128 字节前缀和原始文件长度恢复，再核对完整 SHA-256。
+
+## 自有字幕资源与 HUD 绑定
+
+新增 Font 使用负载为 None 属性终止符、Font pages 与 CPP64 的格式，所有既有 Font/Texture 导出保持。giWOT 的 HUDType ObjectProperty 单独改为新 class import，名称/导入/导出表追加重建；源 class body 与默认属性字节必须匹配。补丁 owned_additions 只声明自有 SubtitleRuntime.u/int，原始散列为 SHA-256(empty)、原始大小为 0，表示不存在；回滚恢复不存在状态而非保留空文件。

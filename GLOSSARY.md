@@ -285,6 +285,11 @@
 | Mistress of Novices | **初阶生师尊** | FMV 专名 / 职衔 | 《转生真龙》[中英译名表转载](https://m.99csw.com/book/7929/274468.html)；[中文 Fandom](https://thewheeloftime.fandom.com/zh/wiki/两仪师)同用此职衔 |
 | Risline | **里斯琳** | 游戏原创角色 | 2026-10-05 已确认；Mission_04 的 30、36、39 号样本，蓝宗角色 |
 
+| Portcullis | **闸门** | 游戏建筑 | 沿用现有 PortcullisInventory.Title 译名 |
+| Pit | **陷坑** | 游戏陷阱 | 沿用现有 PitInventory.Title 译名 |
+| Spear Trap | **长矛陷阱** | 游戏陷阱 | 沿用现有 SpearInventory.Title 译名 |
+| Wall | **临时墙** | 游戏建筑 | 指 WallInventory 时使用；普通墙壁不套用 |
+
 ## FMV 补充术语（2026-10-05）
 
 补充的六类词汇已并入上面的唯一确认术语表；参考出处随条目保存。
