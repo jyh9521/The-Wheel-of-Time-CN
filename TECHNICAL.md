@@ -224,3 +224,10 @@ PlayMovie 的字幕轨选择另受语言索引减 3 控制，不能靠 MOV enabl
 BOM-only 会乱码；添加 encd=0x100 和 media language=33 后显示正确。
 字幕 matrix 只在测试进程中移到视频下方，GWorld 黑色背景消除了 OFF 白条。
 独立预览入口可重建，172 项测试通过；可见播放与游戏内字幕选择接入仍待验。
+
+### 游戏内字幕选择最小 PoC
+
+我只在物理隔离的 WinDrv.dll 副本把 RVA 0xFC97 的语言索引减 3 改为零基第一文字轨选择，
+原音轨代码与 Language=int 不变；Intro 使用同一条已显示的中文样本。
+179 项离线测试通过，游戏内显示仍待实际运行确认。原版资源不改；全文 FMV 翻译暂停，
+先完成 [游戏内 FMV 验证](docs/FMV_GAME_QA.md)。

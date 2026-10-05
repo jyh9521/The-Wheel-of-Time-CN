@@ -1,0 +1,11 @@
+{
+  "id": "gog-v68-movie-text-selection-poc",
+  "file": "System/WinDrv.dll",
+  "size": 327680,
+  "sha256": "43076c7c4492654fb71fbeb7c4a83d4c870f7db0ad7421ada75a7912a06af964",
+  "rva": 64663,
+  "before": "83c7fd",
+  "after": "33ff90",
+  "text_track_ordinal": 0,
+  "scope": "isolated QA only; force first text track, audio selection unchanged"
+}

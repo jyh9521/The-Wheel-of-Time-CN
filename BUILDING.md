@@ -219,3 +219,17 @@ QuickTime 路径默认读取 32 位注册表，亦可显式传 --qt-dir。产物
 MODIFIED_FILE.mov、DIFF_FILE.json、quicktime_player.exe、PREVIEW.json、PLAY_FMV.ps1 和 ROLLBACK.sh。
 没有复制 QuickTime DLL 或字体；用户系统需提供配置的字体。测试视频只有第 1–7 秒一条中文。
 入口/回滚/验收与原生字段说明见 [FMV 研究](docs/FMV_SUBTITLES.md)。
+
+## 游戏内 FMV 隔离测试构建
+
+我先建立游戏内最小验证，不先翻译全片：
+
+```powershell
+python -m tools.build.build_fmv_game_probe build --source "GAME_OR_LOCALIZED_COPY" --locale zh-CN --out build/fmv-game-qa
+```
+
+输入需要完整目录，且 WinDrv.dll 与 Intro.mov 必须匹配所记录的原版 SHA；可以使用此前
+build/runtime 来保留已有汉化。原版目录也可直接重建，只是菜单不会因此全部变为中文。
+工具物理复制资源到新的输出目录，不启动游戏，不覆盖旧目录。输出游戏入口为
+build/fmv-game-qa/LAUNCH_GAME.ps1；运行后在主菜单选择“重播开场”。
+范围、回滚、离线证据和游戏内待验收项见 [FMV 游戏验证](docs/FMV_GAME_QA.md)。

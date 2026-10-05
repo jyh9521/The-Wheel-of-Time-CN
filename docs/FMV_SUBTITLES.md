@@ -170,3 +170,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fm
 跳回开头以及跳转片尾后的 IsMovieDone 状态均通过。首个 300ms 固定等待窗口曾因启动延迟失败，
 加入 Windows 消息处理并延长到 700ms 后观测停止/暂停时间同为 2.250 秒。
 这验证受控启停与片尾路径，不替代完整观看、实际配音听感或可见窗口验收；正常 play 模式不静音。
+
+## 下一阶段顺序：游戏内最小验证优先
+
+我暂不开展整片翻译。独立播放器已经显示中文，接下来先用隔离 WoT.exe 的
+“重播开场”验证 WinDrv 原生路径。三字节字幕选择 PoC、复制范围、启动与验收说明见
+[游戏内 FMV 验证](FMV_GAME_QA.md)。没有修改原版安装；游戏内结果仍待实测。
