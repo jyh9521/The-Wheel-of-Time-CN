@@ -205,6 +205,10 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 ## 设置补漏构建与验证
 
 我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。
+## 完整 FMV 中文字幕构建
+
+游戏内最小显示已经由我确认。先按上面的命令构建普通汉化资源，再用 `python -m tools.build.build_fmv build --game-dir "GAME" --runtime-dir "GAME" --resource-build "BUILD_OUTPUT" --out build/formal-game --locale zh-CN` 生成独立的完整游戏副本，不依赖旧的 build/runtime。原片/播放器均做版本门禁，普通资源与 14 段剧情的 628 条对白一起导入，音视频不重编码；字体由系统提供。详情、核验及独立回滚见 [FMV 正式测试](docs/FMV_FULL_QA.md)。下面保留之前的 PoC 入口作为研究历史，不作为正式测试入口。
+
 ## 独立 FMV 中文字幕实验入口
 
 我提供了不安装、不启动游戏的原生 QuickTime 预览构建：

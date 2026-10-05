@@ -278,6 +278,23 @@
 | Dark Lord | **暗帝** | 专名 / 游戏称谓 | 我已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 
 ---
+| Dragonmount | **龙山** | FMV 专名 / 职衔 | 中文 Wiki [兰德·亚瑟](https://twot.huijiwiki.com/wiki/兰德·亚瑟) |
+| Whitebridge | **白桥镇** | FMV 专名 / 职衔 | 中文 Wiki [世界之眼](https://twot.huijiwiki.com/wiki/世界之眼) |
+| Portal Stone | **传送石** | FMV 专名 / 职衔 | 中文 Wiki [大猎捕](https://twot.huijiwiki.com/wiki/大猎捕) |
+| Tarmon Gai'don | **最后战争** | FMV 专名 / 职衔 | 中文 Wiki [兰德·亚瑟](https://twot.huijiwiki.com/wiki/兰德·亚瑟)；古语与英语指同一事件，不在连续两句重复音译 |
+| Last Battle | **最后战争** | FMV 专名 / 职衔 | 中文 Wiki [兰德·亚瑟](https://twot.huijiwiki.com/wiki/兰德·亚瑟)；古语与英语指同一事件，不在连续两句重复音译 |
+| Shai'tan | **撒丹** | FMV 专名 / 职衔 | 《世界之眼》[名词解释转载](https://read.99csw.com/book/7927/274352.html)中暗帝条目；出版文字转载线索，不冒称直接核验纸书 |
+| Mistress of Novices | **初阶生师尊** | FMV 专名 / 职衔 | 《转生真龙》[中英译名表转载](https://m.99csw.com/book/7929/274468.html)；[中文 Fandom](https://thewheeloftime.fandom.com/zh/wiki/两仪师)同用此职衔 |
+
+## FMV 补充术语（2026-10-05）
+
+补充的六类词汇已并入上面的唯一确认术语表；参考出处随条目保存。
+
+职衔“初阶生师尊”与表内 novice → 初学者的词干不同。我保留已确定的 novice 译名，不以新增职衔覆盖旧术语；这项出版用词差异留作术语复核记录。
+
+### FMV 待确认术语
+
+- `Risline`：Mission_04 的 30、36、39 号样本提到的蓝宗角色；原意大利语字幕拼写如此，英文音轨局部自动识别为 Rislyn，自动识别不是姓名拼写依据。现有项目与中文 Wiki 未找到可确认的定名，暂保留原拼写，建议“瑞丝琳”，待我确认后统一更新此表及三句字幕。
 
 ## 维护规则
 

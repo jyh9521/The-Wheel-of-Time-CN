@@ -1,0 +1,9 @@
+{
+  "font": "SimHei",
+  "source_font": "Geneva",
+  "media_language": 33,
+  "line_units": 44,
+  "track_height": 44,
+  "source_text_languages": ["it", "es"],
+  "reference": "GLOSSARY.md"
+}

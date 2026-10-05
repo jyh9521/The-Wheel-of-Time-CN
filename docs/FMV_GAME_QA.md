@@ -81,3 +81,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fm
 四项本地事务记录为 MODIFIED_FILE.dll、DIFF_FILE.json、VERIFICATION.txt、可执行 ROLLBACK.sh。
 回滚脚本只输出新的 DLL 验证副本，不写回源游戏或静默改变已准备的测试入口。
 原生 MOV 结构与旧 QuickTime Unicode 编码问题见 [FMV 研究](FMV_SUBTITLES.md)。
+# 正式测试入口更新（2026-10-05）
+
+我已在游戏内确认最小中文样本可以显示。14 段剧情视频的完整字幕已经制作并导入 `build/formal-game`，新的入口是该目录的 LAUNCH_GAME.ps1；单句 `build/fmv-game-qa` 保留为实验记录，不作为正式测试入口。完整范围、当前待确认项和构建命令见 [FMV_FULL_QA.md](FMV_FULL_QA.md)。下文为最小验证阶段的历史记录。

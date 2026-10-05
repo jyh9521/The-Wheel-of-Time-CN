@@ -116,3 +116,8 @@ Unicode 样本现在额外写入 `00 00 00 0C 65 6E 63 64 00 00 01 00`：
 长度 12、类型 encd、kTextEncodingUnicodeDefault=0x100。
 本次 mdhd version 0 的 atom+28 字段写 Mac 简体中文语言码 33（两个字节 00 21）；
 该值来自 locale 配置，不是通用工具固定值。真实旧 QuickTime 绘制与可逆验证见上述研究报告。
+# FMV 批量回填补充（2026-10-05）
+
+legacy `text` 描述不是 `tx3g`。我的批量工具以 SHA 门禁解析原片，当前 14 个文本轨均是一 sample/chunk，但 Mission_05 有两种描述，stsc 在第 23 个 chunk 切换到第二描述。保留 stsc/stts、原始 mdat 和全部音视频轨；追加新 Unicode mdat，再写 stsz 和 stco。样本用 BE u16 字节长度、FEFF + UTF-16BE、`encd=0x100`，去掉与旧字符位置绑定的 styl/ftab/orig。
+
+text 描述起点（含 size/type）：默认文本矩形在 +30，bottom 在 +34；Pascal 字体名在 +58。本套原片描述长 65、矩形 0/0/20/640、Geneva 长 6；目标字体 SimHei 同长，bottom 改 44。tkhd version 0 的 +88 高度写 44 的 16.16 定点值；mdhd +28 语言写 Mac 码 33。容器长度不变，不移动原媒体；旧字节和输出哈希保存在可逆差分。字体名等长和一 sample/chunk 是当前实现限制，未知结构报错。字段参考 [Apple text 描述](https://developer.apple.com/documentation/quicktime-file-format/text_sample_description)及[样本格式](https://developer.apple.com/documentation/quicktime-file-format/text_sample_data)，并已在本套原片与原生解码器验证。全文说明见 FMV_FULL_QA.md。
