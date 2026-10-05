@@ -33,7 +33,7 @@ python install.py restore --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT
 备份勿删除。安装后自行在 User.ini 的 `[WOT.WOTPlayer]` 中启用 `bSubtitles=True`。
 安装器不修改 EXE、启动器、地图、玩法或配置文件；当前高级选项显示适配包含经原版指纹校验的 Window.dll 差分，可回滚。
 
-包含全部 FMV 的完整测试副本及核验、回滚方式见 [FMV 正式测试](docs/FMV_FULL_QA.md)。
+包含全部 FMV 的完整测试副本及核验、回滚方式见 [FMV 正式测试](docs/FMV_FULL_QA.md)。当前完整测试入口附带思源黑体子集，游戏内字幕显示已确认；字体构建与私有加载说明见 [本地字体验证](docs/FMV_LOCAL_FONT.md)。
 
 ## 技术摘要
 

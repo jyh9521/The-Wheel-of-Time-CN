@@ -235,3 +235,7 @@ BOM-only 会乱码；添加 encd=0x100 和 media language=33 后显示正确。
 原音轨代码与 Language=int 不变；Intro 使用同一条已显示的中文样本。
 179 项离线测试通过，游戏内显示仍待实际运行确认。原版资源不改；全文 FMV 翻译暂停，
 先完成 [游戏内 FMV 验证](docs/FMV_GAME_QA.md)。
+
+## FMV 私有字体适配验证
+
+旧 QuickTime 已识别并绘制进程私有加载的思源黑体子集。字体 cmap 覆盖与 OS/2 脚本标记需要同时校验；MOV Unicode 编码保持不变。已完成 PIC 加载代码、16 场景 CPU 检查、原生绘制和独立回滚，实际游戏内中文字幕显示已确认；完整通关和播放控制路径仍待验收。版本门禁、PE 字段关联与证据边界见 [本地字体验证](docs/FMV_LOCAL_FONT.md)。

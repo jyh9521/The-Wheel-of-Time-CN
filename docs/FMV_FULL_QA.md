@@ -9,7 +9,7 @@
 
 GtLogo、Logo 是品牌片头，保持原样。Mission_10 没有文本轨：画面抽样显示逃脱、传送石和白袍众场景；
 仅对这段无文本来源的视频运行本机已缓存的语音检测，结果只有一条高无语音概率的“You”，
-不足以认定是实际对白，没有据此编造字幕。它暂保持原片，正式测试时仍需确认是否有可辨对白。
+不足以认定是实际对白，没有据此编造字幕。后续完整观看已确认无对白，保持原片，无需字幕。
 
 ## 原文与译名
 
@@ -41,7 +41,7 @@ GAME 提供完整原版游戏和 MOV，resource-build 提供当前源码新构�
 - locales/zh-CN/fmv/*.tsv：零起始样本 ID、制表符、中文译文；空白样本不填写。
 - locales/zh-CN/fmv/config.json：字体名称、Mac 语言码、行宽和双行高度。
 
-系统应有 QuickTime 和 SimHei 字体；这里只引用系统字体，不再分发字体文件。
+上述基础构建引用系统 QuickTime 和 SimHei。当前完整测试入口改用附带思源黑体子集的 `build/local-font-game/LAUNCH_GAME.ps1`，实际游戏内中文字幕显示已确认，不需要永久安装 SimHei；追加构建步骤与字体许可见 [本地字体验证](FMV_LOCAL_FONT.md)。此前 `build/formal-game` 保留，不覆盖旧副本。
 新的语言复用工具，但须配置合适字体、语言码与行宽；等长 Pascal 字体名槽是当前实现限制。
 
 ## 验证与回滚
@@ -62,7 +62,7 @@ build/formal-game 的 MODIFIED_FILE.mov、DIFF_FILE.json、VERIFICATION.txt、RO
 ## 正式游戏测试入口
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/formal-game/LAUNCH_GAME.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/local-font-game/LAUNCH_GAME.ps1"
 ```
 
 这次是完整游戏入口，不是独立预览，也不是只有一句中文的旧 PoC。主菜单“重播开场”检查完整 Intro，

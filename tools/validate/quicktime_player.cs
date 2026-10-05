@@ -43,6 +43,8 @@ public sealed class NativeMovie : IDisposable {
     [DllImport(QT, CallingConvention=CallingConvention.Cdecl)] static extern void StopMovie(IntPtr movie);
     [DllImport(QT, CallingConvention=CallingConvention.Cdecl)] static extern byte IsMovieDone(IntPtr movie);
 
+    [DllImport(QT, CallingConvention=CallingConvention.Cdecl)] static extern void GetFNum(byte[] name,out short number);
+    [DllImport(QT, CallingConvention=CallingConvention.Cdecl)] static extern void GetFontName(short number,byte[] name);
     public const int Width=1920, Height=1080;
     IntPtr movie=IntPtr.Zero, world=IntPtr.Zero, pixels=IntPtr.Zero;
     bool initialized,entered;
@@ -61,6 +63,12 @@ public sealed class NativeMovie : IDisposable {
             SetDllDirectory(Path.GetFullPath(runtime));
             Check(InitializeQTML(0),"InitializeQTML"); initialized=true;
             Check(EnterMovies(),"EnterMovies"); entered=true;
+            string family=Environment.GetEnvironmentVariable("WOT_FONT_FAMILY");
+            if(!String.IsNullOrEmpty(family)) {
+                byte[] n=Encoding.ASCII.GetBytes(family),pn=new byte[n.Length+1]; pn[0]=(byte)n.Length;Array.Copy(n,0,pn,1,n.Length);
+                short id;GetFNum(pn,out id); byte[] returned=new byte[256];GetFontName(id,returned);
+                Console.WriteLine("QT FONT LOOKUP: requested="+family+"; id="+id+"; resolved="+Encoding.Default.GetString(returned,1,returned[0]));
+            }
             byte[] name=Encoding.Default.GetBytes(Path.GetFullPath(file));
             if(name.Length>255 || Encoding.Default.GetString(name)!=Path.GetFullPath(file)) throw new Exception("Movie path is not representable by native ANSI API");
             byte[] pascal=new byte[name.Length+1]; pascal[0]=(byte)name.Length;
@@ -168,6 +176,18 @@ public sealed class MoviePreviewForm : Form {
 }
 
 public static class QuickTimePlayer {
+    [DllImport("gdi32.dll", CharSet=CharSet.Unicode)] static extern int AddFontResourceExW(string path,uint flags,IntPtr reserved);
+    [DllImport("gdi32.dll", CharSet=CharSet.Unicode)] static extern bool RemoveFontResourceExW(string path,uint flags,IntPtr reserved);
+    static string privateFont;
+    static void LoadPrivateFont() {
+        privateFont=Environment.GetEnvironmentVariable("WOT_PRIVATE_FONT");
+        if(String.IsNullOrEmpty(privateFont)) return;
+        privateFont=Path.GetFullPath(privateFont);
+        int count=AddFontResourceExW(privateFont,0x10,IntPtr.Zero);
+        Console.WriteLine("PRIVATE FONT LOAD: faces="+count+"; FR_PRIVATE; "+privateFont);
+        if(count==0) throw new Exception("Private font registration failed");
+    }
+
     static int CaptionInk(Bitmap frame) {
         int count=0;
         for(int y=1037;y<1080;y++) for(int x=0;x<1920;x++) {
@@ -178,6 +198,7 @@ public static class QuickTimePlayer {
     }
     [STAThread] public static int Main(string[] args) {
         try {
+            LoadPrivateFont();
             if(args.Length<4 || (args[0]!="render" && args[0]!="play" && args[0]!="transitions" && args[0]!="timing")) throw new Exception("Usage: player.exe render|play|transitions|timing QTSystem movie on|off [output.png seconds]");
             if(args[3]!="on" && args[3]!="off") throw new Exception("Caption mode must be on/off");
             using(NativeMovie movie=new NativeMovie(args[1],args[2],args[3]=="on")) {
@@ -218,5 +239,6 @@ public static class QuickTimePlayer {
             }
             return 0;
         } catch(Exception ex) { Console.Error.WriteLine(ex.Message);return 1; }
+        finally { if(!String.IsNullOrEmpty(privateFont)) Console.WriteLine("PRIVATE FONT REMOVE: "+RemoveFontResourceExW(privateFont,0x10,IntPtr.Zero)); }
     }
 }

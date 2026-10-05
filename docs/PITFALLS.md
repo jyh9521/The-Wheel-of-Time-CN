@@ -122,3 +122,7 @@ encd=0x100，本次同时设中文 Mac media language=33。不能把现代探针
 ## 术语表连续性（2026-10-05）
 
 确认术语必须位于唯一带 English / 中文译名表头的连续 Markdown 表格内。空行或分隔线会结束表格，后续无表头词条不会进入 load_terms 校验。FMV 七个已有词条与 Risline 已接入同一确认表；新增词条应同时检查 Markdown 展示和解析器读回结果。
+
+## 字体子集有字形但旧 QuickTime 显示方框
+
+只检查 cmap 与 AddFontResourceEx 返回值不足以证明显示正常。子集后 OS/2 代码页标记改变，会影响旧 QuickTime 的脚本选择；保留全部源字体标记同样不保证正确。简体中文实验使用显式 locale 标记 0x40001，正文保持 Unicode。原生绘制证据及失败样本见 [本地字体验证](FMV_LOCAL_FONT.md)。

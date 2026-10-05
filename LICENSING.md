@@ -36,3 +36,7 @@ assets/fonts/README.md记录选择流程，当前没有捆绑字体或预编译f
 原生显示适配stub和包重建代码是本项目自编，未复制Unreal SDK/EULA源码；不改变原版Window.dll或WOT.u的权利归属。源码仓库仅提交构建代码、版本散列、少量互操作指令字节与译文，不提交完整DLL或原版Credits英文表。制作人员页贡献者姓名保留，新增署名仅指本汉化补丁。
 
 pefile、Keystone汇编工具及Unicorn测试模拟器由pip安装，不随补丁运行、不vendor。第三方依赖遵循各自完整许可，不并入本项目MIT；Keystone的核心及客户端例外参见[上游许可说明](https://github.com/keystone-engine/keystone#license)和COPYING/EXCEPTIONS-CLIENT，Python绑定许可证与核心分开。发布打包若要捆绑依赖，应单独保留许可，不以wheel摘要的BSD字段代替全部组件许可。
+
+## 思源黑体子集实验
+
+思源黑体 2.005 及其改名子集继续遵循 SIL OFL 1.1，不属于工具 MIT 或译文 CC BY-SA 授权。版权与许可证随子集发布，主字体名称为 WotFmv。上游固定版本及许可证见 profiles/fmv-font-source.json 与 assets/fonts/SourceHanSans-OFL.txt；生成字体留在 build，实验尚未发布。
