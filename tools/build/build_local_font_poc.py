@@ -54,7 +54,7 @@ foreach ($entry in $m.modified.PSObject.Properties) {
 }
 if ((Get-FileHash -LiteralPath (Join-Path $here $m.font)).Hash.ToLowerInvariant() -ne $m.font_sha256) { throw 'Local subtitle font hash mismatch' }
 Push-Location (Join-Path $here 'System')
-try { & .\\WoT.exe Entry } finally { Pop-Location }
+try { & .\\WoT.exe } finally { Pop-Location }
 '''
     (out/'LAUNCH_GAME.ps1').write_text(launcher,'utf8')
     (out/'ROLLBACK.sh').write_text('#!/usr/bin/env bash\nset -euo pipefail\ncd "'+str(ROOT).replace('\\','/')+'"\npython -X utf8 -m tools.build.build_local_font_poc rollback --allow-runtime-config --input "'+str(out).replace('\\','/')+'" --out "${1:?Supply a NEW rollback-copy directory}"\n','utf8');os.chmod(out/'ROLLBACK.sh',0o755)

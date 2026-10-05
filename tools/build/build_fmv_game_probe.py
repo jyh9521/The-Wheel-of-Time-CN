@@ -87,7 +87,7 @@ $m = Get-Content -LiteralPath (Join-Path $here 'TEST_MANIFEST.json') -Raw | Conv
 if ((Get-FileHash -LiteralPath (Join-Path $here 'System/WinDrv.dll')).Hash.ToLowerInvariant() -ne $m.dll_sha256) { throw 'Test DLL hash mismatch' }
 if ((Get-FileHash -LiteralPath (Join-Path $here ('Movies/'+$m.movie))).Hash.ToLowerInvariant() -ne $m.movie_sha256) { throw 'Test movie hash mismatch' }
 Push-Location (Join-Path $here 'System')
-try { & .\\WoT.exe Entry } finally { Pop-Location }
+try { & .\\WoT.exe } finally { Pop-Location }
 '''
     (out/'LAUNCH_GAME.ps1').write_text(launcher,'utf8')
     script='''#!/usr/bin/env bash
