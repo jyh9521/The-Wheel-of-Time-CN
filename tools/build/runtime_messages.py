@@ -30,4 +30,3 @@ def bind(game, config, root):
         merged[source]=target
     if len(merged)>32:raise ValueError('Runtime message capacity exceeded')
     return [dict(source=source,translation=target)for source,target in sorted(merged.items())]
-
