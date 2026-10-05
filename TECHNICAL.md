@@ -251,3 +251,7 @@ BOM-only 会乱码；添加 encd=0x100 和 media language=33 后显示正确。
 ## 字幕专用 HUD 与字体
 
 已验证：新增 SubtitleFont 而不改现有 Font；Subclass 的 DrawMessages 先调用原绘制路径，单独绘制并发字幕并恢复 Canvas 状态。唯一既有导出变化为 giWOT.HUDType 默认属性，显式指向 SubtitleRuntime.SubtitleHUD。原生 commandlet 已验证交叉包加载，真实视口排版仍待验收。原单槽覆盖与可选入口缺失导致的开场整句合并由此分离解决。详见 [字幕显示](docs/SUBTITLE_DISPLAY.md)。
+
+## 玩法文本与字幕路径补漏（2026-10-05）
+
+已验证：EditorHUD/BattleHUD 原继承 MainHUD，绕过独立字幕字号。两类的 SuperField 与导出表 super 同步改为 SubtitleHUD，专用函数不变。CaptionState 按 Owner 共用队列，避免 HUD 切换隐藏活动旁白。门锁/钥匙等八个默认字符串使用受散列约束的类属性重建；详细见 docs/SUBTITLE_DISPLAY.md。

@@ -104,68 +104,180 @@
       "sha256": "781a7572871ac6a96929f4f50d286c5362651dadfcb6b4e0124c7bb360cc6e61"
     },
     "Maps/Mission_04.wot": {
-      "sha256": "196895272fa808ed8f2dc1390e36b84f2b65f7f151abced5a7c8eae0f302e56b",
-      "size": 2932903
+      "size": 2932903,
+      "sha256": "196895272fa808ed8f2dc1390e36b84f2b65f7f151abced5a7c8eae0f302e56b"
     },
     "Maps/Mission_05c.wot": {
-      "sha256": "bfe6bc34319a7a1b799cd308255dddf3a94ba38ec9be3f2b41e6b78103dc1494",
-      "size": 4531895
+      "size": 4531895,
+      "sha256": "bfe6bc34319a7a1b799cd308255dddf3a94ba38ec9be3f2b41e6b78103dc1494"
     },
     "Maps/Mission_08b.wot": {
-      "sha256": "aa7e7a1360453df2ca647034bfe60ff736ea43086870a61f7cab237760346f43",
-      "size": 7260468
+      "size": 7260468,
+      "sha256": "aa7e7a1360453df2ca647034bfe60ff736ea43086870a61f7cab237760346f43"
     },
     "Maps/Mission_08c.wot": {
-      "sha256": "1bc556f12f8b55c450ad918dc5e437da1d2818a5b72a609d70d69c48f73b8e08",
-      "size": 3381619
+      "size": 3381619,
+      "sha256": "1bc556f12f8b55c450ad918dc5e437da1d2818a5b72a609d70d69c48f73b8e08"
     },
     "Maps/Mission_12b.wot": {
-      "sha256": "1298cd7dafd6432b14a8ba9a4c97c017934858641dae4c988d23b733c56adeff",
-      "size": 6337856
+      "size": 6337856,
+      "sha256": "1298cd7dafd6432b14a8ba9a4c97c017934858641dae4c988d23b733c56adeff"
     },
     "Maps/Mission_16.wot": {
-      "sha256": "05d5cc5d086d26d102c0cccaaf26967084582cc9319b8a7ab14f33c363385eb5",
-      "size": 5281706
+      "size": 5281706,
+      "sha256": "05d5cc5d086d26d102c0cccaaf26967084582cc9319b8a7ab14f33c363385eb5"
     },
     "Maps/Tutorial.wot": {
-      "sha256": "b07d8cb87a7774b1576660208525f437fbe69088fc7c95bcf327fd6f577450b2",
-      "size": 2131099
+      "size": 2131099,
+      "sha256": "b07d8cb87a7774b1576660208525f437fbe69088fc7c95bcf327fd6f577450b2"
     },
     "Maps/Tutorial_Citadel.wot": {
-      "sha256": "1120a1fc2fa5a052febbd4a0cb0acc3a7dcfade3b7a25c2ec567acc5891e0043",
-      "size": 951296
+      "size": 951296,
+      "sha256": "1120a1fc2fa5a052febbd4a0cb0acc3a7dcfade3b7a25c2ec567acc5891e0043"
     },
     "Maps/Battle3_01.wot": {
-      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4",
-      "size": 4025460
+      "size": 4025460,
+      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4"
     },
     "Maps/Mission_05a.wot": {
-      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe",
-      "size": 7928015
+      "size": 7928015,
+      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe"
     },
     "Maps/Mission_07a.wot": {
-      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe",
-      "size": 8311826
+      "size": 8311826,
+      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe"
     },
     "Maps/Mission_08a.wot": {
-      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa",
-      "size": 5687019
+      "size": 5687019,
+      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa"
     },
     "Maps/Mission_12a.wot": {
-      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076",
-      "size": 8835472
+      "size": 8835472,
+      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076"
     },
     "Maps/Mission_15.wot": {
-      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6",
-      "size": 8719576
+      "size": 8719576,
+      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6"
     },
     "Maps/Mission_17.wot": {
-      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909",
-      "size": 7088300
+      "size": 7088300,
+      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909"
     },
     "Maps/Mission_18.wot": {
-      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a",
-      "size": 11113362
+      "size": 11113362,
+      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a"
+    },
+    "System/WOTPawns.u": {
+      "size": 17136920,
+      "sha256": "b72f1ae59c2216305890d1a628e7e946eec42509d3d1708f0ce7d146457058af"
+    },
+    "Maps/Arena_01.wot": {
+      "size": 2016673,
+      "sha256": "eebe5698072f2571cee7f7cc41d5daf0280ef77c0520be48d8e284c8e3de7caf"
+    },
+    "Maps/Arena_02.wot": {
+      "size": 2043278,
+      "sha256": "b0a009fe1b56eb48653d56e3e2dcb6afdfb18efcdbb0153c6eb4451857ee70ae"
+    },
+    "Maps/Arena_03.wot": {
+      "size": 1421251,
+      "sha256": "d6bd9c42735336ee91b00c33a6316d366007c7b158f3cb9faf9845f10ff5f835"
+    },
+    "Maps/Arena_04.wot": {
+      "size": 887935,
+      "sha256": "9c5aab9b2102b65705080cc3446125083e48bde3a9fe0f354bbb659d76893d3a"
+    },
+    "Maps/Arena_05.wot": {
+      "size": 3024791,
+      "sha256": "f9110f0eadf84e1c1784d481e41523806b9c1fcd0a4f7f8b1af950efe15746fa"
+    },
+    "Maps/Arena_06.wot": {
+      "size": 1315754,
+      "sha256": "63d0c9609372180ed1af064a26404617bbea1b3d7890e0621eb85cf6c0277254"
+    },
+    "Maps/Arena_07.wot": {
+      "size": 606742,
+      "sha256": "cbab27ae6e5b7866026fec34ac02ef8e2a0de3225c08450e3177062739cbd25d"
+    },
+    "Maps/Arena_08.wot": {
+      "size": 904852,
+      "sha256": "cde8d5eb82fa7320865f0f18a4a60f75d5fe84984af52b7b9fc7c8155496355c"
+    },
+    "Maps/Arena_09.wot": {
+      "size": 2578024,
+      "sha256": "2fcea830bf43d4f4335af5287e0a007c5468e05c444ce17d1620dce8d070b99d"
+    },
+    "Maps/Arena_11.wot": {
+      "size": 1647715,
+      "sha256": "53432aa7077c0f958b8e2259c3394fcfaeabee69ea612624c708620980f0224a"
+    },
+    "Maps/Arena_12.wot": {
+      "size": 3075375,
+      "sha256": "aa3464b5e98cf7e8486cc9b68f1273234c335dddb7864328549326db45bb4f0a"
+    },
+    "Maps/Autoplay.wot": {
+      "size": 2016833,
+      "sha256": "e94e706e0ac34e15397d4e7b3b7e000ff8b8ac1f4ab43777539f8c68445d4e33"
+    },
+    "Maps/Battle2_01.wot": {
+      "size": 2784314,
+      "sha256": "39bbacf4921a315b1560d8dad3f69511b8e096980c0daa3e35f2efcdc69b3385"
+    },
+    "Maps/Battle2_02.wot": {
+      "size": 7619158,
+      "sha256": "73b9a9ca02f9a27b18152c0199aec4e5fc0ae5bdc65af104be15b3c945c5d7bd"
+    },
+    "Maps/Battle2_03.wot": {
+      "size": 5376109,
+      "sha256": "3fff1e5d7853328c60118ffcd6dffc1ae6468c8504a65b9bfec809c8a7de1242"
+    },
+    "Maps/Battle2_04.wot": {
+      "size": 3799628,
+      "sha256": "41669d012c43ad6c6b2873ec02a85433bd3e65f6140cc9831d1c5e93a4f952a3"
+    },
+    "Maps/Battle2_05.wot": {
+      "size": 4914853,
+      "sha256": "a91ce59af9fd36e91421791c930b766bc6c6e03e18621ecc52e03d54451cd82f"
+    },
+    "Maps/Battle3_02.wot": {
+      "size": 3373191,
+      "sha256": "5f57bfa605741d1412850722280a2bbaa19e310e0810ab68d6ae233e58a20c44"
+    },
+    "Maps/Battle4_01.wot": {
+      "size": 6863583,
+      "sha256": "8ee09998dbf9adbdc7320d9d0150437fd97ff0dc4bfe4dcaf09942f5fb4903ac"
+    },
+    "Maps/Mission_01.wot": {
+      "size": 4880388,
+      "sha256": "68b04cdae6e66f20246b1f503e4f359e24db9577e6176a1658438c3308192ee4"
+    },
+    "Maps/Mission_02.wot": {
+      "size": 6716424,
+      "sha256": "4449c73241897c2fb795b1df3802c813fd1dc152768670487bf27b0c8b54802f"
+    },
+    "Maps/Mission_03.wot": {
+      "size": 8420750,
+      "sha256": "2e20571e440479638bfc4cb8aca823e15d195d1441bdc2ff03ad4c03d9e1f381"
+    },
+    "Maps/Mission_05b.wot": {
+      "size": 6008428,
+      "sha256": "2fbb5cfc461fe396481ff31696dda806cac96d0f2fc296c8da2ad44897a7415e"
+    },
+    "Maps/Mission_07b.wot": {
+      "size": 3070007,
+      "sha256": "6d92bfb8179ac07617388624866b09396a1fb288da278f78775ae8d3c3a6c187"
+    },
+    "Maps/Mission_10.wot": {
+      "size": 8229966,
+      "sha256": "d0b4085d2b630a2ea5fbda3f141e15db79d1336e14d0d0b1a2b22098c78aff72"
+    },
+    "Maps/Mission_13.wot": {
+      "size": 269840,
+      "sha256": "f9e526964765da8d1bf56eaba250f6dc6476c93418dcfc10eb740fb475cb7528"
+    },
+    "Maps/WheelOfTime.wot": {
+      "size": 399097,
+      "sha256": "8c61aa8f41e64462850c70d26f43ac54f7a0ca2ad97d49f70a3f943fc2a9ecda"
     }
   },
   "resource_edits": [

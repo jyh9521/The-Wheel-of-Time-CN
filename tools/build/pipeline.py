@@ -38,6 +38,10 @@ def build(
         texts += [r["translation"] for r in config["tutorial_prompts_data"]["rows"]]
     if config.get('map_prompts_data'):
         texts += [r['translation'] for m in config['map_prompts_data']['maps'] for r in m['rows']]
+    if config.get('package_text_data'):
+        texts += [r['translation'] for r in config['package_text_data']['rows']]
+    if config.get('runtime_messages_data'):
+        texts += [r['translation'] for r in config['runtime_messages_data']['rows']]
     if config.get("native_ui_data"):
         texts += [r["translation"] for r in config["native_ui_data"]["strings"]]
         texts += [
@@ -101,6 +105,17 @@ def build(
             "reason": "legacy font coverage; package unchanged",
         }
         (out / "FONT_DIFF.json").write_text(json.dumps(font_result), "utf8")
+    package_text = {}
+    if config.get('package_text_data'):
+        from src.patch.package_text import apply as apply_package_text
+        text_profile=json.loads((Path(__file__).resolve().parents[2]/'profiles/package-text.json').read_text('utf8'))
+        for name,spec in text_profile.items():
+            if name not in ('WOT.u','WOTPawns.u','Angreal.u') or 'System/'+name not in profile['files']:
+                raise ValueError('Unprofiled gameplay package')
+            if name != 'WOT.u': shutil.copyfile(game/'System'/name,resources/name)
+            selected=[r for r in config['package_text_data']['rows'] if r['package']==name]
+            package_text['System/'+name]=apply_package_text(resources/name,selected,spec)
+        (out/'PACKAGE_TEXT_DIFF.json').write_text(json.dumps(package_text,indent=2)+'\n','utf8')
     resource_edits = apply_resource_edits(resources / "WOT.u", profile)
     texture_labels = None
     if config.get("texture_labels_data"):
@@ -170,6 +185,7 @@ def build(
     names = sorted(
         {"System/" + r["file"] for r in rows if r.get("translation")} | {"System/WOT.u"}
     )
+    names=sorted(set(names)|set(package_text))
     if config.get('map_prompts_data'):
         from src.patch.map_prompts import build as build_map_prompts
         map_reports = {}
@@ -248,6 +264,7 @@ def build(
         "diff_file": "FONT_DIFF.json",
         "originals_unchanged": True,
         "resource_edits": resource_edits,
+        "package_text": package_text,
         "texture_labels": texture_labels,
         "native_ui": native_ui,
         "display_expressions": display_expressions,

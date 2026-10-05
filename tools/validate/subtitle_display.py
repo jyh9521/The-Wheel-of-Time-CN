@@ -19,7 +19,11 @@ def verify(baseline,modified,cues):
     changed=[]
     for r in a.records():
         if body(a,r['index'])!=body(b,r['index']):changed.append(r['path'])
-    if changed!=['giWOT']:raise ValueError('Existing exports changed beyond HUD binding: '+repr(changed))
+    if set(changed)!={'giWOT','EditorHUD','BattleHUD'}:raise ValueError('Existing exports changed beyond HUD bindings: '+repr(changed))
+    for name in ('EditorHUD','BattleHUD'):
+        r=next(r for r in b.records()if r['path']==name)
+        if b.full(b.exports[r['index']-1]['super'])!='SubtitleRuntime.SubtitleHUD':
+            raise ValueError('Specialized HUD bypasses subtitle layer: '+name)
     existing_fonts=[r for r in a.records()if r['class_name']=='Font']
     for r in existing_fonts:
         if body(a,r['index'])!=body(b,r['index']):raise ValueError('UI font changed')

@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "package": "WOT.u",
+      "cls": "Key",
+      "property": "KeyPickupMessage",
+      "slot": 0,
+      "source_sha256": "8fdfca6f7486cb157fc15e036ce24db5e80117c76616156eab2e0f83e8f39bea",
+      "translation": "获得了钥匙"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "LockableMover",
+      "property": "LockedMessage",
+      "slot": 0,
+      "source_sha256": "29cfe906692abdadb4458d895a78a4dd772d40bd06104fdf0ea293a253d1346a",
+      "translation": "门已上锁。"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "LockableMover",
+      "property": "UnLockMessage",
+      "slot": 0,
+      "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+      "translation": "用钥匙打开了门锁。"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "KeyShort",
+      "property": "KeyPickupMessage",
+      "slot": 0,
+      "source_sha256": "4fbdd340bdbfd62d8ad981250ee9adab916f3261465b5680bdf665d24ae67a1d",
+      "translation": "找到了一把小钥匙"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "KeyRing",
+      "property": "KeyPickupMessage",
+      "slot": 0,
+      "source_sha256": "f130ae8827be7be8765aec1438994537e6078fecc81c673e0ff82e2826b476db",
+      "translation": "找到了一串钥匙"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "KeyMedium",
+      "property": "KeyPickupMessage",
+      "slot": 0,
+      "source_sha256": "873b34af04696c468278bed437005a7b04d21d23a64c54414bf339920231e564",
+      "translation": "找到了一把精美的钥匙"
+    },
+    {
+      "package": "WOT.u",
+      "cls": "KeyLong",
+      "property": "KeyPickupMessage",
+      "slot": 0,
+      "source_sha256": "c7816ebe94fce05884881de7bdd64d37c96ebe1f215e26603e573d6c429bd6d6",
+      "translation": "找到了一把大钥匙"
+    },
+    {
+      "package": "WOTPawns.u",
+      "cls": "Whitecloak",
+      "property": "TeamDescription",
+      "slot": 0,
+      "source_sha256": "5f206a6b59de928637ba5345c45a5d4948726badc600cad6bc6b009dedf17221",
+      "translation": "白袍众"
+    }
+  ]
+}

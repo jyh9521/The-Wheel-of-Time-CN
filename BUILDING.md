@@ -264,3 +264,7 @@ python -m tools.build.build_property_limits restore-copy --transaction build/pro
 ## 默认字幕显示层
 
 默认构建现追加 18px SubtitleFont 与 SubtitleRuntime.u/int，并将 giWOT.HUDType 指向专用 HUD 子类。需使用匹配 profile 的原版 UCC；构建自动在独立目录编译，不启动游戏。新增自有资源由 owned_additions 记录，安装后恢复会移除对应新增文件。译文字符扫描、普通 UI 字库和地图提示沿用原流程。细节见 [字幕专用显示层](docs/SUBTITLE_DISPLAY.md)。
+
+## 玩法文本与字幕路径补漏（2026-10-05）
+
+构建新增 profiles/package-text.json 与 locales/<locale>/package-text.json，自动重建 WOT.u/WOTPawns.u 的指定字符串属性。原版输入需包含 WOTPawns.u 及 profile 内的地图文件。运行时精确显示映射配置位于 runtime-messages.json；字幕状态源码位于 SubtitleRuntime/Classes/CaptionState.uc。

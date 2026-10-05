@@ -153,3 +153,7 @@ key-names.json的键是机器名，只改显示值，不改KEYNAME/KEYBINDING/SE
 ## 地图提示译文
 
 `locales/<locale>/map-prompts.json` 按地图、actor、属性和 slot 唯一定位；原文以 source_sha256 确认，不更改标识。译文与 GLOSSARY.md 统一，构建检查原文指纹和占位符。protected 条目原样保留。正常地图实例显示文本不再依赖可选启动类。未知专名列入 pending_terms，不另造多个译法。
+
+## 玩法文本与字幕路径补漏（2026-10-05）
+
+package-text.json 保存类属性译文与原文散列，不修改类名或属性名。runtime-messages.json 的 source 用于精确匹配，不能翻译；translation 用于显示。地图 Title 已确认为可见文字，按名词表处理。Absynth 与 Lincoln 仍待确认，不能随意另造译名。

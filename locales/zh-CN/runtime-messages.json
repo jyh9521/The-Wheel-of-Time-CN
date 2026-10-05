@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "export": "RestartTrigger.RestartTrigger",
+      "export_sha256": "f58db024d67ab0642fd0a64d726776cdd00b752b00ae16fb9bd99a89d9105afd",
+      "source": "Restarting...",
+      "translation": "正在重新开始……"
+    },
+    {
+      "export": "WOTPlayer.SalvageInventoryLinks",
+      "export_sha256": "654a2d909696d59057365ebfd8502dd9bd7561320fbe31345e591f464569ff2c",
+      "source": "BAD PING",
+      "translation": "网络连接异常"
+    },
+    {
+      "export": "WOTPlayer.OKToCheat",
+      "export_sha256": "9e755237f42c1168b35129a10658fb4689440904f4b146119f907b4ed8750610",
+      "source": "Function is disabled on the server.",
+      "translation": "服务器已禁用此功能。"
+    }
+  ]
+}

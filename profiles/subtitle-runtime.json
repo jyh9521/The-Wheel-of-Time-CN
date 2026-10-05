@@ -55,5 +55,9 @@
       "size": 17136920,
       "sha256": "b72f1ae59c2216305890d1a628e7e946eec42509d3d1708f0ce7d146457058af"
     }
-  ]
+  ],
+  "specialized_hud_superclasses": {
+    "EditorHUD": "249c0df62cd4573c092e82738413b70ce8cf046d82ea9956c4a2df72ade26812",
+    "BattleHUD": "b584077fc51569b0a36f8bc6aa5c2a3f9a7d52edb75bb32f75034476a2e0d23f"
+  }
 }

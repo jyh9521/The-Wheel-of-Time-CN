@@ -36,6 +36,14 @@ class SubtitleDisplayTests(unittest.TestCase):
         self.assertIn('C.ClipX=OldClipX',source)
         self.assertNotIn('bSequenceActive = false',source)
 
+    def test_hud_switch_shares_caption_state_by_owner(self):
+        root=Path(__file__).resolve().parents[1]
+        source=(root/'src/runtime/SubtitleRuntime/Classes/SubtitleHUD.uc').read_text('utf8')
+        self.assertIn("foreach AllActors(class'CaptionState', State)",source)
+        self.assertIn('State.Owner == Owner',source)
+        self.assertIn('Captions.GetText(BestIndex)',source)
+        self.assertNotIn('var string CaptionText[64]',source)
+
     def test_owned_additions_install_restore(self):
         with tempfile.TemporaryDirectory()as t:
             root=Path(t);target=root/'game';target.mkdir()

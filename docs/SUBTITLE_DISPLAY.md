@@ -4,13 +4,13 @@
 
 2026-10-05，新增 `WOT.SubtitleFont`，中文字形与行高为 18px。独立 Font 和 13 张 P8 atlas 追加到 WOT.u；原有 13 个 Font 及全部既有 atlas 保持逐字节一致。ASCII 与中文按 18px 重新栅格化；源字体缺少的 76 个旧西文字形仅在新字库内按比例放大原位图，其他 UI 字库不变。缺字与 atlas 边界检查通过。
 
-`SubtitleRuntime.SubtitleHUD` 继承原 MainHUD，只重写字幕接收和 DrawMessages。原字幕单槽保持空，先调用 `Super.DrawMessages` 绘制手部、左右、中心和 GenericMessages，再切换字幕专用字体测量和绘制。绘制后恢复 Canvas.Font、中心标志、样式、颜色、OrgX/OrgY/ClipX/ClipY；菜单、Controls、Inventory 等仍使用原始字体。
+`SubtitleRuntime.SubtitleHUD` 继承原 MainHUD，重写字幕接收和 DrawMessages，并对已核对的少量玩法提示做精确字符串显示映射。原字幕单槽保持空，先调用 `Super.DrawMessages` 绘制手部、左右、中心和 GenericMessages，再切换字幕专用字体测量和绘制。绘制后恢复 Canvas.Font、中心标志、样式、颜色、OrgX/OrgY/ClipX/ClipY；菜单、Controls、Inventory 等仍使用原始字体。
 
-接入点为 giWOT 的 HUDType 默认属性。除这一属性所属的 giWOT 导出外，既有导出全部不变；没有更改 MainHUD/BaseHUD 的字节码、玩家类、地图规则、EXE 或 DLL。Subclass 路径复用 BaseHUD 原绘制行为，避免全局 Reg14 放大。普通启动不需要附加地图、玩家类或游戏类型参数。原生命令行检查已成功加载 WOT、SubtitleRuntime 的交叉引用、专用字体及译文；这不替代实际游戏排版验收。
+接入点包括 giWOT 的 HUDType 默认属性，以及 EditorHUD/BattleHUD 的父类引用。后两者原来直接继承 MainHUD，在城堡编辑/战斗模式绕过了专用字幕层；现在继承 SubtitleRuntime.SubtitleHUD，保留原有专用函数。UClass 的 SuperField 与导出表 super 必须同步修改。MainHUD/BaseHUD 字节码、玩家类和地图规则不变；本次不新增 EXE/DLL 修改。Subclass 路径复用 BaseHUD 原绘制行为，避免全局 Reg14 放大。普通启动不需要附加地图、玩家类或游戏类型参数。原生命令行检查已成功加载 WOT、SubtitleRuntime 的交叉引用、专用字体及译文；这不替代实际游戏排版验收。
 
 ## 并发字幕
 
-原 BaseHUD.AddSubtitleMessage 只保存一个 Message/LifeSpan，新字幕直接覆盖旧字幕。新层改用 64 个独立条目，各有文字、开始、结束和触发顺序；活动字幕按触发顺序从屏幕顶部 24px 起垂直堆叠，条目之间留 6px，不因其他声音触发而取消旧条目。时间采用 Level.TimeSeconds，暂停随游戏时间停止；未来分段也占据独立条目，但到开始时间之前不绘制。
+原 BaseHUD.AddSubtitleMessage 只保存一个 Message/LifeSpan，新字幕直接覆盖旧字幕。新层通过同一角色拥有的 CaptionState 保存 64 个独立条目，各有文字、开始、结束和触发顺序；活动字幕按触发顺序从屏幕顶部 24px 起垂直堆叠，条目之间留 6px，不因其他声音触发而取消旧条目。时间采用 Level.TimeSeconds，暂停随游戏时间停止；未来分段也占据独立条目，但到开始时间之前不绘制。
 
 容量用尽时保留已有条目并记录日志，不覆盖活动句；无限并发和超出屏幕高度的极端情况不在保证范围内。普通对白沿用原 ClientHearSound 给出的持续时间，尚未逐条改为音频精确时间码；实际音频中止时的字幕提前结束也尚未接入。并发排版和跨地图/存档状态需实测。
 
@@ -44,3 +44,15 @@
 - 38 项资源差分在独立副本安装、验证和恢复通过，原版输入不变。
 - 当前测试副本已更新 3 个资源；地图、设置、存档、FMV 与私有字体均保持指纹。启动前校验通过，没有启动游戏。
 - 从普通入口重新开始教程，检查 18px 字幕、开场空档、进洞后的并发女声和提示、暂停、切图、保存/加载；同时复核 Controls 行距及特法器标题。旧存档可能保存旧 HUD 类，不能作为新 HUD 初始化的首次验收依据。
+
+## 玩法提示与地图标题补漏
+
+门锁、开锁以及五种钥匙拾取提示存储在 WOT.u 的类默认 FString，并不完整列于 .int。WOTPawns.u 的 Whitecloak 队伍说明同样补齐。构建按类导出 SHA-256、默认属性起点和原文散列校验后追加重建类数据，函数字节码保持不变。另对三条已核对的硬编码屏幕消息加入精确匹配的显示映射；不会修改绑定名称或服务器逻辑。
+
+Level.Title 会被 ArenaScoreBoard 绘制，因此地图标题不是纯内部标识。地图文本配置现覆盖 43 个地图、151 个字段；其中 Absynth 与 Lincoln 仍列为待确认专名，结构性标识仍保持原样。此覆盖数字不是全游戏实机验收结论。
+
+类与 Mesh 可能同名，定位类必须同时校验 class_name 为 None；单凭路径会误选 Mesh。跨对象访问 64 项数组时，早期 UCC 的 Context 表达式限制为 255 字节；CaptionState 通过标量访问函数读取条目，避免 256 字节数组的编译失败。
+
+## 本轮验证结果
+
+241 项测试通过；UCC 编译 0 错误、0 警告，原生类继承与中文默认文本加载检查通过。两次构建的66项资源逐字节一致；独立原版副本的安装/验证/恢复通过。测试副本已更新47项资源并通过启动前指纹检查，未启动游戏。原版游戏目录保持不变，FMV、配置字体及设置未调整。

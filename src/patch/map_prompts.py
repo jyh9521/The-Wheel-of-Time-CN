@@ -18,11 +18,13 @@ def build(source,output,spec):
     if output.exists() or output.resolve()==source.resolve():raise ValueError("Choose a new output copy")
     p=Package(source)
     if p.ver!=68 or sha(p.b)!=spec['sha256']:raise ValueError('Unknown original map')
-    allowed={'Messages','PickupMessage','KeyPickupMessage','Message','StringValue','LockedMessage','UnLockMessage','Content','EditingStr','PlayingStr','ReadyStr','WaitingStr'}
+    allowed={'Messages','PickupMessage','KeyPickupMessage','Message','StringValue','LockedMessage','UnLockMessage','Content','EditingStr','PlayingStr','ReadyStr','WaitingStr','Title'}
     if not spec["rows"]:raise ValueError("Map message coverage mismatch")
     properties={r.get('property','Messages') for r in spec['rows']}
     if not properties<=allowed:raise ValueError('Only profiled display string fields are supported')
     originals={(r['actor'],r['property'],r['slot']):r for r in entries(source,True,True) if r['active'] and r['property'] in properties}
+    if any(r['property']=='Title' and r['class_name'] not in ('LevelInfo','MissionObjectives','MissionObjectives08','MissionObjectives12') for r in originals.values()):
+        raise ValueError('Unprofiled map title owner')
     translations={(r['actor'],r.get('property','Messages'),r['slot']):r for r in spec['rows']}
     if len(translations)!=len(spec['rows']) or set(translations)!=set(originals):raise ValueError('Map message coverage mismatch')
     changes={};expected={}

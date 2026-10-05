@@ -31,5 +31,7 @@
   "subtitle_display": {
     "pixel_size": 18,
     "cues": "subtitle-cues.json"
-  }
+  },
+  "package_text": "package-text.json",
+  "runtime_messages": "runtime-messages.json"
 }

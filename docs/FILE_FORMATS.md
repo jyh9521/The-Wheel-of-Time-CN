@@ -129,3 +129,7 @@ text 描述起点（含 size/type）：默认文本矩形在 +30，bottom 在 +3
 ## 自有字幕资源与 HUD 绑定
 
 新增 Font 使用负载为 None 属性终止符、Font pages 与 CPP64 的格式，所有既有 Font/Texture 导出保持。giWOT 的 HUDType ObjectProperty 单独改为新 class import，名称/导入/导出表追加重建；源 class body 与默认属性字节必须匹配。补丁 owned_additions 只声明自有 SubtitleRuntime.u/int，原始散列为 SHA-256(empty)、原始大小为 0，表示不存在；回滚恢复不存在状态而非保留空文件。
+
+## 玩法文本与字幕路径补漏（2026-10-05）
+
+类默认文本重建：属性 type=13 的 FString 使用负 CompactIndex 表示含 NUL 的 UTF-16 代码单元数；属性数据长度按字节同步更新。追加类导出体及导出表，并更新头部 ExportOffset。HUD 父类绑定必须同时更新 UClass 首部 SuperField 与导出记录 super。

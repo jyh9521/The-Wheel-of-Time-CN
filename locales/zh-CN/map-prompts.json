@@ -1,6 +1,368 @@
 {
   "maps": [
     {
+      "file": "Maps/Arena_01.wot",
+      "sha256": "eebe5698072f2571cee7f7cc41d5daf0280ef77c0520be48d8e284c8e3de7caf",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "020b888438a1acce9a121ddca0c19e62564b9d0402da98ed399acf3bb6033ff6",
+          "translation": "Absynth",
+          "status": "pending-term"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_02.wot",
+      "sha256": "b0a009fe1b56eb48653d56e3e2dcb6afdfb18efcdbb0153c6eb4451857ee70ae",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "9d4d873832362747b28a5b277cd9ff0e89a8c02576b1eb1dd88f512e1bf59389",
+          "translation": "边境要塞（B2）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_03.wot",
+      "sha256": "d6bd9c42735336ee91b00c33a6316d366007c7b158f3cb9faf9845f10ff5f835",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "839b94fb07923583045b8713e82b2d081abf6a18e648fa9b56d99c9e8b91bd2c",
+          "translation": "提线木偶之舞",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_04.wot",
+      "sha256": "9c5aab9b2102b65705080cc3446125083e48bde3a9fe0f354bbb659d76893d3a",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "2919203291361552b1c425b22e7935f5a62d9be8de8fde82d7245d94ff4ec291",
+          "translation": "寂静的喧嚣",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_05.wot",
+      "sha256": "f9110f0eadf84e1c1784d481e41523806b9c1fcd0a4f7f8b1af950efe15746fa",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "d8a0d495e0384fe5efab8d011f9d3fe0ecd62988d68a626b0f579a8f1d2cafee",
+          "translation": "爱荷达苏醒",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_06.wot",
+      "sha256": "63d0c9609372180ed1af064a26404617bbea1b3d7890e0621eb85cf6c0277254",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "23348f0923a3cf8464aadfdeeb38dc79017cca767936084bdc29a2fcd88a10c4",
+          "translation": "恐怖木偶剧",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_07.wot",
+      "sha256": "cbab27ae6e5b7866026fec34ac02ef8e2a0de3225c08450e3177062739cbd25d",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "0c5454a3e9ddeaf05d797686f888ebd2e6baa15d9cd8d81196cc55dec0d9e6a6",
+          "translation": "憎恶之谤",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_08.wot",
+      "sha256": "cde8d5eb82fa7320865f0f18a4a60f75d5fe84984af52b7b9fc7c8155496355c",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "9687e50570fa9c4d346613c3c24b7a3647f366f42940e8d43d23361879fe9935",
+          "translation": "寂静",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_09.wot",
+      "sha256": "2fcea830bf43d4f4335af5287e0a007c5468e05c444ce17d1620dce8d070b99d",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "82d1cc913528ac761f9d5195933edbe1154165e225f04b05bdd37cbf38986e39",
+          "translation": "不容异己",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_11.wot",
+      "sha256": "53432aa7077c0f958b8e2259c3394fcfaeabee69ea612624c708620980f0224a",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "03702b28e231f46194315f8b41f036c53cfd314573b8f0c2f97d388f79443675",
+          "translation": "天国降临",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Arena_12.wot",
+      "sha256": "aa3464b5e98cf7e8486cc9b68f1273234c335dddb7864328549326db45bb4f0a",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "09920f24498ed2f7e74f02796a85fae4a916908a48a078656a8b2ad675f16580",
+          "translation": "审判",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Autoplay.wot",
+      "sha256": "e94e706e0ac34e15397d4e7b3b7e000ff8b8ac1f4ab43777539f8c68445d4e33",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "020b888438a1acce9a121ddca0c19e62564b9d0402da98ed399acf3bb6033ff6",
+          "translation": "Absynth",
+          "status": "pending-term"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle2_01.wot",
+      "sha256": "39bbacf4921a315b1560d8dad3f69511b8e096980c0daa3e35f2efcdc69b3385",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "10f01e340db4e31da18920943b3b20e6428fcb5abd42a7c84e74631d79b2dd34",
+          "translation": "腐朽恶臭",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle2_02.wot",
+      "sha256": "73b9a9ca02f9a27b18152c0199aec4e5fc0ae5bdc65af104be15b3c945c5d7bd",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "e65712853671037e1ec79ff195ba315eb04e3825250d9e23eed1ea6d4d2f59da",
+          "translation": "时光之沙",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle2_03.wot",
+      "sha256": "3fff1e5d7853328c60118ffcd6dffc1ae6468c8504a65b9bfec809c8a7de1242",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "8f272b324b39a433c9803dc94712b0f31504c0bcf1ae7c1681ad1363d354225e",
+          "translation": "白骨之园",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle2_04.wot",
+      "sha256": "41669d012c43ad6c6b2873ec02a85433bd3e65f6140cc9831d1c5e93a4f952a3",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "33e85b75ffc107ac8534734e5b71351017a834d0565b34b2ed638d6f126018ed",
+          "translation": "前哨",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle2_05.wot",
+      "sha256": "a91ce59af9fd36e91421791c930b766bc6c6e03e18621ecc52e03d54451cd82f",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "a0d2f947743fdbd77b4332ae35cf7a3501fffdb40f0e31a6de60513c76899d56",
+          "translation": "异端",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo2",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "c3451a81852fb476736a2ce85774098f361e3bc742082bd107070ab0e843a76a",
+          "translation": "内殿",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle3_01.wot",
+      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4",
+      "rows": [
+        {
+          "actor": "BattleInfo1",
+          "property": "EditingStr",
+          "slot": 0,
+          "source_sha256": "a7345fc2183d42bbe78638267270630d105f0ab548e9d5b5d4835e14da2f7ed8",
+          "translation": "准备城堡",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "PlayingStr",
+          "slot": 0,
+          "source_sha256": "3d2ebd2053228b97d0bce5082a710bcdc9e1f35f1a99d2635c5a6c11eeb7823b",
+          "translation": "战斗开始",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "ReadyStr",
+          "slot": 0,
+          "source_sha256": "291424178427d5d4459819ee104807df0a2249da9d7bbd4483c115eb0e284fdb",
+          "translation": "做好战斗准备",
+          "status": "draft"
+        },
+        {
+          "actor": "BattleInfo1",
+          "property": "WaitingStr",
+          "slot": 0,
+          "source_sha256": "b6e6b75f122700615afbafb96f1ae5a41d7016c05b5ffbb5e7f1d5f14ced4097",
+          "translation": "等待其他玩家",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "39ef0d6f1ba578af2464db06ca436c2c924cc7cb5f7ad6d36e06db2a7e4cb437",
+          "translation": "破灭的希望",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle3_02.wot",
+      "sha256": "5f57bfa605741d1412850722280a2bbaa19e310e0810ab68d6ae233e58a20c44",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "84b5262097fecd744343d5cb6cb5f1c3a1207cd92193eb251e2264f4dfa2c35c",
+          "translation": "无名指",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Battle4_01.wot",
+      "sha256": "8ee09998dbf9adbdc7320d9d0150437fd97ff0dc4bfe4dcaf09942f5fb4903ac",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "18f7b79afb7fa3490b8e02a4d3782d1eeca51dada29dd613360fbd598e677b76",
+          "translation": "鲜血与灰烬",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_01.wot",
+      "sha256": "68b04cdae6e66f20246b1f503e4f359e24db9577e6176a1658438c3308192ee4",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "0fb64c157298c9bf404c89e4fbf0f89033ec004ae46030e6daed988ad1d28033",
+          "translation": "曼埃瑟兰河岸",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_02.wot",
+      "sha256": "4449c73241897c2fb795b1df3802c813fd1dc152768670487bf27b0c8b54802f",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "0404f7b62c31d994788f586f8e3d59065d5e0b33cceeddbe1af8dee5b7e946f6",
+          "translation": "煞达罗苟斯街道",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_03.wot",
+      "sha256": "2e20571e440479638bfc4cb8aca823e15d195d1441bdc2ff03ad4c03d9e1f381",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "58b5aa67a93935f39d39647b9e8d705354667a78291627cd2d141e0fbeefdf6a",
+          "translation": "煞达罗苟斯深处",
+          "status": "draft"
+        }
+      ]
+    },
+    {
       "file": "Maps/Mission_04.wot",
       "sha256": "196895272fa808ed8f2dc1390e36b84f2b65f7f151abced5a7c8eae0f302e56b",
       "rows": [
@@ -24,6 +386,74 @@
           "source_sha256": "6ddbcf18816eadef35a1e6884b81a52d8e58d20ee77f7e32e661cb8fc96eac22",
           "translation": "天空渐渐亮起来了……",
           "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "5755d92bb7b00f7a55137744318a14d915734bd8abf578598f530e3b0cb1ebf2",
+          "translation": "逃离煞达罗苟斯",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_05a.wot",
+      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe",
+      "rows": [
+        {
+          "actor": "KeyLong0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
+          "translation": "拾取了通往回廊的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "PropertyFlipper0",
+          "property": "StringValue",
+          "slot": 0,
+          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
+          "translation": "拾取了通往回廊的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "Trigger5",
+          "property": "Message",
+          "slot": 0,
+          "source_sha256": "fc95c5ea8c5b7ed71793a0ae6b4e24dd83767a8e098ac8959bba3da985877d4f",
+          "translation": "必须解除吊桥的两道锁，才能将它关闭。",
+          "status": "draft"
+        },
+        {
+          "actor": "Trigger15",
+          "property": "Message",
+          "slot": 0,
+          "source_sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+          "translation": "test",
+          "status": "protected"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "c48e3aa4090585910e0bba81ec1b5df36affeeccc17b4588508702901f5e5476",
+          "translation": "拯救白塔（一）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_05b.wot",
+      "sha256": "2fbb5cfc461fe396481ff31696dda806cac96d0f2fc296c8da2ad44897a7415e",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "f8935e414dd55312832200cd9cc1f378680eff9582381d7e40fb2e28c2aa7d02",
+          "translation": "拯救白塔（二）",
+          "status": "draft"
         }
       ]
     },
@@ -44,6 +474,104 @@
           "slot": 0,
           "source_sha256": "cb65f6adf0eb8325adaac60b16e341d3bbce1a29636659b7b02f55a2022fe9c3",
           "translation": "拾取了通往大门前厅的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "1ae54ce85cae8452c7cfd0df9162e67e925c88d7ee039c1ee2abccec94a7552e",
+          "translation": "拯救白塔（三）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_07a.wot",
+      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe",
+      "rows": [
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "cb0c91be109ef6f0ed608bac18fa84183a3c57c8791690336dcbacf01e83451f",
+          "translation": "值得为此赴死吗？",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 1,
+          "source_sha256": "a35878befb3f234c5364de58072adc3f622e900115cb5bb67665e83218964745",
+          "translation": "http://www.ocrana.de",
+          "status": "protected"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "14d557fa9d08339e6f1c9b4f4e9c21e653c62f6803f719bc5eef9e7fb41767b4",
+          "translation": "白塔地下宝库（一）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_07b.wot",
+      "sha256": "6d92bfb8179ac07617388624866b09396a1fb288da278f78775ae8d3c3a6c187",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "39e2dd3f2e3cd08b4879d0b7ead369f5afe421e6e7c00bd25e4617249a1b76b6",
+          "translation": "白塔地下宝库（二）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_08a.wot",
+      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa",
+      "rows": [
+        {
+          "actor": "BagHolding0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "7b39c93747da6e063d3513d44c1ae44b676c7cac0f320662712fb40e77dcf017",
+          "translation": "拾取了袋子，其中有追踪弹和腐化。",
+          "status": "draft"
+        },
+        {
+          "actor": "BagHolding1",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "c1577aed57fc8a12f9e5b8b57d60cfb7faf786e290c50a5fc617f09b2a2a2c60",
+          "translation": "拾取了袋子，其中有治疗和冻结。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover0",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "5819980d5d32bea9212c010c4433e0d8b41eb40841f20b03b6970750331aae29",
+          "translation": "身后的门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "700da0c37eeaa84af46ceb287c39e4afc1ab45fe3761eb9236a8144cba5ad120",
+          "translation": "道（一）",
+          "status": "draft"
+        },
+        {
+          "actor": "MissionObjectives0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "28b3e6b91565dfed5536af68cce0ef813c1eb74539bc43825126c2566ba72fa7",
+          "translation": "道",
           "status": "draft"
         }
       ]
@@ -74,6 +602,22 @@
           "source_sha256": "5a73fb00e98a238b9852d7fbef1bcb76dd60bdd54eee05f5289af8574780839a",
           "translation": "拾取了通往上层走道的钥匙。",
           "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "1f83cd603ca99c78b26977971189b5145fc097753c906423d7819fc5d9041264",
+          "translation": "妖境",
+          "status": "draft"
+        },
+        {
+          "actor": "MissionObjectives1",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "1f83cd603ca99c78b26977971189b5145fc097753c906423d7819fc5d9041264",
+          "translation": "妖境",
+          "status": "draft"
         }
       ]
     },
@@ -101,6 +645,74 @@
           "source_sha256": "a67b8e645115fd8e4e0d5f6b8168a088937e59b6ebe0fabc15cb48ce2d419ac1",
           "translation": "黑风现在应该已经离开了。",
           "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "6e548cfcbd8c39129f613fcc8f67355f1d29d5e73329fef71003f6cf5cc6e4d7",
+          "translation": "道（二）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_10.wot",
+      "sha256": "d0b4085d2b630a2ea5fbda3f141e15db79d1336e14d0d0b1a2b22098c78aff72",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "a011d6feae8e005a7d86eb4c4e65dca0d5662520a487b7987c33f6b7c1fa8183",
+          "translation": "发掘现场",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_12a.wot",
+      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076",
+      "rows": [
+        {
+          "actor": "KeyLong0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "a3ed217b81220e7984dd81dda2bd6ab6607ff8fe6831dbcfe1f9e06b2a2ec0ad",
+          "translation": "找到了一把大钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "KeyPickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "f18ce6b9e967391f2cd65e82125025abcccb3315040cbc5d85b5cae182d433b4",
+          "translation": "圣光要塞",
+          "status": "draft"
+        },
+        {
+          "actor": "MissionObjectives1",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "f18ce6b9e967391f2cd65e82125025abcccb3315040cbc5d85b5cae182d433b4",
+          "translation": "圣光要塞",
+          "status": "draft"
         }
       ]
     },
@@ -113,6 +725,90 @@
           "slot": 0,
           "source_sha256": "d604b54098bdf21f692a335382e9423c212dc4024a9e1e7bd2070f93b75a3d0f",
           "translation": "感谢营救！Lincoln 很满意！",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "5510b079f145974e66df15d92c4488fe71e62b4ef9e595af2fb9ae4af62ca626",
+          "translation": "圣光要塞（二）",
+          "status": "draft"
+        },
+        {
+          "actor": "MissionObjectives2",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "e46ff794c4163542801862751c56513b8ba1b96a7e007302ab916fd3eedad43c",
+          "translation": "圣光要塞（二）",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_13.wot",
+      "sha256": "f9e526964765da8d1bf56eaba250f6dc6476c93418dcfc10eb740fb475cb7528",
+      "rows": [
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "2a6b24ad287220345e96eb8021fe29d42b0785766c8df658827e7251da2d36dc",
+          "translation": "制作人员",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_15.wot",
+      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6",
+      "rows": [
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
+          "translation": "拾取了地牢牢房的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover4",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
+          "translation": "大门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "PropertyFlipper0",
+          "property": "StringValue",
+          "slot": 0,
+          "source_sha256": "0d2b899bc61215f131eff651b17418d31751b5bd8930b0699a5d5383be83fd2b",
+          "translation": "拾取了通往封闭储藏室的钥匙。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover21",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "7c34100e57d48198dd33ea1230e15bccb9665c7445f03b874b46a0de5478c81e",
+          "translation": "储藏室的门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "LockableMover5",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
+          "translation": "大门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "7fcf40022444f6f9d27e3bca33d0518ad7598857b9a92042f5d5d7cd4160df5e",
+          "translation": "弃光魔使要塞",
           "status": "draft"
         }
       ]
@@ -147,6 +843,138 @@
           "slot": 0,
           "source_sha256": "97920c250e84b3d6a99366063bf91c783f834f2bf264be25e5ff3becd6b5bb87",
           "translation": "受保护的两仪师姐妹和护法现已丧生，保护行动失败。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "a2d9d2ffa92357076a33003be1e2d7e93be2eeb6d2ed5b6648ea0165c05658fc",
+          "translation": "弃光魔使地牢",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_17.wot",
+      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909",
+      "rows": [
+        {
+          "actor": "KeyRing0",
+          "property": "KeyPickupMessage",
+          "slot": 0,
+          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
+          "translation": "拿起了钥匙圈。",
+          "status": "draft"
+        },
+        {
+          "actor": "KeyRing0",
+          "property": "PickupMessage",
+          "slot": 0,
+          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
+          "translation": "拿起了钥匙圈。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "6d5f1a292d3bb6a93a3630a189970233cf6d82201eac6497b796ba115f08f8ca",
+          "translation": "在这间小书房的桌上，你发现了一叠古老而泛黄的笔记，内容涉及昆达雅石封印。传说纪元中，暗帝囚牢的孔洞封闭之后，两仪师进行的实验表明，这些封印能够直接影响暗帝的囚牢。只需四枚封印，便能重新打开孔洞；反之，一场仪式可以剥离封印的这种力量，使它们变成真正位于煞妖谷的编织的象征。遗憾的是，世界崩毁使封印散落各处，当时的两仪师未能完成仪式。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 2,
+          "source_sha256": "0977b7bb21b345abdb0625e963dd62a5a6206b7cfea5ce5fc482a079c706da04",
+          "translation": "有关这场仪式的知识失传已久。直到此刻，你才重新知晓。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover2",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover2",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover0",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover0",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover1",
+          "property": "LockedMessage",
+          "slot": 0,
+          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
+          "translation": "门已锁上。",
+          "status": "draft"
+        },
+        {
+          "actor": "DoorMover1",
+          "property": "UnLockMessage",
+          "slot": 0,
+          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
+          "translation": "用钥匙打开了门锁。",
+          "status": "draft"
+        },
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 1,
+          "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
+          "translation": "%s=8",
+          "status": "protected"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "c3451a81852fb476736a2ce85774098f361e3bc742082bd107070ab0e843a76a",
+          "translation": "内殿",
+          "status": "draft"
+        }
+      ]
+    },
+    {
+      "file": "Maps/Mission_18.wot",
+      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a",
+      "rows": [
+        {
+          "actor": "WOTTextWindowInfo0",
+          "property": "Content",
+          "slot": 0,
+          "source_sha256": "aaa13c2bc79231432d27a391f37eb92478d6582675334ddbd6d97861c94bb43b",
+          "translation": "一次只能携带一枚封印。寻找更多封印之前，先将这一枚放到充当祭坛的书桌上。最终，其余封印也应带回这里。",
+          "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "349d39e16af1d58219eaa464cd9fb9c6e2417868424fb6d266f59d76c8bf6f65",
+          "translation": "集齐封印",
           "status": "draft"
         }
       ]
@@ -399,6 +1227,14 @@
           "source_sha256": "2accb693b6f653ae92fff5f8d4207513b6d601fbc052720ecc72ec741036b770",
           "translation": "按跳跃键上浮。",
           "status": "draft"
+        },
+        {
+          "actor": "LevelInfo0",
+          "property": "Title",
+          "slot": 0,
+          "source_sha256": "3de79f5094206a3b6a35f1c836c13cd51df6e305463e0a15f9b16488d28f8bd0",
+          "translation": "试炼",
+          "status": "draft"
         }
       ]
     },
@@ -538,317 +1374,27 @@
           "source_sha256": "57de68e24e5fa4ebdbea1bc5346dae346ff802a74ec2e7bb5acd180d8b7bf4df",
           "translation": "必须使用正确的陷阱！",
           "status": "draft"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Battle3_01.wot",
-      "sha256": "f2d4e01bab02a919eff73469e25050c30df2fa31262b3847bf139576fc19e3c4",
-      "rows": [
-        {
-          "actor": "BattleInfo1",
-          "property": "EditingStr",
-          "slot": 0,
-          "source_sha256": "a7345fc2183d42bbe78638267270630d105f0ab548e9d5b5d4835e14da2f7ed8",
-          "translation": "准备城堡",
-          "status": "draft"
         },
         {
-          "actor": "BattleInfo1",
-          "property": "PlayingStr",
+          "actor": "LevelInfo0",
+          "property": "Title",
           "slot": 0,
-          "source_sha256": "3d2ebd2053228b97d0bce5082a710bcdc9e1f35f1a99d2635c5a6c11eeb7823b",
-          "translation": "战斗开始",
-          "status": "draft"
-        },
-        {
-          "actor": "BattleInfo1",
-          "property": "ReadyStr",
-          "slot": 0,
-          "source_sha256": "291424178427d5d4459819ee104807df0a2249da9d7bbd4483c115eb0e284fdb",
-          "translation": "做好战斗准备",
-          "status": "draft"
-        },
-        {
-          "actor": "BattleInfo1",
-          "property": "WaitingStr",
-          "slot": 0,
-          "source_sha256": "b6e6b75f122700615afbafb96f1ae5a41d7016c05b5ffbb5e7f1d5f14ced4097",
-          "translation": "等待其他玩家",
+          "source_sha256": "3de79f5094206a3b6a35f1c836c13cd51df6e305463e0a15f9b16488d28f8bd0",
+          "translation": "试炼",
           "status": "draft"
         }
       ]
     },
     {
-      "file": "Maps/Mission_05a.wot",
-      "sha256": "2877698d4d75f51b9cca4eb52fd4b7159523704bc1215c9621a011e7796b5cbe",
+      "file": "Maps/WheelOfTime.wot",
+      "sha256": "8c61aa8f41e64462850c70d26f43ac54f7a0ca2ad97d49f70a3f943fc2a9ecda",
       "rows": [
         {
-          "actor": "KeyLong0",
-          "property": "PickupMessage",
+          "actor": "LevelInfo0",
+          "property": "Title",
           "slot": 0,
-          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
-          "translation": "拾取了通往回廊的钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "PropertyFlipper0",
-          "property": "StringValue",
-          "slot": 0,
-          "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
-          "translation": "拾取了通往回廊的钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "Trigger5",
-          "property": "Message",
-          "slot": 0,
-          "source_sha256": "fc95c5ea8c5b7ed71793a0ae6b4e24dd83767a8e098ac8959bba3da985877d4f",
-          "translation": "必须解除吊桥的两道锁，才能将它关闭。",
-          "status": "draft"
-        },
-        {
-          "actor": "Trigger15",
-          "property": "Message",
-          "slot": 0,
-          "source_sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
-          "translation": "test",
-          "status": "protected"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_07a.wot",
-      "sha256": "847189879f0c2a890a05f71d73abdb1505f3f4040979a92c35de0cc9ce741bfe",
-      "rows": [
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 0,
-          "source_sha256": "cb0c91be109ef6f0ed608bac18fa84183a3c57c8791690336dcbacf01e83451f",
-          "translation": "值得为此赴死吗？",
-          "status": "draft"
-        },
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 1,
-          "source_sha256": "a35878befb3f234c5364de58072adc3f622e900115cb5bb67665e83218964745",
-          "translation": "http://www.ocrana.de",
-          "status": "protected"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_08a.wot",
-      "sha256": "44f48c351a812c93d2525e42cb856d56bc1365676410bafcdfb370a2b23d94aa",
-      "rows": [
-        {
-          "actor": "BagHolding0",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "7b39c93747da6e063d3513d44c1ae44b676c7cac0f320662712fb40e77dcf017",
-          "translation": "拾取了袋子，其中有追踪弹和腐化。",
-          "status": "draft"
-        },
-        {
-          "actor": "BagHolding1",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "c1577aed57fc8a12f9e5b8b57d60cfb7faf786e290c50a5fc617f09b2a2a2c60",
-          "translation": "拾取了袋子，其中有治疗和冻结。",
-          "status": "draft"
-        },
-        {
-          "actor": "LockableMover0",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "5819980d5d32bea9212c010c4433e0d8b41eb40841f20b03b6970750331aae29",
-          "translation": "身后的门已锁上。",
-          "status": "draft"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_12a.wot",
-      "sha256": "0aef8ef3542d6e3a66e21504dbd49ba191dd1055e83340c75601ce13d07e9076",
-      "rows": [
-        {
-          "actor": "KeyLong0",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "a3ed217b81220e7984dd81dda2bd6ab6607ff8fe6831dbcfe1f9e06b2a2ec0ad",
-          "translation": "找到了一把大钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "KeyRing0",
-          "property": "KeyPickupMessage",
-          "slot": 0,
-          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "KeyRing0",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
-          "status": "draft"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_15.wot",
-      "sha256": "c423b0d72d16cf92b8e263006c5628edb8d6e7552c434df3843620fde39b4ee6",
-      "rows": [
-        {
-          "actor": "KeyRing0",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "LockableMover4",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
-          "translation": "大门已锁上。",
-          "status": "draft"
-        },
-        {
-          "actor": "PropertyFlipper0",
-          "property": "StringValue",
-          "slot": 0,
-          "source_sha256": "0d2b899bc61215f131eff651b17418d31751b5bd8930b0699a5d5383be83fd2b",
-          "translation": "拾取了通往封闭储藏室的钥匙。",
-          "status": "draft"
-        },
-        {
-          "actor": "LockableMover21",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "7c34100e57d48198dd33ea1230e15bccb9665c7445f03b874b46a0de5478c81e",
-          "translation": "储藏室的门已锁上。",
-          "status": "draft"
-        },
-        {
-          "actor": "LockableMover5",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
-          "translation": "大门已锁上。",
-          "status": "draft"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_17.wot",
-      "sha256": "8b7dcb54bf964ad858cdfe747ea2acee16a4e16585908040f30c5a6757cbc909",
-      "rows": [
-        {
-          "actor": "KeyRing0",
-          "property": "KeyPickupMessage",
-          "slot": 0,
-          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
-          "translation": "拿起了钥匙圈。",
-          "status": "draft"
-        },
-        {
-          "actor": "KeyRing0",
-          "property": "PickupMessage",
-          "slot": 0,
-          "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
-          "translation": "拿起了钥匙圈。",
-          "status": "draft"
-        },
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 0,
-          "source_sha256": "6d5f1a292d3bb6a93a3630a189970233cf6d82201eac6497b796ba115f08f8ca",
-          "translation": "在这间小书房的桌上，你发现了一叠古老而泛黄的笔记，内容涉及昆达雅石封印。传说纪元中，暗帝囚牢的孔洞封闭之后，两仪师进行的实验表明，这些封印能够直接影响暗帝的囚牢。只需四枚封印，便能重新打开孔洞；反之，一场仪式可以剥离封印的这种力量，使它们变成真正位于煞妖谷的编织的象征。遗憾的是，世界崩毁使封印散落各处，当时的两仪师未能完成仪式。",
-          "status": "draft"
-        },
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 2,
-          "source_sha256": "0977b7bb21b345abdb0625e963dd62a5a6206b7cfea5ce5fc482a079c706da04",
-          "translation": "有关这场仪式的知识失传已久。直到此刻，你才重新知晓。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover2",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover2",
-          "property": "UnLockMessage",
-          "slot": 0,
-          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover0",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover0",
-          "property": "UnLockMessage",
-          "slot": 0,
-          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover1",
-          "property": "LockedMessage",
-          "slot": 0,
-          "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
-          "status": "draft"
-        },
-        {
-          "actor": "DoorMover1",
-          "property": "UnLockMessage",
-          "slot": 0,
-          "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
-          "status": "draft"
-        },
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 1,
-          "source_sha256": "c2fe31f912a5bb7bf50b58e291d90c7c304827d898d4773efcd96ad60b183b4f",
-          "translation": "%s=8",
-          "status": "protected"
-        }
-      ]
-    },
-    {
-      "file": "Maps/Mission_18.wot",
-      "sha256": "f4fd904a2708df3d502df1f2653b9effda298f85490fe0c79c3374d2c330f94a",
-      "rows": [
-        {
-          "actor": "WOTTextWindowInfo0",
-          "property": "Content",
-          "slot": 0,
-          "source_sha256": "aaa13c2bc79231432d27a391f37eb92478d6582675334ddbd6d97861c94bb43b",
-          "translation": "一次只能携带一枚封印。寻找更多封印之前，先将这一枚放到充当祭坛的书桌上。最终，其余封印也应带回这里。",
+          "source_sha256": "2649e082d9a2ba377ac918877028c3f1885e2e9ab926b216943aaf06064b92a1",
+          "translation": "入口",
           "status": "draft"
         }
       ]
@@ -864,6 +1410,10 @@
       "term": "Bore",
       "location": "Mission_17.WOTTextWindowInfo0.Content[0]",
       "reason": "No sole-glossary entry; descriptive wording 孔洞 retained pending terminology confirmation."
+    },
+    {
+      "term": "Absynth",
+      "reason": "Arena_01/Autoplay 关卡原创标题，待确认译名。"
     }
   ]
 }

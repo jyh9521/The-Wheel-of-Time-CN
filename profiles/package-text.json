@@ -1,0 +1,34 @@
+{
+  "WOT.u": {
+    "Key": {
+      "defaults_offset": 97,
+      "export_sha256": "ca8d61206e01829b6975bacc30761a3418ab1b2801eed696ccd2ed19fa21af38"
+    },
+    "LockableMover": {
+      "defaults_offset": 160,
+      "export_sha256": "44eaf2bfc4796b081913fd06025c2fbb39f027a923ed8b0e95801b19a42075ab"
+    },
+    "KeyShort": {
+      "defaults_offset": 89,
+      "export_sha256": "fb8b2b87ccd0c5044edb41ccd4db59e115d90f50541faabd8037674e75faa329"
+    },
+    "KeyRing": {
+      "defaults_offset": 89,
+      "export_sha256": "dd4c413b84fe6a8dfb9e1e0aa560b4a2d65a476764310809a96336ee45f5d64e"
+    },
+    "KeyMedium": {
+      "defaults_offset": 89,
+      "export_sha256": "82a30fecc3730ac51ee6f55f25cdd2dd6565af7faef77dfd3c2ff49ad3c5ce59"
+    },
+    "KeyLong": {
+      "defaults_offset": 89,
+      "export_sha256": "03102580f84b53db53f6b3a4096840e235653552fb858d40d28aa200ae8a8f3f"
+    }
+  },
+  "WOTPawns.u": {
+    "Whitecloak": {
+      "defaults_offset": 91,
+      "export_sha256": "efffeab53ea9b6b387db60e12b37da139a9e5085b367d79c07a43ea838ca0e19"
+    }
+  }
+}
