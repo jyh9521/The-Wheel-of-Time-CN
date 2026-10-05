@@ -10,7 +10,7 @@
 
 ## 提交与推送
 
-该阶段只准备并暂存变更。我确认后可普通commit，再fetch并检查是否仍能fast-forward；若origin/main前进则先合并/变基与复测，不使用force或force-with-lease绕过检查。当前检查通过只说明当前快照可提交；它不保证未来远端不会更新。
+该阶段只准备并暂存变更。确认后可普通commit，再fetch并检查是否仍能fast-forward；若origin/main前进则先合并/变基与复测，不使用force或force-with-lease绕过检查。当前检查通过只说明当前快照可提交；它不保证未来远端不会更新。
 
 ## 该阶段检查结果
 
@@ -18,4 +18,4 @@
 
 ## 提交完成记录
 
-我确认后，迁移成果以 `3df21560e62169101f0e2df7460a974e81e18758` 提交，信息为 `Standardize project structure and preserve reproducible build workflow`，随后普通push并fetch，main与origin/main为0/0。上文“尚未commit/push”描述的是此前衔接准备阶段；没有强推或改写历史。随后继续Controls离线草稿，见CONTROLS_POC.md。
+确认后，迁移成果以 `3df21560e62169101f0e2df7460a974e81e18758` 提交，信息为 `Standardize project structure and preserve reproducible build workflow`，随后普通push并fetch，main与origin/main为0/0。上文“尚未commit/push”描述的是此前衔接准备阶段；没有强推或改写历史。随后继续Controls离线草稿，见CONTROLS_POC.md。

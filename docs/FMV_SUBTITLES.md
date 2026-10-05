@@ -6,7 +6,7 @@
 
 - 17个MOV中14个各有两条QuickTime text轨：共28轨、1538样本，1256个去除空白后非空（两种语言合计，不是1256句不同对白）。
 - 文本在独立轨道，不是这些文字被烧录在画面；这不证明所有帧均没有其他图像文字。
-- GtLogo.mov、Logo.mov、Mission_10.mov没有文本轨。Logo不据此认定漏剧情；Mission_10另需内容核对。
+- GtLogo.mov、Logo.mov、Mission_10.mov没有文本轨。Logo不据此认定漏剧情；Mission_10 于 2026-10-05 完整观看确认无对白，无需字幕。
 - 视频为SVQ1，声音为QuickTime IMA ADPCM；文字codec_tag为text。Mission_05有两个subtitle流没有codec_name，但提取成功，不能仅按codec_name过滤。
 - ffprobe语言标签标eng，实际正文可辨为意大利语/西班牙语。不能把标签当英文原文证据。按Mac Roman暂解码并明确标assumed；保留sample位置，未知字符需回到原字节核对。
 - sample首16位大端值是文字字节长度；尾部样式扩展不是正文。导出PTS/duration/offset/size，保留空白及消失间隔。
@@ -36,7 +36,7 @@ python -m tools.extract.movie_text --movies GAME/Movies --ffprobe PATH/ffprobe.e
 
 ## 原生播放器的字幕选择（追加研究）
 
-我进一步检查了 GOG 原版 `System/WinDrv.dll`，SHA-256 为
+进一步检查了 GOG 原版 `System/WinDrv.dll`，SHA-256 为
 `43076c7c4492654fb71fbeb7c4a83d4c870f7db0ad7421ada75a7912a06af964`。
 以下地址均为 RVA，不是文件偏移；镜像基址为 `0x11100000`。没有修改 DLL。
 
@@ -57,15 +57,15 @@ python -m tools.extract.movie_text --movies GAME/Movies --ffprobe PATH/ffprobe.e
 
 ## UTF-16 最小副本实验
 
-我以原版 Intro.mov 的第三条轨道、零基样本 1 做实验，只写入
+以原版 Intro.mov 的第三条轨道、零基样本 1 做实验，只写入
 “中文字幕显示测试：时光之轮”，并非整段正式译文。
 原版 SHA-256：`5e302003dc82904f3392d9661214ce5ba8344ecf3bc29c13e3bb4929ec523764`。
 样本时间为 1–7 秒，沿用原时间表。
 
 - 通用工具：`tools/pack/movie_text_probe.py`；语言数据：`locales/zh-CN/fmv_probe.json`。
 - 原 sample 为 16 位字节长度 + Mac Roman 文本 + styl/ftab/orig 扩展；新 sample 为长度 + FEFF BOM + UTF-16BE。
-- 我移除了**这个样本**的旧样式/字体表/旧正文扩展，以免旧字符范围及 font override 残留；其他样本不变。
-- 我仅修改该轨 stsz 的样本大小、stco 的 chunk 偏移、tkhd 的 enabled 位，
+- 移除了**这个样本**的旧样式/字体表/旧正文扩展，以免旧字符范围及 font override 残留；其他样本不变。
+- 仅修改该轨 stsz 的样本大小、stco 的 chunk 偏移、tkhd 的 enabled 位，
   并把 stsd 的等长 Pascal 字体名 Geneva 改为 SimHei。字体配置只是本次中文候选，通用工具不固定中文字体。
 - 新文本放到文件尾追加的 mdat；旧 mdat、所有音视频轨和原 stts/stsc 时间/分块表不变。
 - 工具只支持已确认的 version-0 tkhd、32 位 stco、一个样本/chunk 和一个 description。
@@ -74,7 +74,7 @@ python -m tools.extract.movie_text --movies GAME/Movies --ffprobe PATH/ffprobe.e
   `801bde6cf281127800348c256abab4e653d5c15acd160d75173aaadc7124ff3a`。
   原版 57,350,582 字节；独立副本回滚后完整 SHA 与原版一致。
 
-**已验证（旧 QuickTime 原生打开，不是现代 ffprobe）**：我用 32 位只读探针
+**已验证（旧 QuickTime 原生打开，不是现代 ffprobe）**：采用 32 位只读探针
 `tools/validate/quicktime_open_probe.cs` 加载本机 GOG 的 QTSystem/QTMLClient.dll，
 没有启动游戏或播放窗口。原版、副本、回滚副本均成功打开 6 条轨道：原版文字轨 3/4
 均关闭；实验副本轨 3 开启、轨 4 关闭；回滚恢复原状态。Python 回读新样本为正确中文。
@@ -82,7 +82,7 @@ python -m tools.extract.movie_text --movies GAME/Movies --ffprobe PATH/ffprobe.e
 **未验证**：旧 text handler 的中文实际绘制、字体解析/缺字、字宽、位置、换行、透明度、
 暂停/跳过/切换/结束稳定性，以及游戏是否按上述静态路径重新关闭轨道。
 “QuickTime 能打开”和“中文能回读”均不等于“中文字幕已经在游戏里显示”。
-我没有安装该副本，没有重编码音视频，没有改 EXE/DLL、原视频或当前汉化运行目录。
+没有安装该副本，没有重编码音视频，没有改 EXE/DLL、原视频或当前汉化运行目录。
 
 ## 重现实验
 
@@ -103,7 +103,7 @@ python -m unittest discover -s tests -p test_movie_text_probe.py -v
 & .\build\fmv-research\quicktime_open_probe.exe "QT/QTSystem" "FULL_PATH/Intro.mov"
 ```
 
-探针需要用户已有的 QuickTime 运行库；路径作为参数，不复制或发布运行库。
+探针需要系统已有的 QuickTime 运行库；路径作为参数，不复制或发布运行库。
 输出固定注明 `rendering=NOT_TESTED`。实验差分及四项本地记录保存在忽略的 build/fmv-research，
 不把完整视频或原版对白提交到仓库。下一步先离屏绘制一条中文并检查实际字形，
 再验证独立字幕选择，不急于批量翻译/重封装所有视频。
@@ -114,11 +114,11 @@ python -m unittest discover -s tests -p test_movie_text_probe.py -v
 
 ## 独立 1080p 原生字幕预览入口
 
-我已经进一步验证实际绘制：此前仅带 BOM 的 UTF-16 副本**确实会乱码**。
+已进一步验证实际绘制：此前仅带 BOM 的 UTF-16 副本**确实会乱码**。
 这纠正了“能回读就可能直接显示”的假设，但不删除前一阶段的打开实验记录。
 Apple [QA1400](https://developer.apple.com/library/archive/qa/qa1400/_index.html)
 指出 Text Media Handler 还需要 Unicode 编码属性，并建议指定 media language。
-我在新样本追加 12 字节 `encd` atom，其 32 位大端值为 `0x100`
+在新样本追加 12 字节 `encd` atom，其 32 位大端值为 `0x100`
 （kTextEncodingUnicodeDefault），并把该轨 mdhd 的 Mac 语言码设为 33。
 **已验证**：旧版 Windows QuickTime 在 1920×1080 离屏帧中实际画出了
 “中文字幕显示测试：时光之轮”，不是另用 GDI/HTML 叠字伪装原生字幕。
@@ -127,15 +127,15 @@ Apple [QA1400](https://developer.apple.com/library/archive/qa/qa1400/_index.html
 `65cb0fa434398f73ea6e5af77efb47ff13b21ae868e1eba2dc5ae5372c02310f`。
 旧 BOM-only 副本留在 build/fmv-research 作为实验记录；新的可测试副本在 build/fmv-preview。
 通用样本生成器现在写入 encd；中文媒体语言码和 SimHei 字体名仍只在 locale 配置中。
-Windows 字体由用户系统提供，不复制或发布微软字体。
+Windows 字体由系统提供，不复制或发布微软字体。
 
 独立播放器 `tools/validate/quicktime_player.cs` 用 QTMLClient 原生解码和文字 handler
 画入 32 位 ARGB GWorld，WinForms 只展示已生成的像素，不另行翻译/绘制字幕。
-我在内存中单独启用第一条音轨（本版英语）及第一条文字轨，关闭自动 alternate 选择；
+在内存中单独启用第一条音轨（本版英语）及第一条文字轨，关闭自动 alternate 选择；
 字幕 matrix 的 Y 平移为视频高度，得到 640×500 的视频+文字区域，再等比缩放至 1080p。
 这些是**测试播放器**内的设置，没有修改 WinDrv.dll，没有证明游戏原入口已经能显示。
 
-我还修复了关闭文字轨时出现白色条带的问题：GWorld 的 QuickDraw 背景色必须设为黑色。
+还修复了关闭文字轨时出现白色条带的问题：GWorld 的 QuickDraw 背景色必须设为黑色。
 同一播放器实例的开启/关闭/重播/样本前空白测试通过，字幕区域亮像素分别为
 2966/0/2966/0；开启与关闭的帧差仅在 `(795,1037)–(1128,1062)`。
 独立回滚恢复原 MOV 完整字节，原版与回滚的原生截图像素也一致。
@@ -150,12 +150,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fm
 ```
 
 构建命令不自动播放，也不安装进游戏。需要 Windows .NET Framework 4 的 32 位编译目标，
-以及用户已有的 GOG QuickTime 运行库。入口先校验测试 MOV 与播放器 SHA。
+以及系统已有的 GOG QuickTime 运行库。入口先校验测试 MOV 与播放器 SHA。
 未知 MOV 原版 SHA、未知生成文件内容均报错，不覆盖原版或静默采用其他版本。
 现有生成物不同则改用新的 `--out` 目录；相同的 JSON 允许 CRLF/LF 排版差异。
 脚本仍可以从干净仓库加原版游戏目录重建，不依赖此前研究副本。
 
-### 我的测试清单
+### 测试清单
 
 1. 运行 PLAY_FMV.ps1，**不是游戏启动命令**。观察第 1–7 秒的一条测试中文，随后它应被下一条样本替换。
 2. 后续仍是原字幕轨的意大利语内容；这个入口只有一句中文，不是正式全视频汉化。
@@ -166,16 +166,16 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fm
 172 项自动测试。**待实机验证**：可见窗口实时播放流畅度、实际听到的配音、手动按键、
 全片结束、游戏内原播放器接入。默认游戏构建仍未安装视频，不能将此入口等同成品补丁。
 
-我另外运行了静音的离屏时间钟测试：StartMovie 后时间前进，StopMovie 后保持不动，
+另运行了静音的离屏时间钟测试：StartMovie 后时间前进，StopMovie 后保持不动，
 跳回开头以及跳转片尾后的 IsMovieDone 状态均通过。首个 300ms 固定等待窗口曾因启动延迟失败，
 加入 Windows 消息处理并延长到 700ms 后观测停止/暂停时间同为 2.250 秒。
 这验证受控启停与片尾路径，不替代完整观看、实际配音听感或可见窗口验收；正常 play 模式不静音。
 
 ## 下一阶段顺序：游戏内最小验证优先
 
-我暂不开展整片翻译。独立播放器已经显示中文，接下来先用隔离 WoT.exe 的
+暂不开展整片翻译。独立播放器已经显示中文，接下来先用隔离 WoT.exe 的
 “重播开场”验证 WinDrv 原生路径。三字节字幕选择 PoC、复制范围、启动与验收说明见
 [游戏内 FMV 验证](FMV_GAME_QA.md)。没有修改原版安装；游戏内结果仍待实测。
 # 最新状态：完整字幕已导入正式测试副本（2026-10-05）
 
-我已确认游戏内最小中文显示，并完成 14 段带文本轨视频的 628 条字幕初稿及完整回填。普通汉化资源也已从当前源码重建，一起导入新的完整测试目录。原版视频和安装不变，未重编码；1 个新角色名和无轨 Mission_10 的听感复核仍待确认。当前入口、边界和验证见 [FMV_FULL_QA.md](FMV_FULL_QA.md)，以下保留早期研究与 PoC 的阶段状态。
+已确认游戏内最小中文显示，并完成 14 段带文本轨视频的 628 条字幕初稿及完整回填。普通汉化资源也已从当前源码重建，一起导入新的完整测试目录。原版视频和安装不变，未重编码；Risline 已统一为“里斯琳”；Mission_10 已完整观看确认无对白，无需字幕。当前入口、边界和验证见 [FMV_FULL_QA.md](FMV_FULL_QA.md)，以下保留早期研究与 PoC 的阶段状态。

@@ -30,7 +30,7 @@ python -m venv .venv
 .venv/Scripts/python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --font "D:/Fonts/source-font.ttf"
 ```
 
-字体与游戏路径均由使用者提供；不依赖 `work/phase*`、作者备份或手改资源。
+字体与游戏路径均通过构建参数提供；不依赖 `work/phase*`、作者备份或手改资源。
 输出必须在原安装之外，默认 `build/<locale>/`，可通过 `--out` 指定。
 生产构建前运行 `validate --strict`：当前基础116条均为draft；启用社区来源时还包括12条draft和233条pending，因此严格验收应失败，不能伪装已审校。
 
@@ -79,7 +79,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 python -m tools.validate.runtime --game-dir "D:/GOG Games/The Wheel of Time" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view menu
 ```
 
-当前 QA 仅1920x1080；`--resolution` 默认1920x1080。1366x768与2560x1440延后由我在汉化完成后检查。
+当前 QA 仅1920x1080；`--resolution` 默认1920x1080。1366x768与2560x1440延后安排在汉化完成后检查。
 4K仅保留既有测试证据和已知问题，不再进入主动测试/适配矩阵。
 可先离线生成原/改资源对照计划，不会启动游戏：
 
@@ -115,7 +115,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 
 ## 可选字幕来源审计
 
-我下载的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。
+已下载的社区字幕可用tools.import.subtitle_source在独立目录保守合并；命令和来源见docs/SUBTITLE_COVERAGE.md。此步骤仍为研究准备，不自动加入当前49条生产构建；原版profile输入保持不变，不用覆盖原游戏来构建。
 
 ## 可选社区字幕来源：生产构建入口
 
@@ -131,7 +131,7 @@ python build.py --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_S
 
 ## 教程翻译批次（2026-10-03）
 
-Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待我在1080p检查。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
+Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待1080p实机检查。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
 
 ## 开场缺段修正
 
@@ -204,29 +204,29 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 
 ## 设置补漏构建与验证
 
-我已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。
+已补上循环竞技场关卡和高级选项下拉列表的显示、查找与反向回写适配，原始配置值保持不变。此前对应待办由本节更新；159项测试、730项CPU模拟、UCC加载通过，1080p实机切换与保存待验。实现、位置及命令见[设置动态值补漏](docs/SETTINGS_VALUES_FIX.md)。未知标识、设备/API与自定义值仍保留原样。
 ## 完整 FMV 中文字幕构建
 
-游戏内最小显示已经由我确认。先按上面的命令构建普通汉化资源，再用 `python -m tools.build.build_fmv build --game-dir "GAME" --runtime-dir "GAME" --resource-build "BUILD_OUTPUT" --out build/formal-game --locale zh-CN` 生成独立的完整游戏副本，不依赖旧的 build/runtime。原片/播放器均做版本门禁，普通资源与 14 段剧情的 628 条对白一起导入，音视频不重编码；字体由系统提供。详情、核验及独立回滚见 [FMV 正式测试](docs/FMV_FULL_QA.md)。下面保留之前的 PoC 入口作为研究历史，不作为正式测试入口。
+游戏内最小显示已经确认。先按上面的命令构建普通汉化资源，再用 `python -m tools.build.build_fmv build --game-dir "GAME" --runtime-dir "GAME" --resource-build "BUILD_OUTPUT" --out build/formal-game --locale zh-CN` 生成独立的完整游戏副本，不依赖旧的 build/runtime。原片/播放器均做版本门禁，普通资源与 14 段剧情的 628 条对白一起导入，音视频不重编码；字体由系统提供。详情、核验及独立回滚见 [FMV 正式测试](docs/FMV_FULL_QA.md)。下面保留之前的 PoC 入口作为研究历史，不作为正式测试入口。
 
 ## 独立 FMV 中文字幕实验入口
 
-我提供了不安装、不启动游戏的原生 QuickTime 预览构建：
+提供了不安装、不启动游戏的原生 QuickTime 预览构建：
 
 ```powershell
 python -m tools.build.build_fmv_preview --game-dir "GAME" --locale zh-CN
 ```
 
-依赖 Windows .NET Framework 4 csc（编译为 x86）、Python 和用户已安装的 QuickTime。
+依赖 Windows .NET Framework 4 csc（编译为 x86）、Python 和系统已安装的 QuickTime。
 原版输入仅 Movies/Intro.mov，SHA 门禁来自 locales/zh-CN/fmv_probe.json。
 QuickTime 路径默认读取 32 位注册表，亦可显式传 --qt-dir。产物为 build/fmv-preview 下
 MODIFIED_FILE.mov、DIFF_FILE.json、quicktime_player.exe、PREVIEW.json、PLAY_FMV.ps1 和 ROLLBACK.sh。
-没有复制 QuickTime DLL 或字体；用户系统需提供配置的字体。测试视频只有第 1–7 秒一条中文。
+没有复制 QuickTime DLL 或字体；系统需提供配置的字体。测试视频只有第 1–7 秒一条中文。
 入口/回滚/验收与原生字段说明见 [FMV 研究](docs/FMV_SUBTITLES.md)。
 
 ## 游戏内 FMV 隔离测试构建
 
-我先建立游戏内最小验证，不先翻译全片：
+先建立游戏内最小验证，不先翻译全片：
 
 ```powershell
 python -m tools.build.build_fmv_game_probe build --source "GAME_OR_LOCALIZED_COPY" --locale zh-CN --out build/fmv-game-qa

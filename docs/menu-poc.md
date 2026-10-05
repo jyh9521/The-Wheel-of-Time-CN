@@ -38,7 +38,7 @@
 
 ## 重现
 
-在仓库根目录执行，GAME 与 FONT 由使用者提供：
+在仓库根目录执行，GAME 与 FONT 通过构建参数提供：
 
 ```powershell
 python build.py test

@@ -259,3 +259,7 @@ python tools\test_phase1.py
 
 ## 后续三字字体验证
 已补入新/游/戏并实际显示“新游戏”，不改EXE/DLL。详见 `C:\GOG Games\The Wheel of Time\docs\phase2\REPORT_zh-CN.md`，以及同目录 VERIFICATION.txt / FONT_DIFF.json。
+
+## 后续核对（2026-10-05）
+
+Mission_10 已完整观看确认无对白，无需字幕。以上“单独调查”保留为初始摸底阶段记录，不再属于补字幕待办；当前覆盖见 [FMV 正式测试](../../../FMV_FULL_QA.md)。

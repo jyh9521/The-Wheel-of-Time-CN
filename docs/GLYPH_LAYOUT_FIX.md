@@ -38,4 +38,4 @@ python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime -
 python -m tools.validate.runtime --game-dir "GAME" --runtime-dir build/runtime --build-dir build/zh-CN --out build/qa --resolution 1920x1080 --view options --sweep
 ```
 
-运行runtime会启动隔离游戏。当前开发只检查1080p，其他分辨率由我在汉化完成后验收；4K仍是已知问题。固定24px不是响应式布局方案，其他字幕、多人HUD、完整存档/战斗/切图未全覆盖；37条译文仍为draft。
+运行runtime会启动隔离游戏。当前开发只检查1080p，其他分辨率安排在汉化完成后验收；4K仍是已知问题。固定24px不是响应式布局方案，其他字幕、多人HUD、完整存档/战斗/切图未全覆盖；37条译文仍为draft。

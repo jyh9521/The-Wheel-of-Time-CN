@@ -24,9 +24,9 @@
 | Machin Shin | 黑风 | MissionObjectives08.Content[9]/Content[11]、AngrealInvIllusion.Description，共3条 | 英文Wiki明确同指Black Wind；当前相邻任务已有“黑风”译文。建议统一别称而不另造音译；此建议是跨资料与游戏语境的推断。[S4] |
 | Mountains of Mist | 迷雾山脉 | MissionObjectives15.Content[4]、WOTTransitionMapInfo12b.NextText，共2条 | 查到相关中文用法及小说转载线索；不把其他作品的同名山脉当作本游戏的证明。[S5][S6] |
 | Cerist | 瑟瑞斯特（候选音译） | MissionObjectives12.Content[3]/Content[10]，共2条 | 游戏人名，原文指临终告知探险队去向的女性；游戏演职员表可核对拼写，未确认中文出版既定译名。只提出这一种候选，不回填。[S7] |
-| Sephraem | 瑟芙蕾姆（候选音译） | MissionObjectives17.Content[3]，共1条 | 游戏人名，原文明确称她为叛徒；演职员表可核对拼写，未确认既定中文译名。只提出这一种候选，不回填。[S7] |
+| Sephraem | 瑟芙蕾姆（候选音译） | MissionObjectives17.Content[3]，共1条 | 游戏人名，原文明确称该角色为叛徒；演职员表可核对拼写，未确认既定中文译名。只提出这一种候选，不回填。[S7] |
 | Halfmen | 半人（待确认别称） | AngrealInvChampion.Quote，共1条 | 小说引文中的Myrddraal别称，应先确定是否保留出版别称；不是新怪物。已定Myrddraal → 魔达奥不覆盖、不改写；当前中文出版别称证据仍需补强。[S8] |
-| Bornhald | 伯恩哈 | QuestionerInventory.Quote，共1条 | 灰机Wiki主要人物列杰夫拉·伯恩哈，我此前参考的人物清单也有Bornhald对应；该句只出现姓氏，不擅自补全名字。[S9][S10] |
+| Bornhald | 伯恩哈 | QuestionerInventory.Quote，共1条 | 灰机Wiki主要人物列杰夫拉·伯恩哈，此前参考的人物清单也有Bornhald对应；该句只出现姓氏，不擅自补全名字。[S9][S10] |
 | Elaida | 爱莉达 | SitterInventory.Quote，共1条 | 灰机Wiki主要人物及多本书籍页面使用爱莉达；双语中文资料也能核对Elaida身份。[S9][S11] |
 | Chosen | 暂待核对出版尊称，不直接并为“弃光魔使” | DialogA.Myr_14/Myr_25，共2条 | 暗影阵营对白的尊称，不是普通chosen动词。现有网上旧译文章虽有中文线索，但译名体系不同，暂不据此锁定。源文WarderInventory.Description中的chosen是普通“被选中”，不算本专名。[S12] |
 | The Hand of the Light | 圣光之手 | QuestionerInventory.Description，共1条 | 灰机Wiki《裁判团》明确记录自称圣光之手。[S13] |
@@ -110,7 +110,7 @@ python -X utf8 build/remaining-terms-audit/scan.py
 - [S7 游戏演职员表](https://www.mobygames.com/game/637/the-wheel-of-time/credits/windows/)：Elayna、Cerist、Sephraem英文拼写；不提供既定中文译名证明。
 - [S8 英文名词资料转载](https://www.yingyuxiaoshuo.com/book/253b126c66e417d1/chapter/51)：Halfman/Myrddraal别称关系；中文别称还需核对。
 - [S9 主要人物（灰机Wiki）](https://twot.huijiwiki.com/wiki/主要人物)：伯恩哈、爱莉达。
-- [S10 我参考的繁中人物清单](https://www.ptt.cc/bbs/Fantasy/M.1570904515.A.61A.html)：Bornhald姓氏对应。
+- [S10 参考的繁中人物清单](https://www.ptt.cc/bbs/Fantasy/M.1570904515.A.61A.html)：Bornhald姓氏对应。
 - [S11 双语世界之眼剧情整理](https://thewheeloftime.fandom.com/zh/wiki/世界之眼)：Elaida/爱莉达对应。
 - [S12 旧译体系介绍](https://www.trzj.org/stories/article/a-brief-introduction-to-wheel-of-time/abitwot-1/2/)：Chosen相关语义线索；与项目当前译名体系不同，不直接引入。
 - [S13 裁判团（灰机Wiki）](https://twot.huijiwiki.com/wiki/裁判团)：圣光之手及挖掘真相的描述。
@@ -121,7 +121,7 @@ python -X utf8 build/remaining-terms-audit/scan.py
 
 ## 批准后的解决结果（2026-10-04）
 
-我已采纳本报告的建议；剩余专名及六项原有草稿已移入GLOSSARY.md确认表。Chosen两句敬称采用“获选者”，普通chosen按语义译“被选中”并加入精确源文hash例外。Questioner单位统一“裁判者”；普通reflect动词保留“反射”且不强制能力名匹配。Mother玉座尊称保留“母亲”，不表示亲缘。
+已采纳本报告的建议；剩余专名及六项原有草稿已移入GLOSSARY.md确认表。Chosen两句敬称采用“获选者”，普通chosen按语义译“被选中”并加入精确源文hash例外。Questioner单位统一“裁判者”；普通reflect动词保留“反射”且不强制能力名匹配。Mother玉座尊称保留“母亲”，不表示亲缘。
 
 该批修改28条正文，包括已批准专名、风元素标签、教程帮助测试尾标及三段可读@文本；原有源文ID、hash、长度及tokens未改变，仅三条新增经过源文预检的literal_token_translations/markup_delimiter_count注释。END-123已移除，帮助文案重新按英文原义整理。不改原版游戏、不改EXE/DLL，不启动游戏。已存在的教程独立计时插件不变。
 

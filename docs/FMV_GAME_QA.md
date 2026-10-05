@@ -3,7 +3,7 @@
 ## 先验证游戏，再翻译全片
 
 独立播放器的中文显示已经确认，但它不代表游戏原播放器能够显示。
-我先暂停整片 FMV 翻译，准备真正使用 WoT.exe → WinDrv.PlayMovie 的隔离测试入口。
+先暂停整片 FMV 翻译，准备真正使用 WoT.exe → WinDrv.PlayMovie 的隔离测试入口。
 没有自动启动游戏，游戏内验收仍以实际画面为准。
 
 ## 本次修改及原因
@@ -12,7 +12,7 @@
 `43076c7c4492654fb71fbeb7c4a83d4c870f7db0ad7421ada75a7912a06af964`，大小 327680。
 PlayMovie 在 RVA `0xFC97` 用 `83 C7 FD`（add edi,-3）把语言索引转换为文字轨索引。
 int 索引 0 因而得到 -3，不匹配任何文字轨。
-我仅在**隔离 DLL 副本**将这三字节改为 `33 FF 90`（xor edi,edi; nop），
+仅在**隔离 DLL 副本**将这三字节改为 `33 FF 90`（xor edi,edi; nop），
 让文字轨选择固定为第一轨。紧接着的原始代码将此值保存为字幕选择索引。
 原音轨选择循环在更早的地址执行，相关指令不变；Language=int 和 LanguageExt 顺序也不变。
 
@@ -29,7 +29,7 @@ int 索引 0 因而得到 -3，不匹配任何文字轨。
 ## 隔离范围
 
 - 输入可以是原版游戏目录，或已经完成现有汉化安装的独立目录。
-- 我本次使用 build/runtime，保留已有菜单/字幕/字体成果。
+- 该次使用 build/runtime，保留已有菜单/字幕/字体成果。
 - 工具将 System、Maps、Textures、Sounds、Music、Movies 做物理复制，不使用共享硬链接。
 - 不复制存档目录，测试目录使用自己的空 Save。
 - 本次复制 257 文件，只有 System/WinDrv.dll、Movies/Intro.mov、System/WoT.ini 三个批准文件改变。
@@ -44,13 +44,13 @@ int 索引 0 因而得到 -3，不匹配任何文字轨。
 python -m tools.build.build_fmv_game_probe build --source "GAME_OR_LOCALIZED_COPY" --locale zh-CN --out build/fmv-game-qa
 ```
 
-需要项目现有 Python/pefile 依赖；字形由用户系统的候选字体提供。
+需要项目现有 Python/pefile 依赖；字形由系统的候选字体提供。
 工具不依赖旧研究目录、独立预览播放器 EXE 或已经修改的 MOV：从指定源目录的
 原版 WinDrv.dll 和 Intro.mov 重新生成两项修改。必须使用全新输出目录；不覆盖旧实验或未知版本。
 工程源码为 src/patch/movie_player.py 和 tools/build/build_fmv_game_probe.py；
 版本门禁在 profiles/fmv-player.json，中文样本与字体/编码语言配置仍在 locales/zh-CN。
 
-## 我的游戏验收步骤
+## 游戏验收步骤
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fmv-game-qa/LAUNCH_GAME.ps1"
@@ -83,4 +83,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "FULL_REPO_PATH/build/fm
 原生 MOV 结构与旧 QuickTime Unicode 编码问题见 [FMV 研究](FMV_SUBTITLES.md)。
 # 正式测试入口更新（2026-10-05）
 
-我已在游戏内确认最小中文样本可以显示。14 段剧情视频的完整字幕已经制作并导入 `build/formal-game`，新的入口是该目录的 LAUNCH_GAME.ps1；单句 `build/fmv-game-qa` 保留为实验记录，不作为正式测试入口。完整范围、当前待确认项和构建命令见 [FMV_FULL_QA.md](FMV_FULL_QA.md)。下文为最小验证阶段的历史记录。
+已在游戏内确认最小中文样本可以显示。14 段剧情视频的完整字幕已经制作并导入 `build/formal-game`，新的入口是该目录的 LAUNCH_GAME.ps1；单句 `build/fmv-game-qa` 保留为实验记录，不作为正式测试入口。完整范围、当前待确认项和构建命令见 [FMV_FULL_QA.md](FMV_FULL_QA.md)。下文为最小验证阶段的历史记录。

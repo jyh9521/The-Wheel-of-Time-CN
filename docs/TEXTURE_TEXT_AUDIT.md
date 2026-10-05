@@ -56,7 +56,7 @@ python -X utf8 -m unittest discover -s tests -p test_texture_audit.py
 
 ## 按钮汉化范围与实现
 
-图片文字的处理范围，我定为只汉化按钮。挂毯、书页、纸张、品牌和标志保留原样；上面的审计结果保留作研究资料，不再安排挂毯和纸张的翻译。
+图片文字处理范围限定为按钮汉化。挂毯、书页、纸张、品牌和标志保留原样；上面的审计结果保留作研究资料，不再安排挂毯和纸张的翻译。
 
 按钮汉化只将 `UI.I_*` 与 `UI.M_*` 的 Load/Play/Roam/Save 八张纹理改为“载入/游玩/漫游/保存”。`Roam` 在玩家脚本中对应 `CitadelRoamMode`，采用漫游而非普通剧情模式名称。中文标签数据位于 `locales/zh-CN/texture-labels.json`；通用构建器为 `tools/font/build_texture_labels.py`，原资源对象指纹为 `profiles/texture-labels.json`。
 
