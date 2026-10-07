@@ -65,7 +65,7 @@
           "property": "Title",
           "slot": 0,
           "source_sha256": "d8a0d495e0384fe5efab8d011f9d3fe0ecd62988d68a626b0f579a8f1d2cafee",
-          "translation": "爱荷达苏醒",
+          "translation": "爱瑞荷苏醒",
           "status": "draft"
         }
       ]
@@ -406,7 +406,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
-          "translation": "拾取了通往回廊的钥匙。",
+          "translation": "拾取了通往回廊的钥匙",
           "status": "draft"
         },
         {
@@ -414,7 +414,7 @@
           "property": "StringValue",
           "slot": 0,
           "source_sha256": "6a27c4ec46337d90d7c616d99e69a8029dd528cfd3d06571b4323b6467ecbdf8",
-          "translation": "拾取了通往回廊的钥匙。",
+          "translation": "拾取了通往回廊的钥匙",
           "status": "draft"
         },
         {
@@ -473,7 +473,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "cb65f6adf0eb8325adaac60b16e341d3bbce1a29636659b7b02f55a2022fe9c3",
-          "translation": "拾取了通往大门前厅的钥匙。",
+          "translation": "拾取了通往大门前厅的钥匙",
           "status": "draft"
         },
         {
@@ -555,7 +555,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "5819980d5d32bea9212c010c4433e0d8b41eb40841f20b03b6970750331aae29",
-          "translation": "身后的门已锁上。",
+          "translation": "身后的门已上锁",
           "status": "draft"
         },
         {
@@ -584,7 +584,7 @@
           "actor": "MessageTrigger0",
           "slot": 0,
           "source_sha256": "3d5b1a5d87a4a13f7c305b29ec8c94c094b2bb6116ebe51b1e120ec221b20f13",
-          "translation": "现在应该可以安全地再次进入道了。",
+          "translation": "现在应该可以安全地再次进入道了",
           "status": "draft"
         },
         {
@@ -600,7 +600,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "5a73fb00e98a238b9852d7fbef1bcb76dd60bdd54eee05f5289af8574780839a",
-          "translation": "拾取了通往上层走道的钥匙。",
+          "translation": "拾取了通往上层走道的钥匙",
           "status": "draft"
         },
         {
@@ -629,21 +629,21 @@
           "actor": "MessageTrigger2",
           "slot": 0,
           "source_sha256": "a219fca224dc2d2cefe07b918645c143e6f2a71ba9e858b7bb020e40da60b8a7",
-          "translation": "现在该离开了。",
+          "translation": "现在该离开了",
           "status": "draft"
         },
         {
           "actor": "MessageTrigger0",
           "slot": 0,
           "source_sha256": "10d964fe857b6d00d97d4e99d385aced4a1cc8739dbfd4801ef60ede5eba98b0",
-          "translation": "黑风仍然离得太近。",
+          "translation": "黑风仍然离得太近",
           "status": "draft"
         },
         {
           "actor": "MessageTrigger1",
           "slot": 0,
           "source_sha256": "a67b8e645115fd8e4e0d5f6b8168a088937e59b6ebe0fabc15cb48ce2d419ac1",
-          "translation": "黑风现在应该已经离开了。",
+          "translation": "黑风现在应该已经离开了",
           "status": "draft"
         },
         {
@@ -679,7 +679,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "a3ed217b81220e7984dd81dda2bd6ab6607ff8fe6831dbcfe1f9e06b2a2ec0ad",
-          "translation": "找到了一把大钥匙。",
+          "translation": "找到了一把大钥匙",
           "status": "draft"
         },
         {
@@ -687,7 +687,7 @@
           "property": "KeyPickupMessage",
           "slot": 0,
           "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
+          "translation": "拾取了地牢牢房的钥匙",
           "status": "draft"
         },
         {
@@ -695,7 +695,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
+          "translation": "拾取了地牢牢房的钥匙",
           "status": "draft"
         },
         {
@@ -724,7 +724,7 @@
           "actor": "MessageTrigger0",
           "slot": 0,
           "source_sha256": "d604b54098bdf21f692a335382e9423c212dc4024a9e1e7bd2070f93b75a3d0f",
-          "translation": "感谢营救！林肯 很满意！",
+          "translation": "感谢营救！林肯很满意！",
           "status": "confirmed-term"
         },
         {
@@ -768,7 +768,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "b70208f7bc8778ca2fef45f0161c9dc222fb087a65fb2ecbf32a96b318b566b8",
-          "translation": "拾取了地牢牢房的钥匙。",
+          "translation": "拾取了地牢牢房的钥匙",
           "status": "draft"
         },
         {
@@ -776,7 +776,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
-          "translation": "大门已锁上。",
+          "translation": "大门已上锁",
           "status": "draft"
         },
         {
@@ -784,7 +784,7 @@
           "property": "StringValue",
           "slot": 0,
           "source_sha256": "0d2b899bc61215f131eff651b17418d31751b5bd8930b0699a5d5383be83fd2b",
-          "translation": "拾取了通往封闭储藏室的钥匙。",
+          "translation": "拾取了通往封闭储藏室的钥匙",
           "status": "draft"
         },
         {
@@ -792,7 +792,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "7c34100e57d48198dd33ea1230e15bccb9665c7445f03b874b46a0de5478c81e",
-          "translation": "储藏室的门已锁上。",
+          "translation": "储藏室的门已上锁",
           "status": "draft"
         },
         {
@@ -800,7 +800,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "965834fef66b0de7aaad1ff6f9b02e21c28cf96719b4575013e99e450137594a",
-          "translation": "大门已锁上。",
+          "translation": "大门已上锁",
           "status": "draft"
         },
         {
@@ -808,7 +808,7 @@
           "property": "Title",
           "slot": 0,
           "source_sha256": "7fcf40022444f6f9d27e3bca33d0518ad7598857b9a92042f5d5d7cd4160df5e",
-          "translation": "弃光魔使要塞",
+          "translation": "背弃者要塞",
           "status": "draft"
         }
       ]
@@ -850,7 +850,7 @@
           "property": "Title",
           "slot": 0,
           "source_sha256": "a2d9d2ffa92357076a33003be1e2d7e93be2eeb6d2ed5b6648ea0165c05658fc",
-          "translation": "弃光魔使地牢",
+          "translation": "背弃者地牢",
           "status": "draft"
         }
       ]
@@ -864,7 +864,7 @@
           "property": "KeyPickupMessage",
           "slot": 0,
           "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
-          "translation": "拿起了钥匙圈。",
+          "translation": "拿起了钥匙圈",
           "status": "draft"
         },
         {
@@ -872,7 +872,7 @@
           "property": "PickupMessage",
           "slot": 0,
           "source_sha256": "fe2f99593c0c9c1e561b3755c5ecfac09162757e29acee1e5cfa8ed572f031a1",
-          "translation": "拿起了钥匙圈。",
+          "translation": "拿起了钥匙圈",
           "status": "draft"
         },
         {
@@ -896,7 +896,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
+          "translation": "门已上锁",
           "status": "draft"
         },
         {
@@ -904,7 +904,7 @@
           "property": "UnLockMessage",
           "slot": 0,
           "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
+          "translation": "用钥匙打开了门锁",
           "status": "draft"
         },
         {
@@ -912,7 +912,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
+          "translation": "门已上锁",
           "status": "draft"
         },
         {
@@ -920,7 +920,7 @@
           "property": "UnLockMessage",
           "slot": 0,
           "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
+          "translation": "用钥匙打开了门锁",
           "status": "draft"
         },
         {
@@ -928,7 +928,7 @@
           "property": "LockedMessage",
           "slot": 0,
           "source_sha256": "6a5fdedc0795eb6c3f5ff94e3d5ec61b9829a46ec2a3211c0d66421084fd0f63",
-          "translation": "门已锁上。",
+          "translation": "门已上锁",
           "status": "draft"
         },
         {
@@ -936,7 +936,7 @@
           "property": "UnLockMessage",
           "slot": 0,
           "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-          "translation": "用钥匙打开了门锁。",
+          "translation": "用钥匙打开了门锁",
           "status": "draft"
         },
         {

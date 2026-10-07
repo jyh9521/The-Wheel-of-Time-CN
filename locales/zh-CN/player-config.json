@@ -1,0 +1,8 @@
+{
+  "System/Default.ini": {
+    "Engine.Engine": {"Language": "int", "GameRenderDevice": "D3DDrv.D3DRenderDevice", "RenderDevice": "D3DDrv.D3DRenderDevice"},
+    "WinDrv.WindowsClient": {"WindowedViewportX": "1920", "WindowedViewportY": "1080", "FullscreenViewportX": "1920", "FullscreenViewportY": "1080", "StartupFullscreen": "True"},
+    "FirstRun": {"FirstRun": "0"}
+  },
+  "System/DefUser.ini": {"WOT.WOTPlayer": {"bSubtitles": "True"}}
+}

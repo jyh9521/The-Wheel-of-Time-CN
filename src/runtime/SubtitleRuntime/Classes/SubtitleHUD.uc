@@ -137,7 +137,7 @@ simulated function DrawMessages(Canvas C, float DeltaTime)
         for (i=0; i<64; i++)
         {
             if (Captions.GetBegin(i) <= Level.TimeSeconds && Captions.GetEnd(i) > Level.TimeSeconds
-                && Captions.GetOrder(i) > LastOrder && Captions.GetOrder(i) < BestOrder)
+                && !Captions.IsDuplicate(i) && Captions.GetOrder(i) > LastOrder && Captions.GetOrder(i) < BestOrder)
             {
                 BestIndex=i; BestOrder=Captions.GetOrder(i);
             }

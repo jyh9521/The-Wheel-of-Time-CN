@@ -27,7 +27,7 @@ def encode(t, e):
 def tokens(s):
     # Preserve known forms and conservatively retain unknown %-prefixed codes.
     return re.findall(
-        r"@[A-Za-z_][\w .]*@|%[A-Za-z_][A-Za-z0-9_=]*|%\d*\.?\d*[sdif]|%[^\s%]+|\{[^{}]+\}|\$[A-Za-z0-9_]+|\^[A-Za-z0-9]{2}|<[^>]+>|\\(?:[A-Za-z0-9]+|.)|[\x00-\x1f]",
+        r"@[A-Za-z_][\w .]*@|%[A-Za-z_][A-Za-z0-9_=]*|%\d*\.?\d*[sdif]|%[^\s%]+|\{[^{}]+\}|\$[A-Za-z0-9_]+|\^[A-Za-z0-9]{2}|<[^>]+>|\\(?:[nrt0]|[A-Za-z0-9]+|.)|[\x00-\x1f]",
         s,
     )
 

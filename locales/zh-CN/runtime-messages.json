@@ -16,7 +16,7 @@
       "export": "WOTPlayer.OKToCheat",
       "export_sha256": "9e755237f42c1168b35129a10658fb4689440904f4b146119f907b4ed8750610",
       "source": "Function is disabled on the server.",
-      "translation": "服务器已禁用此功能。"
+      "translation": "服务器已禁用此功能"
     }
   ]
 }

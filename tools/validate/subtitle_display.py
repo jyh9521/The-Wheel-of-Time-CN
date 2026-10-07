@@ -9,9 +9,17 @@ class CaptionQueue:
     def __init__(self,capacity=64):self.capacity=capacity;self.rows=[]
     def add(self,text,begin,end,now):
         self.rows=[r for r in self.rows if r[2]>now]
+        if not text or end<=begin or end<=now:return False
+        matches=[r for r in self.rows if r[0]==text and r[1]<end and begin<r[2]]
+        if matches:
+            first=self.rows.index(matches[0])
+            merged=(text,min([begin]+[r[1] for r in matches]),max([end]+[r[2] for r in matches]))
+            self.rows=[r for r in self.rows if r not in matches]
+            self.rows.insert(first,merged);return True
         if len(self.rows)>=self.capacity:return False
         self.rows.append((text,begin,end));return True
-    def active(self,now):return [r[0]for r in self.rows if r[1]<=now<r[2]]
+    def active(self,now):
+        return list(dict.fromkeys(r[0]for r in self.rows if r[1]<=now<r[2]))
 
 
 def verify(baseline,modified,cues):

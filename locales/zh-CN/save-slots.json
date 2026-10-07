@@ -1,0 +1,19 @@
+{
+  "path": "System/User.ini",
+  "section": "WOT.menuSlot",
+  "keys": [
+    "SlotNames[0]",
+    "SlotNames[1]",
+    "SlotNames[2]",
+    "SlotNames[3]",
+    "SlotNames[4]",
+    "SlotNames[5]",
+    "SlotNames[6]",
+    "SlotNames[7]",
+    "SlotNames[8]"
+  ],
+  "match_values": [
+    "..Empty.."
+  ],
+  "translation": "..空位.."
+}

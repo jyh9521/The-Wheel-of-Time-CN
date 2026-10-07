@@ -255,3 +255,21 @@ BOM-only 会乱码；添加 encd=0x100 和 media language=33 后显示正确。
 ## 玩法文本与字幕路径补漏（2026-10-05）
 
 已验证：EditorHUD/BattleHUD 原继承 MainHUD，绕过独立字幕字号。两类的 SuperField 与导出表 super 同步改为 SubtitleHUD，专用函数不变。CaptionState 按 Owner 共用队列，避免 HUD 切换隐藏活动旁白。门锁/钥匙等八个默认字符串使用受散列约束的类属性重建；详细见 docs/SUBTITLE_DISPLAY.md。
+
+## 全文件审计与分层回填（2026-10-05）
+
+ .int 翻译计数不足以证明显示路径穷尽。扫描增加类默认 FString、源码/编译字面量关联及原生 ASCII/UTF-16 文字候选，并对最终安装文件重新核对译文。localized 字段在包中保留英文不必然构成遗漏，必须核对对应 .int、继承与调用覆盖。原生窗口导入现使用 preserve_existing=True，源身份核对仍以原版为准，输出叠加已构建条目，防止覆盖普通译文。具体证据、未验证项和逐文件清单见[全文件审计](docs/FULL_TEXT_AUDIT.md)。
+
+
+## 启动配置向导与直接覆盖测试
+
+已验证 GOG playTasks：正常游戏与 Video Setup 均指向 System/WoT.exe，后者仅增加 -changevideo；正常快捷方式没有测试地图参数。Startup.int 承担首次配置/渲染器/细节/安全模式/驱动说明，Window.int 承担通用按钮与窗口标题。Window.dll RT_DIALOG 104 含硬编码向导按钮回退文本，本轮仅替换这四个 UTF-16 文本，不改 WoT.exe。RT_DIALOG 保留控件 ID、样式、坐标、字号、字体与热键。其他资源与非资源段逐项比较；通过资源填充防止 UpdateResource 移动已追加 .locale 段的 RVA。Windows 原生资源加载验证与实机窗口显示验收分别记录。
+
+直接覆盖测试包包含 91 个资源/配置文件，含从默认文件重建的 WoT.ini/User.ini；FirstRun=0 保留首次配置流程。默认 D3D、1080p、字幕开启；正常启动不附加任何参数。覆盖会重置新装配置，不写存档。公开分发仍采用差分与许可核对流程。
+
+
+## 绿色安装器
+
+图形前端以 WinForms 实现，嵌入 SHA-256 清单和 COPY/LITERAL 差分。选择目录后执行独立 check 动作，校验阶段不修改游戏；安装动作再次校验并在独立临时目录重建全部输出，再备份、写入和读回。前端后台调用系统 PowerShell，隐藏命令行窗口，不创建注册表或系统安装记录，不启动游戏。已有设置仅修改 Language 与 bSubtitles，不导入开发配置。恢复保留存档并逐项验证原件和当前资源；不同外部修改被显式阻止。两阶段校验不代替磁盘/断电场景的原件备份。
+
+最终 EXE 的自动化入口复用实际安装后台，可验证只读校验、未知版本、只读文件、安装、重复安装、外部修改保护、恢复和重新安装。WinForms 原生窗口以自带 UI smoke 入口渲染检查；该证据不代表游戏通关验收。

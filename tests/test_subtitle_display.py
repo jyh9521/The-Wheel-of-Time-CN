@@ -44,6 +44,32 @@ class SubtitleDisplayTests(unittest.TestCase):
         self.assertIn('Captions.GetText(BestIndex)',source)
         self.assertNotIn('var string CaptionText[64]',source)
 
+    def test_identical_overlapping_deliveries_are_coalesced(self):
+        q=CaptionQueue()
+        for t in (0,0.1,0.2):q.add('Hou_18',t,t+30,t)
+        self.assertEqual(len(q.rows),1)
+        self.assertEqual(q.active(1),['Hou_18'])
+        self.assertEqual(q.active(30.2),[])
+
+    def test_replay_after_expiration_is_retained(self):
+        q=CaptionQueue();q.add('Hou_19',0,10,0);q.add('Hou_19',11,21,11)
+        self.assertEqual(q.active(12),['Hou_19'])
+
+    def test_same_text_future_nonoverlapping_cues_stay_separate(self):
+        q=CaptionQueue();q.add('same',0,10,0);q.add('same',12,20,0)
+        self.assertEqual(len(q.rows),2);self.assertEqual(q.active(11),[])
+
+    def test_old_save_duplicates_render_once(self):
+        q=CaptionQueue();q.rows=[('old',0,10),('old',0,10),('other',0,8)]
+        self.assertEqual(q.active(1),['old','other'])
+        source=(Path(__file__).resolve().parents[1]/'src/runtime/SubtitleRuntime/Classes/SubtitleHUD.uc').read_text('utf8')
+        self.assertIn('!Captions.IsDuplicate(i)',source)
+
+    def test_dedup_precedes_capacity_check(self):
+        q=CaptionQueue(1);q.add('same',0,10,0)
+        self.assertTrue(q.add('same',1,11,1));self.assertEqual(len(q.rows),1)
+        self.assertFalse(q.add('different',1,12,1))
+
     def test_owned_additions_install_restore(self):
         with tempfile.TemporaryDirectory()as t:
             root=Path(t);target=root/'game';target.mkdir()

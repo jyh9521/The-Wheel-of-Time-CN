@@ -87,7 +87,7 @@ def verify_sources(src, rows):
     return len(rows)
 
 
-def import_rows(src, rows, dst, config, profile):
+def import_rows(src, rows, dst, config, profile, preserve_existing=False):
     validate_rows(rows, config)
     src = Path(src).resolve()
     dst = Path(dst).resolve()
@@ -101,9 +101,14 @@ def import_rows(src, rows, dst, config, profile):
     reports = []
     for name, rs in sorted(grouped.items()):
         p = src / name
-        t, _ = decode(p.read_bytes())
+        target = (dst / name).resolve()
+        if target == p.resolve() or not target.is_relative_to(dst):
+            raise ValueError("Output symlink escapes destination")
+        base = target if preserve_existing and target.exists() else p
+        t, _ = decode(base.read_bytes())
         lines = t.splitlines(keepends=True)
         current = {(r["section"], r["key"], r["occurrence"]): r for r in entries(p)}
+        output_ids = {(r['section'], r['key'], r['occurrence']): r for r in entries(base)}
         for r in rs:
             a = current[(r["section"], r["key"], int(r["occurrence"]))]
             if a["kind"] == "structured-metadata":
@@ -120,7 +125,7 @@ def import_rows(src, rows, dst, config, profile):
                 and config["subtitle_timing"] == "preserve-source-length"
             ):
                 padding = max(0, len(a["source"]) - len(v))
-            i = a["line"] - 1
+            i = output_ids[(r['section'], r['key'], int(r['occurrence']))]['line'] - 1
             line = lines[i]
             end = (
                 "\r\n" if line.endswith("\r\n") else "\n" if line.endswith("\n") else ""

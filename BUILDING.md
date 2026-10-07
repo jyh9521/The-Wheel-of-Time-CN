@@ -268,3 +268,35 @@ python -m tools.build.build_property_limits restore-copy --transaction build/pro
 ## 玩法文本与字幕路径补漏（2026-10-05）
 
 构建新增 profiles/package-text.json 与 locales/<locale>/package-text.json，自动重建 WOT.u/WOTPawns.u 的指定字符串属性。原版输入需包含 WOTPawns.u 及 profile 内的地图文件。运行时精确显示映射配置位于 runtime-messages.json；字幕状态源码位于 SubtitleRuntime/Classes/CaptionState.uc。
+
+## 安装产物全文覆盖审计
+
+`powershell
+python -X utf8 -m tools.validate.full_text_audit --game-dir <独立测试游戏目录> --locale zh-CN --out build/text-audit
+`
+
+检查最终文件读回，而非仅统计翻译表。审计输出包含逐文件指纹、候选显示文案、FMV选定文本轨对照和译文不匹配项；完整原文候选保留在忽略的构建目录。追加 --require-complete 会在尚未证实完整显示/语音覆盖时返回2，不等于构建失败。详见[全文件审计](docs/FULL_TEXT_AUDIT.md)。
+
+## 独立玩家测试包
+
+完整资源与 FMV/字体运行副本构建完成后，可执行 `python tools/build/package_player_test.py --game-dir <原版目录> --resource-build <资源构建目录> --runtime-dir <完整运行副本> --locale zh-CN --out dist/wot-zh-CN-player-test.zip`。构建依赖 Python，安装端仅依赖 Windows PowerShell/.NET。实际 ZIP 经过原版独立副本安装、拒绝未知版本、校验、卸载逐字节恢复和重新安装验证；不执行游戏。操作见[测试包说明](docs/PLAYER_TEST_PACKAGE.md)。
+
+
+## 本地直接覆盖测试包
+
+当前通关测试使用直接覆盖 ZIP，而非 CMD 差分安装器。执行：
+
+```powershell
+python tools/build/package_overlay_test.py --game-dir <原版目录> --runtime-dir <完整运行副本> --delta-package <已验证差分清单ZIP> --locale zh-CN --out dist/wot-zh-CN-overlay-test.zip --work build/overlay-test-package
+```
+
+覆盖包仅作为本地生成物保存在忽略目录，不提交完整资源到 Git 或公开 Release。配置从原版 Default.ini 与 DefUser.ini 重建，不复制开发存档或私人按键设置。向导资源修改需 Windows UpdateResource API 和 pefile，覆盖与游戏启动不依赖这些构建工具。操作见[直接覆盖测试说明](docs/OVERLAY_TEST_PACKAGE.md)。
+
+
+## 小体积绿色安装 EXE
+
+当前本地测试可通过图形界面选目录、校验、安装或恢复，正常游戏入口保持原样。构建命令和依赖见[绿色安装包](docs/PORTABLE_INSTALLER.md)。构建使用系统 .NET Framework 的 csc.exe（WinForms/Compression/Web.Extensions），安装仅依赖 Windows 自带 .NET/PowerShell。src/installer/PortableInstaller.cs 为可重建源码；界面文案在 locales/<locale>/installer-ui.json。打包将已有差分、向导补充差分和安装引擎嵌入单 EXE，不嵌入完整游戏或影片。
+
+## 仅重建字幕运行资源
+
+不重建字体、地图或视频时，可使用 `python tools/build/rebuild_subtitle_runtime.py --game-dir ORIGINAL_GAME --locale zh-CN --out build/subtitle-runtime`。原版编译输入仍须匹配指纹；输出目录须独立且不存在。生成 `MODIFIED_FILE.u`、编译日志和差异说明；正常全量构建同样读取仓库内 CaptionState/SubtitleHUD 源码。现有测试安装升级使用 `tools/build/update_subtitle_runtime.py`，逐项验证旧清单及安装资源，仅更新自有字幕包和安装器清单标识，备份旧包及STATE.json；`--restore` 精确回滚。全新安装使用新构建安装包。

@@ -269,7 +269,7 @@
     "key": "HelpMessage[7]",
     "occurrence": 1,
     "tokens": [],
-    "translation": "选择屏幕中央显示的准星。",
+    "translation": "选择屏幕中央显示的准星样式",
     "source_sha256": "6d6b15781427926e9ab5d9e8755272a371477f2b56b2e76332be1de0ac80890d",
     "source_length": 58,
     "status": "draft"
@@ -280,7 +280,7 @@
     "key": "HelpMessage[8]",
     "occurrence": 1,
     "tokens": [],
-    "translation": "调整行走或奔跑时的视角晃动幅度。",
+    "translation": "调整行走或奔跑时的视角晃动幅度",
     "source_sha256": "67c083f56750e2b4ad5871f0f715eebce509820d12648a850d67370f368bc481",
     "source_length": 66,
     "status": "draft"
@@ -291,7 +291,7 @@
     "key": "HelpMessage[9]",
     "occurrence": 1,
     "tokens": [],
-    "translation": "开启或关闭摇杆支持。",
+    "translation": "开启或关闭摇杆支持",
     "source_sha256": "c1cf6c088904e75134954a141b639922cff4b26ebf60cdbdcd7844f2f996b074",
     "source_length": 28,
     "status": "draft"
@@ -313,7 +313,7 @@
     "key": "HelpMessage[11]",
     "occurrence": 1,
     "tokens": [],
-    "translation": "开启后显示玩家名称。",
+    "translation": "开启后显示玩家名称",
     "source_sha256": "8fc8c661336ba2bead5bdedf9c8028bd965b9102a37172dc54c9f2030641f320",
     "source_length": 37,
     "status": "draft"
@@ -1283,7 +1283,7 @@
     "source_sha256": "3af5566ae2cc583167afe17b58d95c8fdba85d575bb02a1ef2c9a9b4ddaef9d4",
     "source_length": 24,
     "tokens": [],
-    "translation": "时光之轮（正在启动）",
+    "translation": "《时光之轮》（正在启动）",
     "status": "draft"
   },
   {
@@ -1294,7 +1294,7 @@
     "source_sha256": "b864075e76bcf0b8720bc82535d851cfa10dc4df30da066cc785327cb1bf3638",
     "source_length": 23,
     "tokens": [],
-    "translation": "时光之轮（正在退出）",
+    "translation": "《时光之轮》（正在退出）",
     "status": "draft"
   },
   {
@@ -1305,7 +1305,7 @@
     "source_sha256": "56755d90fdd7cfcde85f087171bb6dd940ea528d7517c35aa3060343fbf7eb51",
     "source_length": 23,
     "tokens": [],
-    "translation": "时光之轮（运行中）",
+    "translation": "《时光之轮》（运行中）",
     "status": "draft"
   },
   {
@@ -1316,7 +1316,7 @@
     "source_sha256": "8e0d996c4cc3c7a6742ba81f1b29a3be86f49112a712b80560962618f8d4613c",
     "source_length": 13,
     "tokens": [],
-    "translation": "时光之轮",
+    "translation": "《时光之轮》",
     "status": "draft"
   },
   {
@@ -1371,7 +1371,7 @@
     "source_sha256": "d01f01fc540293e9e82a6cfc4ae97391b20c241871045f17bca77f51b446dd21",
     "source_length": 30,
     "tokens": [],
-    "translation": "&游玩这个时光之轮关卡",
+    "translation": "&游玩这个《时光之轮》关卡",
     "status": "draft"
   },
   {
@@ -1604,7 +1604,7 @@
     "source_sha256": "b8a9d3e30a13933fc944f3038bb621360991519296d2c00e2d74481056757be7",
     "source_length": 40,
     "tokens": [],
-    "translation": "编辑时禁止传送。",
+    "translation": "编辑时禁止传送",
     "status": "draft"
   },
   {
@@ -1615,7 +1615,7 @@
     "source_sha256": "f3212ca793a67613ca45f3007904b46870e8ce995e7f155028e47e365776d20a",
     "source_length": 69,
     "tokens": [],
-    "translation": "加入队伍并开始战斗后才能传送。",
+    "translation": "加入队伍并开始战斗后才能传送",
     "status": "draft"
   },
   {
@@ -1626,7 +1626,7 @@
     "source_sha256": "b7a27f7e5c1145f5d23882ce71828c21fbc11efb28595f2a76c74b33503a93e0",
     "source_length": 43,
     "tokens": [],
-    "translation": "等待对手放置封印。",
+    "translation": "等待对手放置封印",
     "status": "draft"
   },
   {
@@ -1637,7 +1637,7 @@
     "source_sha256": "d5529bcaf01fda3f292d8e629046583e7a7dd17da8fd587a14248f512b31ee4d",
     "source_length": 40,
     "tokens": [],
-    "translation": "等待对手完成编辑。",
+    "translation": "等待对手完成编辑",
     "status": "draft"
   },
   {
@@ -1648,7 +1648,7 @@
     "source_sha256": "fac1b8ced5d6c57559499f461fb87bf13eea2b33f65486da0f85be55b628e15f",
     "source_length": 47,
     "tokens": [],
-    "translation": "本关卡不支持要塞编辑。",
+    "translation": "本关卡不支持要塞编辑",
     "status": "draft"
   },
   {
@@ -1659,7 +1659,7 @@
     "source_sha256": "e627035111a6d857998f4672e164a0baaeb312d5eb6a52bd2f9697551fa68d69",
     "source_length": 28,
     "tokens": [],
-    "translation": "此区域不能编辑。",
+    "translation": "此区域不能编辑",
     "status": "draft"
   },
   {
@@ -1670,7 +1670,7 @@
     "source_sha256": "5d3aac6cb26dfed4cb7e9b1401971001fc8993745e3fb0f4c76b7b921eb9d2f3",
     "source_length": 36,
     "tokens": [],
-    "translation": "此区域不受你的队伍控制。",
+    "translation": "此区域不受你的队伍控制",
     "status": "draft"
   },
   {
@@ -1703,7 +1703,7 @@
     "source_sha256": "b7da4a22fa41ef3e49c72fa4d16d7e354c47c122a139f19747462da3bf5e4091",
     "source_length": 41,
     "tokens": [],
-    "translation": "你的队伍已达到编辑上限。",
+    "translation": "你的队伍已达到编辑上限",
     "status": "draft"
   },
   {
@@ -1725,7 +1725,7 @@
     "source_sha256": "02ed34fc3c005810f3484a7aecd687d588a2f5e7f74c52c30ef0e0f27019c246",
     "source_length": 33,
     "tokens": [],
-    "translation": "你暂时还不能离开编辑器。",
+    "translation": "你暂时还不能离开编辑器",
     "status": "draft"
   },
   {
@@ -1780,7 +1780,7 @@
     "source_sha256": "4d20cc55e1f373e4097c6c80971d08aeca1fbc4647a0ccea264ce5277648277c",
     "source_length": 22,
     "tokens": [],
-    "translation": " 进入了游戏。",
+    "translation": " 进入了游戏",
     "status": "draft"
   },
   {
@@ -1890,7 +1890,7 @@
     "source_sha256": "0c80b2e74c145449f71bec0083c21de8956f4b588ad86b3bcd7c7536e6adaa9e",
     "source_length": 21,
     "tokens": [],
-    "translation": "无效的投票请求。",
+    "translation": "无效的投票请求",
     "status": "draft"
   },
   {
@@ -2066,7 +2066,7 @@
     "source_sha256": "a08ee5acb3c2402773259ea2a71612b05a3ba2fdbe73045dc284f5584f85ae00",
     "source_length": 17,
     "tokens": [],
-    "translation": " 夺取了一枚封印。",
+    "translation": " 夺取了一枚封印",
     "status": "draft"
   },
   {
@@ -2088,7 +2088,7 @@
     "source_sha256": "2ef54967de35694aa952996f37ec8b927a314a92d3ae78aa452b0b70de734746",
     "source_length": 426,
     "tokens": [],
-    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
+    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱。可能会释放暗帝，也可能将他彻底封闭其中。",
     "status": "draft"
   },
   {
@@ -2099,7 +2099,7 @@
     "source_sha256": "e5d6d7d15e430fb9dc94b11273b764f488acdd87cf068c26b11297f55805e5f0",
     "source_length": 205,
     "tokens": [],
-    "translation": "她从袋子里取出一件东西，放在面前的桌上。那是一块手掌大小的圆盘，看起来像两滴拼在一起的泪珠，一滴黑如沥青，另一滴白如雪。",
+    "translation": "她从袋子里取出一件东西，放在面前的桌上。那是一块手掌大小的圆盘，看起来像两滴拼在一起的泪珠，一滴黑如沥青，另一滴洁白如雪。",
     "status": "draft"
   },
   {
@@ -2121,7 +2121,7 @@
     "source_sha256": "5a1512f13b71f5abc04c8ac0230a7d16fa06e933df8e0a3595545f33f2e2cb62",
     "source_length": 25,
     "tokens": [],
-    "translation": "你的封印被夺走了。",
+    "translation": "你的封印被夺走了",
     "status": "draft"
   },
   {
@@ -2143,7 +2143,7 @@
     "source_sha256": "2ef54967de35694aa952996f37ec8b927a314a92d3ae78aa452b0b70de734746",
     "source_length": 426,
     "tokens": [],
-    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱——可能释放暗帝，也可能将他彻底封闭其中。",
+    "translation": "它看起来不过是一块约一掌宽的石盘，实际上却是传说纪元留下的昆达雅石器物。它是煞妖谷暗帝牢狱真正封印的一个聚焦点。若有人同时持有四枚这样的封印，并懂得如何操纵它们，就能影响暗帝的牢狱。可能会释放暗帝，也可能将他彻底封闭其中。",
     "status": "draft"
   },
   {
@@ -2154,7 +2154,7 @@
     "source_sha256": "e5d6d7d15e430fb9dc94b11273b764f488acdd87cf068c26b11297f55805e5f0",
     "source_length": 205,
     "tokens": [],
-    "translation": "她从袋子里取出一件东西，放在面前的桌上。那是一块手掌大小的圆盘，看起来像两滴拼在一起的泪珠，一滴黑如沥青，另一滴白如雪。",
+    "translation": "她从袋子里取出一件东西，放在面前的桌上。那是一块手掌大小的圆盘，看起来像两滴拼在一起的泪珠，一滴黑如沥青，另一滴洁白如雪。",
     "status": "draft"
   },
   {
@@ -2165,7 +2165,7 @@
     "source_sha256": "a441a5c09d2bac1a9639792043e4f5f2f9a43127c2e7c52896976114dfeb471e",
     "source_length": 62,
     "tokens": [],
-    "translation": "使用左右方向键调整显示亮度。",
+    "translation": "使用左右方向键调整显示亮度",
     "status": "draft"
   },
   {
@@ -2198,7 +2198,7 @@
     "source_sha256": "e0eee1c0360d64bc2edceae2ae9a2dab3841caf32b47bcf41fbed5b4cc98137b",
     "source_length": 45,
     "tokens": [],
-    "translation": "打开高级设置菜单。",
+    "translation": "打开高级设置菜单",
     "status": "draft"
   },
   {
@@ -2319,7 +2319,7 @@
     "source_sha256": "2e5ceb1e7bdf5171bdf5f9c2256387464e2a421b6a2022eae82a62dab81db221",
     "source_length": 93,
     "tokens": [],
-    "translation": "使用左右方向键调整游戏音效与音乐的总音量。",
+    "translation": "使用左右方向键调整游戏音效与音乐的总音量",
     "status": "draft"
   },
   {
@@ -2330,7 +2330,7 @@
     "source_sha256": "829acffd48b049488db2e4995e33f03e81f761759684e8b5157b542bd0fdf9a9",
     "source_length": 67,
     "tokens": [],
-    "translation": "使用左右方向键调整音乐音量。",
+    "translation": "使用左右方向键调整音乐音量",
     "status": "draft"
   },
   {
@@ -2759,7 +2759,7 @@
     "source_sha256": "ac697511fce3f7b96a76f525ec5e2d397ab1d0aed9c39633b6b1f74260aef23c",
     "source_length": 64,
     "tokens": [],
-    "translation": "使用左右方向键更换角色。",
+    "translation": "使用左右方向键更换角色",
     "status": "draft"
   },
   {
@@ -2770,7 +2770,7 @@
     "source_sha256": "802905de37524e9800bdb678e489fda551627d4943fdb89131ea39c4f6606a33",
     "source_length": 67,
     "tokens": [],
-    "translation": "使用方向键更换角色服装颜色。",
+    "translation": "使用方向键更换角色服装颜色",
     "status": "draft"
   },
   {
@@ -2781,7 +2781,7 @@
     "source_sha256": "2a3dbce2a18b2db1b076b5474f9d01b46444046fd06c3c53d8002af0fecfcd96",
     "source_length": 21,
     "tokens": [],
-    "translation": "设置网络速度。",
+    "translation": "设置网络速度",
     "status": "draft"
   },
   {
@@ -3111,7 +3111,7 @@
     "source_sha256": "c1d9b7087f358f3f2c0ad10f228607688804f7de2d11e8307f65eb745247656e",
     "source_length": 26,
     "tokens": [],
-    "translation": "选择要塞数量。",
+    "translation": "选择要塞数量",
     "status": "draft"
   },
   {
@@ -3122,7 +3122,7 @@
     "source_sha256": "24a7663a2da34a9e8ffe3d2630faed29dd26109087366aba19475788e12b37fc",
     "source_length": 11,
     "tokens": [],
-    "translation": "选择地图。",
+    "translation": "选择地图",
     "status": "draft"
   },
   {
@@ -3133,7 +3133,7 @@
     "source_sha256": "a793b14330249a11a9fc5706599c9482f01584f331e8cbb91ced6cc03fa53342",
     "source_length": 32,
     "tokens": [],
-    "translation": "设置游戏时间限制。",
+    "translation": "设置游戏时间限制",
     "status": "draft"
   },
   {
@@ -3144,7 +3144,7 @@
     "source_sha256": "50e0591dbc56e87086cd2d198a69bb7c7d93180ec0f35de193630ad9ce945cee",
     "source_length": 48,
     "tokens": [],
-    "translation": "设置是否循环切换要塞地图。",
+    "translation": "设置是否循环切换要塞地图",
     "status": "draft"
   },
   {
@@ -3155,7 +3155,7 @@
     "source_sha256": "5a463d5d479bf061282e0a6c81f942457628956df674b75b104ab8b57edf5573",
     "source_length": 51,
     "tokens": [],
-    "translation": "设置结束游戏所需的击杀数。",
+    "translation": "设置结束游戏所需的击杀数",
     "status": "draft"
   },
   {
@@ -3177,7 +3177,7 @@
     "source_sha256": "c92918b671d59a53429e75ea88921befb4e9f0436b025a8b7a4381b54262cb5c",
     "source_length": 28,
     "tokens": [],
-    "translation": "设置服务器名称。",
+    "translation": "设置服务器名称",
     "status": "draft"
   },
   {
@@ -3188,7 +3188,7 @@
     "source_sha256": "10ed2343ff7f7b43ad56934d214d4c216d3c037a60042924bfdbc69f40d7972c",
     "source_length": 41,
     "tokens": [],
-    "translation": "设置远程管理员密码。",
+    "translation": "设置远程管理员密码",
     "status": "draft"
   },
   {
@@ -3199,7 +3199,7 @@
     "source_sha256": "b00d6604e0c203bb92ba9f1020a3b41a99bcab0c4cdf45a04d6ea48ba5f5030f",
     "source_length": 45,
     "tokens": [],
-    "translation": "设置服务器访问密码。",
+    "translation": "设置服务器访问密码",
     "status": "draft"
   },
   {
@@ -3210,7 +3210,7 @@
     "source_sha256": "526c573e9c9d05f4cd6e9d07a1784a7fc7a3f448b41c2835e4c5c2c95a0bf468",
     "source_length": 41,
     "tokens": [],
-    "translation": "在本机启动专用服务器。",
+    "translation": "在本机启动专用服务器",
     "status": "draft"
   },
   {
@@ -3672,7 +3672,7 @@
     "source_sha256": "773e5de875df701b3c41a79efd25f2ff66ad90b9de041a9b6b8d69a71b52c7d8",
     "source_length": 20,
     "tokens": [],
-    "translation": "加入网络游戏。",
+    "translation": "加入网络游戏",
     "status": "draft"
   },
   {
@@ -3683,7 +3683,7 @@
     "source_sha256": "d3de8b8cd79326cf422c44f359da1fd3906fe92e7884836a440f22949484ceb7",
     "source_length": 22,
     "tokens": [],
-    "translation": "设置玩家信息。",
+    "translation": "设置玩家信息",
     "status": "draft"
   },
   {
@@ -3694,7 +3694,7 @@
     "source_sha256": "1afe7b07b2367aaddf732699249b064377232b4e5f36ca84142e8e03407e79c0",
     "source_length": 39,
     "tokens": [],
-    "translation": "设置并启动竞技场网络游戏。",
+    "translation": "设置并启动竞技场网络游戏",
     "status": "draft"
   },
   {
@@ -3705,7 +3705,7 @@
     "source_sha256": "c016f77d4c4dc9ab425d58d0f69ca90cf0c710fc96d582cfb6cef86f0abccfb5",
     "source_length": 40,
     "tokens": [],
-    "translation": "设置并启动要塞网络游戏。",
+    "translation": "设置并启动要塞网络游戏",
     "status": "draft"
   },
   {
@@ -3771,7 +3771,7 @@
     "source_sha256": "3bd7b081ea0598d249a1a1c18efad60b5403c18a1d8aa7e9ab6930750aa699d2",
     "source_length": 18,
     "tokens": [],
-    "translation": "亚岚·曼卓格伦",
+    "translation": "岚",
     "status": "draft"
   },
   {
@@ -3848,7 +3848,7 @@
     "source_sha256": "64f3daf5116f3912e2df5a1cabd89db3f20e9d971c8a503903a45b298e883b11",
     "source_length": 15,
     "tokens": [],
-    "translation": "选择地图。",
+    "translation": "选择地图",
     "status": "draft"
   },
   {
@@ -3859,7 +3859,7 @@
     "source_sha256": "5a463d5d479bf061282e0a6c81f942457628956df674b75b104ab8b57edf5573",
     "source_length": 51,
     "tokens": [],
-    "translation": "设置结束游戏所需的击杀数。",
+    "translation": "设置结束游戏所需的击杀数",
     "status": "draft"
   },
   {
@@ -3870,7 +3870,7 @@
     "source_sha256": "a793b14330249a11a9fc5706599c9482f01584f331e8cbb91ced6cc03fa53342",
     "source_length": 32,
     "tokens": [],
-    "translation": "设置游戏时间限制。",
+    "translation": "设置游戏时间限制",
     "status": "draft"
   },
   {
@@ -3881,7 +3881,7 @@
     "source_sha256": "1b2362b4b172bf3e779cd5de684f9dc0b87457b1a9c4452fa7790f02f5d32ede",
     "source_length": 46,
     "tokens": [],
-    "translation": "设置是否循环切换竞技场地图。",
+    "translation": "设置是否循环切换竞技场地图",
     "status": "draft"
   },
   {
@@ -3892,7 +3892,7 @@
     "source_sha256": "0a8d41dd1109eda0b5e157b64c4e85123fdf13c6bd61f7e64caddb42cdcfe7aa",
     "source_length": 57,
     "tokens": [],
-    "translation": "更改游戏允许的最大玩家人数。",
+    "translation": "更改游戏允许的最大玩家人数",
     "status": "draft"
   },
   {
@@ -3914,7 +3914,7 @@
     "source_sha256": "c92918b671d59a53429e75ea88921befb4e9f0436b025a8b7a4381b54262cb5c",
     "source_length": 28,
     "tokens": [],
-    "translation": "设置服务器名称。",
+    "translation": "设置服务器名称",
     "status": "draft"
   },
   {
@@ -3925,7 +3925,7 @@
     "source_sha256": "10ed2343ff7f7b43ad56934d214d4c216d3c037a60042924bfdbc69f40d7972c",
     "source_length": 41,
     "tokens": [],
-    "translation": "设置远程管理员密码。",
+    "translation": "设置远程管理员密码",
     "status": "draft"
   },
   {
@@ -3936,7 +3936,7 @@
     "source_sha256": "b00d6604e0c203bb92ba9f1020a3b41a99bcab0c4cdf45a04d6ea48ba5f5030f",
     "source_length": 45,
     "tokens": [],
-    "translation": "设置服务器访问密码。",
+    "translation": "设置服务器访问密码",
     "status": "draft"
   },
   {
@@ -3947,7 +3947,7 @@
     "source_sha256": "526c573e9c9d05f4cd6e9d07a1784a7fc7a3f448b41c2835e4c5c2c95a0bf468",
     "source_length": 41,
     "tokens": [],
-    "translation": "在本机启动专用服务器。",
+    "translation": "在本机启动专用服务器",
     "status": "draft"
   },
   {
@@ -4598,7 +4598,7 @@
     "source_sha256": "65d792f3a8ed9c3253ce84cdc44323a8d42c62343c6ce8993f5fb44f785b5b91",
     "source_length": 30,
     "tokens": [],
-    "translation": "开始单人剧情。",
+    "translation": "开始单人剧情",
     "status": "draft"
   },
   {
@@ -4609,7 +4609,7 @@
     "source_sha256": "57cdc812256500dd905d516cd8f5e4bb093a5d7a9ade92d675e2e64862afbb47",
     "source_length": 33,
     "tokens": [],
-    "translation": "按Enter读取存档。",
+    "translation": "按Enter读取存档",
     "status": "draft"
   },
   {
@@ -4620,7 +4620,7 @@
     "source_sha256": "78e79cc945a5453a71fbf4bac52913579ed3e71219f09fa78e2ce79f7a6587e8",
     "source_length": 37,
     "tokens": [],
-    "translation": "按Enter保存当前游戏。",
+    "translation": "按Enter保存当前游戏",
     "status": "draft"
   },
   {
@@ -5320,7 +5320,7 @@
     "source_sha256": "7fcf40022444f6f9d27e3bca33d0518ad7598857b9a92042f5d5d7cd4160df5e",
     "source_length": 28,
     "tokens": [],
-    "translation": "弃光魔使要塞",
+    "translation": "背弃者要塞",
     "status": "draft"
   },
   {
@@ -5342,7 +5342,7 @@
     "source_sha256": "8bfa58f874c92e79af4d84be0c118236c2a4e35eeaa692bbb76d92b846ccbd84",
     "source_length": 336,
     "tokens": [],
-    "translation": "@从周围的景象判断，这块石头应该位于迷雾山脉。那里有许多古代遗迹，所以并不奇怪。但据刺客所说，伊煞梅尔在此建起了要塞。探险队很可能落入弃光魔使的军队手中。我只希望，他们还没遭到更多毒手。@",
+    "translation": "@从周围的景象判断，这块石头应该位于迷雾山脉。那里有许多古代遗迹，所以并不奇怪。但据刺客所说，伊煞梅尔在此建起了要塞。探险队很可能落入背弃者的军队手中。我只希望，他们还没遭到更多毒手。@",
     "status": "draft"
   },
   {
@@ -5355,7 +5355,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 你的探险队似乎总摆脱不了麻烦。找到弃光魔使要塞——他们很可能在那里——再寻找进入的方法。",
+    "translation": "%b 你的探险队似乎总摆脱不了麻烦。找到背弃者要塞——他们很可能在那里——再寻找进入的方法。",
     "status": "draft"
   },
   {
@@ -5368,7 +5368,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 提防弃光魔使的军队，其中还有许多昔日盟友：强大的黑宗两仪师。",
+    "translation": "%b 提防背弃者的军队，其中还有许多昔日盟友：强大的黑宗两仪师。",
     "status": "draft"
   },
   {
@@ -5392,7 +5392,7 @@
     "source_sha256": "a2d9d2ffa92357076a33003be1e2d7e93be2eeb6d2ed5b6648ea0165c05658fc",
     "source_length": 28,
     "tokens": [],
-    "translation": "弃光魔使地牢",
+    "translation": "背弃者地牢",
     "status": "draft"
   },
   {
@@ -5503,7 +5503,7 @@
     "tokens": [
       "%b"
     ],
-    "translation": "%b 同时，搜寻一切有关弃光魔使计划的情报。",
+    "translation": "%b 同时，搜寻一切有关背弃者计划的情报。",
     "status": "draft"
   },
   {
@@ -6544,7 +6544,7 @@
     "source_sha256": "2001a8282c343757c35edafdecf66376738d4c34004f8362dcf287c324ae3047",
     "source_length": 47,
     "tokens": [],
-    "translation": "你已经控制着一名仆从。",
+    "translation": "你已经控制着一名仆从",
     "status": "draft"
   },
   {
@@ -6608,7 +6608,7 @@
     "source_sha256": "480d4cf878399e90bf30255ed7b61c05bd2c6c25f351c1e631818b3a2bf76f52",
     "source_length": 49,
     "tokens": [],
-    "translation": "你已经控制着一名守护者。",
+    "translation": "你已经控制着一名守护者",
     "status": "draft"
   },
   {
@@ -6663,7 +6663,7 @@
     "source_sha256": "f9bfe392ba5e33a683c15404504beaf4272886cc9ee81dd01d44350298921bd6",
     "source_length": 49,
     "tokens": [],
-    "translation": "你已经控制着一名勇士。",
+    "translation": "你已经控制着一名勇士",
     "status": "draft"
   },
   {
@@ -7651,7 +7651,7 @@
     "source_sha256": "4dea1213bd232566dd509c3e583be870c39ee1b977eb6d864a7843f0c46abb96",
     "source_length": 23,
     "tokens": [],
-    "translation": "这类东西需要研究。",
+    "translation": "这类东西需要研究",
     "status": "draft"
   },
   {
@@ -7717,7 +7717,7 @@
     "source_sha256": "01039c82171fd91964d42ad8021c036f51013d34cc4c0cf9ed7c4313c820ca3a",
     "source_length": 8,
     "tokens": [],
-    "translation": "弃光魔使",
+    "translation": "背弃者",
     "status": "draft"
   },
   {
@@ -7728,7 +7728,7 @@
     "source_sha256": "01039c82171fd91964d42ad8021c036f51013d34cc4c0cf9ed7c4313c820ca3a",
     "source_length": 8,
     "tokens": [],
-    "translation": "弃光魔使",
+    "translation": "背弃者",
     "status": "draft"
   },
   {
@@ -7981,7 +7981,7 @@
     "source_sha256": "73724465f7e400fd100f12f82526d6e9e5ef7034feb3b2ad17bd2c67d140021c",
     "source_length": 482,
     "tokens": [],
-    "translation": "几千年前，爱荷达城——如今称为煞达罗苟斯，古语中意为@暗影的等待@——被自身的邪恶压垮。城中只剩下一个名为魔煞达的邪恶实体。它化为雾状触须，接触血肉后便吸取受害者的生命力。受害者越虚弱，魔煞达就越强大，直到对方死亡。每条触须都能被摧毁，受损后会缩回城墙。",
+    "translation": "几千年前，爱瑞荷城——如今称为煞达罗苟斯，古语中意为@暗影的等待@——被自身的邪恶压垮。城中只剩下一个名为魔煞达的邪恶实体。它化为雾状触须，接触血肉后便吸取受害者的生命力。受害者越虚弱，魔煞达就越强大，直到对方死亡。每条触须都能被摧毁，受损后会缩回城墙。",
     "status": "draft"
   },
   {
@@ -8014,7 +8014,7 @@
     "source_sha256": "0fa0af6345858b9dc0d1a6f57b98d409e62e71c2fa517d2dda3f78b6a9eec630",
     "source_length": 400,
     "tokens": [],
-    "translation": "兽魔人是弃光魔使的步兵，由人类与动物混种而成。它们有许多种类，最危险的那些敏捷、强壮、凶猛，极难杀死。有些喜欢逼近敌人，在用斧头撕碎受害者时仔细欣赏；另一些也会投掷武器。",
+    "translation": "兽魔人是背弃者的步兵，由人类与动物混种而成。它们有许多种类，最危险的那些敏捷、强壮、凶猛，极难杀死。有些喜欢逼近敌人，在用斧头撕碎受害者时仔细欣赏；另一些也会投掷武器。",
     "status": "draft"
   },
   {
@@ -8455,6 +8455,3114 @@
     "source_length": 155,
     "tokens": [],
     "translation": "狂暴的火焰从他脚下的地板喷出，将挂毯、地毯、桌子和箱子化作缕缕灰烬；他把火焰压平了。",
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Unknown",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未知错误",
+    "source_sha256": "5e5a07c2c75037024c8a6a0275ca201212e1ebfad022a8f0948c5f68ab3d1cff",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Aborted",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "已中止",
+    "source_sha256": "d12da90ae086489f104f3b150ef7b7b375bb626551fd1fd3eebf1c60114bbaf4",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ExportOpen",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "导出 %s 失败：无法打开文件“%s”",
+    "source_sha256": "a607b04d519b6093d71bd9d864d7517ed9040005615269be41b2d8ffc8e3d21e",
+    "source_length": 43,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ExportWrite",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "导出 %s 失败：无法写入文件“%s”",
+    "source_sha256": "07f04dcbd4c92b34aa6a6ab25b697c34629267b0b9467c96d5b26214c84a63cd",
+    "source_length": 44,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FileNotFound",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到文件“%s”",
+    "source_sha256": "d36d41a8f4009c143ea30b0f4fcfc3c83b90b58561a9e075086d8533e9b98e7c",
+    "source_length": 20,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ObjectNotFound",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到对象“%s %s.%s”",
+    "source_sha256": "63c5c5d9e0c591f6984b39c6eadb2804bcb35c307b433f5fa4b4be092cd1a916",
+    "source_length": 32,
+    "tokens": [
+      "%s",
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "PackageNotFound",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到资源包“%s”的文件",
+    "source_sha256": "25039207edad1133dfa77beaf7eb6ca34659d0da1e12ca6e89edc23ecead2bb8",
+    "source_length": 32,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "PackageResolveFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "解析资源包名称失败",
+    "source_sha256": "34edc264efa29ef88f463098be799d7b0b80ea73ec4a45b2ab0569064b6f9295",
+    "source_length": 26,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FilenameToPackage",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法将文件名“%s”转换为资源包名称",
+    "source_sha256": "d10033b23499efd69075aa0ae608259c2b3640d511af0f0cabf3b72e0d611134",
+    "source_length": 43,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Sandbox",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "当前沙箱不能访问资源包“%s”",
+    "source_sha256": "304cd4b052a370a907fb417f90cd95234b663c703dbd617bda583d6926616d03",
+    "source_length": 46,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "PackageVersion",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "资源包“%s”版本不匹配",
+    "source_sha256": "d5a4c57ff4fa2fad0702977e2637c9ffba168e2ee2ceab6adaac5962977d1645",
+    "source_length": 29,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedLoad",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "载入“%s”失败：%s",
+    "source_sha256": "d396206414430260504d95689894d4011a814cc27ce1c9d7c45ee9b6a8cae037",
+    "source_length": 23,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ConfigNotFound",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "配置文件中未找到“%s”",
+    "source_sha256": "11594e97a38f07078f1adfcfe29e19dad4301d3650e57444958d82c3788ed8a5",
+    "source_length": 37,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "LoadClassMismatch",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "%s 不是 %s.%s 的子类",
+    "source_sha256": "23f37ad257fb722702579f896d331ed1ba6b76bcfcf95af3e43bf9648fa2ee31",
+    "source_length": 32,
+    "tokens": [
+      "%s",
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NotDll",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "“%s”不是 DLL 资源包；未找到导出项“%s”",
+    "source_sha256": "628c92b79a77ee9ab96caf25bd01b2cc28d9adc8d1a35d42dbc999345f251607",
+    "source_length": 49,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NotInDll",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到“%s”（资源库：%s.dll）",
+    "source_sha256": "ab8b00d357d6a1a40f72f8fb77547c97a392ee1711d663ba6bad60513516dfb8",
+    "source_length": 27,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedLoadPackage",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "载入资源包失败：%s",
+    "source_sha256": "2d22dcf3c3d7a9a6b146c1f615d82d4b657a03ddabbd4ac55019f917d21ddc2c",
+    "source_length": 26,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedLoadObject",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "载入“%s %s.%s”失败：%s",
+    "source_sha256": "5b068b17401ee9778565da19606b098350ec9b44f11cfdc5dd2b753e5b179e93",
+    "source_length": 29,
+    "tokens": [
+      "%s",
+      "%s",
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "TransientImport",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "导入了临时对象：%s",
+    "source_sha256": "7e67b50c3256a563cba8b3309913decfb9bb68064ab7f107af1beda57b85ef70",
+    "source_length": 29,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedSavePrivate",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法保存 %s：对象图链接到外部私有对象 %s",
+    "source_sha256": "efe47c7c57e6e9182fc4844fd7f10c96b703c7e544737b8fe312acebe632088a",
+    "source_length": 60,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedImportPrivate",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法导入私有对象 %s %s",
+    "source_sha256": "fb82e049b4a67eee83030038c440388e9ee3eb1878c33ed61257daf0a44513ff",
+    "source_length": 33,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedCreate",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到可创建的 %s %s",
+    "source_sha256": "644b57e115c4cef2b40e8667d09790975044506a5be30adb2fbf718acdbd0861",
+    "source_length": 28,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedImport",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到 %s（文件：“%s”）",
+    "source_sha256": "41ba5984176ffd4916b1b76ffe1bd58404148d178505d206812b0291234ae5bb",
+    "source_length": 26,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedSaveFile",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "保存文件“%s”失败：%s",
+    "source_sha256": "8d0b7cc6f2bd4fc06ff4afd3c0741fef201c45d0233b884bf5627c4369b14bc6",
+    "source_length": 26,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "SaveWarning",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "保存“%s”失败",
+    "source_sha256": "6673d559c7b2c7ba0fc6fa064db37246408733f7301aa434d742a25335b047d8",
+    "source_length": 17,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NotPackaged",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "对象不属于资源包：%s %s",
+    "source_sha256": "d7e018ccaed8e57fa040c18206e7485eff23d052a5c88231a4a0e2ae45827f9b",
+    "source_length": 29,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NotWithin",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "对象 %s %s 创建于 %s 而非 %s",
+    "source_sha256": "d6290537675c904bd71f6c5d98538fef3a6f0f58733f1d398b95aa0ec482df6c",
+    "source_length": 40,
+    "tokens": [
+      "%s",
+      "%s",
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Abstract",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法创建对象 %s：%s 是抽象类",
+    "source_sha256": "f78bd0214030473a6cb3d6d898adc35f756ebb431f0ca9f11c7d9ff0a330b809",
+    "source_length": 44,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NoReplace",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法将 %s 替换为 %s",
+    "source_sha256": "0bb14c58f08d297a82bddf369847d6da50245b41fbd0ffd7d9fab9124ba43c21",
+    "source_length": 24,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NoFindImport",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "未找到待导入文件“%s”",
+    "source_sha256": "2b56495dc109e24018da048188cf8af64f05af09db6f3da5a9859b82389a6a45",
+    "source_length": 31,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ReadFileFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "读取待导入文件“%s”失败",
+    "source_sha256": "0089eef2f56d1d84b52434faf733f6c57fe5b23cff2688f28912731851b2c90b",
+    "source_length": 35,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "SeekFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "文件定位失败",
+    "source_sha256": "a2e2ec64773daa7fcf5ff19947f75a57f469c49bf7a3246824dc66642afaec8a",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "OpenFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "打开文件失败",
+    "source_sha256": "8adbc889021f5124a7e72e94acf1c4e2c67fd3d9d90bd3050464192b2f9de51e",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "WriteFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "写入文件失败",
+    "source_sha256": "06c2148cd33c750c7cf53666c42543cc985fb3382b08b1d27d90ce70850bd32d",
+    "source_length": 21,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ReadEof",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "读取超出文件末尾",
+    "source_sha256": "a26c9ba4e5378ffe7f519e48a75abf5105e860bcb61ba91acb1b9a3f56911d8a",
+    "source_length": 23,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "IniReadOnly",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "文件 %s 受到写保护；设置无法保存",
+    "source_sha256": "b5bbe52241a9877f3dc4775766426db0fad5c18ad427eae69503299a05078e99",
+    "source_length": 56,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "UrlFailed",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "打开 URL 失败",
+    "source_sha256": "77436feb0e71cab6a59af93b6d768256c1aa9ea1423872d90abca09e0b05b857",
+    "source_length": 20,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Warning",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "警告",
+    "source_sha256": "e981ddae45d8f4ca53f1ccbe613ad254a041dacf65a06026099a6302d332113b",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Question",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "问题",
+    "source_sha256": "289aff12b04274cb04b8f7dbf486ba8b3528c6fd16b60b9a31d31ce23b339236",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "OutOfMemory",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "虚拟内存不足。需释放系统主硬盘空间。",
+    "source_sha256": "b02b137309517b8188e9e719bad0173a8911b294988179a24a01c354f0c31d4d",
+    "source_length": 108,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "History",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "调用记录",
+    "source_sha256": "0e769600933790607b2a13b33ddfade0fa17810eb62c3b28ee23e59516516491",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Assert",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "断言失败：%s [文件:%s] [行: %i]",
+    "source_sha256": "79ce8525b8da1c6f9216fc46967ba5452534ad0c7c45c453ee978ae59a44fbf3",
+    "source_length": 41,
+    "tokens": [
+      "%s",
+      "%s",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Debug",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "调试断言失败：%s [文件:%s] [行: %i]",
+    "source_sha256": "fb9867842caf087a3394161a90173105c68afd204fcb033dcbeb0c8881c8c1e5",
+    "source_length": 47,
+    "tokens": [
+      "%s",
+      "%s",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "LinkerExists",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "“%s”的链接器已存在",
+    "source_sha256": "fa38870b36bcb477f5b089731285b2c214205b3b4e3295acfba1f7483c24b750",
+    "source_length": 30,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "BinaryFormat",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "文件“%s”包含无法识别的数据",
+    "source_sha256": "7aec5e387c5718b6b048e3225961e40c1763409ef5b40d68943fc009aceb9be1",
+    "source_length": 42,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "SerialSize",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "%s：序列化大小不匹配：实际 %i，预期 %i",
+    "source_sha256": "353ae5167d1d14f73cce83f28217b557d5a041dd5fff07431a2969ad8682f307",
+    "source_length": 45,
+    "tokens": [
+      "%s",
+      "%i",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ExportIndex",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无效的导出索引 %i/%i",
+    "source_sha256": "d1769a0f0ce5cdb3e4ecabac86abb5f967b49663a64b6889c4c3848daba3f9ee",
+    "source_length": 22,
+    "tokens": [
+      "%i",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ImportIndex",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无效的导入索引 %i/%i",
+    "source_sha256": "4b9b1db85374ee53816f73227c0a4719831bd9606d26f518689b810645359b8a",
+    "source_length": 22,
+    "tokens": [
+      "%i",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Password",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "密码不正确",
+    "source_sha256": "2f6e8c1d58a2b74deadb9259e7e8de3114ddc4e4de975da7465e8ab105937080",
+    "source_length": 23,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Exec",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "无法识别的命令",
+    "source_sha256": "fdc3f7e73aa5c868c1413095034f768c7c18c2c8d490b3ef5d1d80d9828854a0",
+    "source_length": 20,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "BadProperty",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "“%s”：属性“%s”无效或缺失",
+    "source_sha256": "039739b97342d286d8961ab4daac79275ee3111e90c173399abcdda883499557",
+    "source_length": 34,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "MisingIni",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "缺少 .ini 文件：%s",
+    "source_sha256": "be788d53e3879b555991a7413d7af5a2c9f737f421732b09e0f57f01e931539d",
+    "source_length": 21,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "OldVersion",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "文件 %s 由与当前版本不兼容的旧版本保存。读取很可能失败，并可能导致崩溃。是否仍要尝试？",
+    "source_sha256": "869e1e00e38be9e12fe594c1b071fdb3f6b3d3a598f211c2fe382db89b17d3c3",
+    "source_length": 172,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "Name",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "名称：",
+    "source_sha256": "2683cad48a14dc3f79c167e4e98cc01ed6cf0e364cdb399fc187a8fc39902571",
+    "source_length": 5,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "Password",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "密码：",
+    "source_sha256": "569b2482a687d9aa4dd67be6a8e4c171621dd01ac251455cfe56b2cc8d1b25d6",
+    "source_length": 9,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "PassPrompt",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "请输入名称和密码：",
+    "source_sha256": "38de5b81bd536f4317cef9f927880e735fe0b98a6aa1f495abeea5c289e2a259",
+    "source_length": 29,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "PassDlg",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "身份验证",
+    "source_sha256": "a9e4a119248d5cef6ed9f889f8acac9ff4daaf72ce2792d2ad974e1d9abcc945",
+    "source_length": 14,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Query",
+    "key": "Overwrite",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "文件“%s”需要更新。是否覆盖现有版本？",
+    "source_sha256": "491fdbf91a7ab52ea7d08d69a87b3a32818a7062f62e850da262589dc7bfbe6c",
+    "source_length": 82,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Saving",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "正在保存文件 %s……",
+    "source_sha256": "7801cea911dfae03930aaeeb2e97d650d408030dab7c4a1ee56768609daf6e9d",
+    "source_length": 17,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Loading",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "正在载入文件 %s……",
+    "source_sha256": "4950189401dd5bfb808dfe4e426e718081e6321c9555579e3cfa5fde5d349dae",
+    "source_length": 18,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Closing",
+    "occurrence": 1,
+    "file": "Core.int",
+    "translation": "正在关闭",
+    "source_sha256": "f79ebae4aae33f4f2094f7c2dad419c1a342649ed2131ef58ae938f732a6f6a7",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "D3DRenderDevice",
+    "key": "AskInstalled",
+    "occurrence": 1,
+    "file": "D3DDrv.int",
+    "translation": "是否使用 Direct3D？",
+    "source_sha256": "7680fb3d98b4cadbf778f50a1bfb1c0041a4180a242bc232f2374baae719fa26",
+    "source_length": 28,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetOpen",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "打开文件失败",
+    "source_sha256": "8adbc889021f5124a7e72e94acf1c4e2c67fd3d9d90bd3050464192b2f9de51e",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetWrite",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "写入文件失败",
+    "source_sha256": "06c2148cd33c750c7cf53666c42543cc985fb3382b08b1d27d90ce70850bd32d",
+    "source_length": 21,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetRefused",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "服务器拒绝发送“%s”",
+    "source_sha256": "80c04c4ba6de3b070cf3e05a7f049feae0a1cb1d0e7fedbf17177a985c1186c6",
+    "source_length": 27,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetClose",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "关闭文件失败",
+    "source_sha256": "a87a29cfcaaa63f19d2b0adff8f5da91e97c4e193d7659676ca707396ff3dd6c",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetSize",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "文件大小不匹配",
+    "source_sha256": "7139eab3c968d97a76371966e21dc97fb4df0f8bd6ab69388396eeea0cc22787",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetMove",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "移动文件失败",
+    "source_sha256": "308df7c180dbfc3434e41970cb19ca3a51a28cb732dde9c7ea3cd75f5253c9fc",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetInvalid",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "收到无效的文件请求",
+    "source_sha256": "95b8aaaf54e61f82e373a30f9c2c0641a05ee99d4f349650f26d98526173de32",
+    "source_length": 29,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NoDownload",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "资源包“%s”不可下载",
+    "source_sha256": "4f5e29616e6dd59139e219a80fd6e65b99a02a87c701db6885e239ab8f0a80b9",
+    "source_length": 32,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "DownloadFailed",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "下载资源包“%s”失败：%s",
+    "source_sha256": "197afd7d32e2c5d968d53a21fab635141a3f82144d95c211b3c7444e748bd4e9",
+    "source_length": 35,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "RequestDenied",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "服务器请求尚未进入的关卡文件：已拒绝",
+    "source_sha256": "e6bfde5a86bdbc69e4ab9d779c809788d24ad3416d442463ebce9ed5316bac14",
+    "source_length": 48,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ConnectionFailed",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "连接失败",
+    "source_sha256": "596c52f1eb65c1c3c65404e5f75974937fee4fc77d0970abeddf580e7123ce0c",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ChAllocate",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "无法分配通道",
+    "source_sha256": "7dd8c0a86eb0e612d3ff1952d3321d2ad7351f39a6b09cf3bb2768c104e2cdd6",
+    "source_length": 25,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetAlready",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "网络连接已建立",
+    "source_sha256": "0dcf2c8ef3e34279876ad1113f998c72d5f9fad7369c32db218081e768b1aa1e",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "NetListen",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "监听失败：没有可用的链接器上下文",
+    "source_sha256": "72941d592d063ab49e4a75c67232e3fd05bb5aa5494f0b3a6b3dca0cb555b1e1",
+    "source_length": 42,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "LoadEntry",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "无法载入入口关卡：%s",
+    "source_sha256": "ed92013c6b0ad35035cd8125830b514550f2f775d5c97aa7d6acabeafecba329",
+    "source_length": 20,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "InvalidUrl",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "无效的 URL：%s",
+    "source_sha256": "3e6e1eb0c4a57e8be1f2b80069709026f85cec8cc8d649a6d83c55835591f252",
+    "source_length": 15,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "InvalidLink",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "无效的链接：%s",
+    "source_sha256": "b971c87aacc45a3e0e0987b798b4228f56013bc202c9ffa3a12c0c213adb2672",
+    "source_length": 16,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "FailedBrowse",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "进入 %s 失败：%s",
+    "source_sha256": "2ef58dada3ef598ddae790af9d6921707168d2a1e1b777a3b440a4633aa65ac4",
+    "source_length": 22,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Listen",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "监听失败：%s",
+    "source_sha256": "b1c019007937053542fc07cd20b10983d2a21510c5bc27d69a05ab4decdbb018",
+    "source_length": 17,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "AbortToEntry",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "操作失败；正在返回入口关卡",
+    "source_sha256": "122977cdaf17af41d3baf10267f2f3b3d9ce78f57c4fadb90e1b703e9e76c62e",
+    "source_length": 26,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ServerOpen",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "服务器不能打开网络 URL",
+    "source_sha256": "24bd97231f0bc3369a16966e864e547301d7d4e665a04a69af781f8990a61b8d",
+    "source_length": 31,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ServerListen",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "专用服务器无法监听：%s",
+    "source_sha256": "e1513af3eb32649c658ceebe837152e68a440f017ce73575c7be4ca58e402df3",
+    "source_length": 33,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Pending",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "连接“%s”失败；%s",
+    "source_sha256": "d43b4b30caea4f0eeb0e5e3b4aef5cbe1e6fd763075d5a7c71aeff3f57ebc5c5",
+    "source_length": 34,
+    "tokens": [
+      "%s",
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "LoadPlayerClass",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "载入玩家类失败",
+    "source_sha256": "ce3c7d2cba24993f5b8c2fda58cfeb7971055f6d3e2a7d5c524df23cd572c1cb",
+    "source_length": 27,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "ServerOutdated",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "服务器版本过旧",
+    "source_sha256": "7a490fc04ef297533e81ba96ebbcedc43f22a90986a0b7c69b0827c20fb3b2ac",
+    "source_length": 28,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "CancelledConnect",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "连接尝试已取消",
+    "source_sha256": "1eea2322e858552428a9a2ae260074ab385b065997b656ec3cfcde765b7e3b8c",
+    "source_length": 25,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "RunningNet",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%s：%s（%i 名玩家）",
+    "source_sha256": "597a84bdae584296531b99857191d877e730187a93825c4923a80864251d5a51",
+    "source_length": 19,
+    "tokens": [
+      "%s",
+      "%s",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "NetReceiving",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在接收“%s”：%i/%i",
+    "source_sha256": "5ac683aa7ab3b9ef9fd010dbf308c8c3dcb455cab19ac6205c0d64b8bd6e0e2b",
+    "source_length": 21,
+    "tokens": [
+      "%s",
+      "%i",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "NetReceiveOk",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "成功接收“%s”",
+    "source_sha256": "d677197472879af55838fc0f906ed72abb7fe4103261894dda418038ef27d6ac",
+    "source_length": 26,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "NetSend",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在发送“%s”",
+    "source_sha256": "ea2f08271acae00608d671ad451c90d4065325a7f4894a2a3e74e285406c39ab",
+    "source_length": 12,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "NetSending",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在发送“%s”：%i/%i",
+    "source_sha256": "d0057e4f421a7eab260d599f93d09232ee3ce78081e3e7c3ac405ec582199c1d",
+    "source_length": 19,
+    "tokens": [
+      "%s",
+      "%i",
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Connecting",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在连接……",
+    "source_sha256": "5f04ae9ed6a865bb382c66ef4bd4e57df4ce19d4142b8c87ac40d65ae54d278f",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Listening",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在等待客户端连接……",
+    "source_sha256": "869ab9eb05b78f5f68f017ca728c0d9b8fa45985b2d7f2b4174cb11d14fa42c4",
+    "source_length": 24,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Loading",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在载入",
+    "source_sha256": "dc380888c4e2c7762212480ff86eb39150ec70b45009c33bc6adcbd0041384b1",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Saving",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在保存",
+    "source_sha256": "096b73624b092bdc6c7377ec5e6e989e2ce826b9f294de8368fb8f3ec1341f30",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "Paused",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%s 暂停了游戏",
+    "source_sha256": "37ba0c7d5a4dc5700af2d14643a79ece1a75477a7a595c13bfb5bd81a695500f",
+    "source_length": 12,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "ReceiveFile",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在接收“%s”",
+    "source_sha256": "de03b589b6b63fe2132734fa4ffab54d121ae917d2d8886196e21e8a4b3b3945",
+    "source_length": 14,
+    "tokens": [
+      "%s"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "ReceiveSize",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "大小 %iK，已完成 %3.1f%%",
+    "source_sha256": "af94e44e2b740e33c722a0c888bc13822f116149dc1b5ddb53ad3a7c02838e59",
+    "source_length": 26,
+    "tokens": [
+      "%iK",
+      "%3.1f"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Progress",
+    "key": "ConnectingText",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在连接：",
+    "source_sha256": "c96937673d2111b75800f3be0b7cc72f0641c74840811d9a38a88172397a5236",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Console",
+    "key": "ChatChannel",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "（聊天）",
+    "source_sha256": "2638ad92d19f76f4ff7b6d5f46b457a08b3e6c0c36a3beab0b3baf39297d2254",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Console",
+    "key": "TeamChannel",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "（队伍）",
+    "source_sha256": "59f692a1e8ef9dbbb0c44c74e6f71b3a90a8dfde40afa34d4fcaa44014e6e6dd",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Upgrade",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "进入此服务器需要最新的 Unreal 免费更新，可在 Epic 网站获取：",
+    "source_sha256": "b3f20e923d1056905ad481fc838ed6c787e615c61d767eeb0715674f50a90bbc",
+    "source_length": 95,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "UpgradeQuestion",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "是否打开浏览器并前往更新页面？",
+    "source_sha256": "f0247525ea07b6161c0278ca7d3d53c9704eb66a2caa17e7f3eca74f65b9a07c",
+    "source_length": 70,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Version",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "版本 %i",
+    "source_sha256": "b8ce25a8b03574329932ebdf4e57da625cb1b6398a2174a810365b885ef8bd24",
+    "source_length": 10,
+    "tokens": [
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "LeftString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "左",
+    "source_sha256": "58eb9032e3bb83f0e39d644ebc87ca254117b95bf458483bec7379bea0b419d0",
+    "source_length": 4,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "RightString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "右",
+    "source_sha256": "883361d5d682a1574410961ce51450b6e036a779c9f098dec71e28aec832bfa6",
+    "source_length": 5,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "CenterString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "居中",
+    "source_sha256": "d946067427e930a14aed20312fbd850cff72428d4d602ed04a2ed164ba7d63f4",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "EnabledString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "启用",
+    "source_sha256": "92c1cdfdf4cb9cf6fcca962f206de36fd5d60db1178bc9461052f8de703a0e06",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "DisabledString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "禁用",
+    "source_sha256": "75081b593d15cf6e631971bc6768723f593b88b172477e40ae7d363e4829816d",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "HelpMessage[1]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "此菜单尚未实现。",
+    "source_sha256": "24f3d4492deb454f6037aab1f97d7f5cbcba9456950ba6843a3b0f1253a552b8",
+    "source_length": 39,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "YesString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "是",
+    "source_sha256": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+    "source_length": 3,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Menu",
+    "key": "NoString",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "否",
+    "source_sha256": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59",
+    "source_length": 2,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Inventory",
+    "key": "PickupMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "已拾取物品",
+    "source_sha256": "8e83e6dc2541f0524c0fb9fca19068e057d4508ecb96bd0e9f47ea5e8bf86f6e",
+    "source_length": 15,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Inventory",
+    "key": "M_Activated",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 已激活",
+    "source_sha256": "e29a3c46c122001876a4b5945167aa3a89d5006180f05a739acfebaa274195d0",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Inventory",
+    "key": "M_Selected",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 已选中",
+    "source_sha256": "97a2e8815acd21f3ff60c356733522e012489993eccef9e12ff3e8dc05776055",
+    "source_length": 9,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Inventory",
+    "key": "M_Deactivated",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 已停用",
+    "source_sha256": "7714637bbd8fe3b8be36b83964a700769ffa76c5f41b569b8e2ee2b06ac5cd51",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "SwitchLevelMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "正在切换关卡",
+    "source_sha256": "d7f51bba63c136b0953a19dbba4c3c5a8545c4bf08a47e3adac1322a8b385372",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "DefaultPlayerName",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "玩家",
+    "source_sha256": "64aee8c6cbd026d9ea9221661f7632351d9a741198cd01ca017450b56f78a206",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "LeftMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 离开了游戏",
+    "source_sha256": "5a762e81a65751d0103df3ab311e9278d7fab9e3b0cb719b007dc3af2bc2b1ed",
+    "source_length": 15,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "FailedSpawnMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "创建玩家对象失败",
+    "source_sha256": "7c82b247106d54a580de019cea5c7a4027ed939f47d2e468088d194816743a3a",
+    "source_length": 28,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "FailedPlaceMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "未找到起始位置（关卡可能缺少 PlayerStart 对象）",
+    "source_sha256": "b573bac3bffb4f54eb05a073a95caac752d79cf156a22eb4d71c2bdfec150d9b",
+    "source_length": 69,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "NameChangedMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "名称已改为",
+    "source_sha256": "98985fce0e75a7417bfb68cf99898805c30a3a523ac11d132e3de5061171f096",
+    "source_length": 15,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "EnteredMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 进入了游戏",
+    "source_sha256": "d70b3c9a67969f68d6305671e8ffa30252dc0f977651ee9dfa3c96058c0fda48",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "GameName",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "游戏",
+    "source_sha256": "5c412a262086b9701cda06302f6667f9265b1807d0368fcec6cc03bf64fc250b",
+    "source_length": 4,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "MaxedOutMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "服务器人数已满",
+    "source_sha256": "297a25f5c28a9057c846007f7d0a2bab614f62740c8fc9dea1b093d1a6e51090",
+    "source_length": 30,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "WrongPassword",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "密码不正确",
+    "source_sha256": "acaf79af71160b76cb510820c22ca34cae12639c98481b99715b7942f27ad2af",
+    "source_length": 38,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "NeedPassword",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "加入此游戏需要密码",
+    "source_sha256": "11d08b69f77f4b7ad08b2ecfef1edcc07831e7d64981080e856d9fd5071bb1a9",
+    "source_length": 47,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GameInfo",
+    "key": "FailedTeamMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "未找到玩家所属队伍",
+    "source_sha256": "32681e287dc863019c91fb4f0ad84e63d4e5cd787eb35fbcabaf8eef8d0e4ef6",
+    "source_length": 30,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "LevelInfo",
+    "key": "Title",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "未命名",
+    "source_sha256": "f59ab8d1331b7b16952fbd388258f856b9e09ce2d7b904f500bdfe4905640774",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "MessageNoAmmo",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": " 弹药不足",
+    "source_sha256": "289edc4290e609c624a7a6e875a40dfbd739c08b061fcc0fe85aedc3cf3b3979",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "PickupMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "已拾取武器",
+    "source_sha256": "cf19020d737f35ef59b70c24f99aa6153606491c6c33f490c21fef5e3964c6a4",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "DeathMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%o 被 %k 的 %w 击杀。",
+    "source_sha256": "dbd23f09bbbbbec86706d0db6f3006e4473622825f2914743ae05315d8f5710a",
+    "source_length": 25,
+    "tokens": [
+      "%o",
+      "%k",
+      "%w"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "ItemName",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "武器",
+    "source_sha256": "1710782c5d15b9135ea757fbcc88f5d7d9a69c3a99f904a9b4396bcae9320be6",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "DeathMessage[0]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%o 被 %k 的 %w 击杀。",
+    "source_sha256": "dbd23f09bbbbbec86706d0db6f3006e4473622825f2914743ae05315d8f5710a",
+    "source_length": 25,
+    "tokens": [
+      "%o",
+      "%k",
+      "%w"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "DeathMessage[1]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%o 被 %k 的 %w 击杀。",
+    "source_sha256": "dbd23f09bbbbbec86706d0db6f3006e4473622825f2914743ae05315d8f5710a",
+    "source_length": 25,
+    "tokens": [
+      "%o",
+      "%k",
+      "%w"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "DeathMessage[2]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%o 被 %k 的 %w 击杀。",
+    "source_sha256": "dbd23f09bbbbbec86706d0db6f3006e4473622825f2914743ae05315d8f5710a",
+    "source_length": 25,
+    "tokens": [
+      "%o",
+      "%k",
+      "%w"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Weapon",
+    "key": "DeathMessage[3]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "%o 被 %k 的 %w 击杀。",
+    "source_sha256": "dbd23f09bbbbbec86706d0db6f3006e4473622825f2914743ae05315d8f5710a",
+    "source_length": 25,
+    "tokens": [
+      "%o",
+      "%k",
+      "%w"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Counter",
+    "key": "CountMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "还剩 %i 个……",
+    "source_sha256": "2e4bc1e6653ee168646f4d887a30a3629173e3dc0458814d2e5603b025598fbd",
+    "source_length": 21,
+    "tokens": [
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "Counter",
+    "key": "CompleteMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "已完成！",
+    "source_sha256": "e0f2849d1a75a8851dd7b8b4c6d2fd7ea73e15923619d5f684dfdc08a4138b3c",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Ammo",
+    "key": "PickupMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "已拾取弹药",
+    "source_sha256": "55a4e94be7c8ca15aaddbca4612f212ae9266954a90e9a147f2a1ee0fe52d785",
+    "source_length": 24,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "DamageType",
+    "key": "Name",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "击杀",
+    "source_sha256": "d5405925e3082bc1479a5cec3ce6e984cfc4a0caaf7216755eb8c7b2bca2d96d",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "DamageType",
+    "key": "AltName",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "击杀",
+    "source_sha256": "d5405925e3082bc1479a5cec3ce6e984cfc4a0caaf7216755eb8c7b2bca2d96d",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "PlayerPawn",
+    "key": "NoPauseMessage",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "当前游戏不能暂停",
+    "source_sha256": "9e03264194acf92c5e0147e49345eed26a20f2b4d50a1992f1d409ff54d25f79",
+    "source_length": 21,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "PlayerPawn",
+    "key": "ViewingFrom",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "当前观察视角：",
+    "source_sha256": "42cd6f53d2f5ba1b967c67c080c158e9ec8e90bb9edf49145badc7f5738c30e9",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "PlayerPawn",
+    "key": "OwnCamera",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "自身视角",
+    "source_sha256": "4b656f2cfb00c628716b6d9f230b9bfccce854dfc98d8d02080128bdc34c5da5",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "PlayerPawn",
+    "key": "FailedView",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "切换视角失败",
+    "source_sha256": "c8aefeb739006855d3006c1a7aff79b997e3261b4f783f2d4f5e687ebcdcd804",
+    "source_length": 22,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "PlayerPawn",
+    "key": "CantChangeNameMsg",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "全局记录的对局中不能更改名称",
+    "source_sha256": "a44b3b38ba93edccd4a734935db5c151c78f146157cd3cd79d20825e6376626d",
+    "source_length": 55,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Spectator",
+    "key": "MenuName",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "旁观者",
+    "source_sha256": "5ccda7f08fd1a2d1ad1d2d2a06c1954b850f1ecfdfb1f44a3812595e8f4f1814",
+    "source_length": 9,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerCommandlet",
+    "key": "HelpOneLiner",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "网络游戏服务器",
+    "source_sha256": "85f23ad994c48ac08a0bf06556172a483399e66ddd789e1f0ef39ef7c15b6ea6",
+    "source_length": 19,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerCommandlet",
+    "key": "HelpDesc[0]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "指定生成的日志文件",
+    "source_sha256": "c196ffcf6ef6aecae59a649c41b58b5a85a0f58901a320ad25165eb6ec8fa2c3",
+    "source_length": 32,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerCommandlet",
+    "key": "HelpDesc[1]",
+    "occurrence": 1,
+    "file": "Engine.int",
+    "translation": "授予所有玩家管理员权限",
+    "source_sha256": "30482a4c5fd5e97456f9edd52cabcd4d2b249bbfb922135c81af5d4ff0254093",
+    "source_length": 33,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GlideRenderDevice",
+    "key": "AskInstalled",
+    "occurrence": 1,
+    "file": "GlideDrv.int",
+    "translation": "是否已安装 3dfx 显卡？",
+    "source_sha256": "46b4f2efb9904dbab858bedf50bc0b1838cbc5fe724516c6e1ab58ddf3d8e599",
+    "source_length": 34,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "GlideRenderDevice",
+    "key": "AskUse",
+    "occurrence": 1,
+    "file": "GlideDrv.int",
+    "translation": "是否让 Unreal 使用 3dfx 显卡？",
+    "source_sha256": "b21dea9009d512235f08f7bed7b8187aceca8d88f634b74ee61704dc45ab6203",
+    "source_length": 41,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "SglRenderDevice",
+    "key": "ClassCaption",
+    "occurrence": 1,
+    "file": "SGLDrv.int",
+    "translation": "Windows 的 PowerVR SGL",
+    "source_sha256": "1e992ff9369e5526b11e22758ae404d1f7aa43fc9c4439dbce32c1b88c406284",
+    "source_length": 23,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "SglRenderDevice",
+    "key": "AskInstalled",
+    "occurrence": 1,
+    "file": "SGLDrv.int",
+    "translation": "是否已安装 PowerVR 显卡？",
+    "source_sha256": "6817797fc07145d82cdfe4dd2b4eda8658d8ec91fdb80def7071f7cca42d09c2",
+    "source_length": 37,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "SglRenderDevice",
+    "key": "AskUse",
+    "occurrence": 1,
+    "file": "SGLDrv.int",
+    "translation": "是否让 Unreal 使用 PowerVR 显卡？",
+    "source_sha256": "123b5396a9610c24dd2b6f45a3a24e1e87d4cb3516977738fee369a67746b8fd",
+    "source_length": 44,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Run",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "启动！",
+    "source_sha256": "cd6317b826072e616fa092b856c1e36f5a536f44429c9e7a9285113631cbfe00",
+    "source_length": 4,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "FirstTime",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》首次配置",
+    "source_sha256": "79f9a360b5cb755acccf619ce3fb76619a9fb8569a4e547105325278535c633d",
+    "source_length": 38,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "SafeMode",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》安全模式",
+    "source_sha256": "0377d11c34f7ea890019fe054943eaf9fa4214db26954625cf9fc942a3f870f2",
+    "source_length": 23,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Video",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》视频配置",
+    "source_sha256": "1ffd09ecac83de78c452e1887e5683b4013d7cee4cc3520818b99663861a3d48",
+    "source_length": 33,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "RecoveryMode",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》恢复模式",
+    "source_sha256": "2c010e120678c7441b636bb89600f5bacba94462d9a7bf151175a4f529bd36e9",
+    "source_length": 27,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Detecting",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "正在检测三维视频设备，请稍候……",
+    "source_sha256": "ff6181c340902e59fa2da9767a02acc6786a214535121384eb475ca74d704e61",
+    "source_length": 42,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "SoundLow",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "低音质",
+    "source_sha256": "cf9266ecd0b653050e37b0262307e63cdddb0713e242ad169235ff9b5790ec50",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "SoundHigh",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "高音质",
+    "source_sha256": "b730bae32545e0f16f3ba24dccc0382a69e9cab316f708cba59ae01a4d8aabe1",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "SkinsLow",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "中等细节人物外观纹理",
+    "source_sha256": "64431967c59f094cca45cd9b234ae2bdeaf96d6b38baf6b5e6b08be195295837",
+    "source_length": 34,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "SkinsHigh",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "高细节人物外观",
+    "source_sha256": "293f88351caf703218463b397ce60faccec175dd0df60f264504d75e934259b0",
+    "source_length": 24,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "WorldLow",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "中等细节场景纹理",
+    "source_sha256": "b5f7a7a6e3c9904ead2aa58f7ed78dcae3d46d2ef3fbb59df52456ece5fdc5bd",
+    "source_length": 28,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "WorldHigh",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "高细节纹理",
+    "source_sha256": "a60ab101678633bc960d00c8b0e036b418d9bf3fb8581616f5f3e47f415f5ae3",
+    "source_length": 20,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ResLow",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "低分辨率",
+    "source_sha256": "a31d337ee5403a635df0e5ec0242c7e9ae70103e733928bac3709e09f5543ee4",
+    "source_length": 20,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ResHigh",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "标准分辨率",
+    "source_sha256": "1acf32dfaacc22b3f4460af1929d5153b6a03f16b9b10dbe2aa77b1e85adabeb",
+    "source_length": 25,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "MasterDetailLow",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "低整体细节",
+    "source_sha256": "39eff3a841342ca1f4a451dad69cf0a938af890389a3582ba938c61441221258",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "MasterDetailMed",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "中等整体细节",
+    "source_sha256": "ce04e767536dca7dc1b049b1cb0c9aec05e78ebf4fb40f3ffefbfd2f5739b946",
+    "source_length": 20,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "MasterDetailHigh",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "高整体细节",
+    "source_sha256": "e3997a15a3d46a6d7946cbbf0a955ba5ec068c10dcc145a5aab4a599b2b8e505",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Descriptions",
+    "key": "SoftDrv.SoftwareRenderDevice",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》内置软件渲染器。兼容所有显卡。",
+    "source_sha256": "9d0eebeeb480a1f3f8a5de59ccaa9a0d694acffb1a67216576b80d5fc988d7d9",
+    "source_length": 77,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Descriptions",
+    "key": "GlideDrv.GlideRenderDevice",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "3dfx Glide 支持，适合 3dfx 显卡。需要 3dfx 显卡。",
+    "source_sha256": "91de81065442a0e847be3c35b0e4c50711e9330e3c2bcddf25cdb588ddd83e43",
+    "source_length": 76,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Descriptions",
+    "key": "D3DDrv.D3DRenderDevice",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "使用 Direct3D 硬件渲染。兼容 Riva TNT、ATI Rage 128、Matrox G400 和 S3 Savage4 等较新显卡。不建议用于更早的显卡；ATI Rage Pro、Riva 128、Intel i740 或 Rendition V2200 应使用软件渲染器。",
+    "source_sha256": "6a302e71d027482ce1d4e76db1b3e1379001493e0065f17a9833f0d8e9e9cc65",
+    "source_length": 276,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Descriptions",
+    "key": "OpenGLDrv.OpenGLRenderDevice",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "实验性 OpenGL 支持，用于测试和实验。与部分驱动程序存在已知兼容问题。",
+    "source_sha256": "ba7bac033032914562a194e7ca7aad39e486277b34f7c6e30f2566e37bf0006c",
+    "source_length": 155,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Descriptions",
+    "key": "MetalDrv.MetalRenderDevice",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "适用于 S3 Savage4 显卡。",
+    "source_sha256": "af0dfd702221a985a5ed87ce0bac7fb7d3d359826e8e246307b7ba23f2540c4e",
+    "source_length": 38,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDetail",
+    "key": "IDC_DetailPrompt",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》已根据处理器速度、内存和显卡选择以下细节选项，以优化性能。",
+    "source_sha256": "6846851dd8b533d1d32cf5f1fc78ce4cd3827c723f0fdab4c529cbc299d36a56",
+    "source_length": 144,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDetail",
+    "key": "IDC_DetailNote",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "这些选项之后可在游戏的“硬件设置”菜单中调整。",
+    "source_sha256": "3845c0fbbbf0bcf9243f40fc106d0f6895d9f5a72171e20934231d9817778683",
+    "source_length": 80,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageFirstTime",
+    "key": "IDC_Prompt",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》正在首次启动。如遇问题，请查看 Windows“开始”菜单“程序 / 时光之轮”中的发行说明。",
+    "source_sha256": "12c454490bf21115440587a73d926c1a397bdf29091530907c9df0a460c106d1",
+    "source_length": 182,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageRenderer",
+    "key": "IDC_RenderPrompt",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "当前电脑支持以下三维视频设备。《时光之轮》已选择合适的设备。如需更改，请选择以下选项。",
+    "source_sha256": "e97816e3ede446e5b66ee5b3dac0a6320a39e825570726f8af98cbff449581f5",
+    "source_length": 153,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageRenderer",
+    "key": "IDC_Compatible",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "显示已认证的兼容设备",
+    "source_sha256": "7fade2c369e987149d3e4eb09acdb945e6884c486ab1b5871a4dd5e15afffeb0",
+    "source_length": 34,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageRenderer",
+    "key": "IDC_All",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "显示所有设备",
+    "source_sha256": "42e591e8c12ce66614513ad5ca2cb5f03a8919a29e114d21658020dc18aac15e",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_SafeModePrompt",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》上次运行时未正常退出。如因故障退出，可使用以下选项恢复。",
+    "source_sha256": "b5ddf3aca0d12232f1866f80cc6f249352a0f9a51a9f997b210aabe0636d553c",
+    "source_length": 163,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_SafeModePrompt2",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》安全模式选项：如遇问题，可使用以下选项恢复。",
+    "source_sha256": "2106de0634616cc198bdb4d0bd907973466f966e212daa5916043259dac65d29",
+    "source_length": 110,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_Run",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "启动《时光之轮》",
+    "source_sha256": "017acf7c87882849b94da12d7e15613165e7bed6f48bf106bd471dc5bd86ce7c",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_Video",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "更改三维视频设备",
+    "source_sha256": "e4d491d08031ee399f4c6ab5f676244509b421b8a1dc15adf69f87989338539d",
+    "source_length": 27,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_SafeMode",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "以安全模式启动《时光之轮》，排查故障",
+    "source_sha256": "bbd187190a8f7c18d62e5f8f8206535b479dddef7c7637b241b2a774e635d1e1",
+    "source_length": 52,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeMode",
+    "key": "IDC_Web",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "访问网站查看故障排查提示",
+    "source_sha256": "3af107044c2325ea7ef0a8031473d4a8280515b70a48edcfecd9d07d08a136b5",
+    "source_length": 43,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_SafeOptions",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "安全模式选项，用于排查故障",
+    "source_sha256": "d6c3ba1a23782791c2d4dcdd7ebe72c8eef578f5b3cce0cf469169610616e65a",
+    "source_length": 42,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_NoSound",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "禁用所有声音",
+    "source_sha256": "fac961e2a21c22ee6f3d9d12b63382015065c0ef50979ee7c6f30ab6268faecd",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_No3DSound",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "禁用三维音效硬件",
+    "source_sha256": "7816501965fd415e64297087e826545df366ad73c9980213c1c6353f557d8864",
+    "source_length": 25,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_No3DVideo",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "禁用三维视频硬件",
+    "source_sha256": "86cbc4a363ca89c9bf73865cb182702fbbef86282cd812238062db574757c656",
+    "source_length": 25,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_Window",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "窗口模式运行（非全屏）",
+    "source_sha256": "fba7d6ba0869075fea326caabd31d5693c2a96e21fabd0f3b42a11b5f7173ead",
+    "source_length": 49,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_Res",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "以标准 640x480 分辨率运行",
+    "source_sha256": "0b6e5c792cc6fde4336960c9aa95419ad329090e374e5611f995f484388f0236",
+    "source_length": 34,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_ResetConfig",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "将所有配置恢复为默认值",
+    "source_sha256": "9227174c1cbfa9fa8740794b7f05336fb1186afe64f2c247c768a4f093d0c110",
+    "source_length": 43,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_NoProcessor",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "禁用 Pentium III/3DNow 处理器扩展",
+    "source_sha256": "55d02c59087ba120a88b4e6e5d050cb72d8812933542837fe37cb878331cab66",
+    "source_length": 46,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageSafeOptions",
+    "key": "IDC_NoJoy",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "禁用手柄支持",
+    "source_sha256": "51cdff8b20f9b58cd4c632adfb0e3b5b3a7b7c49f3b65edcaee29aa41fb2c299",
+    "source_length": 24,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDriver",
+    "key": "IDC_DriverText",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "《时光之轮》检测到以下兼容 Direct3D 的显卡：",
+    "source_sha256": "12d8b1ac816d5064d5158dcb1240939dc7afaeff3bbe4b060a22f617ee029b0e",
+    "source_length": 72,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDriver",
+    "key": "IDC_DriverInfo",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "已选择 Direct3D，《时光之轮》将尝试使用此显卡的驱动程序进行 Direct3D 渲染。\\n\\n部分三维显卡驱动需要更新才能可靠支持《时光之轮》的三维功能。下方网页提供显卡兼容性信息和最新 Direct3D 驱动程序。\\n\\n如出现颜色错误、多边形闪烁、性能低下或崩溃，请通过“开始 / 程序”中的“时光之轮安全模式”更改视频驱动。",
+    "source_sha256": "be6ed41f2907a82649d200a3fa3f340debd01e25b4ad3675bf20a3e570a18a7b",
+    "source_length": 600,
+    "tokens": [
+      "\\n",
+      "\\n",
+      "\\n",
+      "\\n"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDriver",
+    "key": "IDC_Web",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "最新驱动程序链接见以下网页：",
+    "source_sha256": "2ab21c59739f0e21cc01bfff0e8166937445f166461ddc7af23f0ac6caa2a6ee",
+    "source_length": 49,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_ConfigPageDriver",
+    "key": "IDC_WebButton",
+    "occurrence": 1,
+    "file": "Startup.int",
+    "translation": "Direct3D 信息 && 驱动程序页面",
+    "source_sha256": "65faeb84899442469cc2fdb9461acd28273f5403b30eb1ab6faa2b474fe83bba",
+    "source_length": 36,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserUT",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "UT 服务器",
+    "source_sha256": "8f8c650aa185d3e759bcf845a451a788745f17a9a0ded78b3a3547a9ce0d2617",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserLAN",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "局域网服务器",
+    "source_sha256": "29cc20e2f876a0083564250ab2ddd4bffbed60638c70e2d9c17193413b35a8a3",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserPopulated",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "有玩家的服务器",
+    "source_sha256": "9aff3c7672fa51f994b9fe8c9f227ef5c3ef2b17e36f1e7b683e936d47270d6f",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserDeathmatch",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "死亡竞赛",
+    "source_sha256": "7b15c349f622bdfb0610270734b02d56d799525235997825ff8b7222e12e1dbf",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserTeamGames",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "团队死亡竞赛",
+    "source_sha256": "efe3731133b6eff5e48ed64b8349682e092814a37bec2ec975ab1a9dd99c2e1e",
+    "source_length": 15,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserCTF",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "夺旗",
+    "source_sha256": "0921e72f6f454eae589089196b830a0787c82969ec7b8087866bf34b15873623",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserDOM",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "控制据点",
+    "source_sha256": "ef62f88903cc48cb104d3f9e79dcf1f3a39c4282d18d25b2bec5b387e5b64ca0",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserAS",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "突袭",
+    "source_sha256": "dc5520573a9f4e46a7c42f1bdacc7a2ac40392969a4c2f244b2bc11807f4b8d1",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserLMS",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "最后生还者",
+    "source_sha256": "dabe1d46b4236fd5573f912325a1cdd5be10750542b419073c476148cebfa391",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "UBrowserAll",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "全部服务器",
+    "source_sha256": "b5be0854c77e1f3a93258602e670e19561cc20ac3d9897046a8a590e3cd0ec83",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "UBrowserEditFavoriteCW",
+    "key": "DescriptionText",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "说明",
+    "source_sha256": "526e0087cc3f254d9f86f6c7d8e23d954c4dfda2b312efc29194ae8a860106ba",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "UBrowserEditFavoriteCW",
+    "key": "UpdateDescriptionText",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "更新说明",
+    "source_sha256": "0b642394ff4637645689a5a0f08a1af002b4540788520545331f14255842e636",
+    "source_length": 18,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "UBrowserEditFavoriteCW",
+    "key": "IPText",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "IP 地址",
+    "source_sha256": "3c3de0c91c5fd542af4f81c7806e68162de2e8773883c8d4a7182450b8203c56",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "UBrowserEditFavoriteCW",
+    "key": "GamePortText",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "游戏端口",
+    "source_sha256": "3e8dbb6c3828e368edbe9629bd04028e3ee6d97bc28a9ceea468e2beb4cdfe0d",
+    "source_length": 9,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "UBrowserEditFavoriteCW",
+    "key": "QueryPortText",
+    "occurrence": 1,
+    "file": "UBrowser.int",
+    "translation": "查询端口",
+    "source_sha256": "516e776e998ff69a8d6950e6e4a850aa2f0cbb650609917957f0551ad229ac63",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "Failed3D",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "三维硬件初始化失败",
+    "source_sha256": "786a138126de270d8457c85c637207f6c7ced2412f0c0fd4f138165c438fd4e9",
+    "source_length": 33,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "Errors",
+    "key": "DDrawMode",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "DirectDraw 无法设置所请求的显示模式",
+    "source_sha256": "4cbd79421f5712fe5699efcb7ccedb0f8b3c2e706afb65d63ba7562d80b16364",
+    "source_length": 53,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ViewPersp",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "透视地图",
+    "source_sha256": "f7060c7c8e3e2b5a1916cb16491c22b0652456e6ec87ed7516fd036500ff7ae0",
+    "source_length": 15,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ViewXY",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "俯视地图",
+    "source_sha256": "22840d8762a7ceb4539ff697105285c64d64d103561cf7f7808684a883a2b5ae",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ViewXZ",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "XZ 地图",
+    "source_sha256": "f3bcfc4ad1fe59db424578420cfccc6e1564f8fb77e73608c941e8f101b38874",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ViewYZ",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "YZ 地图",
+    "source_sha256": "f05dd37664698999a2a674cd1db078ba555ef09b321387773c4a5d8c161f842e",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "ViewOther",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "视口",
+    "source_sha256": "91e53b9065718a3c8684d13770c4f7a8c4ccf357ebca9cc9bd79e7f7f8b2fa17",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Color16",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "16 位颜色(&1)",
+    "source_sha256": "ca246d6ada1e91f6eef12eac1af1d194612d45d82143c13704ece6994457e3ab",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "Color32",
+    "occurrence": 1,
+    "file": "WinDrv.int",
+    "translation": "32 位颜色(&3)",
+    "source_sha256": "c64c9e02f48d7fcff909b617d79bb8a0df899bcab79c4353945f93441801b66c",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "InsertCdText",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "请插入 Unreal 光盘，按“确定”继续，或按“取消”退出。",
+    "source_sha256": "f883e75ab9ead6c87dc1558c727b181c6547110581f4bdbbecb56bbc47c4b086",
+    "source_length": 92,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "General",
+    "key": "InsertCdTitle",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "启动需要光盘",
+    "source_sha256": "54039e287c10fdfb3a3ad17fcc4807a0cfd5e03ddb21489d811c69d9d81f0114",
+    "source_length": 22,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "FirstRun",
+    "key": "Caption",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "首次配置",
+    "source_sha256": "28c0ce8720cd93231a6e2f6942b5a43a3ace6a0f5f6f6a9f0765beb7e91338f1",
+    "source_length": 21,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "FirstRun",
+    "key": "LowMemory",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "Unreal 检测到可用内存为 %i MB。为提高性能，已启用低纹理细节和低音质。可在性能设置菜单中调整。",
+    "source_sha256": "b7fcd3ac6a8d6c3cfd4656b4542ee6fcaee4280c738cd7aab2d6436e2ae8ff8c",
+    "source_length": 234,
+    "tokens": [
+      "%i"
+    ],
+    "status": "draft"
+  },
+  {
+    "section": "FirstRun",
+    "key": "NonMMX",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "Unreal 检测到当前电脑不支持 MMX。已降低音频采样率以减少处理器占用。可在“高级选项 / 音频”中调整。",
+    "source_sha256": "cd9e5916b3b55ef6fdd50c658b1f818ff6bf109240523fc29d59aae12ff6bb51",
+    "source_length": 200,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "FirstRun",
+    "key": "Starting",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "Unreal 正在首次启动。如遇问题，请查看“开始”菜单中发行说明的故障排查章节。",
+    "source_sha256": "3759c01836c2cf7d91bc53465e84592f84a5447b18d069b798f85eebfa853fc6",
+    "source_length": 155,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_Directory",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "安装目录",
+    "source_sha256": "bdd1868a64ef0cd5e69e56cd3234fcf4058402244a7ae99c0b153893db3ede0b",
+    "source_length": 19,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_ChoosePrompt",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "请选择安装目录",
+    "source_sha256": "12742bd0c09030b736bb08d9962315c0694d0c54c42e33530a559b82a2b53059",
+    "source_length": 38,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_PathTitle",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "路径(&P)：",
+    "source_sha256": "53d1f20d235147cda05c5602d2815fd3a68f293ef53a01bd3c5437b7c545b925",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_DirectoryTitle",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "目录(&D)：",
+    "source_sha256": "6073164d7876f24d28db174b84461c741071d89c03700ba35b675f07e56a15c0",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_DrivesTitle",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "驱动器(&V)：",
+    "source_sha256": "5175a738569577d13e819d39359fa31e57f1b8d71e1fbbc244cd78a56501401e",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Directory",
+    "key": "IDC_NetworkButton",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "网络(&N)",
+    "source_sha256": "bf2ba9e781be7df212e5e7bda25e6756d59b00931d93f560588c40efd116fac9",
+    "source_length": 8,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Password",
+    "key": "IDC_Password",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "密码验证",
+    "source_sha256": "40c0e3cd8d8396fe10f298686cb710201fa1c1d2a47147ee5557bf8f1be52fd0",
+    "source_length": 14,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Password",
+    "key": "IDC_Prompt",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "请输入名称和密码",
+    "source_sha256": "54717872d0db0366c31767813f642ad128183924cb1b6a747c692a91e8bc2b4a",
+    "source_length": 36,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Password",
+    "key": "IDC_Name",
+    "occurrence": 1,
+    "file": "Window.int",
+    "translation": "名称(&N)：",
+    "source_sha256": "408a27dc0b1145bc5100dedee73c5af63b82029c7d8cc6cdb08ba8134b289261",
+    "source_length": 6,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "IDDIALOG_Password",
+    "key": "IDC_Password",
+    "occurrence": 2,
+    "file": "Window.int",
+    "translation": "密码(&P)：",
+    "source_sha256": "264b01b8d561f3c09f7648a1421b8a71ea3d93e839bdf673a13530f51cca9b7e",
+    "source_length": 10,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "ArenaText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "竞技场",
+    "source_sha256": "77d7cd99073bd654f4bc89d3231dcc74411ea08ce000218fda6220fd89a842fe",
+    "source_length": 5,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "CitadelText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "堡垒",
+    "source_sha256": "e5deb41a18ea693afce842fb855465b1c4612e504b0440ac031af2df68f29045",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "RemainingTimeText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "剩余时间",
+    "source_sha256": "cd8ad67cfa74072f17a54ae598a5b9c167ea7bd57a9177c2411db572b7495492",
+    "source_length": 14,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "ElapsedTimeText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "已用时间",
+    "source_sha256": "2ddbad4846a2d1f2c44e507e5ce33709a0c62884f83bf11fb9ac9ddca38a7084",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "PublicAccessText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "公开访问",
+    "source_sha256": "982c9a2fa1a352eaba3d0f9a8e69d592d4f7f95312aaade51447d74474211a14",
+    "source_length": 13,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "SealBudgetText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "封印额度",
+    "source_sha256": "2cee3bd5d02c34d5e6092b3f6c27b9e0603f1fcb4facef97d16f36a889a24f01",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "HoldNewPlayersText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "暂缓新玩家入场",
+    "source_sha256": "753c2f0f39bda0790a1713b22af943a2ce8d2d694401ed7dd783be4116f9154b",
+    "source_length": 16,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "MaxTeamSizeText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "队伍人数上限",
+    "source_sha256": "8fe92b765cc57366076cabc7011477e68ce4305496eb74b7f377c4a950543524",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "RemainingEditTimeText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "剩余布置时间",
+    "source_sha256": "52fe206ecc84998aaafb1665b35e3398e8539b2e1b43899d43df5ef61869d3e2",
+    "source_length": 19,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "WinningTeamText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "获胜队伍",
+    "source_sha256": "2e5b0475f6f6c73116b9e72ff05583e90d647aa084e00e66093b0f6477154f5b",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "NoWinningTeamText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "无",
+    "source_sha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+    "source_length": 4,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "GameBegunText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "游戏已开始",
+    "source_sha256": "e4fcdeb756724afd25e054dab67308b6f38e387ad0bb248975083e953cd9740a",
+    "source_length": 12,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "GameBegunTrueText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "是",
+    "source_sha256": "85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e",
+    "source_length": 3,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "WOTBrowserServerPing",
+    "key": "GameBegunFalseText",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "否",
+    "source_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+    "source_length": 2,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserWOT",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "《时光之轮》服务器",
+    "source_sha256": "630cbd808d08bf24a2a3e8d26b93a24192abf8e7e0e24bd2f2b6e6ac0ac28403",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserLAN",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "局域网服务器",
+    "source_sha256": "29cc20e2f876a0083564250ab2ddd4bffbed60638c70e2d9c17193413b35a8a3",
+    "source_length": 11,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserPopulated",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "有玩家的服务器",
+    "source_sha256": "9aff3c7672fa51f994b9fe8c9f227ef5c3ef2b17e36f1e7b683e936d47270d6f",
+    "source_length": 17,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserArena",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "竞技场",
+    "source_sha256": "77d7cd99073bd654f4bc89d3231dcc74411ea08ce000218fda6220fd89a842fe",
+    "source_length": 5,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserCitadel",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "堡垒",
+    "source_sha256": "e5deb41a18ea693afce842fb855465b1c4612e504b0440ac031af2df68f29045",
+    "source_length": 7,
+    "tokens": [],
+    "status": "draft"
+  },
+  {
+    "section": "ServerListTitles",
+    "key": "WOTBrowserAll",
+    "occurrence": 1,
+    "file": "WoTBrowser.int",
+    "translation": "全部服务器",
+    "source_sha256": "b5be0854c77e1f3a93258602e670e19561cc20ac3d9897046a8a590e3cd0ec83",
+    "source_length": 11,
+    "tokens": [],
     "status": "draft"
   }
 ]

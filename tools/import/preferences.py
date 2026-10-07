@@ -87,7 +87,7 @@ def build(src, dst, spec, config, profile):
                 raise ValueError("Preferences source fingerprint differs")
             replace_display(r["source"], row["translations"])
     importer = importlib.import_module("tools.import.int_files")
-    importer.import_rows(src, spec["strings"], dst, config, profile)
+    importer.import_rows(src, spec["strings"], dst, config, profile, preserve_existing=True)
     changes = []
     for name, rows in grouped.items():
         output = dst / name

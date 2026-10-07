@@ -100,7 +100,7 @@
 |---|---|---|---|
 | The Wheel of Time | **时光之轮** | 核心概念 | 系列名 |
 | Creator | **创世主** | 核心概念 | 创造世界并封印暗帝 |
-| Dark One | **暗帝** | 核心概念 | 核心反派称谓 |
+| Dark One | **暗帝** | 核心概念 | 2026-10-07 提供的名词参考优先 |
 | Shadow | **暗影** | 核心概念 | 泛指暗帝一方 |
 | Darkfriend | **暗黑之友** | 核心概念 | 效忠暗帝的人 |
 | Age of Legends | **传说纪元** | 时代 | 世界崩毁前的时代 |
@@ -148,20 +148,20 @@
 | Accepted | **见习生** | 白塔体系 | 白塔训练阶段 |
 | Warder | **护法** | 白塔体系 | 与两仪师约缚的战士 |
 | Three Oaths | **三誓** | 白塔体系 | 两仪师誓言体系 |
-| Forsaken | **弃光魔使** | 暗影势力 | 十三名投身暗帝的强大两仪师 |
+| Forsaken | **背弃者** | 暗影势力 | 2026-10-07 提供的名词参考优先 |
 | Trolloc | **兽魔人** | 暗影生物 | 暗帝创造的混血生物 |
 | Myrddraal | **魔达奥** | 暗影生物 | 兽魔人的领袖型暗影生物 |
 | Gray Man | **灰人** | 暗影势力 | 暗影刺客类存在 |
 | Darkhound | **暗之猎犬** | 暗影生物 | 暗影生物 |
 | Dreadlord | **惊怖领主** | 暗影势力 | 为暗影服务的导引者 |
 | Mashadar | **魔煞达** | 暗影相关 | 煞达罗苟斯中的邪恶实体 |
-| Mordeth | **魔德斯** | 人物 | 爱荷达 / 煞达罗苟斯相关人物 |
+| Mordeth | **魔德斯** | 人物 | 2026-10-07 提供的名词参考优先 |
 | Children of the Light | **圣光之子** | 组织 | 宗教军事组织 |
 | Whitecloaks | **白袍众** | 组织 | 圣光之子的俗称 |
 | Tar Valon | **塔瓦隆** | 地理 | 白塔所在城市 |
 | Shayol Ghul | **煞妖谷** | 地理 | 暗帝封印所在 |
 | Blight | **妖境** | 地理 | 北方受暗影侵蚀地区 |
-| Aridhol | **爱荷达** | 地理 | 后来的煞达罗苟斯 |
+| Aridhol | **爱瑞荷** | 地理 | 2026-10-07 提供的名词参考优先 |
 | Shadar Logoth | **煞达罗苟斯** | 地理 | 爱荷达陷落后的名称 |
 | Two Rivers | **两河** | 地理 | 两河流域 |
 | Emond's Field | **伊蒙村** | 地理 | 两河村庄 |
@@ -171,8 +171,8 @@
 | Stone of Tear | **提尔之岩** | 地理 | 提尔要塞 |
 | The Ways | **道** | 地理 | 中文Wiki《大猎捕》《暗影渐起》剧情资料核对；https://twot.huijiwiki.com/wiki/大猎捕 |
 | Waygate | **道门** | 地理 | 中文Wiki《暗影渐起》道门叙述核对；https://twot.huijiwiki.com/wiki/暗影渐起 |
-| Thom Merrilin | **汤姆·梅里林** | 人物 | 中文Wiki主要人物核对；https://twot.huijiwiki.com/wiki/主要人物 |
-| Elayne | **伊兰** | 人物 | 中文Wiki主要人物中的伊兰·传坎；与游戏Elayna不是同一人 |
+| Thom Merrilin | **汤姆·梅里林** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Elayne | **伊兰** | 人物 | 2026-10-07 提供的名词参考优先 |
 | Balefire | **烈火** | 魔法体系 | 中文Wiki《天空之火》末段雷威辛被抹去因缘轨迹的招数核对；https://twot.huijiwiki.com/wiki/天空之火 |
 | Fal Dara | **法达拉** | 地理 | 已核对游戏Tes_63与中文Wiki[主要人物](https://twot.huijiwiki.com/wiki/主要人物)中的法达拉领主；2026-10-03确认 |
 | Ogier | **巨森灵** | 种族 | 固定译名 |
@@ -181,15 +181,15 @@
 | Tinker | **匠民** | 种族 / 文化 | 旅行民族俗称 |
 | gleeman | **走唱人** | 职业 | 游艺 / 说唱艺人 |
 | Wisdom | **乡贤** | 职业 | 两河地区女性领袖 / 医者职衔 |
-| Lews Therin Telamon | **路斯·瑟林·特拉蒙** | 人物 | 前世真龙 |
-| Rand al'Thor | **兰德·亚瑟** | 人物 | 转生真龙 |
-| Mat Cauthon | **麦特·考索恩** | 人物 | 主要人物 |
-| Perrin Aybara | **佩林·艾巴亚** | 人物 | 主要人物 |
-| Egwene al'Vere | **艾雯·艾威尔** | 人物 | 主要人物 |
-| Nynaeve al'Meara | **奈妮薇·爱米拉** | 人物 | 主要人物 |
-| Moiraine Damodred | **沐瑞·达欧崔** | 人物 | 蓝宗两仪师 |
-| al'Lan Mandragoran | **亚岚·曼卓格伦** | 人物 | 沐瑞的护法 |
-| Padan Fain | **帕登·范** | 人物 | 暗影相关人物 |
+| Lews Therin Telamon | **路斯·瑟林·特拉蒙** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Rand al'Thor | **兰德·亚瑟** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Mat Cauthon | **麦特·考索恩** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Perrin Aybara | **佩林·艾巴亚** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Egwene al'Vere | **艾雯·艾威尔** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Nynaeve al'Meara | **奈妮薇·爱米拉** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Moiraine Damodred | **沐瑞** | 人物 | 2026-10-07 提供的名词参考优先 |
+| al'Lan Mandragoran | **岚** | 人物 | 2026-10-07 提供的名词参考优先 |
+| Padan Fain | **帕登·范** | 人物 | 2026-10-07 提供的名词参考优先 |
 | Ishamael | **伊煞梅尔** | 弃光魔使 | 弃光魔使之一 |
 | Lanfear | **兰飞儿** | 弃光魔使 | 弃光魔使之一 |
 | Aginor | **阿极罗** | 弃光魔使 | 弃光魔使之一 |
@@ -255,7 +255,7 @@
 | Black Wind | **黑风** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Mountains of Mist | **迷雾山脉** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Bornhald | **伯恩哈** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
-| Elaida | **爱莉达** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
+| Elaida | **爱莉达** | 专名 / 游戏称谓 | 2026-10-07 提供的名词参考优先 |
 | The Hand of the Light | **圣光之手** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Cerist | **瑟瑞斯特** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
 | Sephraem | **瑟芙蕾姆** | 专名 / 游戏称谓 | 已确定（2026-10-04）；参考与语境见 docs/REMAINING_TERMS_AUDIT.md |
@@ -284,6 +284,20 @@
 | Shai'tan | **撒丹** | FMV 专名 / 职衔 | 《世界之眼》[名词解释转载](https://read.99csw.com/book/7927/274352.html)中暗帝条目；出版文字转载线索，不冒称直接核验纸书 |
 | Mistress of Novices | **初阶生师尊** | FMV 专名 / 职衔 | 《转生真龙》[中英译名表转载](https://m.99csw.com/book/7929/274468.html)；[中文 Fandom](https://thewheeloftime.fandom.com/zh/wiki/两仪师)同用此职衔 |
 | Risline | **里斯琳** | 游戏原创角色 | 2026-10-05 已确认；Mission_04 的 30、36、39 号样本，蓝宗角色 |
+| Tam al'Thor | **谭姆·亚瑟** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Morgase | **摩格丝** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Gawyn | **盖温** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Elyas Machera | **艾莱斯·马奇拉** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Raen | **林** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Ila | **霭拉** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Aram | **亚蓝** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Geofram Bornhald | **杰夫拉·伯恩哈** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Logain | **洛根** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Gareth Bryne | **加雷斯·布伦** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Agelmar | **爱格马** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Ingtar | **印塔** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Loial | **罗亚尔** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
+| Min | **明** | 人物 / 参考术语 | 2026-10-07 提供的名词参考优先 |
 
 | Portcullis | **闸门** | 游戏建筑 | 沿用现有 PortcullisInventory.Title 译名 |
 | Pit | **陷坑** | 游戏陷阱 | 沿用现有 PitInventory.Title 译名 |
@@ -347,6 +361,9 @@ AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，
 | Angreal.int | AngrealInvTaint | Quote | 1 | Taint | 3e435227a39ef7289febfb3cf0c964b310ee6d31dd407264f64802b3ad54db3a | 小说引文中阳极力的污染，不是玷污特法器能力 |
 | WoTPawns.int | WarderInventory | Description | 1 | Chosen | 00681ead12b5ffb6fa117118b4f6f22e5fe01b55897c304778d9fe1c74b9777d | 武艺被选中的普通分词，不是暗影人物敬称 |
 | WoTPawns.int | QuestionerInventory | Description | 1 | Reflect | 0c039b42107f0432fb1a1b306741ed39bfd65a65b1e57cad29952f0b0522d8c6 | 普通反射投射物的动作，不是反射特法器名称 |
+| Engine.int | Errors | ChAllocate | 1 | channel | 7dd8c0a86eb0e612d3ff1952d3321d2ad7351f39a6b09cf3bb2768c104e2cdd6 | 网络通信通道，不是魔法导引 |
+| Startup.int | IDDIALOG_ConfigPageRenderer | IDC_RenderPrompt | 1 | Chosen | e97816e3ede446e5b66ee5b3dac0a6320a39e825570726f8af98cbff449581f5 | 设备选择的普通分词，不是暗影人物敬称 |
+| Startup.int | IDDIALOG_ConfigPageDriver | IDC_DriverInfo | 1 | Chosen | be6ed41f2907a82649d200a3fa3f340debd01e25b4ad3675bf20a3e570a18a7b | 设备选择的普通分词，不是暗影人物敬称 |
 
 ## 全文首轮待确认记录（现已解决）
 
@@ -375,3 +392,7 @@ AesSedaiA.Aes_Taunt4原文为“The Creator, save me!”；旧译“造物主，
 - `Machin Shin`与`Black Wind`统一“黑风”；Halfmen为魔达奥别称“半人”，不改写Myrddraal → 魔达奥。
 - Light信仰语境使用“光明”；Seal物件使用“封印”；Mother为玉座尊称，沿用“母亲”，并非生母。普通光照、封闭动作等不设无条件术语匹配。
 - 五种力使用地、风、火、水、魂；普通air气流仍按实际语境翻译。已确认的“风之力编织”等规则保持不变。
+
+## 2026-10-07 参考优先级
+
+本次明确提供的名词参考及三份 TXT 优先于既往译名来源。岚、沐瑞、爱瑞荷及《大事记》中的背弃者已统一；游戏原创角色译名保持。小说原文仅作为本地参考，不整章纳入仓库。开场动画只采用《第一章 空路》与实际旁白对应的首句，不插入后续小说情节。

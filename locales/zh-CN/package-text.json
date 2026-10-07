@@ -14,7 +14,7 @@
       "property": "LockedMessage",
       "slot": 0,
       "source_sha256": "29cfe906692abdadb4458d895a78a4dd772d40bd06104fdf0ea293a253d1346a",
-      "translation": "门已上锁。"
+      "translation": "门已上锁"
     },
     {
       "package": "WOT.u",
@@ -22,7 +22,7 @@
       "property": "UnLockMessage",
       "slot": 0,
       "source_sha256": "d10dda65b80dcb9ff45943f065381e508960dd3666054e4ecc82f618209ed098",
-      "translation": "用钥匙打开了门锁。"
+      "translation": "用钥匙打开了门锁"
     },
     {
       "package": "WOT.u",

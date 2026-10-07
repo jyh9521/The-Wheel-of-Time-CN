@@ -278,6 +278,22 @@
     "Maps/WheelOfTime.wot": {
       "size": 399097,
       "sha256": "8c61aa8f41e64462850c70d26f43ac54f7a0ca2ad97d49f70a3f943fc2a9ecda"
+    },
+    "System/SGLDrv.int": {
+      "size": 450,
+      "sha256": "f3d9e10ce9a0579566198527b02d64cb7df8d044c12df3868c545a568c1015e5"
+    },
+    "System/Startup.int": {
+      "size": 4389,
+      "sha256": "3cfad7fd1b231244e9f4247afa4f49edd05a6c48d419474fd448f138717d7044"
+    },
+    "System/UBrowser.int": {
+      "size": 495,
+      "sha256": "b466b0136757d9ae73988d56c7df948ee4c7f493aaef0be3dfcacf9fb640aee9"
+    },
+    "System/WoTBrowser.int": {
+      "size": 633,
+      "sha256": "7937f8353f5cf9137fa922ddebc53305c46e793879b223ef13626e113aa1f089"
     }
   },
   "resource_edits": [
