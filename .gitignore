@@ -160,3 +160,7 @@ decompiled/
 *.avi
 *.mp4
 *.bik
+
+# Local supplied branding originals; canonical logo is assets/installer/logo.png
+/简体中文LOGO.png
+/assets/installer/installer.ico

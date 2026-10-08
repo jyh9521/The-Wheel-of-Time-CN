@@ -124,6 +124,9 @@ def refresh(payload, baseline, output, work, resources=None, game=None, baseline
         '/reference:System.Web.Extensions.dll', '/out:' + str(output.resolve()),
         '/resource:' + str(package.resolve()) + ',Package.zip',
         str(ROOT / 'src/installer/PortableInstaller.cs')]
+    branding = ROOT / 'assets/installer'
+    if (branding / 'logo.png').exists(): command.insert(-1, '/resource:' + str((branding / 'logo.png').resolve()) + ',InstallerLogo.png')
+    if (branding / 'installer.ico').exists(): command.insert(-1, '/win32icon:' + str((branding / 'installer.ico').resolve()))
     result = subprocess.run(command, capture_output=True)
     (work / 'COMPILER.txt').write_bytes(result.stdout + result.stderr)
     if result.returncode:

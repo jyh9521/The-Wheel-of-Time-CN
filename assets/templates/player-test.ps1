@@ -6,7 +6,29 @@ $OutputEncoding=$utf8
 Set-StrictMode -Version 2
 $root=[IO.Path]::GetFullPath($GameDir).TrimEnd('\')
 $package=Split-Path -Parent $MyInvocation.MyCommand.Path
-$backup=Join-Path $root '.localization-backup\player-test'
+$backup=Join-Path $root 'backup'
+$legacyBackup=Join-Path $root '.localization-backup\player-test'
+$legacyPending=$false
+if(!(Test-Path -LiteralPath (Join-Path $backup 'STATE.json')) -and (Test-Path -LiteralPath (Join-Path $legacyBackup 'STATE.json'))) {
+ $backup=$legacyBackup;$legacyPending=$true
+}
+function Prepare-Backup {
+ $destination=Join-Path $root 'backup'
+ foreach($folder in @($destination,(Join-Path $root '.localization-backup'),$legacyBackup)) {
+  if((Test-Path -LiteralPath $folder) -and ((Get-Item -LiteralPath $folder).Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Linked backup directory rejected'}
+ }
+ if($legacyPending) {
+  if(Test-Path -LiteralPath $destination){throw 'Backup destination already exists; legacy migration requires an unused backup directory'}
+  foreach($item in Get-ChildItem -LiteralPath $legacyBackup -Recurse -Force) {if($item.Attributes -band [IO.FileAttributes]::ReparsePoint){throw 'Linked backup entry rejected'}}
+  $from=[IO.Path]::GetFullPath($legacyBackup);$to=[IO.Path]::GetFullPath($destination)
+  if(!$from.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase) -or !$to.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Backup path escape'}
+  [IO.Directory]::Move($from,$to)
+  $script:backup=$destination;$script:statePath=Join-Path $destination 'STATE.json';$script:legacyPending=$false
+ } elseif(!(Test-Path -LiteralPath (Join-Path $destination 'STATE.json')) -and (Test-Path -LiteralPath $destination) -and @(Get-ChildItem -LiteralPath $destination -Force).Count -gt 0) {
+  throw 'Backup destination contains unrelated files'
+ }
+}
+
 function Hash([string]$p) {
  $s=[IO.File]::OpenRead($p); $h=[Security.Cryptography.SHA256]::Create()
  try { return [BitConverter]::ToString($h.ComputeHash($s)).Replace('-','').ToLowerInvariant() } finally {$s.Dispose();$h.Dispose()}
@@ -31,6 +53,7 @@ function FileResult([string]$path,[string]$reason,[string]$expected='',[string]$
 }
 function Put([string]$p,[byte[]]$bytes) { [IO.Directory]::CreateDirectory((Split-Path -Parent $p)) | Out-Null; [IO.File]::WriteAllBytes($p,$bytes) }
 function Snapshot-Progress([string]$phase) {
+ Prepare-Backup
  $destination=Join-Path $backup ('progress-snapshots/'+[DateTime]::Now.ToString('yyyyMMdd-HHmmss')+'-'+$phase+'-'+[Guid]::NewGuid().ToString('N'))
  $paths=@($m.config | ForEach-Object {$_.path} | Select-Object -Unique)
  if ($m.PSObject.Properties['progress']) {
@@ -115,7 +138,7 @@ try {
     if($e.owned) {if(Test-Path (Target $e.path)){$restored=$false}}
     elseif(!(Match (Target $e.path) $e.original_sha256 $e.original_size)) {$restored=$false}
    }
-   if(!$restored){FileResult '.localization-backup/player-test/STATE.json' 'backup_package';throw 'Backup belongs to another package; restore with its original installer first'}
+   if(!$restored){FileResult 'backup/STATE.json' 'backup_package';throw 'Backup belongs to another package; restore with its original installer first'}
    }
   }
  }

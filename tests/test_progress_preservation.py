@@ -22,6 +22,15 @@ class ProgressPreservationTests(unittest.TestCase):
         self.assertNotIn('[IO.File]::Delete', block)
         self.assertIn("Snapshot-Progress 'apply'", source)
 
+    def test_release_backup_location_and_legacy_migration(self):
+        source = (ROOT / 'assets/templates/player-test.ps1').read_text('utf8')
+        self.assertIn("$backup=Join-Path $root 'backup'", source)
+        self.assertIn("$legacyBackup=Join-Path $root '.localization-backup\\player-test'", source)
+        self.assertIn('[IO.Directory]::Move($from,$to)', source)
+        self.assertIn('Backup destination contains unrelated files', source)
+        self.assertIn('Linked backup entry rejected', source)
+        self.assertIn('Prepare-Backup', source.split('function Snapshot-Progress',1)[1])
+
     def test_prior_manifest_recovery_is_explicit_and_hash_gated(self):
         source = (ROOT / 'assets/templates/player-test.ps1').read_text('utf8')
         self.assertIn("$Action -eq 'restore' -and", source)

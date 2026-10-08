@@ -166,22 +166,34 @@ namespace LocalizationInstaller {
             base.OnPaint(e);
             var flags = TextFormatFlags.NoPadding | TextFormatFlags.SingleLine;
             string[] lines = Text.Replace("\r", "").Split(new string[]{"\n\n"}, StringSplitOptions.None);
+            int y=0;
             using(var bold = new Font(Font, FontStyle.Bold)) {
-                for(int i=0; i<lines.Length; i++) {
-                    string line=lines[i]; int at=String.IsNullOrEmpty(Emphasis) ? -1 : line.IndexOf(Emphasis, StringComparison.Ordinal);
-                    string[] parts = at<0 ? new string[]{line} : new string[]{line.Substring(0,at),Emphasis,line.Substring(at+Emphasis.Length)};
-                    int x=0, y=i*(Font.Height+14);
+                foreach(string line in lines) {
+                    int at=String.IsNullOrEmpty(Emphasis) ? -1 : line.IndexOf(Emphasis, StringComparison.Ordinal);
+                    string[] parts=at<0 ? new string[]{line} : new string[]{line.Substring(0,at),Emphasis,line.Substring(at+Emphasis.Length)};
+                    int x=0;
                     for(int j=0;j<parts.Length;j++) {
                         bool highlight=at>=0 && j==1;
                         Font font=highlight ? bold : Font;
                         Color color=highlight && !SystemInformation.HighContrast ? Color.FromArgb(186,26,26) : ForeColor;
-                        TextRenderer.DrawText(e.Graphics,parts[j],font,new Point(x,y),color,flags);
-                        x+=TextRenderer.MeasureText(e.Graphics,parts[j],font,new Size(Int32.MaxValue,Int32.MaxValue),flags).Width;
+                        if(highlight) {
+                            int width=TextRenderer.MeasureText(e.Graphics,parts[j],font,new Size(Int32.MaxValue,Int32.MaxValue),flags).Width;
+                            if(x>0 && x+width>Width){x=0;y+=Font.Height;}
+                            TextRenderer.DrawText(e.Graphics,parts[j],font,new Point(x,y),color,flags); x+=width;
+                        } else {
+                            foreach(System.Text.RegularExpressions.Match token in System.Text.RegularExpressions.Regex.Matches(parts[j], @"[A-Za-z0-9×./:_-]+|.")) {
+                                int width=TextRenderer.MeasureText(e.Graphics,token.Value,font,new Size(Int32.MaxValue,Int32.MaxValue),flags).Width;
+                                if(x>0 && x+width>Width){x=0;y+=Font.Height;}
+                                TextRenderer.DrawText(e.Graphics,token.Value,font,new Point(x,y),color,flags);x+=width;
+                            }
+                        }
                     }
+                    y+=Font.Height+14;
                 }
             }
         }
     }
+
     sealed class MaterialButton : Button {
         public bool Primary;
         bool hovered, pressed;
@@ -256,33 +268,40 @@ namespace LocalizationInstaller {
         public InstallerForm(string data) {
             package = data; Text = Ui.T("window_title");
             Font = new Font(Ui.T("font_family"), 10); AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 704); BackColor = SystemInformation.HighContrast ? SystemColors.Control : Theme.Surface;
+            ClientSize = new Size(620, 736); BackColor = SystemInformation.HighContrast ? SystemColors.Control : Theme.Surface;
             ForeColor = SystemInformation.HighContrast ? SystemColors.ControlText : Theme.Ink;
             FormBorderStyle = FormBorderStyle.FixedDialog; MaximizeBox = false; StartPosition = FormStartPosition.CenterScreen;
-            var heading = new Label { Text = Ui.T("window_title"), Font = new Font(Font.FontFamily,18,FontStyle.Bold), AutoSize = false, Bounds = new Rectangle(24,20,732,38) };
-            var title = new Label { Text = Ui.T("instruction"), AutoSize = false, Bounds = new Rectangle(24,66,732,40) };
-            var directoryCard = new SurfacePanel { Bounds = new Rectangle(24,116,732,100) };
+
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+            var heading = new PictureBox { Bounds = new Rectangle(160,8,300,150), SizeMode = PictureBoxSizeMode.Zoom,
+                BackColor = BackColor, AccessibleName = Ui.T("window_title") };
+            using (var stream = typeof(InstallerForm).Assembly.GetManifestResourceStream("InstallerLogo.png")) {
+                if (stream != null) using (var image = Image.FromStream(stream)) heading.Image = new Bitmap(image);
+            }
+
+            var title = new Label { Text = Ui.T("instruction"), AutoSize = false, Bounds = new Rectangle(24,162,572,24) };
+            var directoryCard = new SurfacePanel { Bounds = new Rectangle(24,194,572,100) };
             var directoryLabel = new Label { Text = Ui.T("directory_title"), AutoSize = true, Location = new Point(18,12), BackColor = SystemInformation.HighContrast ? SystemColors.Window : Color.White };
             folder.ContextMenuStrip = new ContextMenuStrip(); log.ContextMenuStrip = new ContextMenuStrip();
-            folder.SetBounds(18,43,568,30); folder.BorderStyle = BorderStyle.FixedSingle;
-            browse.Text = Ui.T("browse"); browse.SetBounds(598,35,116,44);
+            folder.SetBounds(18,43,402,30); folder.BorderStyle = BorderStyle.FixedSingle;
+            browse.Text = Ui.T("browse"); browse.SetBounds(432,35,122,44);
             directoryCard.Controls.AddRange(new Control[] { directoryLabel, folder, browse });
-            check.Text = Ui.T("check"); check.SetBounds(24,232,140,44);
-            install.Text = Ui.T("install"); install.SetBounds(176,232,176,44); install.Enabled = false;
-            restore.Text = Ui.T("restore"); restore.SetBounds(616,232,140,44);
-            status.SetBounds(24,290,732,36); status.Text = Ui.T("choose_prompt");
-            progress.SetBounds(24,329,732,6); progress.Style = ProgressBarStyle.Marquee; progress.Visible = false;
-            var logCard = new SurfacePanel { Bounds = new Rectangle(24,349,732,137) };
+            check.Text = Ui.T("check"); check.SetBounds(24,308,140,44);
+            install.Text = Ui.T("install"); install.SetBounds(180,308,176,44); install.Enabled = false;
+            restore.Text = Ui.T("restore"); restore.SetBounds(456,308,140,44);
+            status.SetBounds(24,364,572,30); status.Text = Ui.T("choose_prompt");
+            progress.SetBounds(24,400,572,6); progress.Style = ProgressBarStyle.Marquee; progress.Visible = false;
+            var logCard = new SurfacePanel { Bounds = new Rectangle(24,414,572,128) };
             var logTitle = new Label { Text = Ui.T("log_title"), AutoSize = true, Location = new Point(18,12), BackColor = SystemInformation.HighContrast ? SystemColors.Window : Color.White };
-            log.SetBounds(18,38,696,82); log.Multiline = true; log.ReadOnly = true; log.ScrollBars = ScrollBars.Vertical;
+            log.SetBounds(18,38,536,72); log.Multiline = true; log.ReadOnly = true; log.ScrollBars = ScrollBars.Vertical;
             log.BorderStyle = BorderStyle.None; log.BackColor = SystemInformation.HighContrast ? SystemColors.Window : Color.White;
             logCard.Controls.AddRange(new Control[] { logTitle, log });
             var note = new StyledNote { Text = Ui.T("footnote"), Emphasis = Ui.T("footnote_emphasis"),
-                Bounds = new Rectangle(24,504,852,156), Font = Font, BackColor = BackColor,
+                Bounds = new Rectangle(24,560,572,140), Font = Font, BackColor = BackColor,
                 ForeColor = SystemInformation.HighContrast ? SystemColors.ControlText : Color.FromArgb(91,85,102),
                 TabStop = false, AccessibleName = Ui.T("footnote") };
             var attribution = new LinkLabel { Text = Ui.T("attribution_text"), AutoSize = false,
-                Bounds = new Rectangle(24,672,852,24), TextAlign = ContentAlignment.MiddleRight,
+                Bounds = new Rectangle(24,706,572,24), TextAlign = ContentAlignment.MiddleRight,
                 Anchor = AnchorStyles.Bottom | AnchorStyles.Right,
                 LinkColor = SystemInformation.HighContrast ? SystemColors.HotTrack : Color.FromArgb(103,80,164),
                 LinkBehavior = LinkBehavior.HoverUnderline, AccessibleName = Ui.T("attribution_text") };
@@ -293,9 +312,6 @@ namespace LocalizationInstaller {
                 } catch(Exception ex) { status.Text=Ui.Error(ex); }
             };
             Controls.AddRange(new Control[] { heading, title, directoryCard, check, install, restore, status, progress, logCard, note, attribution });
-            heading.Width += 120; title.Width += 120; directoryCard.Width += 120;
-            folder.Width += 120; browse.Left += 120; restore.Left += 120;
-            status.Width += 120; progress.Width += 120; logCard.Width += 120; log.Width += 120;
             AcceptButton = check;
             folder.TextChanged += delegate { checkedPath = null; install.Enabled = false; AcceptButton = check; };
             browse.Click += delegate { using (var picker = new DirectoryPicker(folder.Text)) if (picker.ShowDialog(this) == DialogResult.OK) folder.Text = picker.SelectedPath; };

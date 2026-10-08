@@ -56,6 +56,15 @@ class InstallerRefreshTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 merge_resources(members, bundle, ROOT)
 
+    def test_compact_layout_and_wrapping_footer(self):
+        source = (ROOT / 'src/installer/PortableInstaller.cs').read_text('utf8')
+        self.assertIn('new Size(620, 736)', source)
+        self.assertIn('new Rectangle(160,8,300,150)', source)
+        self.assertIn('new Rectangle(24,162,572,24)', source)
+        self.assertNotIn('directoryCard.Width += 120', source)
+        self.assertIn('x+width>Width', source)
+        self.assertIn('InstallerLogo.png', source)
+
     def test_footer_is_four_paragraphs_with_locale_driven_emphasis(self):
         ui = json.loads((ROOT / 'locales/zh-CN/installer-ui.json').read_text('utf8'))
         paragraphs = ui['footnote'].split('\n\n')

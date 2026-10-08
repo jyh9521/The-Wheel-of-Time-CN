@@ -58,6 +58,9 @@ def package(source,game,window,out,work):
          '/reference:System.IO.Compression.dll','/reference:System.IO.Compression.FileSystem.dll',
          '/reference:System.Web.Extensions.dll',
          '/out:'+str(out.resolve()),'/resource:'+str(payload.resolve())+',Package.zip',str(ROOT/'src/installer/PortableInstaller.cs')]
+    branding=ROOT/'assets/installer'
+    if (branding/'logo.png').exists():cmd.insert(-1,'/resource:'+str((branding/'logo.png').resolve())+',InstallerLogo.png')
+    if (branding/'installer.ico').exists():cmd.insert(-1,'/win32icon:'+str((branding/'installer.ico').resolve()))
     result=subprocess.run(cmd,capture_output=True,text=True)
     (work/'COMPILER.txt').write_text(result.stdout+result.stderr,encoding='utf-8')
     if result.returncode:raise ValueError(result.stdout+result.stderr)

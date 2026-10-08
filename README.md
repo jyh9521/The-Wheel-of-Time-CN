@@ -7,35 +7,24 @@
 
 ## 支持版本与当前状态
 
-支持项目已记录指纹的 GOG 英文资源，目标平台为 Windows 10/11。首轮普通文本、教程及带文本轨 FMV 已完成中文草稿，并导入完整测试副本；本轮审计仍发现硬编码标签和窗口回退文案待补齐，尚未确认100%覆盖；测试与补漏继续进行，尚未发布正式 Release。推荐 1920×1080，后续开发 QA 仅检查 1080p；4K 不作专项适配。
+支持项目已记录指纹的 GOG 英文资源，目标平台为 Windows 10/11。简体中文补丁 v1.0 已正式发布，完整通关测试已完成。推荐 1024×768 分辨率，最高不建议超过 1920×1080；4K 不作专项适配。
 
 详细进展见 [STATUS.md](docs/STATUS.md)。
 
 ## 下载
 
-源码：本仓库。玩家成品将放在 [GitHub Releases](https://github.com/jyh9521/The-Wheel-of-Time-CN/releases)。
-**目前没有完整汉化正式 Release**，不要把开发构建误认为成品。
-仓库不提供游戏本体、原程序、整包资源或 Windows 字体。
+正式版：[v1.0 发布页](https://github.com/jyh9521/The-Wheel-of-Time-CN/releases/tag/v1.0)，提供 `WoT-CN-v1.0.exe` 与 `Manual.pdf`。
+源码：本仓库。仓库不提供游戏本体、原程序、整包资源或 Windows 字体。
 
 ## 安装 / 使用
 
-本地通关测试提供小体积绿色 EXE：选择 GOG 游戏目录 → 校验文件 → 安装补丁；完成后沿用原游戏快捷方式或 System/WoT.exe。不写注册表，不创建系统卸载项，无需手动运行 CMD。使用与恢复方法见[绿色安装包](docs/PORTABLE_INSTALLER.md)。此前[直接覆盖包](docs/OVERLAY_TEST_PACKAGE.md)保留为测试方案记录。当前尚非公开 Release。
+打开绿色安装器 → 选择 GOG 游戏根目录 → 验证文件 → 安装补丁。安装完成后使用原游戏快捷方式启动游戏。不写注册表，不创建系统卸载项，无需手动运行 CMD。
 
-现阶段先按 [BUILDING.md](BUILDING.md) 从原版构建，在独立副本验收。
-构建成功后会产生资源副本及版本校验的差分包：
+安装和恢复前自动保存当前设置与存档快照；原始资源与进度快照保存在游戏根目录 `backup`。恢复原版仅还原补丁资源，保留当前设置与存档。备份目录应保留。
 
-```powershell
-python install.py apply --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT-QA"
-python install.py verify --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT-QA"
-python install.py restore --bundle build/zh-CN/PATCH.json --target "D:/Games/WoT-QA"
-```
+推荐 1024×768，最高不建议超过 1920×1080。详细操作、旧版备份迁移和恢复说明见[绿色安装包](docs/PORTABLE_INSTALLER.md)。原版游戏 FMV 播放仍依赖可用的 QuickTime 运行时；补丁写入字幕与实际播放是不同环节。
 
-`apply` 只接受匹配原版指纹；先备份所有目标，再写入并重读。
-回滚从目标副本 `.localization-backup/` 恢复，不需要作者的私人备份目录。
-备份勿删除。安装后自行在 User.ini 的 `[WOT.WOTPlayer]` 中启用 `bSubtitles=True`。
-安装器不修改 EXE、启动器、地图、玩法或配置文件；当前高级选项显示适配包含经原版指纹校验的 Window.dll 差分，可回滚。
-
-包含全部 FMV 的完整测试副本及核验、回滚方式见 [FMV 正式测试](docs/FMV_FULL_QA.md)。当前完整测试入口附带思源黑体子集，游戏内字幕显示已确认；字体构建与私有加载说明见 [本地字体验证](docs/FMV_LOCAL_FONT.md)。
+源码构建与差分工具操作见 [BUILDING.md](BUILDING.md)，历史测试记录见 [FMV 正式测试](docs/FMV_FULL_QA.md)。
 
 ## 技术摘要
 

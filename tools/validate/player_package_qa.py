@@ -61,7 +61,7 @@ def qa(source, package, target, report):
     victim.write_bytes(pristine)
     assert all(digest(target / p) == h for p, h in before.items())
     assert all((target / p).read_bytes() == b for p, b in configs.items())
-    assert not (target / ".localization-backup/player-test/STATE.json").exists()
+    assert not (target / "backup/STATE.json").exists()
     results.append(run(target, "apply"))
     assert "bSubtitles=True" in user_ini.read_bytes().decode(codec)
     results.append(run(target, "verify"))

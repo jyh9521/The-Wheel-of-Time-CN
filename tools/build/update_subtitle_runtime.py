@@ -15,7 +15,8 @@ def update(target,old_path,new_path,replacement,receipt,restore=False):
     if not before[RESOURCE]['owned'] or not after[RESOURCE]['owned']:raise ValueError('Not an owned resource')
     if sha(replacement)!=after[RESOURCE]['modified_sha256']:raise ValueError('Replacement identity mismatch')
     if any(e['path'].startswith('/') or '..' in e['path'] or ':' in e['path'] for e in old['files']):raise ValueError('Invalid resource path')
-    state=target/'.localization-backup/player-test/STATE.json';runtime=target/RESOURCE
+    state=target/'backup/STATE.json';runtime=target/RESOURCE
+    if not state.exists(): state=target/'.localization-backup/player-test/STATE.json'
     expected=after if restore else before
     config=json.loads(state.read_text('utf-8-sig'))
     wanted=sha(new_path) if restore else sha(old_path)

@@ -47,11 +47,11 @@ def qa(original,exe,manifest,work):
         run('check',1);run('apply',1)
     finally:os.chmod(locked,stat.S_IREAD|stat.S_IWRITE)
     assert all(sha(game/n)==h for n,h in before.items())
-    assert not (game/'.localization-backup/player-test/STATE.json').exists()
+    assert not (game/'backup/STATE.json').exists()
     victim=game/spec['files'][0]['path'];clean=victim.read_bytes();victim.write_bytes(clean+b'wrong-version')
     run('check',1);run('apply',1);victim.write_bytes(clean)
     assert all(sha(game/n)==h for n,h in before.items())
-    assert not (game/'.localization-backup/player-test/STATE.json').exists()
+    assert not (game/'backup/STATE.json').exists()
     run('apply');run('verify');run('check');run('apply')
     assert 'bSubtitles=True' in config_text(user.read_bytes())
     for e in spec['files']:assert sha(game/e['path'])==e['modified_sha256']
