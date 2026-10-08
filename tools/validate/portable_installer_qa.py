@@ -10,6 +10,10 @@ import subprocess
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
+def config_text(raw):
+    return raw.decode('utf-16' if raw.startswith(b'\xff\xfe') else 'cp1252')
+
+
 def qa(original,exe,manifest,work):
     work.mkdir(parents=True,exist_ok=True)
     game=work/'新装 GOG 验证'
@@ -49,20 +53,24 @@ def qa(original,exe,manifest,work):
     assert all(sha(game/n)==h for n,h in before.items())
     assert not (game/'.localization-backup/player-test/STATE.json').exists()
     run('apply');run('verify');run('check');run('apply')
-    assert 'bSubtitles=True' in user.read_bytes().decode(codec)
+    assert 'bSubtitles=True' in config_text(user.read_bytes())
     for e in spec['files']:assert sha(game/e['path'])==e['modified_sha256']
+    # Restore must preserve the configuration currently used by the save menu,
+    # not just leave a save-data sentinel on disk.
+    current_configs={c['path']:(game/c['path']).read_bytes() for c in spec['config']}
     # External modification blocks restore instead of overwriting unrelated work.
     translated=victim.read_bytes();victim.write_bytes(translated+b'external-edit')
     run('restore',1);victim.write_bytes(translated)
     run('restore')
-    for n,h in before.items():assert sha(game/n)==h
-    for c,b in configs.items():assert (game/c).read_bytes()==b
+    for n,h in before.items():
+        if n not in current_configs:assert sha(game/n)==h
+    for c,b in current_configs.items():assert (game/c).read_bytes()==b
     for e in spec['files']:
         if e['owned']:assert not (game/e['path']).exists()
     assert save.read_bytes()==b'keep progress'
     run('apply');run('verify')
     (work/'VERIFICATION.json').write_text(json.dumps(dict(records=records,resources=len(spec['files']),
-        exe_sha256=sha(exe),rollback='Original file/config hashes restored; additions removed; saves retained',
+        exe_sha256=sha(exe),rollback='Original resources restored; additions removed; current INI and save files retained',
         final_status='Localized independent copy retained; original installation unchanged; game not launched'),ensure_ascii=False,indent=2),encoding='utf-8')
     print('PORTABLE EXE QA PASS: check without writes; unknown-version rejection; install; verify; guarded restore; reinstall; saves preserved')
 

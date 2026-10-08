@@ -85,6 +85,7 @@ def package(game, resources, runtime, output, locale="zh-CN"):
     manifest = {"format": "player-test-v1", "locale": locale,
                 "version": "GOG v68", "files": entries,
                 "launch": {"path": "System/WoT.exe", "sha256": sha((game / "System/WoT.exe").read_bytes())},
+                "progress": {"directories": ["Save"]},
                 "config": [{"path": "System/User.ini", "section": "WOT.WOTPlayer", "key": "bSubtitles", "value": "True"},
                            {"path": "System/WoT.ini", "section": "Engine.Engine", "key": "Language", "value": "int"}]}
     slot_path=ROOT/'locales'/locale/'save-slots.json'

@@ -11,9 +11,9 @@
   "install": "安装补丁",
   "restore": "恢复原版",
   "choose_prompt": "请选择包含 System、Maps 和 Movies 文件夹的游戏根目录。",
-  "footnote": "本补丁不会修改注册表或创建系统卸载项；安装时会自动备份原始文件，并保留现有设置与存档。\n安装完成后，请使用原游戏快捷方式启动游戏。建议游戏分辨率不要超过 1920×1080，否则界面文字可能过小，影响阅读。",
+  "footnote": "本补丁不会修改注册表或创建系统卸载项，安装时会自动备份原始文件，并保留现有设置与存档。\n\n安装完成后，请使用原游戏快捷方式启动游戏。\n\n推荐选择 1024×768 分辨率，以获得更清晰易读的界面文字。\n\n最高不建议超过 1920×1080，过高的分辨率会使文字偏小，影响阅读。",
   "folder_description": "选择《时光之轮》GOG 游戏根目录",
-  "restore_confirmation": "恢复安装前资源与配置？游戏存档保持原样。",
+  "restore_confirmation": "恢复原版游戏资源？当前设置和存档将保留，并在恢复前另存备份。",
   "busy_close": "正在处理文件，请等待操作结束。",
   "directory_missing": "游戏目录不存在。",
   "check_required": "请先验证当前目录。",
@@ -24,7 +24,7 @@
   "check_complete": "已确认游戏版本，可以安装补丁。",
   "verify_failed": "补丁安装验证未通过。",
   "install_complete": "补丁安装完成。请使用原游戏快捷方式启动游戏。",
-  "restore_complete": "原版文件恢复完成。",
+  "restore_complete": "原版游戏资源恢复完成，当前设置和存档已保留。",
   "operation_failed": "操作未完成，请查看结果。",
   "font_family": "Microsoft YaHei UI",
   "path_invalid": "路径无效。",
@@ -60,5 +60,7 @@
   "file_addition_exists": "新增文件路径已有文件，请检查是否已安装其他补丁。",
   "expected_hash": "预期 SHA-256",
   "actual_hash": "实际 SHA-256",
-  "report_invalid": "文件验证结果解析失败。"
+  "report_invalid": "文件验证结果解析失败。",
+  "footnote_emphasis": "不建议",
+  "restore_log_complete": "原版游戏资源恢复完成，当前设置和存档已保留。"
 }

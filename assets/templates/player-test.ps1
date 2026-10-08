@@ -30,6 +30,34 @@ function FileResult([string]$path,[string]$reason,[string]$expected='',[string]$
  Write-Output ('FILE_RESULT '+(@{path=$path;reason=$reason;expected=$expected;actual=$actual}|ConvertTo-Json -Compress))
 }
 function Put([string]$p,[byte[]]$bytes) { [IO.Directory]::CreateDirectory((Split-Path -Parent $p)) | Out-Null; [IO.File]::WriteAllBytes($p,$bytes) }
+function Snapshot-Progress([string]$phase) {
+ $destination=Join-Path $backup ('progress-snapshots/'+[DateTime]::Now.ToString('yyyyMMdd-HHmmss')+'-'+$phase+'-'+[Guid]::NewGuid().ToString('N'))
+ $paths=@($m.config | ForEach-Object {$_.path} | Select-Object -Unique)
+ if ($m.PSObject.Properties['progress']) {
+  foreach($directory in $m.progress.directories) {
+   if($directory -notmatch '^[A-Za-z0-9_-]+$'){throw 'Invalid progress directory'}
+   $folder=Join-Path $root $directory
+   if(Test-Path -LiteralPath $folder) {
+    if((Get-Item -LiteralPath $folder).Attributes -band [IO.FileAttributes]::ReparsePoint){throw 'Linked progress directory rejected'}
+    foreach($file in Get-ChildItem -LiteralPath $folder -File) {$paths+=($directory+'/'+$file.Name)}
+   }
+  }
+ }
+ $records=@()
+ foreach($relative in $paths) {
+  $source=[IO.Path]::GetFullPath((Join-Path $root $relative))
+  if(!$source.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Progress path escape'}
+  if(!(Test-Path -LiteralPath $source)){throw 'Progress file missing'}
+  if((Get-Item -LiteralPath $source).Attributes -band [IO.FileAttributes]::ReparsePoint){throw 'Linked progress file rejected'}
+  $bytes=[IO.File]::ReadAllBytes($source);$target=Join-Path $destination $relative
+  Put $target $bytes
+  $hash=Hash $source
+  if((Hash $target) -ne $hash){throw 'Progress snapshot differs'}
+  $records+=@{path=$relative;sha256=$hash;size=$bytes.Length}
+ }
+ Put (Join-Path $destination 'SNAPSHOT.json') ($utf8.GetBytes((@{phase=$phase;files=$records}|ConvertTo-Json -Depth 8)))
+ Write-Output ('PROGRESS BACKUP PASS: '+$destination)
+}
 function Edit-Ini([string]$p,$changes) {
  $bytes=[IO.File]::ReadAllBytes($p); $enc=[Text.Encoding]::GetEncoding(1252); $skip=0
  if ($bytes.Length -ge 2 -and $bytes[0] -eq 255 -and $bytes[1] -eq 254) {$enc=[Text.Encoding]::Unicode;$skip=2}
@@ -72,6 +100,14 @@ try {
  if (Test-Path $statePath) {
   $existing=Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
   if ($existing.manifest_sha256 -ne (Hash (Join-Path $package 'MANIFEST.json'))) {
+   # Explicitly packaged predecessor manifests permit resource-only recovery.
+   $recovery=Join-Path $package 'RESTORE_MANIFESTS.json'
+   if($Action -eq 'restore' -and (Test-Path -LiteralPath $recovery)) {
+    $known=Get-Content -LiteralPath $recovery -Raw -Encoding UTF8 | ConvertFrom-Json
+    $entry=$known.PSObject.Properties[$existing.manifest_sha256]
+    if($entry) {$prior=$entry.Value; $prior|Add-Member -MemberType NoteProperty -Name progress -Value $m.progress -Force; $m=$prior}
+    else {throw 'Backup belongs to another package; matching recovery manifest required'}
+   } else {
    # A completed restore may leave an older STATE.json. Accept only fully
    # restored resources for check/apply; foreign active patches remain rejected.
    $restored=($Action -eq 'check' -or $Action -eq 'apply')
@@ -80,6 +116,7 @@ try {
     elseif(!(Match (Target $e.path) $e.original_sha256 $e.original_size)) {$restored=$false}
    }
    if(!$restored){FileResult '.localization-backup/player-test/STATE.json' 'backup_package';throw 'Backup belongs to another package; restore with its original installer first'}
+   }
   }
  }
  if ($Action -eq 'check') {
@@ -127,11 +164,11 @@ try {
    else {if (!(Match (Join-Path $backup $e.path) $e.original_sha256 $e.original_size)) {throw 'Backup differs'}
     if (!(Match $p $e.original_sha256 $e.original_size) -and !(Match $p $e.modified_sha256 $e.modified_size)) {throw "External modification: $($e.path)"}}
   }
-  foreach($c in $state.config) {if ((Hash (Join-Path $backup $c.path)) -ne $c.sha256) {throw 'Config backup differs'}}
+  Snapshot-Progress 'restore'
   foreach($e in $m.files) {$p=Target $e.path;if($e.owned) {if(Test-Path $p){[IO.File]::Delete($p)}} else {Put $p ([IO.File]::ReadAllBytes((Join-Path $backup $e.path)))}}
-  foreach($c in $state.config) {Put (Target $c.path) ([IO.File]::ReadAllBytes((Join-Path $backup $c.path)))}
+  # Preserve current INI bytes: settings and save-slot metadata evolve during play.
   foreach($e in $m.files) {if($e.owned) {if(Test-Path (Target $e.path)){throw 'Addition restore failed'}} elseif (!(Match (Target $e.path) $e.original_sha256 $e.original_size)) {throw 'Restore verification failed'}}
-  Write-Output ('RESTORE PASS: resources='+$m.files.Count+'; original settings restored; saves untouched')
+  Write-Output ('RESTORE PASS: resources='+$m.files.Count+'; current settings and save slots preserved; saves untouched')
   exit 0
  }
  if (Test-Path $statePath) {
@@ -162,6 +199,7 @@ try {
   }finally{$stream.Dispose()}
  }
  $config=@();foreach($group in ($m.config | Group-Object path)) {$p=Target $group.Name;if(!(Test-Path $p)){throw "Missing configuration: $($group.Name)"};AssertWritable $p;$config+=@{path=$group.Name;sha256=(Hash $p)}}
+ Snapshot-Progress 'apply'
  [IO.Directory]::CreateDirectory($backup)|Out-Null
  foreach($e in $m.files){if(!$e.owned){Put (Join-Path $backup $e.path) ([IO.File]::ReadAllBytes((Target $e.path)))}}
  foreach($c in $config){Put (Join-Path $backup $c.path) ([IO.File]::ReadAllBytes((Target $c.path)))}
