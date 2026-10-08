@@ -1,5 +1,7 @@
 # 动态界面文本补漏（2026-10-04）
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../README.md)、[安装说明](PORTABLE_INSTALLER.md)和[显示限制](KNOWN_ISSUES.md)。
+
 ## 已定位与已构建
 
 - 教程中央按键提示存于Tutorial.wot的MessageTrigger.Messages实例，不在WoTsubtitles.int。只读提取35条实际可输出非空提示，按地图SHA、actor/slot/source SHA绑定译文。只忽略首字符处的//；原有一条前缀为“ //”，译文保留前缀，不改变判断。

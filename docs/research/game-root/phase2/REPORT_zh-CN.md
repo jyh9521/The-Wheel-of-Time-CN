@@ -1,5 +1,7 @@
 # 三字中文位图字体验证（2026-10-02）
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../../../../README.md)、[安装说明](../../../PORTABLE_INSTALLER.md)和[显示限制](../../../KNOWN_ISSUES.md)。
+
 ## 结论
 实际游戏单人菜单已显示 **新游戏**。原版字体配合同一份中文 `.int` 时该行空白；补入三字后可见；恢复原资源后 **New Game** 再次可见。三次正式对照均正常退出，退出码0。
 
@@ -38,7 +40,7 @@
 前两次基线启动/截图失败（原资源DirectDraw错误、随后Recovery Mode），已如实记入验证记录；随后正式对照成功。尚未验证Windows10、其他Windows语言、全部分辨率或长时间游戏稳定性。
 
 ### 中文截图
-![新游戏](C:\GOG Games\The Wheel of Time\docs\phase2\MODIFIED.png)
+新游戏（历史本地产物 `MODIFIED.png`，未随源码发布）
 
 ## 交付与使用
 - 中文测试启动：`C:\GOG Games\The Wheel of Time\work\phase2\Launch_ChineseFontTest.cmd`。进入游戏后按Esc→Enter查看。

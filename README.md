@@ -76,12 +76,13 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 
 ## 已知问题
 
-译文仍为初稿，全流程剧情同步、长文本布局与通关稳定性待正式测试。字体沿用原版固定像素尺寸，4K 界面偏小；推荐 1080p。FMV 依赖系统 QuickTime 与配置字体，其他语言尚未完成实机验收。详见 [已知问题](docs/KNOWN_ISSUES.md)。
+完整通关测试已完成，未发现补丁相关问题。高分辨率下界面文字偏小是原版固定像素字体的显示特性，并非补丁引入；推荐 1024×768，最高不建议超过 1920×1080。详见 [显示限制](docs/KNOWN_ISSUES.md)。
 
 ## 更多开发与测试进展
 
 更详细的开发日志、测试结论、字幕覆盖进展、教程翻译进展、迁移审计与专项 QA，请见：
 
+- [文档索引](docs/README.md)
 - [开发与测试进展](docs/STATUS.md)
 - [QA 记录](docs/qa.md)
 - [字幕覆盖报告](docs/SUBTITLE_COVERAGE.md)

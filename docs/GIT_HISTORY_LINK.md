@@ -1,5 +1,7 @@
 # Git 历史衔接（2026-10-03）
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../README.md)、[安装说明](PORTABLE_INSTALLER.md)和[显示限制](KNOWN_ISSUES.md)。
+
 - 从现有远端 `https://github.com/jyh9521/The-Wheel-of-Time-CN.git` 完整克隆Git元数据，以 `origin/main` 的 `dee6e61b6df8d037dbb021cf6b3a0c9db4022a8b` 为基底。
 - 新工作区当前分支 `main`，跟踪 `origin/main`；迁移文件覆盖层保留并进入暂存区，尚未commit/push。没有使用git init创建本项目新历史，没有改写旧commit，没有强推。
 - 远端主分支与此前迁移所用基底相同，因此没有分叉或需要解决的内容冲突；3份格式/陷阱/已知问题文档采用大写文件名，Git识别为重命名，不是删除研究内容。

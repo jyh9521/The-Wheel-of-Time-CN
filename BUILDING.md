@@ -1,5 +1,7 @@
 # 构建与复现
 
+> 正式安装包为 `WoT-CN-v1.0.exe`，完整通关测试已完成。当前安装与重建入口见 [安装器说明](docs/PORTABLE_INSTALLER.md)。下方带日期的迁移、PoC 和 ZIP 构建段落属于历史复现记录；历史文件名不作为正式下载名称。
+
 ## 环境
 
 工具：Python **3.14**（本地验证 3.14.2），Pillow 12.2.0、fonttools 4.63.0。
@@ -44,7 +46,7 @@ python -m venv .venv
 
 差分和字库仍可能包含字体衍生数据/游戏结构数据，**本地构建不自动批准再分发**。
 发布前选择可再分发字体、审查差分、添加许可与玩家说明。
-目前没有预编译二进制工具或正式安装包；所有工具都是 Python 源码。
+正式安装包为 [WoT-CN-v1.0.exe](https://github.com/jyh9521/The-Wheel-of-Time-CN/releases/download/v1.0/WoT-CN-v1.0.exe)，可从 [v1.0 发布页](https://github.com/jyh9521/The-Wheel-of-Time-CN/releases/tag/v1.0) 下载。构建工具以源码提供。
 
 ## 可重复构建与回滚
 
@@ -93,7 +95,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 日志必须出现相应 `Best-match display mode`；JSON 的窗口截图尺寸仅表示桌面捕获面积。
 画面是否有字、裁切、换行、标点和清晰度必须人工观察。
 
-## 迁移后的独立构建
+## 历史记录：迁移后的独立构建
 
 新正式目录为C:/Users/noway/Downloads/The-Wheel-of-Time-CN；路径只是当前实例，不写入工具核心。始终从源码树执行build.py，以--game-dir指定指纹匹配的原版安装、--font指定字体、--out指定输出。此前game-root的backup/work和现成汉化包均不是依赖。构建仅需System/WOT.u、WoT.int、WoTsubtitles.int、Angreal.int；运行时探针另需完整游戏，但迁移测试没有运行探针。install.py用--target引用指定的副本，自动备份与严格散列回滚。
 
@@ -109,7 +111,7 @@ python -m tools.validate.qa_policy --locale zh-CN --out build/qa-plan.json
 
 正常build入口自动重建完整字形边界并按profile.font_line_height_policy=preserve-legacy保留原版行高；locale.font提供collection_index、top_padding/bottom_padding（当前0）。旧baseline_anchor仅兼容覆盖检查，不再决定裁剪边界。随后应用profile中经过版本/导出SHA/上下文保护的字幕显示Y字段。FONT_DIFF的bytecode_unchanged仅属于字体阶段，最终BUILD_REPORT.resource_edits/bytecode_unchanged才描述完整输出。无需手工改二进制。详见docs/GLYPH_LAYOUT_FIX.md。
 
-## 全字幕专项进展（2026-10-03）
+## 历史记录：全字幕专项进展（2026-10-03）
 
 当前49条草稿；保留原37条，补译教程Tes_02～Tes_13。教程原版80条英文均非空，但中文仅13/80；其余对白817空键须分类恢复，不能等同817句缺文。新译文已静态构建验证，实际后续触发/时序、剧情视频与全对白覆盖待验。详见[字幕覆盖报告](docs/SUBTITLE_COVERAGE.md)。
 
@@ -129,7 +131,7 @@ python build.py --locale zh-CN --game-dir "GAME" --subtitle-source "DOWNLOADED_S
 
 `--subtitle-source`未知/改动输入在写产物前拒绝；保留原版profile和安装器原版hash校验。字幕Len补偿以合并后真实英文长度为基准；已有教程英文被保留，因此原49条的源hash与时长规则不变。
 
-## 教程翻译批次（2026-10-03）
+## 历史记录：教程翻译批次（2026-10-03）
 
 Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持。基础译文116条，启用社区来源时361条中128条已有译文、233条待译。文本完成不等于实机验收：这一阶段只做了离线验证，未运行游戏，完整教程及分支留待1080p实机检查。测试方法和80键清单见[TUTORIAL_QA.md](docs/TUTORIAL_QA.md)。本地差分预览包包含标准库安装器，安装/核验/回滚已验证；未发布公共Release。
 
@@ -138,7 +140,7 @@ Tes_01～Tes_80已全部有中文草稿；该阶段追加67条，原49条保持�
 Tes_01原非空文本也会缺段：该阶段仅经双source hash批准采用社区完整432字符，译文由subtitle_overrides组合，Len补偿使用432而非350。完整版教程构建需--subtitle-source；其余条目不动。详见[TUTORIAL_INTRO_FIX.md](docs/TUTORIAL_INTRO_FIX.md)；80/80非空key不等于音频全段覆盖。
 
 
-## 当前字幕来源策略（2026-10-03）
+## 历史记录：当前字幕来源策略（2026-10-03）
 采用社区优先完整并集：所有同key冲突使用社区值，原版独有key保留。详见 [COMMUNITY_SOURCE_POLICY](docs/COMMUNITY_SOURCE_POLICY.md)。旧保守合并描述仅为历史记录。
 
 ## 实验性字幕分段模块
@@ -146,7 +148,7 @@ Tes_01原非空文本也会缺段：该阶段仅经双source hash批准采用社
 单音频多段字幕的资源级实验模块需原版GOG UCC（不再分发），独立构建入口为`python -m tools.build.subtitle_runtime build --game-dir GAME --locale zh-CN --out build/subtitle-timing-audit/fixed`。它不改地图/音频/EXE/DLL，不自动替换玩家类或默认汉化构建；专用测试入口、安装/回滚及实机限制见[SUBTITLE_SEGMENTS](docs/SUBTITLE_SEGMENTS.md)。编译成功不等于游戏中类选择、分段或存档兼容验收通过。
 
 
-## 全文首轮构建与覆盖审计（2026-10-04）
+## 历史记录：全文首轮构建与覆盖审计（2026-10-04）
 
 当前profile额外固定原版WoTPawns.int与WoTTraps.int的大小/SHA-256；构建仍从指定的原版读取，生成资源增至6个。没有固定“4文件”的安装假设，集成验证按实际manifest文件数执行。
 
@@ -156,7 +158,7 @@ python -m tools.validate.text_coverage --locale zh-CN --game-dir "GAME" --subtit
 
 覆盖审计区分非空草稿、原样保留条目、未纳入文本、与源文完全相同的值；不会把`validate`的0空译文当成全中文或审校完成。当前1002草稿仍全部draft；--strict应失败。165条保留规则按身份与精确源文SHA-256固定，改变来源则重新审查。其余工具/字体/来源依赖与重建命令不变。
 
-## 图片按钮构建（2026-10-04）
+## 历史记录：图片按钮构建（2026-10-04）
 
 默认 `python build.py --locale zh-CN --game-dir GAME --subtitle-source DOWNLOADED_SUBTITLES --font FONT --out build/zh-CN` 已包含八张中文按钮纹理；不依赖手工图片或旧工作区。配置、原对象指纹和工具分别位于locales/<locale>/texture-labels.json、profiles/texture-labels.json、tools/font/build_texture_labels.py。字体必须覆盖全部标签字符。输出仍为六资源PATCH.json，额外输出TEXTURE_LABEL_DIFF.json和texture-labels/*.png。省略locale的texture_labels配置可跳过图片标签阶段。
 
@@ -168,7 +170,7 @@ python -m tools.validate.texture_labels --source MODIFIED_WOT --profile profiles
 
 BASELINE指此前字库/译文一致、未修改按钮的WOT.u副本；范围测试要求所有其他导出对象、包表和文件大小不变。全新构建无需该副本，只需要经profile校验的原版游戏、社区字幕来源及字体。
 
-## 原生高级选项补翻（2026-10-04）
+## 历史记录：原生高级选项补翻（2026-10-04）
 
 locale.config.native_ui指向native-ui.json，默认构建接入Preferences子字段导入器；该批新增13个原版hash固定的.int输入，PATCH共19资源，不依赖旧手工文件。省略native_ui配置可关闭该阶段。原生UI使用Windows字体，而非游戏字库；新增译文的字体覆盖会在validate --font中检查。新语言需同步树根标题及所有Caption/Parent；详见[原生高级选项](docs/NATIVE_ADVANCED_OPTIONS.md)。
 
@@ -198,7 +200,7 @@ python -m tools.validate.native_display --dll build/zh-CN/resources/System/Windo
 
 第二条只在CPU模拟器执行自编显示stub，不启动或注入游戏。安装前完整退出游戏，使用新20文件manifest；升级现有19文件补丁先通过旧manifest恢复，再应用新manifest。原始游戏目录只作输入，测试目录另行保存；卸载按新manifest恢复20个原版资源。
 
-## 动态文本补漏与FMV提取（2026-10-04）
+## 历史记录：动态文本补漏与FMV提取（2026-10-04）
 
 基础构建新增键名表和6条进度文字，字库覆盖35条教程提示。提示须另行重建LocaleRuntime并使用现有Game+Class入口；源地图只读且指纹核验。详见[UI_TEXT_FOLLOWUP](docs/UI_TEXT_FOLLOWUP.md)。FMV的ffprobe参数化只读提取见[FMV_SUBTITLES](docs/FMV_SUBTITLES.md)，暂不安装视频字幕或重编码。
 
@@ -265,7 +267,7 @@ python -m tools.build.build_property_limits restore-copy --transaction build/pro
 
 默认构建现追加 18px SubtitleFont 与 SubtitleRuntime.u/int，并将 giWOT.HUDType 指向专用 HUD 子类。需使用匹配 profile 的原版 UCC；构建自动在独立目录编译，不启动游戏。新增自有资源由 owned_additions 记录，安装后恢复会移除对应新增文件。译文字符扫描、普通 UI 字库和地图提示沿用原流程。细节见 [字幕专用显示层](docs/SUBTITLE_DISPLAY.md)。
 
-## 玩法文本与字幕路径补漏（2026-10-05）
+## 历史记录：玩法文本与字幕路径补漏（2026-10-05）
 
 构建新增 profiles/package-text.json 与 locales/<locale>/package-text.json，自动重建 WOT.u/WOTPawns.u 的指定字符串属性。原版输入需包含 WOTPawns.u 及 profile 内的地图文件。运行时精确显示映射配置位于 runtime-messages.json；字幕状态源码位于 SubtitleRuntime/Classes/CaptionState.uc。
 
@@ -282,9 +284,9 @@ python -X utf8 -m tools.validate.full_text_audit --game-dir <独立测试游戏�
 完整资源与 FMV/字体运行副本构建完成后，可执行 `python tools/build/package_player_test.py --game-dir <原版目录> --resource-build <资源构建目录> --runtime-dir <完整运行副本> --locale zh-CN --out dist/wot-zh-CN-player-test.zip`。构建依赖 Python，安装端仅依赖 Windows PowerShell/.NET。实际 ZIP 经过原版独立副本安装、拒绝未知版本、校验、卸载逐字节恢复和重新安装验证；不执行游戏。操作见[测试包说明](docs/PLAYER_TEST_PACKAGE.md)。
 
 
-## 本地直接覆盖测试包
+## 历史记录：本地直接覆盖测试包
 
-当前通关测试使用直接覆盖 ZIP，而非 CMD 差分安装器。执行：
+历史覆盖式测试方案使用直接覆盖 ZIP；当前正式发布使用绿色 EXE 安装器。以下 ZIP 命令仅用于复现历史方案：
 
 ```powershell
 python tools/build/package_overlay_test.py --game-dir <原版目录> --runtime-dir <完整运行副本> --delta-package <已验证差分清单ZIP> --locale zh-CN --out dist/wot-zh-CN-overlay-test.zip --work build/overlay-test-package
@@ -295,7 +297,7 @@ python tools/build/package_overlay_test.py --game-dir <原版目录> --runtime-d
 
 ## 小体积绿色安装 EXE
 
-当前本地测试可通过图形界面选目录、校验、安装或恢复，正常游戏入口保持原样。构建命令和依赖见[绿色安装包](docs/PORTABLE_INSTALLER.md)。构建使用系统 .NET Framework 的 csc.exe（WinForms/Compression/Web.Extensions），安装仅依赖 Windows 自带 .NET/PowerShell。src/installer/PortableInstaller.cs 为可重建源码；界面文案在 locales/<locale>/installer-ui.json。打包将已有差分、向导补充差分和安装引擎嵌入单 EXE，不嵌入完整游戏或影片。
+当前正式安装器可通过图形界面选目录、验证、安装或恢复，正常游戏入口保持原样。构建命令和依赖见[绿色安装包](docs/PORTABLE_INSTALLER.md)。构建使用系统 .NET Framework 的 csc.exe（WinForms/Compression/Web.Extensions），安装仅依赖 Windows 自带 .NET/PowerShell。src/installer/PortableInstaller.cs 为可重建源码；界面文案在 locales/<locale>/installer-ui.json。打包将已有差分、向导补充差分和安装引擎嵌入单 EXE，不嵌入完整游戏或影片。
 
 ## 仅重建字幕运行资源
 

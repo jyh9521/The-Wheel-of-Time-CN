@@ -1,5 +1,7 @@
 # FMV字幕调查（2026-10-04）
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../README.md)、[安装说明](PORTABLE_INSTALLER.md)和[显示限制](KNOWN_ISSUES.md)。
+
 ## 已验证事实
 
 旧研究脚本mov_text_export.py已有文字轨发现；该阶段复核原版，并整理为tools/extract/movie_text.py，不依赖旧工作目录或硬编码ffprobe路径。未修改视频，未转录整部游戏。

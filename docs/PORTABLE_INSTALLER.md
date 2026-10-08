@@ -2,7 +2,7 @@
 
 ## 安装流程
 
-打开 WoT-zh-CN-Portable.exe，选择包含 System、Maps、Movies 的 GOG 游戏根目录。点击“校验文件”；文件版本和包内数据校验通过后，“安装补丁”才可点击。安装结束会重新校验输出文件。此后沿用 GOG 原游戏快捷方式或 System\WoT.exe 启动，不需要专用启动脚本。
+打开 `WoT-CN-v1.0.exe`，选择包含 System、Maps、Movies 的 GOG 游戏根目录。点击“验证文件”；文件版本和包内数据校验通过后，“安装补丁”才可点击。安装结束会重新校验输出文件。此后沿用 GOG 原游戏快捷方式或 System\WoT.exe 启动，不需要专用启动脚本。
 
 不写注册表，不创建系统卸载项、开始菜单项或桌面快捷方式。仅在临时目录展开安装数据，并在游戏目录保存汉化资源与 `backup` 原件备份。无需 Python；界面使用系统 .NET Framework，后台使用系统 Windows PowerShell，不弹出命令行窗口。
 
@@ -22,7 +22,7 @@
 
 旧安装器曾整份恢复首次安装前的 INI，可能导致后续设置和存档槽位名称回退，虽然存档数据文件仍在。新版内嵌已验证的旧版本恢复清单，匹配备份中的清单散列后，允许按该版本原始/修改后资源散列执行保留当前配置的恢复。已收录的旧版本可直接使用新版恢复；未知版本继续拒绝。不要再使用有整份 INI 回退行为的旧安装器进行更新。
 
-### 参考译名更新测试包（2026-10-07）
+### 历史参考译名更新测试包（2026-10-07）
 
 `WoT-zh-CN-Portable-ReferenceRefresh.exe` 包含本次参考译名、开场前四条字幕及里斯琳前后空格修正，重新生成随包思源黑体子集。普通 UI 字号不变，顶部游戏字幕仍为专用 18px，FMV 绘制大小不变。
 
@@ -30,13 +30,13 @@
 
 旧包恢复后可能保留旧 `STATE.json`。新包仅在所有目标资源匹配原版 SHA-256 且补丁新增文件均不存在时，允许验证和安装；仍处于旧补丁状态或混合状态时继续拒绝，不绕过版本校验。该识别不删除旧备份，实际安装仍先完整重建、验证全部输出，再备份并写入。
 
-本地测试版本尚未完成通关验收。字体/派生字库发布许可边界仍见 LICENSING.md，不作为公开 Release 上传。
+上述结论对应当时测试版本；正式版 v1.0 已完成完整通关测试并发布。各类资源许可边界见 [许可说明](../LICENSING.md)。
 
 ## 重建与验证
 
 ```powershell
-python tools/build/package_portable_installer.py --source-package <已验证差分ZIP> --game-dir <原版目录> --window <向导汉化后的Window.dll> --out dist/WoT-zh-CN-Portable.exe --work build/portable-installer
-python tools/validate/portable_installer_qa.py --game-dir <原版目录> --exe dist/WoT-zh-CN-Portable.exe --manifest build/portable-installer/DIFF_FILE.json --work build/portable-installer-qa
+python tools/build/package_portable_installer.py --source-package <已验证差分ZIP> --game-dir <原版目录> --window <向导汉化后的Window.dll> --out dist/WoT-CN-v1.0.exe --work build/portable-installer
+python tools/validate/portable_installer_qa.py --game-dir <原版目录> --exe dist/WoT-CN-v1.0.exe --manifest build/portable-installer/DIFF_FILE.json --work build/portable-installer-qa
 ```
 
 源码界面位于 src/installer/PortableInstaller.cs；安装引擎为 assets/templates/player-test.ps1。构建使用 Windows .NET Framework C# 编译器，无需额外下载安装器框架。语言数据和显示层继续沿用既有 locale 工具链。最终 EXE 内嵌差分，而非完整原程序、视频或游戏包。
@@ -52,7 +52,7 @@ python tools/validate/portable_installer_qa.py --game-dir <原版目录> --exe d
 已有经验证的安装数据可以按新资源构建更新，未改变的 FMV、配套字体和向导差分保持原样：
 
 ```powershell
-python -m tools.build.refresh_installer_ui --payload <旧构建Package.zip> --baseline <旧安装器.exe> --resources <新资源构建> --baseline-resources <旧资源构建> --game-dir <原版目录> --output <新安装器.exe> --work <独立输出目录>
+python -m tools.build.refresh_installer_ui --payload <旧构建Package.zip> --baseline <旧安装器.exe> --resources <新资源构建> --baseline-resources <旧资源构建> --game-dir <原版目录> --output dist/WoT-CN-v1.0.exe --work <独立输出目录>
 ```
 
 新旧资源集合与 locale 必须一致；发生变化的资源仍通过原版散列与差分重建校验。旧资源构建用于区分未改变的普通资源与其后追加的向导处理，不以普通资源覆盖已验证的追加处理。
@@ -63,7 +63,7 @@ python -m tools.build.refresh_installer_ui --payload <旧构建Package.zip> --ba
 
 ## 正式版 1.0.0
 
-正式发布文件为 `WoT-CN-v1.0.exe`（构建输出名称为 `WoT-zh-CN-1.0.0.exe`），包含最新校对译文。安装器标题区域采用提供的简体中文 LOGO，程序图标采用提供的 GOG ICO，两个资源均嵌入 EXE，无需随附图片文件。
+正式发布文件为 `WoT-CN-v1.0.exe`，包含最新校对译文。安装器标题区域采用提供的简体中文 LOGO，程序图标采用提供的 GOG ICO，两个资源均嵌入 EXE，无需随附图片文件。
 
 原始资源及游玩进度快照统一保存在游戏根目录 `backup`。旧版 `.localization-backup/player-test` 在验证时只读识别，在安装或恢复前迁移至 `backup`；保留原有 STATE 与备份内容。目标目录已有无关文件或存在链接时停止操作，不覆盖无关备份。旧版本恢复仍受打包的 manifest SHA-256 白名单及资源散列约束。
 

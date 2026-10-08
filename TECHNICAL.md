@@ -1,5 +1,7 @@
 # 技术实现与证据层级
 
+> 正式版 v1.0 已完成完整通关测试，未发现补丁相关问题。本文保留工具规范、技术结论与带日期的阶段记录；历史待办和产物名称不代表正式版状态。当前发布文件为 `WoT-CN-v1.0.exe`，参见 [安装说明](docs/PORTABLE_INSTALLER.md)与[显示限制](docs/KNOWN_ISSUES.md)。
+
 ## 已验证事实
 
 本地研究对象的 WOT.u 为 UE 包版本 68；原版 SHA-256、大小见 profiles/gog-v68.json。

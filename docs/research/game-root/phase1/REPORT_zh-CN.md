@@ -1,5 +1,7 @@
 # The Wheel of Time GOG 简体中文汉化：第一阶段分析报告
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../../../../README.md)、[安装说明](../../../PORTABLE_INSTALLER.md)和[显示限制](../../../KNOWN_ISSUES.md)。
+
 日期：2026-10-02（Asia/Tokyo）。分析对象：本地现有安装；不是根据 Unreal Tournament 的版本能力推定。
 
 ## 结论摘要
@@ -16,7 +18,7 @@
 
 ### 扫描范围与结果
 
-整个原安装已列入 [原始文件清单](C:/GOG Games/The Wheel of Time/docs/phase1/original_manifest.json)，包括 Help、Movies 和根目录，不只扫描指定的五个目录。
+整个原安装已列入 原始文件清单（历史本地产物 `original_manifest.json`，未随源码发布），包括 Help、Movies 和根目录，不只扫描指定的五个目录。
 
 | 资源 | 实际数量 | 结论 |
 |---|---:|---|
@@ -54,7 +56,7 @@
 
 例：`Mission_05c.wot / MessageTrigger0.Messages[0]` 保存内门操作提示；`Tutorial.wot` 保存独立教程提示。因此“只翻 WoT.int 和 WoTsubtitles.int 就覆盖全部剧情提示”并不成立。
 
-[地图字符串与原始偏移](C:/GOG Games/The Wheel of Time/docs/phase1/map_text_properties.json) · [所有包对象](C:/GOG Games/The Wheel of Time/docs/phase1/packages.json) · [localized 声明](C:/GOG Games/The Wheel of Time/docs/phase1/localized_declarations.json)
+地图字符串与原始偏移（历史本地产物 `map_text_properties.json`，未随源码发布） · 所有包对象（历史本地产物 `packages.json`，未随源码发布） · localized 声明（历史本地产物 `localized_declarations.json`，未随源码发布）
 
 ## 2. 每类文件负责什么文本，以及标准 localization 是否适用
 
@@ -70,7 +72,7 @@
 
 **确实存在硬编码文字**：`WOT.BattleScoreBoard.DrawHeader` 直接绘制 `Game Type:`、`Map Title:`、`Author:`、`Ideal Player Load:`。这些不是简单补一个 `.zht` 键就会被该调用读取。当前列出了 129 处静态候选，包含注释/标点/调试路径，仍需逐项筛选。优先完成已有 localization 覆盖，硬编码遗漏另列清单；未改脚本或字节码。
 
-[硬编码 UI 候选](C:/GOG Games/The Wheel of Time/docs/phase1/hardcoded_ui_candidates.json) · [原生 UCC 导出记录](C:/GOG Games/The Wheel of Time/docs/phase1/UCC_export.txt)
+硬编码 UI 候选（历史本地产物 `hardcoded_ui_candidates.json`，未随源码发布） · 原生 UCC 导出记录（历史本地产物 `UCC_export.txt`，未随源码发布）
 
 ## 3. 字幕系统结构
 
@@ -104,9 +106,9 @@ Localize(string(PackageName), string(S.Name), string(SubtitlesPackageName), true
 
 11 个 DialogA 缺键对象：Grn_01..05、Int_16、Nar_01、Nar_02、Int_15、Int_17、Int_18e。需要先确认其剧情用途和本地实际触发，再补键。
 
-完整逐键结果保存在 [字幕—音频—事件关联表](C:/GOG Games/The Wheel of Time/docs/phase1/subtitle_audio_map.json)：每条保留原文本/空状态、音频包、Sound 导出索引/偏移、地图 Actor、Tag、SoundDispatcher 的事件与 Delay，或明确记录无直接关联。当前静态事件关联覆盖 220 个键；这不是每个键的完整运行时播放时序。角色默认 SoundTable、继承、脚本动态触发仍需补追踪。
+完整逐键结果保存在 字幕—音频—事件关联表（历史本地产物 `subtitle_audio_map.json`，未随源码发布）：每条保留原文本/空状态、音频包、Sound 导出索引/偏移、地图 Actor、Tag、SoundDispatcher 的事件与 Delay，或明确记录无直接关联。当前静态事件关联覆盖 220 个键；这不是每个键的完整运行时播放时序。角色默认 SoundTable、继承、脚本动态触发仍需补追踪。
 
-[地图音频事件索引](C:/GOG Games/The Wheel of Time/docs/phase1/map_audio_links.json) · [缺字幕键音频](C:/GOG Games/The Wheel of Time/docs/phase1/dialog_sounds_missing_keys.json)
+地图音频事件索引（历史本地产物 `map_audio_links.json`，未随源码发布） · 缺字幕键音频（历史本地产物 `dialog_sounds_missing_keys.json`，未随源码发布）
 
 ### 补写与已有文本恢复
 
@@ -141,7 +143,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 
 现阶段尚未导入中文字体、尚未证明三个汉字实际成像；只是资源结构和渲染分支证实该路线有依据。下一轮先尝试原版编辑器 TrueType importer 的 Unicode 范围参数；若旧 importer 能力不足，再做保留对象身份/其他导出的字体资源写入器。由于 WOTCanvas 写死 Font'WOT.F_WOTReg14' 等引用，仅增加一个无引用的 Chinese.utx 不会自动生效。
 
-[字体完整结构](C:/GOG Games/The Wheel of Time/docs/phase1/font_structure.json) · [Engine 渲染反汇编](C:/GOG Games/The Wheel of Time/docs/phase1/Engine_text_disassembly.txt) · [编辑器字体导入工厂](C:/GOG Games/The Wheel of Time/docs/phase1/Editor_font_exports.json)
+字体完整结构（历史本地产物 `font_structure.json`，未随源码发布） · Engine 渲染反汇编（历史本地产物 `Engine_text_disassembly.txt`，未随源码发布） · 编辑器字体导入工厂（历史本地产物 `Editor_font_exports.json`，未随源码发布）
 
 ## 5. 当前编码方式
 
@@ -153,7 +155,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 - 当前主机 Windows build 26300，ACP 932。该次没有改变非 Unicode 系统区域设置，UTF-16 不依赖把主机切成中文代码页。
 - `.u`/地图中的 FString 属序列化字符串，不能直接当 `.int` 文本编码原地替换。
 
-[编码检测清单](C:/GOG Games/The Wheel of Time/work/phase1/export/encodings.json) · [本版 Core 文件加载分支](C:/GOG Games/The Wheel of Time/docs/phase1/Core_load_string_full.txt)
+编码检测清单（历史本地产物 `encodings.json`，未随源码发布） · 本版 Core 文件加载分支（历史本地产物 `Core_load_string_full.txt`，未随源码发布）
 
 ## 6. 中文显示测试结果与视频字幕调查
 
@@ -172,7 +174,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 
 “画面只见 ASCII”描述的是**现有字体的表现**，不是整个游戏不支持 Unicode。原版字体缺页与零尺寸处理分支吻合。
 
-[英文截图](C:/GOG Games/The Wheel of Time/docs/phase1/BASELINE.png) · [中文空白截图](C:/GOG Games/The Wheel of Time/docs/phase1/MODIFIED.png) · [回滚截图](C:/GOG Games/The Wheel of Time/docs/phase1/ROLLBACK.png) · [独立 locale 对照](C:/GOG Games/The Wheel of Time/docs/phase1/LOCALE_CONTROL.png)
+英文截图（历史本地产物 `BASELINE.png`，未随源码发布） · 中文空白截图（历史本地产物 `MODIFIED.png`，未随源码发布） · 回滚截图（历史本地产物 `ROLLBACK.png`，未随源码发布） · 独立 locale 对照（历史本地产物 `LOCALE_CONTROL.png`，未随源码发布）
 
 试验中早期窗口化采集因旧渲染器/窗口选择/DPI 处理产生无效截图，并有一次采集后强制终止；这些没有当作中文测试结论。最终截图使用正确的原版全屏路径与 DPI-aware 坐标。只测试当前主机，Windows 10、其他主机及字体补丁长期稳定性尚未测试。
 
@@ -189,7 +191,7 @@ UFont 序列化已核对至对象末尾：基础属性结束 → Pages 数组 �
 - 无需立即烧录字幕或重编码视频；优先研究已有文本轨的启用、文本格式和无损 remux，保证音视频数据不变。该阶段未改 MOV。
 - 初试 ffmpeg 转 SRT 出现旧字幕非 UTF-8 解码错误和样式异常，即使部分命令退出 0 也有缺句风险。最终以直接读样本的原始 JSON/TXT 为依据，初试 SRT 不作完整字幕交付。
 
-[视频流清单](C:/GOG Games/The Wheel of Time/docs/phase1/movies.json) · [已有视频文本索引](C:/GOG Games/The Wheel of Time/docs/phase1/movie_text_summary.json) · [抽样画面](C:/GOG Games/The Wheel of Time/docs/phase1/movie_frames_contact.png)
+视频流清单（历史本地产物 `movies.json`，未随源码发布） · 已有视频文本索引（历史本地产物 `movie_text_summary.json`，未随源码发布） · 抽样画面（历史本地产物 `movie_frames_contact.png`，未随源码发布）
 
 ## 7. 是否需要修改 EXE / DLL
 
@@ -247,10 +249,10 @@ python tools\test_phase1.py
 | 隔离 runtime/System/WoT.ini | 临时语言/窗口化试验，最终还原原内容 | 最终正式三轮使用原渲染配置；对照用 Language=zht | 原备份已回写工作副本 |
 | 无原始 zht 文件 | `C:/GOG Games/The Wheel of Time/work/phase1/control/WoT.zht` 及 runtime 副本 | 新 locale + 混合 ASCII/中文对照 | 仅新增工作文件；安装未改 |
 
-- MODIFIED_FILE：[中文测试文件](C:/GOG Games/The Wheel of Time/work/phase1/modified/WoT.int)
-- DIFF_FILE：[逻辑文本差异](C:/GOG Games/The Wheel of Time/docs/phase1/WoT.int.diff)（另有整个文件编码变化）
-- VERIFICATION：[命令/输入/原样输出/退出码/哈希/恢复状态](C:/GOG Games/The Wheel of Time/docs/phase1/VERIFICATION.txt)
-- ROLLBACK：[回滚脚本](C:/GOG Games/The Wheel of Time/tools/ROLLBACK.sh)
+- MODIFIED_FILE：中文测试文件（历史本地产物 `WoT.int`，未随源码发布）
+- DIFF_FILE：逻辑文本差异（历史本地产物 `WoT.int.diff`，未随源码发布）（另有整个文件编码变化）
+- VERIFICATION：命令/输入/原样输出/退出码/哈希/恢复状态（历史本地产物 `VERIFICATION.txt`，未随源码发布）
+- ROLLBACK：回滚脚本（历史本地产物 `ROLLBACK.sh`，未随源码发布）
 
 原 WoT.int SHA-256：`6529b7552f52614aa8717ae1493edb1912abca6687f59df26bd75d0714e034f8`。
 中文副本 SHA-256：`7fe9a65dd87549c0f2762bb73942b0d22c6e80c08907984340cad84ed941bca3`。

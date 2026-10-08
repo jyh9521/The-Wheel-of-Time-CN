@@ -39,8 +39,8 @@ pefile、Keystone汇编工具及Unicorn测试模拟器由pip安装，不随补�
 
 ## 思源黑体子集实验
 
-思源黑体 2.005 及其改名子集继续遵循 SIL OFL 1.1，不属于工具 MIT 或译文 CC BY-SA 授权。版权与许可证随子集发布，主字体名称为 WotFmv。上游固定版本及许可证见 profiles/fmv-font-source.json 与 assets/fonts/SourceHanSans-OFL.txt；生成字体留在 build，实验尚未发布。
+思源黑体 2.005 及其改名子集继续遵循 SIL OFL 1.1，不属于工具 MIT 或译文 CC BY-SA 授权。版权与许可证随子集发布，主字体名称为 WotFmv。上游固定版本及许可证见 profiles/fmv-font-source.json 与 assets/fonts/SourceHanSans-OFL.txt；正式包包含该改名子集；历史生成产物保留在 build，许可证与版权说明随字体发布。
 
 ## 字幕专用显示层
 
-SubtitleHUD 与专用字体构建工具为原创适配代码，未复制完整原游戏脚本。新增运行时包可由仓库源码和原版 UCC 重建；继承的原类及游戏资源权利不变。当前 UE 专用字库仍采用本地字体与部分原位图派生字形，仅用于本地测试，公开发布前仍需完成字体与派生资源许可核对。FMV 思源黑体子集不受此次改动影响。
+SubtitleHUD 与专用字体构建工具为原创适配代码，未复制完整原游戏脚本。新增运行时包可由仓库源码和原版 UCC 重建；继承的原类及游戏资源权利不变。早期 UE 专用字库实验采用本地字体与部分原位图派生字形，当时仅用于本地测试；该历史实验不赋予字体或原版派生资源额外的再分发权。FMV 思源黑体子集不受此次改动影响。

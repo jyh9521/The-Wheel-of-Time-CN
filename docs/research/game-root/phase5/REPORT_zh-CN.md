@@ -1,5 +1,7 @@
 # 第五阶段：实机验收、小字号与Inventory修复
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../../../../README.md)、[安装说明](../../../PORTABLE_INSTALLER.md)和[显示限制](../../../KNOWN_ISSUES.md)。
+
 日期：2026-10-03。在恢复独立游戏副本的运行测试后执行。原安装277/277文件哈希保持，所有游戏进程已正常关闭。
 
 ## 结论
@@ -46,11 +48,11 @@
 字幕仍使用350字符源长度保留原型，该阶段以进程启动时间计第25秒仍显示，第32秒已消失；此前phase3截图的第32秒不等于当前运行的同一语音时刻。**不把源长度保留宣称为逐帧/完整语音时长同步。**
 
 ## 实机截图
-![Inventory中文标题/正文/斜体引文](C:\GOG Games\The Wheel of Time\docs\phase5\INV_CHINESE.png)
-![320×240 Inventory完整复测](C:\GOG Games\The Wheel of Time\docs\phase5\INV_LOWRES_SETTLED.png)
-![320×240小字号修复后](C:\GOG Games\The Wheel of Time\docs\phase5\LOWRES.png)
-![同文7px修复前](C:\GOG Games\The Wheel of Time\docs\phase5\SMALL_BEFORE.png)
-![字幕第25秒](C:\GOG Games\The Wheel of Time\docs\phase5\SUBTITLE_025.png)
+Inventory中文标题/正文/斜体引文（历史本地产物 `INV_CHINESE.png`，未随源码发布）
+320×240 Inventory完整复测（历史本地产物 `INV_LOWRES_SETTLED.png`，未随源码发布）
+320×240小字号修复后（历史本地产物 `LOWRES.png`，未随源码发布）
+同文7px修复前（历史本地产物 `SMALL_BEFORE.png`，未随源码发布）
+字幕第25秒（历史本地产物 `SUBTITLE_025.png`，未随源码发布）
 
 ## 自动检查与恢复
 - `python tools\test_phase3.py`：13项通过；`python tools\test_phase4.py`：10项通过；`python tools\test_phase5.py`：14项通过，共37项。

@@ -1,5 +1,7 @@
 # 第四阶段：字库容量扩展与离线开发
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../../../../README.md)、[安装说明](../../../PORTABLE_INSTALLER.md)和[显示限制](../../../KNOWN_ISSUES.md)。
+
 ## 当前结果
 改为离线开发后，所有操作仅涉及工作副本、自动测试和安装恢复 fixture，没有再启动游戏。
 
@@ -35,7 +37,7 @@
 
 高度来自原字体大写字符矩形，不是按文件名猜测。原英文斜体矩形保持；**F_WOTIta14新增中文目前使用微软雅黑正体字形，真正的中文倾斜与截切处理留待后续**。F_Key、F_Charge、F_Element等图标字体保持原样。
 
-完整原脚本路径、行号与调用见 [C:\GOG Games\The Wheel of Time\docs\phase4\FONT_USAGE.md](C:\GOG Games\The Wheel of Time\docs\phase4\FONT_USAGE.md)。
+完整原脚本路径、行号与调用见 [C:\GOG Games\The Wheel of Time\docs\phase4\FONT_USAGE.md](FONT_USAGE.md)。
 
 ## 测试文本与保留范围
 四条MenuList各含18个连续码位QA字形，共72字，用于跨64页边界观察；它们不是正式菜单译文。另保留上一阶段长中文帮助和一条Tes_01测试字幕，合计6个int值变化。

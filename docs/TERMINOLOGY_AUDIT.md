@@ -1,5 +1,7 @@
 # GLOSSARY唯一术语基准与既有译文审校（2026-10-03）
 
+> 历史开发与测试记录：下述测试数、待办、验收状态和产物名称对应记录时的构建，不代表正式版当前状态。v1.0 已完成完整通关测试且未发现补丁问题；正式文件为 `WoT-CN-v1.0.exe`。当前说明见 [项目主页](../README.md)、[安装说明](PORTABLE_INSTALLER.md)和[显示限制](KNOWN_ISSUES.md)。
+
 ## 已实施
 
 根目录GLOSSARY.md是唯一术语基准，README、翻译规则、教程测试说明以及locale配置已一致。旧locales/zh-CN/glossary.json只保留兼容指针，已无第二份术语数据；旧候选写法作为待确认项统一保存在GLOSSARY.md，不静默升级为确认项。
