@@ -1,5 +1,7 @@
 # 构建与复现
 
+> 共享构建要求见[构建规范](docs/BUILD_STANDARD.md)、[安装与恢复](docs/INSTALLATION_STANDARD.md)和[验收标准](docs/ACCEPTANCE.md)。本页保留本作实际输入、命令与历史结果；规范迁移未重建游戏产物。
+
 > 正式安装包为 `WoT-CN-v1.0.exe`，完整通关测试已完成。当前安装与重建入口见 [安装器说明](docs/PORTABLE_INSTALLER.md)。下方带日期的迁移、PoC 和 ZIP 构建段落属于历史复现记录；历史文件名不作为正式下载名称。
 
 ## 环境

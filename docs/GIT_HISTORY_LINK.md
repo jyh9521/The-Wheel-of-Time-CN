@@ -6,7 +6,7 @@
 - 新工作区当前分支 `main`，跟踪 `origin/main`；迁移文件覆盖层保留并进入暂存区，尚未commit/push。没有使用git init创建本项目新历史，没有改写旧commit，没有强推。
 - 远端主分支与此前迁移所用基底相同，因此没有分叉或需要解决的内容冲突；3份格式/陷阱/已知问题文档采用大写文件名，Git识别为重命名，不是删除研究内容。
 - LICENSE与LICENSE-translations.md沿用远端贡献者声明和许可，不用新模板覆盖已有归属。模板版本仍保存在本地迁移备份中。
-- `.gitignore` 保留AGENTS与LOCALIZATION_STANDARD的本地忽略规则；根build/dist/out与原版System/Maps/Textures/Sounds/Music/Movies/Help/Save/backup树忽略，常见原版包/媒体/程序/字体扩展名忽略，GOG安装文件、缓存、临时/解包目录忽略。
+- 原迁移阶段`.gitignore`保留AGENTS与LOCALIZATION_STANDARD本地忽略规则；2026-11-17起这两份共享规范纳入版本管理。根build/dist/out、原版System/Maps/Textures/Sounds/Music/Movies/Help/Save/backup树、原版包/媒体/程序/字体、GOG安装文件、缓存、临时/解包目录继续保持原忽略规则。
 - `/build/` 使用根锚定规则，通用源码 `tools/build/pipeline.py` 不受误伤。没有将游戏目录作为Git仓库。
 - 分支历史、忽略矩阵、暂存文件审计、合成测试与独立规则回滚记录在被忽略的 `build/git-link/VERIFICATION.txt`。不启动游戏，也不改旧游戏工作区。
 

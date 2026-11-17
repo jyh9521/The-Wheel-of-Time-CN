@@ -58,7 +58,7 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 新增 `locales/ja-JP/`、`ko-KR/` 或 `zh-TW/` 的数据与配置即可复用工具，
 但要提供覆盖字体并完成实机验收；未声称这些语言已经游戏内验证。
 参阅 [TRANSLATING.md](TRANSLATING.md) 与 [TECHNICAL.md](TECHNICAL.md)。
-本地维护指令文件不在公开仓库中跟踪。
+共享维护入口与规范现已纳入版本管理，个人路径、凭据与私有输入继续留在本地。
 
 ## 译名与翻译参考
 
@@ -99,3 +99,8 @@ python build.py --locale zh-CN --game-dir "D:/GOG Games/The Wheel of Time" --fon
 Legend Entertainment 的原作；GOG 发行版本；Unreal/Unreal Tournament 同时代的标准
 localization / Font 机制为研究参考；Pillow 与 fontTools 提供字形处理。
 当前无上游研究仓库；现有本地阶段研究的发现与失败记录保留原有归属。
+
+
+## 维护规范
+
+本项目已接入汉化基准 **2.1**；本次仅更新工程文档，不改变上述补丁版本、发布内容或验证状态。维护前读取 [AGENTS](AGENTS.md) 与[迁移说明](docs/MIGRATION.md)，再按任务查阅[工程规范](docs/LOCALIZATION_STANDARD.md)、[验收标准](docs/ACCEPTANCE.md)、[README写作规范](docs/README_STANDARD.md)和[中文风格](locales/zh-CN/STYLE.md)。

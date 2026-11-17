@@ -1,5 +1,7 @@
 # 翻译规则
 
+> 共享流程见[翻译工作流](docs/TRANSLATION_STANDARD.md)与[数据合同](docs/DATA_CONTRACT.md)；后续中文编辑以[现行风格](locales/zh-CN/STYLE.md)为准。既有数据格式、术语、历史批次和实现差异见[迁移记录](docs/MIGRATION.md)。
+
 > 正式版 v1.0 已完成完整通关测试，未发现补丁相关问题。本文保留工具规范、技术结论与带日期的阶段记录；历史待办和产物名称不代表正式版状态。当前发布文件为 `WoT-CN-v1.0.exe`，参见 [安装说明](docs/PORTABLE_INSTALLER.md)与[显示限制](docs/KNOWN_ISSUES.md)。
 
 ## 来源、格式、编码

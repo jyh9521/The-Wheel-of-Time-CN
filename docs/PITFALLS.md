@@ -1,5 +1,7 @@
 # 重复踩坑 / 必须保持的约束
 
+> 新增失败路径按[研究记录规范](RESEARCH_STANDARD.md)记录；以下历史经验保留。现行规则以[主规范](LOCALIZATION_STANDARD.md)及其分项文档为准。
+
 ## Windows 资源更新与追加代码段
 
 UpdateResource 会压缩 .rsrc 并移动后续 .reloc/.locale RVA。即使代码字节不变，也会使已有显示适配的绝对地址失效。对 Window.dll 更新向导资源时，应保留资源空间，并逐节核对原有非资源段的 RVA 与字节；原资源语言、控件 ID、字体 metrics、无关资源均保持。此次为未使用的 RCDATA 保留填充空间，不执行该资源。不能只检查汉字是否写入成功。

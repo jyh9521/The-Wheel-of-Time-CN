@@ -1,5 +1,7 @@
 # 文件格式笔记（当前 GOG / WOT.u v68）
 
+> 新增格式记录按[研究与格式规范](RESEARCH_STANDARD.md)补齐边界、偏移基准和往返证据；以下项目专属格式与历史结论保留。
+
 ## Unreal package header
 
 little-endian `<IHHIiiiiii>`，magic `0x9e2a83c1`。
