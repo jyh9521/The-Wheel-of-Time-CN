@@ -1,5 +1,6 @@
 """Documentation structure and confirmed FMV terminology regression checks."""
 import re
+import subprocess
 import unittest
 from pathlib import Path
 from tools.validate.terminology import load_terms
@@ -9,12 +10,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicDocumentationTests(unittest.TestCase):
+    def test_maintenance_entry_points_are_linked_and_versioned(self):
+        text = (ROOT / 'README.md').read_text(encoding='utf-8')
+        required = {'AGENTS.md', 'docs/MIGRATION.md', 'docs/LOCALIZATION_STANDARD.md',
+                    'docs/ACCEPTANCE.md', 'docs/README_STANDARD.md', 'locales/zh-CN/STYLE.md'}
+        targets = set(re.findall(r'\]\(([^)#]+)(?:#[^)]*)?\)', text))
+        tracked = set(subprocess.check_output(
+            ['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0'))
+        self.assertTrue(required <= targets, required - targets)
+        self.assertTrue(required <= tracked, required - tracked)
+        for target in required:
+            self.assertTrue((ROOT / target).is_file(), target)
+
     def test_readme_sections_and_progress_links(self):
         text = (ROOT / 'README.md').read_text(encoding='utf-8')
         self.assertEqual(re.findall(r'^## (.+)$', text, re.M), [
             '项目简介', '支持版本与当前状态', '下载', '安装 / 使用', '技术摘要',
             '仓库结构', '从源码重建', '参与翻译 / 添加语言', '译名与翻译参考',
-            '已知问题', '更多开发与测试进展', '许可', '致谢'])
+            '已知问题', '更多开发与测试进展', '许可', '致谢', '维护规范'])
         self.assertNotIn('###', text)
         for target in re.findall(r'\]\(([^)#]+)(?:#[^)]*)?\)', text):
             if '://' not in target:
